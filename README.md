@@ -24,6 +24,13 @@ escreve um recap depois de cada jornada.
   (`Abrir dashboard.bat`) mostra dados antigos — usa o link da nuvem.
 - Alterações ao código: faz-se no PC e `git push` para o `main`; o Streamlit atualiza sozinho.
 
+## Canal de Telegram
+- O bot publica no canal grátis: dicas do dia + múltipla (com as Previsões das 10h30), ✅/❌ quando cada jogo
+  acaba (com os Resultados) e o balanço à segunda-feira. Estado das dicas em `dados/telegram.json`.
+- Secrets do GitHub: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_GRATIS` (id do canal), e opcionais `AFILIADO_LINK`,
+  `AFILIADO_CASA` (só casas com licença SRIJ).
+- Testar: Actions → "Testar Telegram". Local: `run.py telegram dicas AAAA-MM-DD` (sem token = só mostra).
+
 ## Aprendizagem
 - Todas as noites o agente analisa os jogos falhados, atualiza o recap, as fichas das equipas
   (`dados/equipas/`) e as lições (`dados/licoes.md`), que lê antes de cada ronda de previsões.
