@@ -59,7 +59,15 @@ def send(text: str, reply_to: int | None = None) -> int | None:
     if reply_to:
         body |= {"reply_parameters": {"message_id": reply_to, "allow_sending_without_reply": True}}
     r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage", json=body, timeout=30)
-    r.raise_for_status()
+    if not r.ok:  # mensagem clara no registo do GitHub (sem mostrar o token)
+        desc = r.json().get("description", r.text[:200]) if r.headers.get("content-type", "").startswith(
+            "application/json") else r.text[:200]
+        dica = {"chat not found": "confirma TELEGRAM_CHAT_GRATIS (ex.: @nome_do_canal) e que o canal é público",
+                "Unauthorized": "o TELEGRAM_BOT_TOKEN está errado",
+                "not enough rights": "o bot tem de ser administrador do canal com 'Publicar mensagens'",
+                "bot is not a member": "adiciona o bot ao canal como administrador"}
+        raise SystemExit(f"Telegram recusou ({r.status_code}): {desc}. "
+                         + next((v for k, v in dica.items() if k.lower() in desc.lower()), ""))
     return r.json()["result"]["message_id"]
 
 

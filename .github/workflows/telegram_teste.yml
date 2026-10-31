@@ -1,0 +1,23 @@
+# Envia uma mensagem de teste para o canal (só à mão: Actions → Testar Telegram → Run workflow).
+name: Testar Telegram
+on:
+  workflow_dispatch:
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_GRATIS: ${{ secrets.TELEGRAM_CHAT_GRATIS }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-core.txt
+      - run: pip install -q -r requirements-core.txt
+      - run: |
+          test -n "$TELEGRAM_BOT_TOKEN" || { echo "Falta o secret TELEGRAM_BOT_TOKEN"; exit 1; }
+          test -n "$TELEGRAM_CHAT_GRATIS" || { echo "Falta o secret TELEGRAM_CHAT_GRATIS"; exit 1; }
+          python run.py telegram teste

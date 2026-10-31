@@ -70,6 +70,10 @@ def main():
             print(f"Dicas publicadas: {telegram.dicas(day)}")
         elif sub == "resultados":
             print(f"Resultados publicados: {telegram.resultados()}")
+        elif sub == "teste":
+            telegram.send("👋 Olá! O bot está ligado. As dicas do dia aparecem aqui todas as manhãs.\n\n"
+                          + telegram.RODAPE)
+            print("Mensagem de teste enviada.")
         elif sub == "balanco":
             print(f"Balanço publicado: {telegram.balanco(len(sys.argv) > 3)}")
     elif cmd == "lista":
