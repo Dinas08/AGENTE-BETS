@@ -62,7 +62,8 @@ def send(text: str, reply_to: int | None = None) -> int | None:
     if not r.ok:  # mensagem clara no registo do GitHub (sem mostrar o token)
         desc = r.json().get("description", r.text[:200]) if r.headers.get("content-type", "").startswith(
             "application/json") else r.text[:200]
-        dica = {"chat not found": "confirma TELEGRAM_CHAT_GRATIS (ex.: @nome_do_canal) e que o canal é público",
+        dica = {"send messages to the bot": "TELEGRAM_CHAT_GRATIS tem o @ do bot; tem de ser o @ do canal",
+                "chat not found": "confirma TELEGRAM_CHAT_GRATIS (ex.: @nome_do_canal) e que o canal é público",
                 "Unauthorized": "o TELEGRAM_BOT_TOKEN está errado",
                 "not enough rights": "o bot tem de ser administrador do canal com 'Publicar mensagens'",
                 "bot is not a member": "adiciona o bot ao canal como administrador"}
