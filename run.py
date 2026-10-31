@@ -61,6 +61,17 @@ def main():
         if not m.empty:
             print("\nCalibração por mercado:")
             print(m[["mercado", "previsoes", "acerto", "esperado", "leitura"]].round(2).to_string(index=False))
+    elif cmd == "telegram":
+        # telegram dicas [AAAA-MM-DD] | resultados | balanco [forcar]  (sem token = ensaio, só mostra)
+        from agente import telegram
+        sub = sys.argv[2] if len(sys.argv) > 2 else "dicas"
+        if sub == "dicas":
+            day = dt.date.fromisoformat(sys.argv[3]) if len(sys.argv) > 3 else None
+            print(f"Dicas publicadas: {telegram.dicas(day)}")
+        elif sub == "resultados":
+            print(f"Resultados publicados: {telegram.resultados()}")
+        elif sub == "balanco":
+            print(f"Balanço publicado: {telegram.balanco(len(sys.argv) > 3)}")
     elif cmd == "lista":
         days = int(sys.argv[2]) if len(sys.argv) > 2 else 4
         p = db.load_predictions(with_results=False)

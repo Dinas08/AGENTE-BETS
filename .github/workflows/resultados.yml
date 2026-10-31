@@ -14,6 +14,9 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_GRATIS: ${{ secrets.TELEGRAM_CHAT_GRATIS }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
@@ -33,4 +36,7 @@ jobs:
           cache-dependency-path: requirements-core.txt
       - run: pip install -q -r requirements-core.txt
       - run: python run.py auto && tail -n 1 dados/auto.log
+      - name: Telegram (✅/❌ das dicas que acabaram)
+        continue-on-error: true
+        run: python run.py telegram resultados
       - run: bash scripts/guardar_dados.sh "resultados" ours

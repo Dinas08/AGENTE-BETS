@@ -17,6 +17,10 @@ jobs:
       contents: write
     env:
       API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_GRATIS: ${{ secrets.TELEGRAM_CHAT_GRATIS }}
+      AFILIADO_LINK: ${{ secrets.AFILIADO_LINK }}
+      AFILIADO_CASA: ${{ secrets.AFILIADO_CASA }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
@@ -36,4 +40,7 @@ jobs:
           cache-dependency-path: requirements-core.txt
       - run: pip install -q -r requirements-core.txt
       - run: python run.py tudo
+      - name: Telegram (dicas do dia, uma vez por dia; balanço à segunda)
+        continue-on-error: true
+        run: python run.py telegram dicas && python run.py telegram balanco
       - run: bash scripts/guardar_dados.sh "previsões" ours
