@@ -8,20 +8,21 @@ escreve um recap depois de cada jornada.
 ## Como usar
 | Ação | Como |
 |---|---|
-| Abrir a dashboard | duplo clique em **Abrir dashboard.bat** (abre em http://127.0.0.1:8501). Enquanto estiver aberta, verifica de 5 em 5 minutos se algum jogo previsto acabou e atualiza o Desempenho e o Recap sozinha |
-| Atualizar previsões e resultados | duplo clique em **Atualizar previsoes.bat** |
-| Resultados em segundo plano | tarefa do Windows **"Agente Bets - resultados"** (Agendador de Tarefas), de 30 em 30 min, mesmo com a dashboard fechada; registo em `dados/auto.log`. Para desligar: Agendador de Tarefas → clicar com o botão direito → Desativar |
-| Notícias, ajustes e recap com o agente | numa sessão do Claude nesta pasta: "faz a rotina 1" / "faz a rotina 2" (ver `CLAUDE.md`) |
+| Abrir a dashboard | **https://agente-bets-dinis.streamlit.app** (em qualquer dispositivo; vai buscar os dados novos de 5 em 5 min) |
+| Atualizar à mão | GitHub → AGENTE-BETS → Actions → "Previsões" ou "Resultados" → Run workflow |
+| Notícias, ajustes e recap | rotinas na nuvem (ver abaixo), ou numa sessão do Claude: "faz a rotina 1" / "faz a rotina 2" |
 
-## Abrir no telemóvel / tablet / outro PC
-1. **Na mesma rede Wi-Fi de casa:** com a dashboard aberta no PC, abre no outro dispositivo
-   `http://192.168.1.202:8501` (ou `http://192.168.1.220:8501`). Na primeira vez, o Windows tem de deixar
-   passar a ligação: em Definições → Rede e Internet, marca a rede como **Privada**, e, se aparecer o aviso
-   da Firewall para o Python, escolhe **Permitir** (só em redes privadas).
-2. **Fora de casa:** instala o **Tailscale** (grátis) no PC e no telemóvel, com a mesma conta; depois abre
-   `http://<nome-do-pc>:8501` no telemóvel. Funciona em qualquer rede, sem abrir portas na internet.
-3. Recomendado: define `DASHBOARD_PASSWORD=` no ficheiro `.env` para a dashboard pedir palavra-passe.
-O PC tem de estar ligado e a dashboard aberta (janela preta).
+## Na nuvem (funciona com o PC desligado)
+- **Dashboard:** https://agente-bets-dinis.streamlit.app (palavra-passe nos Secrets do Streamlit). Abre em
+  qualquer dispositivo. Se ninguém a abrir durante uns dias adormece; ao abrir demora ~30 s a acordar.
+- **Código:** repositório privado `Dinas08/AGENTE-BETS` (ramo `main`). **Dados:** ramo `claude/dados`.
+- **GitHub Actions** (separador Actions do repositório): `Resultados` de 30 em 30 min (11h–24h),
+  `Previsões` às 10h30 e 17h30, `Manutenção dos dados` à terça (compacta o histórico). Todos têm "Run workflow"
+  para correr à mão.
+- **Rotinas do agente** (claude.ai/code/routines): notícias e ajustes às 9h, recap e aprendizagem às 23h50.
+- As tarefas do PC (Agendador do Windows e tarefas do Claude desktop) estão **desativadas**; a dashboard local
+  (`Abrir dashboard.bat`) mostra dados antigos — usa o link da nuvem.
+- Alterações ao código: faz-se no PC e `git push` para o `main`; o Streamlit atualiza sozinho.
 
 ## Aprendizagem
 - Todas as noites o agente analisa os jogos falhados, atualiza o recap, as fichas das equipas
