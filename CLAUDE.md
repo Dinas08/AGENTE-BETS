@@ -21,9 +21,9 @@ O sistema corre sem o PC: o GitHub Actions trata dos dados (`resultados.yml` de 
 Se estiveres numa sessão na nuvem (não existe a pasta `.venv`), antes de tudo:
 ```bash
 git fetch origin claude/dados && git worktree add --detach dados FETCH_HEAD
-pip install -q -r requirements-core.txt
+python3.13 -m pip install -q -r requirements-core.txt
 ```
-- Usa `python` em vez de `.venv\Scripts\python.exe`. **Não corras `tudo`, `prever` nem `resultados`** (a rede da
+- Usa `python3.13` em vez de `.venv\Scripts\python.exe` (o `python` da nuvem é 3.11 e não serve). **Não corras `tudo`, `prever` nem `resultados`** (a rede da
   nuvem pode bloquear as fontes e quem escreve a base de dados é o GitHub Actions). Podes correr `run.py lista 4`
   e `run.py aprendizagem` (só leem). Os teus ajustes entram nas previsões às 10h30/17h30.
 - Edita só ficheiros de texto em `dados/` (ajustes.json, licoes.md, equipas/*.md, a secção de análise dos recaps).
