@@ -1,0 +1,9 @@
+# Dashboard (Streamlit Cloud) = modelo + interface
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+requests==2.34.2
+python-dotenv==1.2.4
+tzdata==2026.6
+streamlit==1.66.1
+plotly==7.1.0

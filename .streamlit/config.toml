@@ -1,0 +1,23 @@
+[server]
+headless = true
+port = 8501
+# aceita ligações de outros dispositivos da tua rede (telemóvel, tablet, portátil)
+address = "0.0.0.0"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+# Tema preto (principal) e dourado (secundário)
+[theme]
+base = "dark"
+primaryColor = "#d4af37"
+backgroundColor = "#0b0b0b"
+secondaryBackgroundColor = "#17150f"
+textColor = "#f0ece2"
+linkColor = "#e6c55a"
+borderColor = "#2e2a1f"
+font = "sans-serif"
+baseRadius = "medium"

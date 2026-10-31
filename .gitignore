@@ -1,0 +1,11 @@
+# Segredos (chave da API, palavra-passe) — nunca vão para o GitHub
+.env
+.streamlit/secrets.toml
+
+# Ambiente Python e caches
+.venv/
+__pycache__/
+*.pyc
+
+# Os dados vivem no ramo "claude/dados" (ver scripts/guardar_dados.sh)
+dados/

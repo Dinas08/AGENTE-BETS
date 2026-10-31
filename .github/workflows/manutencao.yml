@@ -1,0 +1,28 @@
+# Uma vez por semana junta o histórico do ramo de dados num único registo, para o repositório não crescer
+# (a base de dados muda dezenas de vezes por dia). Os dados atuais ficam iguais.
+name: Manutenção dos dados
+on:
+  schedule:
+    - cron: "0 5 * * 2"   # terça às 5h, sem jogos nem rotinas a correr
+  workflow_dispatch:
+concurrency:
+  group: dados
+  cancel-in-progress: false
+jobs:
+  compactar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/dados
+          fetch-depth: 1
+      - run: |
+          git config user.name agente-bets
+          git config user.email agente-bets@users.noreply.github.com
+          old=$(git rev-parse HEAD)
+          git checkout -q --orphan compacto
+          git commit -q -m "dados compactados ($(TZ=Europe/Lisbon date '+%Y-%m-%d'))"
+          git push --force-with-lease="claude/dados:$old" origin compacto:claude/dados
