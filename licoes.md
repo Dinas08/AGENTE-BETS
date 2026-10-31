@@ -6,7 +6,7 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 
 ## Ativas
 
-- **2026-10-31 · Favoritos fora de casa entre 40% e 50% falham muito (todas as ligas).** Evidência (S44): acertaram 2 em 6.
+- **2026-10-31 · Favoritos fora de casa entre 40% e 50% falham muito (todas as ligas).** Evidência (S44): acertaram 2 em 7 (Milan–Inter, Inter a 46%, também falhou).
   Falharam Fiorentina–Atalanta (48%), Elversberg–Mainz (42%), Werder–Hoffenheim (40%) e Coventry–Sunderland (41%); acertaram Leipzig e Freiburg.
   O que fazer: nestes jogos, procurar sinais de força da equipa da casa (série sem perder, treinador novo, reação à crise) e, se existirem, dar +4 a +6
   aos golos da casa. Nas combinadas, preferir a dupla do visitante com empate ("X2") à vitória seca.
@@ -25,6 +25,8 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 - Jogos com expulsão cedo (Elversberg 4-1 Mainz, Chelsea 2-0 Man United) estragam as previsões de golos e
   cantos; não é erro de leitura. Não corrigir equipas por isto. Confirmar sempre o minuto do vermelho: em Coventry–Sunderland foi aos 90+9'
   e não mudou nada.
-- Cartões: "Menos de 4.5" falhou em 6 jogos da S44 e o mercado ficou em 53% real contra 66% previsto. Se se repetir mais 2 semanas, passa para
+- Cartões: "Menos de 4.5" falhou em 6 jogos da S44 mas com os jogos novos recuperou (65% real contra 66%); desconfirmado por agora, apagar se se mantiver. Se se repetir mais 2 semanas, passa para
   `notas_modelo.md` como padrão do modelo.
 - Quebra de forma de grandes equipas (Man City, 2 derrotas seguidas) não é captada pelo modelo. Se houver mais casos, ajustar −3 a −5 nos golos marcados.
+- Favoritos muito altos com 3+ baixas titulares (Bayern 65% empatou 2-2 com Dortmund, sem Díaz, Musiala e outros). Confirmar com mais um caso antes de agir.
+- Liga Portugal: "Mais de 4.5 cartões" falhou em Casa Pia–Sporting e Moreirense–Estrela (a 55%). Observar.
