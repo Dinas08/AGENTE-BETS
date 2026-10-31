@@ -21,3 +21,6 @@ jobs:
           test -n "$TELEGRAM_BOT_TOKEN" || { echo "Falta o secret TELEGRAM_BOT_TOKEN"; exit 1; }
           test -n "$TELEGRAM_CHAT_GRATIS" || { echo "Falta o secret TELEGRAM_CHAT_GRATIS"; exit 1; }
           python run.py telegram teste
+      - name: Se falhou, mostrar os canais que o bot vê
+        if: failure()
+        run: python run.py telegram descobrir

@@ -74,6 +74,20 @@ def main():
             telegram.send("👋 Olá! O bot está ligado. As dicas do dia aparecem aqui todas as manhãs.\n\n"
                           + telegram.RODAPE)
             print("Mensagem de teste enviada.")
+        elif sub == "descobrir":
+            # canais/grupos onde o bot recebeu mensagens recentemente (para encontrar o id do canal)
+            import requests
+            r = requests.get(f"https://api.telegram.org/bot{telegram.TOKEN}/getUpdates", timeout=30).json()
+            vistos = {}
+            for u in r.get("result", []):
+                for k in ("channel_post", "my_chat_member", "message", "edited_channel_post"):
+                    c = (u.get(k) or {}).get("chat")
+                    if c and c.get("type") != "private":
+                        vistos[c["id"]] = c
+            print("Canais/grupos que o bot vê (usa o 'id' em TELEGRAM_CHAT_GRATIS):" if vistos else
+                  "O bot ainda não vê nenhum canal: adiciona-o como administrador e publica uma mensagem no canal.")
+            for c in vistos.values():
+                print(f"  id={c['id']}  nome={c.get('title')}  @{c.get('username') or '(privado, sem @)'}")
         elif sub == "balanco":
             print(f"Balanço publicado: {telegram.balanco(len(sys.argv) > 3)}")
     elif cmd == "lista":
