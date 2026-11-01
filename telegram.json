@@ -1,0 +1,66 @@
+{
+ "dicas": [
+  {
+   "id": "20261101-I1-frosinone-torino|over_2.5",
+   "match_id": "20261101-I1-frosinone-torino",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Frosinone x Torino",
+   "prob": 0.6904,
+   "odd_casa": 1.4,
+   "data": "2026-11-01",
+   "message_id": 5,
+   "resultado": null
+  },
+  {
+   "id": "20261101-E0-liverpool-arsenal|12",
+   "match_id": "20261101-E0-liverpool-arsenal",
+   "key": "12",
+   "texto": "Liverpool ou Arsenal vence (sem empate)",
+   "jogo": "Liverpool x Arsenal",
+   "prob": 0.7103,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 6,
+   "resultado": null
+  },
+  {
+   "id": "20261101-I1-lecce-genoa|cartoes_under_4.5",
+   "match_id": "20261101-I1-lecce-genoa",
+   "key": "cartoes_under_4.5",
+   "texto": "Menos de 4.5 cartões amarelos",
+   "jogo": "Lecce x Genoa",
+   "prob": 0.695,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 7,
+   "resultado": null
+  },
+  {
+   "id": "20261101-I1-juventus-napoli|12",
+   "match_id": "20261101-I1-juventus-napoli",
+   "key": "12",
+   "texto": "Juventus ou Napoli vence (sem empate)",
+   "jogo": "Juventus x Napoli",
+   "prob": 0.7016,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 8,
+   "resultado": null
+  }
+ ],
+ "multiplas": [
+  {
+   "data": "2026-11-01",
+   "partes": [
+    "20261101-E0-liverpool-arsenal|12",
+    "20261101-I1-juventus-napoli|12",
+    "20261101-I1-lecce-genoa|cartoes_under_4.5"
+   ],
+   "prob": 0.3464,
+   "message_id": 9,
+   "resultado": null
+  }
+ ],
+ "balancos": []
+}
