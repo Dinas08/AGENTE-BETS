@@ -46,7 +46,7 @@
    "odd_casa": null,
    "data": "2026-11-01",
    "message_id": 8,
-   "resultado": null
+   "resultado": true
   }
  ],
  "multiplas": [
@@ -59,7 +59,7 @@
    ],
    "prob": 0.3464,
    "message_id": 9,
-   "resultado": null
+   "resultado": true
   }
  ],
  "balancos": []
