@@ -281,7 +281,13 @@ def page_jogos():
     df = upcoming(load())
     st.title("Jogos")
     if df.empty:
-        empty_state("Ainda não há previsões. Vai a <b>Estado</b> e carrega em <b>Atualizar previsões</b>.", "📭")
+        from agente import nuvem
+        if not nuvem.ativo():
+            empty_state("Ainda não há previsões. Vai a <b>Estado</b> e carrega em <b>Atualizar previsões</b>.", "📭")
+        elif st.session_state.get("sync_erro"):
+            empty_state(f"Não consegui ir buscar os dados ao GitHub.<br>{E(st.session_state['sync_erro'])}", "⚠️")
+        else:
+            empty_state("A ir buscar os dados ao GitHub… recarrega a página daqui a uns segundos.", "⏳")
         return
 
     days = sorted(df["day"].unique())
@@ -806,6 +812,8 @@ def page_estado():
         st.caption("Resultados de 30 em 30 min e previsões às 10h30 e 17h30 (GitHub Actions); notícias e ajustes "
                    "às 9h e recap às 23h50 (rotinas do agente). A dashboard vai buscar os dados novos sozinha. "
                    f"Versão dos dados: {nuvem.SHA_FILE.read_text()[:7] if nuvem.SHA_FILE.exists() else '—'}")
+        if st.session_state.get("sync_erro"):
+            st.error(f"Última sincronização falhou: {st.session_state['sync_erro']}")
     b1 = b2 = None
     if not nuvem.ativo():
         st.markdown("#### Atualizar agora")
@@ -890,7 +898,9 @@ def auto_results():
         new = nuvem.sincronizar() if nuvem.ativo() else pipeline.quick_results()
     except Exception as e:  # sem internet, ESPN/GitHub em baixo… tenta outra vez daqui a 5 minutos
         print(f"[auto_results] {e}")
+        st.session_state["sync_erro"] = nuvem.explicar(e) if nuvem.ativo() else str(e)
         return
+    st.session_state.pop("sync_erro", None)
     if new:
         _load_db.clear()
         st.toast("Dados atualizados" if new is True else

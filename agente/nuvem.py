@@ -29,6 +29,19 @@ def _headers() -> dict:
     return h
 
 
+def explicar(e: Exception) -> str:
+    """Erro da sincronização em linguagem simples (para mostrar na dashboard, sem o token)."""
+    code = getattr(getattr(e, "response", None), "status_code", None)
+    if not config.GH_TOKEN:
+        return "Falta o GH_TOKEN nos Secrets da app."
+    if code == 401:
+        return "O GH_TOKEN dos Secrets está errado ou expirou: cria um novo no GitHub e troca-o nos Secrets."
+    if code in (403, 404):
+        return (f"O GH_TOKEN não tem acesso ao repositório {config.AGENTE_REPO} (ou o AGENTE_REPO está errado): "
+                "no GitHub, o token tem de incluir este repositório com 'Contents: Read-only'.")
+    return f"{type(e).__name__}: {e}"
+
+
 def versao_remota() -> str:
     r = requests.get(f"{API.format(repo=config.AGENTE_REPO)}/commits/{config.DADOS_BRANCH}",
                      headers=_headers(), timeout=20)
