@@ -600,7 +600,19 @@ def page_desempenho():
 
     ev = evaluate(done).merge(done[["match_id", "kickoff", "day", "home", "away", "hg", "ag", "comp_name", "icon"]],
                               on="match_id")
+    stars = {r["match_id"]: best_pick(r) for _, r in done.iterrows()}
+    ev["estrela"] = ev["mercado"] == ev["match_id"].map(stars)
     hits, n = int(ev["acertou"].sum()), len(ev)
+    es = ev[ev["estrela"]]
+    if not es.empty:
+        eh = int(es["acertou"].sum())
+        st.markdown(
+            f"<div style='background:{GOLD_SOFT};border:1px solid {HOME};border-radius:12px;padding:14px 18px;"
+            f"margin-bottom:12px'><span style='font-size:1.05rem'>⭐ <b>Apostas com estrela</b> "
+            f"(a previsão mais segura de cada jogo)</span><br><span style='font-size:1.9rem;font-weight:700;"
+            f"color:{HOME}'>{eh}/{len(es)} · {eh / len(es):.0%}</span> "
+            f"<span class='muted'>· o modelo esperava {es['prob'].mean():.0%}</span></div>",
+            unsafe_allow_html=True)
     k = st.columns(3)
     with k[0].container(border=True):
         st.metric("✅ Acertámos", hits)
@@ -615,11 +627,13 @@ def page_desempenho():
         + f"<span class='muted'> · {done.shape[0]} jogos terminados · atualiza sozinho quando um jogo acaba</span>",
         unsafe_allow_html=True)
 
-    f1, f2 = st.columns([1.3, 3], vertical_alignment="bottom")
-    show = f1.segmented_control("Mostrar", ["Todas", "✅ Certas", "❌ Erradas"], default="Todas")
+    f1, f2 = st.columns([2, 3], vertical_alignment="bottom")
+    show = f1.segmented_control("Mostrar", ["Todas", "⭐ Estrelas", "✅ Certas", "❌ Erradas"], default="Todas")
     chosen = f2.pills("Mercados", kinds, format_func=PICK_NAMES.get, selection_mode="multi", default=kinds)
     sel = ev[ev["tipo"].isin(chosen or kinds)]
-    if show == "✅ Certas":
+    if show == "⭐ Estrelas":
+        sel = sel[sel["estrela"]]
+    elif show == "✅ Certas":
         sel = sel[sel["acertou"]]
     elif show == "❌ Erradas":
         sel = sel[~sel["acertou"]]
@@ -630,11 +644,14 @@ def page_desempenho():
     cols = st.columns(2)
     for i, mid in enumerate(order):
         g = sel[sel["match_id"] == mid]
-        g = g.assign(o=g["tipo"].map(KIND_ORDER.index)).sort_values("o")
+        g = g.assign(o=g["tipo"].map(KIND_ORDER.index) - 100 * g["estrela"]).sort_values("o")  # estrela primeiro
         r = g.iloc[0]
         lines = "".join(
-            f"<div style='padding:3px 0'>{'✅' if x.acertou else '❌'} {E(label(x.mercado, r['home'], r['away']))}"
-            f" <span class='muted'>· {PICK_NAMES[x.tipo]} · {x.prob:.0%}</span></div>" for x in g.itertuples())
+            (f"<div style='padding:4px 8px;margin:2px -8px;background:{GOLD_SOFT};border-left:3px solid {HOME};"
+             f"border-radius:6px;font-weight:600'>" if x.estrela else "<div style='padding:3px 0'>")
+            + f"{'✅' if x.acertou else '❌'} {'⭐ ' if x.estrela else ''}{E(label(x.mercado, r['home'], r['away']))}"
+            f" <span class='muted' style='font-weight:400'>· {PICK_NAMES[x.tipo]} · {x.prob:.0%}</span></div>"
+            for x in g.itertuples())
         with cols[i % 2].container(border=True):
             st.markdown(f"<span class='muted'>{r['icon']} {E(r['comp_name'])} · {day_label(r['day'])}</span>"
                         f"<div class='teams' style='margin:2px 0 6px'>{E(r['home'])} {int(r['hg'])}-{int(r['ag'])} "
