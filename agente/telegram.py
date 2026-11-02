@@ -220,7 +220,7 @@ def _multipla(s, titulo, partes, hoje, tipo):
 
 
 N_TARDIAS = 2      # dicas extra por dia para os jogos da noite, ~45 min antes do início, com os onzes já conhecidos
-N_MADRUGADA = 2    # dicas às 22h para os jogos entre as 00h e as 4h (Américas)
+N_MADRUGADA = 2    # dicas às 22h para os jogos entre as 00h e as 3h (Américas)
 ROTACAO = 5        # alterações no onze em relação ao jogo anterior a partir das quais não damos dica
 
 
@@ -295,7 +295,7 @@ def tardias(hoje: dt.date | None = None) -> int:
 
 
 def madrugada(hoje: dt.date | None = None) -> int:
-    """Às 22h: dicas para os jogos entre as 00h e as 4h (Brasileirão, MLS, Liga MX, Argentina)."""
+    """Às 22h: dicas para os jogos entre as 00h e as 3h (Brasileirão, MLS, Liga MX, Argentina)."""
     agora = pd.Timestamp.now()
     hoje = hoje or agora.date()
     if hoje == agora.date() and agora.hour < 21:
@@ -305,7 +305,7 @@ def madrugada(hoje: dt.date | None = None) -> int:
         return 0
     ja = {d["match_id"] for d in s["dicas"]}
     p = db.load_predictions(with_results=False)
-    p = p[(p["kickoff"].dt.date == hoje + dt.timedelta(days=1)) & (p["kickoff"].dt.hour < 4)
+    p = p[(p["kickoff"].dt.date == hoje + dt.timedelta(days=1)) & (p["kickoff"].dt.time <= dt.time(3, 0))
           & (p["kickoff"] > agora) & ~p["limited"].astype(bool) & ~p["match_id"].isin(ja)]
     cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])
     for prob, r, key in sorted(cands[:N_MADRUGADA], key=lambda x: x[1]["kickoff"]):

@@ -28,7 +28,7 @@ escreve um recap depois de cada jornada.
 ## Canal de Telegram
 - O bot publica no canal grátis: dicas do dia + múltipla (10h30), até 2 dicas tardias ~45 min antes dos jogos
   da noite com os onzes confirmados (não dá dica se uma equipa rodar 5+ jogadores), 2 dicas de madrugada às 22h
-  (jogos das 00h às 4h), GREEN/RED quando cada jogo acaba, o resumo do dia seguinte e o balanço à segunda-feira.
+  (jogos das 00h às 3h), GREEN/RED quando cada jogo acaba, o resumo do dia seguinte e o balanço à segunda-feira.
   Quem escreve ao bot em privado recebe o link do canal. Estado das dicas em `dados/telegram.json`.
 - Secrets do GitHub: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_GRATIS` (id do canal), e opcionais `AFILIADO_LINK`,
   `AFILIADO_CASA` (só casas com licença SRIJ).
