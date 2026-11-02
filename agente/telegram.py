@@ -314,6 +314,25 @@ def resultados() -> int:
     return n
 
 
+STAKE = 100  # simulação: 100 € em cada dica (e na múltipla), à odd publicada
+
+
+def _lucro(dicas: list, mult: list, by_id: dict) -> tuple[float, int]:
+    """Lucro simulado (€) e nº de apostas: green paga (odd - 1) × STAKE, red perde STAKE."""
+    total = sum((odd(d["odd_casa"], d["prob"]) - 1) * STAKE if d["resultado"] else -STAKE for d in dicas)
+    for m in mult:
+        om = 1.0
+        for i in m["partes"]:
+            if i in by_id:
+                om *= odd(by_id[i]["odd_casa"], by_id[i]["prob"])
+        total += (om - 1) * STAKE if m["resultado"] else -STAKE
+    return total, len(dicas) + len(mult)
+
+
+def _linha_lucro(total: float, n: int) -> str:
+    return f"💶 Simulação ({STAKE} € por aposta, {n} apostas): <b>{total:+.0f} €</b>"
+
+
 def resumo_dia(s: dict) -> bool:
     """Quando todas as dicas de um dia estão decididas: resumo curto (Greens e Reds; destaque se ≥ 80%)."""
     feitos = s.setdefault("resumos", [])
@@ -332,6 +351,7 @@ def resumo_dia(s: dict) -> bool:
         linhas.append(f"🟢 {g} Green" + (f" · 🔴 {len(do_dia) - g} Red" if g < len(do_dia) else ""))
         if mult and mult[0]["resultado"]:
             linhas.append("🎯 Múltipla: GREEN 💰")
+        linhas.append(_linha_lucro(*_lucro(do_dia, mult, {d["id"]: d for d in s["dicas"]})))
         send("\n".join(linhas) + _fim())
         feitos.append(dia)
         return True  # um por execução
@@ -356,10 +376,7 @@ def balanco(forcar: bool = False) -> bool:
         linhas.append(f"🔥 {certas / len(sem):.0%} de acerto na semana!")
     if mult:
         linhas.append(f"🎯 Múltiplas: {sum(m['resultado'] for m in mult)} Green em {len(mult)}")
-    com_odd = [d for d in sem if d.get("odd_casa")]
-    if com_odd:
-        lucro = sum((d["odd_casa"] - 1) if d["resultado"] else -1 for d in com_odd)
-        linhas.append(f"💶 Dicas com odd das casas: {lucro:+.1f} unidades em {len(com_odd)} apostas de 1 unidade")
+    linhas.append(_linha_lucro(*_lucro(sem, mult, {d["id"]: d for d in s["dicas"]})))
     linhas += ["", RODAPE]
     send("\n".join(linhas))
     s["balancos"].append(hoje.isoformat())
