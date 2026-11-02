@@ -63,7 +63,19 @@ RATING_LEAGUES = {
     "I2": {"name": "Serie B", "strength": -0.55},
 }
 
-ALL_LEAGUES = {**MAIN_LEAGUES, **RATING_LEAGUES}
+# Ligas das Américas (jogos à noite e de madrugada em Lisboa). O football-data.co.uk só tem golos e odds de
+# fecho (ficheiros new/<file>.csv, uma linha por jogo de todas as épocas): sem xG, cantos nem cartões.
+EXTRA_LEAGUES = {
+    "BRA": {"name": "Brasileirão", "country": "Brasil", "apif": 71, "strength": -0.30,
+            "fd": ("Brazil", "Serie A", "BRA")},
+    "ARG": {"name": "Liga Argentina", "country": "Argentina", "apif": 128, "strength": -0.35,
+            "fd": ("Argentina", "Liga Profesional", "ARG")},
+    "MEX": {"name": "Liga MX", "country": "México", "apif": 262, "strength": -0.35,
+            "fd": ("Mexico", "Liga MX", "MEX")},
+    "USA": {"name": "MLS", "country": "EUA", "apif": 253, "strength": -0.35, "fd": ("USA", "MLS", "USA")},
+}
+
+ALL_LEAGUES = {**MAIN_LEAGUES, **RATING_LEAGUES, **EXTRA_LEAGUES}
 
 # Força assumida para equipas sem dados (divisões inferiores, ligas pequenas)
 UNKNOWN_TEAM_STRENGTH = {"domestic_cup": -0.65, "europe": -0.50}
@@ -81,11 +93,13 @@ CUPS = {
     "UECL": {"name": "Liga Conferência", "apif": 848, "country": "Europa", "type": "europe"},
 }
 
-COMPETITIONS = {**{k: {**v, "type": "league", "league": k} for k, v in MAIN_LEAGUES.items()}, **CUPS}
+COMPETITIONS = {**{k: {**v, "type": "league", "league": k} for k, v in {**MAIN_LEAGUES, **EXTRA_LEAGUES}.items()},
+                **CUPS}
 
 # Identificadores das competições no ESPN (fonte grátis de jogos, resultados, cantos e odds)
 ESPN_SLUGS = {
     "P1": "por.1", "E0": "eng.1", "D1": "ger.1", "I1": "ita.1",
+    "BRA": "bra.1", "ARG": "arg.1", "MEX": "mex.1", "USA": "usa.1",
     "TP": "por.taca.portugal", "FAC": "eng.fa", "EFL": "eng.league_cup", "DFB": "ger.dfb_pokal",
     "CI": "ita.coppa_italia", "UCL": "uefa.champions", "UEL": "uefa.europa", "UECL": "uefa.europa.conf",
 }

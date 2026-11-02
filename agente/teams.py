@@ -32,7 +32,30 @@ ALIASES = {
     "feyenoord rotterdam": "Feyenoord", "kaa gent": "Gent", "nec nijmegen": "Nijmegen", "paris saint-germain": "Paris SG",
     "union st.-gilloise": "St. Gilloise", "heart of midlothian": "Hearts", "hamburg sv": "Hamburg",
     "sporting braga": "Sp Braga", "atletico de madrid": "Ath Madrid", "internazionale milano": "Inter",
+    # Américas (ESPN / API-Football -> football-data)
+    "red bull bragantino": "Bragantino", "rb bragantino": "Bragantino", "vasco da gama": "Vasco",
+    "flamengo": "Flamengo RJ", "botafogo": "Botafogo RJ", "atletico mineiro": "Atletico-MG",
+    "atletico-mg": "Atletico-MG", "athletico paranaense": "Athletico-PR", "athletico-pr": "Athletico-PR",
+    "chapecoense": "Chapecoense-SC", "vitoria": "Vitoria", "sao paulo": "Sao Paulo",
+    "atletico tucuman": "Atl. Tucuman", "belgrano (cordoba)": "Belgrano", "instituto (cordoba)": "Instituto",
+    "central cordoba (santiago del estero)": "Central Cordoba", "central cordoba de santiago": "Central Cordoba",
+    "deportivo riestra": "Dep. Riestra", "estudiantes de la plata": "Estudiantes L.P.", "estudiantes l.p.": "Estudiantes L.P.",
+    "gimnasia la plata": "Gimnasia L.P.", "gimnasia l.p.": "Gimnasia L.P.", "independiente rivadavia": "Ind. Rivadavia",
+    "newell's old boys": "Newells Old Boys", "talleres": "Talleres Cordoba", "union santa fe": "Union de Santa Fe",
+    "sarmiento": "Sarmiento Junin", "estudiantes de rio cuarto": "Estudiantes Rio Cuarto",
+    "gimnasia mendoza": "Gimnasia Mendoza", "gimnasia y esgrima de mendoza": "Gimnasia Mendoza",
+    "america": "Club America", "club america": "Club America", "atletico de san luis": "Atl. San Luis",
+    "atletico san luis": "Atl. San Luis", "guadalajara": "Guadalajara Chivas", "chivas": "Guadalajara Chivas",
+    "leon": "Club Leon", "pumas unam": "UNAM Pumas", "u.n.a.m. - pumas": "UNAM Pumas", "tijuana": "Club Tijuana",
+    "club queretaro": "Queretaro", "fc juarez": "Juarez", "tigres": "Tigres UANL",
+    "la galaxy": "Los Angeles Galaxy", "lafc": "Los Angeles FC", "red bull new york": "New York Red Bulls",
+    "new york city fc": "New York City", "atlanta united": "Atlanta Utd", "atlanta united fc": "Atlanta Utd",
+    "atletico paranaense": "Athletico-PR", "belgrano cordoba": "Belgrano", "instituto cordoba": "Instituto",
+    "d.c. united": "DC United", "st. louis city sc": "St. Louis City", "montreal impact": "CF Montreal",
 }
+
+# nomes que dependem da liga (o mesmo nome é outra equipa noutra liga)
+LEAGUE_ALIASES = {"MEX": {"santos": "Santos Laguna"}}
 
 # clubes diferentes que partilham a cidade com uma equipa conhecida
 NO_MATCH = {"bristol rovers", "oxford city", "sheffield wednesday", "notts county", "nottingham",
@@ -67,8 +90,11 @@ class TeamMatcher:
             shorts.setdefault(_short(t), []).append(t)
         self._by_short = {s: ts[0] for s, ts in shorts.items() if len(ts) == 1 and len(s) >= 4}
 
-    def match(self, name: str) -> str | None:
+    def match(self, name: str, comp: str | None = None) -> str | None:
         n = norm(name)
+        la = LEAGUE_ALIASES.get(comp, {})
+        if n in la and la[n] in self.known:
+            return la[n]
         if n in NO_MATCH:
             return None
         if n in ALIASES and ALIASES[n] in self.known:

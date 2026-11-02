@@ -25,7 +25,7 @@ CASA = os.getenv("AFILIADO_CASA", "").strip()
 N_DICAS = 4                 # dicas por dia no canal grátis
 P_MIN, P_MAX = 0.55, 0.72   # probabilidade da dica: nem moeda ao ar, nem odd abaixo de ~1.40
 MERCADOS = ("combinada", "golos", "ambas", "resultado", "dupla", "cartoes", "cantos")
-FLAG = {"P1": "🇵🇹", "E0": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "D1": "🇩🇪", "I1": "🇮🇹", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
+FLAG = {"P1": "🇵🇹", "E0": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "D1": "🇩🇪", "I1": "🇮🇹", "BRA": "🇧🇷", "ARG": "🇦🇷", "MEX": "🇲🇽", "USA": "🇺🇸", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
         "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆"}
 DIAS = ["SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO", "DOMINGO"]
 RODAPE = "🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias"
@@ -98,7 +98,7 @@ def _razoes(r, key) -> list[str]:
         x = f.get(lado) or {}
         if x.get("jogos"):
             v = x["seq"].count("V")
-            xg = f", xG {x['xg']:.1f} contra {x['xga']:.1f}" if x.get("xg") is not None else ""
+            xg = f", xG {x['xg']:.1f} contra {x['xga']:.1f}" if x.get("xg") else ""  # Américas: sem xG
             out.append(f"📊 {E(team)}: {v} {'vitória' if v == 1 else 'vitórias'} nos últimos {x['jogos']} jogos{xg}")
     aus = {}
     for a in r["injuries"] or []:
@@ -189,35 +189,100 @@ def dicas(hoje: dt.date | None = None) -> int:
     return len(novas)
 
 
-N_TARDIAS = 2  # dicas extra para os jogos da noite (publicadas com as previsões das 17h30)
+N_TARDIAS = 2      # dicas extra por dia para os jogos da noite, ~45 min antes do início, com os onzes já conhecidos
+N_MADRUGADA = 2    # dicas às 22h para os jogos entre as 00h e as 4h (Américas)
+ROTACAO = 5        # alterações no onze em relação ao jogo anterior a partir das quais não damos dica
+
+
+def _registar(s, r, key, prob, mid, dia, tipo) -> None:
+    s["dicas"].append({"id": f"{r['match_id']}|{key}", "match_id": r["match_id"], "key": key,
+                       "texto": texto(key, r["home"], r["away"]), "jogo": f"{r['home']} x {r['away']}",
+                       "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": dia,
+                       "message_id": mid, "resultado": None, "tipo": tipo})
+
+
+def onzes(r) -> dict | None:
+    """Onzes confirmados (API-Football) e alterações de cada equipa face ao jogo anterior.
+    None se ainda não saíram ou não há API."""
+    from agente.sources import api_football as apif
+    if not (apif.enabled() and pd.notna(r.get("apif_id"))):
+        return None
+    try:
+        lu = apif.lineups(int(r["apif_id"]))
+        if len(lu) < 2:
+            return None
+        out = {}
+        for team in lu:
+            xi = {p["player"]["id"] for p in team.get("startXI", [])}
+            prev = apif.last_fixture(team["team"]["id"])
+            antes = set()
+            if prev:
+                for t in apif.lineups(prev[0]["fixture"]["id"]):
+                    if t["team"]["id"] == team["team"]["id"]:
+                        antes = {p["player"]["id"] for p in t.get("startXI", [])}
+            out[team["team"]["name"]] = len(xi - antes) if antes else None
+        return out
+    except Exception as e:  # quota, rede... publica sem onzes
+        print(f"  [onzes] {e}")
+        return None
 
 
 def tardias(hoje: dt.date | None = None) -> int:
-    """Depois das 17h: dicas para os jogos de hoje a partir das 19h que ainda não tiveram dica (previsões
-    acabadas de atualizar, com as notícias do dia)."""
+    """Corre de 30 em 30 min: para jogos de hoje a partir das 18h que começam daqui a 20-75 min e ainda não
+    tiveram dica, espera pelos onzes (até ~35 min antes) e publica, exceto se uma equipa rodar o onze."""
     agora = pd.Timestamp.now()
     hoje = hoje or agora.date()
-    if hoje == agora.date() and agora.hour < 17:
+    s = _load()
+    feitas = sum(1 for d in s["dicas"] if d["data"] == hoje.isoformat() and (d.get("tipo") == "tardia" or d.get("tardia")))
+    if feitas >= N_TARDIAS:
+        return 0
+    ignorados = s.setdefault("ignorados", [])
+    ja = {d["match_id"] for d in s["dicas"]} | set(ignorados)
+    p = db.load_predictions(with_results=False)
+    p = p[(p["kickoff"] > agora + pd.Timedelta(minutes=20)) & (p["kickoff"] < agora + pd.Timedelta(minutes=75))
+          & (p["kickoff"].dt.date == hoje) & (p["kickoff"].dt.hour >= 18) & ~p["limited"].astype(bool)
+          & ~p["match_id"].isin(ja)]
+    cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])
+    n = 0
+    for prob, r, key in cands[:N_TARDIAS - feitas]:
+        on = onzes(r)
+        falta = (r["kickoff"] - agora).total_seconds() / 60
+        if on is None and falta > 35:
+            continue  # os onzes ainda não saíram: tenta na próxima execução
+        if on and any(v is not None and v >= ROTACAO for v in on.values()):
+            print(f"  {r['home']} x {r['away']}: onze muito rodado {on}, sem dica")
+            ignorados.append(r["match_id"])
+            continue
+        extra = ""
+        if on:
+            mud = [f"{E(t)} {v} {'alteração' if v == 1 else 'alterações'}" for t, v in on.items() if v]
+            extra = "📋 Onzes confirmados" + (f" ({'; '.join(mud)})" if mud else " (sem alterações)") + "\n"
+        msg = mensagem_dica(r, key, prob).replace("\n\n📊", f"\n\n{extra}📊", 1)
+        _registar(s, r, key, prob, send("🌙 <b>DICA TARDIA</b>\n\n" + msg), hoje.isoformat(), "tardia")
+        n += 1
+    _save(s)
+    return n
+
+
+def madrugada(hoje: dt.date | None = None) -> int:
+    """Às 22h: dicas para os jogos entre as 00h e as 4h (Brasileirão, MLS, Liga MX, Argentina)."""
+    agora = pd.Timestamp.now()
+    hoje = hoje or agora.date()
+    if hoje == agora.date() and agora.hour < 21:
         return 0
     s = _load()
-    if any(d["data"] == hoje.isoformat() and d.get("tardia") for d in s["dicas"]):
-        print("Dicas tardias de hoje já publicadas.")
+    if any(d["data"] == hoje.isoformat() and d.get("tipo") == "madrugada" for d in s["dicas"]):
         return 0
     ja = {d["match_id"] for d in s["dicas"]}
     p = db.load_predictions(with_results=False)
-    p = p[(p["kickoff"] > agora + pd.Timedelta(minutes=30)) & (p["kickoff"].dt.date == hoje)
-          & (p["kickoff"].dt.hour >= 19) & ~p["limited"].astype(bool) & ~p["match_id"].isin(ja)]
-    cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])[:N_TARDIAS]
-    novas = []
-    for prob, r, key in sorted(cands, key=lambda x: x[1]["kickoff"]):
-        mid = send("🌙 <b>DICA TARDIA</b>\n\n" + mensagem_dica(r, key, prob))
-        novas.append({"id": f"{r['match_id']}|{key}", "match_id": r["match_id"], "key": key,
-                      "texto": texto(key, r["home"], r["away"]), "jogo": f"{r['home']} x {r['away']}",
-                      "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": hoje.isoformat(),
-                      "message_id": mid, "resultado": None, "tardia": True})
-    s["dicas"] += novas
+    p = p[(p["kickoff"].dt.date == hoje + dt.timedelta(days=1)) & (p["kickoff"].dt.hour < 4)
+          & (p["kickoff"] > agora) & ~p["limited"].astype(bool) & ~p["match_id"].isin(ja)]
+    cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])
+    for prob, r, key in sorted(cands[:N_MADRUGADA], key=lambda x: x[1]["kickoff"]):
+        _registar(s, r, key, prob, send("🌙 <b>MADRUGADA</b>\n\n" + mensagem_dica(r, key, prob)),
+                  hoje.isoformat(), "madrugada")
     _save(s)
-    return len(novas)
+    return len(cands[:N_MADRUGADA])
 
 
 # ------------------------------------------------------------------ resultados e balanço
@@ -259,7 +324,7 @@ def resumo_dia(s: dict) -> bool:
     feitos = s.setdefault("resumos", [])
     agora = dt.datetime.now()
     for dia in sorted({d["data"] for d in s["dicas"]} - set(feitos)):
-        if dia == agora.date().isoformat() and agora.hour < 18:  # ainda podem sair dicas tardias
+        if dia >= agora.date().isoformat():  # o dia só fecha depois das dicas tardias e de madrugada
             continue
         do_dia = [d for d in s["dicas"] if d["data"] == dia]
         mult = [m for m in s["multiplas"] if m["data"] == dia]

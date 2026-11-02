@@ -130,3 +130,12 @@ def parse_odds(resp: list) -> dict:
                     if k:
                         acc.setdefault(k, []).append(odd)
     return {k: round(sum(v) / len(v), 2) for k, v in acc.items()}
+
+
+def lineups(fixture_id: int) -> list:
+    """Onzes do jogo (saem ~20-40 min antes do início; antes disso vem vazio)."""
+    return get("fixtures/lineups", {"fixture": fixture_id}, ttl_hours=0.2)
+
+
+def last_fixture(team_id: int) -> list:
+    return get("fixtures", {"team": team_id, "last": 1}, ttl_hours=6)

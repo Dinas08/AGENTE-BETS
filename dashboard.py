@@ -60,9 +60,9 @@ table.mk td.num, table.mk th.num {{text-align:right; font-variant-numeric:tabula
 
 DAYS = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
 # (o Windows não desenha emojis de bandeiras, por isso as ligas usam a bola)
-COMP_ICON = {"P1": "⚽", "E0": "⚽", "D1": "⚽", "I1": "⚽", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
+COMP_ICON = {"P1": "⚽", "E0": "⚽", "D1": "⚽", "I1": "⚽", "BRA": "🇧🇷", "ARG": "🇦🇷", "MEX": "🇲🇽", "USA": "🇺🇸", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
              "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆"}
-COMP_ORDER = ["UCL", "UEL", "UECL", "P1", "E0", "D1", "I1", "TP", "TL", "FAC", "EFL", "DFB", "CI"]
+COMP_ORDER = ["UCL", "UEL", "UECL", "P1", "E0", "D1", "I1", "BRA", "ARG", "MEX", "USA", "TP", "TL", "FAC", "EFL", "DFB", "CI"]
 MARKET_TYPES = {
     "Resultado": ["1", "X", "2"],
     "Dupla hipótese": ["1X", "X2", "12"],

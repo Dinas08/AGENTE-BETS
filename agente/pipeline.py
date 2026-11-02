@@ -94,7 +94,7 @@ def collect_fixtures(matcher: TeamMatcher, today: dt.date) -> tuple[list[dict], 
             # jogos de hoje/ontem mudam (resultados): cache curta
             fresh = 0.2 if day >= today - dt.timedelta(days=1) and day <= today else None
             for ev in espn.events(c["espn"], day, ttl_hours=fresh):
-                home, away = matcher.match(ev["home"]), matcher.match(ev["away"])
+                home, away = matcher.match(ev["home"], comp), matcher.match(ev["away"], comp)
                 unmatched |= {n for n, m in ((ev["home"], home), (ev["away"], away)) if m is None}
                 home, away = home or ev["home"], away or ev["away"]
                 ko = ev["kickoff"]
@@ -130,7 +130,7 @@ def collect_fixtures(matcher: TeamMatcher, today: dt.date) -> tuple[list[dict], 
             for f in resp:
                 ko = dt.datetime.fromisoformat(f["fixture"]["date"]).replace(tzinfo=None)
                 hn, an = f["teams"]["home"]["name"], f["teams"]["away"]["name"]
-                home, away = matcher.match(hn) or hn, matcher.match(an) or an
+                home, away = matcher.match(hn, comp) or hn, matcher.match(an, comp) or an
                 mid = match_id(ko, comp, home, away)
                 status = f["fixture"]["status"]["short"]
                 if status in FINISHED:
@@ -140,8 +140,7 @@ def collect_fixtures(matcher: TeamMatcher, today: dt.date) -> tuple[list[dict], 
                 if ko.date() < today or status in {"CANC", "PST", "ABD", "AWD", "WO"}:
                     continue
                 # junta com o jogo do football-data se já existir (mesma data e equipas)
-                existing = next((g for g in games.values() if g["comp"] == comp and g["home"] == home
-                                 and g["away"] == away and g["kickoff"].date() == ko.date()), None)
+                existing = find_existing(comp, home, away, ko.date())
                 if existing:
                     existing.update({"apif_id": f["fixture"]["id"], "round": f["league"].get("round", ""),
                                      "kickoff": ko})

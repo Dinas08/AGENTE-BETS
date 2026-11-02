@@ -143,6 +143,9 @@ class Predictor:
         for kind in ("goals", "corners", "cards"):
             if same:
                 s: Strengths = getattr(self.models[self.team_div[home]], kind)
+                if s is None and kind != "goals":  # liga sem dados de cantos/cartões (Américas): sem mercado
+                    out[kind] = None
+                    continue
                 if s is not None and s.has(home) and s.has(away):
                     ha = 0.0 if neutral else s.home
                     out[kind] = (np.exp(s.mu + ha + s.att[home] - s.dfn[away]),

@@ -42,5 +42,5 @@ jobs:
       - run: python run.py tudo
       - name: Telegram (dicas do dia, uma vez por dia; balanço à segunda)
         continue-on-error: true
-        run: python run.py telegram dicas; python run.py telegram tardias; python run.py telegram balanco
+        run: python run.py telegram dicas; python run.py telegram balanco
       - run: bash scripts/guardar_dados.sh "previsões" ours

@@ -1,7 +1,7 @@
 # Agente Bets — instruções para o agente (Claude)
 
-Projeto de previsões de futebol (Liga Portugal, Premier League, Bundesliga, Serie A, taças nacionais e
-provas europeias). A parte estatística é Python; **tu és a parte qualitativa**: notícias, lesões,
+Projeto de previsões de futebol (Liga Portugal, Premier League, Bundesliga, Serie A, taças nacionais,
+provas europeias e, à noite, Brasileirão, Liga Argentina, Liga MX e MLS). A parte estatística é Python; **tu és a parte qualitativa**: notícias, lesões,
 instabilidade dos clubes e a análise pós-jornada. Escreve sempre em português de Portugal.
 
 Python: `.venv\Scripts\python.exe` (Windows). Define `$env:PYTHONIOENCODING="utf-8"` antes de correr.
@@ -56,6 +56,7 @@ A API-Football grátis tem 100 pedidos/dia. **Nunca** corras `prever`/`tudo` em 
    - Bundesliga: Kicker, Sport1, Bundesliga.com ("Verletzte", "Ausfälle").
    - Serie A: Gazzetta dello Sport, Corriere dello Sport, Sky Sport Italia ("infortunati", "probabili formazioni").
    - Provas europeias: as mesmas, mais UEFA.com.
+   - Américas (só se sobrar tempo; prioridade baixa): ge.globo, Olé, ESPN Deportes, MLSsoccer.com.
    Para poupar pesquisas, procura primeiro resumos por jornada ("lesionados e castigados jornada X Liga Portugal",
    "Premier League injury news gameweek X") e depois só os clubes que faltarem.
    Regista **todos** os ausentes relevantes em `ausentes` (mesmo sem efeito nos golos), com a fonte.

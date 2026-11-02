@@ -1,6 +1,7 @@
 # ⚽ Agente Bets
 
-Previsões para a Liga Portugal, Premier League, Bundesliga e Serie A, taças nacionais e provas europeias:
+Previsões para a Liga Portugal, Premier League, Bundesliga e Serie A, taças nacionais, provas europeias e
+ligas das Américas (Brasileirão, Liga Argentina, Liga MX e MLS; aqui só golos e resultado, sem cantos nem cartões):
 1X2, dupla hipótese, golos (+/-), ambas marcam, resultado exato, cantos, cartões e combinadas, com
 odds justas e odds das casas. Um agente (Claude) junta notícias, lesões e instabilidade dos clubes e
 escreve um recap depois de cada jornada.
@@ -25,8 +26,10 @@ escreve um recap depois de cada jornada.
 - Alterações ao código: faz-se no PC e `git push` para o `main`; o Streamlit atualiza sozinho.
 
 ## Canal de Telegram
-- O bot publica no canal grátis: dicas do dia + múltipla (com as Previsões das 10h30), ✅/❌ quando cada jogo
-  acaba (com os Resultados) e o balanço à segunda-feira. Estado das dicas em `dados/telegram.json`.
+- O bot publica no canal grátis: dicas do dia + múltipla (10h30), até 2 dicas tardias ~45 min antes dos jogos
+  da noite com os onzes confirmados (não dá dica se uma equipa rodar 5+ jogadores), 2 dicas de madrugada às 22h
+  (jogos das 00h às 4h), GREEN/RED quando cada jogo acaba, o resumo do dia seguinte e o balanço à segunda-feira.
+  Quem escreve ao bot em privado recebe o link do canal. Estado das dicas em `dados/telegram.json`.
 - Secrets do GitHub: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_GRATIS` (id do canal), e opcionais `AFILIADO_LINK`,
   `AFILIADO_CASA` (só casas com licença SRIJ).
 - Testar: Actions → "Testar Telegram". Local: `run.py telegram dicas AAAA-MM-DD` (sem token = só mostra).

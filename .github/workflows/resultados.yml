@@ -17,6 +17,9 @@ jobs:
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_GRATIS: ${{ secrets.TELEGRAM_CHAT_GRATIS }}
+      API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      AFILIADO_LINK: ${{ secrets.AFILIADO_LINK }}
+      AFILIADO_CASA: ${{ secrets.AFILIADO_CASA }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
@@ -36,7 +39,8 @@ jobs:
           cache-dependency-path: requirements-core.txt
       - run: pip install -q -r requirements-core.txt
       - run: python run.py auto && tail -n 1 dados/auto.log
-      - name: Telegram (✅/❌ das dicas que acabaram)
+      - name: Telegram (Green/Red, dicas tardias com onzes, madrugada às 22h, mensagens privadas)
         continue-on-error: true
-        run: python run.py telegram resultados; python run.py telegram privados
+        run: |
+          for c in resultados tardias madrugada privados; do python run.py telegram $c || echo "telegram $c falhou"; done
       - run: bash scripts/guardar_dados.sh "resultados" ours
