@@ -38,5 +38,5 @@ jobs:
       - run: python run.py auto && tail -n 1 dados/auto.log
       - name: Telegram (✅/❌ das dicas que acabaram)
         continue-on-error: true
-        run: python run.py telegram resultados
+        run: python run.py telegram resultados; python run.py telegram privados
       - run: bash scripts/guardar_dados.sh "resultados" ours

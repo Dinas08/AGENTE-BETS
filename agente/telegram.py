@@ -28,7 +28,7 @@ MERCADOS = ("combinada", "golos", "ambas", "resultado", "dupla", "cartoes", "can
 FLAG = {"P1": "🇵🇹", "E0": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "D1": "🇩🇪", "I1": "🇮🇹", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
         "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆"}
 DIAS = ["SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO", "DOMINGO"]
-RODAPE = "🔞 +18 | Joga com responsabilidade | Probabilidades do modelo, não são garantias"
+RODAPE = "🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias"
 E = html.escape
 
 
@@ -119,6 +119,15 @@ def _fim() -> str:
     return (f"\n{_link()}" if LINK else "") + f"\n\n{RODAPE}"
 
 
+def odd(odd_casa, p) -> float:
+    """Odd a mostrar: a das casas quando há; senão a odd justa do modelo."""
+    return odd_casa or 1 / p
+
+
+def linha_odd(odd_casa, p) -> str:
+    return f"💰 Odd: <b>{odd(odd_casa, p):.2f}</b>" + ("" if odd_casa else " (mínima com valor)")
+
+
 def mensagem_dica(r, key, p) -> str:
     ko = r["kickoff"]
     odd_casa = (r["odds"] or {}).get(key)
@@ -127,8 +136,7 @@ def mensagem_dica(r, key, p) -> str:
         f"{E(r['home'])} x {E(r['away'])} | {ko:%Hh%M}",
         "",
         f"✅ <b>Dica: {E(texto(key, r['home'], r['away']))}</b>",
-        f"📈 Probabilidade do agente: {p:.0%} (odd justa {1 / p:.2f}"
-        + (f"; casas ≈ {odd_casa:.2f}" if odd_casa else "") + ")",
+        linha_odd(odd_casa, p),
         "",
         *_razoes(r, key),
     ]
@@ -170,9 +178,11 @@ def dicas(hoje: dt.date | None = None) -> int:
         if pm < 0.22 and len(partes) == 3:  # 3 pernas demasiado arriscadas: fica com as 2 mais seguras
             partes = partes[:2]
             pm = partes[0]["prob"] * partes[1]["prob"]
-        txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} ({d['prob']:.0%})" for d in partes)
-        msg = (f"🎯 <b>MÚLTIPLA DO DIA</b>\n\n{txt}\n\n📈 Probabilidade do agente: {pm:.0%} "
-               f"(odd justa {1 / pm:.2f})" + _fim())
+        om = 1.0
+        for d in partes:
+            om *= odd(d["odd_casa"], d["prob"])
+        txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} (@{odd(d['odd_casa'], d['prob']):.2f})" for d in partes)
+        msg = f"🎯 <b>MÚLTIPLA DO DIA</b>\n\n{txt}\n\n💰 Odd total: <b>{om:.2f}</b>" + _fim()
         s["multiplas"].append({"data": hoje.isoformat(), "partes": [d["id"] for d in partes], "prob": round(pm, 4),
                                "message_id": send(msg), "resultado": None})
     _save(s)
@@ -197,7 +207,7 @@ def resultados() -> int:
         if ok is None:
             continue
         d["resultado"] = ok
-        send(f"{'✅ Certo' if ok else '❌ Falhou'}: {E(d['texto'])}\n{E(r['home'])} {int(r['hg'])}-{int(r['ag'])} "
+        send(f"{'✅ <b>GREEN</b>' if ok else '❌ RED'}: {E(d['texto'])}\n{E(r['home'])} {int(r['hg'])}-{int(r['ag'])} "
              f"{E(r['away'])}", reply_to=d["message_id"])
         n += 1
     by_id = {d["id"]: d for d in s["dicas"]}
@@ -206,10 +216,32 @@ def resultados() -> int:
             res = [by_id[i]["resultado"] for i in m["partes"] if i in by_id]
             if False in res or (res and None not in res):
                 m["resultado"] = False not in res
-                send(f"{'✅ Múltipla certa!' if m['resultado'] else '❌ Múltipla falhada'} "
-                     f"({sum(x is True for x in res)}/{len(res)} pernas certas)", reply_to=m["message_id"])
+                send("✅ <b>GREEN NA MÚLTIPLA!</b> 💰" if m["resultado"] else
+                     f"❌ RED na múltipla ({sum(x is True for x in res)}/{len(res)} pernas)", reply_to=m["message_id"])
+    resumo_dia(s)
     _save(s)
     return n
+
+
+def resumo_dia(s: dict) -> bool:
+    """Quando todas as dicas de um dia estão decididas: resumo curto (Greens e Reds; destaque se ≥ 80%)."""
+    feitos = s.setdefault("resumos", [])
+    for dia in sorted({d["data"] for d in s["dicas"]} - set(feitos)):
+        do_dia = [d for d in s["dicas"] if d["data"] == dia]
+        mult = [m for m in s["multiplas"] if m["data"] == dia]
+        if any(x["resultado"] is None for x in do_dia + mult):
+            continue
+        g = sum(d["resultado"] for d in do_dia)
+        linhas = [f"📊 <b>RESUMO DE {dt.date.fromisoformat(dia):%d/%m}</b>", ""]
+        if g / len(do_dia) >= 0.8:
+            linhas.append(f"🔥 <b>DIA DE {g / len(do_dia):.0%} DE ACERTO!</b>")
+        linhas.append(f"🟢 {g} Green" + (f" · 🔴 {len(do_dia) - g} Red" if g < len(do_dia) else ""))
+        if mult and mult[0]["resultado"]:
+            linhas.append("🎯 Múltipla: GREEN 💰")
+        send("\n".join(linhas) + _fim())
+        feitos.append(dia)
+        return True  # um por execução
+    return False
 
 
 def balanco(forcar: bool = False) -> bool:
@@ -223,19 +255,55 @@ def balanco(forcar: bool = False) -> bool:
     if not sem:
         return False
     certas = sum(d["resultado"] for d in sem)
-    esperado = sum(d["prob"] for d in sem)
     mult = [m for m in s["multiplas"] if ini <= m["data"] < hoje.isoformat() and m["resultado"] is not None]
     linhas = [f"📋 <b>BALANÇO DA SEMANA</b> ({(hoje - dt.timedelta(days=7)):%d/%m} – {(hoje - dt.timedelta(days=1)):%d/%m})",
-              "", f"✅ {certas} certas | ❌ {len(sem) - certas} falhadas ({certas / len(sem):.0%})",
-              f"📈 O modelo esperava {esperado:.1f} certas em {len(sem)}"]
+              "", f"🟢 {certas} Green · 🔴 {len(sem) - certas} Red"]
+    if certas / len(sem) >= 0.8:
+        linhas.append(f"🔥 {certas / len(sem):.0%} de acerto na semana!")
     if mult:
-        linhas.append(f"🎯 Múltiplas: {sum(m['resultado'] for m in mult)}/{len(mult)} certas")
+        linhas.append(f"🎯 Múltiplas: {sum(m['resultado'] for m in mult)} Green em {len(mult)}")
     com_odd = [d for d in sem if d.get("odd_casa")]
     if com_odd:
         lucro = sum((d["odd_casa"] - 1) if d["resultado"] else -1 for d in com_odd)
         linhas.append(f"💶 Dicas com odd das casas: {lucro:+.1f} unidades em {len(com_odd)} apostas de 1 unidade")
-    linhas += ["", "Publicamos todas as dicas, certas e erradas.", "", RODAPE]
+    linhas += ["", RODAPE]
     send("\n".join(linhas))
     s["balancos"].append(hoje.isoformat())
     _save(s)
     return True
+
+
+# ------------------------------------------------------------------ mensagens privadas ao bot
+
+def link_canal() -> str | None:
+    """Link público do canal grátis (pelo @ do canal ou pelo link de convite)."""
+    r = requests.get(f"https://api.telegram.org/bot{TOKEN}/getChat", params={"chat_id": CHAT}, timeout=30).json()
+    c = r.get("result") or {}
+    return f"https://t.me/{c['username']}" if c.get("username") else c.get("invite_link")
+
+
+def privados() -> int:
+    """Responde a quem escreve ao bot em privado com o link do canal grátis. Só guarda a posição da fila
+    (update_id), nunca nomes nem ids de pessoas."""
+    if ensaio():
+        return 0
+    s = _load()
+    r = requests.get(f"https://api.telegram.org/bot{TOKEN}/getUpdates",
+                     params={"offset": s.get("offset", 0), "timeout": 0,
+                             "allowed_updates": json.dumps(["message"])}, timeout=30).json()
+    ups = r.get("result", [])
+    if not ups:
+        return 0
+    link = link_canal()
+    n = 0
+    for u in ups:
+        m = u.get("message") or {}
+        if (m.get("chat") or {}).get("type") == "private" and link:
+            txt = ("👋 Bem-vindo!\n\nAs dicas grátis do dia, a múltipla e os Greens saem todos os dias no canal:\n"
+                   f"👉 {link}\n\n{RODAPE}")
+            requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage",
+                          json={"chat_id": m["chat"]["id"], "text": txt, "disable_web_page_preview": True}, timeout=30)
+            n += 1
+    s["offset"] = ups[-1]["update_id"] + 1
+    _save(s)
+    return n
