@@ -805,6 +805,94 @@ def run_and_log(fn):
     return buf.getvalue()
 
 
+def page_canal():
+    from agente import telegram as tg
+    st.title("Canal")
+    st.caption("As dicas e múltiplas que o bot publica no Telegram: manhã (10h30), tardias (~45 min antes dos jogos "
+               "da noite, com os onzes), madrugada (22h, jogos das 00h às 3h). Simulação: 100 € por aposta.")
+    path = config.DATA_DIR / "telegram.json"
+    s = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    if not s.get("dicas"):
+        empty_state("O bot ainda não publicou dicas.", "📭")
+        return
+    df = load()
+    rows = df.set_index("match_id") if not df.empty else pd.DataFrame()
+    by_id = {d["id"]: d for d in s["dicas"]}
+
+    def estado(match_id, key, resultado=None):
+        r = rows.loc[match_id] if match_id in rows.index else None
+        if resultado is None and r is not None and pd.notna(r["hg"]):
+            resultado = outcome(key, r)
+        placar = f"{int(r['hg'])}-{int(r['ag'])}" if r is not None and pd.notna(r["hg"]) else ""
+        return resultado, r, placar
+
+    def badge(res):
+        return ("<b style='color:%s'>✅ GREEN</b>" % GOOD if res else "<b style='color:%s'>❌ RED</b>" % BAD) \
+            if res is not None else "<span class='muted'>⏳ por jogar</span>"
+
+    fechadas = [d for d in s["dicas"] if d["resultado"] is not None]
+    mfechadas = [m for m in s["multiplas"] if m["resultado"] is not None]
+    g = sum(d["resultado"] for d in fechadas)
+    total, n = tg._lucro(fechadas, mfechadas, by_id)
+    k = st.columns(4)
+    with k[0].container(border=True):
+        st.metric("🟢 Green", g)
+    with k[1].container(border=True):
+        st.metric("🔴 Red", len(fechadas) - g)
+    with k[2].container(border=True):
+        st.metric("Taxa de acerto", f"{g / len(fechadas):.0%}" if fechadas else "—")
+    with k[3].container(border=True):
+        st.metric("Simulação (100 €/aposta)", f"{total:+.0f} €", help=f"{n} apostas de 100 € à odd publicada")
+
+    dias = sorted({d["data"] for d in s["dicas"]}, reverse=True)
+    dia = st.pills("Dia", dias, default=dias[0], format_func=lambda d: day_label(dt.date.fromisoformat(d))) or dias[0]
+    do_dia = [d for d in s["dicas"] if d["data"] == dia]
+    mult = [m for m in s["multiplas"] if m["data"] == dia]
+    dt_, dm_ = [d for d in do_dia if d["resultado"] is not None], [m for m in mult if m["resultado"] is not None]
+    if dt_ or dm_:
+        t, n = tg._lucro(dt_, dm_, by_id)
+        st.markdown(f"<span class='chip'>🟢 {sum(d['resultado'] for d in dt_)} Green · 🔴 "
+                    f"{sum(not d['resultado'] for d in dt_)} Red</span><span class='chip'>💶 {t:+.0f} € em {n} "
+                    f"{'aposta' if n == 1 else 'apostas'} de 100 €</span>", unsafe_allow_html=True)
+
+    nomes = {None: "☀️ Dicas da manhã", "tardia": "🌙 Dicas tardias", "madrugada": "🌙 Madrugada"}
+    for tipo, nome in nomes.items():
+        grupo = [d for d in do_dia if (d.get("tipo") or ("tardia" if d.get("tardia") else None)) == tipo]
+        if not grupo:
+            continue
+        st.subheader(nome, divider="gray")
+        cols = st.columns(2)
+        for i, d in enumerate(grupo):
+            res, r, placar = estado(d["match_id"], d["key"], d["resultado"])
+            cab = (f"{COMP_ICON.get(r['comp'], '⚽')} {E(r['comp_name'])} · {r['kickoff']:%d/%m %H:%M}"
+                   if r is not None else "")
+            with cols[i % 2].container(border=True):
+                st.markdown(f"<span class='muted'>{cab}</span><div class='teams'>{E(d['jogo'])} "
+                            f"<span class='muted'>{placar}</span></div>"
+                            f"<div class='pick' style='margin:4px 0'>⭐ {E(d['texto'])} · @{tg.odd(d['odd_casa'], d['prob']):.2f}"
+                            f"</div>{badge(res)}", unsafe_allow_html=True)
+
+    if mult:
+        st.subheader("🎯 Múltiplas", divider="gray")
+        cols = st.columns(2)
+        for i, m in enumerate(mult):
+            pernas = m.get("pernas") or [by_id[x] for x in m["partes"] if x in by_id]
+            linhas = ""
+            for pe in pernas:
+                res, r, placar = estado(pe["match_id"], pe["key"], by_id.get(pe["id"], {}).get("resultado"))
+                txt = by_id[pe["id"]]["texto"] if pe["id"] in by_id else (
+                    label(pe["key"], r["home"], r["away"]) if r is not None else pe["key"])
+                jogo = f"{r['home']} x {r['away']}" if r is not None else pe["match_id"]
+                ic = "✅" if res else ("❌" if res is False else "⏳")
+                linhas += (f"<div style='padding:3px 0'>{ic} {E(jogo)}: {E(txt)} "
+                           f"<span class='muted'>@{tg.odd(pe['odd_casa'], pe['prob']):.2f} {placar}</span></div>")
+            om = tg._prod(tg.odd(pe["odd_casa"], pe["prob"]) for pe in pernas)
+            nome = "🚀 Múltipla turbo" if m.get("tipo") == "turbo" else "🎯 Múltipla do dia"
+            with cols[i % 2].container(border=True):
+                st.markdown(f"<div class='teams'>{nome} · odd {om:.2f}</div>{linhas}"
+                            f"<div style='margin-top:6px'>{badge(m['resultado'])}</div>", unsafe_allow_html=True)
+
+
 def page_estado():
     st.title("Estado")
     df = load()
@@ -928,6 +1016,7 @@ def auto_results():
 pg = st.navigation([
     st.Page(page_jogos, title="Jogos", icon=":material/sports_soccer:", url_path="jogos", default=True),
     st.Page(page_bilhete, title="Construtor de apostas", icon=":material/receipt_long:", url_path="bilhete"),
+    st.Page(page_canal, title="Canal", icon=":material/send:", url_path="canal"),
     st.Page(page_recaps, title="Recaps", icon=":material/fact_check:", url_path="recaps"),
     st.Page(page_desempenho, title="Desempenho", icon=":material/monitoring:", url_path="desempenho"),
     st.Page(page_licoes, title="Lições", icon=":material/school:", url_path="licoes"),
