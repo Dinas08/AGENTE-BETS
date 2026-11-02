@@ -24,6 +24,9 @@ CASA = os.getenv("AFILIADO_CASA", "").strip()
 
 N_DICAS = 4                 # dicas por dia no canal grátis
 P_MIN = 0.55                # probabilidade mínima da dica (abaixo disto é quase moeda ao ar)
+ODD_MIN = 1.20              # as casas não aceitam apostas abaixo desta odd (dicas e pernas das múltiplas)
+TURBO_ODD = 4.0             # múltipla turbo: junta pernas até chegar a esta odd (máx. TURBO_PERNAS)
+TURBO_PERNAS, TURBO_P_MIN = 5, 0.62
 FLAG = {"P1": "🇵🇹", "E0": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "D1": "🇩🇪", "I1": "🇮🇹", "BRA": "🇧🇷", "ARG": "🇦🇷", "MEX": "🇲🇽", "USA": "🇺🇸", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
         "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆"}
 DIAS = ["SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO", "DOMINGO"]
@@ -79,11 +82,15 @@ def _link() -> str:
 
 # ------------------------------------------------------------------ escolha das dicas
 
-def escolher(r) -> tuple[str, float] | None:
-    """A dica de um jogo: a mesma da ⭐ da dashboard (a previsão mais segura), se tiver pelo menos P_MIN."""
-    key = estrela(r["probs"], r["picks"])
-    p = r["probs"].get(key) if key else None
-    return (key, p) if p and p >= P_MIN else None
+def escolher(r, p_min: float = P_MIN) -> tuple[str, float] | None:
+    """A dica de um jogo: a ⭐ da dashboard (a previsão mais segura). As casas não aceitam odds abaixo de
+    ODD_MIN: se a ⭐ ficar abaixo, usa a previsão seguinte mais segura do mesmo jogo que pague pelo menos isso."""
+    cands = sorted(((k, r["probs"].get(k, 0)) for m, k in r["picks"].items()
+                    if m in ("resultado", "golos", "ambas", "cantos")), key=lambda x: -x[1])
+    for key, p in cands:
+        if p >= p_min and odd((r["odds"] or {}).get(key), p) >= ODD_MIN:
+            return key, p
+    return None
 
 
 def _razoes(r, key) -> list[str]:
@@ -167,21 +174,49 @@ def dicas(hoje: dt.date | None = None) -> int:
     s["dicas"] += novas
     if len(novas) >= 2:
         partes = sorted(novas, key=lambda d: -d["prob"])[:3 if len(novas) >= 3 else 2]
-        pm = 1.0
-        for d in partes:
-            pm *= d["prob"]
-        if pm < 0.22 and len(partes) == 3:  # 3 pernas demasiado arriscadas: fica com as 2 mais seguras
+        if _prod(d["prob"] for d in partes) < 0.22 and len(partes) == 3:  # 3 pernas arriscadas: só as 2 mais seguras
             partes = partes[:2]
-            pm = partes[0]["prob"] * partes[1]["prob"]
-        om = 1.0
-        for d in partes:
-            om *= odd(d["odd_casa"], d["prob"])
-        txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} (@{odd(d['odd_casa'], d['prob']):.2f})" for d in partes)
-        msg = f"🎯 <b>MÚLTIPLA DO DIA</b>\n\n{txt}\n\n💰 Odd total: <b>{om:.2f}</b>" + _fim()
-        s["multiplas"].append({"data": hoje.isoformat(), "partes": [d["id"] for d in partes], "prob": round(pm, 4),
-                               "message_id": send(msg), "resultado": None})
+        _multipla(s, "🎯 <b>MÚLTIPLA DO DIA</b>", partes, hoje, "segura")
+    # turbo: as previsões mais seguras de todos os jogos de hoje, até a odd total chegar a TURBO_ODD
+    pernas, om = [], 1.0
+    for _, r in p.sort_values("kickoff").iterrows():
+        c = escolher(r, TURBO_P_MIN)
+        if c:
+            pernas.append(_perna(r, *c, hoje))
+    pernas = sorted(pernas, key=lambda d: -d["prob"])
+    turbo = []
+    for d in pernas:
+        if om >= TURBO_ODD or len(turbo) >= TURBO_PERNAS:
+            break
+        turbo.append(d)
+        om *= odd(d["odd_casa"], d["prob"])
+    if len(turbo) >= 3 and om >= 3:
+        _multipla(s, "🚀 <b>MÚLTIPLA TURBO</b>", turbo, hoje, "turbo")
     _save(s)
     return len(novas)
+
+
+def _prod(xs) -> float:
+    out = 1.0
+    for x in xs:
+        out *= x
+    return out
+
+
+def _perna(r, key, prob, hoje) -> dict:
+    return {"id": f"{r['match_id']}|{key}", "match_id": r["match_id"], "key": key,
+            "texto": texto(key, r["home"], r["away"]), "jogo": f"{r['home']} x {r['away']}",
+            "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": hoje.isoformat()}
+
+
+def _multipla(s, titulo, partes, hoje, tipo):
+    om = _prod(odd(d["odd_casa"], d["prob"]) for d in partes)
+    txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} (@{odd(d['odd_casa'], d['prob']):.2f})" for d in partes)
+    msg = f"{titulo}\n\n{txt}\n\n💰 Odd total: <b>{om:.2f}</b>" + _fim()
+    pernas = [{k: d[k] for k in ("id", "match_id", "key", "prob", "odd_casa")} for d in partes]
+    s["multiplas"].append({"data": hoje.isoformat(), "tipo": tipo, "partes": [d["id"] for d in partes],
+                           "pernas": pernas, "prob": round(_prod(d["prob"] for d in partes), 4),
+                           "message_id": send(msg), "resultado": None})
 
 
 N_TARDIAS = 2      # dicas extra por dia para os jogos da noite, ~45 min antes do início, com os onzes já conhecidos
@@ -286,9 +321,8 @@ def resultados() -> int:
     """Responde a cada dica (e múltipla) já decidida com ✅/❌ e o resultado final."""
     s = _load()
     pend = [d for d in s["dicas"] if d["resultado"] is None]
-    if not pend:
-        return 0
-    p = db.load_predictions().set_index("match_id")
+    if pend or any(m["resultado"] is None for m in s["multiplas"]):
+        p = db.load_predictions().set_index("match_id")
     n = 0
     for d in pend:
         if d["match_id"] not in p.index:
@@ -304,11 +338,20 @@ def resultados() -> int:
     by_id = {d["id"]: d for d in s["dicas"]}
     for m in s["multiplas"]:
         if m["resultado"] is None:
-            res = [by_id[i]["resultado"] for i in m["partes"] if i in by_id]
+            res = []
+            for pe in m.get("pernas") or [{"id": i} for i in m["partes"]]:
+                if pe["id"] in by_id:  # perna que também foi dica do dia
+                    res.append(by_id[pe["id"]]["resultado"])
+                elif pe.get("match_id") in p.index:  # perna só da múltipla (turbo)
+                    res.append(outcome(pe["key"], p.loc[pe["match_id"]]))
+                else:
+                    res.append(None)
             if False in res or (res and None not in res):
                 m["resultado"] = False not in res
-                send("✅ <b>GREEN NA MÚLTIPLA!</b> 💰" if m["resultado"] else
-                     f"❌ RED na múltipla ({sum(x is True for x in res)}/{len(res)} pernas)", reply_to=m["message_id"])
+                nome = "MÚLTIPLA TURBO" if m.get("tipo") == "turbo" else "MÚLTIPLA"
+                send(f"✅ <b>GREEN NA {nome}!</b> 💰" if m["resultado"] else
+                     f"❌ RED na {nome.lower()} ({sum(x is True for x in res)}/{len(res)} pernas certas até agora)",
+                     reply_to=m["message_id"])
     resumo_dia(s)
     _save(s)
     return n
@@ -321,16 +364,14 @@ def _lucro(dicas: list, mult: list, by_id: dict) -> tuple[float, int]:
     """Lucro simulado (€) e nº de apostas: green paga (odd - 1) × STAKE, red perde STAKE."""
     total = sum((odd(d["odd_casa"], d["prob"]) - 1) * STAKE if d["resultado"] else -STAKE for d in dicas)
     for m in mult:
-        om = 1.0
-        for i in m["partes"]:
-            if i in by_id:
-                om *= odd(by_id[i]["odd_casa"], by_id[i]["prob"])
+        pernas = m.get("pernas") or [by_id[i] for i in m["partes"] if i in by_id]
+        om = _prod(odd(pe["odd_casa"], pe["prob"]) for pe in pernas)
         total += (om - 1) * STAKE if m["resultado"] else -STAKE
     return total, len(dicas) + len(mult)
 
 
 def _linha_lucro(total: float, n: int) -> str:
-    return f"💶 Simulação ({STAKE} € por aposta, {n} apostas): <b>{total:+.0f} €</b>"
+    return f"💶 Simulação ({STAKE} € por aposta, {n} {'aposta' if n == 1 else 'apostas'}): <b>{total:+.0f} €</b>"
 
 
 def resumo_dia(s: dict) -> bool:
@@ -349,8 +390,9 @@ def resumo_dia(s: dict) -> bool:
         if g / len(do_dia) >= 0.8:
             linhas.append(f"🔥 <b>DIA DE {g / len(do_dia):.0%} DE ACERTO!</b>")
         linhas.append(f"🟢 {g} Green" + (f" · 🔴 {len(do_dia) - g} Red" if g < len(do_dia) else ""))
-        if mult and mult[0]["resultado"]:
-            linhas.append("🎯 Múltipla: GREEN 💰")
+        for m in mult:
+            if m["resultado"]:
+                linhas.append(("🚀 Múltipla turbo" if m.get("tipo") == "turbo" else "🎯 Múltipla") + ": GREEN 💰")
         linhas.append(_linha_lucro(*_lucro(do_dia, mult, {d["id"]: d for d in s["dicas"]})))
         send("\n".join(linhas) + _fim())
         feitos.append(dia)
