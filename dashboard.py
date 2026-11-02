@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from agente import config, db
-from agente.model import label
+from agente.model import estrela, label
 from agente.recap import PICK_NAMES, evaluate, outcome, value_pnl, week_bounds
 from agente.sources import api_football as apif
 
@@ -161,9 +161,7 @@ def show_table(r, keys, title=None):
 
 def best_pick(r):
     """A previsão mais segura do jogo (entre resultado, golos, ambas, cantos e dupla)."""
-    p, picks = r["probs"], r["picks"]
-    cands = [picks[k] for k in ("resultado", "golos", "ambas", "cantos") if k in picks]
-    return max(cands, key=lambda k: p.get(k, 0))
+    return estrela(r["probs"], r["picks"])
 
 
 def add_to_slip(r, key):

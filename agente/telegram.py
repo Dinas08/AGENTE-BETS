@@ -13,7 +13,7 @@ import pandas as pd
 import requests
 
 from agente import config, db
-from agente.model import label
+from agente.model import estrela, label
 from agente.recap import outcome
 
 STATE = config.DATA_DIR / "telegram.json"
@@ -23,8 +23,7 @@ LINK = os.getenv("AFILIADO_LINK", "").strip()
 CASA = os.getenv("AFILIADO_CASA", "").strip()
 
 N_DICAS = 4                 # dicas por dia no canal grátis
-P_MIN, P_MAX = 0.55, 0.72   # probabilidade da dica: nem moeda ao ar, nem odd abaixo de ~1.40
-MERCADOS = ("combinada", "golos", "ambas", "resultado", "dupla", "cartoes", "cantos")
+P_MIN = 0.55                # probabilidade mínima da dica (abaixo disto é quase moeda ao ar)
 FLAG = {"P1": "🇵🇹", "E0": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "D1": "🇩🇪", "I1": "🇮🇹", "BRA": "🇧🇷", "ARG": "🇦🇷", "MEX": "🇲🇽", "USA": "🇺🇸", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
         "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆"}
 DIAS = ["SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO", "DOMINGO"]
@@ -81,14 +80,10 @@ def _link() -> str:
 # ------------------------------------------------------------------ escolha das dicas
 
 def escolher(r) -> tuple[str, float] | None:
-    """A dica de um jogo: o palpite principal mais provável dentro de [P_MIN, P_MAX]."""
-    best = None
-    for m in MERCADOS:
-        key = r["picks"].get(m)
-        p = r["probs"].get(key) if key else None
-        if p and P_MIN <= p <= P_MAX and (best is None or p > best[1]):
-            best = (key, p)
-    return best
+    """A dica de um jogo: a mesma da ⭐ da dashboard (a previsão mais segura), se tiver pelo menos P_MIN."""
+    key = estrela(r["probs"], r["picks"])
+    p = r["probs"].get(key) if key else None
+    return (key, p) if p and p >= P_MIN else None
 
 
 def _razoes(r, key) -> list[str]:

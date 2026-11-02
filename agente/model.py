@@ -320,6 +320,13 @@ def markets(exp: dict, adj: dict | None = None) -> dict:
     return {"probs": p, "expected": {k: round(float(v), 2) for k, v in xc.items()}}
 
 
+def estrela(probs: dict, picks: dict) -> str | None:
+    """A previsão mais segura do jogo (⭐ na dashboard e dica do Telegram): a mais provável entre resultado,
+    golos, ambas marcam e cantos."""
+    cands = [picks[k] for k in ("resultado", "golos", "ambas", "cantos") if k in picks]
+    return max(cands, key=lambda k: probs.get(k, 0)) if cands else None
+
+
 def main_picks(probs: dict) -> dict:
     """A previsão principal em cada mercado (o que é avaliado no recap)."""
     res = max(("1", "X", "2"), key=lambda k: probs[k])
