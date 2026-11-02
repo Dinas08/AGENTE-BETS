@@ -189,6 +189,37 @@ def dicas(hoje: dt.date | None = None) -> int:
     return len(novas)
 
 
+N_TARDIAS = 2  # dicas extra para os jogos da noite (publicadas com as previsões das 17h30)
+
+
+def tardias(hoje: dt.date | None = None) -> int:
+    """Depois das 17h: dicas para os jogos de hoje a partir das 19h que ainda não tiveram dica (previsões
+    acabadas de atualizar, com as notícias do dia)."""
+    agora = pd.Timestamp.now()
+    hoje = hoje or agora.date()
+    if hoje == agora.date() and agora.hour < 17:
+        return 0
+    s = _load()
+    if any(d["data"] == hoje.isoformat() and d.get("tardia") for d in s["dicas"]):
+        print("Dicas tardias de hoje já publicadas.")
+        return 0
+    ja = {d["match_id"] for d in s["dicas"]}
+    p = db.load_predictions(with_results=False)
+    p = p[(p["kickoff"] > agora + pd.Timedelta(minutes=30)) & (p["kickoff"].dt.date == hoje)
+          & (p["kickoff"].dt.hour >= 19) & ~p["limited"].astype(bool) & ~p["match_id"].isin(ja)]
+    cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])[:N_TARDIAS]
+    novas = []
+    for prob, r, key in sorted(cands, key=lambda x: x[1]["kickoff"]):
+        mid = send("🌙 <b>DICA TARDIA</b>\n\n" + mensagem_dica(r, key, prob))
+        novas.append({"id": f"{r['match_id']}|{key}", "match_id": r["match_id"], "key": key,
+                      "texto": texto(key, r["home"], r["away"]), "jogo": f"{r['home']} x {r['away']}",
+                      "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": hoje.isoformat(),
+                      "message_id": mid, "resultado": None, "tardia": True})
+    s["dicas"] += novas
+    _save(s)
+    return len(novas)
+
+
 # ------------------------------------------------------------------ resultados e balanço
 
 def resultados() -> int:
@@ -226,7 +257,10 @@ def resultados() -> int:
 def resumo_dia(s: dict) -> bool:
     """Quando todas as dicas de um dia estão decididas: resumo curto (Greens e Reds; destaque se ≥ 80%)."""
     feitos = s.setdefault("resumos", [])
+    agora = dt.datetime.now()
     for dia in sorted({d["data"] for d in s["dicas"]} - set(feitos)):
+        if dia == agora.date().isoformat() and agora.hour < 18:  # ainda podem sair dicas tardias
+            continue
         do_dia = [d for d in s["dicas"] if d["data"] == dia]
         mult = [m for m in s["multiplas"] if m["data"] == dia]
         if any(x["resultado"] is None for x in do_dia + mult):
