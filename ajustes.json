@@ -1,0 +1,1060 @@
+{
+  "atualizado_em": "2026-11-02",
+  "equipas": {
+    "Sp Lisbon": {
+      "golos_marcados": -4,
+      "golos_sofridos": 3,
+      "motivo": "Zalazar, Debast e Nuno Santos continuam lesionados (10.ª jornada); a confirmar antes do Shakhtar",
+      "ausentes": [
+        {
+          "jogador": "Rodrigo Zalazar",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Zeno Debast",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Nuno Santos",
+          "motivo": "lesão muscular",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-03"
+    },
+    "Arouca": {
+      "golos_marcados": -2,
+      "golos_sofridos": 2,
+      "motivo": "Rukavina castigado, Puche lesionado",
+      "ausentes": [
+        {
+          "jogador": "Rukavina",
+          "motivo": "castigo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Miguel Puche",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Nacional": {
+      "golos_marcados": -6,
+      "golos_sofridos": 5,
+      "motivo": "Cinco lesionados: Filipe Soares, Wesley Gasolina, Liziero, Léo Santos e Ulisses",
+      "ausentes": [
+        {
+          "jogador": "Filipe Soares",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Wesley Gasolina",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Liziero",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Léo Santos",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Ulisses",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Rio Ave": {
+      "golos_marcados": -2,
+      "golos_sofridos": 5,
+      "motivo": "Sem o GR Miszta e Abbey; Pedro Amaral e Aguilera em dúvida",
+      "ausentes": [
+        {
+          "jogador": "Cezary Miszta",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Abbey",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Pedro Amaral",
+          "motivo": "dúvida",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Aguilera",
+          "motivo": "dúvida",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Maritimo": {
+      "golos_marcados": -3,
+      "golos_sofridos": 1,
+      "motivo": "Sem Yellu Santiago e Maxime Dominguez",
+      "ausentes": [
+        {
+          "jogador": "Yellu Santiago",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Maxime Dominguez",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Santa Clara": {
+      "golos_marcados": -3,
+      "golos_sofridos": 0,
+      "motivo": "Luís Fernando castigado; MT lesionado",
+      "ausentes": [
+        {
+          "jogador": "Luís Fernando",
+          "motivo": "castigo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "MT",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Sp Braga": {
+      "golos_marcados": 0,
+      "golos_sofridos": 3,
+      "motivo": "Sem o central Niakaté",
+      "ausentes": [
+        {
+          "jogador": "Sikou Niakaté",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Famalicao": {
+      "golos_marcados": -1,
+      "golos_sofridos": 1,
+      "motivo": "Mattara lesionado, Mathias de Amorim em dúvida",
+      "ausentes": [
+        {
+          "jogador": "Matheus Mattara",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Mathias de Amorim",
+          "motivo": "dúvida",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Benfica": {
+      "golos_marcados": -3,
+      "golos_sofridos": 2,
+      "motivo": "Sem Barreiro, Barrenechea e Banjaqui; Jhon Durán em dúvida (processo disciplinar)",
+      "ausentes": [
+        {
+          "jogador": "Leandro Barreiro",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Enzo Barrenechea",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Banjaqui",
+          "motivo": "lesão",
+          "importancia": "suplente"
+        },
+        {
+          "jogador": "Jhon Durán",
+          "motivo": "dúvida (processo disciplinar)",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-02"
+    },
+    "Alverca": {
+      "golos_marcados": -8,
+      "golos_sofridos": 5,
+      "motivo": "Vidigal e Baseya castigados; Raveyre, Meupiyou, Abdulai e Julián Martínez lesionados",
+      "ausentes": [
+        {
+          "jogador": "André Vidigal",
+          "motivo": "castigo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Baseya",
+          "motivo": "castigo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Raveyre",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Meupiyou",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Abdulai",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Julián Martínez",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-02"
+    },
+    "Gil Vicente": {
+      "golos_marcados": -5,
+      "golos_sofridos": 4,
+      "motivo": "Hector Hernández, Weverson, Tchaptchet e Bamba lesionados; Espigares castigado",
+      "ausentes": [
+        {
+          "jogador": "Héctor Hernández",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Weverson",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Arthur Tchaptchet",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Bamba",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Espigares",
+          "motivo": "castigo",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-02"
+    },
+    "Guimaraes": {
+      "golos_marcados": -2,
+      "golos_sofridos": 0,
+      "motivo": "Sem Gui e Thiago Balieiro",
+      "ausentes": [
+        {
+          "jogador": "Gui",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Thiago Balieiro",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.flashscore.pt/noticias/futebol-liga-portugal-betclic-ausencias-liga-portugal-nova-baixa-no-fc-porto-alverca-condicionado-para-o-benfica/zNt8Jk0E/"
+      ],
+      "valido_ate": "2026-11-02"
+    },
+    "Aston Villa": {
+      "golos_marcados": -2,
+      "golos_sofridos": 3,
+      "motivo": "Sem Wan-Bissaka, Onana e Ruggeri",
+      "ausentes": [
+        {
+          "jogador": "Aaron Wan-Bissaka",
+          "motivo": "isquiotibiais",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Amadou Onana",
+          "motivo": "joelho",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Matteo Ruggeri",
+          "motivo": "isquiotibiais",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsmole.co.uk/football/arsenal/injury-news/feature/premier-league-gw9-injury-suspension-list-every-out-and-doubtful-player_608098.html"
+      ],
+      "valido_ate": "2026-11-03"
+    },
+    "Newcastle": {
+      "golos_marcados": -4,
+      "golos_sofridos": 2,
+      "motivo": "Sem Ramsey, Livramento e Jaouen; Miley, Osula e Fernandez-Pardo em dúvida",
+      "ausentes": [
+        {
+          "jogador": "Jacob Ramsey",
+          "motivo": "coxa",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Tino Livramento",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Ewen Jaouen",
+          "motivo": "isquiotibiais",
+          "importancia": "suplente"
+        },
+        {
+          "jogador": "Lewis Miley",
+          "motivo": "dúvida (muscular)",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "William Osula",
+          "motivo": "dúvida (tornozelo)",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Mathias Fernandez-Pardo",
+          "motivo": "dúvida (doença)",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsmole.co.uk/football/arsenal/injury-news/feature/premier-league-gw9-injury-suspension-list-every-out-and-doubtful-player_608098.html"
+      ],
+      "valido_ate": "2026-11-02"
+    },
+    "Everton": {
+      "golos_marcados": -3,
+      "golos_sofridos": 2,
+      "motivo": "Branthwaite em dúvida (concussão); Grealish alvo de processo disciplinar do clube",
+      "ausentes": [
+        {
+          "jogador": "Jarrad Branthwaite",
+          "motivo": "dúvida (concussão)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Jack Grealish",
+          "motivo": "dúvida (processo disciplinar)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.fantasyfootballscout.co.uk/2026/10/30/fpl-gameweek-9-team-news-fridays-live-injury-updates-3",
+        "https://www.sportsmole.co.uk/football/arsenal/injury-news/feature/premier-league-gw9-injury-suspension-list-every-out-and-doubtful-player_608098.html"
+      ],
+      "valido_ate": "2026-11-02"
+    },
+    "Union Berlin": {
+      "golos_marcados": -6,
+      "golos_sofridos": 4,
+      "motivo": "Uduokhai castigado; Ilic, Markgraf e Nsoki lesionados; Skov em dúvida",
+      "ausentes": [
+        {
+          "jogador": "Felix Uduokhai",
+          "motivo": "castigo (vermelho)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Andrej Ilic",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Andrik Markgraf",
+          "motivo": "ligamento cruzado",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Stanley Nsoki",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Robert Skov",
+          "motivo": "dúvida",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://sportschau.de/regional/rbb/rbb-union-vor-bundesligaspiel-gegen-koeln-dieses-mal-mit-bock-100.html"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "FC Koln": {
+      "golos_marcados": -8,
+      "golos_sofridos": 6,
+      "motivo": "Sem Rondić, Dallinga, Skhiri, Hübers e Van den Berg; Ache em dúvida",
+      "ausentes": [
+        {
+          "jogador": "Imad Rondić",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Thijs Dallinga",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Ellyes Skhiri",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Timo Hübers",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Rav van den Berg",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Ragnar Ache",
+          "motivo": "dúvida",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://bulinews.com/union-berlin-1-koln-hosts-looking-for-immediate-revenge-after-midweek-thrashing"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Hamburg": {
+      "golos_marcados": -7,
+      "golos_sofridos": 4,
+      "motivo": "Crise de lesões: Remberg, Capaldo, Nadir, Fábio Vieira e Poulsen fora",
+      "ausentes": [
+        {
+          "jogador": "Nicolai Remberg",
+          "motivo": "ligamento cruzado",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Nicolas Capaldo",
+          "motivo": "problema muscular",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Bilal Nadir",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Fábio Vieira",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Yussuf Poulsen",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.getfootballnewsgermany.com/2026/hamburg-frankfurt-pokal-bundesliga/"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Ein Frankfurt": {
+      "golos_marcados": -3,
+      "golos_sofridos": 3,
+      "motivo": "Instabilidade: Riera em conflito com a imprensa e futuro em dúvida após derrota com o HSV na taça",
+      "ausentes": [],
+      "fontes": [
+        "https://www.kicker.de/rieras-abrechnung-als-fiebertraum-bullshit-und-luegen-1215406/artikel",
+        "https://www.hessenschau.de/sport/fussball/eintracht-frankfurt/luegen-bullshit-gift-wuetender-riera-redet-sich-in-rage-v1,sge-vor-hsv-108.html"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Man United": {
+      "golos_marcados": -4,
+      "golos_sofridos": 0,
+      "motivo": "Sesko fora por tempo indeterminado",
+      "ausentes": [
+        {
+          "jogador": "Benjamin Sesko",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://dave.sport/news/chelsea-vs-man-utd-injury-news/"
+      ],
+      "valido_ate": "2026-11-03"
+    },
+    "Liverpool": {
+      "golos_marcados": -6,
+      "golos_sofridos": 2,
+      "motivo": "Sem Frimpong, Ekitiké e Bradley; Wirtz em dúvida",
+      "ausentes": [
+        {
+          "jogador": "Jeremie Frimpong",
+          "motivo": "isquiotibiais",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Hugo Ekitiké",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Conor Bradley",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Florian Wirtz",
+          "motivo": "dúvida (tornozelo)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://premierleaguenewsnow.com/2026/10/30/liverpool-arsenal-preview-team-news-lineups-prediction/"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Arsenal": {
+      "golos_marcados": -9,
+      "golos_sofridos": 7,
+      "motivo": "Sem Saka e Saliba, Dowman castigado; Rice, Calafiori e Madueke em dúvida",
+      "ausentes": [
+        {
+          "jogador": "Bukayo Saka",
+          "motivo": "quadríceps",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "William Saliba",
+          "motivo": "costas",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Max Dowman",
+          "motivo": "castigo (expulsão)",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Declan Rice",
+          "motivo": "dúvida",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Riccardo Calafiori",
+          "motivo": "dúvida",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Noni Madueke",
+          "motivo": "dúvida",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://thefalse9.com/2026/10/arsenal-injury-news-vs-liverpool.html"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Juventus": {
+      "golos_marcados": -4,
+      "golos_sofridos": 2,
+      "motivo": "Sem Locatelli e Khéphren Thuram (meio-campo)",
+      "ausentes": [
+        {
+          "jogador": "Manuel Locatelli",
+          "motivo": "cirurgia ao menisco",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Khéphren Thuram",
+          "motivo": "joelho",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Kamil Grabara",
+          "motivo": "ligamento cruzado",
+          "importancia": "suplente"
+        }
+      ],
+      "fontes": [
+        "https://www.sportal.it/calcio/serie-a/serie-a-infortunati-e-squalificati-chi-saltera-la-nona-giornata.html"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Napoli": {
+      "golos_marcados": -2,
+      "golos_sofridos": 2,
+      "motivo": "Neres e Buongiorno em dúvida",
+      "ausentes": [
+        {
+          "jogador": "David Neres",
+          "motivo": "dúvida (isquiotibiais)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Alessandro Buongiorno",
+          "motivo": "dúvida",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.sportal.it/calcio/serie-a/serie-a-infortunati-e-squalificati-chi-saltera-la-nona-giornata.html"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Como": {
+      "golos_marcados": -5,
+      "golos_sofridos": 2,
+      "motivo": "Sem Kean, Addai, Diao, Jesús Rodríguez e Chalobah",
+      "ausentes": [
+        {
+          "jogador": "Moise Kean",
+          "motivo": "tíbia",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Addai",
+          "motivo": "problema muscular",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Assane Diao",
+          "motivo": "isquiotibiais",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Jesús Rodríguez",
+          "motivo": "lesão em treino",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Trevoh Chalobah",
+          "motivo": "lesão muscular",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Venezia": {
+      "golos_marcados": -4,
+      "golos_sofridos": 2,
+      "motivo": "Sem Adorante, Correia, Sverko e Franjic",
+      "ausentes": [
+        {
+          "jogador": "Andrea Adorante",
+          "motivo": "cirurgia às costas",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "T. Correia",
+          "motivo": "isquiotibiais",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Sverko",
+          "motivo": "anca",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Franjic",
+          "motivo": "cirurgia ao ombro",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Lazio": {
+      "golos_marcados": -2,
+      "golos_sofridos": 0,
+      "motivo": "Sem Gudmundsson",
+      "ausentes": [
+        {
+          "jogador": "Albert Gudmundsson",
+          "motivo": "ombro",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Cagliari": {
+      "golos_marcados": -2,
+      "golos_sofridos": 0,
+      "motivo": "Sem Felici e Idrissi; Deiola em risco de castigo",
+      "ausentes": [
+        {
+          "jogador": "Mattia Felici",
+          "motivo": "ligamento cruzado",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "R. Idrissi",
+          "motivo": "recuperação de ligamento cruzado",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Atalanta": {
+      "golos_marcados": -10,
+      "golos_sofridos": 6,
+      "motivo": "Enfermaria cheia: Scamacca, Raspadori, Kossounou, Hien, Kolasinac, Bellanova, Kessié, Kristensen, Gaetano e o GR Pompei",
+      "ausentes": [
+        {
+          "jogador": "Gianluca Scamacca",
+          "motivo": "coxa",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Giacomo Raspadori",
+          "motivo": "coxa",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Odilon Kossounou",
+          "motivo": "coxa",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Isak Hien",
+          "motivo": "cirurgia (isquiotibiais)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Sead Kolasinac",
+          "motivo": "reto femoral",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Raoul Bellanova",
+          "motivo": "adutor",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Franck Kessié",
+          "motivo": "gémeo",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "T. Kristensen",
+          "motivo": "problema muscular",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Gianluca Gaetano",
+          "motivo": "virilha",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Pompei",
+          "motivo": "fratura num dedo da mão",
+          "importancia": "suplente"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-02"
+    },
+    "Parma": {
+      "golos_marcados": 0,
+      "golos_sofridos": 0,
+      "motivo": "Elphege operado (apendicite)",
+      "ausentes": [
+        {
+          "jogador": "Elphege",
+          "motivo": "apendicite",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-02"
+    },
+    "Frosinone": {
+      "golos_marcados": -2,
+      "golos_sofridos": 0,
+      "motivo": "Sem Grillitsch",
+      "ausentes": [
+        {
+          "jogador": "Florian Grillitsch",
+          "motivo": "pubalgia (operado)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Torino": {
+      "golos_marcados": -3,
+      "golos_sofridos": 2,
+      "motivo": "Sem Mandragora e R. Rodríguez; Cacciamani e Fortini em dúvida",
+      "ausentes": [
+        {
+          "jogador": "Rolando Mandragora",
+          "motivo": "isquiotibiais",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Ricardo Rodríguez",
+          "motivo": "isquiotibiais",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Cacciamani",
+          "motivo": "dúvida (ombro)",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Fortini",
+          "motivo": "dúvida (adutor)",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Lecce": {
+      "golos_marcados": -6,
+      "golos_sofridos": 4,
+      "motivo": "Sem Coulibaly, Berisha, Pierotti, Geubbels e Ilic; Gaspar castigado",
+      "ausentes": [
+        {
+          "jogador": "Lassana Coulibaly",
+          "motivo": "isquiotibiais",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Medon Berisha",
+          "motivo": "gémeo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Santiago Pierotti",
+          "motivo": "fratura no tornozelo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Geubbels",
+          "motivo": "adutor",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Ilic",
+          "motivo": "reto femoral",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Kialonda Gaspar",
+          "motivo": "castigo",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Genoa": {
+      "golos_marcados": -2,
+      "golos_sofridos": 0,
+      "motivo": "Sem Venturino e Havel",
+      "ausentes": [
+        {
+          "jogador": "Lorenzo Venturino",
+          "motivo": "cirurgia ao tendão rotuliano",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Havel",
+          "motivo": "cirurgia ao tornozelo",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-01"
+    },
+    "Sassuolo": {
+      "golos_marcados": -4,
+      "golos_sofridos": 2,
+      "motivo": "Sem Boloca, I. Koné e Leysen; Thorstvedt castigado",
+      "ausentes": [
+        {
+          "jogador": "Daniel Boloca",
+          "motivo": "joelho",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Ismaël Koné",
+          "motivo": "fratura tíbia e perónio",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "F. Leysen",
+          "motivo": "ligamento cruzado",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Kristian Thorstvedt",
+          "motivo": "castigo",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-02"
+    },
+    "Fiorentina": {
+      "golos_marcados": -2,
+      "golos_sofridos": 3,
+      "motivo": "Sem Pongracic, Parisi e Atta",
+      "ausentes": [
+        {
+          "jogador": "Marin Pongracic",
+          "motivo": "coxa",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Fabiano Parisi",
+          "motivo": "ligamento cruzado",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Arthur Atta",
+          "motivo": "sobrecarga abdominal",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.fantacalcio.it/indisponibili-serie-a"
+      ],
+      "valido_ate": "2026-11-02"
+    },
+    "Barcelona": {
+      "golos_marcados": -3,
+      "golos_sofridos": 4,
+      "motivo": "Defesa desfalcada: Koundé praticamente fora, Christensen e Eric García improváveis; Olmo e Bardghji lesionados",
+      "ausentes": [
+        {
+          "jogador": "Koundé",
+          "motivo": "entorse no tornozelo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Christensen",
+          "motivo": "lesão (improvável)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Eric García",
+          "motivo": "lesão (improvável)",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Dani Olmo",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Rooney Bardghji",
+          "motivo": "lesão",
+          "importancia": "suplente"
+        }
+      ],
+      "fontes": [
+        "https://sports.yahoo.com/articles/versatile-barcelona-defender-practically-080000844.html",
+        "https://www.playmakerstats.com/news/preview-barcelona-vs-aston-villa-team-news-lineups-predictions-champions-league-03-11/1248631"
+      ],
+      "valido_ate": "2026-11-08"
+    }
+  },
+  "jogos": {}
+}

@@ -1,0 +1,159 @@
+{
+ "dicas": [
+  {
+   "id": "20261101-I1-frosinone-torino|over_2.5",
+   "match_id": "20261101-I1-frosinone-torino",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Frosinone x Torino",
+   "prob": 0.6904,
+   "odd_casa": 1.4,
+   "data": "2026-11-01",
+   "message_id": 5,
+   "resultado": false
+  },
+  {
+   "id": "20261101-E0-liverpool-arsenal|12",
+   "match_id": "20261101-E0-liverpool-arsenal",
+   "key": "12",
+   "texto": "Liverpool ou Arsenal vence (sem empate)",
+   "jogo": "Liverpool x Arsenal",
+   "prob": 0.7103,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 6,
+   "resultado": true
+  },
+  {
+   "id": "20261101-I1-lecce-genoa|cartoes_under_4.5",
+   "match_id": "20261101-I1-lecce-genoa",
+   "key": "cartoes_under_4.5",
+   "texto": "Menos de 4.5 cartões amarelos",
+   "jogo": "Lecce x Genoa",
+   "prob": 0.695,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 7,
+   "resultado": true
+  },
+  {
+   "id": "20261101-I1-juventus-napoli|12",
+   "match_id": "20261101-I1-juventus-napoli",
+   "key": "12",
+   "texto": "Juventus ou Napoli vence (sem empate)",
+   "jogo": "Juventus x Napoli",
+   "prob": 0.7016,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 8,
+   "resultado": true
+  },
+  {
+   "id": "20261102-I1-sassuolo-fiorentina|cantos_under_9.5",
+   "match_id": "20261102-I1-sassuolo-fiorentina",
+   "key": "cantos_under_9.5",
+   "texto": "Menos de 9.5 cantos",
+   "jogo": "Sassuolo x Fiorentina",
+   "prob": 0.6541,
+   "odd_casa": null,
+   "data": "2026-11-02",
+   "message_id": 15,
+   "resultado": true
+  },
+  {
+   "id": "20261102-E0-newcastle-everton|cartoes_under_4.5",
+   "match_id": "20261102-E0-newcastle-everton",
+   "key": "cartoes_under_4.5",
+   "texto": "Menos de 4.5 cartões amarelos",
+   "jogo": "Newcastle x Everton",
+   "prob": 0.6375,
+   "odd_casa": null,
+   "data": "2026-11-02",
+   "message_id": 16,
+   "resultado": true
+  },
+  {
+   "id": "20261102-P1-gilvicente-guimaraes|12",
+   "match_id": "20261102-P1-gilvicente-guimaraes",
+   "key": "12",
+   "texto": "Gil Vicente ou Guimaraes vence (sem empate)",
+   "jogo": "Gil Vicente x Guimaraes",
+   "prob": 0.6892,
+   "odd_casa": null,
+   "data": "2026-11-02",
+   "message_id": 17,
+   "resultado": false
+  },
+  {
+   "id": "20261102-P1-benfica-alverca|over_2.5",
+   "match_id": "20261102-P1-benfica-alverca",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Benfica x Alverca",
+   "prob": 0.6794,
+   "odd_casa": 1.37,
+   "data": "2026-11-02",
+   "message_id": 18,
+   "resultado": false
+  },
+  {
+   "id": "20261103-ARG-atltucuman-argentinosjrs|under_2.5",
+   "match_id": "20261103-ARG-atltucuman-argentinosjrs",
+   "key": "under_2.5",
+   "texto": "Menos de 2.5 golos",
+   "jogo": "Atl. Tucuman x Argentinos Jrs",
+   "prob": 0.6333,
+   "odd_casa": 1.51,
+   "data": "2026-11-02",
+   "message_id": 27,
+   "resultado": false,
+   "tipo": "madrugada"
+  },
+  {
+   "id": "20261103-ARG-indrivadavia-banfield|1",
+   "match_id": "20261103-ARG-indrivadavia-banfield",
+   "key": "1",
+   "texto": "Vitória Ind. Rivadavia",
+   "jogo": "Ind. Rivadavia x Banfield",
+   "prob": 0.5819,
+   "odd_casa": 1.5,
+   "data": "2026-11-02",
+   "message_id": 28,
+   "resultado": true,
+   "tipo": "madrugada"
+  }
+ ],
+ "multiplas": [
+  {
+   "data": "2026-11-01",
+   "partes": [
+    "20261101-E0-liverpool-arsenal|12",
+    "20261101-I1-juventus-napoli|12",
+    "20261101-I1-lecce-genoa|cartoes_under_4.5"
+   ],
+   "prob": 0.3464,
+   "message_id": 9,
+   "resultado": true
+  },
+  {
+   "data": "2026-11-02",
+   "partes": [
+    "20261102-P1-gilvicente-guimaraes|12",
+    "20261102-P1-benfica-alverca|over_2.5",
+    "20261102-I1-sassuolo-fiorentina|cantos_under_9.5"
+   ],
+   "prob": 0.3063,
+   "message_id": 19,
+   "resultado": false
+  }
+ ],
+ "balancos": [
+  "2026-11-02"
+ ],
+ "resumos": [
+  "2026-11-01",
+  "2026-11-02"
+ ],
+ "offset": 892007131,
+ "ignorados": []
+}
