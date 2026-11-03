@@ -13,10 +13,14 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
   que não aconteceu (e depois Como–Venezia, Frosinone–Torino e Arouca–Nacional). Quatro delas foram 2-0 do favorito (Casa Pia–Sporting, Schalke–Leipzig, Chelsea–Man United, Brentford–Forest) e as outras foram jogos táticos
   na Bundesliga (Werder–Hoffenheim, com xG total de 1.8). O que fazer: nos jogos com favorito claro e a outra equipa fraca no ataque, aplicar −3 a −5
   aos golos do outsider. Mas "Menos de 2.5" também falhou 3 vezes (Lazio, Lecce–Genoa, Braga) por vermelhos ou favoritos que marcaram 2+: não compensar demais. Não escolher "Ambas marcam" ou "Mais 2.5" como mercado principal sem confiança acima de 60%.
+- **2026-11-03 · "Ambas marcam" sobrestimado na Champions/provas europeias com favorito claro.** Evidência: S45, 8 de 13 jogos europeus falharam o BTTS "Sim" a 59-70% (Galatasaray–Stuttgart, Shakhtar–Sporting, Atlético–Bayern, Barcelona–Villa, Feyenoord–Inter, LASK–Slovan, Villarreal–PSG, Atalanta–Parma); mercado total 43% contra 60% previsto. O que fazer: com favorito acima de 60%, descontar −3 a −5 nos golos do outsider e não usar "Ambas marcam" como mercado principal nem em combinadas.
 - **2026-10-30 · "Não há empate" demasiado confiante em jogos equilibrados.** Evidência: Fiorentina–Atalanta (74%) e Hull–Ipswich (72%), ambos
   empatados. O que fazer: com o favorito abaixo de 50%, evitar a dupla "12" nas combinadas.
 
 ## Em observação (1 ocorrência — confirmar antes de agir)
+
+- 2026-11-03 · Cartões "Menos de 4.5" falharam em 5 de 8 jogos europeus da S45 (Villarreal–PSG a 82%); cartões 43% contra 65% previsto. Se a S46 repetir, passa para `notas_modelo.md`.
+- 2026-11-03 · Cantos "Mais de 9.5" a 80%+ demasiado confiante (Shakhtar–Sporting 83%, caiu com 9 cantos). Observar.
 
 - Favoritos fora de casa entre 40% e 50%: parecia falhar muito (2/7), mas com a semana completa foi 5/10, em linha com as probabilidades. Sem ajuste. Se nas próximas semanas ficar abaixo de 40%, reativar (procurar sinais de força da casa; preferir "X2" à vitória seca).
 - Jogos com muitas baixas dos dois lados (Union–Köln 1-1): o "Mais 2.5" fica generoso; observar mais um caso.
