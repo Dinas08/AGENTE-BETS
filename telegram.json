@@ -121,6 +121,54 @@
    "message_id": 28,
    "resultado": true,
    "tipo": "madrugada"
+  },
+  {
+   "id": "20261103-UCL-galatasaray-stuttgart|btts_sim",
+   "match_id": "20261103-UCL-galatasaray-stuttgart",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Galatasaray x Stuttgart",
+   "prob": 0.7007,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 33,
+   "resultado": null
+  },
+  {
+   "id": "20261103-UCL-barcelona-astonvilla|over_2.5",
+   "match_id": "20261103-UCL-barcelona-astonvilla",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Barcelona x Aston Villa",
+   "prob": 0.8305,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 34,
+   "resultado": null
+  },
+  {
+   "id": "20261103-UCL-villarreal-parissg|over_2.5",
+   "match_id": "20261103-UCL-villarreal-parissg",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Villarreal x Paris SG",
+   "prob": 0.6767,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 35,
+   "resultado": null
+  },
+  {
+   "id": "20261103-UCL-feyenoord-inter|over_2.5",
+   "match_id": "20261103-UCL-feyenoord-inter",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Feyenoord x Inter",
+   "prob": 0.6609,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 36,
+   "resultado": null
   }
  ],
  "multiplas": [
@@ -145,6 +193,92 @@
    "prob": 0.3063,
    "message_id": 19,
    "resultado": false
+  },
+  {
+   "data": "2026-11-03",
+   "tipo": "segura",
+   "partes": [
+    "20261103-UCL-barcelona-astonvilla|over_2.5",
+    "20261103-UCL-galatasaray-stuttgart|btts_sim",
+    "20261103-UCL-villarreal-parissg|over_2.5"
+   ],
+   "pernas": [
+    {
+     "id": "20261103-UCL-barcelona-astonvilla|over_2.5",
+     "match_id": "20261103-UCL-barcelona-astonvilla",
+     "key": "over_2.5",
+     "prob": 0.8305,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-galatasaray-stuttgart|btts_sim",
+     "match_id": "20261103-UCL-galatasaray-stuttgart",
+     "key": "btts_sim",
+     "prob": 0.7007,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-villarreal-parissg|over_2.5",
+     "match_id": "20261103-UCL-villarreal-parissg",
+     "key": "over_2.5",
+     "prob": 0.6767,
+     "odd_casa": null
+    }
+   ],
+   "prob": 0.3938,
+   "message_id": 37,
+   "resultado": null
+  },
+  {
+   "data": "2026-11-03",
+   "tipo": "turbo",
+   "partes": [
+    "20261103-UCL-barcelona-astonvilla|over_2.5",
+    "20261103-UCL-galatasaray-stuttgart|btts_sim",
+    "20261103-UCL-villarreal-parissg|over_2.5",
+    "20261103-UCL-feyenoord-inter|over_2.5",
+    "20261103-UCL-athmadrid-bayernmunich|btts_sim"
+   ],
+   "pernas": [
+    {
+     "id": "20261103-UCL-barcelona-astonvilla|over_2.5",
+     "match_id": "20261103-UCL-barcelona-astonvilla",
+     "key": "over_2.5",
+     "prob": 0.8305,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-galatasaray-stuttgart|btts_sim",
+     "match_id": "20261103-UCL-galatasaray-stuttgart",
+     "key": "btts_sim",
+     "prob": 0.7007,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-villarreal-parissg|over_2.5",
+     "match_id": "20261103-UCL-villarreal-parissg",
+     "key": "over_2.5",
+     "prob": 0.6767,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-feyenoord-inter|over_2.5",
+     "match_id": "20261103-UCL-feyenoord-inter",
+     "key": "over_2.5",
+     "prob": 0.6609,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-athmadrid-bayernmunich|btts_sim",
+     "match_id": "20261103-UCL-athmadrid-bayernmunich",
+     "key": "btts_sim",
+     "prob": 0.6584,
+     "odd_casa": null
+    }
+   ],
+   "prob": 0.1714,
+   "message_id": 38,
+   "resultado": null
   }
  ],
  "balancos": [
