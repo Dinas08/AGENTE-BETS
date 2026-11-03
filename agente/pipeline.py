@@ -279,8 +279,8 @@ def quick_results() -> list[str]:
     if preds.empty or "espn_ref" not in preds:
         return []
     now = pd.Timestamp.now()
-    # um jogo dura ~1h55 com intervalo; damos margem para descontos
-    pending = preds[preds["hg"].isna() & preds["espn_ref"].notna() & (preds["kickoff"] < now - pd.Timedelta(minutes=110))]
+    # um jogo dura ~1h55 com intervalo; antes dos 100 min nunca acabou (o ESPN diz se já terminou)
+    pending = preds[preds["hg"].isna() & preds["espn_ref"].notna() & (preds["kickoff"] < now - pd.Timedelta(minutes=100))]
     if pending.empty:
         return []
     wanted = {p["espn_ref"].split("|")[1]: p for _, p in pending.iterrows()}

@@ -1,9 +1,9 @@
-# Resultados dos jogos previstos que acabaram (ESPN) — de 30 em 30 min nas horas de jogos (Lisboa ≈ UTC).
+# Resultados dos jogos previstos que acabaram (ESPN) — de 10 em 10 min, a toda a hora (há jogos das Américas
+# de madrugada), para o Green/Red sair no Telegram logo a seguir ao apito final.
 name: Resultados
 on:
   schedule:
-    - cron: "*/30 11-23 * * *"
-    - cron: "20 0 * * *"   # jogos que acabam perto da meia-noite
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 concurrency:
   group: dados
@@ -38,7 +38,7 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-core.txt
       - run: pip install -q -r requirements-core.txt
-      - run: python run.py auto && tail -n 1 dados/auto.log
+      - run: python run.py auto
       - name: Telegram (Green/Red, dicas tardias com onzes, madrugada às 22h, mensagens privadas)
         continue-on-error: true
         run: |

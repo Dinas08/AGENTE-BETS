@@ -44,9 +44,12 @@ def main():
         from agente import config
         try:
             new = pipeline.quick_results()
-            msg = f"{len(new)} resultado(s) novo(s): {', '.join(new)}" if new else "nada novo"
+            msg = f"{len(new)} resultado(s) novo(s): {', '.join(new)}" if new else None
         except Exception as e:  # sem internet, etc. — tenta na próxima execução
             msg = f"erro: {e}"
+        print(msg or "nada novo")
+        if msg is None:  # corre de 10 em 10 min: não sujar o ramo de dados com um commit por cada "nada novo"
+            sys.exit(0)
         log = config.DATA_DIR / "auto.log"
         lines = log.read_text(encoding="utf-8").splitlines()[-300:] if log.exists() else []
         lines.append(f"{dt.datetime.now():%Y-%m-%d %H:%M} {msg}")
