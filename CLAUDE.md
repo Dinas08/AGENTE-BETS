@@ -15,7 +15,7 @@ Python: `.venv\Scripts\python.exe` (Windows). Define `$env:PYTHONIOENCODING="utf
 - `run.py aprendizagem` — correções automáticas por equipa (aprendidas com os erros) e calibração por mercado
 
 ## Na nuvem (rotinas do Claude na nuvem)
-O sistema corre sem o PC: o GitHub Actions trata dos dados (`resultados.yml` de 30 em 30 min, `previsoes.yml`
+O sistema corre sem o PC: o GitHub Actions trata dos dados (`resultados.yml` de 10 em 10 min, 24h, com o Green/Red no Telegram, `previsoes.yml`
 às 10h30 e 17h30 corre `run.py tudo`) e a dashboard está no Streamlit Cloud. Os dados (`agente.db`, `ajustes.json`,
 `licoes.md`, `equipas/`, `recaps/`) **não estão no ramo principal**: estão no ramo `claude/dados`.
 Se estiveres numa sessão na nuvem (não existe a pasta `.venv`), antes de tudo:
