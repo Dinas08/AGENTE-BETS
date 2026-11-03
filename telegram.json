@@ -290,5 +290,50 @@
  ],
  "offset": 892007132,
  "ignorados": [],
- "pendentes": []
+ "pendentes": [
+  {
+   "pid": "031928250",
+   "origem": "tardia",
+   "data": "2026-11-03",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261103-UCL-athmadrid-bayernmunich|btts_sim",
+    "match_id": "20261103-UCL-athmadrid-bayernmunich",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Ath Madrid x Bayern Munich",
+    "prob": 0.6478,
+    "odd_casa": null,
+    "data": "2026-11-03",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n⭐ <b>LIGA DOS CAMPEÕES – TERÇA 03/11</b>\nAth Madrid x Bayern Munich | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.54</b> (mínima com valor)\n\n📊 Golos esperados: Ath Madrid 1.5 – Bayern Munich 1.8\n📊 Ath Madrid: 6 vitórias nos últimos 6 jogos, xG 12.0 contra 5.7\n📊 Bayern Munich: 4 vitórias nos últimos 6 jogos, xG 22.3 contra 6.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-03T20:00:00",
+   "estado": "pendente",
+   "admin_msg": 6
+  },
+  {
+   "pid": "031928261",
+   "origem": "tardia",
+   "data": "2026-11-03",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261103-UCL-manunited-roma|btts_sim",
+    "match_id": "20261103-UCL-manunited-roma",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Man United x Roma",
+    "prob": 0.6456,
+    "odd_casa": null,
+    "data": "2026-11-03",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n⭐ <b>LIGA DOS CAMPEÕES – TERÇA 03/11</b>\nMan United x Roma | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.55</b> (mínima com valor)\n\n📊 Golos esperados: Man United 1.6 – Roma 1.6\n📊 Man United: 0 vitórias nos últimos 6 jogos, xG 6.7 contra 10.9\n📊 Roma: 3 vitórias nos últimos 6 jogos, xG 11.6 contra 11.0\n🚑 Man United sem Sesko\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-03T20:00:00",
+   "estado": "pendente",
+   "admin_msg": 7
+  }
+ ]
 }
