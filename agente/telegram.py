@@ -8,6 +8,7 @@ import datetime as dt
 import html
 import json
 import os
+import time
 
 import pandas as pd
 import requests
@@ -82,15 +83,35 @@ def _link() -> str:
 
 # ------------------------------------------------------------------ escolha das dicas
 
-def escolher(r, p_min: float = P_MIN) -> tuple[str, float] | None:
+def escolher(r, p_min: float = P_MIN, excluir=()) -> tuple[str, float] | None:
     """A dica de um jogo: a ⭐ da dashboard (a previsão mais segura). As casas não aceitam odds abaixo de
     ODD_MIN: se a ⭐ ficar abaixo, usa a previsão seguinte mais segura do mesmo jogo que pague pelo menos isso."""
     cands = sorted(((k, r["probs"].get(k, 0)) for m, k in r["picks"].items()
-                    if m in ("resultado", "golos", "ambas", "cantos")), key=lambda x: -x[1])
+                    if m in ("resultado", "golos", "ambas", "cantos") and k not in excluir), key=lambda x: -x[1])
     for key, p in cands:
         if p >= p_min and odd((r["odds"] or {}).get(key), p) >= ODD_MIN:
             return key, p
     return None
+
+
+BOOST_P = (0.45, 0.65)      # perna "boost" da turbo: odd um pouco maior, mas ainda a previsão mais provável
+BOOST_ODD = (1.65, 2.60)    # dentro desta faixa de odds
+
+
+def _boost_ok(key: str) -> bool:
+    """Mercados coerentes para a perna boost: resultado, golos e ambas marcam (e combinações deles)."""
+    return not any(x in key for x in ("placar", "cantos", "cartoes", "marca", "sem_sofrer", "under_0.5",
+                                     "over_0.5", "over_4.5", "under_4.5")) and key != "X"
+
+
+def boost(r) -> tuple[str, float] | None:
+    """A previsão mais provável do jogo cuja odd cai na faixa BOOST_ODD (para dar corpo à turbo)."""
+    cands = []
+    for key, p in r["probs"].items():
+        o = odd((r["odds"] or {}).get(key), p) if p else 0
+        if _boost_ok(key) and BOOST_P[0] <= p <= BOOST_P[1] and BOOST_ODD[0] <= o <= BOOST_ODD[1]:
+            cands.append((p, key))
+    return (max(cands)[1], max(cands)[0]) if cands else None
 
 
 def _razoes(r, key) -> list[str]:
@@ -149,8 +170,8 @@ def dicas(hoje: dt.date | None = None) -> int:
     """Publica as dicas dos jogos de hoje (uma vez por dia) e a múltipla do dia."""
     hoje = hoje or dt.date.today()
     s = _load()
-    if any(d["data"] == hoje.isoformat() for d in s["dicas"]):
-        print("Dicas de hoje já publicadas.")
+    if any(d["data"] == hoje.isoformat() for d in s["dicas"]) or _proposto(s, hoje.isoformat(), "dicas"):
+        print("Dicas de hoje já publicadas (ou à espera de aprovação).")
         return 0
     p = db.load_predictions(with_results=False)
     agora = pd.Timestamp.now()
@@ -166,34 +187,49 @@ def dicas(hoje: dt.date | None = None) -> int:
         return 0
     novas = []
     for prob, r, key in sorted(cands, key=lambda x: x[1]["kickoff"]):
-        mid = send(mensagem_dica(r, key, prob))
-        novas.append({"id": f"{r['match_id']}|{key}", "match_id": r["match_id"], "key": key,
-                      "texto": texto(key, r["home"], r["away"]), "jogo": f"{r['home']} x {r['away']}",
-                      "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": hoje.isoformat(),
-                      "message_id": mid, "resultado": None})
-    s["dicas"] += novas
+        d = _dica(r, key, prob, hoje.isoformat())
+        publicar(s, "dicas", d, mensagem_dica(r, key, prob), r["kickoff"], "dicas")
+        novas.append(d)
+    partes = []
     if len(novas) >= 2:
         partes = sorted(novas, key=lambda d: -d["prob"])[:3 if len(novas) >= 3 else 2]
         if _prod(d["prob"] for d in partes) < 0.22 and len(partes) == 3:  # 3 pernas arriscadas: só as 2 mais seguras
             partes = partes[:2]
-        _multipla(s, "🎯 <b>MÚLTIPLA DO DIA</b>", partes, hoje, "segura")
-    # turbo: as previsões mais seguras de todos os jogos de hoje, até a odd total chegar a TURBO_ODD
-    pernas, om = [], 1.0
-    for _, r in p.sort_values("kickoff").iterrows():
-        c = escolher(r, TURBO_P_MIN)
-        if c:
-            pernas.append(_perna(r, *c, hoje))
-    pernas = sorted(pernas, key=lambda d: -d["prob"])
+        _multipla(s, "🎯 <b>MÚLTIPLA DO DIA</b>", partes, hoje, "segura", p)
+    turbo = _turbo(p, partes, hoje)
+    if turbo:
+        _multipla(s, "🚀 <b>MÚLTIPLA TURBO</b>", turbo, hoje, "turbo", p)
+    pedir_aprovacao(s, hoje.isoformat())
+    _save(s)
+    return len(novas)
+
+
+def _turbo(p: pd.DataFrame, dia: list, hoje) -> list:
+    """Múltipla turbo sem repetir nenhuma aposta da múltipla do dia (e, se der, sem os mesmos jogos):
+    uma perna boost (odd ~1.65-2.60, a mais provável dessa faixa) e o resto seguras até a odd chegar a TURBO_ODD."""
+    usados = {d["match_id"] for d in dia}
+    apostas = {d["id"] for d in dia}
+    outros = p[~p["match_id"].isin(usados)].sort_values("kickoff")
     turbo = []
-    for d in pernas:
+    bs = [(c[1], r, c[0]) for _, r in outros.iterrows() if (c := boost(r))]
+    if bs:
+        prob, r, key = max(bs, key=lambda x: x[0])
+        turbo.append(_perna(r, key, prob, hoje))
+    jogos = {d["match_id"] for d in turbo}
+    seguras = [_perna(r, *c, hoje) for _, r in outros.iterrows()
+               if r["match_id"] not in jogos and (c := escolher(r, TURBO_P_MIN))]
+    # se faltarem jogos: outra aposta (nunca a mesma) dos jogos da múltipla do dia
+    for _, r in p[p["match_id"].isin(usados)].iterrows():
+        c = escolher(r, TURBO_P_MIN, excluir={a.split("|")[1] for a in apostas if a.startswith(r["match_id"] + "|")})
+        if c:
+            seguras.append(_perna(r, *c, hoje) | {"reserva": True})
+    om = _prod(odd(d["odd_casa"], d["prob"]) for d in turbo)
+    for d in sorted(seguras, key=lambda d: (d.get("reserva", False), -d["prob"])):
         if om >= TURBO_ODD or len(turbo) >= TURBO_PERNAS:
             break
         turbo.append(d)
         om *= odd(d["odd_casa"], d["prob"])
-    if len(turbo) >= 3 and om >= 3:
-        _multipla(s, "🚀 <b>MÚLTIPLA TURBO</b>", turbo, hoje, "turbo")
-    _save(s)
-    return len(novas)
+    return turbo if len(turbo) >= 3 and om >= 3 else []
 
 
 def _prod(xs) -> float:
@@ -209,14 +245,15 @@ def _perna(r, key, prob, hoje) -> dict:
             "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": hoje.isoformat()}
 
 
-def _multipla(s, titulo, partes, hoje, tipo):
+def _multipla(s, titulo, partes, hoje, tipo, p):
     om = _prod(odd(d["odd_casa"], d["prob"]) for d in partes)
     txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} (@{odd(d['odd_casa'], d['prob']):.2f})" for d in partes)
     msg = f"{titulo}\n\n{txt}\n\n💰 Odd total: <b>{om:.2f}</b>" + _fim()
     pernas = [{k: d[k] for k in ("id", "match_id", "key", "prob", "odd_casa")} for d in partes]
-    s["multiplas"].append({"data": hoje.isoformat(), "tipo": tipo, "partes": [d["id"] for d in partes],
-                           "pernas": pernas, "prob": round(_prod(d["prob"] for d in partes), 4),
-                           "message_id": send(msg), "resultado": None})
+    m = {"data": hoje.isoformat(), "tipo": tipo, "partes": [d["id"] for d in partes],
+         "pernas": pernas, "prob": round(_prod(d["prob"] for d in partes), 4), "resultado": None}
+    inicio = p[p["match_id"].isin([d["match_id"] for d in partes])]["kickoff"].min()
+    publicar(s, "multiplas", m, msg, inicio, "dicas")
 
 
 N_TARDIAS = 2      # dicas extra por dia para os jogos da noite, ~45 min antes do início, com os onzes já conhecidos
@@ -224,11 +261,11 @@ N_MADRUGADA = 2    # dicas às 22h para os jogos entre as 00h e as 3h (Américas
 ROTACAO = 5        # alterações no onze em relação ao jogo anterior a partir das quais não damos dica
 
 
-def _registar(s, r, key, prob, mid, dia, tipo) -> None:
-    s["dicas"].append({"id": f"{r['match_id']}|{key}", "match_id": r["match_id"], "key": key,
-                       "texto": texto(key, r["home"], r["away"]), "jogo": f"{r['home']} x {r['away']}",
-                       "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": dia,
-                       "message_id": mid, "resultado": None, "tipo": tipo})
+def _dica(r, key, prob, dia, tipo=None) -> dict:
+    d = {"id": f"{r['match_id']}|{key}", "match_id": r["match_id"], "key": key,
+         "texto": texto(key, r["home"], r["away"]), "jogo": f"{r['home']} x {r['away']}",
+         "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": dia, "resultado": None}
+    return d | ({"tipo": tipo} if tipo else {})
 
 
 def onzes(r) -> dict | None:
@@ -263,11 +300,12 @@ def tardias(hoje: dt.date | None = None) -> int:
     agora = pd.Timestamp.now()
     hoje = hoje or agora.date()
     s = _load()
-    feitas = sum(1 for d in s["dicas"] if d["data"] == hoje.isoformat() and (d.get("tipo") == "tardia" or d.get("tardia")))
+    feitas = max(len(_proposto(s, hoje.isoformat(), "tardia")), sum(
+        1 for d in s["dicas"] if d["data"] == hoje.isoformat() and (d.get("tipo") == "tardia" or d.get("tardia"))))
     if feitas >= N_TARDIAS:
         return 0
     ignorados = s.setdefault("ignorados", [])
-    ja = {d["match_id"] for d in s["dicas"]} | set(ignorados)
+    ja = {d["match_id"] for d in s["dicas"]} | set(ignorados) | _jogos_propostos(s)
     p = db.load_predictions(with_results=False)
     p = p[(p["kickoff"] > agora + pd.Timedelta(minutes=20)) & (p["kickoff"] < agora + pd.Timedelta(minutes=75))
           & (p["kickoff"].dt.date == hoje) & (p["kickoff"].dt.hour >= 18) & ~p["limited"].astype(bool)
@@ -288,7 +326,8 @@ def tardias(hoje: dt.date | None = None) -> int:
             mud = [f"{E(t)} {v} {'alteração' if v == 1 else 'alterações'}" for t, v in on.items() if v]
             extra = "📋 Onzes confirmados" + (f" ({'; '.join(mud)})" if mud else " (sem alterações)") + "\n"
         msg = mensagem_dica(r, key, prob).replace("\n\n📊", f"\n\n{extra}📊", 1)
-        _registar(s, r, key, prob, send("🌙 <b>DICA TARDIA</b>\n\n" + msg), hoje.isoformat(), "tardia")
+        publicar(s, "dicas", _dica(r, key, prob, hoje.isoformat(), "tardia"), "🌙 <b>DICA TARDIA</b>\n\n" + msg,
+                 r["kickoff"], "tardia")
         n += 1
     _save(s)
     return n
@@ -301,16 +340,17 @@ def madrugada(hoje: dt.date | None = None) -> int:
     if hoje == agora.date() and agora.hour < 21:
         return 0
     s = _load()
-    if any(d["data"] == hoje.isoformat() and d.get("tipo") == "madrugada" for d in s["dicas"]):
+    if (any(d["data"] == hoje.isoformat() and d.get("tipo") == "madrugada" for d in s["dicas"])
+            or _proposto(s, hoje.isoformat(), "madrugada")):
         return 0
-    ja = {d["match_id"] for d in s["dicas"]}
+    ja = {d["match_id"] for d in s["dicas"]} | _jogos_propostos(s)
     p = db.load_predictions(with_results=False)
     p = p[(p["kickoff"].dt.date == hoje + dt.timedelta(days=1)) & (p["kickoff"].dt.time <= dt.time(3, 0))
           & (p["kickoff"] > agora) & ~p["limited"].astype(bool) & ~p["match_id"].isin(ja)]
     cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])
     for prob, r, key in sorted(cands[:N_MADRUGADA], key=lambda x: x[1]["kickoff"]):
-        _registar(s, r, key, prob, send("🌙 <b>MADRUGADA</b>\n\n" + mensagem_dica(r, key, prob)),
-                  hoje.isoformat(), "madrugada")
+        publicar(s, "dicas", _dica(r, key, prob, hoje.isoformat(), "madrugada"),
+                 "🌙 <b>MADRUGADA</b>\n\n" + mensagem_dica(r, key, prob), r["kickoff"], "madrugada")
     _save(s)
     return len(cands[:N_MADRUGADA])
 
@@ -436,27 +476,189 @@ def link_canal() -> str | None:
 
 
 def privados() -> int:
-    """Responde a quem escreve ao bot em privado com o link do canal grátis. Só guarda a posição da fila
-    (update_id), nunca nomes nem ids de pessoas."""
+    """Mensagens privadas e botões de aprovação, sem esperar (corre de 10 em 10 min nos resultados)."""
+    return painel(0)
+
+
+# ------------------------------------------------------------------ aprovação pelo admin (rascunhos)
+#
+# Com TELEGRAM_ADMIN (o id do Telegram do dono, só nos Secrets) as dicas, múltiplas, tardias e madrugada
+# vão primeiro em privado para o admin como rascunho, com botões ✅ Publicar / ❌ Descartar. Para editar,
+# o admin responde ao rascunho com o texto novo. Os Green/Red, resumos e balanços continuam automáticos.
+
+ADMIN = os.getenv("TELEGRAM_ADMIN", "").strip()
+MARCA = "———"  # separa o cabeçalho do rascunho do texto que vai para o canal
+ESTADOS = {"publicada": "✅ <b>PUBLICADA</b>", "descartada": "❌ <b>DESCARTADA</b>",
+           "expirada": "⌛ <b>EXPIROU</b> (o jogo já começou)"}
+
+
+def rever() -> bool:
+    return bool(ADMIN) and not ensaio()
+
+
+def _bot(metodo: str, **body) -> dict:
+    r = requests.post(f"https://api.telegram.org/bot{TOKEN}/{metodo}", json=body, timeout=70)
+    return r.json() if r.headers.get("content-type", "").startswith("application/json") else {}
+
+
+def _proposto(s: dict, dia: str, origem: str) -> list:
+    return [x for x in s.get("pendentes", []) if x["data"] == dia and x["origem"] == origem]
+
+
+def _jogos_propostos(s: dict) -> set:
+    return {x["registo"]["match_id"] for x in s.get("pendentes", []) if x["lista"] == "dicas"}
+
+
+def _cabecalho(x: dict) -> str:
+    return (f"📝 <b>RASCUNHO</b> · expira às {pd.Timestamp(x['expira']):%Hh%M}\n"
+            f"<i>Responde a esta mensagem com o texto novo para editar.</i>\n{MARCA}\n")
+
+
+def _botoes(pid: str) -> dict:
+    return {"inline_keyboard": [[{"text": "✅ Publicar", "callback_data": f"pub:{pid}"},
+                                 {"text": "❌ Descartar", "callback_data": f"desc:{pid}"}]]}
+
+
+def publicar(s, lista, registo, msg, inicio, origem) -> None:
+    """Sem admin publica já no canal; com admin manda o rascunho e só publica quando for aprovado."""
+    if rever():
+        x = {"pid": f"{dt.datetime.now():%d%H%M%S}{len(s.setdefault('pendentes', []))}", "origem": origem,
+             "data": registo["data"], "lista": lista, "registo": registo, "texto": msg,
+             "expira": pd.Timestamp(inicio).isoformat(), "estado": "pendente"}
+        r = _bot("sendMessage", chat_id=ADMIN, text=_cabecalho(x) + msg, parse_mode="HTML",
+                 disable_web_page_preview=True, reply_markup=_botoes(x["pid"]))
+        if r.get("ok"):
+            x["admin_msg"] = r["result"]["message_id"]
+            s["pendentes"].append(x)
+            return
+        print(f"  [admin] não consegui mandar o rascunho ({r.get('description')}); publico direto")
+    s[lista].append(registo | {"message_id": send(msg)})
+
+
+def pedir_aprovacao(s: dict, dia: str) -> None:
+    """Depois das dicas da manhã: uma mensagem com 'Publicar todos' / 'Descartar todos'."""
+    n = sum(1 for x in s.get("pendentes", []) if x["data"] == dia and x["estado"] == "pendente")
+    if rever() and n >= 2:
+        _bot("sendMessage", chat_id=ADMIN, text=f"📝 {n} rascunhos de hoje à espera da tua aprovação.",
+             reply_markup={"inline_keyboard": [[{"text": "✅ Publicar todos", "callback_data": "pub:*"},
+                                                {"text": "❌ Descartar todos", "callback_data": "desc:*"}]]})
+
+
+def _fechar(x: dict, estado: str) -> None:
+    x["estado"] = estado
+    if x.get("admin_msg"):
+        _bot("editMessageText", chat_id=ADMIN, message_id=x["admin_msg"], parse_mode="HTML",
+             disable_web_page_preview=True, text=f"{ESTADOS[estado]}\n{MARCA}\n{x['texto']}")
+
+
+def _aprovar(s: dict, x: dict) -> None:
+    s[x["lista"]].append(x["registo"] | {"message_id": send(x["texto"])})
+    _fechar(x, "publicada")
+
+
+def _html(texto: str, entidades) -> str:
+    """Texto de uma mensagem do Telegram (com negrito, itálico, links) -> HTML para voltar a enviar."""
+    b = texto.encode("utf-16-le")
+    tags = {"bold": "b", "italic": "i", "underline": "u", "strikethrough": "s", "code": "code"}
+    abre, fecha = {}, {}
+    for e in entidades or []:
+        if e["type"] == "text_link":
+            a, f = f'<a href="{E(e["url"], quote=True)}">', "</a>"
+        elif e["type"] in tags:
+            a, f = f"<{tags[e['type']]}>", f"</{tags[e['type']]}>"
+        else:
+            continue
+        abre.setdefault(e["offset"], []).append(a)
+        fecha.setdefault(e["offset"] + e["length"], []).insert(0, f)
+    cortes = sorted({0, len(b) // 2, *abre, *fecha})
+    out = []
+    for i, j in zip(cortes, cortes[1:] + [None]):
+        out += fecha.get(i, []) + abre.get(i, [])
+        if j is not None:
+            out.append(E(b[2 * i:2 * j].decode("utf-16-le", errors="replace")))
+    return "".join(out)
+
+
+def _editar(s: dict, m: dict) -> None:
+    alvo = (m.get("reply_to_message") or {}).get("message_id")
+    x = next((x for x in s.get("pendentes", []) if alvo and x.get("admin_msg") == alvo), None)
+    if x is None:
+        n = sum(1 for x in s.get("pendentes", []) if x["estado"] == "pendente")
+        _bot("sendMessage", chat_id=ADMIN, text=f"📝 {n} rascunho(s) à espera. Para editar, responde ao rascunho.")
+        return
+    if x["estado"] != "pendente":
+        _bot("sendMessage", chat_id=ADMIN, text="Esse rascunho já não está pendente.")
+        return
+    novo = _html(m.get("text") or "", m.get("entities"))
+    if MARCA in novo:  # copiou o rascunho inteiro, com o cabeçalho
+        novo = novo.split(MARCA, 1)[1]
+    novo = novo.strip() + ("" if RODAPE in novo else _fim())
+    r = _bot("editMessageText", chat_id=ADMIN, message_id=x["admin_msg"], text=_cabecalho(x) + novo,
+             parse_mode="HTML", disable_web_page_preview=True, reply_markup=_botoes(x["pid"]))
+    if r.get("ok"):
+        x["texto"] = novo
+        aviso = "✏️ Rascunho atualizado. Carrega em ✅ Publicar quando estiver pronto."
+    else:
+        aviso = f"Não consegui usar esse texto ({r.get('description', 'erro')})."
+    _bot("sendMessage", chat_id=ADMIN, text=aviso, reply_parameters={"message_id": x["admin_msg"]})
+
+
+def _botao(s: dict, cb: dict) -> int:
+    if str(cb["from"]["id"]) != ADMIN:
+        _bot("answerCallbackQuery", callback_query_id=cb["id"], text="Sem permissão.")
+        return 0
+    acao, _, pid = (cb.get("data") or "").partition(":")
+    alvos = [x for x in s.get("pendentes", []) if x["estado"] == "pendente" and pid in ("*", x["pid"])]
+    for x in alvos:
+        _aprovar(s, x) if acao == "pub" else _fechar(x, "descartada")
+    feito = "publicado" if acao == "pub" else "descartado"
+    _bot("answerCallbackQuery", callback_query_id=cb["id"],
+         text=f"{len(alvos)} {feito}(s)" if alvos else "Já não está pendente.")
+    return len(alvos)
+
+
+def _expirar(s: dict) -> None:
+    agora = pd.Timestamp.now()
+    for x in s.get("pendentes", []):
+        if x["estado"] == "pendente" and pd.Timestamp(x["expira"]) <= agora:
+            _fechar(x, "expirada")
+
+
+def painel(minutos: float = 0) -> int:
+    """Lê as mensagens privadas e os botões do bot. Com minutos > 0 e rascunhos pendentes, fica à escuta
+    (long polling) para o admin aprovar em tempo real. Só guarda a posição da fila, nunca dados de pessoas
+    (o id do admin vem dos Secrets)."""
     if ensaio():
         return 0
     s = _load()
-    r = requests.get(f"https://api.telegram.org/bot{TOKEN}/getUpdates",
-                     params={"offset": s.get("offset", 0), "timeout": 0,
-                             "allowed_updates": json.dumps(["message"])}, timeout=30).json()
-    ups = r.get("result", [])
-    if not ups:
-        return 0
-    link = link_canal()
-    n = 0
-    for u in ups:
-        m = u.get("message") or {}
-        if (m.get("chat") or {}).get("type") == "private" and link:
-            txt = ("👋 Bem-vindo!\n\nAs dicas grátis do dia, a múltipla e os Greens saem todos os dias no canal:\n"
-                   f"👉 {link}\n\n{RODAPE}")
-            requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage",
-                          json={"chat_id": m["chat"]["id"], "text": txt, "disable_web_page_preview": True}, timeout=30)
+    lim = (dt.date.today() - dt.timedelta(days=3)).isoformat()
+    s["pendentes"] = [x for x in s.get("pendentes", []) if x["data"] >= lim]
+    fim, n, link = time.time() + minutos * 60, 0, None
+    while True:
+        _expirar(s)
+        pend = any(x["estado"] == "pendente" for x in s["pendentes"])
+        espera = max(0, int(min(50, fim - time.time()))) if pend else 0
+        ups = _bot("getUpdates", offset=s.get("offset", 0), timeout=espera,
+                   allowed_updates=["message", "callback_query"]).get("result", [])
+        for u in ups:
+            if u.get("callback_query"):
+                n += _botao(s, u["callback_query"])
+                continue
+            m = u.get("message") or {}
+            chat = (m.get("chat") or {})
+            if chat.get("type") != "private":
+                continue
+            if (m.get("text") or "").strip() == "/id":
+                _bot("sendMessage", chat_id=chat["id"], text=f"O teu id do Telegram: {chat['id']}")
+            elif ADMIN and str(chat["id"]) == ADMIN:
+                _editar(s, m)
+            elif link or (link := link_canal()):
+                _bot("sendMessage", chat_id=chat["id"], disable_web_page_preview=True,
+                     text=("👋 Bem-vindo!\n\nAs dicas grátis do dia, a múltipla e os Greens saem todos os dias no "
+                           f"canal:\n👉 {link}\n\n{RODAPE}"))
             n += 1
-    s["offset"] = ups[-1]["update_id"] + 1
-    _save(s)
-    return n
+        if ups:
+            s["offset"] = ups[-1]["update_id"] + 1
+        _save(s)
+        if not (espera and time.time() < fim):
+            return n

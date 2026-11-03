@@ -11,12 +11,14 @@ concurrency:
 jobs:
   resultados:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     permissions:
       contents: write
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_GRATIS: ${{ secrets.TELEGRAM_CHAT_GRATIS }}
+      TELEGRAM_ADMIN: ${{ secrets.TELEGRAM_ADMIN }}
+      TZ: Europe/Lisbon
       API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
       AFILIADO_LINK: ${{ secrets.AFILIADO_LINK }}
       AFILIADO_CASA: ${{ secrets.AFILIADO_CASA }}
@@ -42,5 +44,5 @@ jobs:
       - name: Telegram (Green/Red, dicas tardias com onzes, madrugada às 22h, mensagens privadas)
         continue-on-error: true
         run: |
-          for c in resultados tardias madrugada privados; do python run.py telegram $c || echo "telegram $c falhou"; done
+          for c in resultados tardias madrugada "painel 4"; do python run.py telegram $c || echo "telegram $c falhou"; done
       - run: bash scripts/guardar_dados.sh "resultados" ours

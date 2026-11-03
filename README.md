@@ -32,6 +32,10 @@ escreve um recap depois de cada jornada.
   Quem escreve ao bot em privado recebe o link do canal. Estado das dicas em `dados/telegram.json`.
 - Secrets do GitHub: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_GRATIS` (id do canal), e opcionais `AFILIADO_LINK`,
   `AFILIADO_CASA` (só casas com licença SRIJ).
+- Aprovação: com o Secret `TELEGRAM_ADMIN` (o teu id; manda `/id` ao bot para o saber) as dicas, múltiplas,
+  tardias e madrugada chegam-te primeiro em privado como rascunho, com ✅ Publicar / ❌ Descartar. Para editar,
+  responde ao rascunho com o texto novo. Rascunhos não aprovados expiram quando o jogo começa. Os GREEN/RED,
+  resumos e balanços continuam automáticos. A múltipla turbo nunca repete apostas da múltipla do dia.
 - Testar: Actions → "Testar Telegram". Local: `run.py telegram dicas AAAA-MM-DD` (sem token = só mostra).
 
 ## Aprendizagem

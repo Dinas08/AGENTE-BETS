@@ -65,7 +65,7 @@ def main():
             print("\nCalibração por mercado:")
             print(m[["mercado", "previsoes", "acerto", "esperado", "leitura"]].round(2).to_string(index=False))
     elif cmd == "telegram":
-        # telegram dicas [AAAA-MM-DD] | tardias [AAAA-MM-DD] | madrugada [AAAA-MM-DD] | resultados | privados | balanco [forcar]  (sem token = ensaio, só mostra)
+        # telegram dicas [AAAA-MM-DD] | tardias [AAAA-MM-DD] | madrugada [AAAA-MM-DD] | resultados | privados | painel [min] | balanco [forcar]  (sem token = ensaio, só mostra)
         from agente import telegram
         sub = sys.argv[2] if len(sys.argv) > 2 else "dicas"
         if sub == "dicas":
@@ -99,6 +99,9 @@ def main():
             print(f"Dicas de madrugada publicadas: {telegram.madrugada(day)}")
         elif sub == "privados":
             print(f"Respostas em privado: {telegram.privados()}")
+        elif sub == "painel":
+            # fica à escuta dos botões de aprovação (Publicar/Descartar) até N minutos, se houver rascunhos
+            print(f"Ações do painel: {telegram.painel(float(sys.argv[3]) if len(sys.argv) > 3 else 15)}")
         elif sub == "balanco":
             print(f"Balanço publicado: {telegram.balanco(len(sys.argv) > 3)}")
     elif cmd == "lista":
