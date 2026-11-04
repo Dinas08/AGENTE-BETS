@@ -19,7 +19,9 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 
 ## Em observação (1 ocorrência — confirmar antes de agir)
 
-- 2026-11-03 · Cartões "Menos de 4.5" falharam em 5 de 8 jogos europeus da S45 (Villarreal–PSG a 82%); cartões 43% contra 65% previsto. Se a S46 repetir, passa para `notas_modelo.md`.
+- 2026-11-04 · Equipas de topo com 4+ baixas titulares fora de casa na Europa continuam favoritas demais (Fenerbahce 3-2 Liverpool, favorito a 58%; Atalanta 0-3 Parma). Com 2+ casos, aplicar −6 a −10 golos marcados e baixar o favorito para ≤48%.
+- 2026-11-04 · Cantos europeus na S45: 46% contra 58% previsto (ruído nos dois sentidos, jogos 7-10 cantos). Descontar confiança acima de 70%.
+- 2026-11-03 · Cartões "Menos de 4.5" falharam em 5 de 8 jogos europeus da S45 (Villarreal–PSG a 82%); cartões 43% contra 65% previsto. Terça+quarta da S45: 54% contra 65%. Se a S46 repetir, passa para `notas_modelo.md`.
 - 2026-11-03 · Cantos "Mais de 9.5" a 80%+ demasiado confiante (Shakhtar–Sporting 83%, caiu com 9 cantos). Observar.
 
 - Favoritos fora de casa entre 40% e 50%: parecia falhar muito (2/7), mas com a semana completa foi 5/10, em linha com as probabilidades. Sem ajuste. Se nas próximas semanas ficar abaixo de 40%, reativar (procurar sinais de força da casa; preferir "X2" à vitória seca).

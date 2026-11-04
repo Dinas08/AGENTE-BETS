@@ -11,3 +11,4 @@
 ## Erros do modelo com esta equipa
 - 2026-10-31 vs Brighton (0-1): o modelo deu 57% à vitória e 2.1 golos ao City. Foi sobretudo azar (golo do Brighton aos 11' e domínio do City nos cantos),
   mas a quebra de forma não foi ajustada. Se perder outra vez, considerar −3 a −5 nos golos marcados.
+- 2026-11-04 RB Leipzig 2-3 Man City: vitória prevista (57%), golos e BTTS certos; Semenyo fora (joelho, até meados de dezembro) não impediu a vitória. Defesa sofre (3.0 sofridos contra 2.5 previstos em 2 jogos).
