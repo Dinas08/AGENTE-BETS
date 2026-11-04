@@ -537,6 +537,10 @@ def privados() -> int:
 # o admin responde ao rascunho com o texto novo. Os Green/Red, resumos e balanços continuam automáticos.
 
 ADMIN = os.getenv("TELEGRAM_ADMIN", "").strip()
+# Bot só para os rascunhos (opcional). Com ele, o bot público passa a responder às pessoas na hora pelo
+# Cloudflare Worker (bot/worker.js, webhook) e o GitHub Actions só lê a fila deste bot de admin.
+ADMIN_TOKEN = os.getenv("TELEGRAM_ADMIN_BOT_TOKEN", "").strip()
+PUBLICO = config.DATA_DIR / "bot_publico.json"  # textos e botões que o Worker usa para responder
 MARCA = "———"  # separa o cabeçalho do rascunho do texto que vai para o canal
 ESTADOS = {"publicada": "✅ <b>PUBLICADA</b>", "descartada": "❌ <b>DESCARTADA</b>",
            "expirada": "⌛ <b>EXPIROU</b> (o jogo já começou)"}
@@ -546,8 +550,9 @@ def rever() -> bool:
     return bool(ADMIN) and not ensaio()
 
 
-def _bot(metodo: str, **body) -> dict:
-    r = requests.post(f"https://api.telegram.org/bot{TOKEN}/{metodo}", json=body, timeout=70)
+def _bot(metodo: str, _token: str | None = None, **body) -> dict:
+    """Pedido ao bot de admin (rascunhos e botões); _token=TOKEN para responder em nome do bot público."""
+    r = requests.post(f"https://api.telegram.org/bot{_token or ADMIN_TOKEN or TOKEN}/{metodo}", json=body, timeout=70)
     return r.json() if r.headers.get("content-type", "").startswith("application/json") else {}
 
 
@@ -767,8 +772,8 @@ def texto_resultados(s: dict, dias: int = 7) -> str:
     return "\n".join(linhas)
 
 
-def _publico(s: dict, chat: int, acao: str, link: str | None, editar: int | None = None) -> None:
-    """Resposta a uma pessoa: pergunta da idade, entrada no canal, resultados ou como funciona."""
+def texto_publico(s: dict, acao: str, link: str | None) -> dict:
+    """Texto e botões de uma resposta a uma pessoa: boas-vindas, entrada no canal, resultados ou como funciona."""
     if acao == "ola":
         msg = OLA + AGENDA + "\n\n" + IDADE
         botoes = _menu(s, link, "✅ Tenho 18+ · Entrar no canal")
@@ -780,20 +785,31 @@ def _publico(s: dict, chat: int, acao: str, link: str | None, editar: int | None
         msg, botoes = texto_resultados(s), _menu(s, link)
     else:
         msg, botoes = COMO + "\n\n🔞 +18 | Joga com responsabilidade", _menu(s, link)
-    corpo = {"chat_id": chat, "text": msg, "parse_mode": "HTML", "disable_web_page_preview": True}
-    if botoes:
-        corpo["reply_markup"] = botoes
+    return {"text": msg} | ({"reply_markup": botoes} if botoes else {})
+
+
+def guardar_publico(s: dict, link: str | None) -> None:
+    """Escreve bot_publico.json (lido pelo Worker do Cloudflare). Sem data/hora: só muda quando o texto muda."""
+    d = {"textos": {a: texto_publico(s, a, link) for a in ("ola", "18", "menor", "res", "como")}}
+    novo = json.dumps(d, ensure_ascii=False, indent=1)
+    if not PUBLICO.exists() or PUBLICO.read_text(encoding="utf-8") != novo:
+        PUBLICO.write_text(novo, encoding="utf-8")
+
+
+def _publico(s: dict, chat: int, acao: str, link: str | None, editar: int | None = None) -> None:
+    """Resposta a uma pessoa pelo GitHub Actions (só sem bot de admin; com ele responde o Worker)."""
+    corpo = {"chat_id": chat, "parse_mode": "HTML", "disable_web_page_preview": True} | texto_publico(s, acao, link)
     if editar and acao in ("18", "menor"):  # substitui a pergunta da idade (tira os botões)
-        r = _bot("editMessageText", message_id=editar, **corpo)
+        r = _bot("editMessageText", TOKEN, message_id=editar, **corpo)
         if r.get("ok"):
             return
-    _bot("sendMessage", **corpo)
+    _bot("sendMessage", TOKEN, **corpo)
 
 
 def _botao(s: dict, cb: dict, link: str | None = None) -> int:
     acao, _, pid = (cb.get("data") or "").partition(":")
     if acao == "pb":  # botões públicos (boas-vindas)
-        _bot("answerCallbackQuery", callback_query_id=cb["id"])
+        _bot("answerCallbackQuery", TOKEN, callback_query_id=cb["id"])
         m = cb.get("message") or {}
         _publico(s, (m.get("chat") or {}).get("id", cb["from"]["id"]), pid, link, m.get("message_id"))
         return 1
@@ -831,17 +847,21 @@ def painel(minutos: float = 0) -> int:
     s = _load()
     lim = (dt.date.today() - dt.timedelta(days=3)).isoformat()
     s["pendentes"] = [x for x in s.get("pendentes", []) if x["data"] >= lim]
-    fim, n, link = time.time() + minutos * 60, 0, None
+    fim, n = time.time() + minutos * 60, 0
+    try:
+        link = link_canal()
+    except Exception:  # sem rede: fica sem botão de link desta vez
+        link = None
+    guardar_publico(s, link)
+    fila = "offset_admin" if ADMIN_TOKEN else "offset"  # cada bot tem a sua fila de mensagens
     while True:
         _expirar(s)
         pend = any(x["estado"] == "pendente" for x in s["pendentes"])
         espera = max(0, int(min(50, fim - time.time()))) if pend else 0
-        ups = _bot("getUpdates", offset=s.get("offset", 0), timeout=espera,
+        ups = _bot("getUpdates", offset=s.get(fila, 0), timeout=espera,
                    allowed_updates=["message", "callback_query"]).get("result", [])
         for u in ups:
             cb = u.get("callback_query")
-            if cb and (cb.get("data") or "").startswith("pb:") and link is None:
-                link = link_canal()
             if cb:
                 n += _botao(s, cb, link)
                 continue
@@ -852,14 +872,15 @@ def painel(minutos: float = 0) -> int:
             cmd = (m.get("text") or "").strip().split()[0].split("@")[0].lower() if (m.get("text") or "").strip() else ""
             if cmd == "/id":
                 _bot("sendMessage", chat_id=chat["id"], text=f"O teu id do Telegram: {chat['id']}")
-            elif ADMIN and str(chat["id"]) == ADMIN and cmd not in COMANDOS:
+            elif ADMIN and str(chat["id"]) == ADMIN and (ADMIN_TOKEN or cmd not in COMANDOS):
                 _editar(s, m)
+            elif ADMIN_TOKEN:  # o bot de admin não é para o público
+                continue
             else:
-                link = link or link_canal()
                 _publico(s, chat["id"], COMANDOS.get(cmd, "ola"), link)
             n += 1
         if ups:
-            s["offset"] = ups[-1]["update_id"] + 1
+            s[fila] = ups[-1]["update_id"] + 1
         _save(s)
         if not (espera and time.time() < fim):
             return n

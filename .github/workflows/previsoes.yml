@@ -20,6 +20,7 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_GRATIS: ${{ secrets.TELEGRAM_CHAT_GRATIS }}
       TELEGRAM_ADMIN: ${{ secrets.TELEGRAM_ADMIN }}
+      TELEGRAM_ADMIN_BOT_TOKEN: ${{ secrets.TELEGRAM_ADMIN_BOT_TOKEN }}
       TZ: Europe/Lisbon
       AFILIADO_LINK: ${{ secrets.AFILIADO_LINK }}
       AFILIADO_CASA: ${{ secrets.AFILIADO_CASA }}

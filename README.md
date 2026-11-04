@@ -16,7 +16,7 @@ escreve um recap depois de cada jornada.
 ## Na nuvem (funciona com o PC desligado)
 - **Dashboard:** https://agente-bets-dinis.streamlit.app (palavra-passe nos Secrets do Streamlit). Abre em
   qualquer dispositivo. Se ninguém a abrir durante uns dias adormece; ao abrir demora ~30 s a acordar.
-- **Código:** repositório privado `Dinas08/AGENTE-BETS` (ramo `main`). **Dados:** ramo `claude/dados`.
+- **Código:** repositório `Dinas08/AGENTE-BETS` (ramo `main`). **Dados:** ramo `claude/dados`.
 - **GitHub Actions** (separador Actions do repositório): `Resultados` de 30 em 30 min (11h–24h),
   `Previsões` às 10h30 e 17h30, `Manutenção dos dados` à terça (compacta o histórico). Todos têm "Run workflow"
   para correr à mão.
@@ -32,11 +32,14 @@ escreve um recap depois de cada jornada.
   Quem escreve ao bot em privado recebe as boas-vindas do Agente Claudio com o aviso +18 e botões de link (abrem
   logo, sem esperar pelo bot): "✅ Tenho 18+ · Entrar no canal" e "📊 Últimos resultados" (último resumo/balanço,
   só com canal público). Nada é guardado. Comandos: `/resultados` (últimos 7 dias) e `/comofunciona`.
-  O bot só lê mensagens quando o workflow Resultados corre, por isso a 1.ª resposta pode demorar. Estado das dicas em `dados/telegram.json`.
+  Respostas na hora: o bot público corre no Cloudflare Workers (`bot/worker.js`, webhook, grátis) com os textos de
+  `dados/bot_publico.json`, que o workflow Resultados reescreve de 10 em 10 min. Sem o Worker, o bot só lê as
+  mensagens quando o workflow corre (até 10 min de espera). Estado das dicas em `dados/telegram.json`.
 - Secrets do GitHub: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_GRATIS` (id do canal), e opcionais `AFILIADO_LINK`,
   `AFILIADO_CASA` (só casas com licença SRIJ).
 - Aprovação: com o Secret `TELEGRAM_ADMIN` (o teu id; manda `/id` ao bot para o saber) as dicas, múltiplas,
-  tardias e madrugada chegam-te primeiro em privado como rascunho, com ✅ Publicar / ❌ Descartar. Para editar,
+  tardias e madrugada chegam-te primeiro em privado como rascunho (pelo bot de admin, Secret
+  `TELEGRAM_ADMIN_BOT_TOKEN`, obrigatório quando o bot público está no Worker), com ✅ Publicar / ❌ Descartar. Para editar,
   responde ao rascunho com o texto novo. Nas múltiplas há 🔄 Trocar (aposta seguinte do mesmo jogo) e ❌ Tirar
   em cada perna. Rascunhos não aprovados expiram quando o jogo começa. Os GREEN/RED,
   resumos e balanços continuam automáticos. A múltipla turbo nunca repete apostas da múltipla do dia.
