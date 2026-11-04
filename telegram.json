@@ -370,6 +370,228 @@
    "expira": "2026-11-04T00:30:00",
    "estado": "publicada",
    "admin_msg": 8
+  },
+  {
+   "pid": "041130093",
+   "origem": "dicas",
+   "data": "2026-11-04",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261104-UCL-aek-realmadrid|2",
+    "match_id": "20261104-UCL-aek-realmadrid",
+    "key": "2",
+    "texto": "Vitória Real Madrid",
+    "jogo": "AEK x Real Madrid",
+    "prob": 0.7056,
+    "odd_casa": 1.22,
+    "data": "2026-11-04",
+    "resultado": null
+   },
+   "texto": "⭐ <b>LIGA DOS CAMPEÕES – QUARTA 04/11</b>\nAEK x Real Madrid | 17h45\n\n✅ <b>Dica: Vitória Real Madrid</b>\n💰 Odd: <b>1.22</b>\n\n📊 Golos esperados: AEK 1.1 – Real Madrid 2.5\n📊 AEK: 4 vitórias nos últimos 6 jogos, xG 14.3 contra 4.3\n📊 Real Madrid: 5 vitórias nos últimos 6 jogos, xG 12.9 contra 6.6\n🚑 Real Madrid sem Rodrygo, Asencio\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-04T17:45:00",
+   "estado": "pendente",
+   "admin_msg": 17
+  },
+  {
+   "pid": "041130094",
+   "origem": "dicas",
+   "data": "2026-11-04",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261104-UCL-fenerbahce-liverpool|over_2.5",
+    "match_id": "20261104-UCL-fenerbahce-liverpool",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Fenerbahce x Liverpool",
+    "prob": 0.6808,
+    "odd_casa": null,
+    "data": "2026-11-04",
+    "resultado": null
+   },
+   "texto": "⭐ <b>LIGA DOS CAMPEÕES – QUARTA 04/11</b>\nFenerbahce x Liverpool | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.47</b> (mínima com valor)\n\n📊 Golos esperados: Fenerbahce 1.3 – Liverpool 2.2\n📊 Fenerbahce: 3 vitórias nos últimos 6 jogos, xG 13.1 contra 7.4\n📊 Liverpool: 3 vitórias nos últimos 6 jogos, xG 7.8 contra 5.9\n🚑 Liverpool sem Ekitiké, Frimpong, Gravenberch, Bradley\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-04T17:45:00",
+   "estado": "pendente",
+   "admin_msg": 18
+  },
+  {
+   "pid": "041130105",
+   "origem": "dicas",
+   "data": "2026-11-04",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261104-UCL-psveindhoven-clubbrugge|over_2.5",
+    "match_id": "20261104-UCL-psveindhoven-clubbrugge",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "PSV Eindhoven x Club Brugge",
+    "prob": 0.7167,
+    "odd_casa": null,
+    "data": "2026-11-04",
+    "resultado": null
+   },
+   "texto": "⭐ <b>LIGA DOS CAMPEÕES – QUARTA 04/11</b>\nPSV Eindhoven x Club Brugge | 20h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.40</b> (mínima com valor)\n\n📊 Golos esperados: PSV Eindhoven 2.2 – Club Brugge 1.6\n📊 PSV Eindhoven: 3 vitórias nos últimos 6 jogos, xG 12.0 contra 10.1\n📊 Club Brugge: 6 vitórias nos últimos 6 jogos, xG 14.8 contra 9.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-04T20:00:00",
+   "estado": "pendente",
+   "admin_msg": 19
+  },
+  {
+   "pid": "041130106",
+   "origem": "dicas",
+   "data": "2026-11-04",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261104-BRA-flamengorj-gremio|over_2.5",
+    "match_id": "20261104-BRA-flamengorj-gremio",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Flamengo RJ x Gremio",
+    "prob": 0.6944,
+    "odd_casa": null,
+    "data": "2026-11-04",
+    "resultado": null
+   },
+   "texto": "🇧🇷 <b>BRASILEIRÃO – QUARTA 04/11</b>\nFlamengo RJ x Gremio | 22h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.44</b> (mínima com valor)\n\n📊 Golos esperados: Flamengo RJ 2.8 – Gremio 0.8\n📊 Flamengo RJ: 5 vitórias nos últimos 6 jogos\n📊 Gremio: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-04T22:30:00",
+   "estado": "pendente",
+   "admin_msg": 20
+  },
+  {
+   "pid": "041130107",
+   "origem": "dicas",
+   "data": "2026-11-04",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261104-UCL-rbleipzig-mancity|under_3.5",
+    "match_id": "20261104-UCL-rbleipzig-mancity",
+    "key": "under_3.5",
+    "texto": "Menos de 3.5 golos",
+    "jogo": "RB Leipzig x Man City",
+    "prob": 0.5535,
+    "odd_casa": 2.05,
+    "data": "2026-11-04",
+    "resultado": null,
+    "tipo": "odd_alta"
+   },
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n⭐ <b>LIGA DOS CAMPEÕES – QUARTA 04/11</b>\nRB Leipzig x Man City | 20h00\n\n✅ <b>Dica: Menos de 3.5 golos</b>\n💰 Odd: <b>2.05</b>\n💡 A odd paga mais do que o risco real deste jogo\n\n📊 Golos esperados: RB Leipzig 1.3 – Man City 2.1\n📊 RB Leipzig: 4 vitórias nos últimos 6 jogos, xG 14.8 contra 9.5\n📊 Man City: 4 vitórias nos últimos 6 jogos, xG 11.9 contra 8.8\n🚑 RB Leipzig sem Ouédraogo\n🚑 Man City sem Semenyo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-04T20:00:00",
+   "estado": "pendente",
+   "admin_msg": 21
+  },
+  {
+   "pid": "041130118",
+   "origem": "dicas",
+   "data": "2026-11-04",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-04",
+    "tipo": "segura",
+    "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+    "partes": [
+     "20261104-UCL-psveindhoven-clubbrugge|over_2.5",
+     "20261104-UCL-aek-realmadrid|2",
+     "20261104-BRA-flamengorj-gremio|over_2.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261104-UCL-psveindhoven-clubbrugge|over_2.5",
+      "match_id": "20261104-UCL-psveindhoven-clubbrugge",
+      "key": "over_2.5",
+      "prob": 0.7167,
+      "odd_casa": null,
+      "jogo": "PSV Eindhoven x Club Brugge",
+      "texto": "Mais de 2.5 golos"
+     },
+     {
+      "id": "20261104-UCL-aek-realmadrid|2",
+      "match_id": "20261104-UCL-aek-realmadrid",
+      "key": "2",
+      "prob": 0.7056,
+      "odd_casa": 1.22,
+      "jogo": "AEK x Real Madrid",
+      "texto": "Vitória Real Madrid"
+     },
+     {
+      "id": "20261104-BRA-flamengorj-gremio|over_2.5",
+      "match_id": "20261104-BRA-flamengorj-gremio",
+      "key": "over_2.5",
+      "prob": 0.6944,
+      "odd_casa": null,
+      "jogo": "Flamengo RJ x Gremio",
+      "texto": "Mais de 2.5 golos"
+     }
+    ],
+    "prob": 0.3512,
+    "resultado": null
+   },
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• PSV Eindhoven x Club Brugge: Mais de 2.5 golos (@1.40)\n• AEK x Real Madrid: Vitória Real Madrid (@1.22)\n• Flamengo RJ x Gremio: Mais de 2.5 golos (@1.44)\n\n💰 Odd total: <b>2.45</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-04T17:45:00",
+   "estado": "pendente",
+   "admin_msg": 22
+  },
+  {
+   "pid": "041130119",
+   "origem": "dicas",
+   "data": "2026-11-04",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-04",
+    "tipo": "turbo",
+    "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+    "partes": [
+     "20261104-UCL-dortmund-betis|under_3.5",
+     "20261104-UCL-fenerbahce-liverpool|over_2.5",
+     "20261104-UCL-psveindhoven-clubbrugge|btts_sim",
+     "20261104-UCL-aek-realmadrid|over_2.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261104-UCL-dortmund-betis|under_3.5",
+      "match_id": "20261104-UCL-dortmund-betis",
+      "key": "under_3.5",
+      "prob": 0.6062,
+      "odd_casa": 1.65,
+      "jogo": "Dortmund x Betis",
+      "texto": "Menos de 3.5 golos",
+      "porque": "golos esperados 2.0 – 1.2"
+     },
+     {
+      "id": "20261104-UCL-fenerbahce-liverpool|over_2.5",
+      "match_id": "20261104-UCL-fenerbahce-liverpool",
+      "key": "over_2.5",
+      "prob": 0.6808,
+      "odd_casa": null,
+      "jogo": "Fenerbahce x Liverpool",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 1.3 – 2.2"
+     },
+     {
+      "id": "20261104-UCL-psveindhoven-clubbrugge|btts_sim",
+      "match_id": "20261104-UCL-psveindhoven-clubbrugge",
+      "key": "btts_sim",
+      "prob": 0.6977,
+      "odd_casa": null,
+      "jogo": "PSV Eindhoven x Club Brugge",
+      "texto": "Ambas marcam",
+      "porque": "golos esperados 2.2 – 1.6"
+     },
+     {
+      "id": "20261104-UCL-aek-realmadrid|over_2.5",
+      "match_id": "20261104-UCL-aek-realmadrid",
+      "key": "over_2.5",
+      "prob": 0.6844,
+      "odd_casa": null,
+      "jogo": "AEK x Real Madrid",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 1.1 – 2.5"
+     }
+    ],
+    "prob": 0.1971,
+    "resultado": null
+   },
+   "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• Dortmund x Betis: Menos de 3.5 golos (@1.65)\n   <i>↳ golos esperados 2.0 – 1.2</i>\n• Fenerbahce x Liverpool: Mais de 2.5 golos (@1.47)\n   <i>↳ golos esperados 1.3 – 2.2</i>\n• PSV Eindhoven x Club Brugge: Ambas marcam (@1.43)\n   <i>↳ golos esperados 2.2 – 1.6</i>\n• AEK x Real Madrid: Mais de 2.5 golos (@1.46)\n   <i>↳ golos esperados 1.1 – 2.5</i>\n\n💰 Odd total: <b>5.08</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-04T17:45:00",
+   "estado": "pendente",
+   "admin_msg": 23
   }
  ],
  "ultimo_resumo": 48
