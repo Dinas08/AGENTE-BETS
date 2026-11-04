@@ -179,7 +179,7 @@
    "prob": 0.5673,
    "odd_casa": 1.6,
    "data": "2026-11-03",
-   "resultado": null,
+   "resultado": true,
    "tipo": "madrugada",
    "message_id": 45
   }
@@ -299,7 +299,8 @@
  ],
  "resumos": [
   "2026-11-01",
-  "2026-11-02"
+  "2026-11-02",
+  "2026-11-03"
  ],
  "offset": 892007150,
  "ignorados": [],
@@ -370,5 +371,6 @@
    "estado": "publicada",
    "admin_msg": 8
   }
- ]
+ ],
+ "ultimo_resumo": 48
 }
