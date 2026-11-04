@@ -812,9 +812,17 @@ def page_canal():
                "da noite, com os onzes), madrugada (22h, jogos das 00h às 3h). Simulação: 100 € por aposta.")
     path = config.DATA_DIR / "telegram.json"
     s = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
-    if not s.get("dicas"):
+    if not s.get("dicas") and not s.get("pendentes"):
         empty_state("O bot ainda não publicou dicas.", "📭")
         return
+    # rascunhos que não chegaram ao canal (à espera, expirados ou descartados): aparecem também, com o estado,
+    # mas não contam para o Green/Red nem para a simulação
+    extra = {"dicas": [], "multiplas": []}
+    for x in s.get("pendentes", []):
+        if x["estado"] != "publicada":
+            extra[x["lista"]].append(x["registo"] | {"_estado": x["estado"]})
+    s.setdefault("dicas", [])
+    s.setdefault("multiplas", [])
     df = load()
     rows = df.set_index("match_id") if not df.empty else pd.DataFrame()
     by_id = {d["id"]: d for d in s["dicas"]}
@@ -826,7 +834,13 @@ def page_canal():
         placar = f"{int(r['hg'])}-{int(r['ag'])}" if r is not None and pd.notna(r["hg"]) else ""
         return resultado, r, placar
 
-    def badge(res):
+    RASCUNHO = {"pendente": "📝 Rascunho à espera de aprovação", "expirada": "⌛ Não publicada (expirou)",
+                "descartada": "🗑️ Descartada"}
+
+    def badge(res, rascunho=None):
+        if rascunho:  # não foi para o canal: mostra o que teria dado, sem contar
+            teria = "" if res is None else f" · teria sido {'GREEN' if res else 'RED'}"
+            return f"<span class='muted'>{RASCUNHO.get(rascunho, rascunho)}{teria}</span>"
         return ("<b style='color:%s'>✅ GREEN</b>" % GOOD if res else "<b style='color:%s'>❌ RED</b>" % BAD) \
             if res is not None else "<span class='muted'>⏳ por jogar</span>"
 
@@ -844,11 +858,13 @@ def page_canal():
     with k[3].container(border=True):
         st.metric("Simulação (100 €/aposta)", f"{total:+.0f} €", help=f"{n} apostas de 100 € à odd publicada")
 
-    dias = sorted({d["data"] for d in s["dicas"]}, reverse=True)
+    dias = sorted({d["data"] for d in s["dicas"] + s["multiplas"] + extra["dicas"] + extra["multiplas"]}, reverse=True)
     dia = st.pills("Dia", dias, default=dias[0], format_func=lambda d: day_label(dt.date.fromisoformat(d))) or dias[0]
     do_dia = [d for d in s["dicas"] if d["data"] == dia]
     mult = [m for m in s["multiplas"] if m["data"] == dia]
     dt_, dm_ = [d for d in do_dia if d["resultado"] is not None], [m for m in mult if m["resultado"] is not None]
+    do_dia += [d for d in extra["dicas"] if d["data"] == dia]
+    mult += [m for m in extra["multiplas"] if m["data"] == dia]
     if dt_ or dm_:
         t, n = tg._lucro(dt_, dm_, by_id)
         st.markdown(f"<span class='chip'>🟢 {sum(d['resultado'] for d in dt_)} Green · 🔴 "
@@ -870,16 +886,17 @@ def page_canal():
                 st.markdown(f"<span class='muted'>{cab}</span><div class='teams'>{E(d['jogo'])} "
                             f"<span class='muted'>{placar}</span></div>"
                             f"<div class='pick' style='margin:4px 0'>⭐ {E(d['texto'])} · @{tg.odd(d['odd_casa'], d['prob']):.2f}"
-                            f"</div>{badge(res)}", unsafe_allow_html=True)
+                            f"</div>{badge(res, d.get('_estado'))}", unsafe_allow_html=True)
 
     if mult:
         st.subheader("🎯 Múltiplas", divider="gray")
         cols = st.columns(2)
         for i, m in enumerate(mult):
             pernas = m.get("pernas") or [by_id[x] for x in m["partes"] if x in by_id]
-            linhas = ""
+            linhas, rs = "", []
             for pe in pernas:
                 res, r, placar = estado(pe["match_id"], pe["key"], by_id.get(pe["id"], {}).get("resultado"))
+                rs.append(res)
                 txt = by_id[pe["id"]]["texto"] if pe["id"] in by_id else (
                     label(pe["key"], r["home"], r["away"]) if r is not None else pe["key"])
                 jogo = f"{r['home']} x {r['away']}" if r is not None else pe["match_id"]
@@ -890,7 +907,8 @@ def page_canal():
             nome = "🚀 Múltipla turbo" if m.get("tipo") == "turbo" else "🎯 Múltipla do dia"
             with cols[i % 2].container(border=True):
                 st.markdown(f"<div class='teams'>{nome} · odd {om:.2f}</div>{linhas}"
-                            f"<div style='margin-top:6px'>{badge(m['resultado'])}</div>", unsafe_allow_html=True)
+                            f"<div style='margin-top:6px'>{badge(m['resultado'] if not m.get('_estado') else (False if False in rs else (True if None not in rs else None)), m.get('_estado'))}</div>",
+                            unsafe_allow_html=True)
 
 
 def page_estado():
