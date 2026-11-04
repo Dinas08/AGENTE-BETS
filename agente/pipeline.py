@@ -5,7 +5,7 @@ import re
 
 import pandas as pd
 
-from agente import aprendizagem, config, db
+from agente import aprendizagem, calibracao, config, db
 from agente.model import Predictor, blend_with_market, main_picks, markets, team_form, value_bets
 from agente.sources import api_football as apif
 from agente.sources import espn
@@ -217,6 +217,7 @@ def predict(today: dt.date | None = None) -> int:
             if note:
                 a["notas"].append(note)
         mk = markets(exp, a)
+        mk["probs"] = calibracao.aplicar(mk["probs"])  # corrige cada mercado com o que o modelo acertou no passado
         if exp["blended"]:
             mk["expected"]["golos_modelo"] = [round(float(x), 2) for x in exp["goals_model"]]
             mk["expected"]["golos_mercado"] = [round(float(x), 2) for x in exp["goals_market"]]

@@ -54,6 +54,11 @@ def main():
         lines = log.read_text(encoding="utf-8").splitlines()[-300:] if log.exists() else []
         lines.append(f"{dt.datetime.now():%Y-%m-%d %H:%M} {msg}")
         log.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    elif cmd == "calibrar":
+        # refaz agente/calibracao.json com os backtests em dados/ (depois: commit no main)
+        from agente import calibracao
+        for fam, c in calibracao.recalcular().items():
+            print(f"  {fam:10s} a={c['a']:+.3f} b={c['b']:.3f} ({c['jogos']} jogos)")
     elif cmd == "aprendizagem":
         from agente import aprendizagem
         c = aprendizagem.team_corrections()

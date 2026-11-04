@@ -43,6 +43,9 @@ escreve um recap depois de cada jornada.
 - Todas as noites o agente analisa os jogos falhados, atualiza o recap, as fichas das equipas
   (`dados/equipas/`) e as lições (`dados/licoes.md`), que lê antes de cada ronda de previsões.
 - O Python corrige sozinho o ataque/defesa das equipas em que errou sistematicamente (2+ jogos, máx. ±12%).
+- Calibração por mercado (`agente/calibracao.json`): as probabilidades de resultado, golos, ambas marcam, cantos e
+  cartões são corrigidas com o que o modelo acertou no backtest (cantos e cartões descem, o resultado sobe).
+  Refazer com `run.py backtest` e `run.py calibrar`.
 - Tudo visível na página **Lições** da dashboard.
 
 ## Fontes de dados (todas grátis)

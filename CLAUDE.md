@@ -13,6 +13,8 @@ Python: `.venv\Scripts\python.exe` (Windows). Define `$env:PYTHONIOENCODING="utf
 - `run.py lista [dias]` — resumo dos próximos jogos (probabilidades, forma, lesões, ajustes ativos)
 - `run.py estado` — quota da API e contagens
 - `run.py aprendizagem` — correções automáticas por equipa (aprendidas com os erros) e calibração por mercado
+- As probabilidades já saem calibradas por mercado (`agente/calibracao.json`, refazer com `run.py calibrar`):
+  não compenses em `ajustes.json` o excesso de confiança em cantos/ambas marcam, isso já está corrigido
 
 ## Na nuvem (rotinas do Claude na nuvem)
 O sistema corre sem o PC: o GitHub Actions trata dos dados (`resultados.yml` de 10 em 10 min, 24h, com o Green/Red no Telegram, `previsoes.yml`

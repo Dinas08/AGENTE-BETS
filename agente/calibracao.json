@@ -1,0 +1,10 @@
+{
+ "fonte": ["backtest_2025.csv", "jogos reais 29/10-03/11/2026 (59, antes da calibração)"],
+ "familias": {
+  "golos": {"a": 0.1211, "b": 0.8199, "jogos": 1329},
+  "ambas": {"a": 0.0363, "b": 0.8904, "jogos": 1329},
+  "cantos": {"a": 0.0356, "b": 0.566, "jogos": 1319},
+  "cartoes": {"a": -0.2091, "b": 0.7934, "jogos": 1319},
+  "resultado": {"a": 0.0948, "b": 1.1063, "jogos": 1329}
+ }
+}
