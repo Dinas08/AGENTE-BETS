@@ -182,6 +182,30 @@
    "resultado": true,
    "tipo": "madrugada",
    "message_id": 45
+  },
+  {
+   "id": "20261104-UCL-fenerbahce-liverpool|over_2.5",
+   "match_id": "20261104-UCL-fenerbahce-liverpool",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Fenerbahce x Liverpool",
+   "prob": 0.6808,
+   "odd_casa": null,
+   "data": "2026-11-04",
+   "resultado": null,
+   "message_id": 49
+  },
+  {
+   "id": "20261104-UCL-aek-realmadrid|2",
+   "match_id": "20261104-UCL-aek-realmadrid",
+   "key": "2",
+   "texto": "Vitória Real Madrid",
+   "jogo": "AEK x Real Madrid",
+   "prob": 0.7056,
+   "odd_casa": 1.22,
+   "data": "2026-11-04",
+   "resultado": null,
+   "message_id": 50
   }
  ],
  "multiplas": [
@@ -302,7 +326,7 @@
   "2026-11-02",
   "2026-11-03"
  ],
- "offset": 892007151,
+ "offset": 892007158,
  "ignorados": [],
  "pendentes": [
   {
@@ -389,7 +413,7 @@
    },
    "texto": "⭐ <b>LIGA DOS CAMPEÕES – QUARTA 04/11</b>\nAEK x Real Madrid | 17h45\n\n✅ <b>Dica: Vitória Real Madrid</b>\n💰 Odd: <b>1.22</b>\n\n📊 Golos esperados: AEK 1.1 – Real Madrid 2.5\n📊 AEK: 4 vitórias nos últimos 6 jogos, xG 14.3 contra 4.3\n📊 Real Madrid: 5 vitórias nos últimos 6 jogos, xG 12.9 contra 6.6\n🚑 Real Madrid sem Rodrygo, Asencio\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-04T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 17
   },
   {
@@ -410,7 +434,7 @@
    },
    "texto": "⭐ <b>LIGA DOS CAMPEÕES – QUARTA 04/11</b>\nFenerbahce x Liverpool | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.47</b> (mínima com valor)\n\n📊 Golos esperados: Fenerbahce 1.3 – Liverpool 2.2\n📊 Fenerbahce: 3 vitórias nos últimos 6 jogos, xG 13.1 contra 7.4\n📊 Liverpool: 3 vitórias nos últimos 6 jogos, xG 7.8 contra 5.9\n🚑 Liverpool sem Ekitiké, Frimpong, Gravenberch, Bradley\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-04T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 18
   },
   {
