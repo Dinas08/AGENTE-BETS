@@ -192,7 +192,7 @@
    "prob": 0.6808,
    "odd_casa": null,
    "data": "2026-11-04",
-   "resultado": null,
+   "resultado": true,
    "message_id": 49
   },
   {
@@ -204,7 +204,7 @@
    "prob": 0.7056,
    "odd_casa": 1.22,
    "data": "2026-11-04",
-   "resultado": null,
+   "resultado": true,
    "message_id": 50
   },
   {
