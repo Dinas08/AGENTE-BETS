@@ -24,7 +24,7 @@ LINK = os.getenv("AFILIADO_LINK", "").strip()
 CASA = os.getenv("AFILIADO_CASA", "").strip()
 
 N_DICAS = 4                 # dicas por dia no canal grátis
-P_MIN = 0.55                # probabilidade mínima da dica (abaixo disto é quase moeda ao ar)
+P_MIN = 0.62                # probabilidade mínima da dica (já calibrada; no histórico: 71% de acerto vs 68% com 0.55)
 ODD_MIN = 1.20              # as casas não aceitam apostas abaixo desta odd (dicas e pernas das múltiplas)
 TURBO_ODD = 4.0             # múltipla turbo: junta pernas até chegar a esta odd (máx. TURBO_PERNAS)
 TURBO_PERNAS, TURBO_P_MIN = 5, 0.62
