@@ -702,11 +702,92 @@ def _editar(s: dict, m: dict) -> None:
     _bot("sendMessage", chat_id=ADMIN, text=aviso, reply_parameters={"message_id": x["admin_msg"]})
 
 
-def _botao(s: dict, cb: dict) -> int:
+# ------------------------------------------------------------------ boas-vindas e comandos públicos
+#
+# Qualquer pessoa que escreva ao bot recebe primeiro a pergunta dos 18 anos; o link do canal só vai depois de
+# carregar em "Tenho 18+". Nada disto é guardado: o botão responde logo (callback_data com o prefixo "pb:").
+
+OLA = ("👋 Olá! Bem-vindo ao <b>CLAUDIO BET TIPS FREE</b> ⚽🤖\n\n"
+       "Todos os dias, dicas de futebol grátis escolhidas pelo <b>Agente Claudio</b>, que lê estatísticas, "
+       "lesões e onzes antes de cada jogo.\n\nAntes de entrares: tens 18 anos ou mais?")
+BOTOES_IDADE = {"inline_keyboard": [[{"text": "✅ Sim, tenho 18+", "callback_data": "pb:18"},
+                                     {"text": "❌ Não", "callback_data": "pb:menor"}]]}
+AGENDA = ("☀️ <b>10h30</b> — dicas do dia, 💎 odd alta e 🚀 múltipla turbo\n"
+          "🌆 <b>À noite</b> — dicas com os onzes confirmados\n"
+          "🌙 <b>22h</b> — madrugada (Brasil, Argentina, México, MLS)\n"
+          "✅ Resultado de cada dica assim que o jogo acaba\n"
+          "📋 <b>Segunda</b> — balanço da semana")
+MENOR = "Este canal é só para maiores de 18. Volta quando chegar a hora — o futebol não foge! ⚽"
+COMO = ("🤖 <b>COMO O AGENTE CLAUDIO ESCOLHE AS DICAS</b>\n\n"
+        "1️⃣ <b>Números</b>: ataque e defesa de cada equipa, forma recente e golos esperados.\n"
+        "2️⃣ <b>Mercado</b>: cruza tudo com as odds das casas.\n"
+        "3️⃣ <b>Notícias</b>: lê lesões, castigos e onzes antes do jogo, e ajusta.\n"
+        "4️⃣ <b>Aprende</b>: depois de cada jornada vê o que falhou e corrige.\n\n"
+        "Liga Portugal 🇵🇹 · Premier 🏴󠁧󠁢󠁥󠁮󠁧󠁿 · Bundesliga 🇩🇪 · Serie A 🇮🇹 · Europa ⭐ · Taças 🏆 · Américas 🌙")
+COMANDOS = {"/start": "ola", "/resultados": "res", "/comofunciona": "como"}
+
+
+def _menu(link: str | None) -> dict:
+    linhas = [[{"text": "📢 Entrar no canal", "url": link}]] if link else []
+    linhas.append([{"text": "📊 Resultados", "callback_data": "pb:res"},
+                   {"text": "ℹ️ Como funciona", "callback_data": "pb:como"}])
+    return {"inline_keyboard": linhas}
+
+
+def texto_entrada(link: str | None) -> str:
+    entra = (f'👉 <a href="{E(link, quote=True)}">Entra aqui no canal</a>\n' if link else "")
+    return (f"Bora! 🔥\n\n{AGENDA}\n\n{entra}Ativa as notificações 🔔 para não perderes nada.\n\n"
+            "🔞 +18 | Joga com responsabilidade")
+
+
+def texto_resultados(s: dict, dias: int = 7) -> str:
+    """Greens e Reds das dicas fechadas nos últimos dias (os mesmos números do balanço de segunda)."""
+    hoje = dt.date.today()
+    ini = (hoje - dt.timedelta(days=dias)).isoformat()
+    sem = [d for d in s["dicas"] if d["data"] >= ini and d["resultado"] is not None]
+    if not sem:
+        return "📊 Ainda não há dicas fechadas nos últimos 7 dias. Amanhã às 10h30 há mais! ⚽"
+    mult = [m for m in s["multiplas"] if m["data"] >= ini and m["resultado"] is not None]
+    g = sum(d["resultado"] for d in sem)
+    linhas = [f"📊 <b>ÚLTIMOS {dias} DIAS NO CANAL</b>", "", f"🟢 {g} Green · 🔴 {len(sem) - g} Red"]
+    if mult:
+        linhas.append(f"🎯 Múltiplas: {sum(m['resultado'] for m in mult)} Green em {len(mult)}")
+    linhas += [_linha_lucro(*_lucro(sem, mult, {d["id"]: d for d in s["dicas"]})), "", RODAPE]
+    return "\n".join(linhas)
+
+
+def _publico(s: dict, chat: int, acao: str, link: str | None, editar: int | None = None) -> None:
+    """Resposta a uma pessoa: pergunta da idade, entrada no canal, resultados ou como funciona."""
+    if acao == "ola":
+        msg, botoes = OLA, BOTOES_IDADE
+    elif acao == "18":
+        msg, botoes = texto_entrada(link), _menu(link)
+    elif acao == "menor":
+        msg, botoes = MENOR, None
+    elif acao == "res":
+        msg, botoes = texto_resultados(s), _menu(link)
+    else:
+        msg, botoes = COMO + "\n\n🔞 +18 | Joga com responsabilidade", _menu(link)
+    corpo = {"chat_id": chat, "text": msg, "parse_mode": "HTML", "disable_web_page_preview": True}
+    if botoes:
+        corpo["reply_markup"] = botoes
+    if editar and acao in ("18", "menor"):  # substitui a pergunta da idade (tira os botões)
+        r = _bot("editMessageText", message_id=editar, **corpo)
+        if r.get("ok"):
+            return
+    _bot("sendMessage", **corpo)
+
+
+def _botao(s: dict, cb: dict, link: str | None = None) -> int:
+    acao, _, pid = (cb.get("data") or "").partition(":")
+    if acao == "pb":  # botões públicos (boas-vindas)
+        _bot("answerCallbackQuery", callback_query_id=cb["id"])
+        m = cb.get("message") or {}
+        _publico(s, (m.get("chat") or {}).get("id", cb["from"]["id"]), pid, link, m.get("message_id"))
+        return 1
     if str(cb["from"]["id"]) != ADMIN:
         _bot("answerCallbackQuery", callback_query_id=cb["id"], text="Sem permissão.")
         return 0
-    acao, _, pid = (cb.get("data") or "").partition(":")
     if acao in ("tr", "rm"):  # trocar / tirar uma perna da múltipla
         pid, _, i = pid.partition(":")
         x = next((x for x in s.get("pendentes", []) if x["pid"] == pid and x["estado"] == "pendente"), None)
@@ -746,21 +827,25 @@ def painel(minutos: float = 0) -> int:
         ups = _bot("getUpdates", offset=s.get("offset", 0), timeout=espera,
                    allowed_updates=["message", "callback_query"]).get("result", [])
         for u in ups:
-            if u.get("callback_query"):
-                n += _botao(s, u["callback_query"])
+            cb = u.get("callback_query")
+            if cb and (cb.get("data") or "").startswith("pb:") and link is None:
+                link = link_canal()
+            if cb:
+                n += _botao(s, cb, link)
                 continue
             m = u.get("message") or {}
             chat = (m.get("chat") or {})
             if chat.get("type") != "private":
                 continue
-            if (m.get("text") or "").strip() == "/id":
+            cmd = (m.get("text") or "").strip().split()[0].split("@")[0].lower() if (m.get("text") or "").strip() else ""
+            if cmd == "/id":
                 _bot("sendMessage", chat_id=chat["id"], text=f"O teu id do Telegram: {chat['id']}")
-            elif ADMIN and str(chat["id"]) == ADMIN:
+            elif ADMIN and str(chat["id"]) == ADMIN and cmd not in COMANDOS:
                 _editar(s, m)
-            elif link or (link := link_canal()):
-                _bot("sendMessage", chat_id=chat["id"], disable_web_page_preview=True,
-                     text=("👋 Bem-vindo!\n\nAs dicas grátis do dia, a múltipla e os Greens saem todos os dias no "
-                           f"canal:\n👉 {link}\n\n{RODAPE}"))
+            else:
+                if cmd in ("/resultados", "/comofunciona") and link is None:
+                    link = link_canal()
+                _publico(s, chat["id"], COMANDOS.get(cmd, "ola"), link)
             n += 1
         if ups:
             s["offset"] = ups[-1]["update_id"] + 1
