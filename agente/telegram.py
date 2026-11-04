@@ -245,15 +245,18 @@ def _perna(r, key, prob, hoje) -> dict:
             "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": hoje.isoformat()}
 
 
+def _texto_multipla(titulo, pernas) -> str:
+    om = _prod(odd(d["odd_casa"], d["prob"]) for d in pernas)
+    txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} (@{odd(d['odd_casa'], d['prob']):.2f})" for d in pernas)
+    return f"{titulo}\n\n{txt}\n\n💰 Odd total: <b>{om:.2f}</b>" + _fim()
+
+
 def _multipla(s, titulo, partes, hoje, tipo, p):
-    om = _prod(odd(d["odd_casa"], d["prob"]) for d in partes)
-    txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} (@{odd(d['odd_casa'], d['prob']):.2f})" for d in partes)
-    msg = f"{titulo}\n\n{txt}\n\n💰 Odd total: <b>{om:.2f}</b>" + _fim()
-    pernas = [{k: d[k] for k in ("id", "match_id", "key", "prob", "odd_casa")} for d in partes]
-    m = {"data": hoje.isoformat(), "tipo": tipo, "partes": [d["id"] for d in partes],
+    pernas = [{k: d[k] for k in ("id", "match_id", "key", "prob", "odd_casa", "jogo", "texto")} for d in partes]
+    m = {"data": hoje.isoformat(), "tipo": tipo, "titulo": titulo, "partes": [d["id"] for d in partes],
          "pernas": pernas, "prob": round(_prod(d["prob"] for d in partes), 4), "resultado": None}
     inicio = p[p["match_id"].isin([d["match_id"] for d in partes])]["kickoff"].min()
-    publicar(s, "multiplas", m, msg, inicio, "dicas")
+    publicar(s, "multiplas", m, _texto_multipla(titulo, pernas), inicio, "dicas")
 
 
 N_TARDIAS = 2      # dicas extra por dia para os jogos da noite, ~45 min antes do início, com os onzes já conhecidos
@@ -514,9 +517,60 @@ def _cabecalho(x: dict) -> str:
             f"<i>Responde a esta mensagem com o texto novo para editar.</i>\n{MARCA}\n")
 
 
-def _botoes(pid: str) -> dict:
-    return {"inline_keyboard": [[{"text": "✅ Publicar", "callback_data": f"pub:{pid}"},
-                                 {"text": "❌ Descartar", "callback_data": f"desc:{pid}"}]]}
+def _botoes(x: dict) -> dict:
+    """Publicar/Descartar; nas múltiplas, também 🔄 Trocar e ❌ Tirar em cada perna."""
+    linhas = []
+    if x["lista"] == "multiplas":
+        for i, pe in enumerate(x["registo"]["pernas"]):
+            linhas.append([{"text": f"🔄 {i + 1}. {pe.get('jogo', pe['match_id'])[:24]}", "callback_data": f"tr:{x['pid']}:{i}"},
+                           {"text": f"❌ Tirar {i + 1}", "callback_data": f"rm:{x['pid']}:{i}"}])
+    linhas.append([{"text": "✅ Publicar", "callback_data": f"pub:{x['pid']}"},
+                   {"text": "❌ Descartar", "callback_data": f"desc:{x['pid']}"}])
+    return {"inline_keyboard": linhas}
+
+
+def _alternativa(s: dict, x: dict, i: int) -> str | None:
+    """Troca a perna i da múltipla pela aposta seguinte do mesmo jogo (por ordem de probabilidade, às voltas),
+    sem repetir apostas que já estejam em qualquer múltipla do dia. Devolve o texto da nova aposta."""
+    m, pe = x["registo"], x["registo"]["pernas"][i]
+    p = db.load_predictions(with_results=False)
+    p = p[p["match_id"] == pe["match_id"]]
+    if p.empty:
+        return None
+    r = p.iloc[0]
+    usadas = {q["id"] for y in s["multiplas"] + [z["registo"] for z in s.get("pendentes", []) if z["lista"] == "multiplas"]
+              if y["data"] == m["data"] for q in y.get("pernas", [])} - {pe["id"]}
+    cands = sorted(((k, pr) for k, pr in r["probs"].items() if _boost_ok(k) and pr >= 0.45
+                    and odd((r["odds"] or {}).get(k), pr) >= ODD_MIN and f"{r['match_id']}|{k}" not in usadas),
+                   key=lambda c: -c[1])[:8]
+    keys = [k for k, _ in cands]
+    if not keys or keys == [pe["key"]]:
+        return None
+    nxt = keys[(keys.index(pe["key"]) + 1) % len(keys)] if pe["key"] in keys else keys[0]
+    nova = _perna(r, nxt, dict(cands)[nxt], dt.date.fromisoformat(m["data"]))
+    m["pernas"][i] = {k: nova[k] for k in ("id", "match_id", "key", "prob", "odd_casa", "jogo", "texto")}
+    return nova["texto"]
+
+
+def _mexer_perna(s: dict, x: dict, acao: str, i: int) -> str:
+    m = x["registo"]
+    if i >= len(m["pernas"]):
+        return "Essa perna já não existe."
+    if acao == "rm":
+        if len(m["pernas"]) <= 2:
+            return "Uma múltipla precisa de pelo menos 2 pernas."
+        aviso = f"Tirei: {m['pernas'].pop(i)['jogo']}"
+    else:
+        novo = _alternativa(s, x, i)
+        if novo is None:
+            return "Não há outra aposta com valor neste jogo."
+        aviso = f"Agora: {novo}"
+    m["partes"] = [pe["id"] for pe in m["pernas"]]
+    m["prob"] = round(_prod(pe["prob"] for pe in m["pernas"]), 4)
+    x["texto"] = _texto_multipla(m.get("titulo", "🎯 <b>MÚLTIPLA</b>"), m["pernas"])
+    _bot("editMessageText", chat_id=ADMIN, message_id=x["admin_msg"], text=_cabecalho(x) + x["texto"],
+         parse_mode="HTML", disable_web_page_preview=True, reply_markup=_botoes(x))
+    return aviso
 
 
 def publicar(s, lista, registo, msg, inicio, origem) -> None:
@@ -526,7 +580,7 @@ def publicar(s, lista, registo, msg, inicio, origem) -> None:
              "data": registo["data"], "lista": lista, "registo": registo, "texto": msg,
              "expira": pd.Timestamp(inicio).isoformat(), "estado": "pendente"}
         r = _bot("sendMessage", chat_id=ADMIN, text=_cabecalho(x) + msg, parse_mode="HTML",
-                 disable_web_page_preview=True, reply_markup=_botoes(x["pid"]))
+                 disable_web_page_preview=True, reply_markup=_botoes(x))
         if r.get("ok"):
             x["admin_msg"] = r["result"]["message_id"]
             s["pendentes"].append(x)
@@ -594,7 +648,7 @@ def _editar(s: dict, m: dict) -> None:
         novo = novo.split(MARCA, 1)[1]
     novo = novo.strip() + ("" if RODAPE in novo else _fim())
     r = _bot("editMessageText", chat_id=ADMIN, message_id=x["admin_msg"], text=_cabecalho(x) + novo,
-             parse_mode="HTML", disable_web_page_preview=True, reply_markup=_botoes(x["pid"]))
+             parse_mode="HTML", disable_web_page_preview=True, reply_markup=_botoes(x))
     if r.get("ok"):
         x["texto"] = novo
         aviso = "✏️ Rascunho atualizado. Carrega em ✅ Publicar quando estiver pronto."
@@ -608,6 +662,12 @@ def _botao(s: dict, cb: dict) -> int:
         _bot("answerCallbackQuery", callback_query_id=cb["id"], text="Sem permissão.")
         return 0
     acao, _, pid = (cb.get("data") or "").partition(":")
+    if acao in ("tr", "rm"):  # trocar / tirar uma perna da múltipla
+        pid, _, i = pid.partition(":")
+        x = next((x for x in s.get("pendentes", []) if x["pid"] == pid and x["estado"] == "pendente"), None)
+        aviso = _mexer_perna(s, x, acao, int(i)) if x else "Já não está pendente."
+        _bot("answerCallbackQuery", callback_query_id=cb["id"], text=aviso[:190])
+        return 1 if x else 0
     alvos = [x for x in s.get("pendentes", []) if x["estado"] == "pendente" and pid in ("*", x["pid"])]
     for x in alvos:
         _aprovar(s, x) if acao == "pub" else _fechar(x, "descartada")

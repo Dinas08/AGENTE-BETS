@@ -34,7 +34,8 @@ escreve um recap depois de cada jornada.
   `AFILIADO_CASA` (só casas com licença SRIJ).
 - Aprovação: com o Secret `TELEGRAM_ADMIN` (o teu id; manda `/id` ao bot para o saber) as dicas, múltiplas,
   tardias e madrugada chegam-te primeiro em privado como rascunho, com ✅ Publicar / ❌ Descartar. Para editar,
-  responde ao rascunho com o texto novo. Rascunhos não aprovados expiram quando o jogo começa. Os GREEN/RED,
+  responde ao rascunho com o texto novo. Nas múltiplas há 🔄 Trocar (aposta seguinte do mesmo jogo) e ❌ Tirar
+  em cada perna. Rascunhos não aprovados expiram quando o jogo começa. Os GREEN/RED,
   resumos e balanços continuam automáticos. A múltipla turbo nunca repete apostas da múltipla do dia.
 - Testar: Actions → "Testar Telegram". Local: `run.py telegram dicas AAAA-MM-DD` (sem token = só mostra).
 
