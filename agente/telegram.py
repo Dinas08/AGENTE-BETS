@@ -482,7 +482,8 @@ def resumo_dia(s: dict) -> bool:
             if m["resultado"]:
                 linhas.append(("🚀 Múltipla turbo" if m.get("tipo") == "turbo" else "🎯 Múltipla") + ": GREEN 💰")
         linhas.append(_linha_lucro(*_lucro(do_dia, mult, {d["id"]: d for d in s["dicas"]})))
-        send("\n".join(linhas) + _fim())
+        if mid := send("\n".join(linhas) + _fim()):
+            s["ultimo_resumo"] = mid  # o botão "Últimos resultados" das boas-vindas aponta para aqui
         feitos.append(dia)
         return True  # um por execução
     return False
@@ -508,7 +509,8 @@ def balanco(forcar: bool = False) -> bool:
         linhas.append(f"🎯 Múltiplas: {sum(m['resultado'] for m in mult)} Green em {len(mult)}")
     linhas.append(_linha_lucro(*_lucro(sem, mult, {d["id"]: d for d in s["dicas"]})))
     linhas += ["", RODAPE]
-    send("\n".join(linhas))
+    if mid := send("\n".join(linhas)):
+        s["ultimo_resumo"] = mid
     s["balancos"].append(hoje.isoformat())
     _save(s)
     return True
@@ -704,14 +706,14 @@ def _editar(s: dict, m: dict) -> None:
 
 # ------------------------------------------------------------------ boas-vindas e comandos públicos
 #
-# Qualquer pessoa que escreva ao bot recebe primeiro a pergunta dos 18 anos; o link do canal só vai depois de
-# carregar em "Tenho 18+". Nada disto é guardado: o botão responde logo (callback_data com o prefixo "pb:").
+# O bot só corre quando o GitHub Actions o acorda (10-60 min), por isso os botões das boas-vindas são todos
+# links (abrem logo, sem esperar pelo bot): entrar no canal confirmando os 18+ e o último resumo/balanço do canal.
+# Nada é guardado sobre as pessoas. Os botões "pb:" antigos (mensagens já enviadas) continuam a ser tratados.
 
 OLA = ("👋 Olá! Bem-vindo ao <b>CLAUDIO BET TIPS FREE</b> ⚽🤖\n\n"
-       "Todos os dias, dicas de futebol grátis escolhidas pelo <b>Agente Claudio</b>, que lê estatísticas, "
-       "lesões e onzes antes de cada jogo.\n\nAntes de entrares: tens 18 anos ou mais?")
-BOTOES_IDADE = {"inline_keyboard": [[{"text": "✅ Sim, tenho 18+", "callback_data": "pb:18"},
-                                     {"text": "❌ Não", "callback_data": "pb:menor"}]]}
+       "Todos os dias, dicas de futebol grátis escolhidas pelo <b>Agente Claudio</b>, que cruza estatística, "
+       "odds e notícias (lesões, onzes) antes de cada jogo.\n\n")
+IDADE = "🔞 <b>Só para maiores de 18.</b> Ao entrares no canal confirmas que tens 18 anos ou mais."
 AGENDA = ("☀️ <b>10h30</b> — dicas do dia, 💎 odd alta e 🚀 múltipla turbo\n"
           "🌆 <b>À noite</b> — dicas com os onzes confirmados\n"
           "🌙 <b>22h</b> — madrugada (Brasil, Argentina, México, MLS)\n"
@@ -727,11 +729,20 @@ COMO = ("🤖 <b>COMO O AGENTE CLAUDIO ESCOLHE AS DICAS</b>\n\n"
 COMANDOS = {"/start": "ola", "/resultados": "res", "/comofunciona": "como"}
 
 
-def _menu(link: str | None) -> dict:
-    linhas = [[{"text": "📢 Entrar no canal", "url": link}]] if link else []
-    linhas.append([{"text": "📊 Resultados", "callback_data": "pb:res"},
-                   {"text": "ℹ️ Como funciona", "callback_data": "pb:como"}])
-    return {"inline_keyboard": linhas}
+def _link_resultados(s: dict, link: str | None) -> str | None:
+    """Link para o último resumo/balanço no canal (só dá com canal público, t.me/<nome>)."""
+    msg = s.get("ultimo_resumo")
+    if not (link and msg) or "/+" in link or "joinchat" in link:
+        return None
+    return f"{link.rstrip('/')}/{msg}"
+
+
+def _menu(s: dict, link: str | None, entrar: str = "📢 Entrar no canal") -> dict | None:
+    """Só botões de link: abrem logo, sem esperar que o bot volte a correr."""
+    linhas = [[{"text": entrar, "url": link}]] if link else []
+    if res := _link_resultados(s, link):
+        linhas.append([{"text": "📊 Últimos resultados", "url": res}])
+    return {"inline_keyboard": linhas} if linhas else None
 
 
 def texto_entrada(link: str | None) -> str:
@@ -759,15 +770,16 @@ def texto_resultados(s: dict, dias: int = 7) -> str:
 def _publico(s: dict, chat: int, acao: str, link: str | None, editar: int | None = None) -> None:
     """Resposta a uma pessoa: pergunta da idade, entrada no canal, resultados ou como funciona."""
     if acao == "ola":
-        msg, botoes = OLA, BOTOES_IDADE
+        msg = OLA + AGENDA + "\n\n" + IDADE
+        botoes = _menu(s, link, "✅ Tenho 18+ · Entrar no canal")
     elif acao == "18":
-        msg, botoes = texto_entrada(link), _menu(link)
+        msg, botoes = texto_entrada(link), _menu(s, link)
     elif acao == "menor":
         msg, botoes = MENOR, None
     elif acao == "res":
-        msg, botoes = texto_resultados(s), _menu(link)
+        msg, botoes = texto_resultados(s), _menu(s, link)
     else:
-        msg, botoes = COMO + "\n\n🔞 +18 | Joga com responsabilidade", _menu(link)
+        msg, botoes = COMO + "\n\n🔞 +18 | Joga com responsabilidade", _menu(s, link)
     corpo = {"chat_id": chat, "text": msg, "parse_mode": "HTML", "disable_web_page_preview": True}
     if botoes:
         corpo["reply_markup"] = botoes
@@ -843,8 +855,7 @@ def painel(minutos: float = 0) -> int:
             elif ADMIN and str(chat["id"]) == ADMIN and cmd not in COMANDOS:
                 _editar(s, m)
             else:
-                if cmd in ("/resultados", "/comofunciona") and link is None:
-                    link = link_canal()
+                link = link or link_canal()
                 _publico(s, chat["id"], COMANDOS.get(cmd, "ola"), link)
             n += 1
         if ups:

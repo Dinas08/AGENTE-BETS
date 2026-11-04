@@ -29,9 +29,10 @@ escreve um recap depois de cada jornada.
 - O bot publica no canal grátis: dicas do dia + múltipla (10h30), até 2 dicas tardias ~45 min antes dos jogos
   da noite com os onzes confirmados (não dá dica se uma equipa rodar 5+ jogadores), 2 dicas de madrugada às 22h
   (jogos das 00h às 3h), GREEN/RED quando cada jogo acaba, o resumo do dia seguinte e o balanço à segunda-feira.
-  Quem escreve ao bot em privado recebe as boas-vindas do Agente Claudio com a pergunta dos 18 anos; o link do
-  canal só vai depois de carregar em "Sim, tenho 18+" (nada é guardado). Comandos: `/resultados` (últimos 7 dias)
-  e `/comofunciona`. Estado das dicas em `dados/telegram.json`.
+  Quem escreve ao bot em privado recebe as boas-vindas do Agente Claudio com o aviso +18 e botões de link (abrem
+  logo, sem esperar pelo bot): "✅ Tenho 18+ · Entrar no canal" e "📊 Últimos resultados" (último resumo/balanço,
+  só com canal público). Nada é guardado. Comandos: `/resultados` (últimos 7 dias) e `/comofunciona`.
+  O bot só lê mensagens quando o workflow Resultados corre, por isso a 1.ª resposta pode demorar. Estado das dicas em `dados/telegram.json`.
 - Secrets do GitHub: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_GRATIS` (id do canal), e opcionais `AFILIADO_LINK`,
   `AFILIADO_CASA` (só casas com licença SRIJ).
 - Aprovação: com o Secret `TELEGRAM_ADMIN` (o teu id; manda `/id` ao bot para o saber) as dicas, múltiplas,
