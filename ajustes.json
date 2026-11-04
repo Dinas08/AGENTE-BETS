@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-03",
+ "atualizado_em": "2026-11-04",
  "equipas": {
   "Sp Lisbon": {
    "golos_marcados": -4,
@@ -26,49 +26,7 @@
     "https://www.ojogo.pt/futebol/artigo/zalazar-entre-os-25-convocados-do-sporting-para-o-duelo-com-o-shakhtar-donetsk/18143701",
     "https://www.abola.pt/noticias/silencio-sobre-rui-borges-varandas-so-fala-depois-do-jogo-com-o-shakhtar-2026110214320259929"
    ],
-   "valido_ate": "2026-11-06"
-  },
-  "Aston Villa": {
-   "golos_marcados": -2,
-   "golos_sofridos": 3,
-   "motivo": "Sem Wan-Bissaka, Onana e Ruggeri",
-   "ausentes": [
-    {
-     "jogador": "Aaron Wan-Bissaka",
-     "motivo": "isquiotibiais",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Amadou Onana",
-     "motivo": "joelho",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Matteo Ruggeri",
-     "motivo": "isquiotibiais",
-     "importancia": "rotação"
-    }
-   ],
-   "fontes": [
-    "https://www.sportsmole.co.uk/football/arsenal/injury-news/feature/premier-league-gw9-injury-suspension-list-every-out-and-doubtful-player_608098.html"
-   ],
-   "valido_ate": "2026-11-03"
-  },
-  "Man United": {
-   "golos_marcados": -4,
-   "golos_sofridos": 0,
-   "motivo": "Sesko fora por tempo indeterminado",
-   "ausentes": [
-    {
-     "jogador": "Benjamin Sesko",
-     "motivo": "lesão",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://dave.sport/news/chelsea-vs-man-utd-injury-news/"
-   ],
-   "valido_ate": "2026-11-03"
+   "valido_ate": "2026-11-08"
   },
   "Barcelona": {
    "golos_marcados": -3,
@@ -122,6 +80,298 @@
     "https://www.fotmob.com/matches/famalicao-vs-arouca/5uy3d72"
    ],
    "valido_ate": "2026-11-07"
+  },
+  "Napoli": {
+   "golos_marcados": -8,
+   "golos_sofridos": 8,
+   "motivo": "Enfermaria enorme: só 13-14 jogadores de campo disponíveis; De Bruyne em dúvida",
+   "ausentes": [
+    {
+     "jogador": "Di Lorenzo",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Lobotka",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Badiashile",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Olivera",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Neres",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Alisson Santos",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Hojlund",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Spinazzola",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "De Bruyne",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.record.pt/internacional/competicoes-de-clubes/liga-dos-campeoes/detalhe/mais-duas-ausencias-confirmadas-na-equipa-do-napoles-para-o-jogo-frente-ao-fc-porto-e-de-bruyne-em-duvida",
+    "https://www.abola.pt/noticias/a-atencao-do-fc-porto-mais-duas-enormes-baixas-no-napoles-para-o-dragao-2026110216274665956"
+   ],
+   "valido_ate": "2026-11-05"
+  },
+  "Porto": {
+   "golos_marcados": -2,
+   "golos_sofridos": 3,
+   "motivo": "Sem Smalling (ligamento joelho) e William Gomes; Pietuszewski em avaliação",
+   "ausentes": [
+    {
+     "jogador": "Chris Smalling",
+     "motivo": "entorse ligamento interno joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "William Gomes",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Pietuszewski",
+     "motivo": "dúvida",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://sapo.pt/artigo/fc-porto-x-napoli-antevisao-ausencias-e-onzes-provaveis-6aea6ef72d3cd0be578e0aa8"
+   ],
+   "valido_ate": "2026-11-05"
+  },
+  "Liverpool": {
+   "golos_marcados": -6,
+   "golos_sofridos": 4,
+   "motivo": "5 baixas (Ekitiké, Frimpong, Gravenberch, Bradley, Leoni) em Istambul",
+   "ausentes": [
+    {
+     "jogador": "Ekitiké",
+     "motivo": "tendão de Aquiles",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Frimpong",
+     "motivo": "isquiotibiais",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Gravenberch",
+     "motivo": "calcanhar",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Conor Bradley",
+     "motivo": "joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Leoni",
+     "motivo": "joelho",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.uefa.com/uefachampionsleague/news/02ab-21f9907f0a27-6a6a67e9775d-1000--champions-league-starting-and-predicted-line-ups-matchday-4-/"
+   ],
+   "valido_ate": "2026-11-05"
+  },
+  "Man City": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Semenyo fora (joelho, até meados de dezembro)",
+   "ausentes": [
+    {
+     "jogador": "Semenyo",
+     "motivo": "joelho",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.uefa.com/uefachampionsleague/news/02ab-21f9907f0a27-6a6a67e9775d-1000--champions-league-starting-and-predicted-line-ups-matchday-4-/"
+   ],
+   "valido_ate": "2026-11-08"
+  },
+  "Arsenal": {
+   "golos_marcados": -5,
+   "golos_sofridos": 0,
+   "motivo": "Saka (quadríceps) e outro extremo titular lesionados",
+   "ausentes": [
+    {
+     "jogador": "Bukayo Saka",
+     "motivo": "lesão quadríceps",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.si.com/soccer/arsenal"
+   ],
+   "valido_ate": "2026-11-08"
+  },
+  "Real Madrid": {
+   "golos_marcados": -2,
+   "golos_sofridos": 2,
+   "motivo": "Sem Rodrygo e Asencio",
+   "ausentes": [
+    {
+     "jogador": "Rodrygo",
+     "motivo": "joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Raúl Asencio",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.uefa.com/uefachampionsleague/news/02ab-21f9907f0a27-6a6a67e9775d-1000--champions-league-starting-and-predicted-line-ups-matchday-4-/"
+   ],
+   "valido_ate": "2026-11-05"
+  },
+  "Benfica": {
+   "golos_marcados": -2,
+   "golos_sofridos": 1,
+   "motivo": "Sem Leandro Barreiro (~2 meses); Barrenechea em dúvida",
+   "ausentes": [
+    {
+     "jogador": "Leandro Barreiro",
+     "motivo": "lesão coxa",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Barrenechea",
+     "motivo": "dúvida joelho",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/benfica/europa-league/preview/benfica-vs-lech-poznan-prediction-team-news-lineups_608348.html"
+   ],
+   "valido_ate": "2026-11-09"
+  },
+  "Dortmund": {
+   "golos_marcados": 0,
+   "golos_sofridos": 3,
+   "motivo": "Emre Can fora (ligamento cruzado, ~8 meses); Konstantelias e Lerma lesionados",
+   "ausentes": [
+    {
+     "jogador": "Emre Can",
+     "motivo": "ligamento cruzado",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Konstantelias",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Lerma",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/"
+   ],
+   "valido_ate": "2026-11-09"
+  },
+  "Bayern Munich": {
+   "golos_marcados": -2,
+   "golos_sofridos": 0,
+   "motivo": "Gnabry (coxa) fora",
+   "ausentes": [
+    {
+     "jogador": "Serge Gnabry",
+     "motivo": "lesão muscular coxa",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ismael Saibari",
+     "motivo": "sindesmose",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/"
+   ],
+   "valido_ate": "2026-11-09"
+  },
+  "Stuttgart": {
+   "golos_marcados": -3,
+   "golos_sofridos": 2,
+   "motivo": "Vagnoman, Stiller, Diehl e Sauer lesionados",
+   "ausentes": [
+    {
+     "jogador": "Angelo Stiller",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Josha Vagnoman",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Justin Diehl",
+     "motivo": "longa duração",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Leo Sauer",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/"
+   ],
+   "valido_ate": "2026-11-09"
+  },
+  "RB Leipzig": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Ouédraogo e Guiu fora",
+   "ausentes": [
+    {
+     "jogador": "Assan Ouédraogo",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Marc Guiu",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.ligainsider.de/rb-leipzig/1311/"
+   ],
+   "valido_ate": "2026-11-09"
   }
  },
  "jogos": {}
