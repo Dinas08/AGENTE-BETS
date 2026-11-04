@@ -169,6 +169,19 @@
    "data": "2026-11-03",
    "message_id": 36,
    "resultado": true
+  },
+  {
+   "id": "20261104-BRA-internacional-coritiba|1",
+   "match_id": "20261104-BRA-internacional-coritiba",
+   "key": "1",
+   "texto": "Vitória Internacional",
+   "jogo": "Internacional x Coritiba",
+   "prob": 0.5673,
+   "odd_casa": 1.6,
+   "data": "2026-11-03",
+   "resultado": null,
+   "tipo": "madrugada",
+   "message_id": 45
   }
  ],
  "multiplas": [
@@ -288,7 +301,7 @@
   "2026-11-01",
   "2026-11-02"
  ],
- "offset": 892007132,
+ "offset": 892007142,
  "ignorados": [],
  "pendentes": [
   {
@@ -354,7 +367,7 @@
    },
    "texto": "🌙 <b>MADRUGADA</b>\n\n🇧🇷 <b>BRASILEIRÃO – QUARTA 04/11</b>\nInternacional x Coritiba | 00h30\n\n✅ <b>Dica: Vitória Internacional</b>\n💰 Odd: <b>1.60</b>\n\n📊 Golos esperados: Internacional 1.8 – Coritiba 0.9\n📊 Internacional: 2 vitórias nos últimos 6 jogos\n📊 Coritiba: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-04T00:30:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 8
   }
  ]
