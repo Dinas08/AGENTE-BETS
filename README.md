@@ -37,6 +37,8 @@ escreve um recap depois de cada jornada.
   responde ao rascunho com o texto novo. Nas múltiplas há 🔄 Trocar (aposta seguinte do mesmo jogo) e ❌ Tirar
   em cada perna. Rascunhos não aprovados expiram quando o jogo começa. Os GREEN/RED,
   resumos e balanços continuam automáticos. A múltipla turbo nunca repete apostas da múltipla do dia.
+- Por dia: 2 a 4 dicas (≥62%; num dia fraco completa até 2 com ≥55%), 1 dica 💎 de odd alta (1.80-2.60,
+  a mais provável dessa faixa, de preferência com valor) e a múltipla turbo com o fundamento de cada perna.
 - Testar: Actions → "Testar Telegram". Local: `run.py telegram dicas AAAA-MM-DD` (sem token = só mostra).
 
 ## Aprendizagem

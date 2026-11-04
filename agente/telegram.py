@@ -23,7 +23,8 @@ CHAT = os.getenv("TELEGRAM_CHAT_GRATIS", "").strip()
 LINK = os.getenv("AFILIADO_LINK", "").strip()
 CASA = os.getenv("AFILIADO_CASA", "").strip()
 
-N_DICAS = 4                 # dicas por dia no canal grátis
+N_DICAS = 4                 # dicas por dia no canal grátis (máximo)
+N_MIN, P_RESERVA = 2, 0.55   # mínimo por dia: num dia fraco completa com as melhores acima de P_RESERVA
 P_MIN = 0.62                # probabilidade mínima da dica (já calibrada; no histórico: 71% de acerto vs 68% com 0.55)
 ODD_MIN = 1.20              # as casas não aceitam apostas abaixo desta odd (dicas e pernas das múltiplas)
 TURBO_ODD = 4.0             # múltipla turbo: junta pernas até chegar a esta odd (máx. TURBO_PERNAS)
@@ -96,6 +97,7 @@ def escolher(r, p_min: float = P_MIN, excluir=()) -> tuple[str, float] | None:
 
 BOOST_P = (0.45, 0.65)      # perna "boost" da turbo: odd um pouco maior, mas ainda a previsão mais provável
 BOOST_ODD = (1.65, 2.60)    # dentro desta faixa de odds
+ODD_ALTA_MIN = 1.80         # dica de odd alta: pelo menos isto
 
 
 def _boost_ok(key: str) -> bool:
@@ -104,12 +106,13 @@ def _boost_ok(key: str) -> bool:
                                      "over_0.5", "over_4.5", "under_4.5")) and key != "X"
 
 
-def boost(r) -> tuple[str, float] | None:
-    """A previsão mais provável do jogo cuja odd cai na faixa BOOST_ODD (para dar corpo à turbo)."""
+def boost(r, odd_min: float = BOOST_ODD[0]) -> tuple[str, float] | None:
+    """A previsão mais provável do jogo cuja odd cai na faixa [odd_min, BOOST_ODD[1]] (perna boost da turbo e
+    dica de odd alta)."""
     cands = []
     for key, p in r["probs"].items():
         o = odd((r["odds"] or {}).get(key), p) if p else 0
-        if _boost_ok(key) and BOOST_P[0] <= p <= BOOST_P[1] and BOOST_ODD[0] <= o <= BOOST_ODD[1]:
+        if _boost_ok(key) and BOOST_P[0] <= p <= BOOST_P[1] and odd_min <= o <= BOOST_ODD[1]:
             cands.append((p, key))
     return (max(cands)[1], max(cands)[0]) if cands else None
 
@@ -176,12 +179,12 @@ def dicas(hoje: dt.date | None = None) -> int:
     p = db.load_predictions(with_results=False)
     agora = pd.Timestamp.now()
     p = p[(p["kickoff"] > agora + pd.Timedelta(minutes=30)) & (p["kickoff"].dt.date == hoje) & ~p["limited"].astype(bool)]
-    cands = []
-    for _, r in p.iterrows():
-        c = escolher(r)
-        if c:
-            cands.append((c[1], r, c[0]))
-    cands = sorted(cands, key=lambda x: -x[0])[:N_DICAS]
+    cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])[:N_DICAS]
+    if len(cands) < N_MIN:  # dia fraco: completa até N_MIN com as melhores acima de P_RESERVA
+        ja = {r["match_id"] for _, r, _ in cands}
+        extra = sorted(((c[1], r, c[0]) for _, r in p.iterrows()
+                        if r["match_id"] not in ja and (c := escolher(r, P_RESERVA))), key=lambda x: -x[0])
+        cands += extra[:N_MIN - len(cands)]
     if not cands:
         print("Sem dicas para hoje.")
         return 0
@@ -190,13 +193,14 @@ def dicas(hoje: dt.date | None = None) -> int:
         d = _dica(r, key, prob, hoje.isoformat())
         publicar(s, "dicas", d, mensagem_dica(r, key, prob), r["kickoff"], "dicas")
         novas.append(d)
+    alta = _odd_alta(s, p, {d["match_id"] for d in novas}, hoje)
     partes = []
     if len(novas) >= 2:
         partes = sorted(novas, key=lambda d: -d["prob"])[:3 if len(novas) >= 3 else 2]
         if _prod(d["prob"] for d in partes) < 0.22 and len(partes) == 3:  # 3 pernas arriscadas: só as 2 mais seguras
             partes = partes[:2]
         _multipla(s, "🎯 <b>MÚLTIPLA DO DIA</b>", partes, hoje, "segura", p)
-    turbo = _turbo(p, partes, hoje)
+    turbo = _turbo(p, partes + ([alta] if alta else []), hoje)
     if turbo:
         _multipla(s, "🚀 <b>MÚLTIPLA TURBO</b>", turbo, hoje, "turbo", p)
     pedir_aprovacao(s, hoje.isoformat())
@@ -229,7 +233,7 @@ def _turbo(p: pd.DataFrame, dia: list, hoje) -> list:
             break
         turbo.append(d)
         om *= odd(d["odd_casa"], d["prob"])
-    return turbo if len(turbo) >= 3 and om >= 3 else []
+    return turbo if len(turbo) >= 2 and om >= 2.5 else []  # sai sempre que houver 2+ pernas com odd decente
 
 
 def _prod(xs) -> float:
@@ -242,17 +246,58 @@ def _prod(xs) -> float:
 def _perna(r, key, prob, hoje) -> dict:
     return {"id": f"{r['match_id']}|{key}", "match_id": r["match_id"], "key": key,
             "texto": texto(key, r["home"], r["away"]), "jogo": f"{r['home']} x {r['away']}",
-            "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": hoje.isoformat()}
+            "prob": round(prob, 4), "odd_casa": (r["odds"] or {}).get(key), "data": hoje.isoformat(),
+            "porque": porque(r, key)}
+
+
+RESULTADO = {"1": "casa", "1X": "casa", "2": "fora", "X2": "fora"}
+
+
+def porque(r, key) -> str:
+    """Fundamento curto de uma aposta (sem percentagens): golos esperados e, no resultado, a forma do favorito."""
+    e, f = r["expected"], r["form"] or {}
+    txt = f"golos esperados {e['golos_casa']:.1f} – {e['golos_fora']:.1f}"
+    lado = RESULTADO.get(key.split("&")[0].replace("combo:", ""))
+    x = f.get(lado) or {} if lado else {}
+    if x.get("jogos"):
+        team = r["home"] if lado == "casa" else r["away"]
+        txt += f" · {team} {x['seq'].count('V')}V em {x['jogos']}"
+    elif "cantos" in key and e.get("cantos_casa") is not None:
+        txt = f"cantos esperados {e['cantos_casa'] + e['cantos_fora']:.1f}"
+    return txt
 
 
 def _texto_multipla(titulo, pernas) -> str:
     om = _prod(odd(d["odd_casa"], d["prob"]) for d in pernas)
-    txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} (@{odd(d['odd_casa'], d['prob']):.2f})" for d in pernas)
+    txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} (@{odd(d['odd_casa'], d['prob']):.2f})"
+                    + (f"\n   <i>↳ {E(d['porque'])}</i>" if d.get("porque") else "") for d in pernas)
     return f"{titulo}\n\n{txt}\n\n💰 Odd total: <b>{om:.2f}</b>" + _fim()
 
 
+PERNA = ("id", "match_id", "key", "prob", "odd_casa", "jogo", "texto", "porque")
+
+
+def _odd_alta(s, p: pd.DataFrame, usados: set, hoje) -> dict | None:
+    """Uma dica por dia de odd mais alta (1.80-2.60): a mais provável dessa faixa, de preferência com valor
+    (a odd da casa paga mais do que a probabilidade calibrada sugere). Fora dos jogos das outras dicas."""
+    cands = []
+    for _, r in p[~p["match_id"].isin(usados)].iterrows():
+        if c := boost(r, ODD_ALTA_MIN):
+            oc = (r["odds"] or {}).get(c[0])
+            cands.append((bool(oc and c[1] * oc > 1.03), c[1], r, c[0]))
+    if not cands:
+        return None
+    valor, prob, r, key = max(cands, key=lambda x: (x[0], x[1]))
+    d = _dica(r, key, prob, hoje.isoformat(), "odd_alta")
+    msg = mensagem_dica(r, key, prob)
+    if valor:
+        msg = msg.replace("\n\n📊", "\n💡 A odd paga mais do que o risco real deste jogo\n\n📊", 1)
+    publicar(s, "dicas", d, "💎 <b>DICA DE ODD ALTA</b>\n\n" + msg, r["kickoff"], "dicas")
+    return d
+
+
 def _multipla(s, titulo, partes, hoje, tipo, p):
-    pernas = [{k: d[k] for k in ("id", "match_id", "key", "prob", "odd_casa", "jogo", "texto")} for d in partes]
+    pernas = [{k: d[k] for k in PERNA if k in d} for d in partes]
     m = {"data": hoje.isoformat(), "tipo": tipo, "titulo": titulo, "partes": [d["id"] for d in partes],
          "pernas": pernas, "prob": round(_prod(d["prob"] for d in partes), 4), "resultado": None}
     inicio = p[p["match_id"].isin([d["match_id"] for d in partes])]["kickoff"].min()
@@ -548,7 +593,7 @@ def _alternativa(s: dict, x: dict, i: int) -> str | None:
         return None
     nxt = keys[(keys.index(pe["key"]) + 1) % len(keys)] if pe["key"] in keys else keys[0]
     nova = _perna(r, nxt, dict(cands)[nxt], dt.date.fromisoformat(m["data"]))
-    m["pernas"][i] = {k: nova[k] for k in ("id", "match_id", "key", "prob", "odd_casa", "jogo", "texto")}
+    m["pernas"][i] = {k: nova[k] for k in PERNA if k in nova}
     return nova["texto"]
 
 

@@ -871,7 +871,8 @@ def page_canal():
                     f"{sum(not d['resultado'] for d in dt_)} Red</span><span class='chip'>💶 {t:+.0f} € em {n} "
                     f"{'aposta' if n == 1 else 'apostas'} de 100 €</span>", unsafe_allow_html=True)
 
-    nomes = {None: "☀️ Dicas da manhã", "tardia": "🌙 Dicas tardias", "madrugada": "🌙 Madrugada"}
+    nomes = {None: "☀️ Dicas da manhã", "odd_alta": "💎 Dica de odd alta", "tardia": "🌙 Dicas tardias",
+             "madrugada": "🌙 Madrugada"}
     for tipo, nome in nomes.items():
         grupo = [d for d in do_dia if (d.get("tipo") or ("tardia" if d.get("tardia") else None)) == tipo]
         if not grupo:
