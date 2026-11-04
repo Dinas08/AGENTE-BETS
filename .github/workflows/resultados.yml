@@ -44,5 +44,5 @@ jobs:
       - name: Telegram (Green/Red, dicas tardias com onzes, madrugada às 22h, mensagens privadas)
         continue-on-error: true
         run: |
-          for c in resultados tardias madrugada "painel 4"; do python run.py telegram $c || echo "telegram $c falhou"; done
+          for c in resultados tardias madrugada "painel 8"; do python run.py telegram $c || echo "telegram $c falhou"; done
       - run: bash scripts/guardar_dados.sh "resultados" ours
