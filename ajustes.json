@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-04",
+ "atualizado_em": "2026-11-05",
  "equipas": {
   "Sp Lisbon": {
    "golos_marcados": -4,
@@ -28,43 +28,6 @@
    ],
    "valido_ate": "2026-11-08"
   },
-  "Barcelona": {
-   "golos_marcados": -3,
-   "golos_sofridos": 4,
-   "motivo": "Defesa desfalcada: Koundé praticamente fora, Christensen e Eric García improváveis; Olmo e Bardghji lesionados",
-   "ausentes": [
-    {
-     "jogador": "Koundé",
-     "motivo": "entorse no tornozelo",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Christensen",
-     "motivo": "lesão (improvável)",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Eric García",
-     "motivo": "lesão (improvável)",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Dani Olmo",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Rooney Bardghji",
-     "motivo": "lesão",
-     "importancia": "suplente"
-    }
-   ],
-   "fontes": [
-    "https://sports.yahoo.com/articles/versatile-barcelona-defender-practically-080000844.html",
-    "https://www.playmakerstats.com/news/preview-barcelona-vs-aston-villa-team-news-lineups-predictions-champions-league-03-11/1248631"
-   ],
-   "valido_ate": "2026-11-08"
-  },
   "Arouca": {
    "golos_marcados": -1,
    "golos_sofridos": 1,
@@ -80,125 +43,6 @@
     "https://www.fotmob.com/matches/famalicao-vs-arouca/5uy3d72"
    ],
    "valido_ate": "2026-11-07"
-  },
-  "Napoli": {
-   "golos_marcados": -8,
-   "golos_sofridos": 8,
-   "motivo": "Enfermaria enorme: só 13-14 jogadores de campo disponíveis; De Bruyne em dúvida",
-   "ausentes": [
-    {
-     "jogador": "Di Lorenzo",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Lobotka",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Badiashile",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Olivera",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Neres",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Alisson Santos",
-     "motivo": "lesão",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Hojlund",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Spinazzola",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "De Bruyne",
-     "motivo": "dúvida",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.record.pt/internacional/competicoes-de-clubes/liga-dos-campeoes/detalhe/mais-duas-ausencias-confirmadas-na-equipa-do-napoles-para-o-jogo-frente-ao-fc-porto-e-de-bruyne-em-duvida",
-    "https://www.abola.pt/noticias/a-atencao-do-fc-porto-mais-duas-enormes-baixas-no-napoles-para-o-dragao-2026110216274665956"
-   ],
-   "valido_ate": "2026-11-05"
-  },
-  "Porto": {
-   "golos_marcados": -2,
-   "golos_sofridos": 3,
-   "motivo": "Sem Smalling (ligamento joelho) e William Gomes; Pietuszewski em avaliação",
-   "ausentes": [
-    {
-     "jogador": "Chris Smalling",
-     "motivo": "entorse ligamento interno joelho",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "William Gomes",
-     "motivo": "lesão",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Pietuszewski",
-     "motivo": "dúvida",
-     "importancia": "rotação"
-    }
-   ],
-   "fontes": [
-    "https://sapo.pt/artigo/fc-porto-x-napoli-antevisao-ausencias-e-onzes-provaveis-6aea6ef72d3cd0be578e0aa8"
-   ],
-   "valido_ate": "2026-11-05"
-  },
-  "Liverpool": {
-   "golos_marcados": -6,
-   "golos_sofridos": 4,
-   "motivo": "5 baixas (Ekitiké, Frimpong, Gravenberch, Bradley, Leoni) em Istambul",
-   "ausentes": [
-    {
-     "jogador": "Ekitiké",
-     "motivo": "tendão de Aquiles",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Frimpong",
-     "motivo": "isquiotibiais",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Gravenberch",
-     "motivo": "calcanhar",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Conor Bradley",
-     "motivo": "joelho",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Leoni",
-     "motivo": "joelho",
-     "importancia": "rotação"
-    }
-   ],
-   "fontes": [
-    "https://www.uefa.com/uefachampionsleague/news/02ab-21f9907f0a27-6a6a67e9775d-1000--champions-league-starting-and-predicted-line-ups-matchday-4-/"
-   ],
-   "valido_ate": "2026-11-05"
   },
   "Man City": {
    "golos_marcados": -3,
@@ -231,27 +75,6 @@
     "https://www.si.com/soccer/arsenal"
    ],
    "valido_ate": "2026-11-08"
-  },
-  "Real Madrid": {
-   "golos_marcados": -2,
-   "golos_sofridos": 2,
-   "motivo": "Sem Rodrygo e Asencio",
-   "ausentes": [
-    {
-     "jogador": "Rodrygo",
-     "motivo": "joelho",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Raúl Asencio",
-     "motivo": "lesão",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.uefa.com/uefachampionsleague/news/02ab-21f9907f0a27-6a6a67e9775d-1000--champions-league-starting-and-predicted-line-ups-matchday-4-/"
-   ],
-   "valido_ate": "2026-11-05"
   },
   "Benfica": {
    "golos_marcados": -2,
@@ -372,6 +195,27 @@
     "https://www.ligainsider.de/rb-leipzig/1311/"
    ],
    "valido_ate": "2026-11-09"
+  },
+  "Moreirense": {
+   "golos_marcados": -1,
+   "golos_sofridos": 1,
+   "motivo": "Francisco Domingues e Manuel Mendonça lesionados no jogo com o Estrela, em dúvida para Alvalade",
+   "ausentes": [
+    {
+     "jogador": "Francisco Domingues",
+     "motivo": "lesão (dúvida)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Manuel Mendonça",
+     "motivo": "lesão (dúvida)",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.abola.pt/noticias/moreirense-ex-aguia-e-ex-leao-em-duvida-para-o-sporting-2026110117311633607"
+   ],
+   "valido_ate": "2026-11-08"
   }
  },
  "jogos": {}
