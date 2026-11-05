@@ -216,7 +216,7 @@
    "prob": 0.6944,
    "odd_casa": null,
    "data": "2026-11-04",
-   "resultado": null,
+   "resultado": true,
    "message_id": 52
   },
   {
@@ -380,7 +380,7 @@
     }
    ],
    "prob": 0.3512,
-   "resultado": null,
+   "resultado": true,
    "message_id": 51
   },
   {
@@ -435,7 +435,8 @@
  "resumos": [
   "2026-11-01",
   "2026-11-02",
-  "2026-11-03"
+  "2026-11-03",
+  "2026-11-04"
  ],
  "offset": 892007170,
  "ignorados": [],
@@ -740,5 +741,5 @@
    "admin_msg": 29
   }
  ],
- "ultimo_resumo": 48
+ "ultimo_resumo": 61
 }
