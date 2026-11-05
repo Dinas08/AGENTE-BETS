@@ -276,7 +276,7 @@
    "prob": 0.5444,
    "odd_casa": null,
    "data": "2026-11-05",
-   "resultado": null,
+   "resultado": false,
    "tipo": "odd_alta",
    "message_id": 65
   },
