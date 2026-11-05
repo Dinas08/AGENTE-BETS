@@ -302,7 +302,7 @@
    "prob": 0.6401,
    "odd_casa": 1.43,
    "data": "2026-11-05",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 69
   },
