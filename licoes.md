@@ -9,7 +9,7 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 - **2026-10-31 · Equipas em zona de descida sobrevalorizadas.** Evidência: Gladbach (último, 47% em casa, 0-0 e 7/7 falhados) e Sunderland
   (último, 41% fora, perdeu 1-3). O que fazer: rever sempre a tabela. Se uma equipa dos 3 últimos aparecer como favorita, aplicar o ajuste de crise
   (−3 a −8 nos golos marcados e +3 a +5 nos sofridos), salvo notícias que o contrariem.
-- **2026-10-31 · "Mais de 2.5" sobrestimado quando o favorito tem uma defesa sólida.** Evidência: Benfica 1-0 Alverca (S45, 68% e falhou); 7 das 9 falhas de golos da S44 foram "Mais 2.5"
+- **2026-10-31 · "Mais de 2.5" sobrestimado quando o favorito tem uma defesa sólida.** Evidência (reforçada a 05/11: quinta europeia 15/36, 0-0 e 1-0 em vários jogos): Benfica 1-0 Alverca (S45, 68% e falhou); 7 das 9 falhas de golos da S44 foram "Mais 2.5"
   que não aconteceu (e depois Como–Venezia, Frosinone–Torino e Arouca–Nacional). Quatro delas foram 2-0 do favorito (Casa Pia–Sporting, Schalke–Leipzig, Chelsea–Man United, Brentford–Forest) e as outras foram jogos táticos
   na Bundesliga (Werder–Hoffenheim, com xG total de 1.8). O que fazer: nos jogos com favorito claro e a outra equipa fraca no ataque, aplicar −3 a −5
   aos golos do outsider. Mas "Menos de 2.5" também falhou 3 vezes (Lazio, Lecce–Genoa, Braga) por vermelhos ou favoritos que marcaram 2+: não compensar demais. Não escolher "Ambas marcam" ou "Mais 2.5" como mercado principal sem confiança acima de 60%.
@@ -18,6 +18,8 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
   empatados. O que fazer: com o favorito abaixo de 50%, evitar a dupla "12" nas combinadas.
 
 ## Em observação (1 ocorrência — confirmar antes de agir)
+
+- 2026-11-05 · Previsões "com dados limitados" (equipas sem histórico) dão 77-89% ao favorito e falharam várias vezes (Milan–Ferencvaros 77%, Hajduk 89%, Atalanta–Kairat 86%, Sunderland–Zagreb 70%, Sturm Graz 63%). Sem odds, tratar favoritos acima de 75% como ≤70% e evitar "X ou 2" como mercado principal nesses jogos. "Mais 2.5" na Liga Europa/Conferência: 15/36 (42%) na quinta da S45.
 
 - 2026-11-04 · Equipas de topo com 4+ baixas titulares fora de casa na Europa continuam favoritas demais (Fenerbahce 3-2 Liverpool, favorito a 58%; Atalanta 0-3 Parma). Com 2+ casos, aplicar −6 a −10 golos marcados e baixar o favorito para ≤48%.
 - 2026-11-04 · Cantos europeus na S45: 46% contra 58% previsto (ruído nos dois sentidos, jogos 7-10 cantos). Descontar confiança acima de 70%.

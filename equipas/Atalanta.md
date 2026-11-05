@@ -12,3 +12,5 @@
 - 2026-10-29 em Florença: sobrestimámos a Atalanta fora (previsto 1.6 golos, xG real 1.1).
 
 - 02/11/2026: perdeu 0-3 em casa com o Parma (modelo: 57% vitória, 18% para este desfecho) com 10 ausentes e sem GR. Erro de leitura parcial: defesa subestimada. Sofre muito acima do previsto (4.8 vs 2.1 em 2 jogos).
+
+- 05/11/2026: empatou 1-1 com o Kairat (modelo 86%, 3.5-0.9, cantos 9-2). Falta de finalização/azar, mas 3.º jogo seguido abaixo do esperado (4.0 golos contra 6.9).

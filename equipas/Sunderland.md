@@ -11,3 +11,5 @@
 ## Erros do modelo com esta equipa
 - 2026-10-31 em Coventry (1-3): o modelo deu-lhe 41% para ganhar fora sendo último. **Erro de leitura**. Enquanto estiver em zona de descida,
   não aceitar favoritismo fora sem odds que o justifiquem e considerar +5 nos golos sofridos.
+
+- 05/11/2026: perdeu 0-2 com o Dinamo Zagreb (modelo 70%, desfecho a 10%). Equipa em zona de descida: favorita demais, aplicar ajuste de crise.

@@ -10,3 +10,5 @@
 
 ## Erros do modelo com esta equipa
 - 2026-10-31 vs Stuttgart (2-4): o 1X2 falhou (52% para o Leverkusen), mas os golos e os cantos foram bem lidos. Foi sobretudo eficácia do Stuttgart.
+
+- 05/11/2026: perdeu 0-1 em casa com o Marselha (modelo 68%, 2.5-1.2). Ataque abaixo do previsto (1.9 contra 4.7 em 2 jogos); sobrestimado.
