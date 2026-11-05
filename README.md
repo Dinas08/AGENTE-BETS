@@ -40,8 +40,10 @@ escreve um recap depois de cada jornada.
 - Aprovação: com o Secret `TELEGRAM_ADMIN` (o teu id; manda `/id` ao bot para o saber) as dicas, múltiplas,
   tardias e madrugada chegam-te primeiro em privado como rascunho (pelo bot de admin, Secret
   `TELEGRAM_ADMIN_BOT_TOKEN`, obrigatório quando o bot público está no Worker), com ✅ Publicar / ❌ Descartar. Para editar,
-  responde ao rascunho com o texto novo. Nas múltiplas há 🔄 Trocar (aposta seguinte do mesmo jogo) e ❌ Tirar
-  em cada perna. Rascunhos não aprovados expiram quando o jogo começa. Os GREEN/RED,
+  responde ao rascunho com o texto novo. Além das recomendadas (⭐), chegam também todas as outras
+  apostas do dia (📎 extra, ≥50%), que só saem se as publicares. 🔄 Trocar (nas dicas e em cada perna das múltiplas)
+  pede-te a aposta por escrito (ex.: "mais de 2.5 golos", "Porto ou empate", "ambas marcam e mais de 2.5");
+  ❌ Tirar tira uma perna. Rascunhos não aprovados expiram quando o jogo começa. Os GREEN/RED,
   resumos e balanços continuam automáticos. A múltipla turbo nunca repete apostas da múltipla do dia.
 - Por dia: 2 a 4 dicas (≥62%; num dia fraco completa até 2 com ≥55%), 1 dica 💎 de odd alta (1.80-2.60,
   a mais provável dessa faixa, de preferência com valor) e a múltipla turbo com o fundamento de cada perna.

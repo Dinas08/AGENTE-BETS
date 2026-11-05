@@ -29,6 +29,7 @@ P_MIN = 0.62                # probabilidade mínima da dica (já calibrada; no h
 ODD_MIN = 1.20              # as casas não aceitam apostas abaixo desta odd (dicas e pernas das múltiplas)
 TURBO_ODD = 4.0             # múltipla turbo: junta pernas até chegar a esta odd (máx. TURBO_PERNAS)
 TURBO_PERNAS, TURBO_P_MIN = 5, 0.62
+P_EXTRA = 0.50              # com admin: as outras apostas (não recomendadas) também vão para aprovação, como "extra"
 FLAG = {"P1": "🇵🇹", "E0": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "D1": "🇩🇪", "I1": "🇮🇹", "BRA": "🇧🇷", "ARG": "🇦🇷", "MEX": "🇲🇽", "USA": "🇺🇸", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
         "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆"}
 DIAS = ["SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO", "DOMINGO"]
@@ -203,6 +204,12 @@ def dicas(hoje: dt.date | None = None) -> int:
     turbo = _turbo(p, partes + ([alta] if alta else []), hoje)
     if turbo:
         _multipla(s, "🚀 <b>MÚLTIPLA TURBO</b>", turbo, hoje, "turbo", p)
+    # com admin: todos os outros jogos do dia também vão, marcados como extra (não recomendados)
+    usados = {d["match_id"] for d in novas + ([alta] if alta else [])}
+    for _, r in p[~p["match_id"].isin(usados)].sort_values("kickoff").iterrows():
+        if rever() and (c := escolher(r, P_EXTRA)):
+            publicar(s, "dicas", _dica(r, c[0], c[1], hoje.isoformat()), mensagem_dica(r, c[0], c[1]),
+                     r["kickoff"], "dicas", extra=True)
     pedir_aprovacao(s, hoje.isoformat())
     _save(s)
     return len(novas)
@@ -349,28 +356,36 @@ def tardias(hoje: dt.date | None = None) -> int:
     agora = pd.Timestamp.now()
     hoje = hoje or agora.date()
     s = _load()
-    feitas = max(len(_proposto(s, hoje.isoformat(), "tardia")), sum(
+    feitas = max(len([x for x in _proposto(s, hoje.isoformat(), "tardia") if not x.get("extra")]), sum(
         1 for d in s["dicas"] if d["data"] == hoje.isoformat() and (d.get("tipo") == "tardia" or d.get("tardia"))))
-    if feitas >= N_TARDIAS:
+    if feitas >= N_TARDIAS and not rever():
         return 0
     ignorados = s.setdefault("ignorados", [])
-    ja = {d["match_id"] for d in s["dicas"]} | set(ignorados) | _jogos_propostos(s)
+    ja = {d["match_id"] for d in s["dicas"]} | set(ignorados) | _jogos_propostos(s, ("tardia", "madrugada"))
     p = db.load_predictions(with_results=False)
     p = p[(p["kickoff"].dt.date == hoje) & (p["kickoff"].dt.hour >= 17) & ~p["limited"].astype(bool)
           & ~p["match_id"].isin(ja)]
     janela = (p["kickoff"] > agora + pd.Timedelta(minutes=20)) & (p["kickoff"] < agora + pd.Timedelta(minutes=75))
     # jogos mais tarde esta noite que ainda podem dar uma dica forte: guardar-lhes a vaga
     depois = sum(1 for _, r in p[p["kickoff"] >= agora + pd.Timedelta(minutes=75)].iterrows() if escolher(r))
-    reserva = max(0, N_TARDIAS - feitas - depois)
-    fortes, fracas = [], []
+    vagas = max(0, N_TARDIAS - feitas)
+    reserva = max(0, vagas - depois)
+    fortes, fracas, resto = [], [], []
     for _, r in p[janela].iterrows():
         if c := escolher(r):
             fortes.append((c[1], r, c[0]))
-        elif reserva and (c := escolher(r, P_RESERVA)):
+        elif c := escolher(r, P_RESERVA):
             fracas.append((c[1], r, c[0]))
-    cands = sorted(fortes, key=lambda x: -x[0]) + sorted(fracas, key=lambda x: -x[0])[:reserva]
+        elif c := escolher(r, P_EXTRA):
+            resto.append((c[1], r, c[0]))
+    fortes.sort(key=lambda x: -x[0])
+    fracas.sort(key=lambda x: -x[0])
+    cands = fortes + fracas[:reserva]
+    extras = sorted(fracas[reserva:] + resto, key=lambda x: -x[0]) if rever() else []
+    recomendaveis = {c[1]["match_id"] for c in cands}
     n = 0
-    for prob, r, key in cands[:N_TARDIAS - feitas]:
+    for prob, r, key in cands + extras:
+        extra = n >= vagas or r["match_id"] not in recomendaveis
         on = onzes(r)
         falta = (r["kickoff"] - agora).total_seconds() / 60
         if on is None and falta > 35:
@@ -379,14 +394,14 @@ def tardias(hoje: dt.date | None = None) -> int:
             print(f"  {r['home']} x {r['away']}: onze muito rodado {on}, sem dica")
             ignorados.append(r["match_id"])
             continue
-        extra = ""
+        info = ""
         if on:
             mud = [f"{E(t)} {v} {'alteração' if v == 1 else 'alterações'}" for t, v in on.items() if v]
-            extra = "📋 Onzes confirmados" + (f" ({'; '.join(mud)})" if mud else " (sem alterações)") + "\n"
-        msg = mensagem_dica(r, key, prob).replace("\n\n📊", f"\n\n{extra}📊", 1)
+            info = "📋 Onzes confirmados" + (f" ({'; '.join(mud)})" if mud else " (sem alterações)") + "\n"
+        msg = mensagem_dica(r, key, prob).replace("\n\n📊", f"\n\n{info}📊", 1)
         publicar(s, "dicas", _dica(r, key, prob, hoje.isoformat(), "tardia"), "🌙 <b>DICA TARDIA</b>\n\n" + msg,
-                 r["kickoff"], "tardia")
-        n += 1
+                 r["kickoff"], "tardia", extra=extra)
+        n += not extra
     _save(s)
     return n
 
@@ -401,7 +416,7 @@ def madrugada(hoje: dt.date | None = None) -> int:
     if (any(d["data"] == hoje.isoformat() and d.get("tipo") == "madrugada" for d in s["dicas"])
             or _proposto(s, hoje.isoformat(), "madrugada")):
         return 0
-    ja = {d["match_id"] for d in s["dicas"]} | _jogos_propostos(s)
+    ja = {d["match_id"] for d in s["dicas"]} | _jogos_propostos(s, ("tardia", "madrugada"))
     p = db.load_predictions(with_results=False)
     p = p[(p["kickoff"].dt.date == hoje + dt.timedelta(days=1)) & (p["kickoff"].dt.time <= dt.time(3, 0))
           & (p["kickoff"] > agora) & ~p["limited"].astype(bool) & ~p["match_id"].isin(ja)]
@@ -409,6 +424,13 @@ def madrugada(hoje: dt.date | None = None) -> int:
     for prob, r, key in sorted(cands[:N_MADRUGADA], key=lambda x: x[1]["kickoff"]):
         publicar(s, "dicas", _dica(r, key, prob, hoje.isoformat(), "madrugada"),
                  "🌙 <b>MADRUGADA</b>\n\n" + mensagem_dica(r, key, prob), r["kickoff"], "madrugada")
+    if rever():  # as outras também, como extra
+        rec = {r["match_id"] for _, r, _ in cands[:N_MADRUGADA]}
+        for _, r in p[~p["match_id"].isin(rec)].sort_values("kickoff").iterrows():
+            if c := escolher(r, P_EXTRA):
+                publicar(s, "dicas", _dica(r, c[0], c[1], hoje.isoformat(), "madrugada"),
+                         "🌙 <b>MADRUGADA</b>\n\n" + mensagem_dica(r, c[0], c[1]), r["kickoff"], "madrugada",
+                         extra=True)
     _save(s)
     return len(cands[:N_MADRUGADA])
 
@@ -554,7 +576,8 @@ ADMIN_TOKEN = os.getenv("TELEGRAM_ADMIN_BOT_TOKEN", "").strip()
 PUBLICO = config.DATA_DIR / "bot_publico.json"  # textos e botões que o Worker usa para responder
 MARCA = "———"  # separa o cabeçalho do rascunho do texto que vai para o canal
 ESTADOS = {"publicada": "✅ <b>PUBLICADA</b>", "descartada": "❌ <b>DESCARTADA</b>",
-           "expirada": "⌛ <b>EXPIROU</b> (o jogo já começou)"}
+           "expirada": "⌛ <b>EXPIROU</b> (o jogo já começou)",
+           "substituida": "🔁 <b>SUBSTITUÍDA</b> (há uma proposta mais recente para este jogo)"}
 
 
 def rever() -> bool:
@@ -571,63 +594,39 @@ def _proposto(s: dict, dia: str, origem: str) -> list:
     return [x for x in s.get("pendentes", []) if x["data"] == dia and x["origem"] == origem]
 
 
-def _jogos_propostos(s: dict) -> set:
-    return {x["registo"]["match_id"] for x in s.get("pendentes", []) if x["lista"] == "dicas"}
+def _jogos_propostos(s: dict, extras_de=()) -> set:
+    """Jogos já propostos como dica (os extra não contam, exceto os das origens em extras_de)."""
+    return {x["registo"]["match_id"] for x in s.get("pendentes", [])
+            if x["lista"] == "dicas" and (not x.get("extra") or x["origem"] in extras_de)}
 
 
 def _cabecalho(x: dict) -> str:
-    return (f"📝 <b>RASCUNHO</b> · expira às {pd.Timestamp(x['expira']):%Hh%M}\n"
+    tipo = "📎 <b>EXTRA</b> (não ia meter)" if x.get("extra") else "📝 <b>RASCUNHO</b> ⭐ <b>recomendada</b>"
+    return (f"{tipo} · expira às {pd.Timestamp(x['expira']):%Hh%M}\n"
             f"<i>Responde a esta mensagem com o texto novo para editar.</i>\n{MARCA}\n")
 
 
 def _botoes(x: dict) -> dict:
-    """Publicar/Descartar; nas múltiplas, também 🔄 Trocar e ❌ Tirar em cada perna."""
+    """Publicar/Descartar e 🔄 Trocar (pede a aposta por escrito); nas múltiplas, Trocar e ❌ Tirar em cada perna."""
     linhas = []
     if x["lista"] == "multiplas":
         for i, pe in enumerate(x["registo"]["pernas"]):
             linhas.append([{"text": f"🔄 {i + 1}. {pe.get('jogo', pe['match_id'])[:24]}", "callback_data": f"tr:{x['pid']}:{i}"},
                            {"text": f"❌ Tirar {i + 1}", "callback_data": f"rm:{x['pid']}:{i}"}])
+    else:
+        linhas.append([{"text": "🔄 Trocar aposta", "callback_data": f"tr:{x['pid']}:-1"}])
     linhas.append([{"text": "✅ Publicar", "callback_data": f"pub:{x['pid']}"},
                    {"text": "❌ Descartar", "callback_data": f"desc:{x['pid']}"}])
     return {"inline_keyboard": linhas}
-
-
-def _alternativa(s: dict, x: dict, i: int) -> str | None:
-    """Troca a perna i da múltipla pela aposta seguinte do mesmo jogo (por ordem de probabilidade, às voltas),
-    sem repetir apostas que já estejam em qualquer múltipla do dia. Devolve o texto da nova aposta."""
-    m, pe = x["registo"], x["registo"]["pernas"][i]
-    p = db.load_predictions(with_results=False)
-    p = p[p["match_id"] == pe["match_id"]]
-    if p.empty:
-        return None
-    r = p.iloc[0]
-    usadas = {q["id"] for y in s["multiplas"] + [z["registo"] for z in s.get("pendentes", []) if z["lista"] == "multiplas"]
-              if y["data"] == m["data"] for q in y.get("pernas", [])} - {pe["id"]}
-    cands = sorted(((k, pr) for k, pr in r["probs"].items() if _boost_ok(k) and pr >= 0.45
-                    and odd((r["odds"] or {}).get(k), pr) >= ODD_MIN and f"{r['match_id']}|{k}" not in usadas),
-                   key=lambda c: -c[1])[:8]
-    keys = [k for k, _ in cands]
-    if not keys or keys == [pe["key"]]:
-        return None
-    nxt = keys[(keys.index(pe["key"]) + 1) % len(keys)] if pe["key"] in keys else keys[0]
-    nova = _perna(r, nxt, dict(cands)[nxt], dt.date.fromisoformat(m["data"]))
-    m["pernas"][i] = {k: nova[k] for k in PERNA if k in nova}
-    return nova["texto"]
 
 
 def _mexer_perna(s: dict, x: dict, acao: str, i: int) -> str:
     m = x["registo"]
     if i >= len(m["pernas"]):
         return "Essa perna já não existe."
-    if acao == "rm":
-        if len(m["pernas"]) <= 2:
-            return "Uma múltipla precisa de pelo menos 2 pernas."
-        aviso = f"Tirei: {m['pernas'].pop(i)['jogo']}"
-    else:
-        novo = _alternativa(s, x, i)
-        if novo is None:
-            return "Não há outra aposta com valor neste jogo."
-        aviso = f"Agora: {novo}"
+    if len(m["pernas"]) <= 2:  # ❌ Tirar (o 🔄 Trocar pede a aposta por escrito: _pedir_troca)
+        return "Uma múltipla precisa de pelo menos 2 pernas."
+    aviso = f"Tirei: {m['pernas'].pop(i)['jogo']}"
     m["partes"] = [pe["id"] for pe in m["pernas"]]
     m["prob"] = round(_prod(pe["prob"] for pe in m["pernas"]), 4)
     x["texto"] = _texto_multipla(m.get("titulo", "🎯 <b>MÚLTIPLA</b>"), m["pernas"])
@@ -636,17 +635,174 @@ def _mexer_perna(s: dict, x: dict, acao: str, i: int) -> str:
     return aviso
 
 
-def publicar(s, lista, registo, msg, inicio, origem) -> None:
-    """Sem admin publica já no canal; com admin manda o rascunho e só publica quando for aprovado."""
+def _jogo(match_id: str):
+    p = db.load_predictions(with_results=False)
+    p = p[p["match_id"] == match_id]
+    return None if p.empty else p.iloc[0]
+
+
+def _alvo(x: dict, i: int) -> dict:
+    """A aposta a trocar: a perna i da múltipla, ou a própria dica (i = -1)."""
+    return x["registo"]["pernas"][i] if i >= 0 else x["registo"]
+
+
+def _sugestoes(r, atual: str, n: int = 6) -> list[str]:
+    cands = sorted(((k, pr) for k, pr in r["probs"].items() if k != atual and pr >= 0.45
+                    and not k.startswith("placar_") and odd((r["odds"] or {}).get(k), pr) >= ODD_MIN),
+                   key=lambda c: -c[1])[:n]
+    return [f"{texto(k, r['home'], r['away'])} (@{odd((r['odds'] or {}).get(k), pr):.2f})" for k, pr in cands]
+
+
+def _pedir_troca(s: dict, x: dict, i: int) -> str:
+    """🔄 Trocar: pede ao admin que escreva a aposta que quer (em resposta à mensagem que o bot manda)."""
+    if i >= 0 and i >= len(x["registo"].get("pernas", [])):
+        return "Essa perna já não existe."
+    alvo = _alvo(x, i)
+    r = _jogo(alvo["match_id"])
+    sug = "\n".join(f"• {E(t)}" for t in _sugestoes(r, alvo["key"])) if r is not None else ""
+    casa = E(r["home"]) if r is not None else "casa"
+    msg = (f"✍️ <b>Que aposta queres para {E(alvo['jogo'])}?</b>\nAgora: {E(alvo['texto'])}\n\n"
+           f"Escreve-a em resposta a esta mensagem, por exemplo: <i>mais de 2.5 golos</i>, <i>ambas marcam</i>, "
+           f"<i>vitória {casa}</i>, <i>1X</i>, <i>menos de 9.5 cantos</i>, <i>2-1</i>."
+           + (f"\n\nSugestões:\n{sug}" if sug else ""))
+    res = _bot("sendMessage", chat_id=ADMIN, text=msg, parse_mode="HTML",
+               reply_parameters={"message_id": x["admin_msg"]},
+               reply_markup={"force_reply": True, "input_field_placeholder": "ex.: mais de 2.5 golos"})
+    if res.get("ok"):
+        s["troca"] = {"pid": x["pid"], "i": i, "msg": res["result"]["message_id"]}
+    return "Escreve a aposta que queres ✍️"
+
+
+def _e_troca(s: dict, m: dict) -> bool:
+    t = s.get("troca")
+    return bool(t) and (m.get("reply_to_message") or {}).get("message_id") == t["msg"]
+
+
+def _norm(t: str) -> str:
+    import unicodedata
+    t = unicodedata.normalize("NFKD", t.lower()).encode("ascii", "ignore").decode()
+    return " ".join(t.replace(",", ".").split())
+
+
+def interpretar(txt: str, r) -> str | None:
+    """Texto escrito pelo admin -> chave do mercado (só mercados que o modelo calcula, para dar Green/Red)."""
+    import difflib
+    import re
+    t = _norm(txt)
+    probs = r["probs"]
+    partes = [x for x in re.split(r"\s*\+\s*|\s+e\s+", t) if x]
+    if len(partes) == 2:
+        ks = [interpretar(x, r) for x in partes]
+        if all(ks):
+            for a, b in ((ks[0], ks[1]), (ks[1], ks[0])):
+                if f"combo:{a}&{b}" in probs:
+                    return f"combo:{a}&{b}"
+        return None
+
+    def lado() -> str | None:
+        for nome, l in ((r["home"], "casa"), (r["away"], "fora")):
+            pal = [w for w in _norm(nome).split() if len(w) >= 3 and w not in ("club", "sporting", "real", "united")]
+            if _norm(nome) in t or any(re.search(rf"\b{re.escape(w)}", t) for w in pal):
+                return l
+        return "casa" if re.search(r"\bcasa\b", t) else "fora" if re.search(r"\bfora\b", t) else None
+
+    k = None
+    if m := re.fullmatch(r"(?:resultado exato |placar )?(\d+)\s*[-x:]\s*(\d+)", t):
+        k = f"placar_{m[1]}-{m[2]}"
+    elif m := re.search(r"(\d+\.5)", t):
+        sob = re.search(r"\b(menos|under|u)\b|(^|\s)-\s*\d", t)
+        tipo = "cantos_" if "canto" in t or "corner" in t else "cartoes_" if "cart" in t else ""
+        k = f"{tipo}{'under' if sob else 'over'}_{m[1]}"
+    elif "ambas" in t or "btts" in t or t in ("gg", "ng"):
+        k = "btts_nao" if re.search(r"\b(nao|no|ng)\b", t) else "btts_sim"
+    elif "mais cantos" in t and (l := lado()):
+        k = f"cantos_mais_{l}"
+    elif re.search(r"sem sofrer|nao sofre|clean", t) and (l := lado()):
+        k = f"{l}_sem_sofrer"
+    elif re.search(r"\bmarca\b", t) and (l := lado()):
+        k = f"{l}_marca"
+    elif t in ("1x", "x2", "12", "1", "2", "x"):
+        k = t.upper()
+    elif "sem empate" in t or "nao ha empate" in t:
+        k = "12"
+    elif "ou empate" in t or "dupla" in t:
+        k = {"casa": "1X", "fora": "X2"}.get(lado())
+    elif "empate" in t:
+        k = "X"
+    elif l := lado():
+        k = "1" if l == "casa" else "2"
+    if k in probs:
+        return k
+    nomes = {_norm(texto(c, r["home"], r["away"])): c for c in probs}
+    perto = difflib.get_close_matches(t, list(nomes), n=1, cutoff=0.8)
+    return nomes[perto[0]] if perto else None
+
+
+def _trocar(s: dict, m: dict) -> None:
+    t = s.pop("troca")
+    x = next((x for x in s.get("pendentes", []) if x["pid"] == t["pid"] and x["estado"] == "pendente"), None)
+    if x is None:
+        _bot("sendMessage", chat_id=ADMIN, text="Esse rascunho já não está pendente.")
+        return
+    alvo = _alvo(x, t["i"])
+    r = _jogo(alvo["match_id"])
+    key = interpretar(m.get("text") or "", r) if r is not None else None
+    if key is None:
+        s["troca"] = t  # continua à espera
+        sug = "\n".join(f"• {E(q)}" for q in _sugestoes(r, alvo["key"])) if r is not None else ""
+        _bot("sendMessage", chat_id=ADMIN, parse_mode="HTML", reply_parameters={"message_id": t["msg"]},
+             text="🤔 Não percebi essa aposta (ou o modelo não a calcula, e assim não dava para dar o Green/Red). "
+                  "Responde outra vez à mensagem de cima." + (f"\n\nExemplos:\n{sug}" if sug else ""))
+        return
+    prob = r["probs"][key]
+    if t["i"] >= 0:  # perna da múltipla
+        mm = x["registo"]
+        nova = _perna(r, key, prob, dt.date.fromisoformat(x["data"]))
+        mm["pernas"][t["i"]] = {k: nova[k] for k in PERNA if k in nova}
+        mm["partes"] = [pe["id"] for pe in mm["pernas"]]
+        mm["prob"] = round(_prod(pe["prob"] for pe in mm["pernas"]), 4)
+        x["texto"] = _texto_multipla(mm.get("titulo", "🎯 <b>MÚLTIPLA</b>"), mm["pernas"])
+    else:  # dica simples: troca a linha da dica e a odd, mantém o resto da mensagem
+        x["registo"] = x["registo"] | {k: v for k, v in _dica(r, key, prob, x["data"]).items() if k != "tipo"}
+        linhas = []
+        for ln in x["texto"].split("\n"):
+            if ln.startswith("✅ <b>Dica:"):
+                ln = f"✅ <b>Dica: {E(texto(key, r['home'], r['away']))}</b>"
+            elif ln.startswith("💰 Odd:"):
+                ln = linha_odd((r["odds"] or {}).get(key), prob)
+            elif ln.startswith("💡 A odd paga mais"):
+                continue
+            linhas.append(ln)
+        x["texto"] = "\n".join(linhas)
+    _bot("editMessageText", chat_id=ADMIN, message_id=x["admin_msg"], text=_cabecalho(x) + x["texto"],
+         parse_mode="HTML", disable_web_page_preview=True, reply_markup=_botoes(x))
+    _bot("sendMessage", chat_id=ADMIN, reply_parameters={"message_id": x["admin_msg"]},
+         text=f"🔄 Agora: {texto(key, r['home'], r['away'])} (@{odd((r['odds'] or {}).get(key), prob):.2f}, "
+              f"{prob:.0%} pelo modelo). Carrega em ✅ Publicar quando estiver pronto.")
+
+
+def publicar(s, lista, registo, msg, inicio, origem, extra: bool = False) -> None:
+    """Sem admin publica já no canal; com admin manda o rascunho e só publica quando for aprovado.
+    extra=True: aposta não recomendada, só vai para aprovação (sem admin não sai)."""
+    if extra and not rever():
+        return
     if rever():
+        for y in s.get("pendentes", []):  # proposta nova para um jogo que tinha um extra à espera: substitui-o
+            if (y["estado"] == "pendente" and y.get("extra") and y["lista"] == "dicas" == lista
+                    and y["registo"]["match_id"] == registo.get("match_id")):
+                _fechar(y, "substituida")
         x = {"pid": f"{dt.datetime.now():%d%H%M%S}{len(s.setdefault('pendentes', []))}", "origem": origem,
-             "data": registo["data"], "lista": lista, "registo": registo, "texto": msg,
-             "expira": pd.Timestamp(inicio).isoformat(), "estado": "pendente"}
+             "data": registo["data"], "lista": lista, "registo": registo | ({"extra": True} if extra else {}),
+             "texto": msg, "expira": pd.Timestamp(inicio).isoformat(), "estado": "pendente"}
+        if extra:
+            x["extra"] = True
         r = _bot("sendMessage", chat_id=ADMIN, text=_cabecalho(x) + msg, parse_mode="HTML",
                  disable_web_page_preview=True, reply_markup=_botoes(x))
         if r.get("ok"):
             x["admin_msg"] = r["result"]["message_id"]
             s["pendentes"].append(x)
+            return
+        if extra:
             return
         print(f"  [admin] não consegui mandar o rascunho ({r.get('description')}); publico direto")
     s[lista].append(registo | {"message_id": send(msg)})
@@ -654,11 +810,13 @@ def publicar(s, lista, registo, msg, inicio, origem) -> None:
 
 def pedir_aprovacao(s: dict, dia: str) -> None:
     """Depois das dicas da manhã: uma mensagem com 'Publicar todos' / 'Descartar todos'."""
-    n = sum(1 for x in s.get("pendentes", []) if x["data"] == dia and x["estado"] == "pendente")
-    if rever() and n >= 2:
-        _bot("sendMessage", chat_id=ADMIN, text=f"📝 {n} rascunhos de hoje à espera da tua aprovação.",
-             reply_markup={"inline_keyboard": [[{"text": "✅ Publicar todos", "callback_data": "pub:*"},
-                                                {"text": "❌ Descartar todos", "callback_data": "desc:*"}]]})
+    pend = [x for x in s.get("pendentes", []) if x["data"] == dia and x["estado"] == "pendente"]
+    rec = sum(1 for x in pend if not x.get("extra"))
+    if rever() and len(pend) >= 2:
+        _bot("sendMessage", chat_id=ADMIN, text=f"📝 Hoje: {rec} recomendadas (⭐) e {len(pend) - rec} extra (📎) "
+             "à espera da tua aprovação. Os extra só saem se carregares em ✅ Publicar neles.",
+             reply_markup={"inline_keyboard": [[{"text": "✅ Publicar recomendadas", "callback_data": "pub:*"},
+                                                {"text": "❌ Descartar tudo", "callback_data": "desc:*"}]]})
 
 
 def _fechar(x: dict, estado: str) -> None:
@@ -830,10 +988,14 @@ def _botao(s: dict, cb: dict, link: str | None = None) -> int:
     if acao in ("tr", "rm"):  # trocar / tirar uma perna da múltipla
         pid, _, i = pid.partition(":")
         x = next((x for x in s.get("pendentes", []) if x["pid"] == pid and x["estado"] == "pendente"), None)
-        aviso = _mexer_perna(s, x, acao, int(i)) if x else "Já não está pendente."
+        if x and acao == "tr":
+            aviso = _pedir_troca(s, x, int(i))
+        else:
+            aviso = _mexer_perna(s, x, acao, int(i)) if x else "Já não está pendente."
         _bot("answerCallbackQuery", callback_query_id=cb["id"], text=aviso[:190])
         return 1 if x else 0
-    alvos = [x for x in s.get("pendentes", []) if x["estado"] == "pendente" and pid in ("*", x["pid"])]
+    alvos = [x for x in s.get("pendentes", []) if x["estado"] == "pendente"
+             and (pid == x["pid"] or (pid == "*" and not (acao == "pub" and x.get("extra"))))]
     for x in alvos:
         _aprovar(s, x) if acao == "pub" else _fechar(x, "descartada")
     feito = "publicado" if acao == "pub" else "descartado"
@@ -883,6 +1045,8 @@ def painel(minutos: float = 0) -> int:
             cmd = (m.get("text") or "").strip().split()[0].split("@")[0].lower() if (m.get("text") or "").strip() else ""
             if cmd == "/id":
                 _bot("sendMessage", chat_id=chat["id"], text=f"O teu id do Telegram: {chat['id']}")
+            elif ADMIN and str(chat["id"]) == ADMIN and _e_troca(s, m):
+                _trocar(s, m)
             elif ADMIN and str(chat["id"]) == ADMIN and (ADMIN_TOKEN or cmd not in COMANDOS):
                 _editar(s, m)
             elif ADMIN_TOKEN:  # o bot de admin não é para o público

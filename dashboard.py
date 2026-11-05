@@ -818,9 +818,10 @@ def page_canal():
     # rascunhos que não chegaram ao canal (à espera, expirados ou descartados): aparecem também, com o estado,
     # mas não contam para o Green/Red nem para a simulação
     extra = {"dicas": [], "multiplas": []}
+    nao_rec = []  # apostas extra (não recomendadas) enviadas para aprovação e não publicadas
     for x in s.get("pendentes", []):
         if x["estado"] != "publicada":
-            extra[x["lista"]].append(x["registo"] | {"_estado": x["estado"]})
+            (nao_rec if x.get("extra") else extra[x["lista"]]).append(x["registo"] | {"_estado": x["estado"]})
     s.setdefault("dicas", [])
     s.setdefault("multiplas", [])
     df = load()
@@ -835,7 +836,7 @@ def page_canal():
         return resultado, r, placar
 
     RASCUNHO = {"pendente": "📝 Rascunho à espera de aprovação", "expirada": "⌛ Não publicada (expirou)",
-                "descartada": "🗑️ Descartada"}
+                "descartada": "🗑️ Descartada", "substituida": "🔁 Substituída por uma proposta mais recente"}
 
     def badge(res, rascunho=None):
         if rascunho:  # não foi para o canal: mostra o que teria dado, sem contar
@@ -888,6 +889,15 @@ def page_canal():
                             f"<span class='muted'>{placar}</span></div>"
                             f"<div class='pick' style='margin:4px 0'>⭐ {E(d['texto'])} · @{tg.odd(d['odd_casa'], d['prob']):.2f}"
                             f"</div>{badge(res, d.get('_estado'))}", unsafe_allow_html=True)
+
+    extras_dia = [d for d in nao_rec if d["data"] == dia]
+    if extras_dia:
+        with st.expander(f"📎 Extras enviadas para aprovação, não recomendadas ({len(extras_dia)})"):
+            for d in sorted(extras_dia, key=lambda d: d.get("_estado") == "substituida"):
+                res, r, placar = estado(d["match_id"], d["key"], d["resultado"])
+                st.markdown(f"{E(d['jogo'])} <span class='muted'>{placar}</span> · {E(d['texto'])} · "
+                            f"@{tg.odd(d['odd_casa'], d['prob']):.2f} · {badge(res, d.get('_estado'))}",
+                            unsafe_allow_html=True)
 
     if mult:
         st.subheader("🎯 Múltiplas", divider="gray")
