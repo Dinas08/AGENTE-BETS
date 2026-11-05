@@ -289,7 +289,7 @@
    "prob": 0.6097,
    "odd_casa": null,
    "data": "2026-11-05",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 68
   },
