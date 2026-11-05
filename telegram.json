@@ -1311,8 +1311,30 @@
    "estado": "publicada",
    "extra": true,
    "admin_msg": 14
+  },
+  {
+   "pid": "0517142324",
+   "origem": "tardia",
+   "data": "2026-11-05",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261105-UEL-crystalpalace-hoffenheim|btts_sim",
+    "match_id": "20261105-UEL-crystalpalace-hoffenheim",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Crystal Palace x Hoffenheim",
+    "prob": 0.6279,
+    "odd_casa": null,
+    "data": "2026-11-05",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🟠 <b>LIGA EUROPA – QUINTA 05/11</b>\nCrystal Palace x Hoffenheim | 17h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.59</b> (mínima com valor)\n\n📊 Golos esperados: Crystal Palace 1.8 – Hoffenheim 1.4\n📊 Crystal Palace: 1 vitória nos últimos 6 jogos, xG 6.6 contra 12.8\n📊 Hoffenheim: 3 vitórias nos últimos 6 jogos, xG 11.5 contra 6.5\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-05T17:45:00",
+   "estado": "descartada",
+   "admin_msg": 27
   }
  ],
  "ultimo_resumo": 61,
- "offset_admin": 820373291
+ "offset_admin": 820373292
 }
