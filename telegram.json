@@ -230,6 +230,30 @@
    "data": "2026-11-04",
    "resultado": true,
    "message_id": 53
+  },
+  {
+   "id": "20261105-UEL-leverkusen-marseille|over_2.5",
+   "match_id": "20261105-UEL-leverkusen-marseille",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Leverkusen x Marseille",
+   "prob": 0.7125,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": null,
+   "message_id": 62
+  },
+  {
+   "id": "20261105-UEL-celtic-besiktas|btts_sim",
+   "match_id": "20261105-UEL-celtic-besiktas",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Celtic x Besiktas",
+   "prob": 0.6479,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": null,
+   "message_id": 63
   }
  ],
  "multiplas": [
@@ -758,7 +782,7 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 05/11</b>\nLeverkusen x Marseille | 20h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.40</b> (mínima com valor)\n\n📊 Golos esperados: Leverkusen 2.5 – Marseille 1.2\n📊 Leverkusen: 3 vitórias nos últimos 6 jogos, xG 10.6 contra 12.2\n📊 Marseille: 4 vitórias nos últimos 6 jogos, xG 10.2 contra 15.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 2
   },
   {
@@ -779,7 +803,7 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 05/11</b>\nCeltic x Besiktas | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.54</b> (mínima com valor)\n\n📊 Golos esperados: Celtic 1.6 – Besiktas 1.6\n📊 Celtic: 3 vitórias nos últimos 6 jogos, xG 13.6 contra 6.4\n📊 Besiktas: 3 vitórias nos últimos 6 jogos, xG 10.9 contra 7.7\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 3
   },
   {
@@ -1101,5 +1125,11 @@
    "admin_msg": 14
   }
  ],
- "ultimo_resumo": 61
+ "ultimo_resumo": 61,
+ "offset_admin": 820373275,
+ "troca": {
+  "pid": "0511245213",
+  "i": -1,
+  "msg": 16
+ }
 }
