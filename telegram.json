@@ -344,6 +344,20 @@
    "resultado": null,
    "extra": true,
    "message_id": 72
+  },
+  {
+   "id": "20261106-BRA-cruzeiro-bahia|1",
+   "match_id": "20261106-BRA-cruzeiro-bahia",
+   "key": "1",
+   "texto": "Vitória Cruzeiro",
+   "jogo": "Cruzeiro x Bahia",
+   "prob": 0.5598,
+   "odd_casa": 1.68,
+   "data": "2026-11-05",
+   "resultado": null,
+   "tipo": "madrugada",
+   "extra": true,
+   "message_id": 76
   }
  ],
  "multiplas": [
@@ -1340,25 +1354,25 @@
    "data": "2026-11-05",
    "lista": "dicas",
    "registo": {
-    "id": "20261106-BRA-cruzeiro-bahia|over_2.5",
+    "id": "20261106-BRA-cruzeiro-bahia|1",
     "match_id": "20261106-BRA-cruzeiro-bahia",
-    "key": "over_2.5",
-    "texto": "Mais de 2.5 golos",
+    "key": "1",
+    "texto": "Vitória Cruzeiro",
     "jogo": "Cruzeiro x Bahia",
-    "prob": 0.5869,
-    "odd_casa": 1.56,
+    "prob": 0.5598,
+    "odd_casa": 1.68,
     "data": "2026-11-05",
     "resultado": null,
     "tipo": "madrugada",
     "extra": true
    },
-   "texto": "🌙 <b>MADRUGADA</b>\n\n🇧🇷 <b>BRASILEIRÃO – SEXTA 06/11</b>\nCruzeiro x Bahia | 00h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.56</b>\n\n📊 Golos esperados: Cruzeiro 1.9 – Bahia 1.1\n📊 Cruzeiro: 5 vitórias nos últimos 6 jogos\n📊 Bahia: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "🌙 <b>MADRUGADA</b>\n\n🇧🇷 <b>BRASILEIRÃO – SEXTA 06/11</b>\nCruzeiro x Bahia | 00h30\n\n✅ <b>Dica: Vitória Cruzeiro</b>\n💰 Odd: <b>1.68</b>\n\n📊 Golos esperados: Cruzeiro 1.9 – Bahia 1.1\n📊 Cruzeiro: 5 vitórias nos últimos 6 jogos\n📊 Bahia: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-06T00:30:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "extra": true,
    "admin_msg": 28
   }
  ],
  "ultimo_resumo": 61,
- "offset_admin": 820373292
+ "offset_admin": 820373296
 }
