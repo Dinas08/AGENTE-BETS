@@ -1333,6 +1333,30 @@
    "expira": "2026-11-05T17:45:00",
    "estado": "descartada",
    "admin_msg": 27
+  },
+  {
+   "pid": "0521011225",
+   "origem": "madrugada",
+   "data": "2026-11-05",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261106-BRA-cruzeiro-bahia|over_2.5",
+    "match_id": "20261106-BRA-cruzeiro-bahia",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Cruzeiro x Bahia",
+    "prob": 0.5869,
+    "odd_casa": 1.56,
+    "data": "2026-11-05",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌙 <b>MADRUGADA</b>\n\n🇧🇷 <b>BRASILEIRÃO – SEXTA 06/11</b>\nCruzeiro x Bahia | 00h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.56</b>\n\n📊 Golos esperados: Cruzeiro 1.9 – Bahia 1.1\n📊 Cruzeiro: 5 vitórias nos últimos 6 jogos\n📊 Bahia: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-06T00:30:00",
+   "estado": "pendente",
+   "extra": true,
+   "admin_msg": 28
   }
  ],
  "ultimo_resumo": 61,
