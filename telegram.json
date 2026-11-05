@@ -254,6 +254,96 @@
    "data": "2026-11-05",
    "resultado": null,
    "message_id": 63
+  },
+  {
+   "id": "20261105-BRA-palmeiras-remo|1",
+   "match_id": "20261105-BRA-palmeiras-remo",
+   "key": "1",
+   "texto": "Vitória Palmeiras",
+   "jogo": "Palmeiras x Remo",
+   "prob": 0.7884,
+   "odd_casa": 1.21,
+   "data": "2026-11-05",
+   "resultado": null,
+   "message_id": 64
+  },
+  {
+   "id": "20261105-UEL-sociedad-lyon|combo:12&over_2.5",
+   "match_id": "20261105-UEL-sociedad-lyon",
+   "key": "combo:12&over_2.5",
+   "texto": "Não há empate + Mais de 2.5 golos",
+   "jogo": "Sociedad x Lyon",
+   "prob": 0.5444,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": null,
+   "tipo": "odd_alta",
+   "message_id": 65
+  },
+  {
+   "id": "20261105-UECL-trabzonspor-freiburg|btts_sim",
+   "match_id": "20261105-UECL-trabzonspor-freiburg",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Trabzonspor x Freiburg",
+   "prob": 0.6097,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": null,
+   "extra": true,
+   "message_id": 68
+  },
+  {
+   "id": "20261105-ARG-aldosivi-riverplate|2",
+   "match_id": "20261105-ARG-aldosivi-riverplate",
+   "key": "2",
+   "texto": "Vitória River Plate",
+   "jogo": "Aldosivi x River Plate",
+   "prob": 0.6401,
+   "odd_casa": 1.43,
+   "data": "2026-11-05",
+   "resultado": null,
+   "extra": true,
+   "message_id": 69
+  },
+  {
+   "id": "20261105-UEL-azalkmaar-juventus|2",
+   "match_id": "20261105-UEL-azalkmaar-juventus",
+   "key": "2",
+   "texto": "Vitória Juventus",
+   "jogo": "AZ Alkmaar x Juventus",
+   "prob": 0.4927,
+   "odd_casa": 1.95,
+   "data": "2026-11-05",
+   "resultado": null,
+   "extra": true,
+   "message_id": 70
+  },
+  {
+   "id": "20261105-UECL-getafe-brighton|2",
+   "match_id": "20261105-UECL-getafe-brighton",
+   "key": "2",
+   "texto": "Vitória Brighton",
+   "jogo": "Getafe x Brighton",
+   "prob": 0.5866,
+   "odd_casa": 1.53,
+   "data": "2026-11-05",
+   "resultado": null,
+   "extra": true,
+   "message_id": 71
+  },
+  {
+   "id": "20261105-ARG-gimnasialp-belgrano|under_2.5",
+   "match_id": "20261105-ARG-gimnasialp-belgrano",
+   "key": "under_2.5",
+   "texto": "Menos de 2.5 golos",
+   "jogo": "Gimnasia L.P. x Belgrano",
+   "prob": 0.5264,
+   "odd_casa": 1.74,
+   "data": "2026-11-05",
+   "resultado": null,
+   "extra": true,
+   "message_id": 72
   }
  ],
  "multiplas": [
@@ -451,6 +541,104 @@
    "prob": 0.3251,
    "resultado": true,
    "message_id": 54
+  },
+  {
+   "data": "2026-11-05",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261105-BRA-palmeiras-remo|1",
+    "20261105-UEL-leverkusen-marseille|over_2.5",
+    "20261105-UEL-celtic-besiktas|btts_sim"
+   ],
+   "pernas": [
+    {
+     "id": "20261105-BRA-palmeiras-remo|1",
+     "match_id": "20261105-BRA-palmeiras-remo",
+     "key": "1",
+     "prob": 0.7884,
+     "odd_casa": 1.21,
+     "jogo": "Palmeiras x Remo",
+     "texto": "Vitória Palmeiras"
+    },
+    {
+     "id": "20261105-UEL-leverkusen-marseille|over_2.5",
+     "match_id": "20261105-UEL-leverkusen-marseille",
+     "key": "over_2.5",
+     "prob": 0.7125,
+     "odd_casa": null,
+     "jogo": "Leverkusen x Marseille",
+     "texto": "Mais de 2.5 golos"
+    },
+    {
+     "id": "20261105-UEL-celtic-besiktas|btts_sim",
+     "match_id": "20261105-UEL-celtic-besiktas",
+     "key": "btts_sim",
+     "prob": 0.6479,
+     "odd_casa": null,
+     "jogo": "Celtic x Besiktas",
+     "texto": "Ambas marcam"
+    }
+   ],
+   "prob": 0.3639,
+   "resultado": null,
+   "message_id": 66
+  },
+  {
+   "data": "2026-11-05",
+   "tipo": "turbo",
+   "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+   "partes": [
+    "20261105-UEL-crystalpalace-hoffenheim|under_3.5",
+    "20261105-UEL-celta-stgilloise|cantos_under_9.5",
+    "20261105-ARG-aldosivi-riverplate|2",
+    "20261105-UEL-leverkusen-marseille|1"
+   ],
+   "pernas": [
+    {
+     "id": "20261105-UEL-crystalpalace-hoffenheim|under_3.5",
+     "match_id": "20261105-UEL-crystalpalace-hoffenheim",
+     "key": "under_3.5",
+     "prob": 0.6081,
+     "odd_casa": 1.71,
+     "jogo": "Crystal Palace x Hoffenheim",
+     "texto": "Menos de 3.5 golos",
+     "porque": "golos esperados 1.8 – 1.4"
+    },
+    {
+     "id": "20261105-UEL-celta-stgilloise|cantos_under_9.5",
+     "match_id": "20261105-UEL-celta-stgilloise",
+     "key": "cantos_under_9.5",
+     "prob": 0.644,
+     "odd_casa": null,
+     "jogo": "Celta x St. Gilloise",
+     "texto": "Menos de 9.5 cantos",
+     "porque": "cantos esperados 7.5"
+    },
+    {
+     "id": "20261105-ARG-aldosivi-riverplate|2",
+     "match_id": "20261105-ARG-aldosivi-riverplate",
+     "key": "2",
+     "prob": 0.6401,
+     "odd_casa": 1.43,
+     "jogo": "Aldosivi x River Plate",
+     "texto": "Vitória River Plate",
+     "porque": "golos esperados 0.8 – 1.8 · River Plate 3V em 6"
+    },
+    {
+     "id": "20261105-UEL-leverkusen-marseille|1",
+     "match_id": "20261105-UEL-leverkusen-marseille",
+     "key": "1",
+     "prob": 0.6803,
+     "odd_casa": 1.31,
+     "jogo": "Leverkusen x Marseille",
+     "texto": "Vitória Leverkusen",
+     "porque": "golos esperados 2.5 – 1.2 · Leverkusen 3V em 6"
+    }
+   ],
+   "prob": 0.1705,
+   "resultado": null,
+   "message_id": 67
   }
  ],
  "balancos": [
@@ -812,17 +1000,17 @@
    "data": "2026-11-05",
    "lista": "dicas",
    "registo": {
-    "id": "20261105-UEL-celta-stgilloise|cantos_under_9.5",
+    "id": "20261105-UEL-celta-stgilloise|X2",
     "match_id": "20261105-UEL-celta-stgilloise",
-    "key": "cantos_under_9.5",
-    "texto": "Menos de 9.5 cantos",
+    "key": "X2",
+    "texto": "St. Gilloise ou empate",
     "jogo": "Celta x St. Gilloise",
-    "prob": 0.644,
+    "prob": 0.6218,
     "odd_casa": null,
     "data": "2026-11-05",
     "resultado": null
    },
-   "texto": "🟠 <b>LIGA EUROPA – QUINTA 05/11</b>\nCelta x St. Gilloise | 20h00\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.55</b> (mínima com valor)\n\n📊 Golos esperados: Celta 1.3 – St. Gilloise 1.2\n📊 Celta: 2 vitórias nos últimos 6 jogos, xG 7.6 contra 5.1\n📊 St. Gilloise: 5 vitórias nos últimos 6 jogos, xG 11.8 contra 6.3\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "🟠 <b>LIGA EUROPA – QUINTA 05/11</b>\nCelta x St. Gilloise | 20h00\n\n✅ <b>Dica: St. Gilloise ou empate</b>\n💰 Odd: <b>1.61</b> (mínima com valor)\n\n📊 Golos esperados: Celta 1.3 – St. Gilloise 1.2\n📊 Celta: 2 vitórias nos últimos 6 jogos, xG 7.6 contra 5.1\n📊 St. Gilloise: 5 vitórias nos últimos 6 jogos, xG 11.8 contra 6.3\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T20:00:00",
    "estado": "pendente",
    "admin_msg": 4
@@ -845,7 +1033,7 @@
    },
    "texto": "🇧🇷 <b>BRASILEIRÃO – QUINTA 05/11</b>\nPalmeiras x Remo | 22h30\n\n✅ <b>Dica: Vitória Palmeiras</b>\n💰 Odd: <b>1.21</b>\n\n📊 Golos esperados: Palmeiras 2.6 – Remo 0.8\n📊 Palmeiras: 4 vitórias nos últimos 6 jogos\n📊 Remo: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T22:30:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 5
   },
   {
@@ -867,7 +1055,7 @@
    },
    "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🟠 <b>LIGA EUROPA – QUINTA 05/11</b>\nSociedad x Lyon | 17h45\n\n✅ <b>Dica: Não há empate + Mais de 2.5 golos</b>\n💰 Odd: <b>1.84</b> (mínima com valor)\n\n📊 Golos esperados: Sociedad 1.9 – Lyon 1.3\n📊 Sociedad: 4 vitórias nos últimos 6 jogos, xG 10.2 contra 10.5\n📊 Lyon: 3 vitórias nos últimos 6 jogos, xG 9.1 contra 6.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 6
   },
   {
@@ -918,7 +1106,7 @@
    },
    "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Palmeiras x Remo: Vitória Palmeiras (@1.21)\n• Leverkusen x Marseille: Mais de 2.5 golos (@1.40)\n• Celtic x Besiktas: Ambas marcam (@1.54)\n\n💰 Odd total: <b>2.62</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 7
   },
   {
@@ -983,7 +1171,7 @@
    },
    "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• Crystal Palace x Hoffenheim: Menos de 3.5 golos (@1.71)\n   <i>↳ golos esperados 1.8 – 1.4</i>\n• Celta x St. Gilloise: Menos de 9.5 cantos (@1.55)\n   <i>↳ cantos esperados 7.5</i>\n• Aldosivi x River Plate: Vitória River Plate (@1.43)\n   <i>↳ golos esperados 0.8 – 1.8 · River Plate 3V em 6</i>\n• Leverkusen x Marseille: Vitória Leverkusen (@1.31)\n   <i>↳ golos esperados 2.5 – 1.2 · Leverkusen 3V em 6</i>\n\n💰 Odd total: <b>4.97</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 8
   },
   {
@@ -1005,7 +1193,7 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 05/11</b>\nCrystal Palace x Hoffenheim | 17h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.59</b> (mínima com valor)\n\n📊 Golos esperados: Crystal Palace 1.8 – Hoffenheim 1.4\n📊 Crystal Palace: 1 vitória nos últimos 6 jogos, xG 6.6 contra 12.8\n📊 Hoffenheim: 3 vitórias nos últimos 6 jogos, xG 11.5 contra 6.5\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "extra": true,
    "admin_msg": 9
   },
@@ -1028,7 +1216,7 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 05/11</b>\nTrabzonspor x Freiburg | 17h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.64</b> (mínima com valor)\n\n📊 Golos esperados: Trabzonspor 1.6 – Freiburg 1.4\n📊 Trabzonspor: 5 vitórias nos últimos 6 jogos, xG 11.6 contra 7.1\n📊 Freiburg: 3 vitórias nos últimos 6 jogos, xG 10.2 contra 8.4\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "extra": true,
    "admin_msg": 10
   },
@@ -1051,7 +1239,7 @@
    },
    "texto": "🇦🇷 <b>LIGA ARGENTINA – QUINTA 05/11</b>\nAldosivi x River Plate | 18h00\n\n✅ <b>Dica: Vitória River Plate</b>\n💰 Odd: <b>1.43</b>\n\n📊 Golos esperados: Aldosivi 0.8 – River Plate 1.8\n📊 Aldosivi: 2 vitórias nos últimos 6 jogos\n📊 River Plate: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T18:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "extra": true,
    "admin_msg": 11
   },
@@ -1061,20 +1249,20 @@
    "data": "2026-11-05",
    "lista": "dicas",
    "registo": {
-    "id": "20261105-UEL-azalkmaar-juventus|btts_sim",
+    "id": "20261105-UEL-azalkmaar-juventus|2",
     "match_id": "20261105-UEL-azalkmaar-juventus",
-    "key": "btts_sim",
-    "texto": "Ambas marcam",
+    "key": "2",
+    "texto": "Vitória Juventus",
     "jogo": "AZ Alkmaar x Juventus",
-    "prob": 0.5384,
-    "odd_casa": null,
+    "prob": 0.4927,
+    "odd_casa": 1.95,
     "data": "2026-11-05",
     "resultado": null,
     "extra": true
    },
-   "texto": "🟠 <b>LIGA EUROPA – QUINTA 05/11</b>\nAZ Alkmaar x Juventus | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.86</b> (mínima com valor)\n\n📊 Golos esperados: AZ Alkmaar 1.1 – Juventus 1.6\n📊 AZ Alkmaar: 1 vitória nos últimos 6 jogos, xG 10.4 contra 7.3\n📊 Juventus: 3 vitórias nos últimos 6 jogos, xG 7.1 contra 4.1\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "🟠 <b>LIGA EUROPA – QUINTA 05/11</b>\nAZ Alkmaar x Juventus | 20h00\n\n✅ <b>Dica: Vitória Juventus</b>\n💰 Odd: <b>1.95</b>\n\n📊 Golos esperados: AZ Alkmaar 1.1 – Juventus 1.6\n📊 AZ Alkmaar: 1 vitória nos últimos 6 jogos, xG 10.4 contra 7.3\n📊 Juventus: 3 vitórias nos últimos 6 jogos, xG 7.1 contra 4.1\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "extra": true,
    "admin_msg": 12
   },
@@ -1097,7 +1285,7 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 05/11</b>\nGetafe x Brighton | 20h00\n\n✅ <b>Dica: Vitória Brighton</b>\n💰 Odd: <b>1.53</b>\n\n📊 Golos esperados: Getafe 0.8 – Brighton 1.6\n📊 Getafe: 2 vitórias nos últimos 6 jogos, xG 4.0 contra 7.6\n📊 Brighton: 5 vitórias nos últimos 6 jogos, xG 9.8 contra 7.3\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "extra": true,
    "admin_msg": 13
   },
@@ -1120,16 +1308,11 @@
    },
    "texto": "🇦🇷 <b>LIGA ARGENTINA – QUINTA 05/11</b>\nGimnasia L.P. x Belgrano | 22h15\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.74</b>\n\n📊 Golos esperados: Gimnasia L.P. 1.3 – Belgrano 1.1\n📊 Gimnasia L.P.: 3 vitórias nos últimos 6 jogos\n📊 Belgrano: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-05T22:15:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "extra": true,
    "admin_msg": 14
   }
  ],
  "ultimo_resumo": 61,
- "offset_admin": 820373275,
- "troca": {
-  "pid": "0511245213",
-  "i": -1,
-  "msg": 16
- }
+ "offset_admin": 820373291
 }
