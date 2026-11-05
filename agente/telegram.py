@@ -468,8 +468,9 @@ def _lucro(dicas: list, mult: list, by_id: dict) -> tuple[float, int]:
     return total, len(dicas) + len(mult)
 
 
-def _linha_lucro(total: float, n: int) -> str:
-    return f"💶 Lucro: <b>{total:+.0f} €</b>"  # com STAKE € em cada aposta (n apostas)
+def _linha_lucro(total: float, n: int) -> list:
+    """Só aparece quando houve lucro (nos dias maus não se mostra)."""
+    return [f"💶 Lucro: <b>{total:+.0f} €</b>"] if round(total) > 0 else []  # com STAKE € em cada aposta (n apostas)
 
 
 def resumo_dia(s: dict) -> bool:
@@ -491,7 +492,7 @@ def resumo_dia(s: dict) -> bool:
         for m in mult:
             if m["resultado"]:
                 linhas.append(("🚀 Múltipla turbo" if m.get("tipo") == "turbo" else "🎯 Múltipla") + ": GREEN 💰")
-        linhas.append(_linha_lucro(*_lucro(do_dia, mult, {d["id"]: d for d in s["dicas"]})))
+        linhas += _linha_lucro(*_lucro(do_dia, mult, {d["id"]: d for d in s["dicas"]}))
         if mid := send("\n".join(linhas) + _fim()):
             s["ultimo_resumo"] = mid  # o botão "Últimos resultados" das boas-vindas aponta para aqui
         feitos.append(dia)
@@ -517,7 +518,7 @@ def balanco(forcar: bool = False) -> bool:
         linhas.append(f"🔥 {certas / len(sem):.0%} de acerto na semana!")
     if mult:
         linhas.append(f"🎯 Múltiplas: {sum(m['resultado'] for m in mult)} Green em {len(mult)}")
-    linhas.append(_linha_lucro(*_lucro(sem, mult, {d["id"]: d for d in s["dicas"]})))
+    linhas += _linha_lucro(*_lucro(sem, mult, {d["id"]: d for d in s["dicas"]}))
     linhas += ["", RODAPE]
     if mid := send("\n".join(linhas)):
         s["ultimo_resumo"] = mid
@@ -778,7 +779,7 @@ def texto_resultados(s: dict, dias: int = 7) -> str:
     linhas = [f"📊 <b>ÚLTIMOS {dias} DIAS NO CANAL</b>", "", f"🟢 {g} Green · 🔴 {len(sem) - g} Red"]
     if mult:
         linhas.append(f"🎯 Múltiplas: {sum(m['resultado'] for m in mult)} Green em {len(mult)}")
-    linhas += [_linha_lucro(*_lucro(sem, mult, {d["id"]: d for d in s["dicas"]})), "", RODAPE]
+    linhas += _linha_lucro(*_lucro(sem, mult, {d["id"]: d for d in s["dicas"]})) + ["", RODAPE]
     return "\n".join(linhas)
 
 
