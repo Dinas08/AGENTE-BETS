@@ -343,8 +343,9 @@ def onzes(r) -> dict | None:
 
 
 def tardias(hoje: dt.date | None = None) -> int:
-    """Corre de 30 em 30 min: para jogos de hoje a partir das 18h que começam daqui a 20-75 min e ainda não
-    tiveram dica, espera pelos onzes (até ~35 min antes) e publica, exceto se uma equipa rodar o onze."""
+    """Corre de 10 em 10 min: para jogos de hoje a partir das 17h que começam daqui a 20-75 min e ainda não
+    tiveram dica, espera pelos onzes (até ~35 min antes) e publica, exceto se uma equipa rodar o onze.
+    Faz N_TARDIAS por noite: se os jogos que ainda faltam não chegarem com ≥ P_MIN, completa com ≥ P_RESERVA."""
     agora = pd.Timestamp.now()
     hoje = hoje or agora.date()
     s = _load()
@@ -355,10 +356,19 @@ def tardias(hoje: dt.date | None = None) -> int:
     ignorados = s.setdefault("ignorados", [])
     ja = {d["match_id"] for d in s["dicas"]} | set(ignorados) | _jogos_propostos(s)
     p = db.load_predictions(with_results=False)
-    p = p[(p["kickoff"] > agora + pd.Timedelta(minutes=20)) & (p["kickoff"] < agora + pd.Timedelta(minutes=75))
-          & (p["kickoff"].dt.date == hoje) & (p["kickoff"].dt.hour >= 18) & ~p["limited"].astype(bool)
+    p = p[(p["kickoff"].dt.date == hoje) & (p["kickoff"].dt.hour >= 17) & ~p["limited"].astype(bool)
           & ~p["match_id"].isin(ja)]
-    cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])
+    janela = (p["kickoff"] > agora + pd.Timedelta(minutes=20)) & (p["kickoff"] < agora + pd.Timedelta(minutes=75))
+    # jogos mais tarde esta noite que ainda podem dar uma dica forte: guardar-lhes a vaga
+    depois = sum(1 for _, r in p[p["kickoff"] >= agora + pd.Timedelta(minutes=75)].iterrows() if escolher(r))
+    reserva = max(0, N_TARDIAS - feitas - depois)
+    fortes, fracas = [], []
+    for _, r in p[janela].iterrows():
+        if c := escolher(r):
+            fortes.append((c[1], r, c[0]))
+        elif reserva and (c := escolher(r, P_RESERVA)):
+            fracas.append((c[1], r, c[0]))
+    cands = sorted(fortes, key=lambda x: -x[0]) + sorted(fracas, key=lambda x: -x[0])[:reserva]
     n = 0
     for prob, r, key in cands[:N_TARDIAS - feitas]:
         on = onzes(r)
@@ -459,7 +469,7 @@ def _lucro(dicas: list, mult: list, by_id: dict) -> tuple[float, int]:
 
 
 def _linha_lucro(total: float, n: int) -> str:
-    return f"💶 Simulação ({STAKE} € por aposta, {n} {'aposta' if n == 1 else 'apostas'}): <b>{total:+.0f} €</b>"
+    return f"💶 Lucro: <b>{total:+.0f} €</b>"  # com STAKE € em cada aposta (n apostas)
 
 
 def resumo_dia(s: dict) -> bool:

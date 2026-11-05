@@ -26,8 +26,8 @@ escreve um recap depois de cada jornada.
 - Alterações ao código: faz-se no PC e `git push` para o `main`; o Streamlit atualiza sozinho.
 
 ## Canal de Telegram
-- O bot publica no canal grátis: dicas do dia + múltipla (10h30), até 2 dicas tardias ~45 min antes dos jogos
-  da noite com os onzes confirmados (não dá dica se uma equipa rodar 5+ jogadores), 2 dicas de madrugada às 22h
+- O bot publica no canal grátis: dicas do dia + múltipla (10h30), 2 dicas tardias ~30-45 min antes dos jogos
+  da noite (a partir das 17h) com os onzes confirmados (se faltarem jogos fortes, completa com ≥55%) (não dá dica se uma equipa rodar 5+ jogadores), 2 dicas de madrugada às 22h
   (jogos das 00h às 3h), GREEN/RED quando cada jogo acaba, o resumo do dia seguinte e o balanço à segunda-feira.
   Quem escreve ao bot em privado recebe as boas-vindas do Agente Claudio com o aviso +18 e botões de link (abrem
   logo, sem esperar pelo bot): "✅ Tenho 18+ · Entrar no canal" e "📊 Últimos resultados" (último resumo/balanço,
