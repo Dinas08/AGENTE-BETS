@@ -1720,7 +1720,7 @@
    },
    "texto": "🇧🇷 <b>BRASILEIRÃO – SEXTA 06/11</b>\nVitoria x Fluminense | 23h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.87</b> (mínima com valor)\n\n📊 Golos esperados: Vitoria 1.2 – Fluminense 1.3\n📊 Vitoria: 1 vitória nos últimos 6 jogos\n📊 Fluminense: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-06T23:00:00",
-   "estado": "pendente",
+   "estado": "substituida",
    "extra": true,
    "admin_msg": 47
   },
@@ -1931,6 +1931,30 @@
    "expira": "2026-11-07T22:01:05.577595",
    "estado": "pendente",
    "admin_msg": 58
+  },
+  {
+   "pid": "0622275150",
+   "origem": "tardia",
+   "data": "2026-11-06",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261106-BRA-vitoria-fluminense|under_2.5",
+    "match_id": "20261106-BRA-vitoria-fluminense",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Vitoria x Fluminense",
+    "prob": 0.5463,
+    "odd_casa": 1.57,
+    "data": "2026-11-06",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇧🇷 <b>BRASILEIRÃO – SEXTA 06/11</b>\nVitoria x Fluminense | 23h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.57</b>\n\n📊 Golos esperados: Vitoria 1.1 – Fluminense 1.2\n📊 Vitoria: 1 vitória nos últimos 6 jogos\n📊 Fluminense: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-06T23:00:00",
+   "estado": "pendente",
+   "extra": true,
+   "admin_msg": 59
   }
  ],
  "ultimo_resumo": 61,
