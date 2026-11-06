@@ -358,6 +358,58 @@
    "tipo": "madrugada",
    "extra": true,
    "message_id": 76
+  },
+  {
+   "id": "20261106-E0-everton-coventry|combo:1X&under_3.5",
+   "match_id": "20261106-E0-everton-coventry",
+   "key": "combo:1X&under_3.5",
+   "texto": "Everton ou empate + Menos de 3.5 golos",
+   "jogo": "Everton x Coventry",
+   "prob": 0.5553,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": null,
+   "tipo": "odd_alta",
+   "message_id": 85
+  },
+  {
+   "id": "20261106-D1-hamburg-mgladbach|btts_sim",
+   "match_id": "20261106-D1-hamburg-mgladbach",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Hamburg x M'gladbach",
+   "prob": 0.5941,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": null,
+   "extra": true,
+   "message_id": 86
+  },
+  {
+   "id": "20261106-I1-venezia-udinese|btts_sim",
+   "match_id": "20261106-I1-venezia-udinese",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Venezia x Udinese",
+   "prob": 0.5454,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": null,
+   "extra": true,
+   "message_id": 87
+  },
+  {
+   "id": "20261106-P1-famalicao-arouca|cantos_over_9.5",
+   "match_id": "20261106-P1-famalicao-arouca",
+   "key": "cantos_over_9.5",
+   "texto": "Mais de 9.5 cantos",
+   "jogo": "Famalicao x Arouca",
+   "prob": 0.5458,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": null,
+   "extra": true,
+   "message_id": 88
   }
  ],
  "multiplas": [
@@ -1447,7 +1499,7 @@
    },
    "texto": "🇦🇷 <b>LIGA ARGENTINA – SEXTA 06/11</b>\nSan Lorenzo x Platense | 22h15\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.55</b> (mínima com valor)\n\n📊 Golos esperados: San Lorenzo 1.0 – Platense 0.9\n📊 San Lorenzo: 2 vitórias nos últimos 6 jogos\n📊 Platense: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-06T22:15:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "admin_msg": 38
   },
   {
@@ -1490,7 +1542,7 @@
    },
    "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SEXTA 06/11</b>\nEverton x Coventry | 20h00\n\n✅ <b>Dica: Everton ou empate + Menos de 3.5 golos</b>\n💰 Odd: <b>1.80</b> (mínima com valor)\n\n📊 Golos esperados: Everton 1.8 – Coventry 1.0\n📊 Everton: 2 vitórias nos últimos 6 jogos, xG 8.2 contra 8.4\n📊 Coventry: 3 vitórias nos últimos 6 jogos, xG 5.5 contra 9.0\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-06T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 40
   },
   {
@@ -1576,7 +1628,7 @@
    },
    "texto": "🇩🇪 <b>BUNDESLIGA – SEXTA 06/11</b>\nHamburg x M&#x27;gladbach | 19h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.68</b> (mínima com valor)\n\n📊 Golos esperados: Hamburg 1.5 – M&#x27;gladbach 1.4\n📊 Hamburg: 3 vitórias nos últimos 6 jogos, xG 6.8 contra 10.4\n📊 M&#x27;gladbach: 1 vitória nos últimos 6 jogos, xG 9.0 contra 11.1\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-06T19:30:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "extra": true,
    "admin_msg": 43
   },
@@ -1599,7 +1651,7 @@
    },
    "texto": "🇮🇹 <b>SERIE A – SEXTA 06/11</b>\nVenezia x Udinese | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.83</b> (mínima com valor)\n\n📊 Golos esperados: Venezia 1.3 – Udinese 1.3\n📊 Venezia: 1 vitória nos últimos 6 jogos, xG 9.3 contra 10.3\n📊 Udinese: 0 vitórias nos últimos 6 jogos, xG 7.1 contra 14.5\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-06T19:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "extra": true,
    "admin_msg": 44
   },
@@ -1622,7 +1674,7 @@
    },
    "texto": "🇵🇹 <b>LIGA PORTUGAL – SEXTA 06/11</b>\nFamalicao x Arouca | 20h45\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.83</b> (mínima com valor)\n\n📊 Golos esperados: Famalicao 1.4 – Arouca 1.0\n📊 Famalicao: 2 vitórias nos últimos 6 jogos, xG 5.8 contra 9.1\n📊 Arouca: 3 vitórias nos últimos 6 jogos, xG 7.4 contra 5.5\n🚑 Arouca sem Puche\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-06T20:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "extra": true,
    "admin_msg": 45
   },
@@ -1674,5 +1726,5 @@
   }
  ],
  "ultimo_resumo": 61,
- "offset_admin": 820373300
+ "offset_admin": 820373305
 }
