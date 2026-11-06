@@ -341,7 +341,7 @@
    "prob": 0.5264,
    "odd_casa": 1.74,
    "data": "2026-11-05",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 72
   },
@@ -1371,8 +1371,22 @@
    "estado": "publicada",
    "extra": true,
    "admin_msg": 28
+  },
+  {
+   "pid": "0600203826",
+   "origem": "resultado",
+   "data": "2026-11-06",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 72,
+    "resumo": false
+   },
+   "texto": "❌ RED: Menos de 2.5 golos\nGimnasia L.P. 2-1 Belgrano",
+   "expira": "2026-11-07T00:20:38.040878",
+   "estado": "descartada",
+   "admin_msg": 34
   }
  ],
  "ultimo_resumo": 61,
- "offset_admin": 820373296
+ "offset_admin": 820373297
 }
