@@ -394,7 +394,7 @@
    "prob": 0.5454,
    "odd_casa": null,
    "data": "2026-11-06",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 87
   },
@@ -1697,7 +1697,7 @@
    },
    "texto": "🇦🇷 <b>LIGA ARGENTINA – SEXTA 06/11</b>\nUnion de Santa Fe x Velez Sarsfield | 22h15\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.92</b> (mínima com valor)\n\n📊 Golos esperados: Union de Santa Fe 1.2 – Velez Sarsfield 1.2\n📊 Union de Santa Fe: 1 vitória nos últimos 6 jogos\n📊 Velez Sarsfield: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-06T22:15:00",
-   "estado": "pendente",
+   "estado": "substituida",
    "extra": true,
    "admin_msg": 46
   },
@@ -1879,6 +1879,44 @@
    "expira": "2026-11-07T21:24:41.394964",
    "estado": "pendente",
    "admin_msg": 55
+  },
+  {
+   "pid": "0621414547",
+   "origem": "resultado",
+   "data": "2026-11-06",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 87,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Ambas marcam\nVenezia 2-1 Udinese",
+   "expira": "2026-11-07T21:41:45.110103",
+   "estado": "pendente",
+   "admin_msg": 56
+  },
+  {
+   "pid": "0621414648",
+   "origem": "tardia",
+   "data": "2026-11-06",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261106-ARG-uniondesantafe-velezsarsfield|btts_sim",
+    "match_id": "20261106-ARG-uniondesantafe-velezsarsfield",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Union de Santa Fe x Velez Sarsfield",
+    "prob": 0.5252,
+    "odd_casa": null,
+    "data": "2026-11-06",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇦🇷 <b>LIGA ARGENTINA – SEXTA 06/11</b>\nUnion de Santa Fe x Velez Sarsfield | 22h15\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.90</b> (mínima com valor)\n\n📊 Golos esperados: Union de Santa Fe 1.2 – Velez Sarsfield 1.2\n📊 Union de Santa Fe: 1 vitória nos últimos 6 jogos\n📊 Velez Sarsfield: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-06T22:15:00",
+   "estado": "pendente",
+   "extra": true,
+   "admin_msg": 57
   }
  ],
  "ultimo_resumo": 61,
