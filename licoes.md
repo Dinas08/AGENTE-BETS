@@ -7,7 +7,7 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 ## Ativas
 
 - **2026-10-31 · Equipas em zona de descida sobrevalorizadas.** Evidência: Gladbach (último, 47% em casa, 0-0 e 7/7 falhados) e Sunderland
-  (último, 41% fora, perdeu 1-3). O que fazer: rever sempre a tabela. Se uma equipa dos 3 últimos aparecer como favorita, aplicar o ajuste de crise
+  (último, 41% fora, perdeu 1-3). Confirmado a 06/11: Hamburg 3-1 Gladbach (Gladbach sem vitórias, vermelho). O que fazer: rever sempre a tabela. Se uma equipa dos 3 últimos aparecer como favorita, aplicar o ajuste de crise
   (−3 a −8 nos golos marcados e +3 a +5 nos sofridos), salvo notícias que o contrariem.
 - **2026-10-31 · "Mais de 2.5" sobrestimado quando o favorito tem uma defesa sólida.** Evidência (reforçada a 05/11: quinta europeia 15/36, 0-0 e 1-0 em vários jogos): Benfica 1-0 Alverca (S45, 68% e falhou); 7 das 9 falhas de golos da S44 foram "Mais 2.5"
   que não aconteceu (e depois Como–Venezia, Frosinone–Torino e Arouca–Nacional). Quatro delas foram 2-0 do favorito (Casa Pia–Sporting, Schalke–Leipzig, Chelsea–Man United, Brentford–Forest) e as outras foram jogos táticos
@@ -38,4 +38,5 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 - Favoritos muito altos com 3+ baixas titulares (Bayern 65% empatou 2-2 com Dortmund, sem Díaz, Musiala e outros). Confirmar com mais um caso antes de agir.
 - Liga Portugal: "Mais de 4.5 cartões" falhou em Casa Pia–Sporting e Moreirense–Estrela (a 55%). Observar.
 - Enfermaria cheia (8+ ausentes, incluindo GR): Atalanta 0-3 Parma (1.8-0.9 previsto, dava 18% ao desfecho). O ajuste de sofridos pode ser curto; se houver mais um caso, usar +8 a +10 em sofridos.
+- 2026-11-06 · Taças nacionais com dados limitados (Bristol Rovers 2-0 Cambridge, 5 mercados falhados a ~40-50%): sem viés claro, 1 ocorrência.
 - Gil Vicente 0-0 Guimarães e Newcastle 0-1 Everton: azar/vermelho, sem lição.
