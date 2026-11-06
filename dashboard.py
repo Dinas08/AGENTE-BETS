@@ -820,7 +820,7 @@ def page_canal():
     extra = {"dicas": [], "multiplas": []}
     nao_rec = []  # apostas extra (não recomendadas) enviadas para aprovação e não publicadas
     for x in s.get("pendentes", []):
-        if x["estado"] != "publicada":
+        if x["estado"] != "publicada" and x["lista"] in extra:  # "avisos" (Green/Red, resumos) não entram
             (nao_rec if x.get("extra") else extra[x["lista"]]).append(x["registo"] | {"_estado": x["estado"]})
     s.setdefault("dicas", [])
     s.setdefault("multiplas", [])

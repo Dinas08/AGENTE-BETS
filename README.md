@@ -43,8 +43,8 @@ escreve um recap depois de cada jornada.
   responde ao rascunho com o texto novo. Além das recomendadas (⭐), chegam também todas as outras
   apostas do dia (📎 extra, ≥50%), que só saem se as publicares. 🔄 Trocar (nas dicas e em cada perna das múltiplas)
   pede-te a aposta por escrito (ex.: "mais de 2.5 golos", "Porto ou empate", "ambas marcam e mais de 2.5");
-  ❌ Tirar tira uma perna. Rascunhos não aprovados expiram quando o jogo começa. Os GREEN/RED,
-  resumos e balanços continuam automáticos. A múltipla turbo nunca repete apostas da múltipla do dia.
+  ❌ Tirar tira uma perna. Rascunhos não aprovados expiram quando o jogo começa. Nada vai para o
+  canal sem aprovação: os GREEN/RED, resumos e balanços também chegam como rascunho 📣 (expiram em 24 h). A múltipla turbo nunca repete apostas da múltipla do dia.
 - Por dia: 2 a 4 dicas (≥62%; num dia fraco completa até 2 com ≥55%), 1 dica 💎 de odd alta (1.80-2.60,
   a mais provável dessa faixa, de preferência com valor) e a múltipla turbo com o fundamento de cada perna.
 - Testar: Actions → "Testar Telegram". Local: `run.py telegram dicas AAAA-MM-DD` (sem token = só mostra).

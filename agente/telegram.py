@@ -452,8 +452,8 @@ def resultados() -> int:
         if ok is None:
             continue
         d["resultado"] = ok
-        send(f"{'✅ <b>GREEN</b>' if ok else '❌ RED'}: {E(d['texto'])}\n{E(r['home'])} {int(r['hg'])}-{int(r['ag'])} "
-             f"{E(r['away'])}", reply_to=d["message_id"])
+        avisar(s, f"{'✅ <b>GREEN</b>' if ok else '❌ RED'}: {E(d['texto'])}\n{E(r['home'])} {int(r['hg'])}-{int(r['ag'])} "
+                  f"{E(r['away'])}", "resultado", reply_to=d["message_id"])
         n += 1
     by_id = {d["id"]: d for d in s["dicas"]}
     for m in s["multiplas"]:
@@ -469,9 +469,9 @@ def resultados() -> int:
             if False in res or (res and None not in res):
                 m["resultado"] = False not in res
                 nome = "MÚLTIPLA TURBO" if m.get("tipo") == "turbo" else "MÚLTIPLA"
-                send(f"✅ <b>GREEN NA {nome}!</b> 💰" if m["resultado"] else
-                     f"❌ RED na {nome.lower()} ({sum(x is True for x in res)}/{len(res)} pernas certas até agora)",
-                     reply_to=m["message_id"])
+                avisar(s, f"✅ <b>GREEN NA {nome}!</b> 💰" if m["resultado"] else
+                       f"❌ RED na {nome.lower()} ({sum(x is True for x in res)}/{len(res)} pernas certas até agora)",
+                       "resultado", reply_to=m["message_id"])
     resumo_dia(s)
     _save(s)
     return n
@@ -515,8 +515,7 @@ def resumo_dia(s: dict) -> bool:
             if m["resultado"]:
                 linhas.append(("🚀 Múltipla turbo" if m.get("tipo") == "turbo" else "🎯 Múltipla") + ": GREEN 💰")
         linhas += _linha_lucro(*_lucro(do_dia, mult, {d["id"]: d for d in s["dicas"]}))
-        if mid := send("\n".join(linhas) + _fim()):
-            s["ultimo_resumo"] = mid  # o botão "Últimos resultados" das boas-vindas aponta para aqui
+        avisar(s, "\n".join(linhas) + _fim(), "resumo", resumo=True)
         feitos.append(dia)
         return True  # um por execução
     return False
@@ -542,8 +541,7 @@ def balanco(forcar: bool = False) -> bool:
         linhas.append(f"🎯 Múltiplas: {sum(m['resultado'] for m in mult)} Green em {len(mult)}")
     linhas += _linha_lucro(*_lucro(sem, mult, {d["id"]: d for d in s["dicas"]}))
     linhas += ["", RODAPE]
-    if mid := send("\n".join(linhas)):
-        s["ultimo_resumo"] = mid
+    avisar(s, "\n".join(linhas), "balanco", resumo=True)
     s["balancos"].append(hoje.isoformat())
     _save(s)
     return True
@@ -567,7 +565,8 @@ def privados() -> int:
 #
 # Com TELEGRAM_ADMIN (o id do Telegram do dono, só nos Secrets) as dicas, múltiplas, tardias e madrugada
 # vão primeiro em privado para o admin como rascunho, com botões ✅ Publicar / ❌ Descartar. Para editar,
-# o admin responde ao rascunho com o texto novo. Os Green/Red, resumos e balanços continuam automáticos.
+# o admin responde ao rascunho com o texto novo. Com admin, nada vai para o canal sem
+# aprovação: também os Green/Red, resumos e balanços chegam como rascunho (📣, expiram em 24 h).
 
 ADMIN = os.getenv("TELEGRAM_ADMIN", "").strip()
 # Bot só para os rascunhos (opcional). Com ele, o bot público passa a responder às pessoas na hora pelo
@@ -600,7 +599,15 @@ def _jogos_propostos(s: dict, extras_de=()) -> set:
             if x["lista"] == "dicas" and (not x.get("extra") or x["origem"] in extras_de)}
 
 
+AVISOS = {"resultado": "📣 <b>RESULTADO PARA O CANAL</b>", "resumo": "📣 <b>RESUMO DO DIA PARA O CANAL</b>",
+          "balanco": "📣 <b>BALANÇO DA SEMANA PARA O CANAL</b>"}
+
+
 def _cabecalho(x: dict) -> str:
+    if x["lista"] == "avisos":
+        return (f"{AVISOS.get(x['origem'], '📣 <b>MENSAGEM PARA O CANAL</b>')} · expira "
+                f"{pd.Timestamp(x['expira']):%d/%m às %Hh%M}\n"
+                f"<i>Responde a esta mensagem com o texto novo para editar.</i>\n{MARCA}\n")
     tipo = "📎 <b>EXTRA</b> (não ia meter)" if x.get("extra") else "📝 <b>RASCUNHO</b> ⭐ <b>recomendada</b>"
     return (f"{tipo} · expira às {pd.Timestamp(x['expira']):%Hh%M}\n"
             f"<i>Responde a esta mensagem com o texto novo para editar.</i>\n{MARCA}\n")
@@ -613,7 +620,7 @@ def _botoes(x: dict) -> dict:
         for i, pe in enumerate(x["registo"]["pernas"]):
             linhas.append([{"text": f"🔄 {i + 1}. {pe.get('jogo', pe['match_id'])[:24]}", "callback_data": f"tr:{x['pid']}:{i}"},
                            {"text": f"❌ Tirar {i + 1}", "callback_data": f"rm:{x['pid']}:{i}"}])
-    else:
+    elif x["lista"] == "dicas":
         linhas.append([{"text": "🔄 Trocar aposta", "callback_data": f"tr:{x['pid']}:-1"}])
     linhas.append([{"text": "✅ Publicar", "callback_data": f"pub:{x['pid']}"},
                    {"text": "❌ Descartar", "callback_data": f"desc:{x['pid']}"}])
@@ -796,16 +803,34 @@ def publicar(s, lista, registo, msg, inicio, origem, extra: bool = False) -> Non
              "texto": msg, "expira": pd.Timestamp(inicio).isoformat(), "estado": "pendente"}
         if extra:
             x["extra"] = True
-        r = _bot("sendMessage", chat_id=ADMIN, text=_cabecalho(x) + msg, parse_mode="HTML",
-                 disable_web_page_preview=True, reply_markup=_botoes(x))
-        if r.get("ok"):
-            x["admin_msg"] = r["result"]["message_id"]
+        if _enviar_rascunho(x) or not extra:  # sem rede: fica guardado e o painel volta a tentar
             s["pendentes"].append(x)
-            return
-        if extra:
-            return
-        print(f"  [admin] não consegui mandar o rascunho ({r.get('description')}); publico direto")
+        return
     s[lista].append(registo | {"message_id": send(msg)})
+
+
+def _enviar_rascunho(x: dict) -> bool:
+    r = _bot("sendMessage", chat_id=ADMIN, text=_cabecalho(x) + x["texto"], parse_mode="HTML",
+             disable_web_page_preview=True, reply_markup=_botoes(x))
+    if r.get("ok"):
+        x["admin_msg"] = r["result"]["message_id"]
+        return True
+    print(f"  [admin] não consegui mandar o rascunho ({r.get('description')}); tento na próxima execução")
+    return False
+
+
+def avisar(s: dict, msg: str, origem: str, reply_to: int | None = None, resumo: bool = False) -> None:
+    """Green/Red, resumo e balanço: com admin também vão primeiro para aprovação (expiram em 24 h)."""
+    if not rever():
+        mid = send(msg, reply_to=reply_to)
+        if resumo and mid:
+            s["ultimo_resumo"] = mid  # o botão "Últimos resultados" das boas-vindas aponta para aqui
+        return
+    x = {"pid": f"{dt.datetime.now():%d%H%M%S}{len(s.setdefault('pendentes', []))}", "origem": origem,
+         "data": dt.date.today().isoformat(), "lista": "avisos", "registo": {"reply_to": reply_to, "resumo": resumo},
+         "texto": msg, "expira": (pd.Timestamp.now() + pd.Timedelta(hours=24)).isoformat(), "estado": "pendente"}
+    _enviar_rascunho(x)
+    s["pendentes"].append(x)
 
 
 def pedir_aprovacao(s: dict, dia: str) -> None:
@@ -827,7 +852,12 @@ def _fechar(x: dict, estado: str) -> None:
 
 
 def _aprovar(s: dict, x: dict) -> None:
-    s[x["lista"]].append(x["registo"] | {"message_id": send(x["texto"])})
+    if x["lista"] == "avisos":
+        mid = send(x["texto"], reply_to=x["registo"].get("reply_to"))
+        if x["registo"].get("resumo") and mid:
+            s["ultimo_resumo"] = mid
+    else:
+        s[x["lista"]].append(x["registo"] | {"message_id": send(x["texto"])})
     _fechar(x, "publicada")
 
 
@@ -1027,6 +1057,9 @@ def painel(minutos: float = 0) -> int:
         link = None
     guardar_publico(s, link)
     fila = "offset_admin" if ADMIN_TOKEN else "offset"  # cada bot tem a sua fila de mensagens
+    for x in s["pendentes"]:
+        if x["estado"] == "pendente" and not x.get("admin_msg"):
+            _enviar_rascunho(x)
     while True:
         _expirar(s)
         pend = any(x["estado"] == "pendente" for x in s["pendentes"])
