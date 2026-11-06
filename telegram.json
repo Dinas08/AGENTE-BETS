@@ -368,7 +368,7 @@
    "prob": 0.5553,
    "odd_casa": null,
    "data": "2026-11-06",
-   "resultado": null,
+   "resultado": false,
    "tipo": "odd_alta",
    "message_id": 85
   },
@@ -1917,6 +1917,20 @@
    "estado": "pendente",
    "extra": true,
    "admin_msg": 57
+  },
+  {
+   "pid": "0622010549",
+   "origem": "resultado",
+   "data": "2026-11-06",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 85,
+    "resumo": false
+   },
+   "texto": "❌ RED: Everton ou empate + Menos de 3.5 golos\nEverton 3-1 Coventry",
+   "expira": "2026-11-07T22:01:05.577595",
+   "estado": "pendente",
+   "admin_msg": 58
   }
  ],
  "ultimo_resumo": 61,
