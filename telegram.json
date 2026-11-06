@@ -264,7 +264,7 @@
    "prob": 0.7884,
    "odd_casa": 1.21,
    "data": "2026-11-05",
-   "resultado": null,
+   "resultado": true,
    "message_id": 64
   },
   {
@@ -1385,8 +1385,22 @@
    "expira": "2026-11-07T00:20:38.040878",
    "estado": "descartada",
    "admin_msg": 34
+  },
+  {
+   "pid": "0600310427",
+   "origem": "resultado",
+   "data": "2026-11-06",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 64,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Palmeiras\nPalmeiras 6-1 Remo",
+   "expira": "2026-11-07T00:31:04.674703",
+   "estado": "publicada",
+   "admin_msg": 35
   }
  ],
  "ultimo_resumo": 61,
- "offset_admin": 820373297
+ "offset_admin": 820373298
 }
