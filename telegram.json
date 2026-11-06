@@ -354,7 +354,7 @@
    "prob": 0.5598,
    "odd_casa": 1.68,
    "data": "2026-11-05",
-   "resultado": null,
+   "resultado": true,
    "tipo": "madrugada",
    "extra": true,
    "message_id": 76
@@ -662,7 +662,8 @@
   "2026-11-01",
   "2026-11-02",
   "2026-11-03",
-  "2026-11-04"
+  "2026-11-04",
+  "2026-11-05"
  ],
  "offset": 892007170,
  "ignorados": [],
@@ -1399,6 +1400,34 @@
    "expira": "2026-11-07T00:31:04.674703",
    "estado": "publicada",
    "admin_msg": 35
+  },
+  {
+   "pid": "0602403528",
+   "origem": "resultado",
+   "data": "2026-11-06",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 76,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Cruzeiro\nCruzeiro 3-2 Bahia",
+   "expira": "2026-11-07T02:40:35.167824",
+   "estado": "pendente",
+   "admin_msg": 36
+  },
+  {
+   "pid": "0602403529",
+   "origem": "resumo",
+   "data": "2026-11-06",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true
+   },
+   "texto": "📊 <b>RESUMO DE 05/11</b>\n\n🟢 6 Green · 🔴 4 Red\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T02:40:35.599233",
+   "estado": "pendente",
+   "admin_msg": 37
   }
  ],
  "ultimo_resumo": 61,
