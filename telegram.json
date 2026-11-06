@@ -1605,7 +1605,7 @@
    },
    "texto": "🇦🇷 <b>LIGA ARGENTINA – SEXTA 06/11</b>\nBarracas Central x Racing Club | 18h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.54</b>\n\n📊 Golos esperados: Barracas Central 1.2 – Racing Club 1.1\n📊 Barracas Central: 3 vitórias nos últimos 6 jogos\n📊 Racing Club: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-06T18:00:00",
-   "estado": "pendente",
+   "estado": "substituida",
    "extra": true,
    "admin_msg": 42
   },
@@ -1723,6 +1723,28 @@
    "estado": "pendente",
    "extra": true,
    "admin_msg": 47
+  },
+  {
+   "pid": "0617274840",
+   "origem": "tardia",
+   "data": "2026-11-06",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261106-ARG-barracascentral-racingclub|under_2.5",
+    "match_id": "20261106-ARG-barracascentral-racingclub",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Barracas Central x Racing Club",
+    "prob": 0.5648,
+    "odd_casa": 1.54,
+    "data": "2026-11-06",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇦🇷 <b>LIGA ARGENTINA – SEXTA 06/11</b>\nBarracas Central x Racing Club | 18h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.54</b>\n\n📊 Golos esperados: Barracas Central 1.2 – Racing Club 1.1\n📊 Barracas Central: 3 vitórias nos últimos 6 jogos\n📊 Racing Club: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-06T18:00:00",
+   "estado": "pendente",
+   "admin_msg": 49
   }
  ],
  "ultimo_resumo": 61,
