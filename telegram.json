@@ -1412,7 +1412,7 @@
    },
    "texto": "✅ <b>GREEN</b>: Vitória Cruzeiro\nCruzeiro 3-2 Bahia",
    "expira": "2026-11-07T02:40:35.167824",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 36
   },
   {
@@ -1426,10 +1426,10 @@
    },
    "texto": "📊 <b>RESUMO DE 05/11</b>\n\n🟢 6 Green · 🔴 4 Red\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-07T02:40:35.599233",
-   "estado": "pendente",
+   "estado": "descartada",
    "admin_msg": 37
   }
  ],
  "ultimo_resumo": 61,
- "offset_admin": 820373298
+ "offset_admin": 820373300
 }
