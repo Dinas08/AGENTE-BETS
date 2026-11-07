@@ -769,6 +769,11 @@ def page_licoes():
                                          "Esperado": f"{r.esperado:.0%}", "Leitura": f"{icon[r.leitura]} {r.leitura}"}
                                         for r in m.itertuples()], ("Acerto", "Esperado")), unsafe_allow_html=True)
 
+    rel = config.DATA_DIR / "relatorio_falhas.md"
+    if rel.exists():
+        with st.expander("📉 Relatório das falhas das dicas do Telegram", expanded=True):
+            st.markdown(rel.read_text(encoding="utf-8").split(chr(10), 1)[1])
+
     st.markdown("#### ❌ Jogos em que falhámos mais")
     if done.empty:
         st.caption("Sem jogos terminados.")

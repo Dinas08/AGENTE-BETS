@@ -46,4 +46,5 @@ jobs:
         continue-on-error: true
         run: |
           for c in resultados tardias madrugada "painel 8"; do python run.py telegram $c || echo "telegram $c falhou"; done
+          python run.py relatorio || echo "relatorio falhou"
       - run: bash scripts/guardar_dados.sh "resultados" ours

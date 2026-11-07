@@ -121,6 +121,9 @@ Os nomes das equipas devem ser os do football-data.co.uk (os que aparecem em `ru
      razão ao modelo) ou erro de leitura (o modelo ou os ajustes estavam errados).
    - **Lições**: padrões (ex.: "sobrestimamos equipas da casa na Liga Portugal", "ajustes de crise
      exagerados") e o que mudas nos ajustes da próxima jornada.
+   - Lê também `dados/relatorio_falhas.md` (refeito sozinho a cada ronda de resultados: acerto das dicas do
+     Telegram por mercado, liga, probabilidade e tipo, alertas, extras não publicadas e últimos Reds). Usa os
+     alertas para as lições e diz no recap se algum grupo de dicas está abaixo do esperado.
 3. **Aprende com cada jogo falhado** (sobretudo os que falharam 3+ mercados):
    - Atualiza a ficha `dados/equipas/<Equipa>.md` das duas equipas: o que aconteceu, porquê (azar vs erro de
      leitura) e a tendência que isso revela (ex.: "em casa contra equipas de baixo fecha-se: poucos golos").

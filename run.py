@@ -54,6 +54,10 @@ def main():
         lines = log.read_text(encoding="utf-8").splitlines()[-300:] if log.exists() else []
         lines.append(f"{dt.datetime.now():%Y-%m-%d %H:%M} {msg}")
         log.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    elif cmd == "relatorio":
+        # dados/relatorio_falhas.md: onde as dicas do Telegram acertam e falham (corre com os resultados)
+        from agente import relatorio
+        print("Relatório das falhas atualizado." if relatorio.gerar() else "Ainda sem dicas decididas.")
     elif cmd == "calibrar":
         # refaz agente/calibracao.json com os backtests em dados/ (depois: commit no main)
         from agente import calibracao
