@@ -14,49 +14,90 @@ from agente.model import estrela, label
 from agente.recap import PICK_NAMES, evaluate, outcome, value_pnl, week_bounds
 from agente.sources import api_football as apif
 
-st.set_page_config(page_title="Agente Bets", page_icon="⚽", layout="wide")
+LOGO = config.ROOT / "assets" / "agente_claudio.png"
+st.set_page_config(page_title="Agente Claudio", page_icon=str(LOGO) if LOGO.exists() else "⚽", layout="wide")
 
-# Tema preto + dourado. Paleta validada (incl. daltonismo) sobre fundo preto:
-# casa = dourado, empate = grafite, fora = marfim; estados verde/vermelho (sempre com ✅/❌)
-HOME, DRAW, AWAY = "#d4af37", "#5f5e5a", "#e9e6df"
-INK = {HOME: "#0b0b0b", DRAW: "#ffffff", AWAY: "#0b0b0b"}  # texto legível dentro de cada cor
-GOLD_SOFT = "rgba(212,175,55,.14)"
-GOOD, BAD = "#0ca30c", "#d03b3b"
+# Cores do logo do Agente Claudio: laranja terracota, creme e preto. Casa = laranja, empate = grafite,
+# fora = creme; estados verde/vermelho (sempre com ✅/❌ ao lado, para quem não distingue as cores)
+HOME, DRAW, AWAY = "#e07a52", "#55534f", "#efe8dc"
+INK = {HOME: "#1a0e08", DRAW: "#ffffff", AWAY: "#141414"}  # texto legível dentro de cada cor
+GOLD_SOFT = "rgba(224,122,82,.14)"
+GOOD, BAD = "#2fb36b", "#e0524d"
+CARD, LINE = "#16161a", "#26262d"
 
 st.markdown(f"""
 <style>
-.block-container {{padding-top: 3.2rem; max-width: 1250px;}}
-.muted {{opacity:.62; font-size:.82rem;}}
-.teams {{font-weight:650; font-size:1.02rem; line-height:1.35;}}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+html, body, [class*="css"], .stMarkdown, button, input {{font-family:'Inter', system-ui, sans-serif !important;}}
+.block-container {{padding-top: 4.2rem; max-width: 1240px;}}
+.muted {{opacity:.6; font-size:.82rem;}}
+.teams {{font-weight:650; font-size:1.02rem; line-height:1.35; letter-spacing:-.01em;}}
 .teams .vs {{opacity:.45; font-weight:400; padding:0 .25rem;}}
-.time {{font-weight:650; font-size:1.05rem;}}
-.pbar {{display:flex; gap:2px; height:22px; border-radius:6px; overflow:hidden; font-size:.74rem;
-        font-weight:700;}}
-.pbar div {{display:flex; align-items:center; justify-content:center; white-space:nowrap; overflow:hidden;}}
+.time {{font-weight:700; font-size:1.05rem; font-variant-numeric:tabular-nums;}}
+.pbar {{display:flex; gap:3px; height:22px; border-radius:8px; overflow:hidden; font-size:.74rem; font-weight:700;}}
+.pbar div {{display:flex; align-items:center; justify-content:center; white-space:nowrap; overflow:hidden;
+        transition:filter .2s;}}
+.pbar div:hover {{filter:brightness(1.12);}}
 .pbar.big {{height:34px; font-size:.9rem;}}
-.plegend {{display:flex; justify-content:space-between; font-size:.72rem; opacity:.7; margin-top:2px;}}
-.form span {{display:inline-block; width:16px; height:16px; line-height:16px; text-align:center; border-radius:4px;
-        margin-right:2px; font-size:.65rem; font-weight:700; color:#fff;}}
-.form .V {{background:{GOOD};}} .form .E {{background:#898781;}} .form .D {{background:{BAD};}}
-h1 {{color:{HOME} !important; letter-spacing:-.01em;}}
-h1::after {{content:""; display:block; width:56px; height:3px; background:{HOME}; border-radius:2px; margin-top:6px;}}
-[data-testid="stVerticalBlockBorderWrapper"]:hover {{border-color:rgba(212,175,55,.45);}}
-[data-testid="stMetricValue"] {{color:#f0ece2;}}
-.chip {{display:inline-block; padding:2px 9px; border-radius:999px; font-size:.78rem; margin:2px 4px 2px 0;
-        background:{GOLD_SOFT}; border:1px solid rgba(212,175,55,.35);}}
-.chip.warn {{background:rgba(250,178,25,.16); border-color:rgba(250,178,25,.35);}}
-.chip.good {{background:rgba(12,163,12,.13); border-color:rgba(12,163,12,.3);}}
+.plegend {{display:flex; justify-content:space-between; font-size:.72rem; opacity:.7; margin-top:3px;}}
+.form span {{display:inline-block; width:17px; height:17px; line-height:17px; text-align:center; border-radius:5px;
+        margin-right:3px; font-size:.65rem; font-weight:700; color:#fff;}}
+.form .V {{background:{GOOD};}} .form .E {{background:#7c7a75;}} .form .D {{background:{BAD};}}
+h1 {{font-weight:800 !important; letter-spacing:-.025em; font-size:2rem !important;}}
+h4, h5 {{letter-spacing:-.01em;}}
+/* cartões: cantos redondos, fundo próprio e um pequeno salto ao passar o rato */
+[data-testid="stVerticalBlockBorderWrapper"] {{border-radius:16px !important; background:{CARD};
+        border-color:{LINE} !important; transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;}}
+[data-testid="stVerticalBlockBorderWrapper"]:hover {{transform:translateY(-2px); border-color:rgba(224,122,82,.55) !important;
+        box-shadow:0 10px 28px -14px rgba(224,122,82,.45);}}
+[data-testid="stMetricValue"] {{color:#f6f1e8; font-weight:800; letter-spacing:-.02em;}}
+[data-testid="stMetricLabel"] {{opacity:.7;}}
+.stButton button, .stDownloadButton button {{border-radius:12px; transition:all .15s ease;}}
+.stButton button:hover {{transform:translateY(-1px); border-color:{HOME};}}
+[data-testid="stExpander"] details {{border-radius:14px; border-color:{LINE};}}
+.chip {{display:inline-block; padding:3px 10px; border-radius:999px; font-size:.78rem; margin:2px 4px 2px 0;
+        background:{GOLD_SOFT}; border:1px solid rgba(224,122,82,.35);}}
+.chip.warn {{background:rgba(250,178,25,.14); border-color:rgba(250,178,25,.35);}}
+.chip.good {{background:rgba(47,179,107,.13); border-color:rgba(47,179,107,.32);}}
 .pick {{font-weight:600; font-size:.9rem;}}
 .pick small {{display:block; font-weight:400; opacity:.65;}}
 table.mk {{width:100%; border-collapse:collapse; font-size:.84rem; margin:.2rem 0 1rem;}}
-table.mk th, table.mk td {{padding:5px 8px; border-bottom:1px solid rgba(128,128,128,.18); text-align:left;}}
-table.mk th {{opacity:.65; font-weight:600; font-size:.76rem; text-transform:uppercase; letter-spacing:.02em;}}
+table.mk th, table.mk td {{padding:6px 8px; border-bottom:1px solid {LINE}; text-align:left;}}
+table.mk tr:hover td {{background:rgba(224,122,82,.06);}}
+table.mk th {{opacity:.6; font-weight:600; font-size:.74rem; text-transform:uppercase; letter-spacing:.04em;}}
 table.mk td.num, table.mk th.num {{text-align:right; font-variant-numeric:tabular-nums;}}
 .pos {{color:{GOOD}; font-weight:600;}} .neg {{opacity:.55;}}
 .mini {{display:inline-block; height:7px; border-radius:4px; background:{HOME}; vertical-align:middle; margin-right:6px;}}
-.leg {{padding:8px 0; border-bottom:1px solid rgba(128,128,128,.18);}}
-.hero {{font-size:2rem; font-weight:700; line-height:1.1;}}
+.leg {{padding:8px 0; border-bottom:1px solid {LINE};}}
+.hero {{font-size:2rem; font-weight:800; line-height:1.1; letter-spacing:-.02em;}}
+/* cabeçalho com o Agente Claudio */
+.topo {{display:flex; align-items:center; gap:14px; margin:0 0 1.1rem;}}
+.topo img {{width:52px; height:52px; border-radius:50%; box-shadow:0 0 0 3px rgba(224,122,82,.25);}}
+.topo .t {{font-size:1.75rem; font-weight:800; letter-spacing:-.03em; line-height:1.05;}}
+.topo .s {{opacity:.6; font-size:.86rem; margin-top:2px;}}
+.topo .t b {{color:{HOME};}}
+/* destaques do dia */
+.dest {{display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:12px; margin:.4rem 0 1.2rem;}}
+.dest > div {{background:linear-gradient(135deg, rgba(224,122,82,.16), rgba(224,122,82,.03)); border:1px solid
+        rgba(224,122,82,.35); border-radius:16px; padding:12px 14px; transition:transform .18s ease;}}
+.dest > div:hover {{transform:translateY(-2px);}}
+.dest .p {{font-size:1.5rem; font-weight:800; color:{HOME}; letter-spacing:-.02em;}}
+.fade {{animation:fade .35s ease both;}}
+@keyframes fade {{from {{opacity:0; transform:translateY(6px);}} to {{opacity:1; transform:none;}}}}
 </style>""", unsafe_allow_html=True)
+
+
+@st.cache_data
+def _logo_b64() -> str:
+    import base64
+    return base64.b64encode(LOGO.read_bytes()).decode() if LOGO.exists() else ""
+
+
+def cabecalho(titulo: str, sub: str = ""):
+    """Título de cada página com o Agente Claudio ao lado (substitui o st.title)."""
+    img = f"<img src='data:image/png;base64,{_logo_b64()}' alt='Agente Claudio'>" if _logo_b64() else ""
+    st.markdown(f"<div class='topo fade'>{img}<div><div class='t'>{E(titulo)}</div>"
+                f"<div class='s'>{sub}</div></div></div>", unsafe_allow_html=True)
 
 DAYS = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
 # (o Windows não desenha emojis de bandeiras, por isso as ligas usam a bola)
@@ -175,6 +216,24 @@ def add_to_slip(r, key):
                  "odd": r["odds"].get(key), "kickoff": r["kickoff"], "icon": r["icon"]})
 
 
+def destaques(sel: pd.DataFrame):
+    """Topo da página Jogos: números do dia e as 3 previsões mais seguras (⭐), para ver tudo num relance."""
+    if sel.empty:
+        return
+    ok = sel[~sel["limited"].astype(bool)] if "limited" in sel else sel
+    estrelas = sorted(((r["probs"].get(best_pick(r), 0), r) for _, r in ok.iterrows() if best_pick(r)),
+                      key=lambda x: -x[0])[:3]
+    if estrelas:
+        cards = "".join(
+            f"<div><span class='muted'>{r['icon']} {E(r['comp_name'])} · {r['kickoff']:%H:%M}</span>"
+            f"<div class='teams'>{E(r['home'])} <span class='vs'>vs</span> {E(r['away'])}</div>"
+            f"<div style='display:flex;justify-content:space-between;align-items:end;margin-top:4px'>"
+            f"<span class='pick'>⭐ {E(label(best_pick(r), r['home'], r['away']))}</span>"
+            f"<span class='p'>{pr:.0%}</span></div></div>" for pr, r in estrelas)
+        st.markdown(f"<div class='muted' style='margin-top:.6rem'>As 3 previsões mais seguras do dia</div>"
+                    f"<div class='dest fade'>{cards}</div>", unsafe_allow_html=True)
+
+
 def empty_state(text, icon="ℹ️"):
     with st.container(border=True):
         st.markdown(f"<div style='text-align:center;padding:1.5rem;opacity:.75'>{icon}<br>{text}</div>",
@@ -279,7 +338,7 @@ def match_dialog(mid: str):
 
 def page_jogos():
     df = upcoming(load())
-    st.title("Jogos")
+    cabecalho("Jogos", "As previsões do Agente Claudio para os próximos dias")
     if df.empty:
         from agente import nuvem
         if not nuvem.ativo():
@@ -293,6 +352,7 @@ def page_jogos():
     days = sorted(df["day"].unique())
     day = st.segmented_control("Dia", days, format_func=day_label, default=days[0], key="day")
     sel = df[df["day"] == (day or days[0])]
+    destaques(sel)
     comps = [c for c in COMP_ORDER if c in set(sel["comp"])]
     names = {c: f"{COMP_ICON.get(c, '')} {config.COMPETITIONS.get(c, {}).get('name', c)}" for c in comps}
     c1, c2 = st.columns([3, 1.4], vertical_alignment="bottom")
@@ -383,7 +443,7 @@ def candidates(df, types, min_p, only_odds) -> pd.DataFrame:
 def page_bilhete():
     df = upcoming(load())
     df = df[df["kickoff"] > pd.Timestamp.now()] if not df.empty else df
-    st.title("Construtor de apostas")
+    cabecalho("Construtor de apostas", "Junta seleções e vê a probabilidade e a odd justa da tua aposta")
     st.caption("Escolhe seleções de vários jogos: o bilhete calcula a probabilidade de acertar tudo e a odd justa.")
     if df.empty:
         empty_state("Sem jogos futuros.", "📭")
@@ -514,7 +574,7 @@ def page_bilhete():
 # ------------------------------------------------------------------ página: recaps
 
 def page_recaps():
-    st.title("Recaps")
+    cabecalho("Recaps", "O que acertámos e falhámos em cada semana, e porquê")
     df = load()
     done = df.dropna(subset=["hg"]) if not df.empty else df
     if done.empty:
@@ -589,7 +649,7 @@ KIND_ORDER = ("resultado", "dupla", "golos", "ambas", "cantos", "cartoes", "comb
 
 
 def page_desempenho():
-    st.title("Desempenho")
+    cabecalho("Desempenho", "Como o modelo se tem portado, mercado a mercado")
     df = load()
     done = df.dropna(subset=["hg"]) if not df.empty else df
     if done.empty:
@@ -731,8 +791,7 @@ def backtest_expander(expanded: bool):
 def page_licoes():
     from agente import aprendizagem
     from agente.recap import explain
-    st.title("Lições")
-    st.caption("O que o agente aprende com os erros — e como isso muda as previsões seguintes.")
+    cabecalho("Lições", "O que o agente aprende com os erros, e como isso muda as próximas previsões")
     df = load()
     done = df.dropna(subset=["hg"]) if not df.empty else df
 
@@ -814,7 +873,7 @@ def run_and_log(fn):
 
 def page_canal():
     from agente import telegram as tg
-    st.title("Canal")
+    cabecalho("Canal", "Tudo o que vai para o canal do Telegram, com Green e Red")
     st.caption("As dicas e múltiplas que o bot publica no Telegram: manhã (10h30), tardias (~45 min antes dos jogos "
                "da noite, com os onzes), madrugada (22h, jogos das 00h às 3h). Simulação: 100 € por aposta.")
     path = config.DATA_DIR / "telegram.json"
@@ -932,7 +991,7 @@ def page_canal():
 
 
 def page_estado():
-    st.title("Estado")
+    cabecalho("Estado", "Fontes de dados, quota da API e atualizações")
     df = load()
     q = apif.quota_status()
     k = st.columns(4)

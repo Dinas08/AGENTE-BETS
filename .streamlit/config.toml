@@ -10,14 +10,14 @@ gatherUsageStats = false
 [client]
 toolbarMode = "minimal"
 
-# Tema preto (principal) e dourado (secundário)
+# Tema com as cores do Agente Claudio: preto, laranja terracota e creme
 [theme]
 base = "dark"
-primaryColor = "#d4af37"
-backgroundColor = "#0b0b0b"
-secondaryBackgroundColor = "#17150f"
-textColor = "#f0ece2"
-linkColor = "#e6c55a"
-borderColor = "#2e2a1f"
+primaryColor = "#e07a52"
+backgroundColor = "#0e0e10"
+secondaryBackgroundColor = "#16161a"
+textColor = "#f3ede3"
+linkColor = "#f0956f"
+borderColor = "#26262d"
 font = "sans-serif"
 baseRadius = "medium"
