@@ -444,12 +444,60 @@ def madrugada(hoje: dt.date | None = None) -> int:
 
 # ------------------------------------------------------------------ resultados e balanço
 
+ANULADO = {"STATUS_POSTPONED": "ADIADO", "STATUS_CANCELED": "CANCELADO", "STATUS_ABANDONED": "INTERROMPIDO",
+           "STATUS_SUSPENDED": "SUSPENSO", "STATUS_FORFEIT": "ANULADO"}
+
+
+def adiados(s: dict, p: pd.DataFrame) -> int:
+    """Jogos de dicas/múltiplas publicadas que foram adiados, cancelados ou interrompidos (ESPN): a dica fica
+    anulada (não conta para Green/Red nem lucro) e sai uma mensagem a avisar, como rascunho para aprovação."""
+    from agente.sources import espn
+    agora, n, vistos = pd.Timestamp.now(), 0, {}
+
+    def anulado(mid):
+        if mid not in vistos:
+            r = p.loc[mid] if mid in p.index else None
+            # só depois da hora marcada (ou até 2 h antes, quando o adiamento já é oficial) e sem resultado
+            ok = r is not None and pd.isna(r.get("hg")) and r["kickoff"] - pd.Timedelta(hours=2) <= agora \
+                and r["kickoff"] + pd.Timedelta(days=2) >= agora and r.get("espn_ref")
+            vistos[mid] = ANULADO.get(espn.estado(r["espn_ref"])) if ok else None
+        return vistos[mid]
+
+    for d in s["dicas"]:
+        if d["resultado"] is None and not d.get("anulada") and (est := anulado(d["match_id"])):
+            d["anulada"] = est.lower()
+            avisar(s, f"⏸️ <b>JOGO {est}</b>\n{E(d['jogo'])}\n\nA dica <b>{E(d['texto'])}</b> fica sem efeito e não "
+                      "conta para o Green/Red. Nas casas de apostas, as apostas em jogos adiados ou cancelados "
+                      "costumam ser anuladas e o valor devolvido (confirma as regras da tua casa).\n\n"
+                      "Há mais dicas a caminho! ⚽", "adiado", reply_to=d.get("message_id"))
+            n += 1
+    for m in s["multiplas"]:
+        if m["resultado"] is not None:
+            continue
+        for pe in m.get("pernas", []):
+            if pe["match_id"] not in m.get("anuladas", []) and (est := anulado(pe["match_id"])):
+                m.setdefault("anuladas", []).append(pe["match_id"])
+                avisar(s, f"⏸️ <b>JOGO {est} NA MÚLTIPLA</b>\n{E(pe['jogo'])}: a perna <b>{E(pe['texto'])}</b> fica "
+                          "anulada (normalmente conta como odd 1.00) e a múltipla continua com as restantes.",
+                       "adiado", reply_to=m.get("message_id"))
+                n += 1
+    return n
+
+
+def _pernas_ativas(m: dict, by_id: dict) -> list:
+    pernas = m.get("pernas") or [by_id[i] for i in m["partes"] if i in by_id]
+    return [pe for pe in pernas if pe.get("match_id") not in m.get("anuladas", [])]
+
+
 def resultados() -> int:
     """Responde a cada dica (e múltipla) já decidida com ✅/❌ e o resultado final."""
     s = _load()
-    pend = [d for d in s["dicas"] if d["resultado"] is None]
+    pend = [d for d in s["dicas"] if d["resultado"] is None and not d.get("anulada")]
+    p = pd.DataFrame()
     if pend or any(m["resultado"] is None for m in s["multiplas"]):
         p = db.load_predictions().set_index("match_id")
+        adiados(s, p)
+        pend = [d for d in pend if not d.get("anulada")]
     n = 0
     for d in pend:
         if d["match_id"] not in p.index:
@@ -466,13 +514,17 @@ def resultados() -> int:
     for m in s["multiplas"]:
         if m["resultado"] is None:
             res = []
-            for pe in m.get("pernas") or [{"id": i} for i in m["partes"]]:
+            for pe in [pe for pe in m.get("pernas") or [{"id": i} for i in m["partes"]]
+                       if pe.get("match_id") not in m.get("anuladas", [])]:
                 if pe["id"] in by_id:  # perna que também foi dica do dia
                     res.append(by_id[pe["id"]]["resultado"])
                 elif pe.get("match_id") in p.index:  # perna só da múltipla (turbo)
                     res.append(outcome(pe["key"], p.loc[pe["match_id"]]))
                 else:
                     res.append(None)
+            if not res and m.get("anuladas"):  # todas as pernas adiadas: a múltipla fica sem efeito
+                m["anulada"] = True
+                continue
             if False in res or (res and None not in res):
                 m["resultado"] = False not in res
                 nome = "MÚLTIPLA TURBO" if m.get("tipo") == "turbo" else "MÚLTIPLA"
@@ -491,8 +543,7 @@ def _lucro(dicas: list, mult: list, by_id: dict) -> tuple[float, int]:
     """Lucro simulado (€) e nº de apostas: green paga (odd - 1) × STAKE, red perde STAKE."""
     total = sum((odd(d["odd_casa"], d["prob"]) - 1) * STAKE if d["resultado"] else -STAKE for d in dicas)
     for m in mult:
-        pernas = m.get("pernas") or [by_id[i] for i in m["partes"] if i in by_id]
-        om = _prod(odd(pe["odd_casa"], pe["prob"]) for pe in pernas)
+        om = _prod(odd(pe["odd_casa"], pe["prob"]) for pe in _pernas_ativas(m, by_id))  # pernas adiadas: odd 1
         total += (om - 1) * STAKE if m["resultado"] else -STAKE
     return total, len(dicas) + len(mult)
 
@@ -509,9 +560,9 @@ def resumo_dia(s: dict) -> bool:
     for dia in sorted({d["data"] for d in s["dicas"]} - set(feitos)):
         if dia >= agora.date().isoformat():  # o dia só fecha depois das dicas tardias e de madrugada
             continue
-        do_dia = [d for d in s["dicas"] if d["data"] == dia]
-        mult = [m for m in s["multiplas"] if m["data"] == dia]
-        if any(x["resultado"] is None for x in do_dia + mult):
+        do_dia = [d for d in s["dicas"] if d["data"] == dia and not d.get("anulada")]
+        mult = [m for m in s["multiplas"] if m["data"] == dia and not m.get("anulada")]
+        if not do_dia or any(x["resultado"] is None for x in do_dia + mult):
             continue
         g = sum(d["resultado"] for d in do_dia)
         linhas = [f"📊 <b>RESUMO DE {dt.date.fromisoformat(dia):%d/%m}</b>", ""]
@@ -607,7 +658,7 @@ def _jogos_propostos(s: dict, extras_de=()) -> set:
 
 
 AVISOS = {"resultado": "📣 <b>RESULTADO PARA O CANAL</b>", "resumo": "📣 <b>RESUMO DO DIA PARA O CANAL</b>",
-          "balanco": "📣 <b>BALANÇO DA SEMANA PARA O CANAL</b>"}
+          "balanco": "📣 <b>BALANÇO DA SEMANA PARA O CANAL</b>", "adiado": "⏸️ <b>JOGO ADIADO · AVISO PARA O CANAL</b>"}
 
 
 def _cabecalho(x: dict) -> str:

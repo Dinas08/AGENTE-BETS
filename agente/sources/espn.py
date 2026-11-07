@@ -93,6 +93,16 @@ def events(slug: str, day: dt.date, ttl_hours: float | None = None) -> list[dict
     return out
 
 
+def estado(ref: str) -> str | None:
+    """Estado atual de um jogo ("slug|id"), ex.: STATUS_POSTPONED. Cache de ~10 min."""
+    slug, _, espn_id = (ref or "").partition("|")
+    if not espn_id:
+        return None
+    data = _get(f"{slug}/summary", {"event": espn_id}, 0.15)
+    comp = (((data or {}).get("header") or {}).get("competitions") or [{}])[0]
+    return _dig(comp, "status", "type", "name")
+
+
 def match_stats(slug: str, espn_id: str) -> dict:
     """Cantos, cartões e remates de um jogo terminado."""
     data = _get(f"{slug}/summary", {"event": espn_id}, 24 * 30)

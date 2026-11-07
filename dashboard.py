@@ -840,7 +840,9 @@ def page_canal():
     RASCUNHO = {"pendente": "📝 Rascunho à espera de aprovação", "expirada": "⌛ Não publicada (expirou)",
                 "descartada": "🗑️ Descartada", "substituida": "🔁 Substituída por uma proposta mais recente"}
 
-    def badge(res, rascunho=None):
+    def badge(res, rascunho=None, anulada=None):
+        if anulada:  # jogo adiado/cancelado: não conta
+            return f"<span class='muted'>⏸️ Jogo {anulada} (não conta)</span>"
         if rascunho:  # não foi para o canal: mostra o que teria dado, sem contar
             teria = "" if res is None else f" · teria sido {'GREEN' if res else 'RED'}"
             return f"<span class='muted'>{RASCUNHO.get(rascunho, rascunho)}{teria}</span>"
@@ -890,7 +892,7 @@ def page_canal():
                 st.markdown(f"<span class='muted'>{cab}</span><div class='teams'>{E(d['jogo'])} "
                             f"<span class='muted'>{placar}</span></div>"
                             f"<div class='pick' style='margin:4px 0'>⭐ {E(d['texto'])} · @{tg.odd(d['odd_casa'], d['prob']):.2f}"
-                            f"</div>{badge(res, d.get('_estado'))}", unsafe_allow_html=True)
+                            f"</div>{badge(res, d.get('_estado'), d.get('anulada'))}", unsafe_allow_html=True)
 
     extras_dia = [d for d in nao_rec if d["data"] == dia]
     if extras_dia:
