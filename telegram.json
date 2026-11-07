@@ -715,77 +715,12 @@
   "2026-11-02",
   "2026-11-03",
   "2026-11-04",
-  "2026-11-05"
+  "2026-11-05",
+  "2026-11-06"
  ],
  "offset": 892007170,
  "ignorados": [],
  "pendentes": [
-  {
-   "pid": "031928250",
-   "origem": "tardia",
-   "data": "2026-11-03",
-   "lista": "dicas",
-   "registo": {
-    "id": "20261103-UCL-athmadrid-bayernmunich|btts_sim",
-    "match_id": "20261103-UCL-athmadrid-bayernmunich",
-    "key": "btts_sim",
-    "texto": "Ambas marcam",
-    "jogo": "Ath Madrid x Bayern Munich",
-    "prob": 0.6478,
-    "odd_casa": null,
-    "data": "2026-11-03",
-    "resultado": null,
-    "tipo": "tardia"
-   },
-   "texto": "🌙 <b>DICA TARDIA</b>\n\n⭐ <b>LIGA DOS CAMPEÕES – TERÇA 03/11</b>\nAth Madrid x Bayern Munich | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.54</b> (mínima com valor)\n\n📊 Golos esperados: Ath Madrid 1.5 – Bayern Munich 1.8\n📊 Ath Madrid: 6 vitórias nos últimos 6 jogos, xG 12.0 contra 5.7\n📊 Bayern Munich: 4 vitórias nos últimos 6 jogos, xG 22.3 contra 6.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
-   "expira": "2026-11-03T20:00:00",
-   "estado": "expirada",
-   "admin_msg": 6
-  },
-  {
-   "pid": "031928261",
-   "origem": "tardia",
-   "data": "2026-11-03",
-   "lista": "dicas",
-   "registo": {
-    "id": "20261103-UCL-manunited-roma|btts_sim",
-    "match_id": "20261103-UCL-manunited-roma",
-    "key": "btts_sim",
-    "texto": "Ambas marcam",
-    "jogo": "Man United x Roma",
-    "prob": 0.6456,
-    "odd_casa": null,
-    "data": "2026-11-03",
-    "resultado": null,
-    "tipo": "tardia"
-   },
-   "texto": "🌙 <b>DICA TARDIA</b>\n\n⭐ <b>LIGA DOS CAMPEÕES – TERÇA 03/11</b>\nMan United x Roma | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.55</b> (mínima com valor)\n\n📊 Golos esperados: Man United 1.6 – Roma 1.6\n📊 Man United: 0 vitórias nos últimos 6 jogos, xG 6.7 contra 10.9\n📊 Roma: 3 vitórias nos últimos 6 jogos, xG 11.6 contra 11.0\n🚑 Man United sem Sesko\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
-   "expira": "2026-11-03T20:00:00",
-   "estado": "expirada",
-   "admin_msg": 7
-  },
-  {
-   "pid": "032119042",
-   "origem": "madrugada",
-   "data": "2026-11-03",
-   "lista": "dicas",
-   "registo": {
-    "id": "20261104-BRA-internacional-coritiba|1",
-    "match_id": "20261104-BRA-internacional-coritiba",
-    "key": "1",
-    "texto": "Vitória Internacional",
-    "jogo": "Internacional x Coritiba",
-    "prob": 0.5673,
-    "odd_casa": 1.6,
-    "data": "2026-11-03",
-    "resultado": null,
-    "tipo": "madrugada"
-   },
-   "texto": "🌙 <b>MADRUGADA</b>\n\n🇧🇷 <b>BRASILEIRÃO – QUARTA 04/11</b>\nInternacional x Coritiba | 00h30\n\n✅ <b>Dica: Vitória Internacional</b>\n💰 Odd: <b>1.60</b>\n\n📊 Golos esperados: Internacional 1.8 – Coritiba 0.9\n📊 Internacional: 2 vitórias nos últimos 6 jogos\n📊 Coritiba: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
-   "expira": "2026-11-04T00:30:00",
-   "estado": "publicada",
-   "admin_msg": 8
-  },
   {
    "pid": "041130093",
    "origem": "dicas",
@@ -1969,8 +1904,22 @@
    "expira": "2026-11-07T22:44:58.023818",
    "estado": "publicada",
    "admin_msg": 60
+  },
+  {
+   "pid": "0700054552",
+   "origem": "resumo",
+   "data": "2026-11-07",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true
+   },
+   "texto": "📊 <b>RESUMO DE 06/11</b>\n\n🟢 3 Green · 🔴 1 Red\n💶 Lucro: <b>+135 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T00:05:45.480930",
+   "estado": "publicada",
+   "admin_msg": 61
   }
  ],
- "ultimo_resumo": 61,
- "offset_admin": 820373311
+ "ultimo_resumo": 92,
+ "offset_admin": 820373312
 }
