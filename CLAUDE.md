@@ -1,7 +1,8 @@
 # Agente Bets — instruções para o agente (Claude)
 
-Projeto de previsões de futebol (Liga Portugal, Premier League, Bundesliga, Serie A, taças nacionais,
-provas europeias e, à noite, Brasileirão, Liga Argentina, Liga MX e MLS). A parte estatística é Python; **tu és a parte qualitativa**: notícias, lesões,
+Projeto de previsões de futebol (Liga Portugal, Premier League, LaLiga, Bundesliga, Serie A, Ligue 1, Eredivisie,
+Bélgica — só Club Brugge e St. Gilloise, e Gent e Charleroi em casa —, taças nacionais, provas europeias e, à noite,
+Brasileirão, Copa do Brasil, Liga Argentina e MLS; no Telegram as Américas só têm 2-3 dicas, a partir das 22h). A parte estatística é Python; **tu és a parte qualitativa**: notícias, lesões,
 instabilidade dos clubes e a análise pós-jornada. Escreve sempre em português de Portugal.
 
 Python: `.venv\Scripts\python.exe` (Windows). Define `$env:PYTHONIOENCODING="utf-8"` antes de correr.
@@ -57,10 +58,21 @@ A API-Football grátis tem 100 pedidos/dia. **Nunca** corras `prever`/`tudo` em 
    - Premier League: BBC Sport, Sky Sports ("team news"), The Guardian, Premier Injuries.
    - Bundesliga: Kicker, Sport1, Bundesliga.com ("Verletzte", "Ausfälle").
    - Serie A: Gazzetta dello Sport, Corriere dello Sport, Sky Sport Italia ("infortunati", "probabili formazioni").
+   - LaLiga: Marca, AS, Mundo Deportivo ("lesionados", "convocatoria", "once probable").
+   - Ligue 1: L'Équipe, RMC Sport, Foot Mercato ("blessés", "suspendus", "groupe").
+   - Eredivisie: Voetbal International, Voetbalzone, NOS ("blessures", "selectie").
+   - Bélgica (só Club Brugge, St. Gilloise, Gent e Charleroi): HLN, Sporza, Walfoot, DH ("blessés", "geblesseerd").
    - Provas europeias: as mesmas, mais UEFA.com.
-   - Américas (só se sobrar tempo; prioridade baixa): ge.globo, Olé, ESPN Deportes, MLSsoccer.com.
-   Para poupar pesquisas, procura primeiro resumos por jornada ("lesionados e castigados jornada X Liga Portugal",
-   "Premier League injury news gameweek X") e depois só os clubes que faltarem.
+   - Américas (prioridade baixa): ge.globo (também Copa do Brasil), Olé, MLSsoccer.com.
+   **Como pesquisar para teres notícias atuais** (a pesquisa genérica devolve artigos de épocas antigas):
+   - Põe sempre na pesquisa as duas equipas e a data do jogo por extenso (ex.: "Leeds Tottenham team news
+     7 November 2026", "Estrela Benfica convocados 8 novembro 2026") ou "conferência de imprensa" + treinador.
+   - Usa `mode: "extended"` nas pesquisas de notícias (a `standard` traz resultados antigos).
+   - Abre com WebFetch o artigo mais promissor de cada jogo e confirma a data: descarta tudo com mais de 7 dias.
+   - Se uma pesquisa só trouxer artigos antigos, tenta outra vez com outra formulação ou outra fonte da liga
+     (no mínimo 2 tentativas por jogo das ligas principais) antes de concluir que não há novidades.
+   - Faz pelo menos uma pesquisa por jogo das ligas principais e europeus dos próximos 2 dias; os jogos de dia 3-4
+     podem ficar para a rotina seguinte. Não termines sem ter tentado todos os jogos dos próximos 2 dias.
    Regista **todos** os ausentes relevantes em `ausentes` (mesmo sem efeito nos golos), com a fonte.
 3. Atualiza `dados/ajustes.json` (formato abaixo). Regras para quantificar (percentagens sobre os golos):
    - Ponta de lança/goleador titular fora: `golos_marcados` −5 a −10

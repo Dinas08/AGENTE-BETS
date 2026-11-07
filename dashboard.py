@@ -60,9 +60,11 @@ table.mk td.num, table.mk th.num {{text-align:right; font-variant-numeric:tabula
 
 DAYS = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
 # (o Windows não desenha emojis de bandeiras, por isso as ligas usam a bola)
-COMP_ICON = {"P1": "⚽", "E0": "⚽", "D1": "⚽", "I1": "⚽", "BRA": "🇧🇷", "ARG": "🇦🇷", "MEX": "🇲🇽", "USA": "🇺🇸", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
-             "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆"}
-COMP_ORDER = ["UCL", "UEL", "UECL", "P1", "E0", "D1", "I1", "BRA", "ARG", "MEX", "USA", "TP", "TL", "FAC", "EFL", "DFB", "CI"]
+COMP_ICON = {"P1": "⚽", "E0": "⚽", "D1": "⚽", "I1": "⚽", "SP1": "⚽", "F1": "⚽", "N1": "⚽", "B1": "⚽",
+             "BRA": "🇧🇷", "ARG": "🇦🇷", "USA": "🇺🇸", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
+             "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆", "CB": "🏆"}
+COMP_ORDER = ["UCL", "UEL", "UECL", "P1", "E0", "D1", "I1", "SP1", "F1", "N1", "B1", "BRA", "ARG", "USA",
+              "TP", "TL", "FAC", "EFL", "DFB", "CI", "CB"]
 MARKET_TYPES = {
     "Resultado": ["1", "X", "2"],
     "Dupla hipótese": ["1X", "X2", "12"],
@@ -292,7 +294,7 @@ def page_jogos():
     day = st.segmented_control("Dia", days, format_func=day_label, default=days[0], key="day")
     sel = df[df["day"] == (day or days[0])]
     comps = [c for c in COMP_ORDER if c in set(sel["comp"])]
-    names = {c: f"{COMP_ICON.get(c, '')} {config.COMPETITIONS[c]['name']}" for c in comps}
+    names = {c: f"{COMP_ICON.get(c, '')} {config.COMPETITIONS.get(c, {}).get('name', c)}" for c in comps}
     c1, c2 = st.columns([3, 1.4], vertical_alignment="bottom")
     with c1:
         chosen = st.pills("Provas", comps, format_func=names.get, selection_mode="multi", default=comps,
@@ -329,7 +331,7 @@ def page_jogos():
                 f"</div>", unsafe_allow_html=True)
     for comp in [c for c in COMP_ORDER if c in set(sel["comp"])]:
         g = sel[sel["comp"] == comp]
-        st.subheader(f"{COMP_ICON.get(comp, '')} {config.COMPETITIONS[comp]['name']}", divider="gray")
+        st.subheader(f"{COMP_ICON.get(comp, '')} {config.COMPETITIONS.get(comp, {}).get('name', comp)}", divider="gray")
         for _, r in g.iterrows():
             with st.container(border=True):
                 c = st.columns([0.8, 3.2, 3, 2.6, 1.2], vertical_alignment="center")
@@ -398,7 +400,7 @@ def page_bilhete():
                          default=["Resultado", "Dupla hipótese", "Golos", "Ambas marcam"])
         comps = [c for c in COMP_ORDER if c in set(df["comp"])]
         sel_comps = st.pills("Provas", comps, selection_mode="multi", default=comps,
-                             format_func=lambda c: f"{COMP_ICON.get(c, '')} {config.COMPETITIONS[c]['name']}")
+                             format_func=lambda c: f"{COMP_ICON.get(c, '')} {config.COMPETITIONS.get(c, {}).get('name', c)}")
         only_odds = st.toggle("Só seleções com odds das casas", value=False)
         sub = df[df["day"].isin(sel_days or days) & df["comp"].isin(sel_comps or comps)]
         cand = candidates(sub, types or ["Resultado"], min_p, only_odds)
@@ -873,7 +875,7 @@ def page_canal():
                     f"{'aposta' if n == 1 else 'apostas'} de 100 €</span>", unsafe_allow_html=True)
 
     nomes = {None: "☀️ Dicas da manhã", "odd_alta": "💎 Dica de odd alta", "tardia": "🌙 Dicas tardias",
-             "madrugada": "🌙 Madrugada"}
+             "madrugada": "🌎 Américas (22h às 3h)"}
     for tipo, nome in nomes.items():
         grupo = [d for d in do_dia if (d.get("tipo") or ("tardia" if d.get("tardia") else None)) == tipo]
         if not grupo:

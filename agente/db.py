@@ -81,4 +81,6 @@ def load_predictions(with_results=True) -> pd.DataFrame:
             df[col] = df[col].apply(lambda s: json.loads(s) if isinstance(s, str) and s else {})
     if not df.empty:
         df["kickoff"] = pd.to_datetime(df["kickoff"])
+        if not with_results:  # jogos futuros de provas que deixámos de seguir (ex.: Liga MX) não aparecem
+            df = df[df["comp"].isin(config.COMPETITIONS) | (df["kickoff"] < pd.Timestamp.now())]
     return df

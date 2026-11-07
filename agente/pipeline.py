@@ -189,6 +189,7 @@ def predict(today: dt.date | None = None) -> int:
     matcher = TeamMatcher(set(hist["home"]) | set(hist["away"]))
     print("3/4 A recolher próximos jogos (football-data + ESPN" + (" + API-Football)..." if apif.enabled() else ")..."))
     games, finished = collect_fixtures(matcher, today)
+    games = [g for g in games if config.jogo_incluido(g["comp"], g["home"], g["away"])]  # Bélgica: só algumas equipas
     if apif.enabled():
         enrich_from_api(games)
     store_results(finished)

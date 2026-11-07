@@ -46,14 +46,24 @@ MAIN_LEAGUES = {
     "E0": {"name": "Premier League", "country": "Inglaterra", "apif": 39, "strength": 0.0},
     "D1": {"name": "Bundesliga", "country": "Alemanha", "apif": 78, "strength": -0.07},
     "I1": {"name": "Serie A", "country": "Itália", "apif": 135, "strength": -0.06},
+    "SP1": {"name": "LaLiga", "country": "Espanha", "apif": 140, "strength": -0.03},
+    "F1": {"name": "Ligue 1", "country": "França", "apif": 61, "strength": -0.13},
+    "N1": {"name": "Eredivisie", "country": "Países Baixos", "apif": 88, "strength": -0.27},
+    # Bélgica: só os jogos das equipas em SO_EQUIPAS
+    "B1": {"name": "Liga Belga", "country": "Bélgica", "apif": 144, "strength": -0.32},
 }
+
+# Ligas em que só analisamos algumas equipas: "todos" = jogos em casa e fora, "casa" = só em casa
+SO_EQUIPAS = {"B1": {"Club Brugge": "todos", "St. Gilloise": "todos", "Gent": "casa", "Charleroi": "casa"}}
+
+
+def jogo_incluido(comp: str, home: str, away: str) -> bool:
+    eq = SO_EQUIPAS.get(comp)
+    return eq is None or home in eq or eq.get(away) == "todos"
+
 
 # Ligas usadas só para dar rating aos adversários nas provas europeias
 RATING_LEAGUES = {
-    "SP1": {"name": "La Liga", "strength": -0.03},
-    "F1": {"name": "Ligue 1", "strength": -0.13},
-    "N1": {"name": "Eredivisie", "strength": -0.27},
-    "B1": {"name": "Jupiler Pro League", "strength": -0.32},
     "T1": {"name": "Süper Lig", "strength": -0.33},
     "G1": {"name": "Super League Grécia", "strength": -0.40},
     "SC0": {"name": "Scottish Premiership", "strength": -0.45},
@@ -63,15 +73,13 @@ RATING_LEAGUES = {
     "I2": {"name": "Serie B", "strength": -0.55},
 }
 
-# Ligas das Américas (jogos à noite e de madrugada em Lisboa). O football-data.co.uk só tem golos e odds de
+# Ligas das Américas (jogos à noite e de madrugada em Lisboa; no Telegram só 2-3 dicas a partir das 22h). O football-data.co.uk só tem golos e odds de
 # fecho (ficheiros new/<file>.csv, uma linha por jogo de todas as épocas): sem xG, cantos nem cartões.
 EXTRA_LEAGUES = {
     "BRA": {"name": "Brasileirão", "country": "Brasil", "apif": 71, "strength": -0.30,
             "fd": ("Brazil", "Serie A", "BRA")},
     "ARG": {"name": "Liga Argentina", "country": "Argentina", "apif": 128, "strength": -0.35,
             "fd": ("Argentina", "Liga Profesional", "ARG")},
-    "MEX": {"name": "Liga MX", "country": "México", "apif": 262, "strength": -0.35,
-            "fd": ("Mexico", "Liga MX", "MEX")},
     "USA": {"name": "MLS", "country": "EUA", "apif": 253, "strength": -0.35, "fd": ("USA", "MLS", "USA")},
 }
 
@@ -88,10 +96,13 @@ CUPS = {
     "EFL": {"name": "Carabao Cup", "apif": 48, "country": "Inglaterra", "type": "domestic_cup", "league": "E0"},
     "DFB": {"name": "DFB-Pokal", "apif": 81, "country": "Alemanha", "type": "domestic_cup", "league": "D1"},
     "CI": {"name": "Coppa Italia", "apif": 137, "country": "Itália", "type": "domestic_cup", "league": "I1"},
+    "CB": {"name": "Copa do Brasil", "apif": 73, "country": "Brasil", "type": "domestic_cup", "league": "BRA"},
     "UCL": {"name": "Liga dos Campeões", "apif": 2, "country": "Europa", "type": "europe"},
     "UEL": {"name": "Liga Europa", "apif": 3, "country": "Europa", "type": "europe"},
     "UECL": {"name": "Liga Conferência", "apif": 848, "country": "Europa", "type": "europe"},
 }
+
+AMERICAS = {"BRA", "ARG", "USA", "CB"}  # competições da noite/madrugada (Telegram: só a partir das 22h)
 
 COMPETITIONS = {**{k: {**v, "type": "league", "league": k} for k, v in {**MAIN_LEAGUES, **EXTRA_LEAGUES}.items()},
                 **CUPS}
@@ -99,7 +110,8 @@ COMPETITIONS = {**{k: {**v, "type": "league", "league": k} for k, v in {**MAIN_L
 # Identificadores das competições no ESPN (fonte grátis de jogos, resultados, cantos e odds)
 ESPN_SLUGS = {
     "P1": "por.1", "E0": "eng.1", "D1": "ger.1", "I1": "ita.1",
-    "BRA": "bra.1", "ARG": "arg.1", "MEX": "mex.1", "USA": "usa.1",
+    "SP1": "esp.1", "F1": "fra.1", "N1": "ned.1", "B1": "bel.1",
+    "BRA": "bra.1", "ARG": "arg.1", "USA": "usa.1", "CB": "bra.copa_do_brazil",
     "TP": "por.taca.portugal", "FAC": "eng.fa", "EFL": "eng.league_cup", "DFB": "ger.dfb_pokal",
     "CI": "ita.coppa_italia", "UCL": "uefa.champions", "UEL": "uefa.europa", "UECL": "uefa.europa.conf",
 }

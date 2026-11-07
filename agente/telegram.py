@@ -30,7 +30,8 @@ ODD_MIN = 1.20              # as casas não aceitam apostas abaixo desta odd (di
 TURBO_ODD = 4.0             # múltipla turbo: junta pernas até chegar a esta odd (máx. TURBO_PERNAS)
 TURBO_PERNAS, TURBO_P_MIN = 5, 0.62
 P_EXTRA = 0.50              # com admin: as outras apostas (não recomendadas) também vão para aprovação, como "extra"
-FLAG = {"P1": "🇵🇹", "E0": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "D1": "🇩🇪", "I1": "🇮🇹", "BRA": "🇧🇷", "ARG": "🇦🇷", "MEX": "🇲🇽", "USA": "🇺🇸", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
+FLAG = {"P1": "🇵🇹", "E0": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "D1": "🇩🇪", "I1": "🇮🇹", "SP1": "🇪🇸", "F1": "🇫🇷", "N1": "🇳🇱", "B1": "🇧🇪",
+        "BRA": "🇧🇷", "ARG": "🇦🇷", "USA": "🇺🇸", "CB": "🇧🇷", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
         "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆"}
 DIAS = ["SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO", "DOMINGO"]
 RODAPE = "🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias"
@@ -179,7 +180,8 @@ def dicas(hoje: dt.date | None = None) -> int:
         return 0
     p = db.load_predictions(with_results=False)
     agora = pd.Timestamp.now()
-    p = p[(p["kickoff"] > agora + pd.Timedelta(minutes=30)) & (p["kickoff"].dt.date == hoje) & ~p["limited"].astype(bool)]
+    p = p[(p["kickoff"] > agora + pd.Timedelta(minutes=30)) & (p["kickoff"].dt.date == hoje) & ~p["limited"].astype(bool)
+          & ~p["comp"].isin(config.AMERICAS)]  # as Américas só têm dicas à noite (madrugada)
     cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])[:N_DICAS]
     if len(cands) < N_MIN:  # dia fraco: completa até N_MIN com as melhores acima de P_RESERVA
         ja = {r["match_id"] for _, r, _ in cands}
@@ -312,7 +314,7 @@ def _multipla(s, titulo, partes, hoje, tipo, p):
 
 
 N_TARDIAS = 2      # dicas extra por dia para os jogos da noite, ~45 min antes do início, com os onzes já conhecidos
-N_MADRUGADA = 2    # dicas às 22h para os jogos entre as 00h e as 3h (Américas)
+N_MADRUGADA = 3    # Américas (Brasileirão, Copa do Brasil, Argentina, MLS): 2 a 3 dicas às 21h para os jogos das 22h às 3h
 ROTACAO = 5        # alterações no onze em relação ao jogo anterior a partir das quais não damos dica
 
 
@@ -364,7 +366,7 @@ def tardias(hoje: dt.date | None = None) -> int:
     ja = {d["match_id"] for d in s["dicas"]} | set(ignorados) | _jogos_propostos(s, ("tardia", "madrugada"))
     p = db.load_predictions(with_results=False)
     p = p[(p["kickoff"].dt.date == hoje) & (p["kickoff"].dt.hour >= 17) & ~p["limited"].astype(bool)
-          & ~p["match_id"].isin(ja)]
+          & ~p["match_id"].isin(ja) & ~p["comp"].isin(config.AMERICAS)]
     janela = (p["kickoff"] > agora + pd.Timedelta(minutes=20)) & (p["kickoff"] < agora + pd.Timedelta(minutes=75))
     # jogos mais tarde esta noite que ainda podem dar uma dica forte: guardar-lhes a vaga
     depois = sum(1 for _, r in p[p["kickoff"] >= agora + pd.Timedelta(minutes=75)].iterrows() if escolher(r))
@@ -407,7 +409,7 @@ def tardias(hoje: dt.date | None = None) -> int:
 
 
 def madrugada(hoje: dt.date | None = None) -> int:
-    """Às 22h: dicas para os jogos entre as 00h e as 3h (Brasileirão, MLS, Liga MX, Argentina)."""
+    """Às 21h: 2 a 3 dicas das Américas (Brasileirão, Copa do Brasil, Argentina, MLS) para os jogos das 22h às 3h."""
     agora = pd.Timestamp.now()
     hoje = hoje or agora.date()
     if hoje == agora.date() and agora.hour < 21:
@@ -418,18 +420,23 @@ def madrugada(hoje: dt.date | None = None) -> int:
         return 0
     ja = {d["match_id"] for d in s["dicas"]} | _jogos_propostos(s, ("tardia", "madrugada"))
     p = db.load_predictions(with_results=False)
-    p = p[(p["kickoff"].dt.date == hoje + dt.timedelta(days=1)) & (p["kickoff"].dt.time <= dt.time(3, 0))
-          & (p["kickoff"] > agora) & ~p["limited"].astype(bool) & ~p["match_id"].isin(ja)]
+    ini = pd.Timestamp(hoje) + pd.Timedelta(hours=22)
+    p = p[(p["kickoff"] >= ini) & (p["kickoff"] <= ini + pd.Timedelta(hours=5)) & p["comp"].isin(config.AMERICAS)
+          & (p["kickoff"] > agora + pd.Timedelta(minutes=30)) & ~p["limited"].astype(bool) & ~p["match_id"].isin(ja)]
     cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])
+    if len(cands) < N_MIN:  # mínimo 2: completa com as melhores acima de P_RESERVA
+        tem = {r["match_id"] for _, r, _ in cands}
+        cands += sorted(((c[1], r, c[0]) for _, r in p.iterrows() if r["match_id"] not in tem
+                         and (c := escolher(r, P_RESERVA))), key=lambda x: -x[0])[:N_MIN - len(cands)]
     for prob, r, key in sorted(cands[:N_MADRUGADA], key=lambda x: x[1]["kickoff"]):
         publicar(s, "dicas", _dica(r, key, prob, hoje.isoformat(), "madrugada"),
-                 "🌙 <b>MADRUGADA</b>\n\n" + mensagem_dica(r, key, prob), r["kickoff"], "madrugada")
+                 "🌎 <b>AMÉRICAS</b>\n\n" + mensagem_dica(r, key, prob), r["kickoff"], "madrugada")
     if rever():  # as outras também, como extra
         rec = {r["match_id"] for _, r, _ in cands[:N_MADRUGADA]}
         for _, r in p[~p["match_id"].isin(rec)].sort_values("kickoff").iterrows():
             if c := escolher(r, P_EXTRA):
                 publicar(s, "dicas", _dica(r, c[0], c[1], hoje.isoformat(), "madrugada"),
-                         "🌙 <b>MADRUGADA</b>\n\n" + mensagem_dica(r, c[0], c[1]), r["kickoff"], "madrugada",
+                         "🌎 <b>AMÉRICAS</b>\n\n" + mensagem_dica(r, c[0], c[1]), r["kickoff"], "madrugada",
                          extra=True)
     _save(s)
     return len(cands[:N_MADRUGADA])
@@ -920,7 +927,7 @@ OLA = ("👋 Olá! Bem-vindo ao <b>CLAUDIO BET TIPS FREE</b> ⚽🤖\n\n"
 IDADE = "🔞 <b>Só para maiores de 18.</b> Ao entrares no canal confirmas que tens 18 anos ou mais."
 AGENDA = ("☀️ <b>10h30</b> — dicas do dia, 💎 odd alta e 🚀 múltipla turbo\n"
           "🌆 <b>À noite</b> — dicas com os onzes confirmados\n"
-          "🌙 <b>22h</b> — madrugada (Brasil, Argentina, México, MLS)\n"
+          "🌎 <b>21h</b> — Américas: Brasileirão, Copa do Brasil, Argentina e MLS (jogos das 22h às 3h)\n"
           "✅ Resultado de cada dica assim que o jogo acaba\n"
           "📋 <b>Segunda</b> — balanço da semana")
 MENOR = "Este canal é só para maiores de 18. Volta quando chegar a hora — o futebol não foge! ⚽"
@@ -929,7 +936,8 @@ COMO = ("🤖 <b>COMO O AGENTE CLAUDIO ESCOLHE AS DICAS</b>\n\n"
         "2️⃣ <b>Mercado</b>: cruza tudo com as odds das casas.\n"
         "3️⃣ <b>Notícias</b>: lê lesões, castigos e onzes antes do jogo, e ajusta.\n"
         "4️⃣ <b>Aprende</b>: depois de cada jornada vê o que falhou e corrige.\n\n"
-        "Liga Portugal 🇵🇹 · Premier 🏴󠁧󠁢󠁥󠁮󠁧󠁿 · Bundesliga 🇩🇪 · Serie A 🇮🇹 · Europa ⭐ · Taças 🏆 · Américas 🌙")
+        "Liga Portugal 🇵🇹 · Premier 🏴󠁧󠁢󠁥󠁮󠁧󠁿 · LaLiga 🇪🇸 · Bundesliga 🇩🇪 · Serie A 🇮🇹 · Ligue 1 🇫🇷 · "
+        "Eredivisie 🇳🇱 · Bélgica 🇧🇪 · Europa ⭐ · Taças 🏆 · Américas 🌎")
 COMANDOS = {"/start": "ola", "/resultados": "res", "/comofunciona": "como"}
 
 

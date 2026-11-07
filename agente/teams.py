@@ -52,10 +52,17 @@ ALIASES = {
     "new york city fc": "New York City", "atlanta united": "Atlanta Utd", "atlanta united fc": "Atlanta Utd",
     "atletico paranaense": "Athletico-PR", "belgrano cordoba": "Belgrano", "instituto cordoba": "Instituto",
     "d.c. united": "DC United", "st. louis city sc": "St. Louis City", "montreal impact": "CF Montreal",
+    # Bélgica, Espanha e Países Baixos (ESPN -> football-data)
+    "kvc westerlo": "Westerlo", "oh leuven": "Oud-Heverlee Leuven", "racing genk": "Genk", "krc genk": "Genk",
+    "royal charleroi sc": "Charleroi", "sporting charleroi": "Charleroi", "standard liege": "Standard",
+    "waasland-beveren": "Beveren", "zulte-waregem": "Waregem", "kv mechelen": "Mechelen", "kv kortrijk": "Kortrijk",
+    "royal antwerp": "Antwerp", "sint-truiden": "St Truiden", "stvv": "St Truiden", "cercle brugge ksv": "Cercle Brugge",
+    "deportivo": "La Coruna", "deportivo la coruna": "La Coruna", "racing santander": "Santander",
+    "ado den haag": "Den Haag", "pec zwolle": "Zwolle",
 }
 
 # nomes que dependem da liga (o mesmo nome é outra equipa noutra liga)
-LEAGUE_ALIASES = {"MEX": {"santos": "Santos Laguna"}}
+LEAGUE_ALIASES = {}
 
 # clubes diferentes que partilham a cidade com uma equipa conhecida
 NO_MATCH = {"bristol rovers", "oxford city", "sheffield wednesday", "notts county", "nottingham",

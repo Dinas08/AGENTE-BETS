@@ -1,7 +1,8 @@
 # ⚽ Agente Bets
 
-Previsões para a Liga Portugal, Premier League, Bundesliga e Serie A, taças nacionais, provas europeias e
-ligas das Américas (Brasileirão, Liga Argentina, Liga MX e MLS; aqui só golos e resultado, sem cantos nem cartões):
+Previsões para a Liga Portugal, Premier League, LaLiga, Bundesliga, Serie A, Ligue 1, Eredivisie, Bélgica (só Club
+Brugge e St. Gilloise; Gent e Charleroi só em casa), taças nacionais, provas europeias e Américas (Brasileirão,
+Copa do Brasil, Liga Argentina e MLS; aqui só golos e resultado, sem cantos nem cartões):
 1X2, dupla hipótese, golos (+/-), ambas marcam, resultado exato, cantos, cartões e combinadas, com
 odds justas e odds das casas. Um agente (Claude) junta notícias, lesões e instabilidade dos clubes e
 escreve um recap depois de cada jornada.
@@ -27,8 +28,8 @@ escreve um recap depois de cada jornada.
 
 ## Canal de Telegram
 - O bot publica no canal grátis: dicas do dia + múltipla (10h30), 2 dicas tardias ~30-45 min antes dos jogos
-  da noite (a partir das 17h) com os onzes confirmados (se faltarem jogos fortes, completa com ≥55%) (não dá dica se uma equipa rodar 5+ jogadores), 2 dicas de madrugada às 22h
-  (jogos das 00h às 3h), GREEN/RED quando cada jogo acaba, o resumo do dia seguinte e o balanço à segunda-feira.
+  da noite (a partir das 17h) com os onzes confirmados (se faltarem jogos fortes, completa com ≥55%) (não dá dica se uma equipa rodar 5+ jogadores), 2 a 3 dicas das Américas às 21h
+  (só jogos das 22h às 3h; as Américas não entram nas dicas da manhã nem nas tardias), GREEN/RED quando cada jogo acaba, o resumo do dia seguinte e o balanço à segunda-feira.
   Quem escreve ao bot em privado recebe as boas-vindas do Agente Claudio com o aviso +18 e botões de link (abrem
   logo, sem esperar pelo bot): "✅ Tenho 18+ · Entrar no canal" e "📊 Últimos resultados" (último resumo/balanço,
   só com canal público). Nada é guardado. Comandos: `/resultados` (últimos 7 dias) e `/comofunciona`.
