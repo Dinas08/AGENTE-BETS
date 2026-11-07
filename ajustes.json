@@ -1,229 +1,229 @@
 {
- "atualizado_em": "2026-11-06",
- "equipas": {
-  "Sp Lisbon": {
-   "golos_marcados": -4,
-   "golos_sofridos": 3,
-   "motivo": "Paulo Fonseca estreia-se no banco (Rui Borges despedido); Debast e Nuno Santos fora; Zalazar regressa",
-   "ausentes": [
-    {
-     "jogador": "Zeno Debast",
-     "motivo": "lesão",
-     "importancia": "titular"
+  "atualizado_em": "2026-11-07",
+  "equipas": {
+    "Sp Lisbon": {
+      "golos_marcados": -4,
+      "golos_sofridos": 3,
+      "motivo": "Paulo Fonseca estreia-se no banco (Rui Borges despedido); Debast e Nuno Santos fora; Zalazar regressa",
+      "ausentes": [
+        {
+          "jogador": "Zeno Debast",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Nuno Santos",
+          "motivo": "lesão muscular",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Rodrigo Zalazar",
+          "motivo": "lesão muscular (convocado, regressa)",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.ojogo.pt/futebol/artigo/zalazar-entre-os-25-convocados-do-sporting-para-o-duelo-com-o-shakhtar-donetsk/18143701",
+        "https://www.abola.pt/noticias/silencio-sobre-rui-borges-varandas-so-fala-depois-do-jogo-com-o-shakhtar-2026110214320259929",
+        "https://www.record.pt/futebol/futebol-nacional/liga-betclic/sporting/detalhe/paulo-fonseca-com-duas-baixas-para-a-estreia-em-alvalade-diante-do-moreirense"
+      ],
+      "valido_ate": "2026-11-08"
     },
-    {
-     "jogador": "Nuno Santos",
-     "motivo": "lesão muscular",
-     "importancia": "titular"
+    "Arouca": {
+      "golos_marcados": -1,
+      "golos_sofridos": 1,
+      "motivo": "Puche lesionado (dia a dia)",
+      "ausentes": [
+        {
+          "jogador": "Miguel Puche",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.fotmob.com/matches/famalicao-vs-arouca/5uy3d72"
+      ],
+      "valido_ate": "2026-11-07"
     },
-    {
-     "jogador": "Rodrigo Zalazar",
-     "motivo": "lesão muscular (convocado, regressa)",
-     "importancia": "rotação"
+    "Man City": {
+      "golos_marcados": -3,
+      "golos_sofridos": 0,
+      "motivo": "Semenyo fora (joelho, até meados de dezembro)",
+      "ausentes": [
+        {
+          "jogador": "Semenyo",
+          "motivo": "joelho",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.uefa.com/uefachampionsleague/news/02ab-21f9907f0a27-6a6a67e9775d-1000--champions-league-starting-and-predicted-line-ups-matchday-4-/"
+      ],
+      "valido_ate": "2026-11-08"
+    },
+    "Arsenal": {
+      "golos_marcados": -5,
+      "golos_sofridos": 0,
+      "motivo": "Saka (quadríceps) e outro extremo titular lesionados",
+      "ausentes": [
+        {
+          "jogador": "Bukayo Saka",
+          "motivo": "lesão quadríceps",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.si.com/soccer/arsenal"
+      ],
+      "valido_ate": "2026-11-08"
+    },
+    "Benfica": {
+      "golos_marcados": -2,
+      "golos_sofridos": 1,
+      "motivo": "Sem Leandro Barreiro (~2 meses); Barrenechea em dúvida",
+      "ausentes": [
+        {
+          "jogador": "Leandro Barreiro",
+          "motivo": "lesão coxa",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Barrenechea",
+          "motivo": "dúvida joelho",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsmole.co.uk/football/benfica/europa-league/preview/benfica-vs-lech-poznan-prediction-team-news-lineups_608348.html"
+      ],
+      "valido_ate": "2026-11-09"
+    },
+    "Dortmund": {
+      "golos_marcados": 0,
+      "golos_sofridos": 3,
+      "motivo": "Emre Can fora (ligamento cruzado, ~8 meses); Konstantelias e Lerma lesionados",
+      "ausentes": [
+        {
+          "jogador": "Emre Can",
+          "motivo": "ligamento cruzado",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Konstantelias",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Lerma",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/"
+      ],
+      "valido_ate": "2026-11-09"
+    },
+    "Bayern Munich": {
+      "golos_marcados": -2,
+      "golos_sofridos": 0,
+      "motivo": "Gnabry (coxa) fora",
+      "ausentes": [
+        {
+          "jogador": "Serge Gnabry",
+          "motivo": "lesão muscular coxa",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Ismael Saibari",
+          "motivo": "sindesmose",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/"
+      ],
+      "valido_ate": "2026-11-09"
+    },
+    "Stuttgart": {
+      "golos_marcados": -3,
+      "golos_sofridos": 2,
+      "motivo": "Vagnoman, Stiller, Diehl e Sauer lesionados",
+      "ausentes": [
+        {
+          "jogador": "Angelo Stiller",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Josha Vagnoman",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Justin Diehl",
+          "motivo": "longa duração",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Leo Sauer",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/"
+      ],
+      "valido_ate": "2026-11-09"
+    },
+    "RB Leipzig": {
+      "golos_marcados": -3,
+      "golos_sofridos": 0,
+      "motivo": "Ouédraogo e Guiu fora",
+      "ausentes": [
+        {
+          "jogador": "Assan Ouédraogo",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Marc Guiu",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.ligainsider.de/rb-leipzig/1311/"
+      ],
+      "valido_ate": "2026-11-09"
+    },
+    "Moreirense": {
+      "golos_marcados": -2,
+      "golos_sofridos": 1,
+      "motivo": "Duville-Parsemain e Kiko Bondoso lesionados; Francisco Domingues deverá falhar",
+      "ausentes": [
+        {
+          "jogador": "Alexandre Duville-Parsemain",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Kiko Bondoso",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Francisco Domingues",
+          "motivo": "lesão (provável ausência)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.abola.pt/noticias/moreirense-ex-aguia-e-ex-leao-em-duvida-para-o-sporting-2026110117311633607",
+        "https://abola.pt/noticias/moreirense-espanhol-quer-congelar-leoes-em-alvalade-2026110416565257842"
+      ],
+      "valido_ate": "2026-11-08"
     }
-   ],
-   "fontes": [
-    "https://www.ojogo.pt/futebol/artigo/zalazar-entre-os-25-convocados-do-sporting-para-o-duelo-com-o-shakhtar-donetsk/18143701",
-    "https://www.abola.pt/noticias/silencio-sobre-rui-borges-varandas-so-fala-depois-do-jogo-com-o-shakhtar-2026110214320259929",
-    "https://www.record.pt/futebol/futebol-nacional/liga-betclic/sporting/detalhe/paulo-fonseca-com-duas-baixas-para-a-estreia-em-alvalade-diante-do-moreirense"
-   ],
-   "valido_ate": "2026-11-08"
   },
-  "Arouca": {
-   "golos_marcados": -1,
-   "golos_sofridos": 1,
-   "motivo": "Puche lesionado (dia a dia)",
-   "ausentes": [
-    {
-     "jogador": "Miguel Puche",
-     "motivo": "lesão",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.fotmob.com/matches/famalicao-vs-arouca/5uy3d72"
-   ],
-   "valido_ate": "2026-11-07"
-  },
-  "Man City": {
-   "golos_marcados": -3,
-   "golos_sofridos": 0,
-   "motivo": "Semenyo fora (joelho, até meados de dezembro)",
-   "ausentes": [
-    {
-     "jogador": "Semenyo",
-     "motivo": "joelho",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.uefa.com/uefachampionsleague/news/02ab-21f9907f0a27-6a6a67e9775d-1000--champions-league-starting-and-predicted-line-ups-matchday-4-/"
-   ],
-   "valido_ate": "2026-11-08"
-  },
-  "Arsenal": {
-   "golos_marcados": -5,
-   "golos_sofridos": 0,
-   "motivo": "Saka (quadríceps) e outro extremo titular lesionados",
-   "ausentes": [
-    {
-     "jogador": "Bukayo Saka",
-     "motivo": "lesão quadríceps",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.si.com/soccer/arsenal"
-   ],
-   "valido_ate": "2026-11-08"
-  },
-  "Benfica": {
-   "golos_marcados": -2,
-   "golos_sofridos": 1,
-   "motivo": "Sem Leandro Barreiro (~2 meses); Barrenechea em dúvida",
-   "ausentes": [
-    {
-     "jogador": "Leandro Barreiro",
-     "motivo": "lesão coxa",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Barrenechea",
-     "motivo": "dúvida joelho",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.sportsmole.co.uk/football/benfica/europa-league/preview/benfica-vs-lech-poznan-prediction-team-news-lineups_608348.html"
-   ],
-   "valido_ate": "2026-11-09"
-  },
-  "Dortmund": {
-   "golos_marcados": 0,
-   "golos_sofridos": 3,
-   "motivo": "Emre Can fora (ligamento cruzado, ~8 meses); Konstantelias e Lerma lesionados",
-   "ausentes": [
-    {
-     "jogador": "Emre Can",
-     "motivo": "ligamento cruzado",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Konstantelias",
-     "motivo": "lesão",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Lerma",
-     "motivo": "lesão",
-     "importancia": "rotação"
-    }
-   ],
-   "fontes": [
-    "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/"
-   ],
-   "valido_ate": "2026-11-09"
-  },
-  "Bayern Munich": {
-   "golos_marcados": -2,
-   "golos_sofridos": 0,
-   "motivo": "Gnabry (coxa) fora",
-   "ausentes": [
-    {
-     "jogador": "Serge Gnabry",
-     "motivo": "lesão muscular coxa",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Ismael Saibari",
-     "motivo": "sindesmose",
-     "importancia": "rotação"
-    }
-   ],
-   "fontes": [
-    "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/"
-   ],
-   "valido_ate": "2026-11-09"
-  },
-  "Stuttgart": {
-   "golos_marcados": -3,
-   "golos_sofridos": 2,
-   "motivo": "Vagnoman, Stiller, Diehl e Sauer lesionados",
-   "ausentes": [
-    {
-     "jogador": "Angelo Stiller",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Josha Vagnoman",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Justin Diehl",
-     "motivo": "longa duração",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Leo Sauer",
-     "motivo": "lesão",
-     "importancia": "rotação"
-    }
-   ],
-   "fontes": [
-    "https://www.ligainsider.de/bundesliga/verletzte-und-gesperrte-spieler/"
-   ],
-   "valido_ate": "2026-11-09"
-  },
-  "RB Leipzig": {
-   "golos_marcados": -3,
-   "golos_sofridos": 0,
-   "motivo": "Ouédraogo e Guiu fora",
-   "ausentes": [
-    {
-     "jogador": "Assan Ouédraogo",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Marc Guiu",
-     "motivo": "lesão",
-     "importancia": "rotação"
-    }
-   ],
-   "fontes": [
-    "https://www.ligainsider.de/rb-leipzig/1311/"
-   ],
-   "valido_ate": "2026-11-09"
-  },
-  "Moreirense": {
-   "golos_marcados": -2,
-   "golos_sofridos": 1,
-   "motivo": "Duville-Parsemain e Kiko Bondoso lesionados; Francisco Domingues deverá falhar",
-   "ausentes": [
-    {
-     "jogador": "Alexandre Duville-Parsemain",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Kiko Bondoso",
-     "motivo": "lesão",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Francisco Domingues",
-     "motivo": "lesão (provável ausência)",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.abola.pt/noticias/moreirense-ex-aguia-e-ex-leao-em-duvida-para-o-sporting-2026110117311633607",
-    "https://abola.pt/noticias/moreirense-espanhol-quer-congelar-leoes-em-alvalade-2026110416565257842"
-   ],
-   "valido_ate": "2026-11-08"
-  }
- },
- "jogos": {}
+  "jogos": {}
 }
