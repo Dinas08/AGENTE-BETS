@@ -168,6 +168,8 @@ def mensagem_dica(r, key, p) -> str:
         "",
         *_razoes(r, key),
     ]
+    if r.get("limited"):
+        linhas.append("⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos")
     return "\n".join(linhas) + _fim()
 
 
@@ -180,8 +182,9 @@ def dicas(hoje: dt.date | None = None) -> int:
         return 0
     p = db.load_predictions(with_results=False)
     agora = pd.Timestamp.now()
-    p = p[(p["kickoff"] > agora + pd.Timedelta(minutes=30)) & (p["kickoff"].dt.date == hoje) & ~p["limited"].astype(bool)
-          & ~p["comp"].isin(config.AMERICAS)]  # as Américas só têm dicas à noite (madrugada)
+    todos = p[(p["kickoff"] > agora + pd.Timedelta(minutes=30)) & (p["kickoff"].dt.date == hoje)
+              & ~p["comp"].isin(config.AMERICAS)]  # as Américas só têm dicas à noite (madrugada)
+    p = todos[~todos["limited"].astype(bool)]  # recomendadas: só com dados suficientes
     cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])[:N_DICAS]
     if len(cands) < N_MIN:  # dia fraco: completa até N_MIN com as melhores acima de P_RESERVA
         ja = {r["match_id"] for _, r, _ in cands}
@@ -208,7 +211,7 @@ def dicas(hoje: dt.date | None = None) -> int:
         _multipla(s, "🚀 <b>MÚLTIPLA TURBO</b>", turbo, hoje, "turbo", p)
     # com admin: todos os outros jogos do dia também vão, marcados como extra (não recomendados)
     usados = {d["match_id"] for d in novas + ([alta] if alta else [])}
-    for _, r in p[~p["match_id"].isin(usados)].sort_values("kickoff").iterrows():
+    for _, r in todos[~todos["match_id"].isin(usados)].sort_values("kickoff").iterrows():  # com dados limitados
         if rever() and (c := escolher(r, P_EXTRA)):
             publicar(s, "dicas", _dica(r, c[0], c[1], hoje.isoformat()), mensagem_dica(r, c[0], c[1]),
                      r["kickoff"], "dicas", extra=True)
@@ -422,7 +425,8 @@ def madrugada(hoje: dt.date | None = None) -> int:
     p = db.load_predictions(with_results=False)
     ini = pd.Timestamp(hoje) + pd.Timedelta(hours=22)
     p = p[(p["kickoff"] >= ini) & (p["kickoff"] <= ini + pd.Timedelta(hours=5)) & p["comp"].isin(config.AMERICAS)
-          & (p["kickoff"] > agora + pd.Timedelta(minutes=30)) & ~p["limited"].astype(bool) & ~p["match_id"].isin(ja)]
+          & (p["kickoff"] > agora + pd.Timedelta(minutes=30)) & ~p["match_id"].isin(ja)]
+    todos, p = p, p[~p["limited"].astype(bool)]
     cands = sorted(((c[1], r, c[0]) for _, r in p.iterrows() if (c := escolher(r))), key=lambda x: -x[0])
     if len(cands) < N_MIN:  # mínimo 2: completa com as melhores acima de P_RESERVA
         tem = {r["match_id"] for _, r, _ in cands}
@@ -433,7 +437,7 @@ def madrugada(hoje: dt.date | None = None) -> int:
                  "🌎 <b>AMÉRICAS</b>\n\n" + mensagem_dica(r, key, prob), r["kickoff"], "madrugada")
     if rever():  # as outras também, como extra
         rec = {r["match_id"] for _, r, _ in cands[:N_MADRUGADA]}
-        for _, r in p[~p["match_id"].isin(rec)].sort_values("kickoff").iterrows():
+        for _, r in todos[~todos["match_id"].isin(rec)].sort_values("kickoff").iterrows():
             if c := escolher(r, P_EXTRA):
                 publicar(s, "dicas", _dica(r, c[0], c[1], hoje.isoformat(), "madrugada"),
                          "🌎 <b>AMÉRICAS</b>\n\n" + mensagem_dica(r, c[0], c[1]), r["kickoff"], "madrugada",
@@ -643,8 +647,13 @@ def rever() -> bool:
 
 def _bot(metodo: str, _token: str | None = None, **body) -> dict:
     """Pedido ao bot de admin (rascunhos e botões); _token=TOKEN para responder em nome do bot público."""
-    r = requests.post(f"https://api.telegram.org/bot{_token or ADMIN_TOKEN or TOKEN}/{metodo}", json=body, timeout=70)
-    return r.json() if r.headers.get("content-type", "").startswith("application/json") else {}
+    for _ in range(3):  # muitos rascunhos seguidos: o Telegram pede para esperar (429)
+        r = requests.post(f"https://api.telegram.org/bot{_token or ADMIN_TOKEN or TOKEN}/{metodo}", json=body, timeout=70)
+        out = r.json() if r.headers.get("content-type", "").startswith("application/json") else {}
+        if out.get("error_code") != 429:
+            return out
+        time.sleep(min(30, (out.get("parameters") or {}).get("retry_after", 3)) + 0.5)
+    return out
 
 
 def _proposto(s: dict, dia: str, origem: str) -> list:
