@@ -30,6 +30,8 @@ escreve um recap depois de cada jornada.
 - O bot publica no canal grátis: dicas do dia + múltipla (10h30), 2 dicas tardias ~30-45 min antes dos jogos
   da noite (a partir das 17h) com os onzes confirmados (se faltarem jogos fortes, completa com ≥55%) (não dá dica se uma equipa rodar 5+ jogadores), 2 a 3 dicas das Américas às 21h
   (só jogos das 22h às 3h; as Américas não entram nas dicas da manhã nem nas tardias), GREEN/RED quando cada jogo acaba, o resumo do dia seguinte e o balanço à segunda-feira.
+  Nos dias com lucro, o resumo sai como animação do Agente Claudio a festejar (`agente/media/green.mp4`, gerada por
+  `docs/imagens/gerar_green.py`) com o texto por baixo; se a animação falhar, vai só o texto.
   Quem escreve ao bot em privado recebe as boas-vindas do Agente Claudio com o aviso +18 e botões de link (abrem
   logo, sem esperar pelo bot): "✅ Tenho 18+ · Entrar no canal" e "📊 Últimos resultados" (último resumo/balanço,
   só com canal público). Nada é guardado. Comandos: `/resultados` (últimos 7 dias) e `/comofunciona`.
