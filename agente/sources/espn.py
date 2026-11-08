@@ -103,9 +103,9 @@ def estado(ref: str) -> str | None:
     return _dig(comp, "status", "type", "name")
 
 
-def match_stats(slug: str, espn_id: str) -> dict:
-    """Cantos, cartões e remates de um jogo terminado."""
-    data = _get(f"{slug}/summary", {"event": espn_id}, 24 * 30)
+def match_stats(slug: str, espn_id: str, ttl_hours: float = 24 * 30) -> dict:
+    """Cantos, cartões e remates de um jogo terminado (ttl_hours=0 obriga a ir buscar de novo)."""
+    data = _get(f"{slug}/summary", {"event": espn_id}, ttl_hours)
     teams = ((data or {}).get("boxscore") or {}).get("teams") or []
     comp = (((data or {}).get("header") or {}).get("competitions") or [{}])[0]
     sides = {c["team"]["id"]: c.get("homeAway") for c in comp.get("competitors", [])}

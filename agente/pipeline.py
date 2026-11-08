@@ -299,11 +299,36 @@ def quick_results() -> list[str]:
                                   "ac": s.get("ac"), "hy": s.get("hy"), "ay": s.get("ay"), "hr": s.get("hr"),
                                   "ar": s.get("ar"), "source": "espn"})
                 new.append(p["match_id"])
+    new += [m for m in rever_estatisticas(preds) if m not in new]
     if new:
         from agente import recap
         for day in {preds.set_index("match_id").loc[m, "kickoff"].date() for m in new}:
             recap.build_recap(day)
     return new
+
+
+STATS = ("hc", "ac", "hy", "ay", "hr", "ar")
+
+
+def rever_estatisticas(preds: pd.DataFrame) -> list[str]:
+    """O ESPN dá o jogo como terminado ao apito final, mas os cantos e cartões ainda vão sendo acertados durante uns
+    minutos (ex.: Hoffenheim-Schalke ficou com 4+4 cantos e afinal foram 6+4). Volta a ler as estatísticas dos jogos
+    acabados nas últimas horas e grava as que mudaram. Devolve os ids corrigidos."""
+    now = pd.Timestamp.now()
+    rec = preds[preds["hg"].notna() & preds["espn_ref"].notna() & (preds["kickoff"] > now - pd.Timedelta(hours=6))
+                & (preds["kickoff"] < now - pd.Timedelta(minutes=100))]
+    changed = []
+    for _, p in rec.iterrows():
+        slug, eid = p["espn_ref"].split("|")
+        s = espn.match_stats(slug, eid, ttl_hours=0)
+        diff = {k: s[k] for k in STATS if k in s and (pd.isna(p[k]) or float(p[k]) != s[k])}
+        if not diff:
+            continue
+        db.upsert_result({"match_id": p["match_id"], "hg": int(p["hg"]), "ag": int(p["ag"]),
+                          **{k: s.get(k, None if pd.isna(p[k]) else p[k]) for k in STATS}, "source": "espn"})
+        print(f"  estatísticas corrigidas {p['match_id']}: " + ", ".join(f"{k} {p[k]}→{v}" for k, v in diff.items()))
+        changed.append(p["match_id"])
+    return changed
 
 
 def update_results() -> int:

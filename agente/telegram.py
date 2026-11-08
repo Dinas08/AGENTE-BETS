@@ -493,15 +493,56 @@ def _pernas_ativas(m: dict, by_id: dict) -> list:
     return [pe for pe in pernas if pe.get("match_id") not in m.get("anuladas", [])]
 
 
+def _corrigir_avisos(s: dict, reply_to) -> str:
+    """Antes de um Green/Red corrigido: fecha o rascunho antigo ainda por aprovar. Se o antigo já tinha saído no
+    canal, devolve o prefixo de correção para a mensagem nova."""
+    saiu = False
+    for x in s.get("pendentes", []):
+        if x["lista"] == "avisos" and x["origem"] == "resultado" and reply_to and \
+                x["registo"].get("reply_to") == reply_to and x["estado"] in ("pendente", "publicada"):
+            if x["estado"] == "pendente":
+                _fechar(x, "corrigida")
+            else:
+                saiu = True
+    return "🔁 <b>CORREÇÃO</b> (as estatísticas finais do jogo foram atualizadas)\n" if saiu else ""
+
+
+def rever_decididas(s: dict, p: pd.DataFrame) -> int:
+    """Dicas dos últimos 2 dias já com Green/Red: se as estatísticas mudaram depois (cantos/cartões acertados pelo
+    ESPN minutos após o fim), corrige o resultado e prepara a mensagem certa (também para aprovação)."""
+    desde = (dt.date.today() - dt.timedelta(days=1)).isoformat()
+    n = 0
+    for d in s["dicas"]:
+        if d["resultado"] is None or d.get("anulada") or d["data"] < desde or d["match_id"] not in p.index:
+            continue
+        r = p.loc[d["match_id"]]
+        ok = outcome(d["key"], r)
+        if ok is None or ok == d["resultado"]:
+            continue
+        d["resultado"] = ok
+        avisar(s, _corrigir_avisos(s, d.get("message_id")) +
+               f"{'✅ <b>GREEN</b>' if ok else '❌ RED'}: {E(d['texto'])}\n{E(r['home'])} {int(r['hg'])}-{int(r['ag'])} "
+               f"{E(r['away'])}", "resultado", reply_to=d.get("message_id"))
+        for m in s["multiplas"]:  # múltiplas com esta perna voltam a ser decididas
+            if m["resultado"] is not None and (d["id"] in m.get("partes", []) or
+                                               any(pe.get("id") == d["id"] for pe in m.get("pernas", []))):
+                m["resultado"], m["rever"] = None, True
+        n += 1
+    return n
+
+
 def resultados() -> int:
     """Responde a cada dica (e múltipla) já decidida com ✅/❌ e o resultado final."""
     s = _load()
     pend = [d for d in s["dicas"] if d["resultado"] is None and not d.get("anulada")]
+    desde = (dt.date.today() - dt.timedelta(days=1)).isoformat()
     p = pd.DataFrame()
-    if pend or any(m["resultado"] is None for m in s["multiplas"]):
+    if pend or any(m["resultado"] is None for m in s["multiplas"]) or \
+            any(d["resultado"] is not None and d["data"] >= desde for d in s["dicas"]):
         p = db.load_predictions().set_index("match_id")
         adiados(s, p)
         pend = [d for d in pend if not d.get("anulada")]
+        rever_decididas(s, p)
     n = 0
     for d in pend:
         if d["match_id"] not in p.index:
@@ -532,7 +573,8 @@ def resultados() -> int:
             if False in res or (res and None not in res):
                 m["resultado"] = False not in res
                 nome = "MÚLTIPLA TURBO" if m.get("tipo") == "turbo" else "MÚLTIPLA"
-                avisar(s, f"✅ <b>GREEN NA {nome}!</b> 💰" if m["resultado"] else
+                pre = _corrigir_avisos(s, m.get("message_id")) if m.pop("rever", False) else ""
+                avisar(s, pre + f"✅ <b>GREEN NA {nome}!</b> 💰" if m["resultado"] else pre +
                        f"❌ RED na {nome.lower()} ({sum(x is True for x in res)}/{len(res)} pernas certas até agora)",
                        "resultado", reply_to=m["message_id"])
     resumo_dia(s)
@@ -638,7 +680,8 @@ PUBLICO = config.DATA_DIR / "bot_publico.json"  # textos e botões que o Worker 
 MARCA = "———"  # separa o cabeçalho do rascunho do texto que vai para o canal
 ESTADOS = {"publicada": "✅ <b>PUBLICADA</b>", "descartada": "❌ <b>DESCARTADA</b>",
            "expirada": "⌛ <b>EXPIROU</b> (o jogo já começou)",
-           "substituida": "🔁 <b>SUBSTITUÍDA</b> (há uma proposta mais recente para este jogo)"}
+           "substituida": "🔁 <b>SUBSTITUÍDA</b> (há uma proposta mais recente para este jogo)",
+           "corrigida": "🔁 <b>CORRIGIDA</b> (as estatísticas do jogo mudaram: vê a mensagem nova)"}
 
 
 def rever() -> bool:
