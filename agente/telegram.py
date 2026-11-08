@@ -9,6 +9,7 @@ import html
 import json
 import os
 import time
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -35,6 +36,7 @@ FLAG = {"P1": "🇵🇹", "E0": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "D1": "🇩🇪"
         "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆"}
 DIAS = ["SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO", "DOMINGO"]
 RODAPE = "🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias"
+ANIM_GREEN = Path(__file__).parent / "media" / "green.mp4"  # Agente Claudio a festejar (resumo do dia com lucro)
 E = html.escape
 
 
@@ -76,6 +78,38 @@ def send(text: str, reply_to: int | None = None) -> int | None:
         raise SystemExit(f"Telegram recusou ({r.status_code}): {desc}. "
                          + next((v for k, v in dica.items() if k.lower() in desc.lower()), ""))
     return r.json()["result"]["message_id"]
+
+
+def send_animacao(texto: str, s: dict | None = None, reply_to: int | None = None) -> int | None:
+    """Envia a animação do GREEN com o texto como legenda (uma só mensagem). Na 1.ª vez carrega o vídeo e guarda o
+    file_id do Telegram em s["anim_green_id"] para não voltar a carregar. Se falhar, ou se o texto passar o limite
+    de legenda do Telegram (1024), envia só o texto: o resumo nunca se perde."""
+    if ensaio():
+        print("-" * 60 + "\n[🎬 animação GREEN]\n" + texto)
+        return None
+    if len(texto) > 1024 or not ANIM_GREEN.exists():
+        return send(texto, reply_to=reply_to)
+    corpo = {"chat_id": CHAT, "caption": texto, "parse_mode": "HTML", "width": 512, "height": 512}
+    if reply_to:
+        corpo["reply_parameters"] = json.dumps({"message_id": reply_to, "allow_sending_without_reply": True})
+    url = f"https://api.telegram.org/bot{TOKEN}/sendAnimation"
+    try:
+        fid = (s or {}).get("anim_green_id")
+        if fid:
+            r = requests.post(url, data=corpo | {"animation": fid}, timeout=60)
+        else:
+            with open(ANIM_GREEN, "rb") as f:
+                r = requests.post(url, data=corpo, files={"animation": ("green.mp4", f, "video/mp4")}, timeout=120)
+        out = r.json()
+    except (requests.RequestException, ValueError) as e:
+        out = {"ok": False, "description": str(e)}
+    if not out.get("ok"):
+        print(f"  animação não enviada ({out.get('description')}); vai só o texto")
+        return send(texto, reply_to=reply_to)
+    res = out["result"]
+    if s is not None and res.get("animation"):
+        s["anim_green_id"] = res["animation"]["file_id"]
+    return res["message_id"]
 
 
 def _link() -> str:
@@ -618,8 +652,10 @@ def resumo_dia(s: dict) -> bool:
         for m in mult:
             if m["resultado"]:
                 linhas.append(("🚀 Múltipla turbo" if m.get("tipo") == "turbo" else "🎯 Múltipla") + ": GREEN 💰")
-        linhas += _linha_lucro(*_lucro(do_dia, mult, {d["id"]: d for d in s["dicas"]}))
-        avisar(s, "\n".join(linhas) + _fim(), "resumo", resumo=True)
+        total, n = _lucro(do_dia, mult, {d["id"]: d for d in s["dicas"]})
+        linhas += _linha_lucro(total, n)
+        # dia com lucro: vai com a animação do Agente Claudio a festejar
+        avisar(s, "\n".join(linhas) + _fim(), "resumo", resumo=True, animacao=round(total) > 0)
         feitos.append(dia)
         return True  # um por execução
     return False
@@ -715,8 +751,9 @@ AVISOS = {"resultado": "📣 <b>RESULTADO PARA O CANAL</b>", "resumo": "📣 <b>
 
 def _cabecalho(x: dict) -> str:
     if x["lista"] == "avisos":
+        anim = "🎬 <b>Vai com a animação do GREEN</b> (dia com lucro)\n" if x["registo"].get("animacao") else ""
         return (f"{AVISOS.get(x['origem'], '📣 <b>MENSAGEM PARA O CANAL</b>')} · expira "
-                f"{pd.Timestamp(x['expira']):%d/%m às %Hh%M}\n"
+                f"{pd.Timestamp(x['expira']):%d/%m às %Hh%M}\n{anim}"
                 f"<i>Responde a esta mensagem com o texto novo para editar.</i>\n{MARCA}\n")
     tipo = "📎 <b>EXTRA</b> (não ia meter)" if x.get("extra") else "📝 <b>RASCUNHO</b> ⭐ <b>recomendada</b>"
     return (f"{tipo} · expira às {pd.Timestamp(x['expira']):%Hh%M}\n"
@@ -929,15 +966,17 @@ def _enviar_rascunho(x: dict) -> bool:
     return False
 
 
-def avisar(s: dict, msg: str, origem: str, reply_to: int | None = None, resumo: bool = False) -> None:
-    """Green/Red, resumo e balanço: com admin também vão primeiro para aprovação (expiram em 24 h)."""
+def avisar(s: dict, msg: str, origem: str, reply_to: int | None = None, resumo: bool = False,
+           animacao: bool = False) -> None:
+    """Green/Red, resumo e balanço: com admin também vão primeiro para aprovação (expiram em 24 h).
+    animacao=True: sai como animação do GREEN com o texto por baixo (resumo do dia com lucro)."""
     if not rever():
-        mid = send(msg, reply_to=reply_to)
+        mid = send_animacao(msg, s, reply_to) if animacao else send(msg, reply_to=reply_to)
         if resumo and mid:
             s["ultimo_resumo"] = mid  # o botão "Últimos resultados" das boas-vindas aponta para aqui
         return
     x = {"pid": f"{dt.datetime.now():%d%H%M%S}{len(s.setdefault('pendentes', []))}", "origem": origem,
-         "data": dt.date.today().isoformat(), "lista": "avisos", "registo": {"reply_to": reply_to, "resumo": resumo},
+         "data": dt.date.today().isoformat(), "lista": "avisos", "registo": {"reply_to": reply_to, "resumo": resumo, "animacao": animacao},
          "texto": msg, "expira": (pd.Timestamp.now() + pd.Timedelta(hours=24)).isoformat(), "estado": "pendente"}
     _enviar_rascunho(x)
     s["pendentes"].append(x)
@@ -963,7 +1002,10 @@ def _fechar(x: dict, estado: str) -> None:
 
 def _aprovar(s: dict, x: dict) -> None:
     if x["lista"] == "avisos":
-        mid = send(x["texto"], reply_to=x["registo"].get("reply_to"))
+        if x["registo"].get("animacao"):
+            mid = send_animacao(x["texto"], s, x["registo"].get("reply_to"))
+        else:
+            mid = send(x["texto"], reply_to=x["registo"].get("reply_to"))
         if x["registo"].get("resumo") and mid:
             s["ultimo_resumo"] = mid
     else:
