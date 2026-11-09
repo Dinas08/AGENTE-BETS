@@ -103,6 +103,21 @@ def estado(ref: str) -> str | None:
     return _dig(comp, "status", "type", "name")
 
 
+def resultado(ref: str) -> tuple[int, int] | None:
+    """Resultado final de um jogo ("slug|id") lido pelo id, sem depender da data (jogos antecipados ou
+    remarcados que já não aparecem no dia previsto). None se ainda não terminou. Cache de 1 h."""
+    slug, _, espn_id = (ref or "").partition("|")
+    data = _get(f"{slug}/summary", {"event": espn_id}, 1) if espn_id else None
+    comp = (((data or {}).get("header") or {}).get("competitions") or [{}])[0]
+    if _dig(comp, "status", "type", "name") not in FINISHED:
+        return None
+    golos = {c.get("homeAway"): c.get("score") for c in comp.get("competitors", [])}
+    try:
+        return int(golos["home"]), int(golos["away"])
+    except (KeyError, TypeError, ValueError):
+        return None
+
+
 def match_stats(slug: str, espn_id: str, ttl_hours: float = 24 * 30) -> dict:
     """Cantos, cartões e remates de um jogo terminado (ttl_hours=0 obriga a ir buscar de novo)."""
     data = _get(f"{slug}/summary", {"event": espn_id}, ttl_hours)

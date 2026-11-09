@@ -297,6 +297,17 @@ def quick_results() -> list[str]:
                                   "ac": s.get("ac"), "hy": s.get("hy"), "ay": s.get("ay"), "hr": s.get("hr"),
                                   "ar": s.get("ar"), "source": "espn"})
                 new.append(p["match_id"])
+    # jogos antecipados/remarcados: o ESPN já não os mostra no dia previsto, por isso vão-se buscar pelo id
+    atrasados = pending[(pending["kickoff"] < now - pd.Timedelta(hours=6)) & (pending["kickoff"] > now - pd.Timedelta(days=10))]
+    for _, p in atrasados[~atrasados["match_id"].isin(new)].iterrows():
+        res = espn.resultado(p["espn_ref"])
+        if res is None:
+            continue
+        slug, eid = p["espn_ref"].split("|")
+        s = espn.match_stats(slug, eid)
+        db.upsert_result({"match_id": p["match_id"], "hg": res[0], "ag": res[1], "hc": s.get("hc"), "ac": s.get("ac"),
+                          "hy": s.get("hy"), "ay": s.get("ay"), "hr": s.get("hr"), "ar": s.get("ar"), "source": "espn"})
+        new.append(p["match_id"])
     new += [m for m in rever_estatisticas(preds) if m not in new]
     if new:
         from agente import recap
