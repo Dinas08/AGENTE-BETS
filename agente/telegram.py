@@ -249,6 +249,7 @@ def dicas(hoje: dt.date | None = None) -> int:
         if rever() and (c := escolher(r, P_EXTRA)):
             publicar(s, "dicas", _dica(r, c[0], c[1], hoje.isoformat()), mensagem_dica(r, c[0], c[1]),
                      r["kickoff"], "dicas", extra=True)
+    _enviar_devidos(s)
     pedir_aprovacao(s, hoje.isoformat())
     _save(s)
     return len(novas)
@@ -441,6 +442,7 @@ def tardias(hoje: dt.date | None = None) -> int:
         publicar(s, "dicas", _dica(r, key, prob, hoje.isoformat(), "tardia"), "🌙 <b>DICA TARDIA</b>\n\n" + msg,
                  r["kickoff"], "tardia", extra=extra)
         n += not extra
+    _enviar_devidos(s)
     _save(s)
     return n
 
@@ -476,6 +478,7 @@ def madrugada(hoje: dt.date | None = None) -> int:
                 publicar(s, "dicas", _dica(r, c[0], c[1], hoje.isoformat(), "madrugada"),
                          "🌎 <b>AMÉRICAS</b>\n\n" + mensagem_dica(r, c[0], c[1]), r["kickoff"], "madrugada",
                          extra=True)
+    _enviar_devidos(s)
     _save(s)
     return len(cands[:N_MADRUGADA])
 
@@ -947,13 +950,26 @@ def publicar(s, lista, registo, msg, inicio, origem, extra: bool = False) -> Non
                 _fechar(y, "substituida")
         x = {"pid": f"{dt.datetime.now():%d%H%M%S}{len(s.setdefault('pendentes', []))}", "origem": origem,
              "data": registo["data"], "lista": lista, "registo": registo | ({"extra": True} if extra else {}),
-             "texto": msg, "expira": pd.Timestamp(inicio).isoformat(), "estado": "pendente"}
+             "texto": msg, "expira": pd.Timestamp(inicio).isoformat(), "estado": "pendente",
+             "enviar_a": (pd.Timestamp(inicio) - pd.Timedelta(hours=ANTECEDENCIA_H)).isoformat()}
         if extra:
             x["extra"] = True
-        if _enviar_rascunho(x) or not extra:  # sem rede: fica guardado e o painel volta a tentar
-            s["pendentes"].append(x)
+        s["pendentes"].append(x)  # não vai já: _enviar_devidos manda-o perto da hora do jogo
         return
     s[lista].append(registo | {"message_id": send(msg)})
+
+
+ANTECEDENCIA_H = 3  # cada rascunho chega ao admin ~3 h antes do jogo, por ordem da hora (não tudo de manhã)
+
+
+def _enviar_devidos(s: dict) -> int:
+    """Manda ao admin os rascunhos cuja hora chegou, pela ordem do jogo (o que expira primeiro vai primeiro;
+    no mesmo jogo, as recomendadas antes dos extra). Também volta a tentar os que falharam por falta de rede."""
+    agora = pd.Timestamp.now()
+    devidos = [x for x in s.get("pendentes", []) if x["estado"] == "pendente" and not x.get("admin_msg")
+               and pd.Timestamp(x.get("enviar_a") or agora) <= agora]
+    devidos.sort(key=lambda x: (pd.Timestamp(x["expira"]), bool(x.get("extra")), x["lista"] != "dicas"))
+    return sum(_enviar_rascunho(x) for x in devidos)
 
 
 def _enviar_rascunho(x: dict) -> bool:
@@ -987,8 +1003,9 @@ def pedir_aprovacao(s: dict, dia: str) -> None:
     pend = [x for x in s.get("pendentes", []) if x["data"] == dia and x["estado"] == "pendente"]
     rec = sum(1 for x in pend if not x.get("extra"))
     if rever() and len(pend) >= 2:
-        _bot("sendMessage", chat_id=ADMIN, text=f"📝 Hoje: {rec} recomendadas (⭐) e {len(pend) - rec} extra (📎) "
-             "à espera da tua aprovação. Os extra só saem se carregares em ✅ Publicar neles.",
+        _bot("sendMessage", chat_id=ADMIN, text=f"📝 Hoje: {rec} recomendadas (⭐) e {len(pend) - rec} extra (📎). "
+             f"Vão chegando pela ordem dos jogos, cerca de {ANTECEDENCIA_H} h antes de cada um. Os botões abaixo "
+             "valem só para as que já recebeste; os extra só saem se carregares em ✅ Publicar neles.",
              reply_markup={"inline_keyboard": [[{"text": "✅ Publicar recomendadas", "callback_data": "pub:*"},
                                                 {"text": "❌ Descartar tudo", "callback_data": "desc:*"}]]})
 
@@ -1178,7 +1195,8 @@ def _botao(s: dict, cb: dict, link: str | None = None) -> int:
         _bot("answerCallbackQuery", callback_query_id=cb["id"], text=aviso[:190])
         return 1 if x else 0
     alvos = [x for x in s.get("pendentes", []) if x["estado"] == "pendente"
-             and (pid == x["pid"] or (pid == "*" and not (acao == "pub" and x.get("extra"))))]
+             and (pid == x["pid"] or (pid == "*" and x.get("admin_msg")  # só os que já te chegaram
+                                      and not (acao == "pub" and x.get("extra"))))]
     for x in alvos:
         _aprovar(s, x) if acao == "pub" else _fechar(x, "descartada")
     feito = "publicado" if acao == "pub" else "descartado"
@@ -1210,9 +1228,7 @@ def painel(minutos: float = 0) -> int:
         link = None
     guardar_publico(s, link)
     fila = "offset_admin" if ADMIN_TOKEN else "offset"  # cada bot tem a sua fila de mensagens
-    for x in s["pendentes"]:
-        if x["estado"] == "pendente" and not x.get("admin_msg"):
-            _enviar_rascunho(x)
+    _enviar_devidos(s)
     while True:
         _expirar(s)
         pend = any(x["estado"] == "pendente" for x in s["pendentes"])
