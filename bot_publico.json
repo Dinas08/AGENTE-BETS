@@ -1,0 +1,83 @@
+{
+ "textos": {
+  "ola": {
+   "text": "👋 Olá! Bem-vindo ao <b>CLAUDIO BET TIPS FREE</b> ⚽🤖\n\nTodos os dias, dicas de futebol grátis escolhidas pelo <b>Agente Claudio</b>, que cruza estatística, odds e notícias (lesões, onzes) antes de cada jogo.\n\n☀️ <b>10h30</b> — dicas do dia, 💎 odd alta e 🚀 múltipla turbo\n🌆 <b>À noite</b> — dicas com os onzes confirmados\n🌎 <b>21h</b> — Américas: Brasileirão, Copa do Brasil, Argentina e MLS (jogos das 22h às 3h)\n✅ Resultado de cada dica assim que o jogo acaba\n📋 <b>Segunda</b> — balanço da semana\n\n🔞 <b>Só para maiores de 18.</b> Ao entrares no canal confirmas que tens 18 anos ou mais.",
+   "reply_markup": {
+    "inline_keyboard": [
+     [
+      {
+       "text": "✅ Tenho 18+ · Entrar no canal",
+       "url": "https://t.me/claudiobettips"
+      }
+     ],
+     [
+      {
+       "text": "📊 Últimos resultados",
+       "url": "https://t.me/claudiobettips/140"
+      }
+     ]
+    ]
+   }
+  },
+  "18": {
+   "text": "Bora! 🔥\n\n☀️ <b>10h30</b> — dicas do dia, 💎 odd alta e 🚀 múltipla turbo\n🌆 <b>À noite</b> — dicas com os onzes confirmados\n🌎 <b>21h</b> — Américas: Brasileirão, Copa do Brasil, Argentina e MLS (jogos das 22h às 3h)\n✅ Resultado de cada dica assim que o jogo acaba\n📋 <b>Segunda</b> — balanço da semana\n\n👉 <a href=\"https://t.me/claudiobettips\">Entra aqui no canal</a>\nAtiva as notificações 🔔 para não perderes nada.\n\n🔞 +18 | Joga com responsabilidade",
+   "reply_markup": {
+    "inline_keyboard": [
+     [
+      {
+       "text": "📢 Entrar no canal",
+       "url": "https://t.me/claudiobettips"
+      }
+     ],
+     [
+      {
+       "text": "📊 Últimos resultados",
+       "url": "https://t.me/claudiobettips/140"
+      }
+     ]
+    ]
+   }
+  },
+  "menor": {
+   "text": "Este canal é só para maiores de 18. Volta quando chegar a hora — o futebol não foge! ⚽"
+  },
+  "res": {
+   "text": "📊 <b>ÚLTIMOS 7 DIAS NO CANAL</b>\n\n🟢 30 Green · 🔴 12 Red\n🎯 Múltiplas: 2 Green em 6\n💶 Lucro: <b>+500 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "reply_markup": {
+    "inline_keyboard": [
+     [
+      {
+       "text": "📢 Entrar no canal",
+       "url": "https://t.me/claudiobettips"
+      }
+     ],
+     [
+      {
+       "text": "📊 Últimos resultados",
+       "url": "https://t.me/claudiobettips/140"
+      }
+     ]
+    ]
+   }
+  },
+  "como": {
+   "text": "🤖 <b>COMO O AGENTE CLAUDIO ESCOLHE AS DICAS</b>\n\n1️⃣ <b>Números</b>: ataque e defesa de cada equipa, forma recente e golos esperados.\n2️⃣ <b>Mercado</b>: cruza tudo com as odds das casas.\n3️⃣ <b>Notícias</b>: lê lesões, castigos e onzes antes do jogo, e ajusta.\n4️⃣ <b>Aprende</b>: depois de cada jornada vê o que falhou e corrige.\n\nLiga Portugal 🇵🇹 · Premier 🏴󠁧󠁢󠁥󠁮󠁧󠁿 · LaLiga 🇪🇸 · Bundesliga 🇩🇪 · Serie A 🇮🇹 · Ligue 1 🇫🇷 · Eredivisie 🇳🇱 · Bélgica 🇧🇪 · Europa ⭐ · Taças 🏆 · Américas 🌎\n\n🔞 +18 | Joga com responsabilidade",
+   "reply_markup": {
+    "inline_keyboard": [
+     [
+      {
+       "text": "📢 Entrar no canal",
+       "url": "https://t.me/claudiobettips"
+      }
+     ],
+     [
+      {
+       "text": "📊 Últimos resultados",
+       "url": "https://t.me/claudiobettips/140"
+      }
+     ]
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,3653 @@
+{
+ "dicas": [
+  {
+   "id": "20261101-I1-frosinone-torino|over_2.5",
+   "match_id": "20261101-I1-frosinone-torino",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Frosinone x Torino",
+   "prob": 0.6904,
+   "odd_casa": 1.4,
+   "data": "2026-11-01",
+   "message_id": 5,
+   "resultado": false
+  },
+  {
+   "id": "20261101-E0-liverpool-arsenal|12",
+   "match_id": "20261101-E0-liverpool-arsenal",
+   "key": "12",
+   "texto": "Liverpool ou Arsenal vence (sem empate)",
+   "jogo": "Liverpool x Arsenal",
+   "prob": 0.7103,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 6,
+   "resultado": true
+  },
+  {
+   "id": "20261101-I1-lecce-genoa|cartoes_under_4.5",
+   "match_id": "20261101-I1-lecce-genoa",
+   "key": "cartoes_under_4.5",
+   "texto": "Menos de 4.5 cartões amarelos",
+   "jogo": "Lecce x Genoa",
+   "prob": 0.695,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 7,
+   "resultado": true
+  },
+  {
+   "id": "20261101-I1-juventus-napoli|12",
+   "match_id": "20261101-I1-juventus-napoli",
+   "key": "12",
+   "texto": "Juventus ou Napoli vence (sem empate)",
+   "jogo": "Juventus x Napoli",
+   "prob": 0.7016,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 8,
+   "resultado": true
+  },
+  {
+   "id": "20261102-I1-sassuolo-fiorentina|cantos_under_9.5",
+   "match_id": "20261102-I1-sassuolo-fiorentina",
+   "key": "cantos_under_9.5",
+   "texto": "Menos de 9.5 cantos",
+   "jogo": "Sassuolo x Fiorentina",
+   "prob": 0.6541,
+   "odd_casa": null,
+   "data": "2026-11-02",
+   "message_id": 15,
+   "resultado": true
+  },
+  {
+   "id": "20261102-E0-newcastle-everton|cartoes_under_4.5",
+   "match_id": "20261102-E0-newcastle-everton",
+   "key": "cartoes_under_4.5",
+   "texto": "Menos de 4.5 cartões amarelos",
+   "jogo": "Newcastle x Everton",
+   "prob": 0.6375,
+   "odd_casa": null,
+   "data": "2026-11-02",
+   "message_id": 16,
+   "resultado": true
+  },
+  {
+   "id": "20261102-P1-gilvicente-guimaraes|12",
+   "match_id": "20261102-P1-gilvicente-guimaraes",
+   "key": "12",
+   "texto": "Gil Vicente ou Guimaraes vence (sem empate)",
+   "jogo": "Gil Vicente x Guimaraes",
+   "prob": 0.6892,
+   "odd_casa": null,
+   "data": "2026-11-02",
+   "message_id": 17,
+   "resultado": false
+  },
+  {
+   "id": "20261102-P1-benfica-alverca|over_2.5",
+   "match_id": "20261102-P1-benfica-alverca",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Benfica x Alverca",
+   "prob": 0.6794,
+   "odd_casa": 1.37,
+   "data": "2026-11-02",
+   "message_id": 18,
+   "resultado": false
+  },
+  {
+   "id": "20261103-ARG-atltucuman-argentinosjrs|under_2.5",
+   "match_id": "20261103-ARG-atltucuman-argentinosjrs",
+   "key": "under_2.5",
+   "texto": "Menos de 2.5 golos",
+   "jogo": "Atl. Tucuman x Argentinos Jrs",
+   "prob": 0.6333,
+   "odd_casa": 1.51,
+   "data": "2026-11-02",
+   "message_id": 27,
+   "resultado": false,
+   "tipo": "madrugada"
+  },
+  {
+   "id": "20261103-ARG-indrivadavia-banfield|1",
+   "match_id": "20261103-ARG-indrivadavia-banfield",
+   "key": "1",
+   "texto": "Vitória Ind. Rivadavia",
+   "jogo": "Ind. Rivadavia x Banfield",
+   "prob": 0.5819,
+   "odd_casa": 1.5,
+   "data": "2026-11-02",
+   "message_id": 28,
+   "resultado": true,
+   "tipo": "madrugada"
+  },
+  {
+   "id": "20261103-UCL-galatasaray-stuttgart|btts_sim",
+   "match_id": "20261103-UCL-galatasaray-stuttgart",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Galatasaray x Stuttgart",
+   "prob": 0.7007,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 33,
+   "resultado": false
+  },
+  {
+   "id": "20261103-UCL-barcelona-astonvilla|over_2.5",
+   "match_id": "20261103-UCL-barcelona-astonvilla",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Barcelona x Aston Villa",
+   "prob": 0.8305,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 34,
+   "resultado": true
+  },
+  {
+   "id": "20261103-UCL-villarreal-parissg|over_2.5",
+   "match_id": "20261103-UCL-villarreal-parissg",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Villarreal x Paris SG",
+   "prob": 0.6767,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 35,
+   "resultado": true
+  },
+  {
+   "id": "20261103-UCL-feyenoord-inter|over_2.5",
+   "match_id": "20261103-UCL-feyenoord-inter",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Feyenoord x Inter",
+   "prob": 0.6609,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 36,
+   "resultado": true
+  },
+  {
+   "id": "20261104-BRA-internacional-coritiba|1",
+   "match_id": "20261104-BRA-internacional-coritiba",
+   "key": "1",
+   "texto": "Vitória Internacional",
+   "jogo": "Internacional x Coritiba",
+   "prob": 0.5673,
+   "odd_casa": 1.6,
+   "data": "2026-11-03",
+   "resultado": true,
+   "tipo": "madrugada",
+   "message_id": 45
+  },
+  {
+   "id": "20261104-UCL-fenerbahce-liverpool|over_2.5",
+   "match_id": "20261104-UCL-fenerbahce-liverpool",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Fenerbahce x Liverpool",
+   "prob": 0.6808,
+   "odd_casa": null,
+   "data": "2026-11-04",
+   "resultado": true,
+   "message_id": 49
+  },
+  {
+   "id": "20261104-UCL-aek-realmadrid|2",
+   "match_id": "20261104-UCL-aek-realmadrid",
+   "key": "2",
+   "texto": "Vitória Real Madrid",
+   "jogo": "AEK x Real Madrid",
+   "prob": 0.7056,
+   "odd_casa": 1.22,
+   "data": "2026-11-04",
+   "resultado": true,
+   "message_id": 50
+  },
+  {
+   "id": "20261104-BRA-flamengorj-gremio|over_2.5",
+   "match_id": "20261104-BRA-flamengorj-gremio",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Flamengo RJ x Gremio",
+   "prob": 0.6944,
+   "odd_casa": null,
+   "data": "2026-11-04",
+   "resultado": true,
+   "message_id": 52
+  },
+  {
+   "id": "20261104-UCL-psveindhoven-clubbrugge|over_2.5",
+   "match_id": "20261104-UCL-psveindhoven-clubbrugge",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "PSV Eindhoven x Club Brugge",
+   "prob": 0.7167,
+   "odd_casa": null,
+   "data": "2026-11-04",
+   "resultado": true,
+   "message_id": 53
+  },
+  {
+   "id": "20261105-UEL-leverkusen-marseille|over_2.5",
+   "match_id": "20261105-UEL-leverkusen-marseille",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Leverkusen x Marseille",
+   "prob": 0.7125,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": false,
+   "message_id": 62
+  },
+  {
+   "id": "20261105-UEL-celtic-besiktas|btts_sim",
+   "match_id": "20261105-UEL-celtic-besiktas",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Celtic x Besiktas",
+   "prob": 0.6479,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": true,
+   "message_id": 63
+  },
+  {
+   "id": "20261105-BRA-palmeiras-remo|1",
+   "match_id": "20261105-BRA-palmeiras-remo",
+   "key": "1",
+   "texto": "Vitória Palmeiras",
+   "jogo": "Palmeiras x Remo",
+   "prob": 0.7884,
+   "odd_casa": 1.21,
+   "data": "2026-11-05",
+   "resultado": true,
+   "message_id": 64
+  },
+  {
+   "id": "20261105-UEL-sociedad-lyon|combo:12&over_2.5",
+   "match_id": "20261105-UEL-sociedad-lyon",
+   "key": "combo:12&over_2.5",
+   "texto": "Não há empate + Mais de 2.5 golos",
+   "jogo": "Sociedad x Lyon",
+   "prob": 0.5444,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": false,
+   "tipo": "odd_alta",
+   "message_id": 65
+  },
+  {
+   "id": "20261105-UECL-trabzonspor-freiburg|btts_sim",
+   "match_id": "20261105-UECL-trabzonspor-freiburg",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Trabzonspor x Freiburg",
+   "prob": 0.6097,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": false,
+   "extra": true,
+   "message_id": 68
+  },
+  {
+   "id": "20261105-ARG-aldosivi-riverplate|2",
+   "match_id": "20261105-ARG-aldosivi-riverplate",
+   "key": "2",
+   "texto": "Vitória River Plate",
+   "jogo": "Aldosivi x River Plate",
+   "prob": 0.6401,
+   "odd_casa": 1.43,
+   "data": "2026-11-05",
+   "resultado": true,
+   "extra": true,
+   "message_id": 69
+  },
+  {
+   "id": "20261105-UEL-azalkmaar-juventus|2",
+   "match_id": "20261105-UEL-azalkmaar-juventus",
+   "key": "2",
+   "texto": "Vitória Juventus",
+   "jogo": "AZ Alkmaar x Juventus",
+   "prob": 0.4927,
+   "odd_casa": 1.95,
+   "data": "2026-11-05",
+   "resultado": true,
+   "extra": true,
+   "message_id": 70
+  },
+  {
+   "id": "20261105-UECL-getafe-brighton|2",
+   "match_id": "20261105-UECL-getafe-brighton",
+   "key": "2",
+   "texto": "Vitória Brighton",
+   "jogo": "Getafe x Brighton",
+   "prob": 0.5866,
+   "odd_casa": 1.53,
+   "data": "2026-11-05",
+   "resultado": true,
+   "extra": true,
+   "message_id": 71
+  },
+  {
+   "id": "20261105-ARG-gimnasialp-belgrano|under_2.5",
+   "match_id": "20261105-ARG-gimnasialp-belgrano",
+   "key": "under_2.5",
+   "texto": "Menos de 2.5 golos",
+   "jogo": "Gimnasia L.P. x Belgrano",
+   "prob": 0.5264,
+   "odd_casa": 1.74,
+   "data": "2026-11-05",
+   "resultado": false,
+   "extra": true,
+   "message_id": 72
+  },
+  {
+   "id": "20261106-BRA-cruzeiro-bahia|1",
+   "match_id": "20261106-BRA-cruzeiro-bahia",
+   "key": "1",
+   "texto": "Vitória Cruzeiro",
+   "jogo": "Cruzeiro x Bahia",
+   "prob": 0.5598,
+   "odd_casa": 1.68,
+   "data": "2026-11-05",
+   "resultado": true,
+   "tipo": "madrugada",
+   "extra": true,
+   "message_id": 76
+  },
+  {
+   "id": "20261106-E0-everton-coventry|combo:1X&under_3.5",
+   "match_id": "20261106-E0-everton-coventry",
+   "key": "combo:1X&under_3.5",
+   "texto": "Everton ou empate + Menos de 3.5 golos",
+   "jogo": "Everton x Coventry",
+   "prob": 0.5553,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": false,
+   "tipo": "odd_alta",
+   "message_id": 85
+  },
+  {
+   "id": "20261106-D1-hamburg-mgladbach|btts_sim",
+   "match_id": "20261106-D1-hamburg-mgladbach",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Hamburg x M'gladbach",
+   "prob": 0.5941,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": true,
+   "extra": true,
+   "message_id": 86
+  },
+  {
+   "id": "20261106-I1-venezia-udinese|btts_sim",
+   "match_id": "20261106-I1-venezia-udinese",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Venezia x Udinese",
+   "prob": 0.5454,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": true,
+   "extra": true,
+   "message_id": 87
+  },
+  {
+   "id": "20261106-P1-famalicao-arouca|cantos_over_9.5",
+   "match_id": "20261106-P1-famalicao-arouca",
+   "key": "cantos_over_9.5",
+   "texto": "Mais de 9.5 cantos",
+   "jogo": "Famalicao x Arouca",
+   "prob": 0.5458,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": true,
+   "extra": true,
+   "message_id": 88
+  },
+  {
+   "id": "20261107-P1-splisbon-moreirense|over_2.5",
+   "match_id": "20261107-P1-splisbon-moreirense",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Sp Lisbon x Moreirense",
+   "prob": 0.6361,
+   "odd_casa": 1.41,
+   "data": "2026-11-07",
+   "resultado": false,
+   "extra": true,
+   "message_id": 93
+  },
+  {
+   "id": "20261107-P1-alverca-casapia|1",
+   "match_id": "20261107-P1-alverca-casapia",
+   "key": "1",
+   "texto": "Vitória Alverca",
+   "jogo": "Alverca x Casa Pia",
+   "prob": 0.5321,
+   "odd_casa": 1.74,
+   "data": "2026-11-07",
+   "resultado": false,
+   "extra": true,
+   "message_id": 94
+  },
+  {
+   "id": "20261107-D1-stuttgart-werderbremen|over_2.5",
+   "match_id": "20261107-D1-stuttgart-werderbremen",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Stuttgart x Werder Bremen",
+   "prob": 0.6932,
+   "odd_casa": 1.31,
+   "data": "2026-11-07",
+   "resultado": false,
+   "extra": true,
+   "message_id": 95
+  },
+  {
+   "id": "20261107-E0-nottmforest-mancity|btts_sim",
+   "match_id": "20261107-E0-nottmforest-mancity",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Nott'm Forest x Man City",
+   "prob": 0.5698,
+   "odd_casa": null,
+   "data": "2026-11-07",
+   "resultado": true,
+   "extra": true,
+   "message_id": 96
+  },
+  {
+   "id": "20261107-I1-parma-bologna|over_2.5",
+   "match_id": "20261107-I1-parma-bologna",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Parma x Bologna",
+   "prob": 0.4725,
+   "odd_casa": 2.1,
+   "data": "2026-11-07",
+   "resultado": true,
+   "extra": true,
+   "message_id": 97
+  },
+  {
+   "id": "20261107-P1-nacional-academicoviseu|btts_sim",
+   "match_id": "20261107-P1-nacional-academicoviseu",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Nacional x Academico Viseu",
+   "prob": 0.527,
+   "odd_casa": null,
+   "data": "2026-11-07",
+   "resultado": null,
+   "extra": true,
+   "message_id": 98,
+   "anulada": "adiado"
+  },
+  {
+   "id": "20261107-E0-fulham-newcastle|btts_sim",
+   "match_id": "20261107-E0-fulham-newcastle",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Fulham x Newcastle",
+   "prob": 0.5918,
+   "odd_casa": null,
+   "data": "2026-11-07",
+   "resultado": true,
+   "extra": true,
+   "message_id": 99
+  },
+  {
+   "id": "20261107-E0-arsenal-hull|combo:1&btts_nao",
+   "match_id": "20261107-E0-arsenal-hull",
+   "key": "combo:1&btts_nao",
+   "texto": "Vitória Arsenal + Ambas não marcam",
+   "jogo": "Arsenal x Hull",
+   "prob": 0.4987,
+   "odd_casa": null,
+   "data": "2026-11-07",
+   "resultado": true,
+   "extra": true,
+   "message_id": 100
+  },
+  {
+   "id": "20261108-B1-gent-kortrijk|1",
+   "match_id": "20261108-B1-gent-kortrijk",
+   "key": "1",
+   "texto": "Vitória Gent",
+   "jogo": "Gent x Kortrijk",
+   "prob": 0.6765,
+   "odd_casa": 1.43,
+   "data": "2026-11-08",
+   "resultado": true,
+   "message_id": 110
+  },
+  {
+   "id": "20261108-N1-cambuur-psveindhoven|over_2.5",
+   "match_id": "20261108-N1-cambuur-psveindhoven",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Cambuur x PSV Eindhoven",
+   "prob": 0.7739,
+   "odd_casa": 1.25,
+   "data": "2026-11-08",
+   "resultado": null,
+   "message_id": 111,
+   "anulada": "suspenso"
+  },
+  {
+   "id": "20261108-P1-estrela-benfica|2",
+   "match_id": "20261108-P1-estrela-benfica",
+   "key": "2",
+   "texto": "Vitória Benfica",
+   "jogo": "Estrela x Benfica",
+   "prob": 0.7506,
+   "odd_casa": 1.24,
+   "data": "2026-11-08",
+   "resultado": true,
+   "message_id": 112
+  },
+  {
+   "id": "20261108-I1-monza-atalanta|btts_sim",
+   "match_id": "20261108-I1-monza-atalanta",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Monza x Atalanta",
+   "prob": 0.6208,
+   "odd_casa": null,
+   "data": "2026-11-08",
+   "resultado": false,
+   "extra": true,
+   "message_id": 113
+  },
+  {
+   "id": "20261108-E0-sunderland-chelsea|2",
+   "match_id": "20261108-E0-sunderland-chelsea",
+   "key": "2",
+   "texto": "Vitória Chelsea",
+   "jogo": "Sunderland x Chelsea",
+   "prob": 0.5658,
+   "odd_casa": 1.93,
+   "data": "2026-11-08",
+   "resultado": false,
+   "extra": true,
+   "message_id": 114
+  },
+  {
+   "id": "20261108-E0-ipswich-bournemouth|over_2.5",
+   "match_id": "20261108-E0-ipswich-bournemouth",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Ipswich x Bournemouth",
+   "prob": 0.5968,
+   "odd_casa": 1.67,
+   "data": "2026-11-08",
+   "resultado": true,
+   "extra": true,
+   "message_id": 115
+  },
+  {
+   "id": "20261108-I1-inter-como|btts_sim",
+   "match_id": "20261108-I1-inter-como",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Inter x Como",
+   "prob": 0.6261,
+   "odd_casa": null,
+   "data": "2026-11-08",
+   "resultado": false,
+   "tipo": "tardia",
+   "message_id": 122
+  },
+  {
+   "id": "20261108-B1-stgilloise-genk|1",
+   "match_id": "20261108-B1-stgilloise-genk",
+   "key": "1",
+   "texto": "Vitória St. Gilloise",
+   "jogo": "St. Gilloise x Genk",
+   "prob": 0.6179,
+   "odd_casa": 1.6,
+   "data": "2026-11-08",
+   "resultado": true,
+   "extra": true,
+   "message_id": 123
+  },
+  {
+   "id": "20261108-SP1-villarreal-getafe|1",
+   "match_id": "20261108-SP1-villarreal-getafe",
+   "key": "1",
+   "texto": "Vitória Villarreal",
+   "jogo": "Villarreal x Getafe",
+   "prob": 0.6568,
+   "odd_casa": 1.42,
+   "data": "2026-11-08",
+   "resultado": true,
+   "extra": true,
+   "message_id": 124
+  },
+  {
+   "id": "20261108-P1-guimaraes-porto|2",
+   "match_id": "20261108-P1-guimaraes-porto",
+   "key": "2",
+   "texto": "Vitória Porto",
+   "jogo": "Guimaraes x Porto",
+   "prob": 0.6384,
+   "odd_casa": 1.63,
+   "data": "2026-11-08",
+   "resultado": true,
+   "tipo": "tardia",
+   "message_id": 126
+  },
+  {
+   "id": "20261108-D1-hoffenheim-schalke04|cantos_over_9.5",
+   "match_id": "20261108-D1-hoffenheim-schalke04",
+   "key": "cantos_over_9.5",
+   "texto": "Mais de 9.5 cantos",
+   "jogo": "Hoffenheim x Schalke 04",
+   "prob": 0.5764,
+   "odd_casa": null,
+   "data": "2026-11-08",
+   "resultado": true,
+   "extra": true,
+   "message_id": 128
+  },
+  {
+   "id": "20261108-N1-utrecht-nijmegen|cantos_over_7.5",
+   "match_id": "20261108-N1-utrecht-nijmegen",
+   "key": "cantos_over_7.5",
+   "texto": "Mais de 7.5 cantos",
+   "jogo": "Utrecht x Nijmegen",
+   "prob": 0.6958,
+   "odd_casa": null,
+   "data": "2026-11-08",
+   "resultado": true,
+   "tipo": "tardia",
+   "extra": true,
+   "message_id": 129
+  },
+  {
+   "id": "20261108-I1-fiorentina-juventus|btts_sim",
+   "match_id": "20261108-I1-fiorentina-juventus",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Fiorentina x Juventus",
+   "prob": 0.5728,
+   "odd_casa": null,
+   "data": "2026-11-08",
+   "resultado": true,
+   "tipo": "tardia",
+   "extra": true,
+   "message_id": 130
+  }
+ ],
+ "multiplas": [
+  {
+   "data": "2026-11-01",
+   "partes": [
+    "20261101-E0-liverpool-arsenal|12",
+    "20261101-I1-juventus-napoli|12",
+    "20261101-I1-lecce-genoa|cartoes_under_4.5"
+   ],
+   "prob": 0.3464,
+   "message_id": 9,
+   "resultado": true
+  },
+  {
+   "data": "2026-11-02",
+   "partes": [
+    "20261102-P1-gilvicente-guimaraes|12",
+    "20261102-P1-benfica-alverca|over_2.5",
+    "20261102-I1-sassuolo-fiorentina|cantos_under_9.5"
+   ],
+   "prob": 0.3063,
+   "message_id": 19,
+   "resultado": false
+  },
+  {
+   "data": "2026-11-03",
+   "tipo": "segura",
+   "partes": [
+    "20261103-UCL-barcelona-astonvilla|over_2.5",
+    "20261103-UCL-galatasaray-stuttgart|btts_sim",
+    "20261103-UCL-villarreal-parissg|over_2.5"
+   ],
+   "pernas": [
+    {
+     "id": "20261103-UCL-barcelona-astonvilla|over_2.5",
+     "match_id": "20261103-UCL-barcelona-astonvilla",
+     "key": "over_2.5",
+     "prob": 0.8305,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-galatasaray-stuttgart|btts_sim",
+     "match_id": "20261103-UCL-galatasaray-stuttgart",
+     "key": "btts_sim",
+     "prob": 0.7007,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-villarreal-parissg|over_2.5",
+     "match_id": "20261103-UCL-villarreal-parissg",
+     "key": "over_2.5",
+     "prob": 0.6767,
+     "odd_casa": null
+    }
+   ],
+   "prob": 0.3938,
+   "message_id": 37,
+   "resultado": false
+  },
+  {
+   "data": "2026-11-03",
+   "tipo": "turbo",
+   "partes": [
+    "20261103-UCL-barcelona-astonvilla|over_2.5",
+    "20261103-UCL-galatasaray-stuttgart|btts_sim",
+    "20261103-UCL-villarreal-parissg|over_2.5",
+    "20261103-UCL-feyenoord-inter|over_2.5",
+    "20261103-UCL-athmadrid-bayernmunich|btts_sim"
+   ],
+   "pernas": [
+    {
+     "id": "20261103-UCL-barcelona-astonvilla|over_2.5",
+     "match_id": "20261103-UCL-barcelona-astonvilla",
+     "key": "over_2.5",
+     "prob": 0.8305,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-galatasaray-stuttgart|btts_sim",
+     "match_id": "20261103-UCL-galatasaray-stuttgart",
+     "key": "btts_sim",
+     "prob": 0.7007,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-villarreal-parissg|over_2.5",
+     "match_id": "20261103-UCL-villarreal-parissg",
+     "key": "over_2.5",
+     "prob": 0.6767,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-feyenoord-inter|over_2.5",
+     "match_id": "20261103-UCL-feyenoord-inter",
+     "key": "over_2.5",
+     "prob": 0.6609,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-athmadrid-bayernmunich|btts_sim",
+     "match_id": "20261103-UCL-athmadrid-bayernmunich",
+     "key": "btts_sim",
+     "prob": 0.6584,
+     "odd_casa": null
+    }
+   ],
+   "prob": 0.1714,
+   "message_id": 38,
+   "resultado": false
+  },
+  {
+   "data": "2026-11-04",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261104-UCL-psveindhoven-clubbrugge|over_2.5",
+    "20261104-UCL-aek-realmadrid|2",
+    "20261104-BRA-flamengorj-gremio|over_2.5"
+   ],
+   "pernas": [
+    {
+     "id": "20261104-UCL-psveindhoven-clubbrugge|over_2.5",
+     "match_id": "20261104-UCL-psveindhoven-clubbrugge",
+     "key": "over_2.5",
+     "prob": 0.7167,
+     "odd_casa": null,
+     "jogo": "PSV Eindhoven x Club Brugge",
+     "texto": "Mais de 2.5 golos"
+    },
+    {
+     "id": "20261104-UCL-aek-realmadrid|2",
+     "match_id": "20261104-UCL-aek-realmadrid",
+     "key": "2",
+     "prob": 0.7056,
+     "odd_casa": 1.22,
+     "jogo": "AEK x Real Madrid",
+     "texto": "Vitória Real Madrid"
+    },
+    {
+     "id": "20261104-BRA-flamengorj-gremio|over_2.5",
+     "match_id": "20261104-BRA-flamengorj-gremio",
+     "key": "over_2.5",
+     "prob": 0.6944,
+     "odd_casa": null,
+     "jogo": "Flamengo RJ x Gremio",
+     "texto": "Mais de 2.5 golos"
+    }
+   ],
+   "prob": 0.3512,
+   "resultado": true,
+   "message_id": 51
+  },
+  {
+   "data": "2026-11-04",
+   "tipo": "turbo",
+   "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+   "partes": [
+    "20261104-UCL-fenerbahce-liverpool|over_2.5",
+    "20261104-UCL-psveindhoven-clubbrugge|btts_sim",
+    "20261104-UCL-aek-realmadrid|over_2.5"
+   ],
+   "pernas": [
+    {
+     "id": "20261104-UCL-fenerbahce-liverpool|over_2.5",
+     "match_id": "20261104-UCL-fenerbahce-liverpool",
+     "key": "over_2.5",
+     "prob": 0.6808,
+     "odd_casa": null,
+     "jogo": "Fenerbahce x Liverpool",
+     "texto": "Mais de 2.5 golos",
+     "porque": "golos esperados 1.3 – 2.2"
+    },
+    {
+     "id": "20261104-UCL-psveindhoven-clubbrugge|btts_sim",
+     "match_id": "20261104-UCL-psveindhoven-clubbrugge",
+     "key": "btts_sim",
+     "prob": 0.6977,
+     "odd_casa": null,
+     "jogo": "PSV Eindhoven x Club Brugge",
+     "texto": "Ambas marcam",
+     "porque": "golos esperados 2.2 – 1.6"
+    },
+    {
+     "id": "20261104-UCL-aek-realmadrid|over_2.5",
+     "match_id": "20261104-UCL-aek-realmadrid",
+     "key": "over_2.5",
+     "prob": 0.6844,
+     "odd_casa": null,
+     "jogo": "AEK x Real Madrid",
+     "texto": "Mais de 2.5 golos",
+     "porque": "golos esperados 1.1 – 2.5"
+    }
+   ],
+   "prob": 0.3251,
+   "resultado": true,
+   "message_id": 54
+  },
+  {
+   "data": "2026-11-05",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261105-BRA-palmeiras-remo|1",
+    "20261105-UEL-leverkusen-marseille|over_2.5",
+    "20261105-UEL-celtic-besiktas|btts_sim"
+   ],
+   "pernas": [
+    {
+     "id": "20261105-BRA-palmeiras-remo|1",
+     "match_id": "20261105-BRA-palmeiras-remo",
+     "key": "1",
+     "prob": 0.7884,
+     "odd_casa": 1.21,
+     "jogo": "Palmeiras x Remo",
+     "texto": "Vitória Palmeiras"
+    },
+    {
+     "id": "20261105-UEL-leverkusen-marseille|over_2.5",
+     "match_id": "20261105-UEL-leverkusen-marseille",
+     "key": "over_2.5",
+     "prob": 0.7125,
+     "odd_casa": null,
+     "jogo": "Leverkusen x Marseille",
+     "texto": "Mais de 2.5 golos"
+    },
+    {
+     "id": "20261105-UEL-celtic-besiktas|btts_sim",
+     "match_id": "20261105-UEL-celtic-besiktas",
+     "key": "btts_sim",
+     "prob": 0.6479,
+     "odd_casa": null,
+     "jogo": "Celtic x Besiktas",
+     "texto": "Ambas marcam"
+    }
+   ],
+   "prob": 0.3639,
+   "resultado": false,
+   "message_id": 66
+  },
+  {
+   "data": "2026-11-05",
+   "tipo": "turbo",
+   "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+   "partes": [
+    "20261105-UEL-crystalpalace-hoffenheim|under_3.5",
+    "20261105-UEL-celta-stgilloise|cantos_under_9.5",
+    "20261105-ARG-aldosivi-riverplate|2",
+    "20261105-UEL-leverkusen-marseille|1"
+   ],
+   "pernas": [
+    {
+     "id": "20261105-UEL-crystalpalace-hoffenheim|under_3.5",
+     "match_id": "20261105-UEL-crystalpalace-hoffenheim",
+     "key": "under_3.5",
+     "prob": 0.6081,
+     "odd_casa": 1.71,
+     "jogo": "Crystal Palace x Hoffenheim",
+     "texto": "Menos de 3.5 golos",
+     "porque": "golos esperados 1.8 – 1.4"
+    },
+    {
+     "id": "20261105-UEL-celta-stgilloise|cantos_under_9.5",
+     "match_id": "20261105-UEL-celta-stgilloise",
+     "key": "cantos_under_9.5",
+     "prob": 0.644,
+     "odd_casa": null,
+     "jogo": "Celta x St. Gilloise",
+     "texto": "Menos de 9.5 cantos",
+     "porque": "cantos esperados 7.5"
+    },
+    {
+     "id": "20261105-ARG-aldosivi-riverplate|2",
+     "match_id": "20261105-ARG-aldosivi-riverplate",
+     "key": "2",
+     "prob": 0.6401,
+     "odd_casa": 1.43,
+     "jogo": "Aldosivi x River Plate",
+     "texto": "Vitória River Plate",
+     "porque": "golos esperados 0.8 – 1.8 · River Plate 3V em 6"
+    },
+    {
+     "id": "20261105-UEL-leverkusen-marseille|1",
+     "match_id": "20261105-UEL-leverkusen-marseille",
+     "key": "1",
+     "prob": 0.6803,
+     "odd_casa": 1.31,
+     "jogo": "Leverkusen x Marseille",
+     "texto": "Vitória Leverkusen",
+     "porque": "golos esperados 2.5 – 1.2 · Leverkusen 3V em 6"
+    }
+   ],
+   "prob": 0.1705,
+   "resultado": false,
+   "message_id": 67
+  }
+ ],
+ "balancos": [
+  "2026-11-02",
+  "2026-11-09"
+ ],
+ "resumos": [
+  "2026-11-01",
+  "2026-11-02",
+  "2026-11-03",
+  "2026-11-04",
+  "2026-11-05",
+  "2026-11-06",
+  "2026-11-07",
+  "2026-11-08"
+ ],
+ "offset": 892007170,
+ "ignorados": [],
+ "pendentes": [
+  {
+   "pid": "0700054552",
+   "origem": "resumo",
+   "data": "2026-11-07",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true
+   },
+   "texto": "📊 <b>RESUMO DE 06/11</b>\n\n🟢 3 Green · 🔴 1 Red\n💶 Lucro: <b>+135 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T00:05:45.480930",
+   "estado": "publicada",
+   "admin_msg": 61
+  },
+  {
+   "pid": "0711100650",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-D1-mainz-bayernmunich|2",
+    "match_id": "20261107-D1-mainz-bayernmunich",
+    "key": "2",
+    "texto": "Vitória Bayern Munich",
+    "jogo": "Mainz x Bayern Munich",
+    "prob": 0.7635,
+    "odd_casa": 1.31,
+    "data": "2026-11-07",
+    "resultado": null
+   },
+   "texto": "🇩🇪 <b>BUNDESLIGA – SÁBADO 07/11</b>\nMainz x Bayern Munich | 14h30\n\n✅ <b>Dica: Vitória Bayern Munich</b>\n💰 Odd: <b>1.31</b>\n\n📊 Golos esperados: Mainz 1.1 – Bayern Munich 2.9\n📊 Mainz: 2 vitórias nos últimos 6 jogos, xG 12.6 contra 11.0\n📊 Bayern Munich: 4 vitórias nos últimos 6 jogos, xG 22.3 contra 6.2\n🚑 Bayern Munich sem Gnabry\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T14:30:00",
+   "estado": "expirada",
+   "admin_msg": 62
+  },
+  {
+   "pid": "0711100651",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-D1-rbleipzig-augsburg|over_2.5",
+    "match_id": "20261107-D1-rbleipzig-augsburg",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "RB Leipzig x Augsburg",
+    "prob": 0.7303,
+    "odd_casa": 1.25,
+    "data": "2026-11-07",
+    "resultado": null
+   },
+   "texto": "🇩🇪 <b>BUNDESLIGA – SÁBADO 07/11</b>\nRB Leipzig x Augsburg | 14h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.25</b>\n\n📊 Golos esperados: RB Leipzig 2.6 – Augsburg 1.2\n📊 RB Leipzig: 4 vitórias nos últimos 6 jogos, xG 14.8 contra 9.5\n📊 Augsburg: 0 vitórias nos últimos 6 jogos, xG 11.6 contra 16.6\n🚑 RB Leipzig sem Ouédraogo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T14:30:00",
+   "estado": "expirada",
+   "admin_msg": 63
+  },
+  {
+   "pid": "0711100652",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-I1-roma-sassuolo|1",
+    "match_id": "20261107-I1-roma-sassuolo",
+    "key": "1",
+    "texto": "Vitória Roma",
+    "jogo": "Roma x Sassuolo",
+    "prob": 0.7576,
+    "odd_casa": 1.29,
+    "data": "2026-11-07",
+    "resultado": null
+   },
+   "texto": "🇮🇹 <b>SERIE A – SÁBADO 07/11</b>\nRoma x Sassuolo | 19h45\n\n✅ <b>Dica: Vitória Roma</b>\n💰 Odd: <b>1.29</b>\n\n📊 Golos esperados: Roma 2.8 – Sassuolo 1.0\n📊 Roma: 3 vitórias nos últimos 6 jogos, xG 11.6 contra 11.0\n📊 Sassuolo: 0 vitórias nos últimos 6 jogos, xG 6.6 contra 12.9\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T19:45:00",
+   "estado": "expirada",
+   "admin_msg": 64
+  },
+  {
+   "pid": "0711100753",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-USA-intermiami-charlotte|over_2.5",
+    "match_id": "20261107-USA-intermiami-charlotte",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Inter Miami x Charlotte",
+    "prob": 0.7454,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null
+   },
+   "texto": "🇺🇸 <b>MLS – SÁBADO 07/11</b>\nInter Miami x Charlotte | 21h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.34</b> (mínima com valor)\n\n📊 Golos esperados: Inter Miami 2.6 – Charlotte 1.4\n📊 Inter Miami: 4 vitórias nos últimos 6 jogos\n📊 Charlotte: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T21:00:00",
+   "estado": "expirada",
+   "admin_msg": 65
+  },
+  {
+   "pid": "0711100754",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-USA-newyorkredbulls-atlantautd|under_3.5",
+    "match_id": "20261107-USA-newyorkredbulls-atlantautd",
+    "key": "under_3.5",
+    "texto": "Menos de 3.5 golos",
+    "jogo": "New York Red Bulls x Atlanta Utd",
+    "prob": 0.5719,
+    "odd_casa": 2.05,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "odd_alta"
+   },
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🇺🇸 <b>MLS – SÁBADO 07/11</b>\nNew York Red Bulls x Atlanta Utd | 21h00\n\n✅ <b>Dica: Menos de 3.5 golos</b>\n💰 Odd: <b>2.05</b>\n💡 A odd paga mais do que o risco real deste jogo\n\n📊 Golos esperados: New York Red Bulls 1.9 – Atlanta Utd 1.4\n📊 New York Red Bulls: 2 vitórias nos últimos 6 jogos\n📊 Atlanta Utd: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T21:00:00",
+   "estado": "expirada",
+   "admin_msg": 66
+  },
+  {
+   "pid": "0711100755",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-07",
+    "tipo": "segura",
+    "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+    "partes": [
+     "20261107-D1-mainz-bayernmunich|2",
+     "20261107-I1-roma-sassuolo|1",
+     "20261107-USA-intermiami-charlotte|over_2.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261107-D1-mainz-bayernmunich|2",
+      "match_id": "20261107-D1-mainz-bayernmunich",
+      "key": "2",
+      "prob": 0.7635,
+      "odd_casa": 1.31,
+      "jogo": "Mainz x Bayern Munich",
+      "texto": "Vitória Bayern Munich"
+     },
+     {
+      "id": "20261107-I1-roma-sassuolo|1",
+      "match_id": "20261107-I1-roma-sassuolo",
+      "key": "1",
+      "prob": 0.7576,
+      "odd_casa": 1.29,
+      "jogo": "Roma x Sassuolo",
+      "texto": "Vitória Roma"
+     },
+     {
+      "id": "20261107-USA-intermiami-charlotte|over_2.5",
+      "match_id": "20261107-USA-intermiami-charlotte",
+      "key": "over_2.5",
+      "prob": 0.7454,
+      "odd_casa": null,
+      "jogo": "Inter Miami x Charlotte",
+      "texto": "Mais de 2.5 golos"
+     }
+    ],
+    "prob": 0.4312,
+    "resultado": null
+   },
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Mainz x Bayern Munich: Vitória Bayern Munich (@1.31)\n• Roma x Sassuolo: Vitória Roma (@1.29)\n• Inter Miami x Charlotte: Mais de 2.5 golos (@1.34)\n\n💰 Odd total: <b>2.27</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T14:30:00",
+   "estado": "expirada",
+   "admin_msg": 67
+  },
+  {
+   "pid": "0711100856",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-07",
+    "tipo": "turbo",
+    "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+    "partes": [
+     "20261107-D1-paderborn-einfrankfurt|under_3.5",
+     "20261107-D1-rbleipzig-augsburg|over_2.5",
+     "20261107-D1-dortmund-elversberg|1",
+     "20261107-D1-stuttgart-werderbremen|over_2.5",
+     "20261107-USA-orlandocity-newenglandrevolution|over_2.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261107-D1-paderborn-einfrankfurt|under_3.5",
+      "match_id": "20261107-D1-paderborn-einfrankfurt",
+      "key": "under_3.5",
+      "prob": 0.6437,
+      "odd_casa": 1.69,
+      "jogo": "Paderborn x Ein Frankfurt",
+      "texto": "Menos de 3.5 golos",
+      "porque": "golos esperados 1.4 – 1.6"
+     },
+     {
+      "id": "20261107-D1-rbleipzig-augsburg|over_2.5",
+      "match_id": "20261107-D1-rbleipzig-augsburg",
+      "key": "over_2.5",
+      "prob": 0.7303,
+      "odd_casa": 1.25,
+      "jogo": "RB Leipzig x Augsburg",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 2.6 – 1.2"
+     },
+     {
+      "id": "20261107-D1-dortmund-elversberg|1",
+      "match_id": "20261107-D1-dortmund-elversberg",
+      "key": "1",
+      "prob": 0.7228,
+      "odd_casa": 1.3,
+      "jogo": "Dortmund x Elversberg",
+      "texto": "Vitória Dortmund",
+      "porque": "golos esperados 2.7 – 1.1 · Dortmund 3V em 6"
+     },
+     {
+      "id": "20261107-D1-stuttgart-werderbremen|over_2.5",
+      "match_id": "20261107-D1-stuttgart-werderbremen",
+      "key": "over_2.5",
+      "prob": 0.6932,
+      "odd_casa": 1.31,
+      "jogo": "Stuttgart x Werder Bremen",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 2.3 – 1.4"
+     },
+     {
+      "id": "20261107-USA-orlandocity-newenglandrevolution|over_2.5",
+      "match_id": "20261107-USA-orlandocity-newenglandrevolution",
+      "key": "over_2.5",
+      "prob": 0.6916,
+      "odd_casa": null,
+      "jogo": "Orlando City x New England Revolution",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 2.0 – 1.6"
+     }
+    ],
+    "prob": 0.1629,
+    "resultado": null
+   },
+   "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• Paderborn x Ein Frankfurt: Menos de 3.5 golos (@1.69)\n   <i>↳ golos esperados 1.4 – 1.6</i>\n• RB Leipzig x Augsburg: Mais de 2.5 golos (@1.25)\n   <i>↳ golos esperados 2.6 – 1.2</i>\n• Dortmund x Elversberg: Vitória Dortmund (@1.30)\n   <i>↳ golos esperados 2.7 – 1.1 · Dortmund 3V em 6</i>\n• Stuttgart x Werder Bremen: Mais de 2.5 golos (@1.31)\n   <i>↳ golos esperados 2.3 – 1.4</i>\n• Orlando City x New England Revolution: Mais de 2.5 golos (@1.45)\n   <i>↳ golos esperados 2.0 – 1.6</i>\n\n💰 Odd total: <b>5.20</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T14:30:00",
+   "estado": "expirada",
+   "admin_msg": 68
+  },
+  {
+   "pid": "0711100857",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-E0-leeds-tottenham|btts_sim",
+    "match_id": "20261107-E0-leeds-tottenham",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Leeds x Tottenham",
+    "prob": 0.5512,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 07/11</b>\nLeeds x Tottenham | 12h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.81</b> (mínima com valor)\n\n📊 Golos esperados: Leeds 1.4 – Tottenham 1.3\n📊 Leeds: 1 vitória nos últimos 6 jogos, xG 6.7 contra 7.3\n📊 Tottenham: 3 vitórias nos últimos 6 jogos, xG 9.0 contra 4.5\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T12:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 69
+  },
+  {
+   "pid": "0711100858",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-I1-cagliari-frosinone|cantos_over_9.5",
+    "match_id": "20261107-I1-cagliari-frosinone",
+    "key": "cantos_over_9.5",
+    "texto": "Mais de 9.5 cantos",
+    "jogo": "Cagliari x Frosinone",
+    "prob": 0.6507,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇮🇹 <b>SERIE A – SÁBADO 07/11</b>\nCagliari x Frosinone | 14h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.54</b> (mínima com valor)\n\n📊 Golos esperados: Cagliari 1.3 – Frosinone 1.9\n📊 Cagliari: 1 vitória nos últimos 6 jogos, xG 8.1 contra 11.7\n📊 Frosinone: 4 vitórias nos últimos 6 jogos, xG 12.0 contra 13.0\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T14:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 70
+  },
+  {
+   "pid": "0711100959",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-I1-torino-lecce|1",
+    "match_id": "20261107-I1-torino-lecce",
+    "key": "1",
+    "texto": "Vitória Torino",
+    "jogo": "Torino x Lecce",
+    "prob": 0.5582,
+    "odd_casa": 1.8,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇮🇹 <b>SERIE A – SÁBADO 07/11</b>\nTorino x Lecce | 14h00\n\n✅ <b>Dica: Vitória Torino</b>\n💰 Odd: <b>1.80</b>\n\n📊 Golos esperados: Torino 1.8 – Lecce 1.0\n📊 Torino: 3 vitórias nos últimos 6 jogos, xG 7.8 contra 7.6\n📊 Lecce: 1 vitória nos últimos 6 jogos, xG 8.7 contra 10.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T14:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 71
+  },
+  {
+   "pid": "0711100960",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-D1-dortmund-elversberg|1",
+    "match_id": "20261107-D1-dortmund-elversberg",
+    "key": "1",
+    "texto": "Vitória Dortmund",
+    "jogo": "Dortmund x Elversberg",
+    "prob": 0.7228,
+    "odd_casa": 1.3,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇩🇪 <b>BUNDESLIGA – SÁBADO 07/11</b>\nDortmund x Elversberg | 14h30\n\n✅ <b>Dica: Vitória Dortmund</b>\n💰 Odd: <b>1.30</b>\n\n📊 Golos esperados: Dortmund 2.7 – Elversberg 1.1\n📊 Dortmund: 3 vitórias nos últimos 6 jogos, xG 8.8 contra 8.6\n📊 Elversberg: 2 vitórias nos últimos 6 jogos, xG 7.7 contra 12.9\n🚑 Dortmund sem Can\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T14:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 72
+  },
+  {
+   "pid": "0711100961",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-D1-paderborn-einfrankfurt|btts_sim",
+    "match_id": "20261107-D1-paderborn-einfrankfurt",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Paderborn x Ein Frankfurt",
+    "prob": 0.6104,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇩🇪 <b>BUNDESLIGA – SÁBADO 07/11</b>\nPaderborn x Ein Frankfurt | 14h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.64</b> (mínima com valor)\n\n📊 Golos esperados: Paderborn 1.4 – Ein Frankfurt 1.6\n📊 Paderborn: 2 vitórias nos últimos 6 jogos, xG 6.6 contra 10.7\n📊 Ein Frankfurt: 3 vitórias nos últimos 6 jogos, xG 10.3 contra 12.6\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T14:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 73
+  },
+  {
+   "pid": "0711101062",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-E0-arsenal-hull|combo:1&btts_nao",
+    "match_id": "20261107-E0-arsenal-hull",
+    "key": "combo:1&btts_nao",
+    "texto": "Vitória Arsenal + Ambas não marcam",
+    "jogo": "Arsenal x Hull",
+    "prob": 0.4987,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 07/11</b>\nArsenal x Hull | 15h00\n\n✅ <b>Dica: Vitória Arsenal + Ambas não marcam</b>\n💰 Odd: <b>2.01</b> (mínima com valor)\n\n📊 Golos esperados: Arsenal 2.1 – Hull 0.6\n📊 Arsenal: 5 vitórias nos últimos 6 jogos, xG 9.9 contra 6.3\n📊 Hull: 0 vitórias nos últimos 6 jogos, xG 6.8 contra 8.2\n🚑 Arsenal sem Saka\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T15:00:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 74
+  },
+  {
+   "pid": "0711101063",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-E0-fulham-newcastle|btts_sim",
+    "match_id": "20261107-E0-fulham-newcastle",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Fulham x Newcastle",
+    "prob": 0.5918,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 07/11</b>\nFulham x Newcastle | 15h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.69</b> (mínima com valor)\n\n📊 Golos esperados: Fulham 1.6 – Newcastle 1.3\n📊 Fulham: 2 vitórias nos últimos 6 jogos, xG 8.3 contra 6.5\n📊 Newcastle: 2 vitórias nos últimos 6 jogos, xG 7.5 contra 10.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T15:00:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 75
+  },
+  {
+   "pid": "0711101064",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-P1-nacional-academicoviseu|btts_sim",
+    "match_id": "20261107-P1-nacional-academicoviseu",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Nacional x Academico Viseu",
+    "prob": 0.527,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇵🇹 <b>LIGA PORTUGAL – SÁBADO 07/11</b>\nNacional x Academico Viseu | 15h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.90</b> (mínima com valor)\n\n📊 Golos esperados: Nacional 1.1 – Academico Viseu 1.4\n📊 Nacional: 1 vitória nos últimos 6 jogos, xG 5.5 contra 9.6\n📊 Academico Viseu: 6 vitórias nos últimos 6 jogos, xG 7.1 contra 9.5\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T15:30:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 76
+  },
+  {
+   "pid": "0711101265",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-I1-parma-bologna|over_2.5",
+    "match_id": "20261107-I1-parma-bologna",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Parma x Bologna",
+    "prob": 0.4725,
+    "odd_casa": 2.1,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇮🇹 <b>SERIE A – SÁBADO 07/11</b>\nParma x Bologna | 17h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>2.10</b>\n\n📊 Golos esperados: Parma 0.9 – Bologna 1.5\n📊 Parma: 2 vitórias nos últimos 6 jogos, xG 4.7 contra 10.4\n📊 Bologna: 4 vitórias nos últimos 6 jogos, xG 9.7 contra 9.9\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T17:00:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 77
+  },
+  {
+   "pid": "0711101266",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-E0-nottmforest-mancity|btts_sim",
+    "match_id": "20261107-E0-nottmforest-mancity",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Nott'm Forest x Man City",
+    "prob": 0.5698,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 07/11</b>\nNott&#x27;m Forest x Man City | 17h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.76</b> (mínima com valor)\n\n📊 Golos esperados: Nott&#x27;m Forest 1.1 – Man City 1.8\n📊 Nott&#x27;m Forest: 1 vitória nos últimos 6 jogos, xG 10.8 contra 6.0\n📊 Man City: 4 vitórias nos últimos 6 jogos, xG 11.9 contra 8.8\n🚑 Man City sem Semenyo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T17:30:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 78
+  },
+  {
+   "pid": "0711101267",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-D1-stuttgart-werderbremen|over_2.5",
+    "match_id": "20261107-D1-stuttgart-werderbremen",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Stuttgart x Werder Bremen",
+    "prob": 0.6932,
+    "odd_casa": 1.31,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇩🇪 <b>BUNDESLIGA – SÁBADO 07/11</b>\nStuttgart x Werder Bremen | 17h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.31</b>\n\n📊 Golos esperados: Stuttgart 2.3 – Werder Bremen 1.4\n📊 Stuttgart: 2 vitórias nos últimos 6 jogos, xG 11.9 contra 11.9\n📊 Werder Bremen: 3 vitórias nos últimos 6 jogos, xG 12.2 contra 9.1\n🚑 Stuttgart sem Stiller, Vagnoman\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T17:30:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 79
+  },
+  {
+   "pid": "0711101368",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-ARG-tallerescordoba-estudianteslp|under_2.5",
+    "match_id": "20261107-ARG-tallerescordoba-estudianteslp",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Talleres Cordoba x Estudiantes L.P.",
+    "prob": 0.5464,
+    "odd_casa": 1.62,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇦🇷 <b>LIGA ARGENTINA – SÁBADO 07/11</b>\nTalleres Cordoba x Estudiantes L.P. | 18h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.62</b>\n\n📊 Golos esperados: Talleres Cordoba 1.2 – Estudiantes L.P. 1.1\n📊 Talleres Cordoba: 1 vitória nos últimos 6 jogos\n📊 Estudiantes L.P.: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T18:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 80
+  },
+  {
+   "pid": "0711101369",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-ARG-gimnasiamendoza-indrivadavia|under_2.5",
+    "match_id": "20261107-ARG-gimnasiamendoza-indrivadavia",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Gimnasia Mendoza x Ind. Rivadavia",
+    "prob": 0.5291,
+    "odd_casa": 1.61,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇦🇷 <b>LIGA ARGENTINA – SÁBADO 07/11</b>\nGimnasia Mendoza x Ind. Rivadavia | 18h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.61</b>\n\n📊 Golos esperados: Gimnasia Mendoza 1.1 – Ind. Rivadavia 1.3\n📊 Gimnasia Mendoza: 1 vitória nos últimos 6 jogos\n📊 Ind. Rivadavia: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T18:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 81
+  },
+  {
+   "pid": "0711101370",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-P1-alverca-casapia|1",
+    "match_id": "20261107-P1-alverca-casapia",
+    "key": "1",
+    "texto": "Vitória Alverca",
+    "jogo": "Alverca x Casa Pia",
+    "prob": 0.5321,
+    "odd_casa": 1.74,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇵🇹 <b>LIGA PORTUGAL – SÁBADO 07/11</b>\nAlverca x Casa Pia | 18h00\n\n✅ <b>Dica: Vitória Alverca</b>\n💰 Odd: <b>1.74</b>\n\n📊 Golos esperados: Alverca 1.6 – Casa Pia 0.9\n📊 Alverca: 3 vitórias nos últimos 6 jogos, xG 9.4 contra 8.8\n📊 Casa Pia: 2 vitórias nos últimos 6 jogos, xG 5.5 contra 11.0\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T18:00:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 82
+  },
+  {
+   "pid": "0711101471",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-P1-splisbon-moreirense|over_2.5",
+    "match_id": "20261107-P1-splisbon-moreirense",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Sp Lisbon x Moreirense",
+    "prob": 0.6361,
+    "odd_casa": 1.41,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇵🇹 <b>LIGA PORTUGAL – SÁBADO 07/11</b>\nSp Lisbon x Moreirense | 20h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.41</b>\n\n📊 Golos esperados: Sp Lisbon 2.6 – Moreirense 0.6\n📊 Sp Lisbon: 3 vitórias nos últimos 6 jogos, xG 12.4 contra 5.1\n📊 Moreirense: 3 vitórias nos últimos 6 jogos, xG 5.8 contra 9.0\n🚑 Sp Lisbon sem Debast, Santos\n🚑 Moreirense sem Duville-Parsemain, Domingues\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T20:30:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 83
+  },
+  {
+   "pid": "0711101472",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-ARG-argentinosjrs-huracan|under_2.5",
+    "match_id": "20261107-ARG-argentinosjrs-huracan",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Argentinos Jrs x Huracan",
+    "prob": 0.6005,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇦🇷 <b>LIGA ARGENTINA – SÁBADO 07/11</b>\nArgentinos Jrs x Huracan | 20h30\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.67</b> (mínima com valor)\n\n📊 Golos esperados: Argentinos Jrs 1.3 – Huracan 0.8\n📊 Argentinos Jrs: 4 vitórias nos últimos 6 jogos\n📊 Huracan: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T20:30:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 84
+  },
+  {
+   "pid": "0711101473",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-ARG-bocajuniors-defensayjusticia|1",
+    "match_id": "20261107-ARG-bocajuniors-defensayjusticia",
+    "key": "1",
+    "texto": "Vitória Boca Juniors",
+    "jogo": "Boca Juniors x Defensa y Justicia",
+    "prob": 0.6816,
+    "odd_casa": 1.37,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇦🇷 <b>LIGA ARGENTINA – SÁBADO 07/11</b>\nBoca Juniors x Defensa y Justicia | 20h30\n\n✅ <b>Dica: Vitória Boca Juniors</b>\n💰 Odd: <b>1.37</b>\n\n📊 Golos esperados: Boca Juniors 1.9 – Defensa y Justicia 0.7\n📊 Boca Juniors: 5 vitórias nos últimos 6 jogos\n📊 Defensa y Justicia: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T20:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 85
+  },
+  {
+   "pid": "0711101574",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-ARG-rosariocentral-estudiantesriocuarto|btts_nao",
+    "match_id": "20261107-ARG-rosariocentral-estudiantesriocuarto",
+    "key": "btts_nao",
+    "texto": "Ambas não marcam",
+    "jogo": "Rosario Central x Estudiantes Rio Cuarto",
+    "prob": 0.6001,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇦🇷 <b>LIGA ARGENTINA – SÁBADO 07/11</b>\nRosario Central x Estudiantes Rio Cuarto | 20h30\n\n✅ <b>Dica: Ambas não marcam</b>\n💰 Odd: <b>1.67</b> (mínima com valor)\n\n📊 Golos esperados: Rosario Central 2.3 – Estudiantes Rio Cuarto 0.5\n📊 Rosario Central: 5 vitórias nos últimos 6 jogos\n📊 Estudiantes Rio Cuarto: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T20:30:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 86
+  },
+  {
+   "pid": "0711101575",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-USA-fccincinnati-nashvillesc|btts_sim",
+    "match_id": "20261107-USA-fccincinnati-nashvillesc",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "FC Cincinnati x Nashville SC",
+    "prob": 0.6528,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇺🇸 <b>MLS – SÁBADO 07/11</b>\nFC Cincinnati x Nashville SC | 21h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.53</b> (mínima com valor)\n\n📊 Golos esperados: FC Cincinnati 1.6 – Nashville SC 1.7\n📊 FC Cincinnati: 3 vitórias nos últimos 6 jogos\n📊 Nashville SC: 4 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T21:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 87
+  },
+  {
+   "pid": "0711101576",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-USA-cfmontreal-vancouverwhitecaps|over_2.5",
+    "match_id": "20261107-USA-cfmontreal-vancouverwhitecaps",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "CF Montreal x Vancouver Whitecaps",
+    "prob": 0.6525,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇺🇸 <b>MLS – SÁBADO 07/11</b>\nCF Montreal x Vancouver Whitecaps | 21h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.53</b> (mínima com valor)\n\n📊 Golos esperados: CF Montreal 1.2 – Vancouver Whitecaps 2.1\n📊 CF Montreal: 0 vitórias nos últimos 6 jogos\n📊 Vancouver Whitecaps: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T21:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 88
+  },
+  {
+   "pid": "0711101677",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-USA-chicagofire-columbuscrew|btts_sim",
+    "match_id": "20261107-USA-chicagofire-columbuscrew",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Chicago Fire x Columbus Crew",
+    "prob": 0.6617,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇺🇸 <b>MLS – SÁBADO 07/11</b>\nChicago Fire x Columbus Crew | 21h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.51</b> (mínima com valor)\n\n📊 Golos esperados: Chicago Fire 1.9 – Columbus Crew 1.5\n📊 Chicago Fire: 3 vitórias nos últimos 6 jogos\n📊 Columbus Crew: 5 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T21:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 89
+  },
+  {
+   "pid": "0711101678",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-USA-dcunited-newyorkcity|btts_sim",
+    "match_id": "20261107-USA-dcunited-newyorkcity",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "DC United x New York City",
+    "prob": 0.5668,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇺🇸 <b>MLS – SÁBADO 07/11</b>\nDC United x New York City | 21h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.76</b> (mínima com valor)\n\n📊 Golos esperados: DC United 1.2 – New York City 1.5\n📊 DC United: 1 vitória nos últimos 6 jogos\n📊 New York City: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T21:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 90
+  },
+  {
+   "pid": "0711101679",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-USA-philadelphiaunion-torontofc|over_2.5",
+    "match_id": "20261107-USA-philadelphiaunion-torontofc",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Philadelphia Union x Toronto FC",
+    "prob": 0.6911,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇺🇸 <b>MLS – SÁBADO 07/11</b>\nPhiladelphia Union x Toronto FC | 21h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.45</b> (mínima com valor)\n\n📊 Golos esperados: Philadelphia Union 2.4 – Toronto FC 1.2\n📊 Philadelphia Union: 2 vitórias nos últimos 6 jogos\n📊 Toronto FC: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T21:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 91
+  },
+  {
+   "pid": "0711101780",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-USA-orlandocity-newenglandrevolution|over_2.5",
+    "match_id": "20261107-USA-orlandocity-newenglandrevolution",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Orlando City x New England Revolution",
+    "prob": 0.6916,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇺🇸 <b>MLS – SÁBADO 07/11</b>\nOrlando City x New England Revolution | 21h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.45</b> (mínima com valor)\n\n📊 Golos esperados: Orlando City 2.0 – New England Revolution 1.6\n📊 Orlando City: 2 vitórias nos últimos 6 jogos\n📊 New England Revolution: 4 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T21:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 92
+  },
+  {
+   "pid": "0711101781",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-MEX-tigresuanl-cruzazul|btts_sim",
+    "match_id": "20261107-MEX-tigresuanl-cruzazul",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Tigres UANL x Cruz Azul",
+    "prob": 0.5862,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇲🇽 <b>LIGA MX – SÁBADO 07/11</b>\nTigres UANL x Cruz Azul | 23h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.71</b> (mínima com valor)\n\n📊 Golos esperados: Tigres UANL 1.4 – Cruz Azul 1.5\n📊 Tigres UANL: 2 vitórias nos últimos 6 jogos\n📊 Cruz Azul: 4 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T23:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 93
+  },
+  {
+   "pid": "0711101782",
+   "origem": "dicas",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-MEX-atlas-pachuca|btts_sim",
+    "match_id": "20261107-MEX-atlas-pachuca",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Atlas x Pachuca",
+    "prob": 0.5887,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇲🇽 <b>LIGA MX – SÁBADO 07/11</b>\nAtlas x Pachuca | 23h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.70</b> (mínima com valor)\n\n📊 Golos esperados: Atlas 1.5 – Pachuca 1.4\n📊 Atlas: 4 vitórias nos últimos 6 jogos\n📊 Pachuca: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T23:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 94
+  },
+  {
+   "pid": "0717011283",
+   "origem": "resultado",
+   "data": "2026-11-07",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 99,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Ambas marcam\nFulham 1-1 Newcastle",
+   "expira": "2026-11-08T17:01:12.560903",
+   "estado": "publicada",
+   "admin_msg": 105
+  },
+  {
+   "pid": "0717011384",
+   "origem": "resultado",
+   "data": "2026-11-07",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 100,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Arsenal + Ambas não marcam\nArsenal 1-0 Hull",
+   "expira": "2026-11-08T17:01:13.214275",
+   "estado": "publicada",
+   "admin_msg": 106
+  },
+  {
+   "pid": "0717271785",
+   "origem": "tardia",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-ARG-tallerescordoba-estudianteslp|under_2.5",
+    "match_id": "20261107-ARG-tallerescordoba-estudianteslp",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Talleres Cordoba x Estudiantes L.P.",
+    "prob": 0.5464,
+    "odd_casa": 1.62,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇦🇷 <b>LIGA ARGENTINA – SÁBADO 07/11</b>\nTalleres Cordoba x Estudiantes L.P. | 18h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.62</b>\n\n📊 Golos esperados: Talleres Cordoba 1.2 – Estudiantes L.P. 1.1\n📊 Talleres Cordoba: 1 vitória nos últimos 6 jogos\n📊 Estudiantes L.P.: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T18:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 107
+  },
+  {
+   "pid": "0717271786",
+   "origem": "tardia",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261107-ARG-gimnasiamendoza-indrivadavia|under_2.5",
+    "match_id": "20261107-ARG-gimnasiamendoza-indrivadavia",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Gimnasia Mendoza x Ind. Rivadavia",
+    "prob": 0.5291,
+    "odd_casa": 1.61,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇦🇷 <b>LIGA ARGENTINA – SÁBADO 07/11</b>\nGimnasia Mendoza x Ind. Rivadavia | 18h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.61</b>\n\n📊 Golos esperados: Gimnasia Mendoza 1.1 – Ind. Rivadavia 1.3\n📊 Gimnasia Mendoza: 1 vitória nos últimos 6 jogos\n📊 Ind. Rivadavia: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-07T18:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 108
+  },
+  {
+   "pid": "0719025587",
+   "origem": "resultado",
+   "data": "2026-11-07",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 97,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nParma 1-2 Bologna",
+   "expira": "2026-11-08T19:02:55.791428",
+   "estado": "publicada",
+   "admin_msg": 109
+  },
+  {
+   "pid": "0719112688",
+   "origem": "adiado",
+   "data": "2026-11-07",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 98,
+    "resumo": false
+   },
+   "texto": "⏸️ <b>JOGO ADIADO</b>\nNacional x Academico Viseu\n\nA dica <b>Ambas marcam</b> fica sem efeito e não conta para o Green/Red. Nas casas de apostas, as apostas em jogos adiados ou cancelados costumam ser anuladas e o valor devolvido (confirma as regras da tua casa).\n\nHá mais dicas a caminho! ⚽",
+   "expira": "2026-11-08T19:11:26.268042",
+   "estado": "publicada",
+   "admin_msg": 110
+  },
+  {
+   "pid": "0719283489",
+   "origem": "resultado",
+   "data": "2026-11-07",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 95,
+    "resumo": false
+   },
+   "texto": "❌ RED: Mais de 2.5 golos\nStuttgart 1-0 Werder Bremen",
+   "expira": "2026-11-08T19:28:34.857385",
+   "estado": "publicada",
+   "admin_msg": 111
+  },
+  {
+   "pid": "0719283590",
+   "origem": "resultado",
+   "data": "2026-11-07",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 96,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Ambas marcam\nNott&#x27;m Forest 3-1 Man City",
+   "expira": "2026-11-08T19:28:35.371121",
+   "estado": "publicada",
+   "admin_msg": 112
+  },
+  {
+   "pid": "0720025991",
+   "origem": "resultado",
+   "data": "2026-11-07",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 94,
+    "resumo": false
+   },
+   "texto": "❌ RED: Vitória Alverca\nAlverca 1-1 Casa Pia",
+   "expira": "2026-11-08T20:02:59.705483",
+   "estado": "publicada",
+   "admin_msg": 113
+  },
+  {
+   "pid": "0721045992",
+   "origem": "madrugada",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-USA-sandiegofc-sportingkansascity|over_2.5",
+    "match_id": "20261108-USA-sandiegofc-sportingkansascity",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "San Diego FC x Sporting Kansas City",
+    "prob": 0.7518,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "madrugada"
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – DOMINGO 08/11</b>\nSan Diego FC x Sporting Kansas City | 00h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.33</b> (mínima com valor)\n\n📊 Golos esperados: San Diego FC 2.7 – Sporting Kansas City 1.3\n📊 San Diego FC: 1 vitória nos últimos 6 jogos\n📊 Sporting Kansas City: 0 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T00:00:00",
+   "estado": "expirada",
+   "admin_msg": 114
+  },
+  {
+   "pid": "0721050093",
+   "origem": "madrugada",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-USA-minnesotaunited-sanjoseearthquakes|over_2.5",
+    "match_id": "20261108-USA-minnesotaunited-sanjoseearthquakes",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Minnesota United x San Jose Earthquakes",
+    "prob": 0.6781,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "madrugada"
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – DOMINGO 08/11</b>\nMinnesota United x San Jose Earthquakes | 00h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.47</b> (mínima com valor)\n\n📊 Golos esperados: Minnesota United 2.1 – San Jose Earthquakes 1.4\n📊 Minnesota United: 3 vitórias nos últimos 6 jogos\n📊 San Jose Earthquakes: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T00:00:00",
+   "estado": "expirada",
+   "admin_msg": 115
+  },
+  {
+   "pid": "0721050094",
+   "origem": "madrugada",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-USA-realsaltlake-losangelesgalaxy|over_2.5",
+    "match_id": "20261108-USA-realsaltlake-losangelesgalaxy",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Real Salt Lake x Los Angeles Galaxy",
+    "prob": 0.6619,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "madrugada"
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – DOMINGO 08/11</b>\nReal Salt Lake x Los Angeles Galaxy | 00h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.51</b> (mínima com valor)\n\n📊 Golos esperados: Real Salt Lake 2.0 – Los Angeles Galaxy 1.4\n📊 Real Salt Lake: 3 vitórias nos últimos 6 jogos\n📊 Los Angeles Galaxy: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T00:00:00",
+   "estado": "expirada",
+   "admin_msg": 116
+  },
+  {
+   "pid": "0721050195",
+   "origem": "madrugada",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-USA-austinfc-portlandtimbers|over_2.5",
+    "match_id": "20261108-USA-austinfc-portlandtimbers",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Austin FC x Portland Timbers",
+    "prob": 0.6515,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – DOMINGO 08/11</b>\nAustin FC x Portland Timbers | 00h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.53</b> (mínima com valor)\n\n📊 Golos esperados: Austin FC 1.4 – Portland Timbers 2.0\n📊 Austin FC: 1 vitória nos últimos 6 jogos\n📊 Portland Timbers: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T00:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 117
+  },
+  {
+   "pid": "0721050196",
+   "origem": "madrugada",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-USA-fcdallas-coloradorapids|btts_sim",
+    "match_id": "20261108-USA-fcdallas-coloradorapids",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "FC Dallas x Colorado Rapids",
+    "prob": 0.6145,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – DOMINGO 08/11</b>\nFC Dallas x Colorado Rapids | 00h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.63</b> (mínima com valor)\n\n📊 Golos esperados: FC Dallas 1.8 – Colorado Rapids 1.3\n📊 FC Dallas: 2 vitórias nos últimos 6 jogos\n📊 Colorado Rapids: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T00:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 118
+  },
+  {
+   "pid": "0721050297",
+   "origem": "madrugada",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-USA-houstondynamo-stlouiscity|btts_sim",
+    "match_id": "20261108-USA-houstondynamo-stlouiscity",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Houston Dynamo x St. Louis City",
+    "prob": 0.5961,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – DOMINGO 08/11</b>\nHouston Dynamo x St. Louis City | 00h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.68</b> (mínima com valor)\n\n📊 Golos esperados: Houston Dynamo 1.5 – St. Louis City 1.4\n📊 Houston Dynamo: 1 vitória nos últimos 6 jogos\n📊 St. Louis City: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T00:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 119
+  },
+  {
+   "pid": "0721050298",
+   "origem": "madrugada",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-USA-seattlesounders-losangelesfc|btts_sim",
+    "match_id": "20261108-USA-seattlesounders-losangelesfc",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Seattle Sounders x Los Angeles FC",
+    "prob": 0.5908,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – DOMINGO 08/11</b>\nSeattle Sounders x Los Angeles FC | 00h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.69</b> (mínima com valor)\n\n📊 Golos esperados: Seattle Sounders 1.6 – Los Angeles FC 1.3\n📊 Seattle Sounders: 1 vitória nos últimos 6 jogos\n📊 Los Angeles FC: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T00:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 120
+  },
+  {
+   "pid": "0721050399",
+   "origem": "madrugada",
+   "data": "2026-11-07",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-ARG-instituto-newellsoldboys|under_2.5",
+    "match_id": "20261108-ARG-instituto-newellsoldboys",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Instituto x Newells Old Boys",
+    "prob": 0.5566,
+    "odd_casa": null,
+    "data": "2026-11-07",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇦🇷 <b>LIGA ARGENTINA – DOMINGO 08/11</b>\nInstituto x Newells Old Boys | 01h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.80</b> (mínima com valor)\n\n📊 Golos esperados: Instituto 1.4 – Newells Old Boys 0.8\n📊 Instituto: 4 vitórias nos últimos 6 jogos\n📊 Newells Old Boys: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T01:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 121
+  },
+  {
+   "pid": "07222436100",
+   "origem": "resultado",
+   "data": "2026-11-07",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 93,
+    "resumo": false
+   },
+   "texto": "❌ RED: Mais de 2.5 golos\nSp Lisbon 1-0 Moreirense",
+   "expira": "2026-11-08T22:24:36.067538",
+   "estado": "publicada",
+   "admin_msg": 122
+  },
+  {
+   "pid": "08000159101",
+   "origem": "resumo",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true
+   },
+   "texto": "📊 <b>RESUMO DE 07/11</b>\n\n🟢 4 Green · 🔴 3 Red\n💶 Lucro: <b>+55 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-09T00:01:59.602254",
+   "estado": "publicada",
+   "admin_msg": 123
+  },
+  {
+   "pid": "0811091994",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-B1-gent-kortrijk|1",
+    "match_id": "20261108-B1-gent-kortrijk",
+    "key": "1",
+    "texto": "Vitória Gent",
+    "jogo": "Gent x Kortrijk",
+    "prob": 0.6765,
+    "odd_casa": 1.43,
+    "data": "2026-11-08",
+    "resultado": null
+   },
+   "texto": "🇧🇪 <b>LIGA BELGA – DOMINGO 08/11</b>\nGent x Kortrijk | 15h00\n\n✅ <b>Dica: Vitória Gent</b>\n💰 Odd: <b>1.43</b>\n\n📊 Golos esperados: Gent 2.0 – Kortrijk 0.8\n📊 Gent: 4 vitórias nos últimos 6 jogos, xG 8.2 contra 6.2\n📊 Kortrijk: 1 vitória nos últimos 6 jogos, xG 6.9 contra 9.7\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T15:00:00",
+   "estado": "publicada",
+   "admin_msg": 124
+  },
+  {
+   "pid": "0811091995",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-N1-cambuur-psveindhoven|over_2.5",
+    "match_id": "20261108-N1-cambuur-psveindhoven",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Cambuur x PSV Eindhoven",
+    "prob": 0.7739,
+    "odd_casa": 1.25,
+    "data": "2026-11-08",
+    "resultado": null
+   },
+   "texto": "🇳🇱 <b>EREDIVISIE – DOMINGO 08/11</b>\nCambuur x PSV Eindhoven | 15h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.25</b>\n\n📊 Golos esperados: Cambuur 1.4 – PSV Eindhoven 2.9\n📊 Cambuur: 4 vitórias nos últimos 6 jogos, xG 9.3 contra 7.1\n📊 PSV Eindhoven: 3 vitórias nos últimos 6 jogos, xG 12.0 contra 10.1\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T15:45:00",
+   "estado": "publicada",
+   "admin_msg": 125
+  },
+  {
+   "pid": "0811091996",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-SP1-athmadrid-barcelona|over_2.5",
+    "match_id": "20261108-SP1-athmadrid-barcelona",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Ath Madrid x Barcelona",
+    "prob": 0.6886,
+    "odd_casa": 1.31,
+    "data": "2026-11-08",
+    "resultado": null
+   },
+   "texto": "🇪🇸 <b>LALIGA – DOMINGO 08/11</b>\nAth Madrid x Barcelona | 20h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.31</b>\n\n📊 Golos esperados: Ath Madrid 1.5 – Barcelona 2.0\n📊 Ath Madrid: 6 vitórias nos últimos 6 jogos, xG 12.0 contra 5.7\n📊 Barcelona: 5 vitórias nos últimos 6 jogos, xG 19.5 contra 6.5\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T20:00:00",
+   "estado": "expirada",
+   "admin_msg": 126
+  },
+  {
+   "pid": "0811092097",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-P1-estrela-benfica|2",
+    "match_id": "20261108-P1-estrela-benfica",
+    "key": "2",
+    "texto": "Vitória Benfica",
+    "jogo": "Estrela x Benfica",
+    "prob": 0.7506,
+    "odd_casa": 1.24,
+    "data": "2026-11-08",
+    "resultado": null
+   },
+   "texto": "🇵🇹 <b>LIGA PORTUGAL – DOMINGO 08/11</b>\nEstrela x Benfica | 20h30\n\n✅ <b>Dica: Vitória Benfica</b>\n💰 Odd: <b>1.24</b>\n\n📊 Golos esperados: Estrela 0.8 – Benfica 2.4\n📊 Estrela: 1 vitória nos últimos 6 jogos, xG 7.1 contra 6.4\n📊 Benfica: 5 vitórias nos últimos 6 jogos, xG 12.9 contra 5.3\n🚑 Benfica sem Barreiro, Barrenechea\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T20:30:00",
+   "estado": "publicada",
+   "admin_msg": 127
+  },
+  {
+   "pid": "0811092098",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-N1-twente-ajax|under_3.5",
+    "match_id": "20261108-N1-twente-ajax",
+    "key": "under_3.5",
+    "texto": "Menos de 3.5 golos",
+    "jogo": "Twente x Ajax",
+    "prob": 0.6013,
+    "odd_casa": 1.8,
+    "data": "2026-11-08",
+    "resultado": null,
+    "tipo": "odd_alta"
+   },
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🇳🇱 <b>EREDIVISIE – DOMINGO 08/11</b>\nTwente x Ajax | 13h30\n\n✅ <b>Dica: Menos de 3.5 golos</b>\n💰 Odd: <b>1.80</b>\n💡 A odd paga mais do que o risco real deste jogo\n\n📊 Golos esperados: Twente 1.7 – Ajax 1.5\n📊 Twente: 4 vitórias nos últimos 6 jogos, xG 16.0 contra 5.2\n📊 Ajax: 4 vitórias nos últimos 6 jogos, xG 13.1 contra 8.3\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T13:30:00",
+   "estado": "descartada",
+   "admin_msg": 128
+  },
+  {
+   "pid": "0811092099",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-08",
+    "tipo": "segura",
+    "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+    "partes": [
+     "20261108-N1-cambuur-psveindhoven|over_2.5",
+     "20261108-P1-estrela-benfica|2",
+     "20261108-SP1-athmadrid-barcelona|over_2.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261108-N1-cambuur-psveindhoven|over_2.5",
+      "match_id": "20261108-N1-cambuur-psveindhoven",
+      "key": "over_2.5",
+      "prob": 0.7739,
+      "odd_casa": 1.25,
+      "jogo": "Cambuur x PSV Eindhoven",
+      "texto": "Mais de 2.5 golos"
+     },
+     {
+      "id": "20261108-P1-estrela-benfica|2",
+      "match_id": "20261108-P1-estrela-benfica",
+      "key": "2",
+      "prob": 0.7506,
+      "odd_casa": 1.24,
+      "jogo": "Estrela x Benfica",
+      "texto": "Vitória Benfica"
+     },
+     {
+      "id": "20261108-SP1-athmadrid-barcelona|over_2.5",
+      "match_id": "20261108-SP1-athmadrid-barcelona",
+      "key": "over_2.5",
+      "prob": 0.6886,
+      "odd_casa": 1.31,
+      "jogo": "Ath Madrid x Barcelona",
+      "texto": "Mais de 2.5 golos"
+     }
+    ],
+    "prob": 0.4,
+    "resultado": null
+   },
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Cambuur x PSV Eindhoven: Mais de 2.5 golos (@1.25)\n• Estrela x Benfica: Vitória Benfica (@1.24)\n• Ath Madrid x Barcelona: Mais de 2.5 golos (@1.31)\n\n💰 Odd total: <b>2.03</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T15:45:00",
+   "estado": "expirada",
+   "admin_msg": 129
+  },
+  {
+   "pid": "08110921100",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-08",
+    "tipo": "turbo",
+    "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+    "partes": [
+     "20261108-E0-manunited-astonvilla|under_3.5",
+     "20261108-B1-gent-kortrijk|1",
+     "20261108-B1-clubbrugge-anderlecht|over_2.5",
+     "20261108-D1-freiburg-unionberlin|1"
+    ],
+    "pernas": [
+     {
+      "id": "20261108-E0-manunited-astonvilla|under_3.5",
+      "match_id": "20261108-E0-manunited-astonvilla",
+      "key": "under_3.5",
+      "prob": 0.6377,
+      "odd_casa": 1.65,
+      "jogo": "Man United x Aston Villa",
+      "texto": "Menos de 3.5 golos",
+      "porque": "golos esperados 1.7 – 1.4"
+     },
+     {
+      "id": "20261108-B1-gent-kortrijk|1",
+      "match_id": "20261108-B1-gent-kortrijk",
+      "key": "1",
+      "prob": 0.6765,
+      "odd_casa": 1.43,
+      "jogo": "Gent x Kortrijk",
+      "texto": "Vitória Gent",
+      "porque": "golos esperados 2.0 – 0.8 · Gent 4V em 6"
+     },
+     {
+      "id": "20261108-B1-clubbrugge-anderlecht|over_2.5",
+      "match_id": "20261108-B1-clubbrugge-anderlecht",
+      "key": "over_2.5",
+      "prob": 0.6696,
+      "odd_casa": 1.37,
+      "jogo": "Club Brugge x Anderlecht",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 2.3 – 1.1"
+     },
+     {
+      "id": "20261108-D1-freiburg-unionberlin|1",
+      "match_id": "20261108-D1-freiburg-unionberlin",
+      "key": "1",
+      "prob": 0.6575,
+      "odd_casa": 1.49,
+      "jogo": "Freiburg x Union Berlin",
+      "texto": "Vitória Freiburg",
+      "porque": "golos esperados 2.0 – 0.8 · Freiburg 3V em 6"
+     }
+    ],
+    "prob": 0.1899,
+    "resultado": null
+   },
+   "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• Man United x Aston Villa: Menos de 3.5 golos (@1.65)\n   <i>↳ golos esperados 1.7 – 1.4</i>\n• Gent x Kortrijk: Vitória Gent (@1.43)\n   <i>↳ golos esperados 2.0 – 0.8 · Gent 4V em 6</i>\n• Club Brugge x Anderlecht: Mais de 2.5 golos (@1.37)\n   <i>↳ golos esperados 2.3 – 1.1</i>\n• Freiburg x Union Berlin: Vitória Freiburg (@1.49)\n   <i>↳ golos esperados 2.0 – 0.8 · Freiburg 3V em 6</i>\n\n💰 Odd total: <b>4.82</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T12:30:00",
+   "estado": "expirada",
+   "admin_msg": 130
+  },
+  {
+   "pid": "08110921101",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-FAC-staffordrangers-grimsbytown|btts_sim",
+    "match_id": "20261108-FAC-staffordrangers-grimsbytown",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Stafford Rangers x Grimsby Town",
+    "prob": 0.5364,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏆 <b>FA CUP – DOMINGO 08/11</b>\nStafford Rangers x Grimsby Town | 12h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.86</b> (mínima com valor)\n\n📊 Golos esperados: Stafford Rangers 1.4 – Grimsby Town 1.2\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T12:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 131
+  },
+  {
+   "pid": "08110922102",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-B1-clubbrugge-anderlecht|over_2.5",
+    "match_id": "20261108-B1-clubbrugge-anderlecht",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Club Brugge x Anderlecht",
+    "prob": 0.6696,
+    "odd_casa": 1.37,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇧🇪 <b>LIGA BELGA – DOMINGO 08/11</b>\nClub Brugge x Anderlecht | 12h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.37</b>\n\n📊 Golos esperados: Club Brugge 2.3 – Anderlecht 1.1\n📊 Club Brugge: 6 vitórias nos últimos 6 jogos, xG 14.8 contra 9.2\n📊 Anderlecht: 4 vitórias nos últimos 6 jogos, xG 9.4 contra 5.9\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T12:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 132
+  },
+  {
+   "pid": "08110922103",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-SP1-elche-betis|btts_sim",
+    "match_id": "20261108-SP1-elche-betis",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Elche x Betis",
+    "prob": 0.6026,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇪🇸 <b>LALIGA – DOMINGO 08/11</b>\nElche x Betis | 13h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.66</b> (mínima com valor)\n\n📊 Golos esperados: Elche 1.4 – Betis 1.6\n📊 Elche: 2 vitórias nos últimos 6 jogos, xG 7.1 contra 9.9\n📊 Betis: 3 vitórias nos últimos 6 jogos, xG 9.4 contra 9.4\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T13:00:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 133
+  },
+  {
+   "pid": "08110922104",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-I1-monza-atalanta|btts_sim",
+    "match_id": "20261108-I1-monza-atalanta",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Monza x Atalanta",
+    "prob": 0.6208,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇮🇹 <b>SERIE A – DOMINGO 08/11</b>\nMonza x Atalanta | 14h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.61</b> (mínima com valor)\n\n📊 Golos esperados: Monza 1.5 – Atalanta 1.6\n📊 Monza: 2 vitórias nos últimos 6 jogos, xG 8.8 contra 10.8\n📊 Atalanta: 1 vitória nos últimos 6 jogos, xG 12.2 contra 10.5\n🚑 Monza sem Pessina, Ziółkowski, Folorunsho\n🚑 Atalanta sem Hien, Kossounou, Bellanova, Kristensen\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T14:00:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 134
+  },
+  {
+   "pid": "08110923105",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-F1-rennes-lille|btts_sim",
+    "match_id": "20261108-F1-rennes-lille",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Rennes x Lille",
+    "prob": 0.6041,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇫🇷 <b>LIGUE 1 – DOMINGO 08/11</b>\nRennes x Lille | 14h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.66</b> (mínima com valor)\n\n📊 Golos esperados: Rennes 1.6 – Lille 1.4\n📊 Rennes: 3 vitórias nos últimos 6 jogos, xG 13.7 contra 14.2\n📊 Lille: 3 vitórias nos últimos 6 jogos, xG 9.1 contra 6.6\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T14:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 135
+  },
+  {
+   "pid": "08110923106",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-E0-sunderland-chelsea|2",
+    "match_id": "20261108-E0-sunderland-chelsea",
+    "key": "2",
+    "texto": "Vitória Chelsea",
+    "jogo": "Sunderland x Chelsea",
+    "prob": 0.5658,
+    "odd_casa": 1.93,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – DOMINGO 08/11</b>\nSunderland x Chelsea | 14h00\n\n✅ <b>Dica: Vitória Chelsea</b>\n💰 Odd: <b>1.93</b>\n\n📊 Golos esperados: Sunderland 1.0 – Chelsea 1.8\n📊 Sunderland: 0 vitórias nos últimos 6 jogos, xG 8.8 contra 11.8\n📊 Chelsea: 3 vitórias nos últimos 6 jogos, xG 7.8 contra 7.8\n🚑 Sunderland sem Ballard, Alderete, Diarra\n🚑 Chelsea sem Lacroix, Pedro, James, Caicedo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T14:00:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 136
+  },
+  {
+   "pid": "08110923107",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-I1-genoa-milan|cantos_under_9.5",
+    "match_id": "20261108-I1-genoa-milan",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Genoa x Milan",
+    "prob": 0.5702,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇮🇹 <b>SERIE A – DOMINGO 08/11</b>\nGenoa x Milan | 14h00\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.75</b> (mínima com valor)\n\n📊 Golos esperados: Genoa 1.0 – Milan 1.4\n📊 Genoa: 4 vitórias nos últimos 6 jogos, xG 5.3 contra 7.1\n📊 Milan: 4 vitórias nos últimos 6 jogos, xG 12.0 contra 7.5\n🚑 Milan sem Tomori, Gabbia, Loftus-Cheek, Saelemaekers\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T14:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 137
+  },
+  {
+   "pid": "08110924108",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-E0-crystalpalace-liverpool|2",
+    "match_id": "20261108-E0-crystalpalace-liverpool",
+    "key": "2",
+    "texto": "Vitória Liverpool",
+    "jogo": "Crystal Palace x Liverpool",
+    "prob": 0.6151,
+    "odd_casa": 1.57,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – DOMINGO 08/11</b>\nCrystal Palace x Liverpool | 14h00\n\n✅ <b>Dica: Vitória Liverpool</b>\n💰 Odd: <b>1.57</b>\n\n📊 Golos esperados: Crystal Palace 1.0 – Liverpool 2.0\n📊 Crystal Palace: 1 vitória nos últimos 6 jogos, xG 6.6 contra 12.8\n📊 Liverpool: 3 vitórias nos últimos 6 jogos, xG 7.8 contra 5.9\n🚑 Crystal Palace sem Mateta, Sarr, Riad, Tomiyasu\n🚑 Liverpool sem Gravenberch, Bradley, Ekitike\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T14:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 138
+  },
+  {
+   "pid": "08110924109",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-E0-brighton-brentford|btts_sim",
+    "match_id": "20261108-E0-brighton-brentford",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Brighton x Brentford",
+    "prob": 0.5621,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – DOMINGO 08/11</b>\nBrighton x Brentford | 14h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.78</b> (mínima com valor)\n\n📊 Golos esperados: Brighton 1.7 – Brentford 1.1\n📊 Brighton: 5 vitórias nos últimos 6 jogos, xG 9.8 contra 7.3\n📊 Brentford: 2 vitórias nos últimos 6 jogos, xG 7.3 contra 8.9\n🚑 Brighton sem Mitoma\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T14:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 139
+  },
+  {
+   "pid": "08110924110",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-E0-ipswich-bournemouth|over_2.5",
+    "match_id": "20261108-E0-ipswich-bournemouth",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Ipswich x Bournemouth",
+    "prob": 0.5968,
+    "odd_casa": 1.67,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – DOMINGO 08/11</b>\nIpswich x Bournemouth | 14h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.67</b>\n\n📊 Golos esperados: Ipswich 1.1 – Bournemouth 1.9\n📊 Ipswich: 2 vitórias nos últimos 6 jogos, xG 7.4 contra 11.3\n📊 Bournemouth: 3 vitórias nos últimos 6 jogos, xG 11.6 contra 5.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T14:00:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 140
+  },
+  {
+   "pid": "08110925111",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-FAC-craywanderers-stockportcounty|btts_sim",
+    "match_id": "20261108-FAC-craywanderers-stockportcounty",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Cray Wanderers x Stockport County",
+    "prob": 0.5364,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏆 <b>FA CUP – DOMINGO 08/11</b>\nCray Wanderers x Stockport County | 14h15\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.86</b> (mínima com valor)\n\n📊 Golos esperados: Cray Wanderers 1.4 – Stockport County 1.2\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T14:15:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 141
+  },
+  {
+   "pid": "08110925112",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-D1-fckoln-leverkusen|btts_sim",
+    "match_id": "20261108-D1-fckoln-leverkusen",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "FC Koln x Leverkusen",
+    "prob": 0.6352,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇩🇪 <b>BUNDESLIGA – DOMINGO 08/11</b>\nFC Koln x Leverkusen | 14h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.57</b> (mínima com valor)\n\n📊 Golos esperados: FC Koln 1.4 – Leverkusen 1.8\n📊 FC Koln: 1 vitória nos últimos 6 jogos, xG 7.6 contra 6.8\n📊 Leverkusen: 3 vitórias nos últimos 6 jogos, xG 10.6 contra 12.2\n🚑 FC Koln sem Skhiri, Berg, Hübers, Ache\n🚑 Leverkusen sem Diaby, Doué, Seghir, Terrier\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T14:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 142
+  },
+  {
+   "pid": "08110926113",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-FAC-wimbornetown-crawleytown|btts_sim",
+    "match_id": "20261108-FAC-wimbornetown-crawleytown",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Wimborne Town x Crawley Town",
+    "prob": 0.5364,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏆 <b>FA CUP – DOMINGO 08/11</b>\nWimborne Town x Crawley Town | 15h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.86</b> (mínima com valor)\n\n📊 Golos esperados: Wimborne Town 1.4 – Crawley Town 1.2\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T15:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 143
+  },
+  {
+   "pid": "08110926114",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-SP1-sociedad-vallecano|cantos_over_9.5",
+    "match_id": "20261108-SP1-sociedad-vallecano",
+    "key": "cantos_over_9.5",
+    "texto": "Mais de 9.5 cantos",
+    "jogo": "Sociedad x Vallecano",
+    "prob": 0.6254,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇪🇸 <b>LALIGA – DOMINGO 08/11</b>\nSociedad x Vallecano | 15h15\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.60</b> (mínima com valor)\n\n📊 Golos esperados: Sociedad 1.9 – Vallecano 1.1\n📊 Sociedad: 4 vitórias nos últimos 6 jogos, xG 10.2 contra 10.5\n📊 Vallecano: 2 vitórias nos últimos 6 jogos, xG 8.7 contra 9.3\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T15:15:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 144
+  },
+  {
+   "pid": "08110926115",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-P1-santaclara-gilvicente|under_2.5",
+    "match_id": "20261108-P1-santaclara-gilvicente",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Santa Clara x Gil Vicente",
+    "prob": 0.608,
+    "odd_casa": 1.49,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇵🇹 <b>LIGA PORTUGAL – DOMINGO 08/11</b>\nSanta Clara x Gil Vicente | 15h30\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.49</b>\n\n📊 Golos esperados: Santa Clara 1.1 – Gil Vicente 0.9\n📊 Santa Clara: 4 vitórias nos últimos 6 jogos, xG 7.0 contra 5.8\n📊 Gil Vicente: 2 vitórias nos últimos 6 jogos, xG 6.3 contra 7.7\n🚑 Santa Clara sem Ferreira, Paciência\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T15:30:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 145
+  },
+  {
+   "pid": "08110927116",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-P1-estoril-maritimo|under_2.5",
+    "match_id": "20261108-P1-estoril-maritimo",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Estoril x Maritimo",
+    "prob": 0.4384,
+    "odd_casa": 1.88,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇵🇹 <b>LIGA PORTUGAL – DOMINGO 08/11</b>\nEstoril x Maritimo | 15h30\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.88</b>\n\n📊 Golos esperados: Estoril 1.6 – Maritimo 1.2\n📊 Estoril: 0 vitórias nos últimos 6 jogos, xG 6.6 contra 10.2\n📊 Maritimo: 0 vitórias nos últimos 6 jogos, xG 4.5 contra 9.2\n🚑 Estoril sem Begraoui\n🚑 Maritimo sem Santiago\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T15:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 146
+  },
+  {
+   "pid": "08110927117",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-P1-nacional-academicoviseu|btts_sim",
+    "match_id": "20261108-P1-nacional-academicoviseu",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Nacional x Academico Viseu",
+    "prob": 0.501,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇵🇹 <b>LIGA PORTUGAL – DOMINGO 08/11</b>\nNacional x Academico Viseu | 15h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>2.00</b> (mínima com valor)\n\n📊 Golos esperados: Nacional 1.0 – Academico Viseu 1.5\n📊 Nacional: 1 vitória nos últimos 6 jogos, xG 5.5 contra 9.6\n📊 Academico Viseu: 6 vitórias nos últimos 6 jogos, xG 7.1 contra 9.5\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T15:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 147
+  },
+  {
+   "pid": "08110927118",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-N1-azalkmaar-groningen|over_2.5",
+    "match_id": "20261108-N1-azalkmaar-groningen",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "AZ Alkmaar x Groningen",
+    "prob": 0.645,
+    "odd_casa": 1.38,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇳🇱 <b>EREDIVISIE – DOMINGO 08/11</b>\nAZ Alkmaar x Groningen | 15h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.38</b>\n\n📊 Golos esperados: AZ Alkmaar 2.1 – Groningen 1.2\n📊 AZ Alkmaar: 1 vitória nos últimos 6 jogos, xG 10.4 contra 7.3\n📊 Groningen: 2 vitórias nos últimos 6 jogos, xG 10.1 contra 11.4\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T15:45:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 148
+  },
+  {
+   "pid": "08110928119",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-F1-angers-nice|btts_sim",
+    "match_id": "20261108-F1-angers-nice",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Angers x Nice",
+    "prob": 0.5608,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇫🇷 <b>LIGUE 1 – DOMINGO 08/11</b>\nAngers x Nice | 16h15\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.78</b> (mínima com valor)\n\n📊 Golos esperados: Angers 1.2 – Nice 1.6\n📊 Angers: 1 vitória nos últimos 6 jogos, xG 7.5 contra 11.8\n📊 Nice: 4 vitórias nos últimos 6 jogos, xG 9.3 contra 10.8\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T16:15:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 149
+  },
+  {
+   "pid": "08110928120",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-F1-brest-lyon|btts_sim",
+    "match_id": "20261108-F1-brest-lyon",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Brest x Lyon",
+    "prob": 0.578,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇫🇷 <b>LIGUE 1 – DOMINGO 08/11</b>\nBrest x Lyon | 16h15\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.73</b> (mínima com valor)\n\n📊 Golos esperados: Brest 1.3 – Lyon 1.5\n📊 Brest: 2 vitórias nos últimos 6 jogos, xG 10.0 contra 7.9\n📊 Lyon: 3 vitórias nos últimos 6 jogos, xG 9.1 contra 6.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T16:15:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 150
+  },
+  {
+   "pid": "08110929121",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-F1-lehavre-lorient|cantos_under_9.5",
+    "match_id": "20261108-F1-lehavre-lorient",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Le Havre x Lorient",
+    "prob": 0.5491,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇫🇷 <b>LIGUE 1 – DOMINGO 08/11</b>\nLe Havre x Lorient | 16h15\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.82</b> (mínima com valor)\n\n📊 Golos esperados: Le Havre 1.2 – Lorient 1.3\n📊 Le Havre: 0 vitórias nos últimos 6 jogos, xG 11.5 contra 11.9\n📊 Lorient: 2 vitórias nos últimos 6 jogos, xG 6.5 contra 5.7\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T16:15:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 151
+  },
+  {
+   "pid": "08110929122",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-F1-lemans-monaco|over_2.5",
+    "match_id": "20261108-F1-lemans-monaco",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Le Mans x Monaco",
+    "prob": 0.6188,
+    "odd_casa": 1.57,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇫🇷 <b>LIGUE 1 – DOMINGO 08/11</b>\nLe Mans x Monaco | 16h15\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.57</b>\n\n📊 Golos esperados: Le Mans 1.2 – Monaco 1.9\n📊 Le Mans: 1 vitória nos últimos 6 jogos, xG 7.4 contra 11.9\n📊 Monaco: 1 vitória nos últimos 6 jogos, xG 7.3 contra 8.1\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T16:15:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 152
+  },
+  {
+   "pid": "08110929123",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-D1-freiburg-unionberlin|over_2.5",
+    "match_id": "20261108-D1-freiburg-unionberlin",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Freiburg x Union Berlin",
+    "prob": 0.564,
+    "odd_casa": 1.59,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇩🇪 <b>BUNDESLIGA – DOMINGO 08/11</b>\nFreiburg x Union Berlin | 16h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.59</b>\n\n📊 Golos esperados: Freiburg 2.0 – Union Berlin 0.8\n📊 Freiburg: 3 vitórias nos últimos 6 jogos, xG 10.2 contra 8.4\n📊 Union Berlin: 1 vitória nos últimos 6 jogos, xG 6.1 contra 10.7\n🚑 Freiburg sem Osterhage\n🚑 Union Berlin sem Uduokhai, Skov, Nsoki, Ilic\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T16:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 153
+  },
+  {
+   "pid": "08110930124",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-E0-manunited-astonvilla|btts_sim",
+    "match_id": "20261108-E0-manunited-astonvilla",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Man United x Aston Villa",
+    "prob": 0.6118,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – DOMINGO 08/11</b>\nMan United x Aston Villa | 16h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.63</b> (mínima com valor)\n\n📊 Golos esperados: Man United 1.7 – Aston Villa 1.4\n📊 Man United: 0 vitórias nos últimos 6 jogos, xG 6.7 contra 10.9\n📊 Aston Villa: 3 vitórias nos últimos 6 jogos, xG 8.3 contra 9.7\n🚑 Man United sem Martínez, Baleba, Rashford, Sesko\n🚑 Aston Villa sem Cash, Ruggeri, Onana\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T16:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 154
+  },
+  {
+   "pid": "08110930125",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-I1-inter-como|btts_sim",
+    "match_id": "20261108-I1-inter-como",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Inter x Como",
+    "prob": 0.6261,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇮🇹 <b>SERIE A – DOMINGO 08/11</b>\nInter x Como | 17h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.60</b> (mínima com valor)\n\n📊 Golos esperados: Inter 1.7 – Como 1.4\n📊 Inter: 4 vitórias nos últimos 6 jogos, xG 15.1 contra 5.6\n📊 Como: 4 vitórias nos últimos 6 jogos, xG 11.0 contra 7.0\n🚑 Inter sem Martínez\n🚑 Como sem Chalobah\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T17:00:00",
+   "estado": "substituida",
+   "extra": true,
+   "admin_msg": 155
+  },
+  {
+   "pid": "08110930126",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-FAC-oldhamathletic-sheffieldwednesday|btts_sim",
+    "match_id": "20261108-FAC-oldhamathletic-sheffieldwednesday",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Oldham Athletic x Sheffield Wednesday",
+    "prob": 0.6118,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏆 <b>FA CUP – DOMINGO 08/11</b>\nOldham Athletic x Sheffield Wednesday | 17h15\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.63</b> (mínima com valor)\n\n📊 Golos esperados: Oldham Athletic 1.4 – Sheffield Wednesday 1.6\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T17:15:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 156
+  },
+  {
+   "pid": "08110931127",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-SP1-villarreal-getafe|1",
+    "match_id": "20261108-SP1-villarreal-getafe",
+    "key": "1",
+    "texto": "Vitória Villarreal",
+    "jogo": "Villarreal x Getafe",
+    "prob": 0.6568,
+    "odd_casa": 1.42,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇪🇸 <b>LALIGA – DOMINGO 08/11</b>\nVillarreal x Getafe | 17h30\n\n✅ <b>Dica: Vitória Villarreal</b>\n💰 Odd: <b>1.42</b>\n\n📊 Golos esperados: Villarreal 1.9 – Getafe 0.8\n📊 Villarreal: 3 vitórias nos últimos 6 jogos, xG 13.0 contra 4.2\n📊 Getafe: 2 vitórias nos últimos 6 jogos, xG 4.0 contra 7.6\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T17:30:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 157
+  },
+  {
+   "pid": "08110931128",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-B1-stgilloise-genk|1",
+    "match_id": "20261108-B1-stgilloise-genk",
+    "key": "1",
+    "texto": "Vitória St. Gilloise",
+    "jogo": "St. Gilloise x Genk",
+    "prob": 0.6179,
+    "odd_casa": 1.6,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇧🇪 <b>LIGA BELGA – DOMINGO 08/11</b>\nSt. Gilloise x Genk | 17h30\n\n✅ <b>Dica: Vitória St. Gilloise</b>\n💰 Odd: <b>1.60</b>\n\n📊 Golos esperados: St. Gilloise 1.9 – Genk 1.0\n📊 St. Gilloise: 5 vitórias nos últimos 6 jogos, xG 11.8 contra 6.3\n📊 Genk: 2 vitórias nos últimos 6 jogos, xG 10.0 contra 6.3\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T17:30:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 158
+  },
+  {
+   "pid": "08110931129",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-SP1-celta-levante|cantos_under_9.5",
+    "match_id": "20261108-SP1-celta-levante",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Celta x Levante",
+    "prob": 0.6053,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇪🇸 <b>LALIGA – DOMINGO 08/11</b>\nCelta x Levante | 17h30\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.65</b> (mínima com valor)\n\n📊 Golos esperados: Celta 1.7 – Levante 1.1\n📊 Celta: 2 vitórias nos últimos 6 jogos, xG 7.6 contra 5.1\n📊 Levante: 1 vitória nos últimos 6 jogos, xG 7.1 contra 12.7\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T17:30:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 159
+  },
+  {
+   "pid": "08110932130",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-P1-guimaraes-porto|2",
+    "match_id": "20261108-P1-guimaraes-porto",
+    "key": "2",
+    "texto": "Vitória Porto",
+    "jogo": "Guimaraes x Porto",
+    "prob": 0.6384,
+    "odd_casa": 1.63,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇵🇹 <b>LIGA PORTUGAL – DOMINGO 08/11</b>\nGuimaraes x Porto | 18h00\n\n✅ <b>Dica: Vitória Porto</b>\n💰 Odd: <b>1.63</b>\n\n📊 Golos esperados: Guimaraes 0.9 – Porto 1.9\n📊 Guimaraes: 1 vitória nos últimos 6 jogos, xG 8.3 contra 6.5\n📊 Porto: 6 vitórias nos últimos 6 jogos, xG 13.1 contra 4.5\n🚑 Porto sem Smalling\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T18:00:00",
+   "estado": "substituida",
+   "extra": true,
+   "admin_msg": 160
+  },
+  {
+   "pid": "08110932131",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-D1-hoffenheim-schalke04|cantos_over_9.5",
+    "match_id": "20261108-D1-hoffenheim-schalke04",
+    "key": "cantos_over_9.5",
+    "texto": "Mais de 9.5 cantos",
+    "jogo": "Hoffenheim x Schalke 04",
+    "prob": 0.5764,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇩🇪 <b>BUNDESLIGA – DOMINGO 08/11</b>\nHoffenheim x Schalke 04 | 18h30\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.73</b> (mínima com valor)\n\n📊 Golos esperados: Hoffenheim 1.6 – Schalke 04 1.0\n📊 Hoffenheim: 3 vitórias nos últimos 6 jogos, xG 11.5 contra 6.5\n📊 Schalke 04: 1 vitória nos últimos 6 jogos, xG 5.4 contra 10.9\n🚑 Hoffenheim sem Hajdari, Conté, Gendrey, Coufal\n🚑 Schalke 04 sem Bachmann, Gantenbein, Højlund, Schallenberg\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T18:30:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 161
+  },
+  {
+   "pid": "08110932132",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-N1-utrecht-nijmegen|btts_sim",
+    "match_id": "20261108-N1-utrecht-nijmegen",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Utrecht x Nijmegen",
+    "prob": 0.656,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇳🇱 <b>EREDIVISIE – DOMINGO 08/11</b>\nUtrecht x Nijmegen | 19h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.52</b> (mínima com valor)\n\n📊 Golos esperados: Utrecht 1.7 – Nijmegen 1.6\n📊 Utrecht: 3 vitórias nos últimos 6 jogos, xG 7.5 contra 9.5\n📊 Nijmegen: 0 vitórias nos últimos 6 jogos, xG 8.9 contra 10.9\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T19:00:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 162
+  },
+  {
+   "pid": "08110933133",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-I1-fiorentina-juventus|btts_sim",
+    "match_id": "20261108-I1-fiorentina-juventus",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Fiorentina x Juventus",
+    "prob": 0.5728,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇮🇹 <b>SERIE A – DOMINGO 08/11</b>\nFiorentina x Juventus | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.75</b> (mínima com valor)\n\n📊 Golos esperados: Fiorentina 1.2 – Juventus 1.6\n📊 Fiorentina: 1 vitória nos últimos 6 jogos, xG 8.5 contra 9.6\n📊 Juventus: 3 vitórias nos últimos 6 jogos, xG 7.1 contra 4.1\n🚑 Fiorentina sem Pongračić, Parisi\n🚑 Juventus sem Locatelli, Thuram, Yildiz, González\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T19:45:00",
+   "estado": "substituida",
+   "extra": true,
+   "admin_msg": 163
+  },
+  {
+   "pid": "08110933134",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-F1-lens-marseille|btts_sim",
+    "match_id": "20261108-F1-lens-marseille",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Lens x Marseille",
+    "prob": 0.6484,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇫🇷 <b>LIGUE 1 – DOMINGO 08/11</b>\nLens x Marseille | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.54</b> (mínima com valor)\n\n📊 Golos esperados: Lens 1.8 – Marseille 1.5\n📊 Lens: 3 vitórias nos últimos 6 jogos, xG 6.7 contra 8.3\n📊 Marseille: 4 vitórias nos últimos 6 jogos, xG 10.2 contra 15.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T19:45:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 164
+  },
+  {
+   "pid": "08110933135",
+   "origem": "dicas",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-P1-rioave-spbraga|2",
+    "match_id": "20261108-P1-rioave-spbraga",
+    "key": "2",
+    "texto": "Vitória Sp Braga",
+    "jogo": "Rio Ave x Sp Braga",
+    "prob": 0.6405,
+    "odd_casa": 1.52,
+    "data": "2026-11-08",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🇵🇹 <b>LIGA PORTUGAL – DOMINGO 08/11</b>\nRio Ave x Sp Braga | 20h30\n\n✅ <b>Dica: Vitória Sp Braga</b>\n💰 Odd: <b>1.52</b>\n\n📊 Golos esperados: Rio Ave 0.8 – Sp Braga 1.9\n📊 Rio Ave: 1 vitória nos últimos 6 jogos, xG 5.2 contra 10.7\n📊 Sp Braga: 2 vitórias nos últimos 6 jogos, xG 8.0 contra 4.9\n🚑 Rio Ave sem Miszta, Abbey\n🚑 Sp Braga sem Ntoi, Niakaté\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T20:30:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 165
+  },
+  {
+   "pid": "08160106136",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 113,
+    "resumo": false
+   },
+   "texto": "❌ RED: Ambas marcam\nMonza 0-1 Atalanta",
+   "expira": "2026-11-09T16:01:06.727782",
+   "estado": "publicada",
+   "admin_msg": 184
+  },
+  {
+   "pid": "08160107137",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 115,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nIpswich 1-2 Bournemouth",
+   "expira": "2026-11-09T16:01:07.190679",
+   "estado": "publicada",
+   "admin_msg": 185
+  },
+  {
+   "pid": "08161042138",
+   "origem": "adiado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 111,
+    "resumo": false
+   },
+   "texto": "⏸️ <b>JOGO SUSPENSO</b>\nCambuur x PSV Eindhoven\n\nA dica <b>Mais de 2.5 golos</b> fica sem efeito e não conta para o Green/Red. Nas casas de apostas, as apostas em jogos adiados ou cancelados costumam ser anuladas e o valor devolvido (confirma as regras da tua casa).\n\nHá mais dicas a caminho! ⚽",
+   "expira": "2026-11-09T16:10:42.199452",
+   "estado": "publicada",
+   "admin_msg": 186
+  },
+  {
+   "pid": "08161042139",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 114,
+    "resumo": false
+   },
+   "texto": "❌ RED: Vitória Chelsea\nSunderland 1-0 Chelsea",
+   "expira": "2026-11-09T16:10:42.688656",
+   "estado": "publicada",
+   "admin_msg": 187
+  },
+  {
+   "pid": "08162753140",
+   "origem": "tardia",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-I1-inter-como|btts_sim",
+    "match_id": "20261108-I1-inter-como",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Inter x Como",
+    "prob": 0.6261,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇮🇹 <b>SERIE A – DOMINGO 08/11</b>\nInter x Como | 17h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.60</b> (mínima com valor)\n\n📊 Golos esperados: Inter 1.7 – Como 1.4\n📊 Inter: 4 vitórias nos últimos 6 jogos, xG 15.1 contra 5.6\n📊 Como: 4 vitórias nos últimos 6 jogos, xG 11.0 contra 7.0\n🚑 Inter sem Martínez\n🚑 Como sem Chalobah\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T17:00:00",
+   "estado": "publicada",
+   "admin_msg": 188
+  },
+  {
+   "pid": "08165333141",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 110,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Gent\nGent 1-0 Kortrijk",
+   "expira": "2026-11-09T16:53:33.491467",
+   "estado": "publicada",
+   "admin_msg": 189
+  },
+  {
+   "pid": "08170209142",
+   "origem": "tardia",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-SP1-celta-levante|cantos_under_9.5",
+    "match_id": "20261108-SP1-celta-levante",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Celta x Levante",
+    "prob": 0.6053,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇪🇸 <b>LALIGA – DOMINGO 08/11</b>\nCelta x Levante | 17h30\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.65</b> (mínima com valor)\n\n📊 Golos esperados: Celta 1.7 – Levante 1.1\n📊 Celta: 2 vitórias nos últimos 6 jogos, xG 7.6 contra 5.1\n📊 Levante: 1 vitória nos últimos 6 jogos, xG 7.1 contra 12.7\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T17:30:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 190
+  },
+  {
+   "pid": "08173101143",
+   "origem": "tardia",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-P1-guimaraes-porto|2",
+    "match_id": "20261108-P1-guimaraes-porto",
+    "key": "2",
+    "texto": "Vitória Porto",
+    "jogo": "Guimaraes x Porto",
+    "prob": 0.6384,
+    "odd_casa": 1.63,
+    "data": "2026-11-08",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇵🇹 <b>LIGA PORTUGAL – DOMINGO 08/11</b>\nGuimaraes x Porto | 18h00\n\n✅ <b>Dica: Vitória Porto</b>\n💰 Odd: <b>1.63</b>\n\n📊 Golos esperados: Guimaraes 0.9 – Porto 1.9\n📊 Guimaraes: 1 vitória nos últimos 6 jogos, xG 8.3 contra 6.5\n📊 Porto: 6 vitórias nos últimos 6 jogos, xG 13.1 contra 4.5\n🚑 Porto sem Smalling\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T18:00:00",
+   "estado": "publicada",
+   "admin_msg": 191
+  },
+  {
+   "pid": "08182759144",
+   "origem": "tardia",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-N1-utrecht-nijmegen|cantos_over_7.5",
+    "match_id": "20261108-N1-utrecht-nijmegen",
+    "key": "cantos_over_7.5",
+    "texto": "Mais de 7.5 cantos",
+    "jogo": "Utrecht x Nijmegen",
+    "prob": 0.6958,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇳🇱 <b>EREDIVISIE – DOMINGO 08/11</b>\nUtrecht x Nijmegen | 19h00\n\n✅ <b>Dica: Mais de 7.5 cantos</b>\n💰 Odd: <b>1.44</b> (mínima com valor)\n\n📊 Golos esperados: Utrecht 1.7 – Nijmegen 1.6\n📊 Utrecht: 3 vitórias nos últimos 6 jogos, xG 7.5 contra 9.5\n📊 Nijmegen: 0 vitórias nos últimos 6 jogos, xG 8.9 contra 10.9\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T19:00:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 194
+  },
+  {
+   "pid": "08190218145",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 122,
+    "resumo": false
+   },
+   "texto": "❌ RED: Ambas marcam\nInter 2-0 Como",
+   "expira": "2026-11-09T19:02:18.557393",
+   "estado": "publicada",
+   "admin_msg": 203
+  },
+  {
+   "pid": "08191056146",
+   "origem": "tardia",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-F1-lens-marseille|btts_sim",
+    "match_id": "20261108-F1-lens-marseille",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Lens x Marseille",
+    "prob": 0.6484,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇫🇷 <b>LIGUE 1 – DOMINGO 08/11</b>\nLens x Marseille | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.54</b> (mínima com valor)\n\n📊 Golos esperados: Lens 1.8 – Marseille 1.5\n📊 Lens: 3 vitórias nos últimos 6 jogos, xG 6.7 contra 8.3\n📊 Marseille: 4 vitórias nos últimos 6 jogos, xG 10.2 contra 15.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T19:45:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 204
+  },
+  {
+   "pid": "08191057147",
+   "origem": "tardia",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-I1-fiorentina-juventus|btts_sim",
+    "match_id": "20261108-I1-fiorentina-juventus",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Fiorentina x Juventus",
+    "prob": 0.5728,
+    "odd_casa": null,
+    "data": "2026-11-08",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇮🇹 <b>SERIE A – DOMINGO 08/11</b>\nFiorentina x Juventus | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.75</b> (mínima com valor)\n\n📊 Golos esperados: Fiorentina 1.2 – Juventus 1.6\n📊 Fiorentina: 1 vitória nos últimos 6 jogos, xG 8.5 contra 9.6\n📊 Juventus: 3 vitórias nos últimos 6 jogos, xG 7.1 contra 4.1\n🚑 Fiorentina sem Pongračić, Parisi\n🚑 Juventus sem Locatelli, Thuram, Yildiz, González\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T19:45:00",
+   "estado": "publicada",
+   "extra": true,
+   "admin_msg": 205
+  },
+  {
+   "pid": "08193110148",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 123,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória St. Gilloise\nSt. Gilloise 1-0 Genk",
+   "expira": "2026-11-09T19:31:10.349864",
+   "estado": "publicada",
+   "admin_msg": 206
+  },
+  {
+   "pid": "08193110149",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 124,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Villarreal\nVillarreal 2-0 Getafe",
+   "expira": "2026-11-09T19:31:10.994149",
+   "estado": "publicada",
+   "admin_msg": 207
+  },
+  {
+   "pid": "08195917150",
+   "origem": "tardia",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-P1-rioave-spbraga|2",
+    "match_id": "20261108-P1-rioave-spbraga",
+    "key": "2",
+    "texto": "Vitória Sp Braga",
+    "jogo": "Rio Ave x Sp Braga",
+    "prob": 0.6405,
+    "odd_casa": 1.52,
+    "data": "2026-11-08",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇵🇹 <b>LIGA PORTUGAL – DOMINGO 08/11</b>\nRio Ave x Sp Braga | 20h30\n\n✅ <b>Dica: Vitória Sp Braga</b>\n💰 Odd: <b>1.52</b>\n\n📊 Golos esperados: Rio Ave 0.8 – Sp Braga 1.9\n📊 Rio Ave: 1 vitória nos últimos 6 jogos, xG 5.2 contra 10.7\n📊 Sp Braga: 2 vitórias nos últimos 6 jogos, xG 8.0 contra 4.9\n🚑 Rio Ave sem Miszta, Abbey\n🚑 Sp Braga sem Ntoi, Niakaté\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T20:30:00",
+   "estado": "expirada",
+   "extra": true,
+   "admin_msg": 208
+  },
+  {
+   "pid": "08200752151",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 126,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Porto\nGuimaraes 1-2 Porto",
+   "expira": "2026-11-09T20:07:52.494204",
+   "estado": "publicada",
+   "admin_msg": 209
+  },
+  {
+   "pid": "08203058152",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 128,
+    "resumo": false
+   },
+   "texto": "❌ RED: Mais de 9.5 cantos\nHoffenheim 2-1 Schalke 04",
+   "expira": "2026-11-09T20:30:58.225750",
+   "estado": "corrigida",
+   "admin_msg": 210
+  },
+  {
+   "pid": "08205638153",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 129,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 7.5 cantos\nUtrecht 2-3 Nijmegen",
+   "expira": "2026-11-09T20:56:38.918247",
+   "estado": "publicada",
+   "admin_msg": 211
+  },
+  {
+   "pid": "08210511154",
+   "origem": "madrugada",
+   "data": "2026-11-08",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261108-ARG-centralcordoba-lanus|under_2.5",
+    "match_id": "20261108-ARG-centralcordoba-lanus",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Central Cordoba x Lanus",
+    "prob": 0.5471,
+    "odd_casa": 1.65,
+    "data": "2026-11-08",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇦🇷 <b>LIGA ARGENTINA – DOMINGO 08/11</b>\nCentral Cordoba x Lanus | 22h30\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.65</b>\n\n📊 Golos esperados: Central Cordoba 0.8 – Lanus 1.5\n📊 Central Cordoba: 0 vitórias nos últimos 6 jogos\n📊 Lanus: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-08T22:30:00",
+   "estado": "descartada",
+   "extra": true,
+   "admin_msg": 212
+  },
+  {
+   "pid": "08213054155",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 128,
+    "resumo": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 9.5 cantos\nHoffenheim 2-1 Schalke 04",
+   "expira": "2026-11-09T21:30:54.802222",
+   "estado": "publicada",
+   "admin_msg": 213
+  },
+  {
+   "pid": "08215037156",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 130,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Ambas marcam\nFiorentina 2-2 Juventus",
+   "expira": "2026-11-09T21:50:37.020045",
+   "estado": "publicada",
+   "admin_msg": 215
+  },
+  {
+   "pid": "08223053157",
+   "origem": "resultado",
+   "data": "2026-11-08",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 112,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Benfica\nEstrela 2-3 Benfica",
+   "expira": "2026-11-09T22:30:53.800812",
+   "estado": "publicada",
+   "admin_msg": 217
+  },
+  {
+   "pid": "09000105158",
+   "origem": "resumo",
+   "data": "2026-11-09",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": true
+   },
+   "texto": "📊 <b>RESUMO DE 08/11</b>\n\n🟢 9 Green · 🔴 3 Red\n💶 Lucro: <b>+191 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-10T00:01:05.812314",
+   "estado": "publicada",
+   "admin_msg": 218
+  },
+  {
+   "pid": "09112216144",
+   "origem": "balanco",
+   "data": "2026-11-09",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": false
+   },
+   "texto": "📋 <b>BALANÇO DA SEMANA</b> (02/11 – 08/11)\n\n🟢 33 Green · 🔴 15 Red\n🎯 Múltiplas: 2 Green em 7\n💶 Lucro: <b>+259 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-10T11:22:16.854649",
+   "estado": "descartada",
+   "admin_msg": 219
+  }
+ ],
+ "ultimo_resumo": 140,
+ "offset_admin": 820373422,
+ "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOMavEPiEYJwwXRMvdSe7TJXnDGkJ0AAsAeAAKYQ4lTiRodjWpgDVA9BA"
+}
