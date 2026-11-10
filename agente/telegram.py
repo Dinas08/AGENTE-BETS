@@ -33,7 +33,7 @@ TURBO_PERNAS, TURBO_P_MIN = 5, 0.62
 P_EXTRA = 0.50              # com admin: as outras apostas (não recomendadas) também vão para aprovação, como "extra"
 FLAG = {"P1": "🇵🇹", "E0": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "D1": "🇩🇪", "I1": "🇮🇹", "SP1": "🇪🇸", "F1": "🇫🇷", "N1": "🇳🇱", "B1": "🇧🇪",
         "BRA": "🇧🇷", "ARG": "🇦🇷", "USA": "🇺🇸", "CB": "🇧🇷", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
-        "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆"}
+        "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆", "UNL": "🌍"}
 DIAS = ["SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO", "DOMINGO"]
 RODAPE = "🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias"
 ANIM_GREEN = Path(__file__).parent / "media" / "green.mp4"  # Agente Claudio a festejar (resumo do dia com lucro)

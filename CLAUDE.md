@@ -2,7 +2,7 @@
 
 Projeto de previsões de futebol (Liga Portugal, Premier League, LaLiga, Bundesliga, Serie A, Ligue 1, Eredivisie,
 Bélgica — só Club Brugge e St. Gilloise, e Gent e Charleroi em casa —, taças nacionais, provas europeias e, à noite,
-Brasileirão, Copa do Brasil, Liga Argentina e MLS; no Telegram as Américas só têm 2-3 dicas, a partir das 22h). A parte estatística é Python; **tu és a parte qualitativa**: notícias, lesões,
+Brasileirão, Copa do Brasil, Liga Argentina e MLS; nas janelas de seleções, a Liga das Nações; no Telegram as Américas só têm 2-3 dicas, a partir das 22h). A parte estatística é Python; **tu és a parte qualitativa**: notícias, lesões,
 instabilidade dos clubes e a análise pós-jornada. Escreve sempre em português de Portugal.
 
 Python: `.venv\Scripts\python.exe` (Windows). Define `$env:PYTHONIOENCODING="utf-8"` antes de correr.
@@ -63,6 +63,7 @@ A API-Football grátis tem 100 pedidos/dia. **Nunca** corras `prever`/`tudo` em 
    - Eredivisie: Voetbal International, Voetbalzone, NOS ("blessures", "selectie").
    - Bélgica (só Club Brugge, St. Gilloise, Gent e Charleroi): HLN, Sporza, Walfoot, DH ("blessés", "geblesseerd").
    - Provas europeias: as mesmas, mais UEFA.com.
+   - Seleções (Liga das Nações, `UNL`): ver a secção "Seleções" abaixo.
    - Américas (prioridade baixa): ge.globo (também Copa do Brasil), Olé, MLSsoccer.com.
    **Como pesquisar para teres notícias atuais** (a pesquisa genérica devolve artigos de épocas antigas):
    - Põe sempre na pesquisa as duas equipas e a data do jogo por extenso (ex.: "Leeds Tottenham team news
@@ -89,6 +90,25 @@ A API-Football grátis tem 100 pedidos/dia. **Nunca** corras `prever`/`tudo` em 
 4. Corre `run.py prever` para aplicar os ajustes e confirma com `run.py lista 4`.
 5. Termina com um resumo curto: jogos com ajustes, e as 3-5 previsões mais fortes da jornada.
 
+### Seleções (Liga das Nações e outras janelas FIFA)
+O modelo das seleções (`agente/selecoes.py`) usa todos os resultados internacionais desde 2020 (amigáveis a
+meio peso, sem vantagem de casa em campo neutro) e cantos/cartões dos jogos oficiais do ESPN. Não sabe nada de
+convocatórias, por isso nas seleções o teu trabalho pesa mais. Para cada jogo dos próximos 2 dias, pesquisa:
+- **Convocatória e ausências**: quem foi chamado e quem ficou de fora (lesão, castigo, opção); dispensas a meio
+  da concentração; estreias. Fontes: site/redes da federação, Record/A Bola/O Jogo (Portugal), BBC/Sky
+  (Inglaterra, Escócia, Gales, Irlanda do Norte), Kicker (Alemanha), Marca/AS (Espanha), L'Équipe (França),
+  Gazzetta (Itália), VI (Países Baixos), HLN/Sporza (Bélgica), UEFA.com ("team news", "squad").
+- **Forma dos jogadores-chave nos clubes**: o goleador e o criativo estão a jogar e a marcar? Saem de lesão?
+- **Selecionador**: treinador novo ou em risco, mudanças de sistema, declarações na conferência de imprensa.
+- **Forma e motivação da seleção**: classificação do grupo (luta pelo 1.º lugar/promoção, risco de
+  despromoção, já sem nada em jogo → rotação), e se é o 1.º ou o 2.º jogo da janela (no 2.º há mais rotação).
+- **Árbitro** (para cartões): nome do árbitro nomeado pela UEFA e a sua média de amarelos (pesquisa
+  "<árbitro> yellow cards per game" / "referee <jogo> Nations League"). Árbitro com ≥ 5 amarelos/jogo:
+  `cartoes` +10 a +20 no jogo; ≤ 3: −10 a −15. Jogos com rivalidade ou muito em jogo: +5 a +10.
+Quantificar: as mesmas regras dos clubes (goleador fora −5 a −10, 3+ titulares fora −8 a −15, rotação no
+2.º jogo da janela ou sem nada em jogo −5 a −15). Os nomes das seleções são em português, iguais aos do
+`run.py lista` ("Portugal", "Espanha", "Países Baixos", "Chéquia", "Bósnia", "Irlanda"...).
+
 ### Formato de `dados/ajustes.json`
 ```json
 {
@@ -100,10 +120,12 @@ A API-Football grátis tem 100 pedidos/dia. **Nunca** corras `prever`/`tudo` em 
                 "fontes": ["https://..."], "valido_ate": "2026-11-15"}
   },
   "jogos": {
-    "20261101-P1-porto-sporting": {"golos_casa": 0, "golos_fora": -5, "nota": "Clássico: jogo tático"}
+    "20261101-P1-porto-sporting": {"golos_casa": 0, "golos_fora": -5, "nota": "Clássico: jogo tático"},
+    "20261114-UNL-portugal-dinamarca": {"cartoes": 15, "cantos": 0, "nota": "Árbitro X: 5.4 amarelos/jogo"}
   }
 }
 ```
+`cartoes` e `cantos` (percentagens, por jogo; `cartoes` também por equipa) mexem só nesses mercados.
 `importancia`: "titular", "rotação" ou "suplente". Os ausentes aparecem na dashboard em cada jogo.
 Os nomes das equipas devem ser os do football-data.co.uk (os que aparecem em `run.py lista`, por exemplo
 "Sp Lisbon", "Sp Braga", "Man United", "Bayern Munich", "Ein Frankfurt"). As chaves de `jogos` são os ids entre `[...]` no `lista`.

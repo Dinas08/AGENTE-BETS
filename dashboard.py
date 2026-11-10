@@ -103,8 +103,8 @@ DAYS = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
 # (o Windows não desenha emojis de bandeiras, por isso as ligas usam a bola)
 COMP_ICON = {"P1": "⚽", "E0": "⚽", "D1": "⚽", "I1": "⚽", "SP1": "⚽", "F1": "⚽", "N1": "⚽", "B1": "⚽",
              "BRA": "🇧🇷", "ARG": "🇦🇷", "USA": "🇺🇸", "UCL": "⭐", "UEL": "🟠", "UECL": "🟢",
-             "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆", "CB": "🏆"}
-COMP_ORDER = ["UCL", "UEL", "UECL", "P1", "E0", "D1", "I1", "SP1", "F1", "N1", "B1", "BRA", "ARG", "USA",
+             "TP": "🏆", "TL": "🏆", "FAC": "🏆", "EFL": "🏆", "DFB": "🏆", "CI": "🏆", "CB": "🏆", "UNL": "🌍"}
+COMP_ORDER = ["UNL", "UCL", "UEL", "UECL", "P1", "E0", "D1", "I1", "SP1", "F1", "N1", "B1", "BRA", "ARG", "USA",
               "TP", "TL", "FAC", "EFL", "DFB", "CI", "CB"]
 MARKET_TYPES = {
     "Resultado": ["1", "X", "2"],

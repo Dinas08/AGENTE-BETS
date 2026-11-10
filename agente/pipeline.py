@@ -5,7 +5,7 @@ import re
 
 import pandas as pd
 
-from agente import aprendizagem, calibracao, config, db
+from agente import aprendizagem, calibracao, config, db, selecoes
 from agente.model import Predictor, blend_with_market, main_picks, markets, team_form, value_bets
 from agente.sources import api_football as apif
 from agente.sources import espn
@@ -42,6 +42,7 @@ def adjustment_for(adj: dict, matcher: TeamMatcher, mid: str, home: str, away: s
         until = a.get("valido_ate")
         if until and dt.date.fromisoformat(until) < day:
             continue
+        teams[name] = a  # seleções e nomes já iguais aos da lista
         teams[matcher.match(name) or name] = a
     h, a = teams.get(home, {}), teams.get(away, {})
     hg = (1 + h.get("golos_marcados", 0) / 100) * (1 + a.get("golos_sofridos", 0) / 100)
@@ -49,6 +50,9 @@ def adjustment_for(adj: dict, matcher: TeamMatcher, mid: str, home: str, away: s
     j = adj.get("jogos", {}).get(mid, {})
     hg *= 1 + j.get("golos_casa", 0) / 100
     ag *= 1 + j.get("golos_fora", 0) / 100
+    # cartões e cantos (%): árbitro rigoroso/permissivo, jogo quente, estilo das equipas
+    cards = (1 + j.get("cartoes", 0) / 100) * (1 + h.get("cartoes", 0) / 100) * (1 + a.get("cartoes", 0) / 100)
+    corners = 1 + j.get("cantos", 0) / 100
     notes = [f"{t}: {x['motivo']}" for t, x in ((home, h), (away, a)) if x.get("motivo")]
     if j.get("nota"):
         notes.append(j["nota"])
@@ -56,7 +60,8 @@ def adjustment_for(adj: dict, matcher: TeamMatcher, mid: str, home: str, away: s
     missing = [{"equipa": t, "jogador": p.get("jogador"), "motivo": p.get("motivo"),
                 "importancia": p.get("importancia"), "fonte": (x.get("fontes") or [""])[0]}
                for t, x in ((home, h), (away, a)) for p in x.get("ausentes", [])]
-    return {"home_goals": round(hg, 3), "away_goals": round(ag, 3), "notas": notes, "ausentes": missing}
+    return {"home_goals": round(hg, 3), "away_goals": round(ag, 3), "cards": round(cards, 3),
+            "corners": round(corners, 3), "notas": notes, "ausentes": missing}
 
 
 def _fd_odds(r) -> dict:
@@ -94,7 +99,10 @@ def collect_fixtures(matcher: TeamMatcher, today: dt.date) -> tuple[list[dict], 
             # jogos de hoje/ontem mudam (resultados): cache curta
             fresh = 0.2 if day >= today - dt.timedelta(days=1) and day <= today else None
             for ev in espn.events(c["espn"], day, ttl_hours=fresh):
-                home, away = matcher.match(ev["home"], comp), matcher.match(ev["away"], comp)
+                if c.get("type") == "selecoes":  # seleções: nomes em português, sem procurar clubes
+                    home, away = selecoes.nome(ev["home"]), selecoes.nome(ev["away"])
+                else:
+                    home, away = matcher.match(ev["home"], comp), matcher.match(ev["away"], comp)
                 unmatched |= {n for n, m in ((ev["home"], home), (ev["away"], away)) if m is None}
                 home, away = home or ev["home"], away or ev["away"]
                 ko = ev["kickoff"]
@@ -198,11 +206,18 @@ def predict(today: dt.date | None = None) -> int:
     n_corr = 0 if corr.empty else int((((corr["ataque"] - 1).abs() >= .03) | ((corr["defesa"] - 1).abs() >= .03)).sum())
     print(f"    aprendizagem: {n_corr} equipa(s) com correção pelos erros anteriores")
     print(f"4/4 A prever {len(games)} jogos...")
+    sel = None
+    if any(selecoes.e_selecoes(g["comp"]) for g in games):
+        print("    seleções: a treinar com os resultados internacionais...")
+        sel = selecoes.ModeloSelecoes(today)
     n = 0
     for g in games:
         comp = config.COMPETITIONS[g["comp"]]
-        exp = pred.expected(g["home"], g["away"], comp["type"], comp.get("league"),
-                            neutral=bool(g.get("neutral")) or "final" == str(g.get("round", "")).lower())
+        neutro = bool(g.get("neutral")) or "final" == str(g.get("round", "")).lower()
+        if comp["type"] == "selecoes":
+            exp = sel.expected(g["home"], g["away"], neutro)
+        else:
+            exp = pred.expected(g["home"], g["away"], comp["type"], comp.get("league"), neutral=neutro)
         exp = blend_with_market(exp, g.get("odds", {}))
         a = adjustment_for(adj, matcher, g["match_id"], g["home"], g["away"], g["kickoff"].date())
         # correções aprendidas com os erros anteriores (ataque de uma equipa x defesa da outra)
@@ -229,7 +244,8 @@ def predict(today: dt.date | None = None) -> int:
             "probs": {k: round(v, 4) for k, v in mk["probs"].items()}, "picks": main_picks(mk["probs"]),
             "odds": g.get("odds", {}), "value_bets": value_bets(mk["probs"], g.get("odds", {})),
             "adjustments": a, "injuries": g.get("injuries") or a["ausentes"],
-            "form": {"casa": team_form(hist, g["home"]), "fora": team_form(hist, g["away"])},
+            "form": ({"casa": sel.forma(g["home"]), "fora": sel.forma(g["away"])} if comp["type"] == "selecoes"
+                     else {"casa": team_form(hist, g["home"]), "fora": team_form(hist, g["away"])}),
             "limited": int(exp["limited"]),
         }
         n += db.upsert_prediction(row)

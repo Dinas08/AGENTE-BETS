@@ -100,6 +100,8 @@ CUPS = {
     "UCL": {"name": "Liga dos Campeões", "apif": 2, "country": "Europa", "type": "europe"},
     "UEL": {"name": "Liga Europa", "apif": 3, "country": "Europa", "type": "europe"},
     "UECL": {"name": "Liga Conferência", "apif": 848, "country": "Europa", "type": "europe"},
+    # seleções: modelo próprio (agente/selecoes.py), com os resultados internacionais desde 2020
+    "UNL": {"name": "Liga das Nações", "apif": 5, "country": "Europa", "type": "selecoes"},
 }
 
 AMERICAS = {"BRA", "ARG", "USA", "CB"}  # competições da noite/madrugada (Telegram: só a partir das 22h)
@@ -114,6 +116,7 @@ ESPN_SLUGS = {
     "BRA": "bra.1", "ARG": "arg.1", "USA": "usa.1", "CB": "bra.copa_do_brazil",
     "TP": "por.taca.portugal", "FAC": "eng.fa", "EFL": "eng.league_cup", "DFB": "ger.dfb_pokal",
     "CI": "ita.coppa_italia", "UCL": "uefa.champions", "UEL": "uefa.europa", "UECL": "uefa.europa.conf",
+    "UNL": "uefa.nations",
 }
 for _k, _s in ESPN_SLUGS.items():
     COMPETITIONS[_k]["espn"] = _s

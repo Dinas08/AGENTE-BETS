@@ -24,8 +24,11 @@ class Strengths:
 
 
 def fit_strengths(df: pd.DataFrame, yh: np.ndarray, ya: np.ndarray, ref_date, prior: dict | None = None,
-                  ridge: float | None = None) -> Strengths:
-    """Ajusta log(λ_casa) = mu + casa + att[c] - def[f]; log(λ_fora) = mu + att[f] - def[c]."""
+                  ridge: float | None = None, neutral: np.ndarray | None = None,
+                  peso: np.ndarray | None = None) -> Strengths:
+    """Ajusta log(λ_casa) = mu + casa + att[c] - def[f]; log(λ_fora) = mu + att[f] - def[c].
+    neutral (1 = campo neutro, sem vantagem de casa) e peso (por jogo) servem para as seleções; nas ligas ficam
+    vazios e o ajuste é o mesmo de sempre."""
     prior = prior or {}
     teams = sorted(set(df["home"]) | set(df["away"]))
     ix = {t: i for i, t in enumerate(teams)}
@@ -34,12 +37,15 @@ def fit_strengths(df: pd.DataFrame, yh: np.ndarray, ya: np.ndarray, ref_date, pr
     a = df["away"].map(ix).to_numpy()
     age = (pd.Timestamp(ref_date) - df["date"]).dt.days.clip(lower=0).to_numpy()
     w = np.exp(-config.MODEL["decay_per_day"] * age)
+    if peso is not None:
+        w = w * peso
+    casa = np.ones(len(df)) if neutral is None else 1.0 - np.asarray(neutral, float)
     p0 = np.array([prior.get(t, 0.0) for t in teams])
     lam = config.MODEL["ridge"] if ridge is None else ridge
 
     def nll(x):
         mu, ha, att, dfn = x[0], x[1], x[2:2 + n], x[2 + n:]
-        eh = mu + ha + att[h] - dfn[a]
+        eh = mu + ha * casa + att[h] - dfn[a]
         ea = mu + att[a] - dfn[h]
         lh, la = np.exp(eh), np.exp(ea)
         f = np.sum(w * (lh - yh * eh)) + np.sum(w * (la - ya * ea))
@@ -47,7 +53,7 @@ def fit_strengths(df: pd.DataFrame, yh: np.ndarray, ya: np.ndarray, ref_date, pr
         gh, ga = w * (lh - yh), w * (la - ya)
         g = np.zeros_like(x)
         g[0] = gh.sum() + ga.sum()
-        g[1] = gh.sum()
+        g[1] = (gh * casa).sum()
         g[2:2 + n] = np.bincount(h, gh, n) + np.bincount(a, ga, n) + lam * (att - p0)
         g[2 + n:] = -np.bincount(a, gh, n) - np.bincount(h, ga, n) + lam * (dfn - p0)
         return f, g
@@ -57,7 +63,7 @@ def fit_strengths(df: pd.DataFrame, yh: np.ndarray, ya: np.ndarray, ref_date, pr
     res = minimize(nll, x0, jac=True, method="L-BFGS-B")
     x = res.x
     mu, ha, att, dfn = x[0], x[1], x[2:2 + n], x[2 + n:]
-    lh = np.exp(mu + ha + att[h] - dfn[a])
+    lh = np.exp(mu + ha * casa + att[h] - dfn[a])
     la = np.exp(mu + att[a] - dfn[h])
     phi = float(np.sum(w * ((yh - lh) ** 2 / lh + (ya - la) ** 2 / la)) / (2 * w.sum()))
     games = pd.Series(np.r_[w, w], index=np.r_[df["home"].to_numpy(), df["away"].to_numpy()]).groupby(level=0).sum()
@@ -299,6 +305,7 @@ def markets(exp: dict, adj: dict | None = None) -> dict:
     xc = {"golos_casa": lh, "golos_fora": la}
     if exp.get("corners"):
         ch, ca, phi = exp["corners"]
+        ch, ca = ch * adj.get("corners", 1.0), ca * adj.get("corners", 1.0)
         dh, da = _nb(ch, phi), _nb(ca, phi)
         tot = np.convolve(dh, da)[:60]
         for line in (7.5, 8.5, 9.5, 10.5, 11.5, 12.5):
@@ -312,6 +319,7 @@ def markets(exp: dict, adj: dict | None = None) -> dict:
         xc.update({"cantos_casa": ch, "cantos_fora": ca})
     if exp.get("cards"):
         yh, ya, phi = exp["cards"]
+        yh, ya = yh * adj.get("cards", 1.0), ya * adj.get("cards", 1.0)
         tot = np.convolve(_nb(yh, phi), _nb(ya, phi))[:60]
         for line in (2.5, 3.5, 4.5, 5.5):
             over = float(tot[int(line) + 1:].sum())
