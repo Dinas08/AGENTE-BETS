@@ -50,6 +50,17 @@ def upsert_prediction(row: dict):
         return True
 
 
+def remover_futuras(comp: str, manter: set) -> int:
+    """Apaga previsões de jogos ainda por começar desta prova que já não vieram nas fontes (ex.: duplicados com
+    outro nome). Só se usa nas seleções, onde todos os jogos vêm do ESPN."""
+    with conn() as c:
+        ids = [r[0] for r in c.execute("SELECT match_id FROM predictions WHERE comp=? AND kickoff>?",
+                                      (comp, dt.datetime.now().isoformat()))]
+        fora = [i for i in ids if i not in manter]
+        c.executemany("DELETE FROM predictions WHERE match_id=?", [(i,) for i in fora])
+        return len(fora)
+
+
 def set_espn_ref(match_id: str, ref: str):
     """Grava a referência ESPN mesmo em previsões já congeladas (para ir buscar o resultado)."""
     with conn() as c:

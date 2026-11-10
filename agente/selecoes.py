@@ -46,6 +46,9 @@ PT = {
     "Andorra": "Andorra", "San Marino": "São Marino", "Gibraltar": "Gibraltar", "Faroe Islands": "Ilhas Faroé",
     "Estonia": "Estónia", "Latvia": "Letónia", "Lithuania": "Lituânia", "Belarus": "Bielorrússia",
     "Moldova": "Moldávia", "Russia": "Rússia",
+    # variantes de nomes (API-Football, ESPN)
+    "Rep. Of Ireland": "Irlanda", "Bosnia & Herzegovina": "Bósnia", "FYR Macedonia": "Macedónia do Norte",
+    "Macedonia": "Macedónia do Norte", "Faroe Isl.": "Ilhas Faroé",
     # fora da Europa (amigáveis e Mundial)
     "Brazil": "Brasil", "Argentina": "Argentina", "Uruguay": "Uruguai", "Colombia": "Colômbia", "Chile": "Chile",
     "Mexico": "México", "United States": "EUA", "USA": "EUA", "Canada": "Canadá", "Japan": "Japão",

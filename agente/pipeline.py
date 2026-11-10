@@ -138,7 +138,10 @@ def collect_fixtures(matcher: TeamMatcher, today: dt.date) -> tuple[list[dict], 
             for f in resp:
                 ko = dt.datetime.fromisoformat(f["fixture"]["date"]).replace(tzinfo=None)
                 hn, an = f["teams"]["home"]["name"], f["teams"]["away"]["name"]
-                home, away = matcher.match(hn, comp) or hn, matcher.match(an, comp) or an
+                if c.get("type") == "selecoes":
+                    home, away = selecoes.nome(hn), selecoes.nome(an)
+                else:
+                    home, away = matcher.match(hn, comp) or hn, matcher.match(an, comp) or an
                 mid = match_id(ko, comp, home, away)
                 status = f["fixture"]["status"]["short"]
                 if status in FINISHED:
@@ -207,6 +210,10 @@ def predict(today: dt.date | None = None) -> int:
     print(f"    aprendizagem: {n_corr} equipa(s) com correção pelos erros anteriores")
     print(f"4/4 A prever {len(games)} jogos...")
     sel = None
+    for comp in {g["comp"] for g in games if selecoes.e_selecoes(g["comp"])}:
+        n = db.remover_futuras(comp, {g["match_id"] for g in games if g["comp"] == comp})
+        if n:
+            print(f"    {comp}: {n} previsão(ões) antiga(s)/duplicada(s) removida(s)")
     if any(selecoes.e_selecoes(g["comp"]) for g in games):
         print("    seleções: a treinar com os resultados internacionais...")
         sel = selecoes.ModeloSelecoes(today)
