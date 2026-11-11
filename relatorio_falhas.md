@@ -1,8 +1,8 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 10/11/2026 00:01. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 11/11/2026 00:01. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 30 Green · 12 Red → **71%** de acerto (o modelo esperava 62%).
+- **Últimos 7 dias:** 26 Green · 11 Red → **70%** de acerto (o modelo esperava 61%).
 - **Últimos 30 dias:** 36 Green · 16 Red → **69%** de acerto (o modelo esperava 63%).
 - **Desde o início:** 36 Green · 16 Red → **69%** de acerto (o modelo esperava 63%).
 - **Múltiplas:** 3 Green em 8.
@@ -54,7 +54,7 @@ _Atualizado automaticamente a 10/11/2026 00:01. Só dicas publicadas e já decid
 | 💎 Odd alta | 2 | 0% | 55% | ⏳ poucos dados |
 
 ## Extras não publicadas
-Das 57 apostas extra que ficaram por publicar, 37 teriam dado Green (**65%**), contra 69% das publicadas.
+Das 32 apostas extra que ficaram por publicar, 21 teriam dado Green (**66%**), contra 69% das publicadas.
 
 ## Últimos Reds
 - 08/11 · Monza x Atalanta **0-1** · xG 1.4-1.4 · Ambas marcam (62%, Ambas marcam)
