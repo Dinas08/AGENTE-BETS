@@ -2118,5 +2118,1501 @@
 "ay": 3.0,
 "hc": 4.0,
 "hy": 2.0
+},
+"2025-10-12|Croácia|Gibraltar": {
+"ac": 0.0,
+"ay": 0.0,
+"hc": 18.0,
+"hy": 0.0
+},
+"2025-10-12|Dinamarca|Grécia": {
+"ac": 6.0,
+"ay": 3.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2025-10-12|Escócia|Bielorrússia": {
+"ac": 6.0,
+"ay": 2.0,
+"hc": 7.0,
+"hy": 0.0
+},
+"2025-10-12|Ilhas Faroé|Chéquia": {
+"ac": 7.0,
+"ay": 1.0,
+"hc": 1.0,
+"hy": 3.0
+},
+"2025-10-12|Lituânia|Polónia": {
+"ac": 8.0,
+"ay": 2.0,
+"hc": 4.0,
+"hy": 2.0
+},
+"2025-10-12|Países Baixos|Finlândia": {
+"ac": 1.0,
+"ay": 2.0,
+"hc": 12.0,
+"hy": 0.0
+},
+"2025-10-12|Roménia|Áustria": {
+"ac": 4.0,
+"ay": 4.0,
+"hc": 2.0,
+"hy": 2.0
+},
+"2025-10-12|São Marino|Chipre": {
+"ac": 5.0,
+"ay": 3.0,
+"hc": 2.0,
+"hy": 2.0
+},
+"2025-10-13|Eslováquia|Luxemburgo": {
+"ac": 4.0,
+"ay": 4.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2025-10-13|Eslovénia|Suíça": {
+"ac": 4.0,
+"ay": 0.0,
+"hc": 3.0,
+"hy": 1.0
+},
+"2025-10-13|Irlanda do Norte|Alemanha": {
+"ac": 5.0,
+"ay": 2.0,
+"hc": 4.0,
+"hy": 4.0
+},
+"2025-10-13|Islândia|França": {
+"ac": 9.0,
+"ay": 1.0,
+"hc": 0.0,
+"hy": 1.0
+},
+"2025-10-13|Macedónia do Norte|Cazaquistão": {
+"ac": 2.0,
+"ay": 5.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2025-10-13|País de Gales|Bélgica": {
+"ac": 5.0,
+"ay": 1.0,
+"hc": 7.0,
+"hy": 2.0
+},
+"2025-10-13|Suécia|Kosovo": {
+"ac": 0.0,
+"ay": 2.0,
+"hc": 12.0,
+"hy": 0.0
+},
+"2025-10-13|Ucrânia|Azerbaijão": {
+"ac": 1.0,
+"ay": 1.0,
+"hc": 7.0,
+"hy": 3.0
+},
+"2025-10-14|Andorra|Sérvia": {
+"ac": 10.0,
+"ay": 1.0,
+"hc": 0.0,
+"hy": 4.0
+},
+"2025-10-14|Espanha|Bulgária": {
+"ac": 0.0,
+"ay": 0.0,
+"hc": 11.0,
+"hy": 0.0
+},
+"2025-10-14|Estónia|Moldávia": {
+"ac": 4.0,
+"ay": 3.0,
+"hc": 3.0,
+"hy": 2.0
+},
+"2025-10-14|Irlanda|Arménia": {
+"ac": 0.0,
+"ay": 0.0,
+"hc": 6.0,
+"hy": 4.0
+},
+"2025-10-14|Itália|Israel": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 4.0,
+"hy": 2.0
+},
+"2025-10-14|Letónia|Inglaterra": {
+"ac": 9.0,
+"ay": 1.0,
+"hc": 2.0,
+"hy": 4.0
+},
+"2025-10-14|Portugal|Hungria": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 5.0,
+"hy": 2.0
+},
+"2025-10-14|Turquia|Geórgia": {
+"ac": 6.0,
+"ay": 1.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2025-11-13|Andorra|Albânia": {
+"ac": 3.0,
+"ay": 2.0,
+"hc": 1.0,
+"hy": 3.0
+},
+"2025-11-13|Arménia|Hungria": {
+"ac": 7.0,
+"ay": 1.0,
+"hc": 2.0,
+"hy": 1.0
+},
+"2025-11-13|Azerbaijão|Islândia": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 8.0,
+"hy": 4.0
+},
+"2025-11-13|França|Ucrânia": {
+"ac": 0.0,
+"ay": 2.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2025-11-13|Inglaterra|Sérvia": {
+"ac": 5.0,
+"ay": 1.0,
+"hc": 6.0,
+"hy": 0.0
+},
+"2025-11-13|Irlanda|Portugal": {
+"ac": 10.0,
+"ay": 2.0,
+"hc": 5.0,
+"hy": 3.0
+},
+"2025-11-13|Moldávia|Itália": {
+"ac": 13.0,
+"ay": 0.0,
+"hc": 1.0,
+"hy": 3.0
+},
+"2025-11-13|Noruega|Estónia": {
+"ac": 0.0,
+"ay": 0.0,
+"hc": 8.0,
+"hy": 0.0
+},
+"2025-11-14|Croácia|Ilhas Faroé": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 11.0,
+"hy": 0.0
+},
+"2025-11-14|Eslováquia|Irlanda do Norte": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 3.0,
+"hy": 1.0
+},
+"2025-11-14|Finlândia|Malta": {
+"ac": 1.0,
+"ay": 0.0,
+"hc": 9.0,
+"hy": 0.0
+},
+"2025-11-14|Gibraltar|Montenegro": {
+"ac": 9.0,
+"ay": 1.0,
+"hc": 1.0,
+"hy": 2.0
+},
+"2025-11-14|Luxemburgo|Alemanha": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 4.0,
+"hy": 3.0
+},
+"2025-11-14|Polónia|Países Baixos": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 2.0,
+"hy": 2.0
+},
+"2025-11-15|Bósnia|Roménia": {
+"ac": 1.0,
+"ay": 2.0,
+"hc": 4.0,
+"hy": 5.0
+},
+"2025-11-15|Cazaquistão|Bélgica": {
+"ac": 12.0,
+"ay": 1.0,
+"hc": 5.0,
+"hy": 4.0
+},
+"2025-11-15|Chipre|Áustria": {
+"ac": 3.0,
+"ay": 0.0,
+"hc": 6.0,
+"hy": 2.0
+},
+"2025-11-15|Dinamarca|Bielorrússia": {
+"ac": 3.0,
+"ay": 5.0,
+"hc": 13.0,
+"hy": 0.0
+},
+"2025-11-15|Eslovénia|Kosovo": {
+"ac": 7.0,
+"ay": 1.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2025-11-15|Geórgia|Espanha": {
+"ac": 6.0,
+"ay": 1.0,
+"hc": 4.0,
+"hy": 0.0
+},
+"2025-11-15|Grécia|Escócia": {
+"ac": 8.0,
+"ay": 3.0,
+"hc": 6.0,
+"hy": 0.0
+},
+"2025-11-15|Liechtenstein|País de Gales": {
+"ac": 7.0,
+"ay": 3.0,
+"hc": 2.0,
+"hy": 2.0
+},
+"2025-11-15|Suíça|Suécia": {
+"ac": 3.0,
+"ay": 4.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2025-11-15|Turquia|Bulgária": {
+"ac": 6.0,
+"ay": 1.0,
+"hc": 9.0,
+"hy": 3.0
+},
+"2025-11-16|Albânia|Inglaterra": {
+"ac": 5.0,
+"ay": 2.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2025-11-16|Azerbaijão|França": {
+"ac": 8.0,
+"ay": 0.0,
+"hc": 1.0,
+"hy": 2.0
+},
+"2025-11-16|Hungria|Irlanda": {
+"ac": 2.0,
+"ay": 4.0,
+"hc": 8.0,
+"hy": 2.0
+},
+"2025-11-16|Itália|Noruega": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 6.0,
+"hy": 3.0
+},
+"2025-11-16|Moldávia|Israel": {},
+"2025-11-16|Portugal|Arménia": {
+"ac": 1.0,
+"ay": 1.0,
+"hc": 7.0,
+"hy": 0.0
+},
+"2025-11-16|Sérvia|Letónia": {
+"ac": 3.0,
+"ay": 2.0,
+"hc": 13.0,
+"hy": 0.0
+},
+"2025-11-16|Ucrânia|Islândia": {
+"ac": 10.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 2.0
+},
+"2025-11-17|Alemanha|Eslováquia": {
+"ac": 3.0,
+"ay": 0.0,
+"hc": 8.0,
+"hy": 1.0
+},
+"2025-11-17|Chéquia|Gibraltar": {
+"ac": 1.0,
+"ay": 1.0,
+"hc": 12.0,
+"hy": 0.0
+},
+"2025-11-17|Irlanda do Norte|Luxemburgo": {
+"ac": 2.0,
+"ay": 6.0,
+"hc": 5.0,
+"hy": 4.0
+},
+"2025-11-17|Malta|Polónia": {
+"ac": 9.0,
+"ay": 2.0,
+"hc": 4.0,
+"hy": 2.0
+},
+"2025-11-17|Montenegro|Croácia": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 5.0,
+"hy": 3.0
+},
+"2025-11-17|Países Baixos|Lituânia": {
+"ac": 3.0,
+"ay": 2.0,
+"hc": 5.0,
+"hy": 0.0
+},
+"2025-11-18|Bielorrússia|Grécia": {
+"ac": 6.0,
+"ay": 1.0,
+"hc": 2.0,
+"hy": 1.0
+},
+"2025-11-18|Bulgária|Geórgia": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 0.0,
+"hy": 1.0
+},
+"2025-11-18|Bélgica|Liechtenstein": {
+"ac": 0.0,
+"ay": 1.0,
+"hc": 15.0,
+"hy": 0.0
+},
+"2025-11-18|Escócia|Dinamarca": {
+"ac": 9.0,
+"ay": 1.0,
+"hc": 2.0,
+"hy": 1.0
+},
+"2025-11-18|Espanha|Turquia": {
+"ac": 3.0,
+"ay": 5.0,
+"hc": 6.0,
+"hy": 1.0
+},
+"2025-11-18|Kosovo|Suíça": {
+"ac": 1.0,
+"ay": 0.0,
+"hc": 3.0,
+"hy": 2.0
+},
+"2025-11-18|País de Gales|Macedónia do Norte": {
+"ac": 3.0,
+"ay": 3.0,
+"hc": 9.0,
+"hy": 0.0
+},
+"2025-11-18|Roménia|São Marino": {
+"ac": 0.0,
+"ay": 4.0,
+"hc": 6.0,
+"hy": 0.0
+},
+"2025-11-18|Suécia|Eslovénia": {
+"ac": 7.0,
+"ay": 1.0,
+"hc": 6.0,
+"hy": 2.0
+},
+"2025-11-18|Áustria|Bósnia": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2026-03-26|Chéquia|Irlanda": {
+"ac": 9.0,
+"ay": 2.0,
+"hc": 6.0,
+"hy": 1.0
+},
+"2026-03-26|Dinamarca|Macedónia do Norte": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 11.0,
+"hy": 0.0
+},
+"2026-03-26|Eslováquia|Kosovo": {
+"ac": 3.0,
+"ay": 3.0,
+"hc": 7.0,
+"hy": 2.0
+},
+"2026-03-26|Itália|Irlanda do Norte": {
+"ac": 3.0,
+"ay": 0.0,
+"hc": 12.0,
+"hy": 1.0
+},
+"2026-03-26|País de Gales|Bósnia": {
+"ac": 3.0,
+"ay": 4.0,
+"hc": 9.0,
+"hy": 1.0
+},
+"2026-03-26|Polónia|Albânia": {
+"ac": 2.0,
+"ay": 3.0,
+"hc": 6.0,
+"hy": 2.0
+},
+"2026-03-26|Turquia|Roménia": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 9.0,
+"hy": 2.0
+},
+"2026-03-26|Ucrânia|Suécia": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 9.0,
+"hy": 2.0
+},
+"2026-03-31|Bósnia|Itália": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 10.0,
+"hy": 3.0
+},
+"2026-03-31|Chéquia|Dinamarca": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2026-03-31|Kosovo|Turquia": {
+"ac": 2.0,
+"ay": 5.0,
+"hc": 3.0,
+"hy": 3.0
+},
+"2026-03-31|Suécia|Polónia": {
+"ac": 9.0,
+"ay": 3.0,
+"hc": 2.0,
+"hy": 2.0
+},
+"2026-06-11|Coreia do Sul|Chéquia": {
+"ac": 5.0,
+"ay": 0.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2026-06-12|Canadá|Bósnia": {
+"ac": 4.0,
+"ay": 3.0,
+"hc": 9.0,
+"hy": 2.0
+},
+"2026-06-13|Austrália|Turquia": {},
+"2026-06-13|Catar|Suíça": {
+"ac": 10.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 2.0
+},
+"2026-06-13|Haiti|Escócia": {
+"ac": 3.0,
+"ay": 3.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2026-06-14|Alemanha|Curaçao": {
+"ac": 1.0,
+"ay": 0.0,
+"hc": 8.0,
+"hy": 0.0
+},
+"2026-06-14|Países Baixos|Japão": {
+"ac": 4.0,
+"ay": 0.0,
+"hc": 5.0,
+"hy": 3.0
+},
+"2026-06-14|Suécia|Tunísia": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 4.0,
+"hy": 0.0
+},
+"2026-06-15|Bélgica|Egito": {
+"ac": 7.0,
+"ay": 2.0,
+"hc": 2.0,
+"hy": 2.0
+},
+"2026-06-15|Espanha|Cabo Verde": {
+"ac": 1.0,
+"ay": 1.0,
+"hc": 11.0,
+"hy": 1.0
+},
+"2026-06-16|França|Senegal": {
+"ac": 4.0,
+"ay": 0.0,
+"hc": 6.0,
+"hy": 0.0
+},
+"2026-06-16|Iraq|Noruega": {
+"ac": 5.0,
+"ay": 0.0,
+"hc": 2.0,
+"hy": 1.0
+},
+"2026-06-16|Áustria|Jordan": {},
+"2026-06-17|Inglaterra|Croácia": {
+"ac": 2.0,
+"ay": 0.0,
+"hc": 8.0,
+"hy": 0.0
+},
+"2026-06-17|Portugal|DR Congo": {},
+"2026-06-18|Chéquia|South Africa": {
+"ac": 5.0,
+"ay": 2.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2026-06-18|Suíça|Bósnia": {
+"ac": 3.0,
+"ay": 2.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2026-06-19|Escócia|Marrocos": {
+"ac": 5.0,
+"ay": 1.0,
+"hc": 2.0,
+"hy": 1.0
+},
+"2026-06-19|Turquia|Paraguai": {
+"ac": 0.0,
+"ay": 1.0,
+"hc": 12.0,
+"hy": 1.0
+},
+"2026-06-20|Alemanha|Costa do Marfim": {
+"ac": 3.0,
+"ay": 0.0,
+"hc": 8.0,
+"hy": 0.0
+},
+"2026-06-20|Países Baixos|Suécia": {
+"ac": 5.0,
+"ay": 3.0,
+"hc": 2.0,
+"hy": 0.0
+},
+"2026-06-21|Bélgica|Irão": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2026-06-21|Espanha|Arábia Saudita": {
+"ac": 1.0,
+"ay": 2.0,
+"hc": 6.0,
+"hy": 0.0
+},
+"2026-06-22|Argentina|Áustria": {
+"ac": 3.0,
+"ay": 2.0,
+"hc": 1.0,
+"hy": 2.0
+},
+"2026-06-22|França|Iraq": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 4.0,
+"hy": 0.0
+},
+"2026-06-22|Noruega|Senegal": {
+"ac": 4.0,
+"ay": 0.0,
+"hc": 5.0,
+"hy": 0.0
+},
+"2026-06-23|Inglaterra|Gana": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 9.0,
+"hy": 1.0
+},
+"2026-06-23|Panama|Croácia": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2026-06-23|Portugal|Uzbekistan": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 1.0
+},
+"2026-06-24|Bósnia|Catar": {
+"ac": 5.0,
+"ay": 1.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2026-06-24|Canadá|Suíça": {},
+"2026-06-24|Escócia|Brasil": {
+"ac": 7.0,
+"ay": 2.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2026-06-24|México|Chéquia": {},
+"2026-06-25|EUA|Turquia": {},
+"2026-06-25|Equador|Alemanha": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 3.0
+},
+"2026-06-25|Japão|Suécia": {
+"ac": 8.0,
+"ay": 2.0,
+"hc": 2.0,
+"hy": 1.0
+},
+"2026-06-25|Tunísia|Países Baixos": {
+"ac": 6.0,
+"ay": 0.0,
+"hc": 4.0,
+"hy": 0.0
+},
+"2026-06-26|New Zealand|Bélgica": {
+"ac": 8.0,
+"ay": 0.0,
+"hc": 5.0,
+"hy": 2.0
+},
+"2026-06-26|Noruega|França": {
+"ac": 5.0,
+"ay": 1.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2026-06-26|Uruguai|Espanha": {
+"ac": 6.0,
+"ay": 1.0,
+"hc": 1.0,
+"hy": 3.0
+},
+"2026-06-27|Argélia|Áustria": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 0.0,
+"hy": 0.0
+},
+"2026-06-27|Colômbia|Portugal": {
+"ac": 2.0,
+"ay": 0.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2026-06-27|Croácia|Gana": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 1.0
+},
+"2026-06-27|Panama|Inglaterra": {
+"ac": 7.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 2.0
+},
+"2026-06-29|Alemanha|Paraguai": {
+"ac": 6.0,
+"ay": 2.0,
+"hc": 16.0,
+"hy": 2.0
+},
+"2026-06-29|Países Baixos|Marrocos": {
+"ac": 8.0,
+"ay": 1.0,
+"hc": 5.0,
+"hy": 0.0
+},
+"2026-06-30|Costa do Marfim|Noruega": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 14.0,
+"hy": 0.0
+},
+"2026-06-30|França|Suécia": {
+"ac": 1.0,
+"ay": 0.0,
+"hc": 9.0,
+"hy": 0.0
+},
+"2026-07-01|Bélgica|Senegal": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2026-07-01|EUA|Bósnia": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 4.0,
+"hy": 0.0
+},
+"2026-07-01|Inglaterra|DR Congo": {},
+"2026-07-02|Espanha|Áustria": {
+"ac": 0.0,
+"ay": 1.0,
+"hc": 9.0,
+"hy": 0.0
+},
+"2026-07-02|Portugal|Croácia": {
+"ac": 5.0,
+"ay": 2.0,
+"hc": 9.0,
+"hy": 1.0
+},
+"2026-07-02|Suíça|Argélia": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 4.0,
+"hy": 0.0
+},
+"2026-07-04|Paraguai|França": {
+"ac": 12.0,
+"ay": 3.0,
+"hc": 2.0,
+"hy": 0.0
+},
+"2026-07-05|Brasil|Noruega": {
+"ac": 5.0,
+"ay": 0.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2026-07-05|México|Inglaterra": {
+"ac": 2.0,
+"ay": 4.0,
+"hc": 12.0,
+"hy": 2.0
+},
+"2026-07-06|EUA|Bélgica": {
+"ac": 5.0,
+"ay": 0.0,
+"hc": 3.0,
+"hy": 2.0
+},
+"2026-07-06|Portugal|Espanha": {
+"ac": 7.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 2.0
+},
+"2026-07-07|Suíça|Colômbia": {
+"ac": 7.0,
+"ay": 2.0,
+"hc": 3.0,
+"hy": 3.0
+},
+"2026-07-09|França|Marrocos": {
+"ac": 5.0,
+"ay": 1.0,
+"hc": 5.0,
+"hy": 0.0
+},
+"2026-07-10|Espanha|Bélgica": {
+"ac": 1.0,
+"ay": 2.0,
+"hc": 5.0,
+"hy": 2.0
+},
+"2026-07-11|Argentina|Suíça": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 8.0,
+"hy": 3.0
+},
+"2026-07-11|Noruega|Inglaterra": {
+"ac": 4.0,
+"ay": 0.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2026-07-14|França|Espanha": {
+"ac": 1.0,
+"ay": 1.0,
+"hc": 7.0,
+"hy": 2.0
+},
+"2026-07-15|Inglaterra|Argentina": {
+"ac": 6.0,
+"ay": 3.0,
+"hc": 2.0,
+"hy": 1.0
+},
+"2026-07-18|França|Inglaterra": {
+"ac": 4.0,
+"ay": 0.0,
+"hc": 3.0,
+"hy": 0.0
+},
+"2026-07-19|Espanha|Argentina": {
+"ac": 4.0,
+"ay": 4.0,
+"hc": 9.0,
+"hy": 0.0
+},
+"2026-09-24|Andorra|Malta": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 3.0,
+"hy": 5.0
+},
+"2026-09-24|Kosovo|Irlanda": {
+"ac": 0.0,
+"ay": 2.0,
+"hc": 1.0,
+"hy": 0.0
+},
+"2026-09-24|Liechtenstein|Lituânia": {
+"ac": 8.0,
+"ay": 1.0,
+"hc": 0.0,
+"hy": 1.0
+},
+"2026-09-24|Noruega|Dinamarca": {
+"ac": 8.0,
+"ay": 3.0,
+"hc": 4.0,
+"hy": 0.0
+},
+"2026-09-24|Países Baixos|Alemanha": {
+"ac": 1.0,
+"ay": 1.0,
+"hc": 12.0,
+"hy": 3.0
+},
+"2026-09-24|Portugal|País de Gales": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 10.0,
+"hy": 0.0
+},
+"2026-09-24|Sérvia|Grécia": {
+"ac": 6.0,
+"ay": 1.0,
+"hc": 2.0,
+"hy": 2.0
+},
+"2026-09-24|Áustria|Israel": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 4.0,
+"hy": 3.0
+},
+"2026-09-25|Arménia|Letónia": {
+"ac": 2.0,
+"ay": 0.0,
+"hc": 10.0,
+"hy": 1.0
+},
+"2026-09-25|Geórgia|Irlanda do Norte": {
+"ac": 1.0,
+"ay": 3.0,
+"hc": 9.0,
+"hy": 1.0
+},
+"2026-09-25|Hungria|Ucrânia": {
+"ac": 2.0,
+"ay": 4.0,
+"hc": 4.0,
+"hy": 4.0
+},
+"2026-09-25|Itália|Bélgica": {
+"ac": 8.0,
+"ay": 5.0,
+"hc": 4.0,
+"hy": 3.0
+},
+"2026-09-25|Montenegro|Chipre": {
+"ac": 1.0,
+"ay": 3.0,
+"hc": 8.0,
+"hy": 1.0
+},
+"2026-09-25|Polónia|Bósnia": {
+"ac": 3.0,
+"ay": 5.0,
+"hc": 3.0,
+"hy": 3.0
+},
+"2026-09-25|Suécia|Roménia": {
+"ac": 0.0,
+"ay": 5.0,
+"hc": 3.0,
+"hy": 0.0
+},
+"2026-09-25|Turquia|França": {
+"ac": 3.0,
+"ay": 3.0,
+"hc": 5.0,
+"hy": 2.0
+},
+"2026-09-26|Albânia|Bielorrússia": {
+"ac": 2.0,
+"ay": 4.0,
+"hc": 5.0,
+"hy": 2.0
+},
+"2026-09-26|Bulgária|Luxemburgo": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 5.0,
+"hy": 2.0
+},
+"2026-09-26|Chéquia|Croácia": {
+"ac": 6.0,
+"ay": 1.0,
+"hc": 1.0,
+"hy": 2.0
+},
+"2026-09-26|Eslováquia|Moldávia": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 7.0,
+"hy": 2.0
+},
+"2026-09-26|Eslovénia|Escócia": {
+"ac": 4.0,
+"ay": 1.0,
+"hc": 5.0,
+"hy": 3.0
+},
+"2026-09-26|Ilhas Faroé|Cazaquistão": {
+"ac": 5.0,
+"ay": 2.0,
+"hc": 7.0,
+"hy": 0.0
+},
+"2026-09-26|Inglaterra|Espanha": {
+"ac": 3.0,
+"ay": 0.0,
+"hc": 6.0,
+"hy": 3.0
+},
+"2026-09-26|Islândia|Estónia": {
+"ac": 3.0,
+"ay": 2.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2026-09-26|Macedónia do Norte|Suíça": {
+"ac": 5.0,
+"ay": 0.0,
+"hc": 0.0,
+"hy": 4.0
+},
+"2026-09-26|São Marino|Finlândia": {
+"ac": 4.0,
+"ay": 1.0,
+"hc": 0.0,
+"hy": 1.0
+},
+"2026-09-27|Alemanha|Grécia": {
+"ac": 2.0,
+"ay": 4.0,
+"hc": 8.0,
+"hy": 1.0
+},
+"2026-09-27|Dinamarca|País de Gales": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 2.0,
+"hy": 1.0
+},
+"2026-09-27|Gibraltar|Andorra": {
+"ac": 4.0,
+"ay": 3.0,
+"hc": 4.0,
+"hy": 2.0
+},
+"2026-09-27|Israel|Irlanda": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 2.0,
+"hy": 1.0
+},
+"2026-09-27|Lituânia|Azerbaijão": {
+"ac": 2.0,
+"ay": 3.0,
+"hc": 0.0,
+"hy": 1.0
+},
+"2026-09-27|Noruega|Portugal": {
+"ac": 2.0,
+"ay": 6.0,
+"hc": 7.0,
+"hy": 3.0
+},
+"2026-09-27|Sérvia|Países Baixos": {
+"ac": 4.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 1.0
+},
+"2026-09-27|Áustria|Kosovo": {
+"ac": 1.0,
+"ay": 2.0,
+"hc": 5.0,
+"hy": 2.0
+},
+"2026-09-28|Arménia|Montenegro": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 2.0,
+"hy": 2.0
+},
+"2026-09-28|Bélgica|França": {
+"ac": 6.0,
+"ay": 0.0,
+"hc": 2.0,
+"hy": 3.0
+},
+"2026-09-28|Geórgia|Ucrânia": {
+"ac": 0.0,
+"ay": 4.0,
+"hc": 4.0,
+"hy": 2.0
+},
+"2026-09-28|Irlanda do Norte|Hungria": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 3.0,
+"hy": 4.0
+},
+"2026-09-28|Letónia|Chipre": {
+"ac": 11.0,
+"ay": 4.0,
+"hc": 4.0,
+"hy": 2.0
+},
+"2026-09-28|Roménia|Bósnia": {
+"ac": 3.0,
+"ay": 2.0,
+"hc": 4.0,
+"hy": 0.0
+},
+"2026-09-28|Suécia|Polónia": {
+"ac": 4.0,
+"ay": 3.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2026-09-28|Turquia|Itália": {
+"ac": 2.0,
+"ay": 0.0,
+"hc": 6.0,
+"hy": 3.0
+},
+"2026-09-29|Bulgária|Estónia": {
+"ac": 6.0,
+"ay": 2.0,
+"hc": 6.0,
+"hy": 3.0
+},
+"2026-09-29|Chéquia|Inglaterra": {
+"ac": 6.0,
+"ay": 1.0,
+"hc": 1.0,
+"hy": 0.0
+},
+"2026-09-29|Escócia|Suíça": {
+"ac": 6.0,
+"ay": 0.0,
+"hc": 2.0,
+"hy": 1.0
+},
+"2026-09-29|Eslováquia|Cazaquistão": {
+"ac": 1.0,
+"ay": 2.0,
+"hc": 8.0,
+"hy": 2.0
+},
+"2026-09-29|Eslovénia|Macedónia do Norte": {
+"ac": 3.0,
+"ay": 2.0,
+"hc": 6.0,
+"hy": 1.0
+},
+"2026-09-29|Espanha|Croácia": {
+"ac": 2.0,
+"ay": 4.0,
+"hc": 6.0,
+"hy": 1.0
+},
+"2026-09-29|Finlândia|Bielorrússia": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 8.0,
+"hy": 2.0
+},
+"2026-09-29|Luxemburgo|Islândia": {
+"ac": 2.0,
+"ay": 4.0,
+"hc": 2.0,
+"hy": 2.0
+},
+"2026-09-29|Moldávia|Ilhas Faroé": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 7.0,
+"hy": 0.0
+},
+"2026-09-29|São Marino|Albânia": {
+"ac": 6.0,
+"ay": 1.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2026-10-01|Alemanha|Sérvia": {
+"ac": 1.0,
+"ay": 2.0,
+"hc": 12.0,
+"hy": 0.0
+},
+"2026-10-01|Azerbaijão|Liechtenstein": {
+"ac": 0.0,
+"ay": 3.0,
+"hc": 7.0,
+"hy": 2.0
+},
+"2026-10-01|Dinamarca|Portugal": {
+"ac": 7.0,
+"ay": 1.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2026-10-01|Grécia|Países Baixos": {
+"ac": 8.0,
+"ay": 1.0,
+"hc": 6.0,
+"hy": 2.0
+},
+"2026-10-01|Irlanda|Áustria": {
+"ac": 5.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 2.0
+},
+"2026-10-01|Israel|Kosovo": {
+"ac": 5.0,
+"ay": 0.0,
+"hc": 4.0,
+"hy": 0.0
+},
+"2026-10-01|Malta|Gibraltar": {
+"ac": 1.0,
+"ay": 1.0,
+"hc": 8.0,
+"hy": 3.0
+},
+"2026-10-01|País de Gales|Noruega": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 3.0
+},
+"2026-10-02|Bélgica|Turquia": {
+"ac": 5.0,
+"ay": 3.0,
+"hc": 2.0,
+"hy": 4.0
+},
+"2026-10-02|Bósnia|Suécia": {
+"ac": 0.0,
+"ay": 0.0,
+"hc": 4.0,
+"hy": 0.0
+},
+"2026-10-02|Cazaquistão|Moldávia": {
+"ac": 4.0,
+"ay": 0.0,
+"hc": 11.0,
+"hy": 2.0
+},
+"2026-10-02|Chipre|Arménia": {
+"ac": 11.0,
+"ay": 2.0,
+"hc": 1.0,
+"hy": 0.0
+},
+"2026-10-02|França|Itália": {
+"ac": 4.0,
+"ay": 4.0,
+"hc": 6.0,
+"hy": 0.0
+},
+"2026-10-02|Hungria|Geórgia": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 8.0,
+"hy": 3.0
+},
+"2026-10-02|Ilhas Faroé|Eslováquia": {
+"ac": 10.0,
+"ay": 0.0,
+"hc": 2.0,
+"hy": 3.0
+},
+"2026-10-02|Letónia|Montenegro": {
+"ac": 2.0,
+"ay": 1.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2026-10-02|Polónia|Roménia": {
+"ac": 1.0,
+"ay": 3.0,
+"hc": 7.0,
+"hy": 2.0
+},
+"2026-10-02|Ucrânia|Irlanda do Norte": {
+"ac": 1.0,
+"ay": 1.0,
+"hc": 7.0,
+"hy": 3.0
+},
+"2026-10-03|Bielorrússia|São Marino": {
+"ac": 4.0,
+"ay": 5.0,
+"hc": 6.0,
+"hy": 3.0
+},
+"2026-10-03|Croácia|Inglaterra": {
+"ac": 6.0,
+"ay": 0.0,
+"hc": 1.0,
+"hy": 1.0
+},
+"2026-10-03|Espanha|Chéquia": {
+"ac": 0.0,
+"ay": 4.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2026-10-03|Estónia|Luxemburgo": {
+"ac": 3.0,
+"ay": 6.0,
+"hc": 7.0,
+"hy": 3.0
+},
+"2026-10-03|Finlândia|Albânia": {
+"ac": 6.0,
+"ay": 4.0,
+"hc": 7.0,
+"hy": 1.0
+},
+"2026-10-03|Islândia|Bulgária": {
+"ac": 1.0,
+"ay": 4.0,
+"hc": 9.0,
+"hy": 2.0
+},
+"2026-10-03|Macedónia do Norte|Escócia": {
+"ac": 9.0,
+"ay": 1.0,
+"hc": 1.0,
+"hy": 5.0
+},
+"2026-10-03|Suíça|Eslovénia": {
+"ac": 3.0,
+"ay": 5.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2026-10-04|Azerbaijão|Lituânia": {
+"ac": 5.0,
+"ay": 3.0,
+"hc": 2.0,
+"hy": 3.0
+},
+"2026-10-04|Grécia|Alemanha": {
+"ac": 3.0,
+"ay": 3.0,
+"hc": 2.0,
+"hy": 3.0
+},
+"2026-10-04|Irlanda|Israel": {
+"ac": 3.0,
+"ay": 3.0,
+"hc": 3.0,
+"hy": 1.0
+},
+"2026-10-04|Kosovo|Áustria": {
+"ac": 5.0,
+"ay": 0.0,
+"hc": 3.0,
+"hy": 1.0
+},
+"2026-10-04|Malta|Andorra": {
+"ac": 5.0,
+"ay": 3.0,
+"hc": 6.0,
+"hy": 2.0
+},
+"2026-10-04|País de Gales|Dinamarca": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 3.0
+},
+"2026-10-04|Países Baixos|Sérvia": {
+"ac": 4.0,
+"ay": 4.0,
+"hc": 6.0,
+"hy": 1.0
+},
+"2026-10-04|Portugal|Noruega": {
+"ac": 4.0,
+"ay": 0.0,
+"hc": 6.0,
+"hy": 2.0
+},
+"2026-10-05|Bósnia|Polónia": {
+"ac": 8.0,
+"ay": 3.0,
+"hc": 2.0,
+"hy": 3.0
+},
+"2026-10-05|Chipre|Letónia": {
+"ac": 3.0,
+"ay": 3.0,
+"hc": 7.0,
+"hy": 2.0
+},
+"2026-10-05|França|Bélgica": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 9.0,
+"hy": 1.0
+},
+"2026-10-05|Irlanda do Norte|Geórgia": {
+"ac": 4.0,
+"ay": 4.0,
+"hc": 8.0,
+"hy": 0.0
+},
+"2026-10-05|Itália|Turquia": {
+"ac": 9.0,
+"ay": 2.0,
+"hc": 3.0,
+"hy": 2.0
+},
+"2026-10-05|Montenegro|Arménia": {
+"ac": 2.0,
+"ay": 2.0,
+"hc": 4.0,
+"hy": 1.0
+},
+"2026-10-05|Roménia|Suécia": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 5.0,
+"hy": 4.0
+},
+"2026-10-05|Ucrânia|Hungria": {
+"ac": 4.0,
+"ay": 2.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2026-10-06|Albânia|São Marino": {
+"ac": 1.0,
+"ay": 4.0,
+"hc": 10.0,
+"hy": 1.0
+},
+"2026-10-06|Bielorrússia|Finlândia": {
+"ac": 5.0,
+"ay": 2.0,
+"hc": 1.0,
+"hy": 4.0
+},
+"2026-10-06|Cazaquistão|Ilhas Faroé": {
+"ac": 8.0,
+"ay": 1.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2026-10-06|Croácia|Espanha": {
+"ac": 6.0,
+"ay": 2.0,
+"hc": 3.0,
+"hy": 1.0
+},
+"2026-10-06|Escócia|Eslovénia": {
+"ac": 4.0,
+"ay": 4.0,
+"hc": 1.0,
+"hy": 2.0
+},
+"2026-10-06|Estónia|Islândia": {
+"ac": 7.0,
+"ay": 1.0,
+"hc": 3.0,
+"hy": 1.0
+},
+"2026-10-06|Inglaterra|Chéquia": {
+"ac": 3.0,
+"ay": 2.0,
+"hc": 6.0,
+"hy": 1.0
+},
+"2026-10-06|Luxemburgo|Bulgária": {
+"ac": 4.0,
+"ay": 3.0,
+"hc": 5.0,
+"hy": 1.0
+},
+"2026-10-06|Moldávia|Eslováquia": {
+"ac": 3.0,
+"ay": 0.0,
+"hc": 8.0,
+"hy": 2.0
+},
+"2026-10-06|Suíça|Macedónia do Norte": {
+"ac": 3.0,
+"ay": 1.0,
+"hc": 8.0,
+"hy": 0.0
 }
 }
