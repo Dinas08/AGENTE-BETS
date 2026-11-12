@@ -969,7 +969,21 @@ def _enviar_devidos(s: dict) -> int:
     devidos = [x for x in s.get("pendentes", []) if x["estado"] == "pendente" and not x.get("admin_msg")
                and pd.Timestamp(x.get("enviar_a") or agora) <= agora]
     devidos.sort(key=lambda x: (pd.Timestamp(x["expira"]), bool(x.get("extra")), x["lista"] != "dicas"))
-    return sum(_enviar_rascunho(x) for x in devidos)
+    n = sum(_enviar_rascunho(x) for x in devidos)
+    rec = sum(1 for x in devidos if x.get("admin_msg") and not x.get("extra"))
+    if n >= 2 and rever():  # cada lote que chega traz os botões para aprovar de uma vez
+        horas = sorted({f"{pd.Timestamp(x['expira']):%Hh%M}" for x in devidos if x.get("admin_msg")})
+        _bot("sendMessage", chat_id=ADMIN, text=f"📬 Chegaram {n} rascunhos (jogos das {', '.join(horas)}): {rec} "
+             f"recomendada(s) ⭐ e {n - rec} extra 📎. Os extra só saem se carregares em ✅ Publicar neles.",
+             reply_markup={"inline_keyboard": [[{"text": "✅ Publicar recomendadas", "callback_data": "pub:*"},
+                                    {"text": "❌ Descartar tudo", "callback_data": "desc:*"}]]})
+    return n
+
+
+def _nome_rascunho(x: dict) -> str:
+    if x["lista"] == "multiplas":
+        return "Múltipla " + ("turbo" if x["registo"].get("tipo") == "turbo" else "do dia")
+    return x["registo"].get("jogo") or x["texto"].split("\n")[0]
 
 
 def _enviar_rascunho(x: dict) -> bool:
@@ -999,15 +1013,21 @@ def avisar(s: dict, msg: str, origem: str, reply_to: int | None = None, resumo: 
 
 
 def pedir_aprovacao(s: dict, dia: str) -> None:
-    """Depois das dicas da manhã: uma mensagem com 'Publicar todos' / 'Descartar todos'."""
-    pend = [x for x in s.get("pendentes", []) if x["data"] == dia and x["estado"] == "pendente"]
+    """Depois das dicas da manhã: a lista do dia com a hora a que cada rascunho te vai chegar (~3 h antes do jogo).
+    Os botões para aprovar vêm com cada lote, quando os rascunhos chegam."""
+    pend = sorted([x for x in s.get("pendentes", []) if x["data"] == dia and x["estado"] == "pendente"],
+                  key=lambda x: (pd.Timestamp(x["expira"]), bool(x.get("extra"))))
+    if not rever() or not pend:
+        return
     rec = sum(1 for x in pend if not x.get("extra"))
-    if rever() and len(pend) >= 2:
-        _bot("sendMessage", chat_id=ADMIN, text=f"📝 Hoje: {rec} recomendadas (⭐) e {len(pend) - rec} extra (📎). "
-             f"Vão chegando pela ordem dos jogos, cerca de {ANTECEDENCIA_H} h antes de cada um. Os botões abaixo "
-             "valem só para as que já recebeste; os extra só saem se carregares em ✅ Publicar neles.",
-             reply_markup={"inline_keyboard": [[{"text": "✅ Publicar recomendadas", "callback_data": "pub:*"},
-                                                {"text": "❌ Descartar tudo", "callback_data": "desc:*"}]]})
+    linhas = [f"📝 <b>Hoje: {rec} recomendadas ⭐ e {len(pend) - rec} extra 📎</b>",
+              f"Cada uma chega-te cerca de {ANTECEDENCIA_H} h antes do jogo:", ""]
+    for x in pend:
+        quando = "já enviada" if x.get("admin_msg") else f"chega às {pd.Timestamp(x.get('enviar_a') or x['expira']):%Hh%M}"
+        linhas.append(f"{'📎' if x.get('extra') else '⭐'} {pd.Timestamp(x['expira']):%Hh%M} {E(_nome_rascunho(x))} · {quando}")
+    _bot("sendMessage", chat_id=ADMIN, text="\n".join(linhas)[:4000], parse_mode="HTML",
+         **({"reply_markup": {"inline_keyboard": [[{"text": "✅ Publicar recomendadas", "callback_data": "pub:*"},
+                                    {"text": "❌ Descartar tudo", "callback_data": "desc:*"}]]}} if any(x.get("admin_msg") for x in pend) else {}))
 
 
 def _fechar(x: dict, estado: str) -> None:
