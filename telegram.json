@@ -694,7 +694,7 @@
    "prob": 0.7436,
    "odd_casa": null,
    "data": "2026-11-12",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 141
   },
@@ -707,7 +707,7 @@
    "prob": 0.555,
    "odd_casa": null,
    "data": "2026-11-12",
-   "resultado": null,
+   "resultado": true,
    "tipo": "odd_alta",
    "message_id": 142
   },
@@ -1502,9 +1502,39 @@
    "enviar_a": "2026-11-12T16:45:00",
    "extra": true,
    "admin_msg": 234
+  },
+  {
+   "pid": "1219010712",
+   "origem": "resultado",
+   "data": "2026-11-12",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 141,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 1.5 golos\nArménia 1-1 Chipre",
+   "expira": "2026-11-13T19:01:07.080499",
+   "estado": "publicada",
+   "admin_msg": 242
+  },
+  {
+   "pid": "1219010713",
+   "origem": "resultado",
+   "data": "2026-11-12",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 142,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Não há empate + Mais de 2.5 golos\nTurquia 1-2 Bélgica",
+   "expira": "2026-11-13T19:01:07.525010",
+   "estado": "publicada",
+   "admin_msg": 243
   }
  ],
  "ultimo_resumo": 140,
- "offset_admin": 820373438,
+ "offset_admin": 820373440,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOMavEPiEYJwwXRMvdSe7TJXnDGkJ0AAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
