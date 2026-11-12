@@ -684,6 +684,32 @@
    "tipo": "tardia",
    "extra": true,
    "message_id": 130
+  },
+  {
+   "id": "20261112-UNL-armnia-chipre|over_1.5",
+   "match_id": "20261112-UNL-armnia-chipre",
+   "key": "over_1.5",
+   "texto": "Mais de 1.5 golos",
+   "jogo": "Arménia x Chipre",
+   "prob": 0.7436,
+   "odd_casa": null,
+   "data": "2026-11-12",
+   "resultado": null,
+   "extra": true,
+   "message_id": 141
+  },
+  {
+   "id": "20261112-UNL-turquia-blgica|combo:12&over_2.5",
+   "match_id": "20261112-UNL-turquia-blgica",
+   "key": "combo:12&over_2.5",
+   "texto": "Não há empate + Mais de 2.5 golos",
+   "jogo": "Turquia x Bélgica",
+   "prob": 0.555,
+   "odd_casa": null,
+   "data": "2026-11-12",
+   "resultado": null,
+   "tipo": "odd_alta",
+   "message_id": 142
   }
  ],
  "multiplas": [
@@ -1131,7 +1157,7 @@
    },
    "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nTurquia x Bélgica | 17h00\n\n✅ <b>Dica: Não há empate + Mais de 2.5 golos</b>\n💰 Odd: <b>1.80</b> (mínima com valor)\n\n📊 Golos esperados: Turquia 1.3 – Bélgica 2.0\n📊 Turquia: 1 vitória nos últimos 6 jogos\n📊 Bélgica: 3 vitórias nos últimos 6 jogos\n🚑 Turquia sem Yildiz, Bardakci, Kökçü\n🚑 Bélgica sem Lukaku, Lavia\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-12T17:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-12T14:00:00",
    "admin_msg": 221
   },
@@ -1257,20 +1283,20 @@
    "data": "2026-11-12",
    "lista": "dicas",
    "registo": {
-    "id": "20261112-UNL-armnia-chipre|btts_sim",
+    "id": "20261112-UNL-armnia-chipre|over_1.5",
     "match_id": "20261112-UNL-armnia-chipre",
-    "key": "btts_sim",
-    "texto": "Ambas marcam",
+    "key": "over_1.5",
+    "texto": "Mais de 1.5 golos",
     "jogo": "Arménia x Chipre",
-    "prob": 0.5448,
+    "prob": 0.7436,
     "odd_casa": null,
     "data": "2026-11-12",
     "resultado": null,
     "extra": true
    },
-   "texto": "🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nArménia x Chipre | 17h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.84</b> (mínima com valor)\n\n📊 Golos esperados: Arménia 1.3 – Chipre 1.3\n📊 Arménia: 1 vitória nos últimos 6 jogos\n📊 Chipre: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nArménia x Chipre | 17h00\n\n✅ <b>Dica: Mais de 1.5 golos</b>\n💰 Odd: <b>1.34</b> (mínima com valor)\n\n📊 Golos esperados: Arménia 1.3 – Chipre 1.3\n📊 Arménia: 1 vitória nos últimos 6 jogos\n📊 Chipre: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-12T17:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-12T14:00:00",
    "extra": true,
    "admin_msg": 222
@@ -1323,6 +1349,6 @@
   }
  ],
  "ultimo_resumo": 140,
- "offset_admin": 820373422,
+ "offset_admin": 820373426,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOMavEPiEYJwwXRMvdSe7TJXnDGkJ0AAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
