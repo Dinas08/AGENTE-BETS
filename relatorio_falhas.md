@@ -1,11 +1,11 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 12/11/2026 21:48. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 12/11/2026 21:58. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 25 Green · 12 Red → **68%** de acerto (o modelo esperava 61%).
-- **Últimos 30 dias:** 39 Green · 17 Red → **70%** de acerto (o modelo esperava 63%).
-- **Desde o início:** 39 Green · 17 Red → **70%** de acerto (o modelo esperava 63%).
-- **Múltiplas:** 3 Green em 9.
+- **Últimos 7 dias:** 27 Green · 12 Red → **69%** de acerto (o modelo esperava 61%).
+- **Últimos 30 dias:** 41 Green · 17 Red → **71%** de acerto (o modelo esperava 64%).
+- **Desde o início:** 41 Green · 17 Red → **71%** de acerto (o modelo esperava 64%).
+- **Múltiplas:** 4 Green em 10.
 
 ## Alertas
 - ⚠️ **Golos +/-** (mercado): acerto 56% em 16 dicas, o modelo esperava 67%.
@@ -13,9 +13,9 @@ _Atualizado automaticamente a 12/11/2026 21:48. Só dicas publicadas e já decid
 ## Por mercado
 | Mercado | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| Resultado 1X2 | 16 | 88% | 63% | ⬆️ confiança a menos |
+| Resultado 1X2 | 17 | 88% | 64% | ⬆️ confiança a menos |
 | Golos +/- | 16 | 56% | 67% | ⬇️ confiança a mais |
-| Ambas marcam | 11 | 64% | 60% | ✅ bem |
+| Ambas marcam | 12 | 67% | 60% | ✅ bem |
 | Cantos | 5 | 80% | 61% | ⏳ poucos dados |
 | Dupla hipótese | 3 | 67% | 70% | ⏳ poucos dados |
 | Combinadas | 3 | 33% | 55% | ⏳ poucos dados |
@@ -28,9 +28,9 @@ _Atualizado automaticamente a 12/11/2026 21:48. Só dicas publicadas e já decid
 | Premier League | 8 | 75% | 59% | ⬆️ confiança a menos |
 | Liga Portugal | 7 | 43% | 64% | ⏳ poucos dados |
 | Liga dos Campeões | 7 | 86% | 71% | ⏳ poucos dados |
+| Liga das Nações | 6 | 83% | 67% | ⏳ poucos dados |
 | Brasileirão | 4 | 100% | 65% | ⏳ poucos dados |
 | Liga Europa | 4 | 50% | 60% | ⏳ poucos dados |
-| Liga das Nações | 4 | 75% | 66% | ⏳ poucos dados |
 | Liga Argentina | 4 | 50% | 60% | ⏳ poucos dados |
 | Bundesliga | 3 | 67% | 62% | ⏳ poucos dados |
 | Liga Belga | 2 | 100% | 65% | ⏳ poucos dados |
@@ -41,15 +41,15 @@ _Atualizado automaticamente a 12/11/2026 21:48. Só dicas publicadas e já decid
 ## Por probabilidade
 | Faixa | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| 55-65% | 24 | 67% | 60% | ✅ bem |
+| 55-65% | 25 | 68% | 60% | ⬆️ confiança a menos |
 | 65-75% | 20 | 70% | 69% | ✅ bem |
 | < 55% | 8 | 62% | 52% | ⬆️ confiança a menos |
-| ≥ 75% | 4 | 100% | 78% | ⏳ poucos dados |
+| ≥ 75% | 5 | 100% | 78% | ⏳ poucos dados |
 
 ## Por tipo de dica
 | Tipo | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| ☀️ Manhã | 45 | 71% | 64% | ✅ bem |
+| ☀️ Manhã | 47 | 72% | 64% | ✅ bem |
 | 🌎 Américas | 4 | 75% | 59% | ⏳ poucos dados |
 | 🌙 Tardia | 4 | 75% | 63% | ⏳ poucos dados |
 | 💎 Odd alta | 3 | 33% | 55% | ⏳ poucos dados |

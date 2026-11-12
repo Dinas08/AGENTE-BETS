@@ -733,7 +733,7 @@
    "prob": 0.5838,
    "odd_casa": null,
    "data": "2026-11-12",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 145
   },
@@ -758,7 +758,7 @@
    "prob": 0.7853,
    "odd_casa": 1.21,
    "data": "2026-11-12",
-   "resultado": null,
+   "resultado": true,
    "message_id": 149
   }
  ],
@@ -1151,7 +1151,7 @@
     }
    ],
    "prob": 0.4198,
-   "resultado": null,
+   "resultado": true,
    "message_id": 147
   }
  ],
@@ -1575,11 +1575,56 @@
    },
    "texto": "❌ RED na múltipla turbo (2/4 pernas certas até agora)",
    "expira": "2026-11-13T21:40:40.807822",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 246
+  },
+  {
+   "pid": "1221504017",
+   "origem": "resultado",
+   "data": "2026-11-12",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 145,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Ambas marcam\nItália 3-1 França",
+   "expira": "2026-11-13T21:50:40.201770",
+   "estado": "pendente",
+   "admin_msg": 247
+  },
+  {
+   "pid": "1221504018",
+   "origem": "resultado",
+   "data": "2026-11-12",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 149,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Espanha\nChéquia 0-2 Espanha",
+   "expira": "2026-11-13T21:50:40.651988",
+   "estado": "pendente",
+   "admin_msg": 248
+  },
+  {
+   "pid": "1221504119",
+   "origem": "resultado",
+   "data": "2026-11-12",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 147,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN NA MÚLTIPLA!</b> 💰",
+   "expira": "2026-11-13T21:50:41.038588",
+   "estado": "pendente",
+   "admin_msg": 249
   }
  ],
  "ultimo_resumo": 140,
- "offset_admin": 820373440,
+ "offset_admin": 820373441,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOMavEPiEYJwwXRMvdSe7TJXnDGkJ0AAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
