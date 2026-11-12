@@ -720,7 +720,7 @@
    "prob": 0.5716,
    "odd_casa": null,
    "data": "2026-11-12",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 144
   },
@@ -746,7 +746,7 @@
    "prob": 0.7532,
    "odd_casa": 1.27,
    "data": "2026-11-12",
-   "resultado": null,
+   "resultado": true,
    "message_id": 148
   },
   {
@@ -1109,7 +1109,7 @@
     }
    ],
    "prob": 0.214,
-   "resultado": null,
+   "resultado": false,
    "message_id": 146
   },
   {
@@ -1532,6 +1532,51 @@
    "expira": "2026-11-13T19:01:07.525010",
    "estado": "publicada",
    "admin_msg": 243
+  },
+  {
+   "pid": "1221404014",
+   "origem": "resultado",
+   "data": "2026-11-12",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 144,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Mais de 7.5 cantos\nAlbânia 2-0 Finlândia",
+   "expira": "2026-11-13T21:40:40.110120",
+   "estado": "pendente",
+   "admin_msg": 244
+  },
+  {
+   "pid": "1221404015",
+   "origem": "resultado",
+   "data": "2026-11-12",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 148,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Inglaterra\nInglaterra 2-1 Croácia",
+   "expira": "2026-11-13T21:40:40.468850",
+   "estado": "pendente",
+   "admin_msg": 245
+  },
+  {
+   "pid": "1221404016",
+   "origem": "resultado",
+   "data": "2026-11-12",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 146,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED na múltipla turbo (2/4 pernas certas até agora)",
+   "expira": "2026-11-13T21:40:40.807822",
+   "estado": "pendente",
+   "admin_msg": 246
   }
  ],
  "ultimo_resumo": 140,
