@@ -1590,7 +1590,7 @@
    },
    "texto": "✅ <b>GREEN</b>: Ambas marcam\nItália 3-1 França",
    "expira": "2026-11-13T21:50:40.201770",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 247
   },
   {
@@ -1605,7 +1605,7 @@
    },
    "texto": "✅ <b>GREEN</b>: Vitória Espanha\nChéquia 0-2 Espanha",
    "expira": "2026-11-13T21:50:40.651988",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 248
   },
   {
@@ -1620,11 +1620,11 @@
    },
    "texto": "✅ <b>GREEN NA MÚLTIPLA!</b> 💰",
    "expira": "2026-11-13T21:50:41.038588",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msg": 249
   }
  ],
  "ultimo_resumo": 140,
- "offset_admin": 820373441,
+ "offset_admin": 820373445,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOMavEPiEYJwwXRMvdSe7TJXnDGkJ0AAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
