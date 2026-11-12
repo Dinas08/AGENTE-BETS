@@ -1027,6 +1027,297 @@
    "expira": "2026-11-10T11:22:16.854649",
    "estado": "descartada",
    "admin_msg": 219
+  },
+  {
+   "pid": "121125382",
+   "origem": "dicas",
+   "data": "2026-11-12",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261112-UNL-chquia-espanha|2",
+    "match_id": "20261112-UNL-chquia-espanha",
+    "key": "2",
+    "texto": "Vitória Espanha",
+    "jogo": "Chéquia x Espanha",
+    "prob": 0.7853,
+    "odd_casa": 1.21,
+    "data": "2026-11-12",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nChéquia x Espanha | 19h45\n\n✅ <b>Dica: Vitória Espanha</b>\n💰 Odd: <b>1.21</b>\n\n📊 Golos esperados: Chéquia 0.9 – Espanha 2.8\n📊 Chéquia: 0 vitórias nos últimos 6 jogos\n📊 Espanha: 6 vitórias nos últimos 6 jogos\n🚑 Chéquia sem Sulc, Hranac, Sadílek\n🚑 Espanha sem Yamal, Oyarzabal, Rodri\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-12T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-12T16:45:00"
+  },
+  {
+   "pid": "121125383",
+   "origem": "dicas",
+   "data": "2026-11-12",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261112-UNL-inglaterra-crocia|1",
+    "match_id": "20261112-UNL-inglaterra-crocia",
+    "key": "1",
+    "texto": "Vitória Inglaterra",
+    "jogo": "Inglaterra x Croácia",
+    "prob": 0.7532,
+    "odd_casa": 1.27,
+    "data": "2026-11-12",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nInglaterra x Croácia | 19h45\n\n✅ <b>Dica: Vitória Inglaterra</b>\n💰 Odd: <b>1.27</b>\n\n📊 Golos esperados: Inglaterra 2.7 – Croácia 1.0\n📊 Inglaterra: 4 vitórias nos últimos 6 jogos\n📊 Croácia: 2 vitórias nos últimos 6 jogos\n🚑 Inglaterra sem Saka, Madueke, Guehi, Konsa\n🚑 Croácia sem Perisic, Sutalo, Pongracic, Kramaric\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-12T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-12T16:45:00"
+  },
+  {
+   "pid": "121125384",
+   "origem": "dicas",
+   "data": "2026-11-12",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261112-UNL-montenegro-letnia|1",
+    "match_id": "20261112-UNL-montenegro-letnia",
+    "key": "1",
+    "texto": "Vitória Montenegro",
+    "jogo": "Montenegro x Letónia",
+    "prob": 0.7097,
+    "odd_casa": 1.26,
+    "data": "2026-11-12",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nMontenegro x Letónia | 19h45\n\n✅ <b>Dica: Vitória Montenegro</b>\n💰 Odd: <b>1.26</b>\n\n📊 Golos esperados: Montenegro 2.0 – Letónia 0.6\n📊 Montenegro: 4 vitórias nos últimos 6 jogos\n📊 Letónia: 0 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-12T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-12T16:45:00"
+  },
+  {
+   "pid": "121125385",
+   "origem": "dicas",
+   "data": "2026-11-12",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261112-UNL-somarino-bielorrssia|over_2.5",
+    "match_id": "20261112-UNL-somarino-bielorrssia",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "São Marino x Bielorrússia",
+    "prob": 0.6743,
+    "odd_casa": null,
+    "data": "2026-11-12",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nSão Marino x Bielorrússia | 19h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.48</b> (mínima com valor)\n\n📊 Golos esperados: São Marino 0.6 – Bielorrússia 2.9\n📊 São Marino: 0 vitórias nos últimos 6 jogos\n📊 Bielorrússia: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-12T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-12T16:45:00"
+  },
+  {
+   "pid": "121125386",
+   "origem": "dicas",
+   "data": "2026-11-12",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261112-UNL-turquia-blgica|combo:12&over_2.5",
+    "match_id": "20261112-UNL-turquia-blgica",
+    "key": "combo:12&over_2.5",
+    "texto": "Não há empate + Mais de 2.5 golos",
+    "jogo": "Turquia x Bélgica",
+    "prob": 0.555,
+    "odd_casa": null,
+    "data": "2026-11-12",
+    "resultado": null,
+    "tipo": "odd_alta"
+   },
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nTurquia x Bélgica | 17h00\n\n✅ <b>Dica: Não há empate + Mais de 2.5 golos</b>\n💰 Odd: <b>1.80</b> (mínima com valor)\n\n📊 Golos esperados: Turquia 1.3 – Bélgica 2.0\n📊 Turquia: 1 vitória nos últimos 6 jogos\n📊 Bélgica: 3 vitórias nos últimos 6 jogos\n🚑 Turquia sem Yildiz, Bardakci, Kökçü\n🚑 Bélgica sem Lukaku, Lavia\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-12T17:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-12T14:00:00"
+  },
+  {
+   "pid": "121125387",
+   "origem": "dicas",
+   "data": "2026-11-12",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-12",
+    "tipo": "segura",
+    "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+    "partes": [
+     "20261112-UNL-chquia-espanha|2",
+     "20261112-UNL-inglaterra-crocia|1",
+     "20261112-UNL-montenegro-letnia|1"
+    ],
+    "pernas": [
+     {
+      "id": "20261112-UNL-chquia-espanha|2",
+      "match_id": "20261112-UNL-chquia-espanha",
+      "key": "2",
+      "prob": 0.7853,
+      "odd_casa": 1.21,
+      "jogo": "Chéquia x Espanha",
+      "texto": "Vitória Espanha"
+     },
+     {
+      "id": "20261112-UNL-inglaterra-crocia|1",
+      "match_id": "20261112-UNL-inglaterra-crocia",
+      "key": "1",
+      "prob": 0.7532,
+      "odd_casa": 1.27,
+      "jogo": "Inglaterra x Croácia",
+      "texto": "Vitória Inglaterra"
+     },
+     {
+      "id": "20261112-UNL-montenegro-letnia|1",
+      "match_id": "20261112-UNL-montenegro-letnia",
+      "key": "1",
+      "prob": 0.7097,
+      "odd_casa": 1.26,
+      "jogo": "Montenegro x Letónia",
+      "texto": "Vitória Montenegro"
+     }
+    ],
+    "prob": 0.4198,
+    "resultado": null
+   },
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Chéquia x Espanha: Vitória Espanha (@1.21)\n• Inglaterra x Croácia: Vitória Inglaterra (@1.27)\n• Montenegro x Letónia: Vitória Montenegro (@1.26)\n\n💰 Odd total: <b>1.94</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-12T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-12T16:45:00"
+  },
+  {
+   "pid": "121125388",
+   "origem": "dicas",
+   "data": "2026-11-12",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-12",
+    "tipo": "turbo",
+    "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+    "partes": [
+     "20261112-UNL-albnia-finlndia|under_2.5",
+     "20261112-UNL-somarino-bielorrssia|over_2.5",
+     "20261112-UNL-chquia-espanha|over_2.5",
+     "20261112-UNL-inglaterra-crocia|over_2.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261112-UNL-albnia-finlndia|under_2.5",
+      "match_id": "20261112-UNL-albnia-finlndia",
+      "key": "under_2.5",
+      "prob": 0.5896,
+      "odd_casa": null,
+      "jogo": "Albânia x Finlândia",
+      "texto": "Menos de 2.5 golos",
+      "porque": "golos esperados 1.2 – 0.9"
+     },
+     {
+      "id": "20261112-UNL-somarino-bielorrssia|over_2.5",
+      "match_id": "20261112-UNL-somarino-bielorrssia",
+      "key": "over_2.5",
+      "prob": 0.6743,
+      "odd_casa": null,
+      "jogo": "São Marino x Bielorrússia",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 0.6 – 2.9"
+     },
+     {
+      "id": "20261112-UNL-chquia-espanha|over_2.5",
+      "match_id": "20261112-UNL-chquia-espanha",
+      "key": "over_2.5",
+      "prob": 0.7064,
+      "odd_casa": null,
+      "jogo": "Chéquia x Espanha",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 0.9 – 2.8"
+     },
+     {
+      "id": "20261112-UNL-inglaterra-crocia|over_2.5",
+      "match_id": "20261112-UNL-inglaterra-crocia",
+      "key": "over_2.5",
+      "prob": 0.7024,
+      "odd_casa": null,
+      "jogo": "Inglaterra x Croácia",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 2.7 – 1.0"
+     }
+    ],
+    "prob": 0.1973,
+    "resultado": null
+   },
+   "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• Albânia x Finlândia: Menos de 2.5 golos (@1.70)\n   <i>↳ golos esperados 1.2 – 0.9</i>\n• São Marino x Bielorrússia: Mais de 2.5 golos (@1.48)\n   <i>↳ golos esperados 0.6 – 2.9</i>\n• Chéquia x Espanha: Mais de 2.5 golos (@1.42)\n   <i>↳ golos esperados 0.9 – 2.8</i>\n• Inglaterra x Croácia: Mais de 2.5 golos (@1.42)\n   <i>↳ golos esperados 2.7 – 1.0</i>\n\n💰 Odd total: <b>5.07</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-12T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-12T16:45:00"
+  },
+  {
+   "pid": "121125389",
+   "origem": "dicas",
+   "data": "2026-11-12",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261112-UNL-armnia-chipre|btts_sim",
+    "match_id": "20261112-UNL-armnia-chipre",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Arménia x Chipre",
+    "prob": 0.5448,
+    "odd_casa": null,
+    "data": "2026-11-12",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nArménia x Chipre | 17h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.84</b> (mínima com valor)\n\n📊 Golos esperados: Arménia 1.3 – Chipre 1.3\n📊 Arménia: 1 vitória nos últimos 6 jogos\n📊 Chipre: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-12T17:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-12T14:00:00",
+   "extra": true
+  },
+  {
+   "pid": "1211253810",
+   "origem": "dicas",
+   "data": "2026-11-12",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261112-UNL-albnia-finlndia|cantos_under_9.5",
+    "match_id": "20261112-UNL-albnia-finlndia",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Albânia x Finlândia",
+    "prob": 0.594,
+    "odd_casa": null,
+    "data": "2026-11-12",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nAlbânia x Finlândia | 19h45\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.68</b> (mínima com valor)\n\n📊 Golos esperados: Albânia 1.2 – Finlândia 0.9\n📊 Albânia: 3 vitórias nos últimos 6 jogos\n📊 Finlândia: 2 vitórias nos últimos 6 jogos\n🚑 Albânia sem Strakosha\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-12T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-12T16:45:00",
+   "extra": true
+  },
+  {
+   "pid": "1211253811",
+   "origem": "dicas",
+   "data": "2026-11-12",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261112-UNL-itlia-frana|btts_sim",
+    "match_id": "20261112-UNL-itlia-frana",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Itália x França",
+    "prob": 0.5838,
+    "odd_casa": null,
+    "data": "2026-11-12",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – QUINTA 12/11</b>\nItália x França | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.71</b> (mínima com valor)\n\n📊 Golos esperados: Itália 1.3 – França 1.6\n📊 Itália: 4 vitórias nos últimos 6 jogos\n📊 França: 3 vitórias nos últimos 6 jogos\n🚑 Itália sem Kean, Raspadori, Mancini, Lorenzo\n🚑 França sem Thuram, Tchouaméni, Kalulu, Koundé/Saliba/Dembélé\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-12T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-12T16:45:00",
+   "extra": true
   }
  ],
  "ultimo_resumo": 140,
