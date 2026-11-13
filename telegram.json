@@ -1167,41 +1167,12 @@
   "2026-11-05",
   "2026-11-06",
   "2026-11-07",
-  "2026-11-08"
+  "2026-11-08",
+  "2026-11-12"
  ],
  "offset": 892007170,
  "ignorados": [],
  "pendentes": [
-  {
-   "pid": "09000105158",
-   "origem": "resumo",
-   "data": "2026-11-09",
-   "lista": "avisos",
-   "registo": {
-    "reply_to": null,
-    "resumo": true,
-    "animacao": true
-   },
-   "texto": "📊 <b>RESUMO DE 08/11</b>\n\n🟢 9 Green · 🔴 3 Red\n💶 Lucro: <b>+191 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
-   "expira": "2026-11-10T00:01:05.812314",
-   "estado": "publicada",
-   "admin_msg": 218
-  },
-  {
-   "pid": "09112216144",
-   "origem": "balanco",
-   "data": "2026-11-09",
-   "lista": "avisos",
-   "registo": {
-    "reply_to": null,
-    "resumo": true,
-    "animacao": false
-   },
-   "texto": "📋 <b>BALANÇO DA SEMANA</b> (02/11 – 08/11)\n\n🟢 33 Green · 🔴 15 Red\n🎯 Múltiplas: 2 Green em 7\n💶 Lucro: <b>+259 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
-   "expira": "2026-11-10T11:22:16.854649",
-   "estado": "descartada",
-   "admin_msg": 219
-  },
   {
    "pid": "121125382",
    "origem": "dicas",
@@ -1622,6 +1593,21 @@
    "expira": "2026-11-13T21:50:41.038588",
    "estado": "publicada",
    "admin_msg": 249
+  },
+  {
+   "pid": "1300075620",
+   "origem": "resumo",
+   "data": "2026-11-13",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": true
+   },
+   "texto": "📊 <b>RESUMO DE 12/11</b>\n\n🔥 <b>DIA DE 83% DE ACERTO!</b>\n🟢 5 Green · 🔴 1 Red\n🎯 Múltipla: GREEN 💰\n💶 Lucro: <b>+128 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T00:07:56.536217",
+   "estado": "pendente",
+   "admin_msg": 250
   }
  ],
  "ultimo_resumo": 140,
