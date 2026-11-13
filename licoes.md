@@ -30,17 +30,15 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 - 2026-11-05 · Previsões "com dados limitados" (equipas sem histórico) dão 77-89% ao favorito e falharam várias vezes (Milan–Ferencvaros 77%, Hajduk 89%, Atalanta–Kairat 86%, Sunderland–Zagreb 70%, Sturm Graz 63%). Sem odds, tratar favoritos acima de 75% como ≤70% e evitar "X ou 2" como mercado principal nesses jogos. "Mais 2.5" na Liga Europa/Conferência: 15/36 (42%) na quinta da S45.
 
 - 2026-11-04 · Cantos europeus na S45: 46% contra 58% previsto (ruído nos dois sentidos, jogos 7-10 cantos). Descontar confiança acima de 70%.
-- 2026-11-03 · Cartões "Menos de 4.5" falharam em 5 de 8 jogos europeus da S45 (Villarreal–PSG a 82%); cartões 43% contra 65% previsto. Terça+quarta da S45: 54% contra 65%. Se a S46 repetir, passa para `notas_modelo.md`.
 - 2026-11-03 · Cantos "Mais de 9.5" a 80%+ demasiado confiante (Shakhtar–Sporting 83%, caiu com 9 cantos). Observar.
 
+- 2026-11-13 · Seleções: favorito que só precisa do empate/já apurado (Suíça 0-0 Eslovénia, Espanha 2-0 Chéquia) gere o jogo: baixar Mais 2.5 e vitória seca; e outsiders fracos marcam de penálti (Faroé 2-2 Eslováquia, 21%). 2 casos na semana, a confirmar.
 - Favoritos fora de casa entre 40% e 50%: parecia falhar muito (2/7), mas com a semana completa foi 5/10, em linha com as probabilidades. Sem ajuste. Se nas próximas semanas ficar abaixo de 40%, reativar (procurar sinais de força da casa; preferir "X2" à vitória seca).
 - Jogos com muitas baixas dos dois lados (Union–Köln 1-1): o "Mais 2.5" fica generoso; observar mais um caso.
 
 - Jogos com expulsão cedo (Elversberg 4-1 Mainz, Chelsea 2-0 Man United) estragam as previsões de golos e
   cantos; não é erro de leitura. Não corrigir equipas por isto. Confirmar sempre o minuto do vermelho: em Coventry–Sunderland foi aos 90+9'
   e não mudou nada.
-- Cartões: "Menos de 4.5" falhou em 6 jogos da S44 mas a semana acabou calibrada (66% real contra 66%); desconfirmado, apagar se se mantiver na S45. Se se repetir mais 2 semanas, passa para
-  `notas_modelo.md` como padrão do modelo.
 - Favoritos muito altos com 3+ baixas titulares (Bayern 65% empatou 2-2 com Dortmund, sem Díaz, Musiala e outros). Confirmar com mais um caso antes de agir.
 - Liga Portugal: "Mais de 4.5 cartões" falhou em Casa Pia–Sporting e Moreirense–Estrela (a 55%). Observar.
 - Enfermaria cheia (8+ ausentes, incluindo GR): Atalanta 0-3 Parma (1.8-0.9 previsto, dava 18% ao desfecho). O ajuste de sofridos pode ser curto; se houver mais um caso, usar +8 a +10 em sofridos.
