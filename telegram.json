@@ -2012,7 +2012,7 @@
    },
    "texto": "🌍 <b>LIGA DAS NAÇÕES – SEXTA 13/11</b>\nLuxemburgo x Estónia | 19h45\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.67</b> (mínima com valor)\n\n📊 Golos esperados: Luxemburgo 1.1 – Estónia 1.0\n📊 Luxemburgo: 2 vitórias nos últimos 6 jogos\n📊 Estónia: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-13T19:45:00",
-   "estado": "pendente",
+   "estado": "substituida",
    "enviar_a": "2026-11-13T16:45:00",
    "extra": true,
    "admin_msg": 261
@@ -2111,6 +2111,54 @@
    "estado": "expirada",
    "enviar_a": "2026-11-13T14:00:00",
    "admin_msg": 253
+  },
+  {
+   "pid": "1319104432",
+   "origem": "tardia",
+   "data": "2026-11-13",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261113-UNL-luxemburgo-estnia|under_2.5",
+    "match_id": "20261113-UNL-luxemburgo-estnia",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Luxemburgo x Estónia",
+    "prob": 0.5998,
+    "odd_casa": 1.54,
+    "data": "2026-11-13",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SEXTA 13/11</b>\nLuxemburgo x Estónia | 19h45\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.54</b>\n\n📊 Golos esperados: Luxemburgo 1.1 – Estónia 1.0\n📊 Luxemburgo: 2 vitórias nos últimos 6 jogos\n📊 Estónia: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-13T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-13T16:45:00",
+   "admin_msg": 266
+  },
+  {
+   "pid": "1319104433",
+   "origem": "tardia",
+   "data": "2026-11-13",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261113-UNL-eslovnia-sua|cantos_under_9.5",
+    "match_id": "20261113-UNL-eslovnia-sua",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Eslovénia x Suíça",
+    "prob": 0.5932,
+    "odd_casa": null,
+    "data": "2026-11-13",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SEXTA 13/11</b>\nEslovénia x Suíça | 19h45\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.69</b> (mínima com valor)\n\n📊 Golos esperados: Eslovénia 0.8 – Suíça 1.4\n📊 Eslovénia: 2 vitórias nos últimos 6 jogos\n📊 Suíça: 4 vitórias nos últimos 6 jogos\n🚑 Suíça sem Xhaka, Vargas, Muheim\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-13T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-13T16:45:00",
+   "extra": true,
+   "admin_msg": 267
   }
  ],
  "ultimo_resumo": 157,
