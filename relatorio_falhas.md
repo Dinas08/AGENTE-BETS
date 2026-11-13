@@ -1,6 +1,6 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 13/11/2026 00:07. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 13/11/2026 19:00. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
 - **Últimos 7 dias:** 21 Green · 8 Red → **72%** de acerto (o modelo esperava 61%).
 - **Últimos 30 dias:** 41 Green · 17 Red → **71%** de acerto (o modelo esperava 64%).
@@ -53,6 +53,9 @@ _Atualizado automaticamente a 13/11/2026 00:07. Só dicas publicadas e já decid
 | 🌎 Américas | 4 | 75% | 59% | ⏳ poucos dados |
 | 🌙 Tardia | 4 | 75% | 63% | ⏳ poucos dados |
 | 💎 Odd alta | 3 | 33% | 55% | ⏳ poucos dados |
+
+## Extras não publicadas
+Das 1 apostas extra que ficaram por publicar, 0 teriam dado Green (**0%**), contra 71% das publicadas.
 
 ## Últimos Reds
 - 12/11 · Albânia x Finlândia **2-0** · Mais de 7.5 cantos (57%, Cantos)
