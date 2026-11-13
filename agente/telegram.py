@@ -1285,6 +1285,10 @@ def painel(minutos: float = 0) -> int:
         link = None
     guardar_publico(s, link)
     fila = "offset_admin" if ADMIN_TOKEN else "offset"  # cada bot tem a sua fila de mensagens
+    teste = config.DATA_DIR / "teste_admin.txt"  # envio único só para os admins (ex.: testar um admin novo)
+    if teste.exists() and teste.read_text(encoding="utf-8").strip():
+        _a_todos(text=teste.read_text(encoding="utf-8").strip()[:4000])
+        teste.unlink()
     _enviar_devidos(s)
     while True:
         _expirar(s)
