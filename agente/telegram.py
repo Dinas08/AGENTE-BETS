@@ -711,7 +711,11 @@ def privados() -> int:
 # o admin responde ao rascunho com o texto novo. Com admin, nada vai para o canal sem
 # aprovação: também os Green/Red, resumos e balanços chegam como rascunho (📣, expiram em 24 h).
 
-ADMIN = os.getenv("TELEGRAM_ADMIN", "").strip()
+# Um ou mais admins, separados por vírgulas (ex.: o número principal e um de reserva). Todos recebem os rascunhos e
+# qualquer um pode aprovar; quando um aprova ou descarta, a mensagem fica atualizada nos dois.
+ADMINS = [a.strip() for a in os.getenv("TELEGRAM_ADMIN", "").split(",") if a.strip()]
+ADMIN = ADMINS[0] if ADMINS else ""
+_CHAT = ADMIN  # o admin que está a mexer agora (respostas às trocas e edições vão para ele)
 # Bot só para os rascunhos (opcional). Com ele, o bot público passa a responder às pessoas na hora pelo
 # Cloudflare Worker (bot/worker.js, webhook) e o GitHub Actions só lê a fila deste bot de admin.
 ADMIN_TOKEN = os.getenv("TELEGRAM_ADMIN_BOT_TOKEN", "").strip()
@@ -725,6 +729,26 @@ ESTADOS = {"publicada": "✅ <b>PUBLICADA</b>", "descartada": "❌ <b>DESCARTADA
 
 def rever() -> bool:
     return bool(ADMIN) and not ensaio()
+
+
+def _msgs(x: dict) -> dict:
+    """Mensagem do rascunho em cada admin ({chat: message_id})."""
+    return x.get("admin_msgs") or ({ADMIN: x["admin_msg"]} if x.get("admin_msg") else {})
+
+
+def _editar_todos(x: dict, **kw) -> dict:
+    """Atualiza o rascunho em todos os admins; devolve a resposta do admin que está a mexer (ou do principal)."""
+    res = {}
+    for chat, mid in _msgs(x).items():
+        r = _bot("editMessageText", chat_id=chat, message_id=mid, **kw)
+        if chat == _CHAT or not res:
+            res = r
+    return res
+
+
+def _a_todos(**kw) -> None:
+    for chat in ADMINS:
+        _bot("sendMessage", chat_id=chat, **kw)
 
 
 def _bot(metodo: str, _token: str | None = None, **body) -> dict:
@@ -787,8 +811,8 @@ def _mexer_perna(s: dict, x: dict, acao: str, i: int) -> str:
     m["partes"] = [pe["id"] for pe in m["pernas"]]
     m["prob"] = round(_prod(pe["prob"] for pe in m["pernas"]), 4)
     x["texto"] = _texto_multipla(m.get("titulo", "🎯 <b>MÚLTIPLA</b>"), m["pernas"])
-    _bot("editMessageText", chat_id=ADMIN, message_id=x["admin_msg"], text=_cabecalho(x) + x["texto"],
-         parse_mode="HTML", disable_web_page_preview=True, reply_markup=_botoes(x))
+    _editar_todos(x, text=_cabecalho(x) + x["texto"], parse_mode="HTML", disable_web_page_preview=True,
+                  reply_markup=_botoes(x))
     return aviso
 
 
@@ -822,17 +846,18 @@ def _pedir_troca(s: dict, x: dict, i: int) -> str:
            f"Escreve-a em resposta a esta mensagem, por exemplo: <i>mais de 2.5 golos</i>, <i>ambas marcam</i>, "
            f"<i>vitória {casa}</i>, <i>1X</i>, <i>menos de 9.5 cantos</i>, <i>2-1</i>."
            + (f"\n\nSugestões:\n{sug}" if sug else ""))
-    res = _bot("sendMessage", chat_id=ADMIN, text=msg, parse_mode="HTML",
-               reply_parameters={"message_id": x["admin_msg"]},
+    res = _bot("sendMessage", chat_id=_CHAT, text=msg, parse_mode="HTML",
+               reply_parameters={"message_id": _msgs(x).get(_CHAT, x["admin_msg"])},
                reply_markup={"force_reply": True, "input_field_placeholder": "ex.: mais de 2.5 golos"})
     if res.get("ok"):
-        s["troca"] = {"pid": x["pid"], "i": i, "msg": res["result"]["message_id"]}
+        s["troca"] = {"pid": x["pid"], "i": i, "msg": res["result"]["message_id"], "chat": _CHAT}
     return "Escreve a aposta que queres ✍️"
 
 
 def _e_troca(s: dict, m: dict) -> bool:
     t = s.get("troca")
-    return bool(t) and (m.get("reply_to_message") or {}).get("message_id") == t["msg"]
+    return bool(t) and (m.get("reply_to_message") or {}).get("message_id") == t["msg"] \
+        and str((m.get("chat") or {}).get("id")) == t.get("chat", ADMIN)
 
 
 def _norm(t: str) -> str:
@@ -899,7 +924,7 @@ def _trocar(s: dict, m: dict) -> None:
     t = s.pop("troca")
     x = next((x for x in s.get("pendentes", []) if x["pid"] == t["pid"] and x["estado"] == "pendente"), None)
     if x is None:
-        _bot("sendMessage", chat_id=ADMIN, text="Esse rascunho já não está pendente.")
+        _bot("sendMessage", chat_id=_CHAT, text="Esse rascunho já não está pendente.")
         return
     alvo = _alvo(x, t["i"])
     r = _jogo(alvo["match_id"])
@@ -907,7 +932,7 @@ def _trocar(s: dict, m: dict) -> None:
     if key is None:
         s["troca"] = t  # continua à espera
         sug = "\n".join(f"• {E(q)}" for q in _sugestoes(r, alvo["key"])) if r is not None else ""
-        _bot("sendMessage", chat_id=ADMIN, parse_mode="HTML", reply_parameters={"message_id": t["msg"]},
+        _bot("sendMessage", chat_id=_CHAT, parse_mode="HTML", reply_parameters={"message_id": t["msg"]},
              text="🤔 Não percebi essa aposta (ou o modelo não a calcula, e assim não dava para dar o Green/Red). "
                   "Responde outra vez à mensagem de cima." + (f"\n\nExemplos:\n{sug}" if sug else ""))
         return
@@ -931,9 +956,9 @@ def _trocar(s: dict, m: dict) -> None:
                 continue
             linhas.append(ln)
         x["texto"] = "\n".join(linhas)
-    _bot("editMessageText", chat_id=ADMIN, message_id=x["admin_msg"], text=_cabecalho(x) + x["texto"],
-         parse_mode="HTML", disable_web_page_preview=True, reply_markup=_botoes(x))
-    _bot("sendMessage", chat_id=ADMIN, reply_parameters={"message_id": x["admin_msg"]},
+    _editar_todos(x, text=_cabecalho(x) + x["texto"], parse_mode="HTML", disable_web_page_preview=True,
+                  reply_markup=_botoes(x))
+    _bot("sendMessage", chat_id=_CHAT, reply_parameters={"message_id": _msgs(x).get(_CHAT, x["admin_msg"])},
          text=f"🔄 Agora: {texto(key, r['home'], r['away'])} (@{odd((r['odds'] or {}).get(key), prob):.2f}, "
               f"{prob:.0%} pelo modelo). Carrega em ✅ Publicar quando estiver pronto.")
 
@@ -973,7 +998,7 @@ def _enviar_devidos(s: dict) -> int:
     rec = sum(1 for x in devidos if x.get("admin_msg") and not x.get("extra"))
     if n >= 2 and rever():  # cada lote que chega traz os botões para aprovar de uma vez
         horas = sorted({f"{pd.Timestamp(x['expira']):%Hh%M}" for x in devidos if x.get("admin_msg")})
-        _bot("sendMessage", chat_id=ADMIN, text=f"📬 Chegaram {n} rascunhos (jogos das {', '.join(horas)}): {rec} "
+        _a_todos(text=f"📬 Chegaram {n} rascunhos (jogos das {', '.join(horas)}): {rec} "
              f"recomendada(s) ⭐ e {n - rec} extra 📎. Os extra só saem se carregares em ✅ Publicar neles.",
              reply_markup={"inline_keyboard": [[{"text": "✅ Publicar recomendadas", "callback_data": "pub:*"},
                                     {"text": "❌ Descartar tudo", "callback_data": "desc:*"}]]})
@@ -987,12 +1012,21 @@ def _nome_rascunho(x: dict) -> str:
 
 
 def _enviar_rascunho(x: dict) -> bool:
-    r = _bot("sendMessage", chat_id=ADMIN, text=_cabecalho(x) + x["texto"], parse_mode="HTML",
-             disable_web_page_preview=True, reply_markup=_botoes(x))
-    if r.get("ok"):
-        x["admin_msg"] = r["result"]["message_id"]
+    """Manda o rascunho a cada admin que ainda não o tem (guarda o id da mensagem em cada um)."""
+    msgs = dict(x.get("admin_msgs") or {})
+    for chat in ADMINS:
+        if chat in msgs:
+            continue
+        r = _bot("sendMessage", chat_id=chat, text=_cabecalho(x) + x["texto"], parse_mode="HTML",
+                 disable_web_page_preview=True, reply_markup=_botoes(x))
+        if r.get("ok"):
+            msgs[chat] = r["result"]["message_id"]
+        else:
+            print(f"  [admin] não consegui mandar o rascunho ({r.get('description')}); tento na próxima execução")
+    if msgs:
+        x["admin_msgs"] = msgs
+        x["admin_msg"] = msgs.get(ADMIN) or next(iter(msgs.values()))
         return True
-    print(f"  [admin] não consegui mandar o rascunho ({r.get('description')}); tento na próxima execução")
     return False
 
 
@@ -1025,7 +1059,7 @@ def pedir_aprovacao(s: dict, dia: str) -> None:
     for x in pend:
         quando = "já enviada" if x.get("admin_msg") else f"chega às {pd.Timestamp(x.get('enviar_a') or x['expira']):%Hh%M}"
         linhas.append(f"{'📎' if x.get('extra') else '⭐'} {pd.Timestamp(x['expira']):%Hh%M} {E(_nome_rascunho(x))} · {quando}")
-    _bot("sendMessage", chat_id=ADMIN, text="\n".join(linhas)[:4000], parse_mode="HTML",
+    _a_todos(text="\n".join(linhas)[:4000], parse_mode="HTML",
          **({"reply_markup": {"inline_keyboard": [[{"text": "✅ Publicar recomendadas", "callback_data": "pub:*"},
                                     {"text": "❌ Descartar tudo", "callback_data": "desc:*"}]]}} if any(x.get("admin_msg") for x in pend) else {}))
 
@@ -1033,7 +1067,7 @@ def pedir_aprovacao(s: dict, dia: str) -> None:
 def _fechar(x: dict, estado: str) -> None:
     x["estado"] = estado
     if x.get("admin_msg"):
-        _bot("editMessageText", chat_id=ADMIN, message_id=x["admin_msg"], parse_mode="HTML",
+        _editar_todos(x, parse_mode="HTML",
              disable_web_page_preview=True, text=f"{ESTADOS[estado]}\n{MARCA}\n{x['texto']}")
 
 
@@ -1075,26 +1109,26 @@ def _html(texto: str, entidades) -> str:
 
 def _editar(s: dict, m: dict) -> None:
     alvo = (m.get("reply_to_message") or {}).get("message_id")
-    x = next((x for x in s.get("pendentes", []) if alvo and x.get("admin_msg") == alvo), None)
+    x = next((x for x in s.get("pendentes", []) if alvo and _msgs(x).get(_CHAT) == alvo), None)
     if x is None:
         n = sum(1 for x in s.get("pendentes", []) if x["estado"] == "pendente")
-        _bot("sendMessage", chat_id=ADMIN, text=f"📝 {n} rascunho(s) à espera. Para editar, responde ao rascunho.")
+        _bot("sendMessage", chat_id=_CHAT, text=f"📝 {n} rascunho(s) à espera. Para editar, responde ao rascunho.")
         return
     if x["estado"] != "pendente":
-        _bot("sendMessage", chat_id=ADMIN, text="Esse rascunho já não está pendente.")
+        _bot("sendMessage", chat_id=_CHAT, text="Esse rascunho já não está pendente.")
         return
     novo = _html(m.get("text") or "", m.get("entities"))
     if MARCA in novo:  # copiou o rascunho inteiro, com o cabeçalho
         novo = novo.split(MARCA, 1)[1]
     novo = novo.strip() + ("" if RODAPE in novo else _fim())
-    r = _bot("editMessageText", chat_id=ADMIN, message_id=x["admin_msg"], text=_cabecalho(x) + novo,
-             parse_mode="HTML", disable_web_page_preview=True, reply_markup=_botoes(x))
+    r = _editar_todos(x, text=_cabecalho(x) + novo, parse_mode="HTML", disable_web_page_preview=True,
+                      reply_markup=_botoes(x))
     if r.get("ok"):
         x["texto"] = novo
         aviso = "✏️ Rascunho atualizado. Carrega em ✅ Publicar quando estiver pronto."
     else:
         aviso = f"Não consegui usar esse texto ({r.get('description', 'erro')})."
-    _bot("sendMessage", chat_id=ADMIN, text=aviso, reply_parameters={"message_id": x["admin_msg"]})
+    _bot("sendMessage", chat_id=_CHAT, text=aviso, reply_parameters={"message_id": _msgs(x).get(_CHAT, x["admin_msg"])})
 
 
 # ------------------------------------------------------------------ boas-vindas e comandos públicos
@@ -1202,9 +1236,11 @@ def _botao(s: dict, cb: dict, link: str | None = None) -> int:
         m = cb.get("message") or {}
         _publico(s, (m.get("chat") or {}).get("id", cb["from"]["id"]), pid, link, m.get("message_id"))
         return 1
-    if str(cb["from"]["id"]) != ADMIN:
+    global _CHAT
+    if str(cb["from"]["id"]) not in ADMINS:
         _bot("answerCallbackQuery", callback_query_id=cb["id"], text="Sem permissão.")
         return 0
+    _CHAT = str(cb["from"]["id"])
     if acao in ("tr", "rm"):  # trocar / tirar uma perna da múltipla
         pid, _, i = pid.partition(":")
         x = next((x for x in s.get("pendentes", []) if x["pid"] == pid and x["estado"] == "pendente"), None)
@@ -1236,6 +1272,7 @@ def painel(minutos: float = 0) -> int:
     """Lê as mensagens privadas e os botões do bot. Com minutos > 0 e rascunhos pendentes, fica à escuta
     (long polling) para o admin aprovar em tempo real. Só guarda a posição da fila, nunca dados de pessoas
     (o id do admin vem dos Secrets)."""
+    global _CHAT
     if ensaio():
         return 0
     s = _load()
@@ -1267,9 +1304,11 @@ def painel(minutos: float = 0) -> int:
             cmd = (m.get("text") or "").strip().split()[0].split("@")[0].lower() if (m.get("text") or "").strip() else ""
             if cmd == "/id":
                 _bot("sendMessage", chat_id=chat["id"], text=f"O teu id do Telegram: {chat['id']}")
-            elif ADMIN and str(chat["id"]) == ADMIN and _e_troca(s, m):
+            elif str(chat["id"]) in ADMINS and _e_troca(s, m):
+                _CHAT = str(chat["id"])
                 _trocar(s, m)
-            elif ADMIN and str(chat["id"]) == ADMIN and (ADMIN_TOKEN or cmd not in COMANDOS):
+            elif str(chat["id"]) in ADMINS and (ADMIN_TOKEN or cmd not in COMANDOS):
+                _CHAT = str(chat["id"])
                 _editar(s, m)
             elif ADMIN_TOKEN:  # o bot de admin não é para o público
                 continue
