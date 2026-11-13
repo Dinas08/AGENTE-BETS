@@ -806,7 +806,7 @@
    "prob": 0.5532,
    "odd_casa": null,
    "data": "2026-11-13",
-   "resultado": null,
+   "resultado": false,
    "tipo": "odd_alta",
    "message_id": 163
   },
@@ -2264,6 +2264,21 @@
    "expira": "2026-11-14T21:40:44.570618",
    "estado": "pendente",
    "admin_msg": 275
+  },
+  {
+   "pid": "1321504441",
+   "origem": "resultado",
+   "data": "2026-11-13",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 163,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Islândia ou empate + Menos de 3.5 golos\nBulgária 0-5 Islândia",
+   "expira": "2026-11-14T21:50:44.114600",
+   "estado": "pendente",
+   "admin_msg": 276
   }
  ],
  "ultimo_resumo": 157,

@@ -1,10 +1,10 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 13/11/2026 21:48. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 13/11/2026 21:58. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 25 Green · 9 Red → **74%** de acerto (o modelo esperava 62%).
-- **Últimos 30 dias:** 45 Green · 18 Red → **71%** de acerto (o modelo esperava 64%).
-- **Desde o início:** 45 Green · 18 Red → **71%** de acerto (o modelo esperava 64%).
+- **Últimos 7 dias:** 25 Green · 10 Red → **71%** de acerto (o modelo esperava 62%).
+- **Últimos 30 dias:** 45 Green · 19 Red → **70%** de acerto (o modelo esperava 63%).
+- **Desde o início:** 45 Green · 19 Red → **70%** de acerto (o modelo esperava 63%).
 - **Múltiplas:** 5 Green em 12.
 
 ## Alertas
@@ -17,14 +17,14 @@ _Atualizado automaticamente a 13/11/2026 21:48. Só dicas publicadas e já decid
 | Golos +/- | 19 | 63% | 66% | ✅ bem |
 | Ambas marcam | 12 | 67% | 60% | ✅ bem |
 | Cantos | 5 | 80% | 61% | ⏳ poucos dados |
+| Combinadas | 4 | 25% | 55% | ⏳ poucos dados |
 | Dupla hipótese | 3 | 67% | 70% | ⏳ poucos dados |
-| Combinadas | 3 | 33% | 55% | ⏳ poucos dados |
 | Cartões | 2 | 100% | 67% | ⏳ poucos dados |
 
 ## Por liga
 | Liga | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| Liga das Nações | 11 | 82% | 66% | ⬆️ confiança a menos |
+| Liga das Nações | 12 | 75% | 65% | ⬆️ confiança a menos |
 | Serie A | 9 | 67% | 62% | ✅ bem |
 | Premier League | 8 | 75% | 59% | ⬆️ confiança a menos |
 | Liga Portugal | 7 | 43% | 64% | ⏳ poucos dados |
@@ -41,7 +41,7 @@ _Atualizado automaticamente a 13/11/2026 21:48. Só dicas publicadas e já decid
 ## Por probabilidade
 | Faixa | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| 55-65% | 28 | 71% | 60% | ⬆️ confiança a menos |
+| 55-65% | 29 | 69% | 60% | ⬆️ confiança a menos |
 | 65-75% | 22 | 68% | 69% | ✅ bem |
 | < 55% | 8 | 62% | 52% | ⬆️ confiança a menos |
 | ≥ 75% | 5 | 100% | 78% | ⏳ poucos dados |
@@ -52,12 +52,13 @@ _Atualizado automaticamente a 13/11/2026 21:48. Só dicas publicadas e já decid
 | ☀️ Manhã | 52 | 73% | 65% | ⬆️ confiança a menos |
 | 🌎 Américas | 4 | 75% | 59% | ⏳ poucos dados |
 | 🌙 Tardia | 4 | 75% | 63% | ⏳ poucos dados |
-| 💎 Odd alta | 3 | 33% | 55% | ⏳ poucos dados |
+| 💎 Odd alta | 4 | 25% | 55% | ⏳ poucos dados |
 
 ## Extras não publicadas
-Das 2 apostas extra que ficaram por publicar, 1 teriam dado Green (**50%**), contra 71% das publicadas.
+Das 4 apostas extra que ficaram por publicar, 1 teriam dado Green (**25%**), contra 70% das publicadas.
 
 ## Últimos Reds
+- 13/11 · Bulgária x Islândia **0-5** · Islândia ou empate + Menos de 3.5 golos (55%, Combinadas)
 - 13/11 · Eslováquia x Ilhas Faroé **2-2** · Vitória Eslováquia (69%, Resultado 1X2)
 - 12/11 · Albânia x Finlândia **2-0** · Mais de 7.5 cantos (57%, Cantos)
 - 08/11 · Inter x Como **2-0** · xG 1.8-0.2 · Ambas marcam (63%, Ambas marcam)
@@ -67,4 +68,3 @@ Das 2 apostas extra que ficaram por publicar, 1 teriam dado Green (**50%**), con
 - 07/11 · Stuttgart x Werder Bremen **1-0** · xG 0.7-1.4 · Mais de 2.5 golos (69%, Golos +/-)
 - 07/11 · Alverca x Casa Pia **1-1** · xG 0.7-0.9 · Vitória Alverca (53%, Resultado 1X2)
 - 06/11 · Everton x Coventry **3-1** · xG 1.4-1.2 · Everton ou empate + Menos de 3.5 golos (56%, Combinadas)
-- 05/11 · Gimnasia L.P. x Belgrano **2-1** · Menos de 2.5 golos (53%, Golos +/-)
