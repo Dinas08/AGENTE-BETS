@@ -1852,7 +1852,8 @@
    "expira": "2026-11-13T17:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-13T14:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msg": 252
   },
   {
    "pid": "1311232427",
