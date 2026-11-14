@@ -2452,7 +2452,6 @@
     "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
     "partes": [
      "20261114-UNL-noruega-pasdegales|1",
-     "20261114-UNL-ustria-irlanda|cantos_under_9.5",
      "20261114-UNL-sucia-bsnia|1"
     ],
     "pernas": [
@@ -2466,15 +2465,6 @@
       "texto": "Vitória Noruega"
      },
      {
-      "id": "20261114-UNL-ustria-irlanda|cantos_under_9.5",
-      "match_id": "20261114-UNL-ustria-irlanda",
-      "key": "cantos_under_9.5",
-      "prob": 0.6912,
-      "odd_casa": null,
-      "jogo": "Áustria x Irlanda",
-      "texto": "Menos de 9.5 cantos"
-     },
-     {
       "id": "20261114-UNL-sucia-bsnia|1",
       "match_id": "20261114-UNL-sucia-bsnia",
       "key": "1",
@@ -2484,10 +2474,10 @@
       "texto": "Vitória Suécia"
      }
     ],
-    "prob": 0.3518,
+    "prob": 0.509,
     "resultado": null
    },
-   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Noruega x País de Gales: Vitória Noruega (@1.22)\n• Áustria x Irlanda: Menos de 9.5 cantos (@1.45)\n• Suécia x Bósnia: Vitória Suécia (@1.44)\n\n💰 Odd total: <b>2.54</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Noruega x País de Gales: Vitória Noruega (@1.22)\n• Suécia x Bósnia: Vitória Suécia (@1.44)\n\n💰 Odd total: <b>1.76</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-14T17:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-14T14:00:00",
@@ -2678,7 +2668,7 @@
   }
  ],
  "ultimo_resumo": 176,
- "offset_admin": 820373487,
+ "offset_admin": 820373489,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA",
  "troca": {
   "pid": "1416251554",
