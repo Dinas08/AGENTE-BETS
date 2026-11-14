@@ -1320,7 +1320,8 @@
   "2026-11-06",
   "2026-11-07",
   "2026-11-08",
-  "2026-11-12"
+  "2026-11-12",
+  "2026-11-13"
  ],
  "offset": 892007170,
  "ignorados": [],
@@ -2279,9 +2280,28 @@
    "expira": "2026-11-14T21:50:44.114600",
    "estado": "publicada",
    "admin_msg": 276
+  },
+  {
+   "pid": "1400011242",
+   "origem": "resumo",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": true
+   },
+   "texto": "📊 <b>RESUMO DE 13/11</b>\n\n🟢 4 Green · 🔴 2 Red\n🚀 Múltipla turbo: GREEN 💰\n💶 Lucro: <b>+153 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T00:01:12.030187",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 289,
+    "5728356568": 290
+   },
+   "admin_msg": 289
   }
  ],
- "ultimo_resumo": 157,
- "offset_admin": 820373474,
+ "ultimo_resumo": 176,
+ "offset_admin": 820373475,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
