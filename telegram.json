@@ -2299,9 +2299,299 @@
     "5728356568": 290
    },
    "admin_msg": 289
+  },
+  {
+   "pid": "1411085543",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-noruega-pasdegales|1",
+    "match_id": "20261114-UNL-noruega-pasdegales",
+    "key": "1",
+    "texto": "Vitória Noruega",
+    "jogo": "Noruega x País de Gales",
+    "prob": 0.7592,
+    "odd_casa": 1.22,
+    "data": "2026-11-14",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nNoruega x País de Gales | 17h00\n\n✅ <b>Dica: Vitória Noruega</b>\n💰 Odd: <b>1.22</b>\n\n📊 Golos esperados: Noruega 2.7 – País de Gales 1.0\n📊 Noruega: 2 vitórias nos últimos 6 jogos\n📊 País de Gales: 1 vitória nos últimos 6 jogos\n🚑 País de Gales sem Cabango\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T17:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T14:00:00"
+  },
+  {
+   "pid": "1411085544",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-ustria-irlanda|cantos_under_9.5",
+    "match_id": "20261114-UNL-ustria-irlanda",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Áustria x Irlanda",
+    "prob": 0.6912,
+    "odd_casa": null,
+    "data": "2026-11-14",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nÁustria x Irlanda | 19h45\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.45</b> (mínima com valor)\n\n📊 Golos esperados: Áustria 1.7 – Irlanda 0.9\n📊 Áustria: 2 vitórias nos últimos 6 jogos\n📊 Irlanda: 2 vitórias nos últimos 6 jogos\n🚑 Áustria sem Wöber, Wimmer\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T16:45:00"
+  },
+  {
+   "pid": "1411085545",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-sucia-bsnia|1",
+    "match_id": "20261114-UNL-sucia-bsnia",
+    "key": "1",
+    "texto": "Vitória Suécia",
+    "jogo": "Suécia x Bósnia",
+    "prob": 0.6704,
+    "odd_casa": 1.44,
+    "data": "2026-11-14",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nSuécia x Bósnia | 19h45\n\n✅ <b>Dica: Vitória Suécia</b>\n💰 Odd: <b>1.44</b>\n\n📊 Golos esperados: Suécia 2.1 – Bósnia 0.9\n📊 Suécia: 3 vitórias nos últimos 6 jogos\n📊 Bósnia: 3 vitórias nos últimos 6 jogos\n🚑 Bósnia sem Muharemovic, Dzeko\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T16:45:00"
+  },
+  {
+   "pid": "1411085546",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-portugal-dinamarca|cantos_over_9.5",
+    "match_id": "20261114-UNL-portugal-dinamarca",
+    "key": "cantos_over_9.5",
+    "texto": "Mais de 9.5 cantos",
+    "jogo": "Portugal x Dinamarca",
+    "prob": 0.6493,
+    "odd_casa": null,
+    "data": "2026-11-14",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nPortugal x Dinamarca | 19h45\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.54</b> (mínima com valor)\n\n📊 Golos esperados: Portugal 2.1 – Dinamarca 1.1\n📊 Portugal: 5 vitórias nos últimos 6 jogos\n📊 Dinamarca: 3 vitórias nos últimos 6 jogos\n🚑 Portugal sem Leão, Mendes, Cancelo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T16:45:00"
+  },
+  {
+   "pid": "1411085547",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-kosovo-israel|over_2.5",
+    "match_id": "20261114-UNL-kosovo-israel",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Kosovo x Israel",
+    "prob": 0.5542,
+    "odd_casa": 1.83,
+    "data": "2026-11-14",
+    "resultado": null,
+    "tipo": "odd_alta"
+   },
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nKosovo x Israel | 14h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.83</b>\n\n📊 Golos esperados: Kosovo 1.8 – Israel 1.0\n📊 Kosovo: 2 vitórias nos últimos 6 jogos\n📊 Israel: 1 vitória nos últimos 6 jogos\n🚑 Kosovo sem Dellova, Hajdari\n🚑 Israel sem Solomon, Revivo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T14:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T11:00:00",
+   "admin_msgs": {
+    "5575304800": 291,
+    "5728356568": 292
+   },
+   "admin_msg": 291
+  },
+  {
+   "pid": "1411085548",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-14",
+    "tipo": "segura",
+    "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+    "partes": [
+     "20261114-UNL-noruega-pasdegales|1",
+     "20261114-UNL-ustria-irlanda|cantos_under_9.5",
+     "20261114-UNL-sucia-bsnia|1"
+    ],
+    "pernas": [
+     {
+      "id": "20261114-UNL-noruega-pasdegales|1",
+      "match_id": "20261114-UNL-noruega-pasdegales",
+      "key": "1",
+      "prob": 0.7592,
+      "odd_casa": 1.22,
+      "jogo": "Noruega x País de Gales",
+      "texto": "Vitória Noruega"
+     },
+     {
+      "id": "20261114-UNL-ustria-irlanda|cantos_under_9.5",
+      "match_id": "20261114-UNL-ustria-irlanda",
+      "key": "cantos_under_9.5",
+      "prob": 0.6912,
+      "odd_casa": null,
+      "jogo": "Áustria x Irlanda",
+      "texto": "Menos de 9.5 cantos"
+     },
+     {
+      "id": "20261114-UNL-sucia-bsnia|1",
+      "match_id": "20261114-UNL-sucia-bsnia",
+      "key": "1",
+      "prob": 0.6704,
+      "odd_casa": 1.44,
+      "jogo": "Suécia x Bósnia",
+      "texto": "Vitória Suécia"
+     }
+    ],
+    "prob": 0.3518,
+    "resultado": null
+   },
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Noruega x País de Gales: Vitória Noruega (@1.22)\n• Áustria x Irlanda: Menos de 9.5 cantos (@1.45)\n• Suécia x Bósnia: Vitória Suécia (@1.44)\n\n💰 Odd total: <b>2.54</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T17:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T14:00:00"
+  },
+  {
+   "pid": "1411085549",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-14",
+    "tipo": "turbo",
+    "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+    "partes": [
+     "20261114-UNL-irlandadonorte-ucrnia|combo:1X&under_3.5",
+     "20261114-UNL-portugal-dinamarca|1",
+     "20261114-UNL-noruega-pasdegales|over_2.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261114-UNL-irlandadonorte-ucrnia|combo:1X&under_3.5",
+      "match_id": "20261114-UNL-irlandadonorte-ucrnia",
+      "key": "combo:1X&under_3.5",
+      "prob": 0.5972,
+      "odd_casa": null,
+      "jogo": "Irlanda do Norte x Ucrânia",
+      "texto": "Irlanda do Norte ou empate + Menos de 3.5 golos",
+      "porque": "golos esperados 1.1 – 0.9 · Irlanda do Norte 3V em 6"
+     },
+     {
+      "id": "20261114-UNL-portugal-dinamarca|1",
+      "match_id": "20261114-UNL-portugal-dinamarca",
+      "key": "1",
+      "prob": 0.6077,
+      "odd_casa": 1.54,
+      "jogo": "Portugal x Dinamarca",
+      "texto": "Vitória Portugal",
+      "porque": "golos esperados 2.1 – 1.1 · Portugal 5V em 6"
+     },
+     {
+      "id": "20261114-UNL-noruega-pasdegales|over_2.5",
+      "match_id": "20261114-UNL-noruega-pasdegales",
+      "key": "over_2.5",
+      "prob": 0.7058,
+      "odd_casa": null,
+      "jogo": "Noruega x País de Gales",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 2.7 – 1.0"
+     }
+    ],
+    "prob": 0.2561,
+    "resultado": null
+   },
+   "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• Irlanda do Norte x Ucrânia: Irlanda do Norte ou empate + Menos de 3.5 golos (@1.67)\n   <i>↳ golos esperados 1.1 – 0.9 · Irlanda do Norte 3V em 6</i>\n• Portugal x Dinamarca: Vitória Portugal (@1.54)\n   <i>↳ golos esperados 2.1 – 1.1 · Portugal 5V em 6</i>\n• Noruega x País de Gales: Mais de 2.5 golos (@1.42)\n   <i>↳ golos esperados 2.7 – 1.0</i>\n\n💰 Odd total: <b>3.65</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T14:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T11:00:00",
+   "admin_msgs": {
+    "5575304800": 293,
+    "5728356568": 294
+   },
+   "admin_msg": 293
+  },
+  {
+   "pid": "1411085550",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-gergia-hungria|under_2.5",
+    "match_id": "20261114-UNL-gergia-hungria",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Geórgia x Hungria",
+    "prob": 0.5774,
+    "odd_casa": 1.57,
+    "data": "2026-11-14",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nGeórgia x Hungria | 17h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.57</b>\n\n📊 Golos esperados: Geórgia 1.0 – Hungria 1.1\n📊 Geórgia: 1 vitória nos últimos 6 jogos\n📊 Hungria: 4 vitórias nos últimos 6 jogos\n🚑 Geórgia sem Kvaratskhelia, Kochorashvili\n🚑 Hungria sem Szoboszlai\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T17:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T14:00:00",
+   "extra": true
+  },
+  {
+   "pid": "1411085551",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-irlandadonorte-ucrnia|under_2.5",
+    "match_id": "20261114-UNL-irlandadonorte-ucrnia",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Irlanda do Norte x Ucrânia",
+    "prob": 0.6074,
+    "odd_casa": null,
+    "data": "2026-11-14",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nIrlanda do Norte x Ucrânia | 19h45\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.65</b> (mínima com valor)\n\n📊 Golos esperados: Irlanda do Norte 1.1 – Ucrânia 0.9\n📊 Irlanda do Norte: 3 vitórias nos últimos 6 jogos\n📊 Ucrânia: 2 vitórias nos últimos 6 jogos\n🚑 Irlanda do Norte sem Ballard, Toal, Bradley, McCann\n🚑 Ucrânia sem Tsygankov, Zubkov\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T16:45:00",
+   "extra": true
+  },
+  {
+   "pid": "1411085552",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-romnia-polnia|over_2.5",
+    "match_id": "20261114-UNL-romnia-polnia",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Roménia x Polónia",
+    "prob": 0.5686,
+    "odd_casa": 1.71,
+    "data": "2026-11-14",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nRoménia x Polónia | 19h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.71</b>\n\n📊 Golos esperados: Roménia 1.1 – Polónia 1.8\n📊 Roménia: 1 vitória nos últimos 6 jogos\n📊 Polónia: 1 vitória nos últimos 6 jogos\n🚑 Roménia sem Stanciu, Marin\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T16:45:00",
+   "extra": true
   }
  ],
  "ultimo_resumo": 176,
- "offset_admin": 820373475,
+ "offset_admin": 820373478,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
