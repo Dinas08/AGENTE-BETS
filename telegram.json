@@ -845,7 +845,7 @@
    "prob": 0.5483,
    "odd_casa": null,
    "data": "2026-11-14",
-   "resultado": null,
+   "resultado": false,
    "tipo": "odd_alta",
    "message_id": 177
   },
@@ -2629,6 +2629,25 @@
    "estado": "pendente",
    "enviar_a": "2026-11-14T16:45:00",
    "extra": true
+  },
+  {
+   "pid": "1415574453",
+   "origem": "resultado",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 177,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Ambas marcam\nKosovo 0-0 Israel",
+   "expira": "2026-11-15T15:57:44.307808",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 316,
+    "5728356568": 317
+   },
+   "admin_msg": 316
   }
  ],
  "ultimo_resumo": 176,
