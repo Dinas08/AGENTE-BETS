@@ -835,6 +835,19 @@
    "resultado": true,
    "extra": true,
    "message_id": 167
+  },
+  {
+   "id": "20261114-UNL-kosovo-israel|btts_sim",
+   "match_id": "20261114-UNL-kosovo-israel",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Kosovo x Israel",
+   "prob": 0.5483,
+   "odd_casa": null,
+   "data": "2026-11-14",
+   "resultado": null,
+   "tipo": "odd_alta",
+   "message_id": 177
   }
  ],
  "multiplas": [
@@ -2390,20 +2403,20 @@
    "data": "2026-11-14",
    "lista": "dicas",
    "registo": {
-    "id": "20261114-UNL-kosovo-israel|over_2.5",
+    "id": "20261114-UNL-kosovo-israel|btts_sim",
     "match_id": "20261114-UNL-kosovo-israel",
-    "key": "over_2.5",
-    "texto": "Mais de 2.5 golos",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
     "jogo": "Kosovo x Israel",
-    "prob": 0.5542,
-    "odd_casa": 1.83,
+    "prob": 0.5483,
+    "odd_casa": null,
     "data": "2026-11-14",
     "resultado": null,
     "tipo": "odd_alta"
    },
-   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nKosovo x Israel | 14h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.83</b>\n\n📊 Golos esperados: Kosovo 1.8 – Israel 1.0\n📊 Kosovo: 2 vitórias nos últimos 6 jogos\n📊 Israel: 1 vitória nos últimos 6 jogos\n🚑 Kosovo sem Dellova, Hajdari\n🚑 Israel sem Solomon, Revivo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nKosovo x Israel | 14h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.82</b> (mínima com valor)\n\n📊 Golos esperados: Kosovo 1.8 – Israel 1.0\n📊 Kosovo: 2 vitórias nos últimos 6 jogos\n📊 Israel: 1 vitória nos últimos 6 jogos\n🚑 Kosovo sem Dellova, Hajdari\n🚑 Israel sem Solomon, Revivo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-14T14:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-14T11:00:00",
    "admin_msgs": {
     "5575304800": 291,
@@ -2592,6 +2605,6 @@
   }
  ],
  "ultimo_resumo": 176,
- "offset_admin": 820373478,
+ "offset_admin": 820373483,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
