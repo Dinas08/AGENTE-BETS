@@ -2575,7 +2575,7 @@
    },
    "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nGeórgia x Hungria | 17h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.57</b>\n\n📊 Golos esperados: Geórgia 1.0 – Hungria 1.1\n📊 Geórgia: 1 vitória nos últimos 6 jogos\n📊 Hungria: 4 vitórias nos últimos 6 jogos\n🚑 Geórgia sem Kvaratskhelia, Kochorashvili\n🚑 Hungria sem Szoboszlai\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-14T17:00:00",
-   "estado": "pendente",
+   "estado": "substituida",
    "enviar_a": "2026-11-14T14:00:00",
    "extra": true,
    "admin_msgs": {
@@ -2648,9 +2648,42 @@
     "5728356568": 317
    },
    "admin_msg": 316
+  },
+  {
+   "pid": "1416251554",
+   "origem": "tardia",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-gergia-hungria|under_2.5",
+    "match_id": "20261114-UNL-gergia-hungria",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Geórgia x Hungria",
+    "prob": 0.5774,
+    "odd_casa": 1.57,
+    "data": "2026-11-14",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nGeórgia x Hungria | 17h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.57</b>\n\n📊 Golos esperados: Geórgia 1.0 – Hungria 1.1\n📊 Geórgia: 1 vitória nos últimos 6 jogos\n📊 Hungria: 4 vitórias nos últimos 6 jogos\n🚑 Geórgia sem Kvaratskhelia, Kochorashvili\n🚑 Hungria sem Szoboszlai\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T17:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-14T14:00:00",
+   "admin_msgs": {
+    "5575304800": 318,
+    "5728356568": 319
+   },
+   "admin_msg": 318
   }
  ],
  "ultimo_resumo": 176,
- "offset_admin": 820373484,
- "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA"
+ "offset_admin": 820373487,
+ "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA",
+ "troca": {
+  "pid": "1416251554",
+  "i": -1,
+  "msg": 320,
+  "chat": "5728356568"
+ }
 }
