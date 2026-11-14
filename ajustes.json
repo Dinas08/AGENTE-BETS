@@ -1,10 +1,10 @@
 {
-  "atualizado_em": "2026-11-13",
+  "atualizado_em": "2026-11-14",
   "equipas": {
     "Espanha": {
-      "golos_marcados": -7,
+      "golos_marcados": -2,
       "golos_sofridos": 0,
-      "motivo": "Yamal (joelho) e Oyarzabal (gripe) fora; Rodri possível ausência; já apurada para os quartos",
+      "motivo": "Yamal e Oyarzabal devem regressar (De la Fuente, 13-14/11); Rodri possível ausência; já apurada, vitória dá o 1.º lugar",
       "ausentes": [
         {
           "jogador": "Lamine Yamal",
@@ -56,8 +56,8 @@
     },
     "Inglaterra": {
       "golos_marcados": -5,
-      "golos_sofridos": 4,
-      "motivo": "Saka, Madueke, Guehi e Konsa fora (defesa e ala direita remendadas)",
+      "golos_sofridos": 3,
+      "motivo": "Saka, Madueke e Guehi fora; Konsa e Spence devem treinar sábado e regressar; Lewis-Skelly disponível; jogo decisivo ('winner takes it all')",
       "ausentes": [
         {
           "jogador": "Bukayo Saka",
@@ -129,9 +129,9 @@
       "valido_ate": "2026-11-15"
     },
     "França": {
-      "golos_marcados": -10,
+      "golos_marcados": -8,
       "golos_sofridos": 6,
-      "motivo": "Thuram, Tchouaméni, Kalulu e outros fora (Koundé, Saliba, Dembélé indisponíveis segundo uma fonte); Mbappé duvidoso (isquiotibial, 1 jogo de fontes)",
+      "motivo": "Thuram, Tchouaméni, Kalulu fora; Mbappé treinou e deve jogar (Zidane, 14/11); precisa de ganhar para o 1.º lugar",
       "ausentes": [
         {
           "jogador": "Marcus Thuram",
@@ -229,24 +229,19 @@
       "valido_ate": "2026-11-15"
     },
     "Bélgica": {
-      "golos_marcados": -2,
+      "golos_marcados": -6,
       "golos_sofridos": 0,
-      "motivo": "Lukaku fora (anca ligeira); Lavia possivelmente suspenso (fontes divergem)",
+      "motivo": "Lukaku (anca) grande dúvida/fora, ficou em Bruxelas; Lavia cumpriu castigo; precisa de ganhar à Itália",
       "ausentes": [
         {
-          "jogador": "Romelu Lukaku",
-          "motivo": "lesão ligeira na anca",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Romeo Lavia",
-          "motivo": "castigo? (fontes divergem)",
+          "jogador": "Lukaku",
+          "motivo": "lesão na anca (grande dúvida)",
           "importancia": "titular"
         }
       ],
       "fontes": [
-        "https://khelnow.com/football/turkiye-vs-belgium-preview-uefa-nations-league-202611",
-        "https://kantan.news/news/romelu-lukaku-dropped-from-belgium-squad-for-turkey-match"
+        "https://football-italia.net/lukaku-out-belgium-turkiye-major-doubt-italy/",
+        "https://khelnow.com/football/belgium-vs-italy-preview-uefa-nations-league-202611"
       ],
       "valido_ate": "2026-11-15"
     },
@@ -509,7 +504,7 @@
     "Noruega": {
       "golos_marcados": -2,
       "golos_sofridos": 0,
-      "motivo": "Strand Larsen fora; Haaland e Ødegaard regressam ao treino e devem jogar",
+      "motivo": "Strand Larsen e Aursnes fora; Haaland e Ødegaard treinaram e devem jogar (11-14/11); 4 jogadores em risco de castigo",
       "ausentes": [
         {
           "jogador": "Jørgen Strand Larsen",
@@ -662,6 +657,91 @@
         "africasoccer/yardbarker 11-13/11/2026 (via pesquisa)"
       ],
       "valido_ate": "2026-11-15"
+    },
+    "Geórgia": {
+      "golos_marcados": -6,
+      "golos_sofridos": 2,
+      "motivo": "Kvaratskhelia fora (cirurgia ao ligamento cruzado); Kochorashvili suspenso (artigos 13-14/11); sem golos marcados na prova",
+      "valido_ate": "2026-11-17",
+      "ausentes": [
+        {
+          "jogador": "Kvaratskhelia",
+          "motivo": "lesão (LCA)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Kochorashvili",
+          "motivo": "castigo",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://footballwhispers.com/blog/georgia-vs-hungary-prediction-14-11-2026/",
+        "https://www.sportsmole.co.uk/football/hungary/uefa-nations-league/preview/georgia-vs-hungary-prediction-team-news-lineups_608996.html"
+      ]
+    },
+    "Kosovo": {
+      "golos_marcados": 0,
+      "golos_sofridos": 3,
+      "motivo": "Dellova e Hajdari (defesas) fora; Krasniqi dúvida; Rexhbecaj regressa (previews 12-14/11)",
+      "valido_ate": "2026-11-17",
+      "ausentes": [
+        {
+          "jogador": "Dellova",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Hajdari",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsgambler.com/betting-tips/football/kosovo-vs-israel-prediction-lineups-odds-2026-11-14/"
+      ]
+    },
+    "Israel": {
+      "golos_marcados": -2,
+      "golos_sofridos": 0,
+      "motivo": "Manor Solomon e Revivo em dúvida; Khalaili fora (previews 12-14/11)",
+      "valido_ate": "2026-11-17",
+      "ausentes": [
+        {
+          "jogador": "Manor Solomon",
+          "motivo": "dúvida",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Revivo",
+          "motivo": "queixa muscular (dúvida)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsgambler.com/betting-tips/football/kosovo-vs-israel-prediction-lineups-odds-2026-11-14/"
+      ]
+    },
+    "Roménia": {
+      "golos_marcados": -4,
+      "golos_sofridos": 2,
+      "motivo": "Stanciu e Mihăila fora, Marin suspenso, Radu lesionado (1 fonte, site de previsões 14/11)",
+      "valido_ate": "2026-11-17",
+      "ausentes": [
+        {
+          "jogador": "Stanciu",
+          "motivo": "lesão (1 fonte)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Marin",
+          "motivo": "castigo (1 fonte)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://scoregpt.app/ai-football-predictions/nations-league/romania-vs-poland-2026-11-14"
+      ]
     }
   },
   "jogos": {
@@ -672,7 +752,8 @@
       "nota": "Árbitro Očenáš (SVK); McTominay regressa"
     },
     "20261114-UNL-portugal-dinamarca": {
-      "nota": "Árbitro Obrenovic (SLO); sem média de amarelos confirmada"
+      "cartoes": 5,
+      "nota": "Árbitro Obrenovic (SLO), estreia com a seleção; só referência: 6 amarelos na Dinamarca–Espanha 2024; média não confirmada. Apurado; Ronaldo retirou-se a 05/11"
     }
   }
 }
