@@ -848,6 +848,18 @@
    "resultado": null,
    "tipo": "odd_alta",
    "message_id": 177
+  },
+  {
+   "id": "20261114-UNL-noruega-pasdegales|1",
+   "match_id": "20261114-UNL-noruega-pasdegales",
+   "key": "1",
+   "texto": "Vitória Noruega",
+   "jogo": "Noruega x País de Gales",
+   "prob": 0.7592,
+   "odd_casa": 1.22,
+   "data": "2026-11-14",
+   "resultado": null,
+   "message_id": 178
   }
  ],
  "multiplas": [
@@ -2331,7 +2343,7 @@
    },
    "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nNoruega x País de Gales | 17h00\n\n✅ <b>Dica: Vitória Noruega</b>\n💰 Odd: <b>1.22</b>\n\n📊 Golos esperados: Noruega 2.7 – País de Gales 1.0\n📊 Noruega: 2 vitórias nos últimos 6 jogos\n📊 País de Gales: 1 vitória nos últimos 6 jogos\n🚑 País de Gales sem Cabango\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-14T17:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-14T14:00:00",
    "admin_msgs": {
     "5575304800": 308,
@@ -2620,6 +2632,6 @@
   }
  ],
  "ultimo_resumo": 176,
- "offset_admin": 820373483,
+ "offset_admin": 820373484,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
