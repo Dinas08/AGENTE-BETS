@@ -2332,7 +2332,12 @@
    "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nNoruega x País de Gales | 17h00\n\n✅ <b>Dica: Vitória Noruega</b>\n💰 Odd: <b>1.22</b>\n\n📊 Golos esperados: Noruega 2.7 – País de Gales 1.0\n📊 Noruega: 2 vitórias nos últimos 6 jogos\n📊 País de Gales: 1 vitória nos últimos 6 jogos\n🚑 País de Gales sem Cabango\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-14T17:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-14T14:00:00"
+   "enviar_a": "2026-11-14T14:00:00",
+   "admin_msgs": {
+    "5575304800": 308,
+    "5728356568": 309
+   },
+   "admin_msg": 308
   },
   {
    "pid": "1411085544",
@@ -2473,7 +2478,12 @@
    "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Noruega x País de Gales: Vitória Noruega (@1.22)\n• Áustria x Irlanda: Menos de 9.5 cantos (@1.45)\n• Suécia x Bósnia: Vitória Suécia (@1.44)\n\n💰 Odd total: <b>2.54</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-14T17:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-14T14:00:00"
+   "enviar_a": "2026-11-14T14:00:00",
+   "admin_msgs": {
+    "5575304800": 310,
+    "5728356568": 311
+   },
+   "admin_msg": 310
   },
   {
    "pid": "1411085549",
@@ -2555,7 +2565,12 @@
    "expira": "2026-11-14T17:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-14T14:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 312,
+    "5728356568": 313
+   },
+   "admin_msg": 312
   },
   {
    "pid": "1411085551",
