@@ -1,517 +1,609 @@
 {
- "atualizado_em": "2026-11-16",
- "equipas": {
-  "Sérvia": {
-   "golos_marcados": -12,
-   "golos_sofridos": 7,
-   "motivo": "Vlahovic (pessoal), Mitrovic lesionado, Pavlovic em dúvida, Lukic e Maksimovic suspensos",
-   "ausentes": [
-    {
-     "jogador": "Dusan Vlahovic",
-     "motivo": "recusou convocatória (pessoal)",
-     "importancia": "titular"
+  "atualizado_em": "2026-11-17",
+  "equipas": {
+    "Sérvia": {
+      "golos_marcados": -12,
+      "golos_sofridos": 7,
+      "motivo": "Vlahovic (pessoal), Mitrovic lesionado, Pavlovic em dúvida, Lukic e Maksimovic suspensos",
+      "ausentes": [
+        {
+          "jogador": "Dusan Vlahovic",
+          "motivo": "recusou convocatória (pessoal)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Aleksandar Mitrovic",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Strahinja Pavlovic",
+          "motivo": "lesão/em dúvida",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Sasa Lukic",
+          "motivo": "castigo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Nemanja Maksimovic",
+          "motivo": "castigo",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.t-online.de/sport/fussball/international/id_101521058/vor-nations-league-spiel-gegen-deutschland-vlahovic-sagt-serbien-ab.html"
+      ],
+      "valido_ate": "2026-11-16"
     },
-    {
-     "jogador": "Aleksandar Mitrovic",
-     "motivo": "lesão",
-     "importancia": "titular"
+    "Alemanha": {
+      "golos_marcados": -5,
+      "golos_sofridos": 3,
+      "motivo": "Musiala, Gnabry, Havertz, Schlotterbeck, Anton, Ouédraogo e Stiller fora; Klopp sob pressão",
+      "ausentes": [
+        {
+          "jogador": "Jamal Musiala",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Serge Gnabry",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Kai Havertz",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Nico Schlotterbeck",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Waldemar Anton",
+          "motivo": "lesão muscular",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Assan Ouédraogo",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Angelo Stiller",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.sportschau.de/fussball/nationalmannschaft/erfolgserlebnis-gegen-serbien-noetig-klopp-unter-druck,dfb-610.html",
+        "https://nationalmannschaft.net/dfb-kader-serbien-niederlande/"
+      ],
+      "valido_ate": "2026-11-16"
     },
-    {
-     "jogador": "Strahinja Pavlovic",
-     "motivo": "lesão/em dúvida",
-     "importancia": "titular"
+    "Países Baixos": {
+      "golos_marcados": -6,
+      "golos_sofridos": 8,
+      "motivo": "Van Dijk, Brobbey, Hato, Aké, Frimpong e Gravenberch fora",
+      "ausentes": [
+        {
+          "jogador": "Virgil van Dijk",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Brian Brobbey",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Jorrel Hato",
+          "motivo": "lesão ligeira",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Nathan Aké",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Jeremie Frimpong",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Ryan Gravenberch",
+          "motivo": "desistiu (dor)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.goal.com/en/news/netherlands-international-withdraws-due-to-injury-but-his-club-tell-a-different-story/blt9309677385ea4767",
+        "https://sports.yahoo.com/articles/netherlands-injury-liverpool-captain-virgil-220346283.html"
+      ],
+      "valido_ate": "2026-11-16"
     },
-    {
-     "jogador": "Sasa Lukic",
-     "motivo": "castigo",
-     "importancia": "titular"
+    "Suíça": {
+      "golos_marcados": -6,
+      "golos_sofridos": 3,
+      "motivo": "Xhaka (gémeo), Vargas e Muheim fora",
+      "ausentes": [
+        {
+          "jogador": "Granit Xhaka",
+          "motivo": "lesão no gémeo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Ruben Vargas",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Miro Muheim",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Zeki Amdouni",
+          "motivo": "lesão no tornozelo",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.freemalaysiatoday.com/category/sports/2026/11/10/xhaka-out-of-swiss-nations-league-squad-due-to-calf-injury"
+      ],
+      "valido_ate": "2026-11-16"
     },
-    {
-     "jogador": "Nemanja Maksimovic",
-     "motivo": "castigo",
-     "importancia": "titular"
+    "Escócia": {
+      "golos_marcados": 0,
+      "golos_sofridos": 5,
+      "motivo": "McKenna, McLean, Welsh e Binks fora (defesa remendada: Porteous/Bates); McTominay e Adams regressam",
+      "ausentes": [
+        {
+          "jogador": "Scott McKenna",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Kenny McLean",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Stephen Welsh",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Luis Binks",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.skysports.com/football/news/13607109/scotland-james-penrice-included-in-sebastien-pocognolis-squad-with-scott-mctominay-back-for-nations-league-double-header",
+        "https://www.scotsman.com/sport/football/international/scotland-team-to-play-north-macedonia-where-mctominay-fits-in-new-look-defence-striker-decision-9345477"
+      ],
+      "valido_ate": "2026-11-16"
+    },
+    "Grécia": {
+      "golos_marcados": -2,
+      "golos_sofridos": 2,
+      "motivo": "Zafeiris e Saliakas suspensos (acumulação de amarelos)",
+      "ausentes": [
+        {
+          "jogador": "Christos Zafeiris",
+          "motivo": "castigo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Manolis Saliakas",
+          "motivo": "castigo",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://khelnow.com/football/netherlands-vs-greece-preview-uefa-nations-league-202611"
+      ],
+      "valido_ate": "2026-11-16"
+    },
+    "Portugal": {
+      "golos_marcados": -2,
+      "golos_sofridos": 5,
+      "motivo": "Rúben Dias e Palhinha suspensos; Nuno Mendes lesionado; Cancelo regressa (Yahoo 17/11); B. Silva incerto; basta o empate para o 1.º lugar",
+      "ausentes": [
+        {
+          "jogador": "Rúben Dias",
+          "motivo": "castigo (amarelos)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "João Palhinha",
+          "motivo": "castigo (amarelos)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Nuno Mendes",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Rafael Leão",
+          "motivo": "lesão isquiotibial (1 fonte, 14/11)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.whoscored.com/matches/1969865/preview/international-uefa-nations-league-a-2026-2027-wales-portugal",
+        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-wales-v-portugal/bltd292692e6fe3a6f7"
+      ],
+      "valido_ate": "2026-11-18"
+    },
+    "País de Gales": {
+      "golos_marcados": -2,
+      "golos_sofridos": 3,
+      "motivo": "Ampadu suspenso e Neco Williams lesionado; Cabango e Sorba Thomas já regressam (castigo cumprido) — preview 17/11",
+      "ausentes": [
+        {
+          "jogador": "Ethan Ampadu",
+          "motivo": "castigo (amarelo vs Noruega)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Neco Williams",
+          "motivo": "lesão (Oslo)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.whoscored.com/matches/1969865/preview/international-uefa-nations-league-a-2026-2027-wales-portugal",
+        "https://sports.yahoo.com/articles/portugal-xi-vs-wales-predicted-044500491.html"
+      ],
+      "valido_ate": "2026-11-18"
+    },
+    "Geórgia": {
+      "golos_marcados": -6,
+      "golos_sofridos": 2,
+      "motivo": "Kvaratskhelia fora (cirurgia ao ligamento cruzado); Kochorashvili suspenso (artigos 13-14/11); sem golos marcados na prova",
+      "valido_ate": "2026-11-17",
+      "ausentes": [
+        {
+          "jogador": "Kvaratskhelia",
+          "motivo": "lesão (LCA)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Kochorashvili",
+          "motivo": "castigo",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://footballwhispers.com/blog/georgia-vs-hungary-prediction-14-11-2026/",
+        "https://www.sportsmole.co.uk/football/hungary/uefa-nations-league/preview/georgia-vs-hungary-prediction-team-news-lineups_608996.html"
+      ]
+    },
+    "Kosovo": {
+      "golos_marcados": 0,
+      "golos_sofridos": 3,
+      "motivo": "Dellova e Hajdari (defesas) fora; Krasniqi dúvida; Rexhbecaj regressa (previews 12-14/11)",
+      "valido_ate": "2026-11-17",
+      "ausentes": [
+        {
+          "jogador": "Dellova",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Hajdari",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsgambler.com/betting-tips/football/kosovo-vs-israel-prediction-lineups-odds-2026-11-14/"
+      ]
+    },
+    "Israel": {
+      "golos_marcados": -2,
+      "golos_sofridos": 0,
+      "motivo": "Manor Solomon e Revivo em dúvida; Khalaili fora (previews 12-14/11)",
+      "valido_ate": "2026-11-17",
+      "ausentes": [
+        {
+          "jogador": "Manor Solomon",
+          "motivo": "dúvida",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Revivo",
+          "motivo": "queixa muscular (dúvida)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsgambler.com/betting-tips/football/kosovo-vs-israel-prediction-lineups-odds-2026-11-14/"
+      ]
+    },
+    "Roménia": {
+      "golos_marcados": -4,
+      "golos_sofridos": 2,
+      "motivo": "Stanciu e Mihăila fora, Marin suspenso, Radu lesionado (1 fonte, site de previsões 14/11)",
+      "valido_ate": "2026-11-18",
+      "ausentes": [
+        {
+          "jogador": "Tudor Băluță",
+          "motivo": "castigo (amarelos)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Louis Munteanu",
+          "motivo": "pancada",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Stanciu",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Marin",
+          "motivo": "castigo",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://scoregpt.app/ai-football-predictions/nations-league/romania-vs-poland-2026-11-14",
+        "https://www.byteseu.com/2525199/"
+      ]
+    },
+    "Polónia": {
+      "golos_marcados": -5,
+      "golos_sofridos": 5,
+      "motivo": "Kiwior suspenso, Kamiński (muscular) e Cash fora, Frankowski saiu da concentração; luta para evitar a descida",
+      "ausentes": [
+        {
+          "jogador": "Jakub Kiwior",
+          "motivo": "castigo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Jakub Kamiński",
+          "motivo": "lesão muscular",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Matty Cash",
+          "motivo": "lesão no maxilar",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Przemysław Frankowski",
+          "motivo": "saiu da concentração",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "Interia via ua.news 15/11/2026",
+        "https://ua.news/en/world/uefa-ogolosiv-arbitra-matchu-polshcha-shvetsiia-interia-sport"
+      ],
+      "valido_ate": "2026-11-17"
+    },
+    "Suécia": {
+      "golos_marcados": -2,
+      "golos_sofridos": 2,
+      "motivo": "Wålemark saiu da concentração (lesão); Kulusevski regressa (~30 min); Emil Holm fora (coxa)",
+      "ausentes": [
+        {
+          "jogador": "Patrik Wålemark",
+          "motivo": "lesão no treino",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Emil Holm",
+          "motivo": "lesão na coxa",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "Interia via ua.news 15/11/2026"
+      ],
+      "valido_ate": "2026-11-17"
+    },
+    "Islândia": {
+      "golos_marcados": -5,
+      "golos_sofridos": 3,
+      "motivo": "Stefán Teitur e Kristall Máni lesionados, Hörður Magnússon suspenso, Elías Rafn fora (rim); Sverrir Ingi fora (previews 16/11)",
+      "ausentes": [
+        {
+          "jogador": "Stefán Teitur Thórdarson",
+          "motivo": "lesão (saiu contra Bulgária)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Kristall Máni Ingason",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Hörður Magnússon",
+          "motivo": "castigo (2.º amarelo)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Elías Rafn Ólafsson",
+          "motivo": "cirurgia ao rim",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsmole.co.uk/football/iceland/uefa-nations-league/preview/iceland-vs-luxembourg-prediction-team-news-lineups_609129.html"
+      ],
+      "valido_ate": "2026-11-17"
+    },
+    "Luxemburgo": {
+      "golos_marcados": 0,
+      "golos_sofridos": 3,
+      "motivo": "Natami suspenso; Carlson regressa (previews 16/11)",
+      "ausentes": [
+        {
+          "jogador": "Omar Natami",
+          "motivo": "castigo",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsmole.co.uk/football/iceland/uefa-nations-league/preview/iceland-vs-luxembourg-prediction-team-news-lineups_609129.html"
+      ],
+      "valido_ate": "2026-11-17"
+    },
+    "Dinamarca": {
+      "golos_marcados": -4,
+      "golos_sofridos": 4,
+      "motivo": "Dorgu, Dolberg e Christensen fora; Joachim Andersen dúvida (ligamento); Bah regressa; perdeu 4-1 com Portugal",
+      "ausentes": [
+        {
+          "jogador": "Patrick Dorgu",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Kasper Dolberg",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Andreas Christensen",
+          "motivo": "indisponível",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Joachim Andersen",
+          "motivo": "dúvida (ligamento)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://khelnow.com/football/denmark-vs-norway-preview-uefa-nations-league-202611",
+        "https://www.tntsports.co.uk/betting/tips/denmark-vs-norway-prediction-tips-and-odds-17-11-26/"
+      ],
+      "valido_ate": "2026-11-18"
+    },
+    "Noruega": {
+      "golos_marcados": -6,
+      "golos_sofridos": 0,
+      "motivo": "Sørloth ausente e Strand Larsen lesionado; Haaland joga (17/11); precisa de ganhar na Dinamarca",
+      "ausentes": [
+        {
+          "jogador": "Alexander Sørloth",
+          "motivo": "ausente (condição física, 1 fonte)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Jørgen Strand Larsen",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://thefalse9.com/2026/11/denmark-vs-norway-predicted-lineup-team-news-17-november.html",
+        "https://www.tribalfootball.com/article/soccer-nations-league-norway-v-denmark-lineups-confirmed-squad-news-haaland-bb724ce7-3b1f-4a48-9ea0-faf3b79e8d07"
+      ],
+      "valido_ate": "2026-11-18"
+    },
+    "Hungria": {
+      "golos_marcados": 0,
+      "golos_sofridos": 4,
+      "motivo": "Orbán e Vitális suspensos (acumulação de amarelos); precisa de ganhar para ser 1.º",
+      "ausentes": [
+        {
+          "jogador": "Willi Orbán",
+          "motivo": "castigo (amarelos)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Milán Vitális",
+          "motivo": "castigo (amarelos)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.whoscored.com/matches/1969802/preview/international-uefa-nations-league-b-2026-2027-hungary-northern-ireland"
+      ],
+      "valido_ate": "2026-11-18"
+    },
+    "Áustria": {
+      "golos_marcados": -8,
+      "golos_sofridos": 3,
+      "motivo": "Já promovida: rotação provável (Rangnick); Wöber, Veratschnig, Wanner e Wimmer lesionados; Baumgartner regressa",
+      "ausentes": [
+        {
+          "jogador": "Maximilian Wöber",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Nikolas Veratschnig",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Paul Wanner",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Patrick Wimmer",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsmole.co.uk/football/israel/uefa-nations-league/preview/israel-vs-austria-prediction-team-news-lineups_609141.html",
+        "https://www.byteseu.com/2527293/"
+      ],
+      "valido_ate": "2026-11-18"
+    },
+    "Irlanda": {
+      "golos_marcados": 0,
+      "golos_sofridos": 5,
+      "motivo": "Capitão Nathan Collins fora (joelho); precisa de ganhar",
+      "ausentes": [
+        {
+          "jogador": "Nathan Collins",
+          "motivo": "lesão no joelho",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://irishtimes.com/sport/soccer/2026/11/16/ireland-captain-nathan-collins-ruled-out-for-kosovo-game"
+      ],
+      "valido_ate": "2026-11-18"
     }
-   ],
-   "fontes": [
-    "https://www.t-online.de/sport/fussball/international/id_101521058/vor-nations-league-spiel-gegen-deutschland-vlahovic-sagt-serbien-ab.html"
-   ],
-   "valido_ate": "2026-11-16"
   },
-  "Alemanha": {
-   "golos_marcados": -5,
-   "golos_sofridos": 3,
-   "motivo": "Musiala, Gnabry, Havertz, Schlotterbeck, Anton, Ouédraogo e Stiller fora; Klopp sob pressão",
-   "ausentes": [
-    {
-     "jogador": "Jamal Musiala",
-     "motivo": "lesão",
-     "importancia": "titular"
+  "jogos": {
+    "20261115-UNL-blgica-itlia": {
+      "cartoes": 0,
+      "nota": "Árbitro Espen Eskas (NOR); média de amarelos não confirmada"
     },
-    {
-     "jogador": "Serge Gnabry",
-     "motivo": "lesão",
-     "importancia": "titular"
+    "20261115-UNL-espanha-inglaterra": {
+      "cartoes": 5,
+      "nota": "Árbitro Clément Turpin (FRA); média não confirmada; jogo decisivo pelo 1.º lugar (+5)"
     },
-    {
-     "jogador": "Kai Havertz",
-     "motivo": "lesão",
-     "importancia": "titular"
+    "20261116-UNL-alemanha-pasesbaixos": {
+      "cartoes": -10,
+      "nota": "Árbitro Glenn Nyberg (SWE): ~3.3 amarelos/jogo (1281 em 391)"
     },
-    {
-     "jogador": "Nico Schlotterbeck",
-     "motivo": "lesão",
-     "importancia": "titular"
+    "20261117-UNL-pasdegales-portugal": {
+      "cartoes": 0,
+      "nota": "Árbitro Sven Jablonski (GER): ~3.6-3.9 amarelos/jogo, normal"
     },
-    {
-     "jogador": "Waldemar Anton",
-     "motivo": "lesão muscular",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Assan Ouédraogo",
-     "motivo": "lesão",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Angelo Stiller",
-     "motivo": "lesão",
-     "importancia": "rotação"
+    "20261117-UNL-polnia-sucia": {
+      "cartoes": 0,
+      "nota": "Árbitro Felix Zwayer (GER, confirmado UEFA); média não confirmada"
     }
-   ],
-   "fontes": [
-    "https://www.sportschau.de/fussball/nationalmannschaft/erfolgserlebnis-gegen-serbien-noetig-klopp-unter-druck,dfb-610.html",
-    "https://nationalmannschaft.net/dfb-kader-serbien-niederlande/"
-   ],
-   "valido_ate": "2026-11-16"
-  },
-  "Países Baixos": {
-   "golos_marcados": -6,
-   "golos_sofridos": 8,
-   "motivo": "Van Dijk, Brobbey, Hato, Aké, Frimpong e Gravenberch fora",
-   "ausentes": [
-    {
-     "jogador": "Virgil van Dijk",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Brian Brobbey",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Jorrel Hato",
-     "motivo": "lesão ligeira",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Nathan Aké",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Jeremie Frimpong",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Ryan Gravenberch",
-     "motivo": "desistiu (dor)",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.goal.com/en/news/netherlands-international-withdraws-due-to-injury-but-his-club-tell-a-different-story/blt9309677385ea4767",
-    "https://sports.yahoo.com/articles/netherlands-injury-liverpool-captain-virgil-220346283.html"
-   ],
-   "valido_ate": "2026-11-16"
-  },
-  "Suíça": {
-   "golos_marcados": -6,
-   "golos_sofridos": 3,
-   "motivo": "Xhaka (gémeo), Vargas e Muheim fora",
-   "ausentes": [
-    {
-     "jogador": "Granit Xhaka",
-     "motivo": "lesão no gémeo",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Ruben Vargas",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Miro Muheim",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Zeki Amdouni",
-     "motivo": "lesão no tornozelo",
-     "importancia": "rotação"
-    }
-   ],
-   "fontes": [
-    "https://www.freemalaysiatoday.com/category/sports/2026/11/10/xhaka-out-of-swiss-nations-league-squad-due-to-calf-injury"
-   ],
-   "valido_ate": "2026-11-16"
-  },
-  "Escócia": {
-   "golos_marcados": 0,
-   "golos_sofridos": 5,
-   "motivo": "McKenna, McLean, Welsh e Binks fora (defesa remendada: Porteous/Bates); McTominay e Adams regressam",
-   "ausentes": [
-    {
-     "jogador": "Scott McKenna",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Kenny McLean",
-     "motivo": "lesão",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Stephen Welsh",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Luis Binks",
-     "motivo": "lesão",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.skysports.com/football/news/13607109/scotland-james-penrice-included-in-sebastien-pocognolis-squad-with-scott-mctominay-back-for-nations-league-double-header",
-    "https://www.scotsman.com/sport/football/international/scotland-team-to-play-north-macedonia-where-mctominay-fits-in-new-look-defence-striker-decision-9345477"
-   ],
-   "valido_ate": "2026-11-16"
-  },
-  "Grécia": {
-   "golos_marcados": -2,
-   "golos_sofridos": 2,
-   "motivo": "Zafeiris e Saliakas suspensos (acumulação de amarelos)",
-   "ausentes": [
-    {
-     "jogador": "Christos Zafeiris",
-     "motivo": "castigo",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Manolis Saliakas",
-     "motivo": "castigo",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://khelnow.com/football/netherlands-vs-greece-preview-uefa-nations-league-202611"
-   ],
-   "valido_ate": "2026-11-16"
-  },
-  "Portugal": {
-   "golos_marcados": -3,
-   "golos_sofridos": 4,
-   "motivo": "Leão (isquiotibial) e Nuno Mendes (lesão) fora; Cancelo e Francisco Conceição suspensos (1 fonte, fontes divergem); jogo do apuramento; Rúben Dias suspenso (central)",
-   "ausentes": [
-    {
-     "jogador": "Rafael Leão",
-     "motivo": "lesão isquiotibial",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Nuno Mendes",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "João Cancelo",
-     "motivo": "castigo (1 fonte)",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Francisco Conceição",
-     "motivo": "castigo (1 fonte)",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Rúben Dias",
-     "motivo": "castigo (2.º amarelo na prova, bet365 14/11)",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "previews WhoScored/khelnow 12-14/11/2026 (via pesquisa)",
-    "bet365 NL preview 14/11/2026"
-   ],
-   "valido_ate": "2026-11-17"
-  },
-  "País de Gales": {
-   "golos_marcados": -3,
-   "golos_sofridos": 3,
-   "motivo": "Cabango e Sorba Thomas suspensos; 6 jogadores em risco de castigo; Wilson regressa; Ampadu suspenso (médio/central); perdeu 1-3 na Noruega",
-   "ausentes": [
-    {
-     "jogador": "Benjamin Cabango",
-     "motivo": "castigo",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Sorba Thomas",
-     "motivo": "castigo",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Ethan Ampadu",
-     "motivo": "castigo (2.º amarelo, bet365 14/11)",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "Sports Mole/TNT 14/11/2026 (via pesquisa)",
-    "bet365 NL preview 14/11/2026"
-   ],
-   "valido_ate": "2026-11-17"
-  },
-  "Geórgia": {
-   "golos_marcados": -6,
-   "golos_sofridos": 2,
-   "motivo": "Kvaratskhelia fora (cirurgia ao ligamento cruzado); Kochorashvili suspenso (artigos 13-14/11); sem golos marcados na prova",
-   "valido_ate": "2026-11-17",
-   "ausentes": [
-    {
-     "jogador": "Kvaratskhelia",
-     "motivo": "lesão (LCA)",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Kochorashvili",
-     "motivo": "castigo",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://footballwhispers.com/blog/georgia-vs-hungary-prediction-14-11-2026/",
-    "https://www.sportsmole.co.uk/football/hungary/uefa-nations-league/preview/georgia-vs-hungary-prediction-team-news-lineups_608996.html"
-   ]
-  },
-  "Kosovo": {
-   "golos_marcados": 0,
-   "golos_sofridos": 3,
-   "motivo": "Dellova e Hajdari (defesas) fora; Krasniqi dúvida; Rexhbecaj regressa (previews 12-14/11)",
-   "valido_ate": "2026-11-17",
-   "ausentes": [
-    {
-     "jogador": "Dellova",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Hajdari",
-     "motivo": "lesão",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.sportsgambler.com/betting-tips/football/kosovo-vs-israel-prediction-lineups-odds-2026-11-14/"
-   ]
-  },
-  "Israel": {
-   "golos_marcados": -2,
-   "golos_sofridos": 0,
-   "motivo": "Manor Solomon e Revivo em dúvida; Khalaili fora (previews 12-14/11)",
-   "valido_ate": "2026-11-17",
-   "ausentes": [
-    {
-     "jogador": "Manor Solomon",
-     "motivo": "dúvida",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Revivo",
-     "motivo": "queixa muscular (dúvida)",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.sportsgambler.com/betting-tips/football/kosovo-vs-israel-prediction-lineups-odds-2026-11-14/"
-   ]
-  },
-  "Roménia": {
-   "golos_marcados": -4,
-   "golos_sofridos": 2,
-   "motivo": "Stanciu e Mihăila fora, Marin suspenso, Radu lesionado (1 fonte, site de previsões 14/11)",
-   "valido_ate": "2026-11-17",
-   "ausentes": [
-    {
-     "jogador": "Stanciu",
-     "motivo": "lesão (1 fonte)",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Marin",
-     "motivo": "castigo (1 fonte)",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://scoregpt.app/ai-football-predictions/nations-league/romania-vs-poland-2026-11-14"
-   ]
-  },
-  "Polónia": {
-   "golos_marcados": -5,
-   "golos_sofridos": 5,
-   "motivo": "Kiwior suspenso, Kamiński (muscular) e Cash fora, Frankowski saiu da concentração; luta para evitar a descida",
-   "ausentes": [
-    {
-     "jogador": "Jakub Kiwior",
-     "motivo": "castigo",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Jakub Kamiński",
-     "motivo": "lesão muscular",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Matty Cash",
-     "motivo": "lesão no maxilar",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Przemysław Frankowski",
-     "motivo": "saiu da concentração",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "Interia via ua.news 15/11/2026",
-    "https://ua.news/en/world/uefa-ogolosiv-arbitra-matchu-polshcha-shvetsiia-interia-sport"
-   ],
-   "valido_ate": "2026-11-17"
-  },
-  "Suécia": {
-   "golos_marcados": -2,
-   "golos_sofridos": 2,
-   "motivo": "Wålemark saiu da concentração (lesão); Kulusevski regressa (~30 min); Emil Holm fora (coxa)",
-   "ausentes": [
-    {
-     "jogador": "Patrik Wålemark",
-     "motivo": "lesão no treino",
-     "importancia": "rotação"
-    },
-    {
-     "jogador": "Emil Holm",
-     "motivo": "lesão na coxa",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "Interia via ua.news 15/11/2026"
-   ],
-   "valido_ate": "2026-11-17"
-  },
-  "Islândia": {
-   "golos_marcados": -5,
-   "golos_sofridos": 3,
-   "motivo": "Stefán Teitur e Kristall Máni lesionados, Hörður Magnússon suspenso, Elías Rafn fora (rim); Sverrir Ingi fora (previews 16/11)",
-   "ausentes": [
-    {
-     "jogador": "Stefán Teitur Thórdarson",
-     "motivo": "lesão (saiu contra Bulgária)",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Kristall Máni Ingason",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Hörður Magnússon",
-     "motivo": "castigo (2.º amarelo)",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Elías Rafn Ólafsson",
-     "motivo": "cirurgia ao rim",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.sportsmole.co.uk/football/iceland/uefa-nations-league/preview/iceland-vs-luxembourg-prediction-team-news-lineups_609129.html"
-   ],
-   "valido_ate": "2026-11-17"
-  },
-  "Luxemburgo": {
-   "golos_marcados": 0,
-   "golos_sofridos": 3,
-   "motivo": "Natami suspenso; Carlson regressa (previews 16/11)",
-   "ausentes": [
-    {
-     "jogador": "Omar Natami",
-     "motivo": "castigo",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://www.sportsmole.co.uk/football/iceland/uefa-nations-league/preview/iceland-vs-luxembourg-prediction-team-news-lineups_609129.html"
-   ],
-   "valido_ate": "2026-11-17"
-  },
-  "Dinamarca": {
-   "golos_marcados": -4,
-   "golos_sofridos": 4,
-   "motivo": "Dorgu, Dolberg e Christensen fora; Joachim Andersen dúvida (ligamento); Bah regressa; perdeu 4-1 com Portugal",
-   "ausentes": [
-    {
-     "jogador": "Patrick Dorgu",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Kasper Dolberg",
-     "motivo": "lesão",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Andreas Christensen",
-     "motivo": "indisponível",
-     "importancia": "titular"
-    },
-    {
-     "jogador": "Joachim Andersen",
-     "motivo": "dúvida (ligamento)",
-     "importancia": "titular"
-    }
-   ],
-   "fontes": [
-    "https://khelnow.com/football/denmark-vs-norway-preview-uefa-nations-league-202611",
-    "https://www.tntsports.co.uk/betting/tips/denmark-vs-norway-prediction-tips-and-odds-17-11-26/"
-   ],
-   "valido_ate": "2026-11-18"
   }
- },
- "jogos": {
-  "20261115-UNL-blgica-itlia": {
-   "cartoes": 0,
-   "nota": "Árbitro Espen Eskas (NOR); média de amarelos não confirmada"
-  },
-  "20261115-UNL-espanha-inglaterra": {
-   "cartoes": 5,
-   "nota": "Árbitro Clément Turpin (FRA); média não confirmada; jogo decisivo pelo 1.º lugar (+5)"
-  },
-  "20261116-UNL-alemanha-pasesbaixos": {
-   "cartoes": -10,
-   "nota": "Árbitro Glenn Nyberg (SWE): ~3.3 amarelos/jogo (1281 em 391)"
-  },
-  "20261117-UNL-pasdegales-portugal": {
-   "cartoes": 0,
-   "nota": "Árbitro Sven Jablonski (GER): ~3.6-3.9 amarelos/jogo, normal"
-  },
-  "20261117-UNL-polnia-sucia": {
-   "cartoes": 0,
-   "nota": "Árbitro Felix Zwayer (GER); média não confirmada"
-  }
- }
 }
