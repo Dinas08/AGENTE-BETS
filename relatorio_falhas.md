@@ -1,11 +1,11 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 17/11/2026 00:01. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 17/11/2026 21:40. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 22 Green · 10 Red → **69%** de acerto (o modelo esperava 64%).
-- **Últimos 30 dias:** 58 Green · 26 Red → **69%** de acerto (o modelo esperava 63%).
-- **Desde o início:** 58 Green · 26 Red → **69%** de acerto (o modelo esperava 63%).
-- **Múltiplas:** 7 Green em 15.
+- **Últimos 7 dias:** 26 Green · 11 Red → **70%** de acerto (o modelo esperava 64%).
+- **Últimos 30 dias:** 62 Green · 27 Red → **70%** de acerto (o modelo esperava 64%).
+- **Desde o início:** 62 Green · 27 Red → **70%** de acerto (o modelo esperava 64%).
+- **Múltiplas:** 7 Green em 16.
 
 ## Alertas
 - Nenhum grupo com 8+ dicas abaixo do esperado. 👌
@@ -13,8 +13,8 @@ _Atualizado automaticamente a 17/11/2026 00:01. Só dicas publicadas e já decid
 ## Por mercado
 | Mercado | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| Golos +/- | 29 | 69% | 66% | ✅ bem |
-| Resultado 1X2 | 26 | 81% | 65% | ⬆️ confiança a menos |
+| Golos +/- | 33 | 70% | 66% | ✅ bem |
+| Resultado 1X2 | 27 | 81% | 65% | ⬆️ confiança a menos |
 | Ambas marcam | 14 | 57% | 59% | ✅ bem |
 | Cantos | 6 | 67% | 61% | ⏳ poucos dados |
 | Combinadas | 4 | 25% | 55% | ⏳ poucos dados |
@@ -24,7 +24,7 @@ _Atualizado automaticamente a 17/11/2026 00:01. Só dicas publicadas e já decid
 ## Por liga
 | Liga | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| Liga das Nações | 32 | 69% | 64% | ✅ bem |
+| Liga das Nações | 37 | 70% | 64% | ✅ bem |
 | Serie A | 9 | 67% | 62% | ✅ bem |
 | Premier League | 8 | 75% | 59% | ⬆️ confiança a menos |
 | Liga Portugal | 7 | 43% | 64% | ⏳ poucos dados |
@@ -42,22 +42,23 @@ _Atualizado automaticamente a 17/11/2026 00:01. Só dicas publicadas e já decid
 | Faixa | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
 | 55-65% | 39 | 69% | 60% | ⬆️ confiança a menos |
-| 65-75% | 27 | 70% | 70% | ✅ bem |
-| < 55% | 11 | 45% | 53% | ✅ bem |
-| ≥ 75% | 7 | 100% | 78% | ⏳ poucos dados |
+| 65-75% | 30 | 70% | 69% | ✅ bem |
+| < 55% | 12 | 50% | 53% | ✅ bem |
+| ≥ 75% | 8 | 100% | 78% | ⬆️ confiança a menos |
 
 ## Por tipo de dica
 | Tipo | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| ☀️ Manhã | 68 | 74% | 65% | ⬆️ confiança a menos |
+| ☀️ Manhã | 72 | 75% | 65% | ⬆️ confiança a menos |
+| 💎 Odd alta | 7 | 14% | 56% | ⏳ poucos dados |
 | 🌙 Tardia | 6 | 67% | 61% | ⏳ poucos dados |
-| 💎 Odd alta | 6 | 17% | 55% | ⏳ poucos dados |
 | 🌎 Américas | 4 | 75% | 59% | ⏳ poucos dados |
 
 ## Extras não publicadas
-Das 6 apostas extra que ficaram por publicar, 4 teriam dado Green (**67%**), contra 69% das publicadas.
+Das 6 apostas extra que ficaram por publicar, 4 teriam dado Green (**67%**), contra 70% das publicadas.
 
 ## Últimos Reds
+- 17/11 · Polónia x Suécia **1-1** · Mais de 2.5 golos (65%, Golos +/-)
 - 16/11 · Gibraltar x Malta **1-1** · Vitória Malta (60%, Resultado 1X2)
 - 16/11 · Suíça x Escócia **4-0** · Ambas marcam (54%, Ambas marcam)
 - 16/11 · Estónia x Bulgária **2-1** · Menos de 2.5 golos (54%, Golos +/-)
@@ -67,4 +68,3 @@ Das 6 apostas extra que ficaram por publicar, 4 teriam dado Green (**67%**), con
 - 14/11 · Kosovo x Israel **0-0** · Ambas marcam (55%, Ambas marcam)
 - 13/11 · Bulgária x Islândia **0-5** · Islândia ou empate + Menos de 3.5 golos (55%, Combinadas)
 - 13/11 · Eslováquia x Ilhas Faroé **2-2** · Vitória Eslováquia (69%, Resultado 1X2)
-- 12/11 · Albânia x Finlândia **2-0** · Mais de 7.5 cantos (57%, Cantos)

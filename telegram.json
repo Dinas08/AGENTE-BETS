@@ -1097,7 +1097,7 @@
    "prob": 0.6546,
    "odd_casa": null,
    "data": "2026-11-17",
-   "resultado": null,
+   "resultado": false,
    "tipo": "odd_alta",
    "message_id": 228
   },
@@ -1110,7 +1110,7 @@
    "prob": 0.6771,
    "odd_casa": 1.38,
    "data": "2026-11-17",
-   "resultado": null,
+   "resultado": true,
    "message_id": 229
   },
   {
@@ -1134,7 +1134,7 @@
    "prob": 0.5284,
    "odd_casa": null,
    "data": "2026-11-17",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 231
   },
@@ -1147,7 +1147,7 @@
    "prob": 0.6728,
    "odd_casa": null,
    "data": "2026-11-17",
-   "resultado": null,
+   "resultado": true,
    "message_id": 232
   },
   {
@@ -1159,7 +1159,7 @@
    "prob": 0.7989,
    "odd_casa": null,
    "data": "2026-11-17",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 233
   }
@@ -1802,7 +1802,7 @@
     }
    ],
    "prob": 0.2168,
-   "resultado": null,
+   "resultado": false,
    "message_id": 227
   },
   {
@@ -3890,9 +3890,123 @@
     "5728356568": 535
    },
    "admin_msg": 534
+  },
+  {
+   "pid": "1721403875",
+   "origem": "resultado",
+   "data": "2026-11-17",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 228,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Mais de 2.5 golos\nPolónia 1-1 Suécia",
+   "expira": "2026-11-18T21:40:38.898547",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 536,
+    "5728356568": 537
+   },
+   "admin_msg": 536
+  },
+  {
+   "pid": "1721403976",
+   "origem": "resultado",
+   "data": "2026-11-17",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 229,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Portugal\nPaís de Gales 2-3 Portugal",
+   "expira": "2026-11-18T21:40:39.677912",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 538,
+    "5728356568": 539
+   },
+   "admin_msg": 538
+  },
+  {
+   "pid": "1721404077",
+   "origem": "resultado",
+   "data": "2026-11-17",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 231,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Menos de 2.5 golos\nUcrânia 1-0 Geórgia",
+   "expira": "2026-11-18T21:40:40.397623",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 540,
+    "5728356568": 541
+   },
+   "admin_msg": 540
+  },
+  {
+   "pid": "1721404178",
+   "origem": "resultado",
+   "data": "2026-11-17",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 232,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 1.5 golos\nIrlanda 3-0 Kosovo",
+   "expira": "2026-11-18T21:40:41.045402",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 542,
+    "5728356568": 543
+   },
+   "admin_msg": 542
+  },
+  {
+   "pid": "1721404179",
+   "origem": "resultado",
+   "data": "2026-11-17",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 233,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 1.5 golos\nBósnia 2-1 Roménia",
+   "expira": "2026-11-18T21:40:41.705826",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 544,
+    "5728356568": 545
+   },
+   "admin_msg": 544
+  },
+  {
+   "pid": "1721404280",
+   "origem": "resultado",
+   "data": "2026-11-17",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 227,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED na múltipla turbo (2/4 pernas certas até agora)",
+   "expira": "2026-11-18T21:40:42.423069",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 546,
+    "5728356568": 547
+   },
+   "admin_msg": 546
   }
  ],
  "ultimo_resumo": 226,
- "offset_admin": 820373591,
+ "offset_admin": 820373597,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
