@@ -1,0 +1,3355 @@
+{
+ "dicas": [
+  {
+   "id": "20261101-I1-frosinone-torino|over_2.5",
+   "match_id": "20261101-I1-frosinone-torino",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Frosinone x Torino",
+   "prob": 0.6904,
+   "odd_casa": 1.4,
+   "data": "2026-11-01",
+   "message_id": 5,
+   "resultado": false
+  },
+  {
+   "id": "20261101-E0-liverpool-arsenal|12",
+   "match_id": "20261101-E0-liverpool-arsenal",
+   "key": "12",
+   "texto": "Liverpool ou Arsenal vence (sem empate)",
+   "jogo": "Liverpool x Arsenal",
+   "prob": 0.7103,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 6,
+   "resultado": true
+  },
+  {
+   "id": "20261101-I1-lecce-genoa|cartoes_under_4.5",
+   "match_id": "20261101-I1-lecce-genoa",
+   "key": "cartoes_under_4.5",
+   "texto": "Menos de 4.5 cartões amarelos",
+   "jogo": "Lecce x Genoa",
+   "prob": 0.695,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 7,
+   "resultado": true
+  },
+  {
+   "id": "20261101-I1-juventus-napoli|12",
+   "match_id": "20261101-I1-juventus-napoli",
+   "key": "12",
+   "texto": "Juventus ou Napoli vence (sem empate)",
+   "jogo": "Juventus x Napoli",
+   "prob": 0.7016,
+   "odd_casa": null,
+   "data": "2026-11-01",
+   "message_id": 8,
+   "resultado": true
+  },
+  {
+   "id": "20261102-I1-sassuolo-fiorentina|cantos_under_9.5",
+   "match_id": "20261102-I1-sassuolo-fiorentina",
+   "key": "cantos_under_9.5",
+   "texto": "Menos de 9.5 cantos",
+   "jogo": "Sassuolo x Fiorentina",
+   "prob": 0.6541,
+   "odd_casa": null,
+   "data": "2026-11-02",
+   "message_id": 15,
+   "resultado": true
+  },
+  {
+   "id": "20261102-E0-newcastle-everton|cartoes_under_4.5",
+   "match_id": "20261102-E0-newcastle-everton",
+   "key": "cartoes_under_4.5",
+   "texto": "Menos de 4.5 cartões amarelos",
+   "jogo": "Newcastle x Everton",
+   "prob": 0.6375,
+   "odd_casa": null,
+   "data": "2026-11-02",
+   "message_id": 16,
+   "resultado": true
+  },
+  {
+   "id": "20261102-P1-gilvicente-guimaraes|12",
+   "match_id": "20261102-P1-gilvicente-guimaraes",
+   "key": "12",
+   "texto": "Gil Vicente ou Guimaraes vence (sem empate)",
+   "jogo": "Gil Vicente x Guimaraes",
+   "prob": 0.6892,
+   "odd_casa": null,
+   "data": "2026-11-02",
+   "message_id": 17,
+   "resultado": false
+  },
+  {
+   "id": "20261102-P1-benfica-alverca|over_2.5",
+   "match_id": "20261102-P1-benfica-alverca",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Benfica x Alverca",
+   "prob": 0.6794,
+   "odd_casa": 1.37,
+   "data": "2026-11-02",
+   "message_id": 18,
+   "resultado": false
+  },
+  {
+   "id": "20261103-ARG-atltucuman-argentinosjrs|under_2.5",
+   "match_id": "20261103-ARG-atltucuman-argentinosjrs",
+   "key": "under_2.5",
+   "texto": "Menos de 2.5 golos",
+   "jogo": "Atl. Tucuman x Argentinos Jrs",
+   "prob": 0.6333,
+   "odd_casa": 1.51,
+   "data": "2026-11-02",
+   "message_id": 27,
+   "resultado": false,
+   "tipo": "madrugada"
+  },
+  {
+   "id": "20261103-ARG-indrivadavia-banfield|1",
+   "match_id": "20261103-ARG-indrivadavia-banfield",
+   "key": "1",
+   "texto": "Vitória Ind. Rivadavia",
+   "jogo": "Ind. Rivadavia x Banfield",
+   "prob": 0.5819,
+   "odd_casa": 1.5,
+   "data": "2026-11-02",
+   "message_id": 28,
+   "resultado": true,
+   "tipo": "madrugada"
+  },
+  {
+   "id": "20261103-UCL-galatasaray-stuttgart|btts_sim",
+   "match_id": "20261103-UCL-galatasaray-stuttgart",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Galatasaray x Stuttgart",
+   "prob": 0.7007,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 33,
+   "resultado": false
+  },
+  {
+   "id": "20261103-UCL-barcelona-astonvilla|over_2.5",
+   "match_id": "20261103-UCL-barcelona-astonvilla",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Barcelona x Aston Villa",
+   "prob": 0.8305,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 34,
+   "resultado": true
+  },
+  {
+   "id": "20261103-UCL-villarreal-parissg|over_2.5",
+   "match_id": "20261103-UCL-villarreal-parissg",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Villarreal x Paris SG",
+   "prob": 0.6767,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 35,
+   "resultado": true
+  },
+  {
+   "id": "20261103-UCL-feyenoord-inter|over_2.5",
+   "match_id": "20261103-UCL-feyenoord-inter",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Feyenoord x Inter",
+   "prob": 0.6609,
+   "odd_casa": null,
+   "data": "2026-11-03",
+   "message_id": 36,
+   "resultado": true
+  },
+  {
+   "id": "20261104-BRA-internacional-coritiba|1",
+   "match_id": "20261104-BRA-internacional-coritiba",
+   "key": "1",
+   "texto": "Vitória Internacional",
+   "jogo": "Internacional x Coritiba",
+   "prob": 0.5673,
+   "odd_casa": 1.6,
+   "data": "2026-11-03",
+   "resultado": true,
+   "tipo": "madrugada",
+   "message_id": 45
+  },
+  {
+   "id": "20261104-UCL-fenerbahce-liverpool|over_2.5",
+   "match_id": "20261104-UCL-fenerbahce-liverpool",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Fenerbahce x Liverpool",
+   "prob": 0.6808,
+   "odd_casa": null,
+   "data": "2026-11-04",
+   "resultado": true,
+   "message_id": 49
+  },
+  {
+   "id": "20261104-UCL-aek-realmadrid|2",
+   "match_id": "20261104-UCL-aek-realmadrid",
+   "key": "2",
+   "texto": "Vitória Real Madrid",
+   "jogo": "AEK x Real Madrid",
+   "prob": 0.7056,
+   "odd_casa": 1.22,
+   "data": "2026-11-04",
+   "resultado": true,
+   "message_id": 50
+  },
+  {
+   "id": "20261104-BRA-flamengorj-gremio|over_2.5",
+   "match_id": "20261104-BRA-flamengorj-gremio",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Flamengo RJ x Gremio",
+   "prob": 0.6944,
+   "odd_casa": null,
+   "data": "2026-11-04",
+   "resultado": true,
+   "message_id": 52
+  },
+  {
+   "id": "20261104-UCL-psveindhoven-clubbrugge|over_2.5",
+   "match_id": "20261104-UCL-psveindhoven-clubbrugge",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "PSV Eindhoven x Club Brugge",
+   "prob": 0.7167,
+   "odd_casa": null,
+   "data": "2026-11-04",
+   "resultado": true,
+   "message_id": 53
+  },
+  {
+   "id": "20261105-UEL-leverkusen-marseille|over_2.5",
+   "match_id": "20261105-UEL-leverkusen-marseille",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Leverkusen x Marseille",
+   "prob": 0.7125,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": false,
+   "message_id": 62
+  },
+  {
+   "id": "20261105-UEL-celtic-besiktas|btts_sim",
+   "match_id": "20261105-UEL-celtic-besiktas",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Celtic x Besiktas",
+   "prob": 0.6479,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": true,
+   "message_id": 63
+  },
+  {
+   "id": "20261105-BRA-palmeiras-remo|1",
+   "match_id": "20261105-BRA-palmeiras-remo",
+   "key": "1",
+   "texto": "Vitória Palmeiras",
+   "jogo": "Palmeiras x Remo",
+   "prob": 0.7884,
+   "odd_casa": 1.21,
+   "data": "2026-11-05",
+   "resultado": true,
+   "message_id": 64
+  },
+  {
+   "id": "20261105-UEL-sociedad-lyon|combo:12&over_2.5",
+   "match_id": "20261105-UEL-sociedad-lyon",
+   "key": "combo:12&over_2.5",
+   "texto": "Não há empate + Mais de 2.5 golos",
+   "jogo": "Sociedad x Lyon",
+   "prob": 0.5444,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": false,
+   "tipo": "odd_alta",
+   "message_id": 65
+  },
+  {
+   "id": "20261105-UECL-trabzonspor-freiburg|btts_sim",
+   "match_id": "20261105-UECL-trabzonspor-freiburg",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Trabzonspor x Freiburg",
+   "prob": 0.6097,
+   "odd_casa": null,
+   "data": "2026-11-05",
+   "resultado": false,
+   "extra": true,
+   "message_id": 68
+  },
+  {
+   "id": "20261105-ARG-aldosivi-riverplate|2",
+   "match_id": "20261105-ARG-aldosivi-riverplate",
+   "key": "2",
+   "texto": "Vitória River Plate",
+   "jogo": "Aldosivi x River Plate",
+   "prob": 0.6401,
+   "odd_casa": 1.43,
+   "data": "2026-11-05",
+   "resultado": true,
+   "extra": true,
+   "message_id": 69
+  },
+  {
+   "id": "20261105-UEL-azalkmaar-juventus|2",
+   "match_id": "20261105-UEL-azalkmaar-juventus",
+   "key": "2",
+   "texto": "Vitória Juventus",
+   "jogo": "AZ Alkmaar x Juventus",
+   "prob": 0.4927,
+   "odd_casa": 1.95,
+   "data": "2026-11-05",
+   "resultado": true,
+   "extra": true,
+   "message_id": 70
+  },
+  {
+   "id": "20261105-UECL-getafe-brighton|2",
+   "match_id": "20261105-UECL-getafe-brighton",
+   "key": "2",
+   "texto": "Vitória Brighton",
+   "jogo": "Getafe x Brighton",
+   "prob": 0.5866,
+   "odd_casa": 1.53,
+   "data": "2026-11-05",
+   "resultado": true,
+   "extra": true,
+   "message_id": 71
+  },
+  {
+   "id": "20261105-ARG-gimnasialp-belgrano|under_2.5",
+   "match_id": "20261105-ARG-gimnasialp-belgrano",
+   "key": "under_2.5",
+   "texto": "Menos de 2.5 golos",
+   "jogo": "Gimnasia L.P. x Belgrano",
+   "prob": 0.5264,
+   "odd_casa": 1.74,
+   "data": "2026-11-05",
+   "resultado": false,
+   "extra": true,
+   "message_id": 72
+  },
+  {
+   "id": "20261106-BRA-cruzeiro-bahia|1",
+   "match_id": "20261106-BRA-cruzeiro-bahia",
+   "key": "1",
+   "texto": "Vitória Cruzeiro",
+   "jogo": "Cruzeiro x Bahia",
+   "prob": 0.5598,
+   "odd_casa": 1.68,
+   "data": "2026-11-05",
+   "resultado": true,
+   "tipo": "madrugada",
+   "extra": true,
+   "message_id": 76
+  },
+  {
+   "id": "20261106-E0-everton-coventry|combo:1X&under_3.5",
+   "match_id": "20261106-E0-everton-coventry",
+   "key": "combo:1X&under_3.5",
+   "texto": "Everton ou empate + Menos de 3.5 golos",
+   "jogo": "Everton x Coventry",
+   "prob": 0.5553,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": false,
+   "tipo": "odd_alta",
+   "message_id": 85
+  },
+  {
+   "id": "20261106-D1-hamburg-mgladbach|btts_sim",
+   "match_id": "20261106-D1-hamburg-mgladbach",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Hamburg x M'gladbach",
+   "prob": 0.5941,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": true,
+   "extra": true,
+   "message_id": 86
+  },
+  {
+   "id": "20261106-I1-venezia-udinese|btts_sim",
+   "match_id": "20261106-I1-venezia-udinese",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Venezia x Udinese",
+   "prob": 0.5454,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": true,
+   "extra": true,
+   "message_id": 87
+  },
+  {
+   "id": "20261106-P1-famalicao-arouca|cantos_over_9.5",
+   "match_id": "20261106-P1-famalicao-arouca",
+   "key": "cantos_over_9.5",
+   "texto": "Mais de 9.5 cantos",
+   "jogo": "Famalicao x Arouca",
+   "prob": 0.5458,
+   "odd_casa": null,
+   "data": "2026-11-06",
+   "resultado": true,
+   "extra": true,
+   "message_id": 88
+  },
+  {
+   "id": "20261107-P1-splisbon-moreirense|over_2.5",
+   "match_id": "20261107-P1-splisbon-moreirense",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Sp Lisbon x Moreirense",
+   "prob": 0.6361,
+   "odd_casa": 1.41,
+   "data": "2026-11-07",
+   "resultado": false,
+   "extra": true,
+   "message_id": 93
+  },
+  {
+   "id": "20261107-P1-alverca-casapia|1",
+   "match_id": "20261107-P1-alverca-casapia",
+   "key": "1",
+   "texto": "Vitória Alverca",
+   "jogo": "Alverca x Casa Pia",
+   "prob": 0.5321,
+   "odd_casa": 1.74,
+   "data": "2026-11-07",
+   "resultado": false,
+   "extra": true,
+   "message_id": 94
+  },
+  {
+   "id": "20261107-D1-stuttgart-werderbremen|over_2.5",
+   "match_id": "20261107-D1-stuttgart-werderbremen",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Stuttgart x Werder Bremen",
+   "prob": 0.6932,
+   "odd_casa": 1.31,
+   "data": "2026-11-07",
+   "resultado": false,
+   "extra": true,
+   "message_id": 95
+  },
+  {
+   "id": "20261107-E0-nottmforest-mancity|btts_sim",
+   "match_id": "20261107-E0-nottmforest-mancity",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Nott'm Forest x Man City",
+   "prob": 0.5698,
+   "odd_casa": null,
+   "data": "2026-11-07",
+   "resultado": true,
+   "extra": true,
+   "message_id": 96
+  },
+  {
+   "id": "20261107-I1-parma-bologna|over_2.5",
+   "match_id": "20261107-I1-parma-bologna",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Parma x Bologna",
+   "prob": 0.4725,
+   "odd_casa": 2.1,
+   "data": "2026-11-07",
+   "resultado": true,
+   "extra": true,
+   "message_id": 97
+  },
+  {
+   "id": "20261107-P1-nacional-academicoviseu|btts_sim",
+   "match_id": "20261107-P1-nacional-academicoviseu",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Nacional x Academico Viseu",
+   "prob": 0.527,
+   "odd_casa": null,
+   "data": "2026-11-07",
+   "resultado": null,
+   "extra": true,
+   "message_id": 98,
+   "anulada": "adiado"
+  },
+  {
+   "id": "20261107-E0-fulham-newcastle|btts_sim",
+   "match_id": "20261107-E0-fulham-newcastle",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Fulham x Newcastle",
+   "prob": 0.5918,
+   "odd_casa": null,
+   "data": "2026-11-07",
+   "resultado": true,
+   "extra": true,
+   "message_id": 99
+  },
+  {
+   "id": "20261107-E0-arsenal-hull|combo:1&btts_nao",
+   "match_id": "20261107-E0-arsenal-hull",
+   "key": "combo:1&btts_nao",
+   "texto": "Vitória Arsenal + Ambas não marcam",
+   "jogo": "Arsenal x Hull",
+   "prob": 0.4987,
+   "odd_casa": null,
+   "data": "2026-11-07",
+   "resultado": true,
+   "extra": true,
+   "message_id": 100
+  },
+  {
+   "id": "20261108-B1-gent-kortrijk|1",
+   "match_id": "20261108-B1-gent-kortrijk",
+   "key": "1",
+   "texto": "Vitória Gent",
+   "jogo": "Gent x Kortrijk",
+   "prob": 0.6765,
+   "odd_casa": 1.43,
+   "data": "2026-11-08",
+   "resultado": true,
+   "message_id": 110
+  },
+  {
+   "id": "20261108-N1-cambuur-psveindhoven|over_2.5",
+   "match_id": "20261108-N1-cambuur-psveindhoven",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Cambuur x PSV Eindhoven",
+   "prob": 0.7739,
+   "odd_casa": 1.25,
+   "data": "2026-11-08",
+   "resultado": null,
+   "message_id": 111,
+   "anulada": "suspenso"
+  },
+  {
+   "id": "20261108-P1-estrela-benfica|2",
+   "match_id": "20261108-P1-estrela-benfica",
+   "key": "2",
+   "texto": "Vitória Benfica",
+   "jogo": "Estrela x Benfica",
+   "prob": 0.7506,
+   "odd_casa": 1.24,
+   "data": "2026-11-08",
+   "resultado": true,
+   "message_id": 112
+  },
+  {
+   "id": "20261108-I1-monza-atalanta|btts_sim",
+   "match_id": "20261108-I1-monza-atalanta",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Monza x Atalanta",
+   "prob": 0.6208,
+   "odd_casa": null,
+   "data": "2026-11-08",
+   "resultado": false,
+   "extra": true,
+   "message_id": 113
+  },
+  {
+   "id": "20261108-E0-sunderland-chelsea|2",
+   "match_id": "20261108-E0-sunderland-chelsea",
+   "key": "2",
+   "texto": "Vitória Chelsea",
+   "jogo": "Sunderland x Chelsea",
+   "prob": 0.5658,
+   "odd_casa": 1.93,
+   "data": "2026-11-08",
+   "resultado": false,
+   "extra": true,
+   "message_id": 114
+  },
+  {
+   "id": "20261108-E0-ipswich-bournemouth|over_2.5",
+   "match_id": "20261108-E0-ipswich-bournemouth",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Ipswich x Bournemouth",
+   "prob": 0.5968,
+   "odd_casa": 1.67,
+   "data": "2026-11-08",
+   "resultado": true,
+   "extra": true,
+   "message_id": 115
+  },
+  {
+   "id": "20261108-I1-inter-como|btts_sim",
+   "match_id": "20261108-I1-inter-como",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Inter x Como",
+   "prob": 0.6261,
+   "odd_casa": null,
+   "data": "2026-11-08",
+   "resultado": false,
+   "tipo": "tardia",
+   "message_id": 122
+  },
+  {
+   "id": "20261108-B1-stgilloise-genk|1",
+   "match_id": "20261108-B1-stgilloise-genk",
+   "key": "1",
+   "texto": "Vitória St. Gilloise",
+   "jogo": "St. Gilloise x Genk",
+   "prob": 0.6179,
+   "odd_casa": 1.6,
+   "data": "2026-11-08",
+   "resultado": true,
+   "extra": true,
+   "message_id": 123
+  },
+  {
+   "id": "20261108-SP1-villarreal-getafe|1",
+   "match_id": "20261108-SP1-villarreal-getafe",
+   "key": "1",
+   "texto": "Vitória Villarreal",
+   "jogo": "Villarreal x Getafe",
+   "prob": 0.6568,
+   "odd_casa": 1.42,
+   "data": "2026-11-08",
+   "resultado": true,
+   "extra": true,
+   "message_id": 124
+  },
+  {
+   "id": "20261108-P1-guimaraes-porto|2",
+   "match_id": "20261108-P1-guimaraes-porto",
+   "key": "2",
+   "texto": "Vitória Porto",
+   "jogo": "Guimaraes x Porto",
+   "prob": 0.6384,
+   "odd_casa": 1.63,
+   "data": "2026-11-08",
+   "resultado": true,
+   "tipo": "tardia",
+   "message_id": 126
+  },
+  {
+   "id": "20261108-D1-hoffenheim-schalke04|cantos_over_9.5",
+   "match_id": "20261108-D1-hoffenheim-schalke04",
+   "key": "cantos_over_9.5",
+   "texto": "Mais de 9.5 cantos",
+   "jogo": "Hoffenheim x Schalke 04",
+   "prob": 0.5764,
+   "odd_casa": null,
+   "data": "2026-11-08",
+   "resultado": true,
+   "extra": true,
+   "message_id": 128
+  },
+  {
+   "id": "20261108-N1-utrecht-nijmegen|cantos_over_7.5",
+   "match_id": "20261108-N1-utrecht-nijmegen",
+   "key": "cantos_over_7.5",
+   "texto": "Mais de 7.5 cantos",
+   "jogo": "Utrecht x Nijmegen",
+   "prob": 0.6958,
+   "odd_casa": null,
+   "data": "2026-11-08",
+   "resultado": true,
+   "tipo": "tardia",
+   "extra": true,
+   "message_id": 129
+  },
+  {
+   "id": "20261108-I1-fiorentina-juventus|btts_sim",
+   "match_id": "20261108-I1-fiorentina-juventus",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Fiorentina x Juventus",
+   "prob": 0.5728,
+   "odd_casa": null,
+   "data": "2026-11-08",
+   "resultado": true,
+   "tipo": "tardia",
+   "extra": true,
+   "message_id": 130
+  },
+  {
+   "id": "20261112-UNL-armnia-chipre|over_1.5",
+   "match_id": "20261112-UNL-armnia-chipre",
+   "key": "over_1.5",
+   "texto": "Mais de 1.5 golos",
+   "jogo": "Arménia x Chipre",
+   "prob": 0.7436,
+   "odd_casa": null,
+   "data": "2026-11-12",
+   "resultado": true,
+   "extra": true,
+   "message_id": 141
+  },
+  {
+   "id": "20261112-UNL-turquia-blgica|combo:12&over_2.5",
+   "match_id": "20261112-UNL-turquia-blgica",
+   "key": "combo:12&over_2.5",
+   "texto": "Não há empate + Mais de 2.5 golos",
+   "jogo": "Turquia x Bélgica",
+   "prob": 0.555,
+   "odd_casa": null,
+   "data": "2026-11-12",
+   "resultado": true,
+   "tipo": "odd_alta",
+   "message_id": 142
+  },
+  {
+   "id": "20261112-UNL-albnia-finlndia|cantos_over_7.5",
+   "match_id": "20261112-UNL-albnia-finlndia",
+   "key": "cantos_over_7.5",
+   "texto": "Mais de 7.5 cantos",
+   "jogo": "Albânia x Finlândia",
+   "prob": 0.5716,
+   "odd_casa": null,
+   "data": "2026-11-12",
+   "resultado": false,
+   "extra": true,
+   "message_id": 144
+  },
+  {
+   "id": "20261112-UNL-itlia-frana|btts_sim",
+   "match_id": "20261112-UNL-itlia-frana",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Itália x França",
+   "prob": 0.5838,
+   "odd_casa": null,
+   "data": "2026-11-12",
+   "resultado": true,
+   "extra": true,
+   "message_id": 145
+  },
+  {
+   "id": "20261112-UNL-inglaterra-crocia|1",
+   "match_id": "20261112-UNL-inglaterra-crocia",
+   "key": "1",
+   "texto": "Vitória Inglaterra",
+   "jogo": "Inglaterra x Croácia",
+   "prob": 0.7532,
+   "odd_casa": 1.27,
+   "data": "2026-11-12",
+   "resultado": true,
+   "message_id": 148
+  },
+  {
+   "id": "20261112-UNL-chquia-espanha|2",
+   "match_id": "20261112-UNL-chquia-espanha",
+   "key": "2",
+   "texto": "Vitória Espanha",
+   "jogo": "Chéquia x Espanha",
+   "prob": 0.7853,
+   "odd_casa": 1.21,
+   "data": "2026-11-12",
+   "resultado": true,
+   "message_id": 149
+  },
+  {
+   "id": "20261113-UNL-srvia-alemanha|2",
+   "match_id": "20261113-UNL-srvia-alemanha",
+   "key": "2",
+   "texto": "Vitória Alemanha",
+   "jogo": "Sérvia x Alemanha",
+   "prob": 0.7459,
+   "odd_casa": 1.25,
+   "data": "2026-11-13",
+   "resultado": true,
+   "message_id": 160
+  },
+  {
+   "id": "20261113-UNL-eslovquia-ilhasfaro|1",
+   "match_id": "20261113-UNL-eslovquia-ilhasfaro",
+   "key": "1",
+   "texto": "Vitória Eslováquia",
+   "jogo": "Eslováquia x Ilhas Faroé",
+   "prob": 0.6924,
+   "odd_casa": 1.34,
+   "data": "2026-11-13",
+   "resultado": false,
+   "message_id": 161
+  },
+  {
+   "id": "20261113-UNL-andorra-gibraltar|under_2.5",
+   "match_id": "20261113-UNL-andorra-gibraltar",
+   "key": "under_2.5",
+   "texto": "Menos de 2.5 golos",
+   "jogo": "Andorra x Gibraltar",
+   "prob": 0.6338,
+   "odd_casa": null,
+   "data": "2026-11-13",
+   "resultado": true,
+   "message_id": 162
+  },
+  {
+   "id": "20261113-UNL-bulgria-islndia|combo:X2&under_3.5",
+   "match_id": "20261113-UNL-bulgria-islndia",
+   "key": "combo:X2&under_3.5",
+   "texto": "Islândia ou empate + Menos de 3.5 golos",
+   "jogo": "Bulgária x Islândia",
+   "prob": 0.5532,
+   "odd_casa": null,
+   "data": "2026-11-13",
+   "resultado": false,
+   "tipo": "odd_alta",
+   "message_id": 163
+  },
+  {
+   "id": "20261113-UNL-pasesbaixos-grcia|over_2.5",
+   "match_id": "20261113-UNL-pasesbaixos-grcia",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Países Baixos x Grécia",
+   "prob": 0.5761,
+   "odd_casa": 1.69,
+   "data": "2026-11-13",
+   "resultado": true,
+   "extra": true,
+   "message_id": 166
+  },
+  {
+   "id": "20261113-UNL-esccia-macedniadonorte|over_2.5",
+   "match_id": "20261113-UNL-esccia-macedniadonorte",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Escócia x Macedónia do Norte",
+   "prob": 0.5939,
+   "odd_casa": 1.56,
+   "data": "2026-11-13",
+   "resultado": true,
+   "extra": true,
+   "message_id": 167
+  },
+  {
+   "id": "20261114-UNL-kosovo-israel|btts_sim",
+   "match_id": "20261114-UNL-kosovo-israel",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Kosovo x Israel",
+   "prob": 0.5483,
+   "odd_casa": null,
+   "data": "2026-11-14",
+   "resultado": false,
+   "tipo": "odd_alta",
+   "message_id": 177
+  },
+  {
+   "id": "20261114-UNL-noruega-pasdegales|1",
+   "match_id": "20261114-UNL-noruega-pasdegales",
+   "key": "1",
+   "texto": "Vitória Noruega",
+   "jogo": "Noruega x País de Gales",
+   "prob": 0.7592,
+   "odd_casa": 1.22,
+   "data": "2026-11-14",
+   "resultado": true,
+   "message_id": 178
+  },
+  {
+   "id": "20261114-UNL-romnia-polnia|2",
+   "match_id": "20261114-UNL-romnia-polnia",
+   "key": "2",
+   "texto": "Vitória Polónia",
+   "jogo": "Roménia x Polónia",
+   "prob": 0.5565,
+   "odd_casa": 1.65,
+   "data": "2026-11-14",
+   "resultado": false,
+   "extra": true,
+   "message_id": 179
+  },
+  {
+   "id": "20261114-UNL-portugal-dinamarca|over_2.5",
+   "match_id": "20261114-UNL-portugal-dinamarca",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Portugal x Dinamarca",
+   "prob": 0.6405,
+   "odd_casa": null,
+   "data": "2026-11-14",
+   "resultado": true,
+   "message_id": 180
+  },
+  {
+   "id": "20261114-UNL-sucia-bsnia|1",
+   "match_id": "20261114-UNL-sucia-bsnia",
+   "key": "1",
+   "texto": "Vitória Suécia",
+   "jogo": "Suécia x Bósnia",
+   "prob": 0.6704,
+   "odd_casa": 1.44,
+   "data": "2026-11-14",
+   "resultado": true,
+   "message_id": 181
+  },
+  {
+   "id": "20261114-UNL-ustria-irlanda|over_1.5",
+   "match_id": "20261114-UNL-ustria-irlanda",
+   "key": "over_1.5",
+   "texto": "Mais de 1.5 golos",
+   "jogo": "Áustria x Irlanda",
+   "prob": 0.7445,
+   "odd_casa": null,
+   "data": "2026-11-14",
+   "resultado": false,
+   "message_id": 182
+  },
+  {
+   "id": "20261114-UNL-irlandadonorte-ucrnia|under_2.5",
+   "match_id": "20261114-UNL-irlandadonorte-ucrnia",
+   "key": "under_2.5",
+   "texto": "Menos de 2.5 golos",
+   "jogo": "Irlanda do Norte x Ucrânia",
+   "prob": 0.6074,
+   "odd_casa": null,
+   "data": "2026-11-14",
+   "resultado": true,
+   "tipo": "tardia",
+   "message_id": 186
+  },
+  {
+   "id": "20261115-UNL-bielorrssia-albnia|under_2.5",
+   "match_id": "20261115-UNL-bielorrssia-albnia",
+   "key": "under_2.5",
+   "texto": "Menos de 2.5 golos",
+   "jogo": "Bielorrússia x Albânia",
+   "prob": 0.6246,
+   "odd_casa": null,
+   "data": "2026-11-15",
+   "resultado": true,
+   "message_id": 195
+  },
+  {
+   "id": "20261115-UNL-finlndia-somarino|over_2.5",
+   "match_id": "20261115-UNL-finlndia-somarino",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Finlândia x São Marino",
+   "prob": 0.8128,
+   "odd_casa": null,
+   "data": "2026-11-15",
+   "resultado": true,
+   "message_id": 196
+  },
+  {
+   "id": "20261115-UNL-espanha-inglaterra|over_2.5",
+   "match_id": "20261115-UNL-espanha-inglaterra",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Espanha x Inglaterra",
+   "prob": 0.5956,
+   "odd_casa": 1.59,
+   "data": "2026-11-15",
+   "resultado": true,
+   "extra": true,
+   "message_id": 197
+  },
+  {
+   "id": "20261115-UNL-crocia-chquia|1",
+   "match_id": "20261115-UNL-crocia-chquia",
+   "key": "1",
+   "texto": "Vitória Croácia",
+   "jogo": "Croácia x Chéquia",
+   "prob": 0.6101,
+   "odd_casa": 1.53,
+   "data": "2026-11-15",
+   "resultado": true,
+   "extra": true,
+   "message_id": 198
+  },
+  {
+   "id": "20261115-UNL-frana-turquia|over_2.5",
+   "match_id": "20261115-UNL-frana-turquia",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "França x Turquia",
+   "prob": 0.7267,
+   "odd_casa": null,
+   "data": "2026-11-15",
+   "resultado": true,
+   "message_id": 199
+  },
+  {
+   "id": "20261115-UNL-blgica-itlia|over_2.5",
+   "match_id": "20261115-UNL-blgica-itlia",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Bélgica x Itália",
+   "prob": 0.5708,
+   "odd_casa": 1.62,
+   "data": "2026-11-15",
+   "resultado": true,
+   "extra": true,
+   "message_id": 200
+  },
+  {
+   "id": "20261116-UNL-cazaquisto-eslovquia|cantos_over_9.5",
+   "match_id": "20261116-UNL-cazaquisto-eslovquia",
+   "key": "cantos_over_9.5",
+   "texto": "Mais de 9.5 cantos",
+   "jogo": "Cazaquistão x Eslováquia",
+   "prob": 0.5936,
+   "odd_casa": null,
+   "data": "2026-11-16",
+   "resultado": false,
+   "extra": true,
+   "message_id": 210
+  },
+  {
+   "id": "20261116-UNL-estnia-bulgria|under_2.5",
+   "match_id": "20261116-UNL-estnia-bulgria",
+   "key": "under_2.5",
+   "texto": "Menos de 2.5 golos",
+   "jogo": "Estónia x Bulgária",
+   "prob": 0.5398,
+   "odd_casa": 1.65,
+   "data": "2026-11-16",
+   "resultado": false,
+   "tipo": "tardia",
+   "extra": true,
+   "message_id": 212
+  },
+  {
+   "id": "20261116-UNL-alemanha-pasesbaixos|over_2.5",
+   "match_id": "20261116-UNL-alemanha-pasesbaixos",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Alemanha x Países Baixos",
+   "prob": 0.6952,
+   "odd_casa": null,
+   "data": "2026-11-16",
+   "resultado": true,
+   "message_id": 213
+  },
+  {
+   "id": "20261116-UNL-grcia-srvia|1",
+   "match_id": "20261116-UNL-grcia-srvia",
+   "key": "1",
+   "texto": "Vitória Grécia",
+   "jogo": "Grécia x Sérvia",
+   "prob": 0.6822,
+   "odd_casa": 1.43,
+   "data": "2026-11-16",
+   "resultado": true,
+   "message_id": 214
+  },
+  {
+   "id": "20261116-UNL-sua-esccia|btts_sim",
+   "match_id": "20261116-UNL-sua-esccia",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Suíça x Escócia",
+   "prob": 0.535,
+   "odd_casa": null,
+   "data": "2026-11-16",
+   "resultado": false,
+   "tipo": "odd_alta",
+   "message_id": 215
+  },
+  {
+   "id": "20261116-UNL-gibraltar-malta|2",
+   "match_id": "20261116-UNL-gibraltar-malta",
+   "key": "2",
+   "texto": "Vitória Malta",
+   "jogo": "Gibraltar x Malta",
+   "prob": 0.5969,
+   "odd_casa": 1.49,
+   "data": "2026-11-16",
+   "resultado": false,
+   "extra": true,
+   "message_id": 216
+  },
+  {
+   "id": "20261116-UNL-macedniadonorte-eslovnia|2",
+   "match_id": "20261116-UNL-macedniadonorte-eslovnia",
+   "key": "2",
+   "texto": "Vitória Eslovénia",
+   "jogo": "Macedónia do Norte x Eslovénia",
+   "prob": 0.5962,
+   "odd_casa": 1.47,
+   "data": "2026-11-16",
+   "resultado": true,
+   "extra": true,
+   "message_id": 217
+  }
+ ],
+ "multiplas": [
+  {
+   "data": "2026-11-01",
+   "partes": [
+    "20261101-E0-liverpool-arsenal|12",
+    "20261101-I1-juventus-napoli|12",
+    "20261101-I1-lecce-genoa|cartoes_under_4.5"
+   ],
+   "prob": 0.3464,
+   "message_id": 9,
+   "resultado": true
+  },
+  {
+   "data": "2026-11-02",
+   "partes": [
+    "20261102-P1-gilvicente-guimaraes|12",
+    "20261102-P1-benfica-alverca|over_2.5",
+    "20261102-I1-sassuolo-fiorentina|cantos_under_9.5"
+   ],
+   "prob": 0.3063,
+   "message_id": 19,
+   "resultado": false
+  },
+  {
+   "data": "2026-11-03",
+   "tipo": "segura",
+   "partes": [
+    "20261103-UCL-barcelona-astonvilla|over_2.5",
+    "20261103-UCL-galatasaray-stuttgart|btts_sim",
+    "20261103-UCL-villarreal-parissg|over_2.5"
+   ],
+   "pernas": [
+    {
+     "id": "20261103-UCL-barcelona-astonvilla|over_2.5",
+     "match_id": "20261103-UCL-barcelona-astonvilla",
+     "key": "over_2.5",
+     "prob": 0.8305,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-galatasaray-stuttgart|btts_sim",
+     "match_id": "20261103-UCL-galatasaray-stuttgart",
+     "key": "btts_sim",
+     "prob": 0.7007,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-villarreal-parissg|over_2.5",
+     "match_id": "20261103-UCL-villarreal-parissg",
+     "key": "over_2.5",
+     "prob": 0.6767,
+     "odd_casa": null
+    }
+   ],
+   "prob": 0.3938,
+   "message_id": 37,
+   "resultado": false
+  },
+  {
+   "data": "2026-11-03",
+   "tipo": "turbo",
+   "partes": [
+    "20261103-UCL-barcelona-astonvilla|over_2.5",
+    "20261103-UCL-galatasaray-stuttgart|btts_sim",
+    "20261103-UCL-villarreal-parissg|over_2.5",
+    "20261103-UCL-feyenoord-inter|over_2.5",
+    "20261103-UCL-athmadrid-bayernmunich|btts_sim"
+   ],
+   "pernas": [
+    {
+     "id": "20261103-UCL-barcelona-astonvilla|over_2.5",
+     "match_id": "20261103-UCL-barcelona-astonvilla",
+     "key": "over_2.5",
+     "prob": 0.8305,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-galatasaray-stuttgart|btts_sim",
+     "match_id": "20261103-UCL-galatasaray-stuttgart",
+     "key": "btts_sim",
+     "prob": 0.7007,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-villarreal-parissg|over_2.5",
+     "match_id": "20261103-UCL-villarreal-parissg",
+     "key": "over_2.5",
+     "prob": 0.6767,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-feyenoord-inter|over_2.5",
+     "match_id": "20261103-UCL-feyenoord-inter",
+     "key": "over_2.5",
+     "prob": 0.6609,
+     "odd_casa": null
+    },
+    {
+     "id": "20261103-UCL-athmadrid-bayernmunich|btts_sim",
+     "match_id": "20261103-UCL-athmadrid-bayernmunich",
+     "key": "btts_sim",
+     "prob": 0.6584,
+     "odd_casa": null
+    }
+   ],
+   "prob": 0.1714,
+   "message_id": 38,
+   "resultado": false
+  },
+  {
+   "data": "2026-11-04",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261104-UCL-psveindhoven-clubbrugge|over_2.5",
+    "20261104-UCL-aek-realmadrid|2",
+    "20261104-BRA-flamengorj-gremio|over_2.5"
+   ],
+   "pernas": [
+    {
+     "id": "20261104-UCL-psveindhoven-clubbrugge|over_2.5",
+     "match_id": "20261104-UCL-psveindhoven-clubbrugge",
+     "key": "over_2.5",
+     "prob": 0.7167,
+     "odd_casa": null,
+     "jogo": "PSV Eindhoven x Club Brugge",
+     "texto": "Mais de 2.5 golos"
+    },
+    {
+     "id": "20261104-UCL-aek-realmadrid|2",
+     "match_id": "20261104-UCL-aek-realmadrid",
+     "key": "2",
+     "prob": 0.7056,
+     "odd_casa": 1.22,
+     "jogo": "AEK x Real Madrid",
+     "texto": "Vitória Real Madrid"
+    },
+    {
+     "id": "20261104-BRA-flamengorj-gremio|over_2.5",
+     "match_id": "20261104-BRA-flamengorj-gremio",
+     "key": "over_2.5",
+     "prob": 0.6944,
+     "odd_casa": null,
+     "jogo": "Flamengo RJ x Gremio",
+     "texto": "Mais de 2.5 golos"
+    }
+   ],
+   "prob": 0.3512,
+   "resultado": true,
+   "message_id": 51
+  },
+  {
+   "data": "2026-11-04",
+   "tipo": "turbo",
+   "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+   "partes": [
+    "20261104-UCL-fenerbahce-liverpool|over_2.5",
+    "20261104-UCL-psveindhoven-clubbrugge|btts_sim",
+    "20261104-UCL-aek-realmadrid|over_2.5"
+   ],
+   "pernas": [
+    {
+     "id": "20261104-UCL-fenerbahce-liverpool|over_2.5",
+     "match_id": "20261104-UCL-fenerbahce-liverpool",
+     "key": "over_2.5",
+     "prob": 0.6808,
+     "odd_casa": null,
+     "jogo": "Fenerbahce x Liverpool",
+     "texto": "Mais de 2.5 golos",
+     "porque": "golos esperados 1.3 – 2.2"
+    },
+    {
+     "id": "20261104-UCL-psveindhoven-clubbrugge|btts_sim",
+     "match_id": "20261104-UCL-psveindhoven-clubbrugge",
+     "key": "btts_sim",
+     "prob": 0.6977,
+     "odd_casa": null,
+     "jogo": "PSV Eindhoven x Club Brugge",
+     "texto": "Ambas marcam",
+     "porque": "golos esperados 2.2 – 1.6"
+    },
+    {
+     "id": "20261104-UCL-aek-realmadrid|over_2.5",
+     "match_id": "20261104-UCL-aek-realmadrid",
+     "key": "over_2.5",
+     "prob": 0.6844,
+     "odd_casa": null,
+     "jogo": "AEK x Real Madrid",
+     "texto": "Mais de 2.5 golos",
+     "porque": "golos esperados 1.1 – 2.5"
+    }
+   ],
+   "prob": 0.3251,
+   "resultado": true,
+   "message_id": 54
+  },
+  {
+   "data": "2026-11-05",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261105-BRA-palmeiras-remo|1",
+    "20261105-UEL-leverkusen-marseille|over_2.5",
+    "20261105-UEL-celtic-besiktas|btts_sim"
+   ],
+   "pernas": [
+    {
+     "id": "20261105-BRA-palmeiras-remo|1",
+     "match_id": "20261105-BRA-palmeiras-remo",
+     "key": "1",
+     "prob": 0.7884,
+     "odd_casa": 1.21,
+     "jogo": "Palmeiras x Remo",
+     "texto": "Vitória Palmeiras"
+    },
+    {
+     "id": "20261105-UEL-leverkusen-marseille|over_2.5",
+     "match_id": "20261105-UEL-leverkusen-marseille",
+     "key": "over_2.5",
+     "prob": 0.7125,
+     "odd_casa": null,
+     "jogo": "Leverkusen x Marseille",
+     "texto": "Mais de 2.5 golos"
+    },
+    {
+     "id": "20261105-UEL-celtic-besiktas|btts_sim",
+     "match_id": "20261105-UEL-celtic-besiktas",
+     "key": "btts_sim",
+     "prob": 0.6479,
+     "odd_casa": null,
+     "jogo": "Celtic x Besiktas",
+     "texto": "Ambas marcam"
+    }
+   ],
+   "prob": 0.3639,
+   "resultado": false,
+   "message_id": 66
+  },
+  {
+   "data": "2026-11-05",
+   "tipo": "turbo",
+   "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+   "partes": [
+    "20261105-UEL-crystalpalace-hoffenheim|under_3.5",
+    "20261105-UEL-celta-stgilloise|cantos_under_9.5",
+    "20261105-ARG-aldosivi-riverplate|2",
+    "20261105-UEL-leverkusen-marseille|1"
+   ],
+   "pernas": [
+    {
+     "id": "20261105-UEL-crystalpalace-hoffenheim|under_3.5",
+     "match_id": "20261105-UEL-crystalpalace-hoffenheim",
+     "key": "under_3.5",
+     "prob": 0.6081,
+     "odd_casa": 1.71,
+     "jogo": "Crystal Palace x Hoffenheim",
+     "texto": "Menos de 3.5 golos",
+     "porque": "golos esperados 1.8 – 1.4"
+    },
+    {
+     "id": "20261105-UEL-celta-stgilloise|cantos_under_9.5",
+     "match_id": "20261105-UEL-celta-stgilloise",
+     "key": "cantos_under_9.5",
+     "prob": 0.644,
+     "odd_casa": null,
+     "jogo": "Celta x St. Gilloise",
+     "texto": "Menos de 9.5 cantos",
+     "porque": "cantos esperados 7.5"
+    },
+    {
+     "id": "20261105-ARG-aldosivi-riverplate|2",
+     "match_id": "20261105-ARG-aldosivi-riverplate",
+     "key": "2",
+     "prob": 0.6401,
+     "odd_casa": 1.43,
+     "jogo": "Aldosivi x River Plate",
+     "texto": "Vitória River Plate",
+     "porque": "golos esperados 0.8 – 1.8 · River Plate 3V em 6"
+    },
+    {
+     "id": "20261105-UEL-leverkusen-marseille|1",
+     "match_id": "20261105-UEL-leverkusen-marseille",
+     "key": "1",
+     "prob": 0.6803,
+     "odd_casa": 1.31,
+     "jogo": "Leverkusen x Marseille",
+     "texto": "Vitória Leverkusen",
+     "porque": "golos esperados 2.5 – 1.2 · Leverkusen 3V em 6"
+    }
+   ],
+   "prob": 0.1705,
+   "resultado": false,
+   "message_id": 67
+  },
+  {
+   "data": "2026-11-12",
+   "tipo": "turbo",
+   "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+   "partes": [
+    "20261112-UNL-albnia-finlndia|over_1.5",
+    "20261112-UNL-somarino-bielorrssia|over_2.5",
+    "20261112-UNL-chquia-espanha|over_2.5",
+    "20261112-UNL-inglaterra-crocia|over_2.5"
+   ],
+   "pernas": [
+    {
+     "id": "20261112-UNL-albnia-finlndia|over_1.5",
+     "match_id": "20261112-UNL-albnia-finlndia",
+     "key": "over_1.5",
+     "prob": 0.6396,
+     "odd_casa": 1.61,
+     "jogo": "Albânia x Finlândia",
+     "texto": "Mais de 1.5 golos",
+     "porque": "golos esperados 1.2 – 0.9"
+    },
+    {
+     "id": "20261112-UNL-somarino-bielorrssia|over_2.5",
+     "match_id": "20261112-UNL-somarino-bielorrssia",
+     "key": "over_2.5",
+     "prob": 0.6743,
+     "odd_casa": null,
+     "jogo": "São Marino x Bielorrússia",
+     "texto": "Mais de 2.5 golos",
+     "porque": "golos esperados 0.6 – 2.9"
+    },
+    {
+     "id": "20261112-UNL-chquia-espanha|over_2.5",
+     "match_id": "20261112-UNL-chquia-espanha",
+     "key": "over_2.5",
+     "prob": 0.7064,
+     "odd_casa": null,
+     "jogo": "Chéquia x Espanha",
+     "texto": "Mais de 2.5 golos",
+     "porque": "golos esperados 0.9 – 2.8"
+    },
+    {
+     "id": "20261112-UNL-inglaterra-crocia|over_2.5",
+     "match_id": "20261112-UNL-inglaterra-crocia",
+     "key": "over_2.5",
+     "prob": 0.7024,
+     "odd_casa": null,
+     "jogo": "Inglaterra x Croácia",
+     "texto": "Mais de 2.5 golos",
+     "porque": "golos esperados 2.7 – 1.0"
+    }
+   ],
+   "prob": 0.214,
+   "resultado": false,
+   "message_id": 146
+  },
+  {
+   "data": "2026-11-12",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261112-UNL-chquia-espanha|2",
+    "20261112-UNL-inglaterra-crocia|1",
+    "20261112-UNL-montenegro-letnia|1"
+   ],
+   "pernas": [
+    {
+     "id": "20261112-UNL-chquia-espanha|2",
+     "match_id": "20261112-UNL-chquia-espanha",
+     "key": "2",
+     "prob": 0.7853,
+     "odd_casa": 1.21,
+     "jogo": "Chéquia x Espanha",
+     "texto": "Vitória Espanha"
+    },
+    {
+     "id": "20261112-UNL-inglaterra-crocia|1",
+     "match_id": "20261112-UNL-inglaterra-crocia",
+     "key": "1",
+     "prob": 0.7532,
+     "odd_casa": 1.27,
+     "jogo": "Inglaterra x Croácia",
+     "texto": "Vitória Inglaterra"
+    },
+    {
+     "id": "20261112-UNL-montenegro-letnia|1",
+     "match_id": "20261112-UNL-montenegro-letnia",
+     "key": "1",
+     "prob": 0.7097,
+     "odd_casa": 1.26,
+     "jogo": "Montenegro x Letónia",
+     "texto": "Vitória Montenegro"
+    }
+   ],
+   "prob": 0.4198,
+   "resultado": true,
+   "message_id": 147
+  },
+  {
+   "data": "2026-11-13",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261113-UNL-srvia-alemanha|2",
+    "20261113-UNL-eslovquia-ilhasfaro|1"
+   ],
+   "pernas": [
+    {
+     "id": "20261113-UNL-srvia-alemanha|2",
+     "match_id": "20261113-UNL-srvia-alemanha",
+     "key": "2",
+     "prob": 0.7459,
+     "odd_casa": 1.25,
+     "jogo": "Sérvia x Alemanha",
+     "texto": "Vitória Alemanha"
+    },
+    {
+     "id": "20261113-UNL-eslovquia-ilhasfaro|1",
+     "match_id": "20261113-UNL-eslovquia-ilhasfaro",
+     "key": "1",
+     "prob": 0.6924,
+     "odd_casa": 1.34,
+     "jogo": "Eslováquia x Ilhas Faroé",
+     "texto": "Vitória Eslováquia"
+    }
+   ],
+   "prob": 0.5165,
+   "resultado": false,
+   "message_id": 164
+  },
+  {
+   "data": "2026-11-13",
+   "tipo": "turbo",
+   "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+   "partes": [
+    "20261113-UNL-andorra-gibraltar|under_2.5",
+    "20261113-UNL-srvia-alemanha|over_2.5",
+    "20261113-UNL-liechtenstein-azerbaijo|btts_nao"
+   ],
+   "pernas": [
+    {
+     "id": "20261113-UNL-andorra-gibraltar|under_2.5",
+     "match_id": "20261113-UNL-andorra-gibraltar",
+     "key": "under_2.5",
+     "prob": 0.6338,
+     "odd_casa": null,
+     "jogo": "Andorra x Gibraltar",
+     "texto": "Menos de 2.5 golos",
+     "porque": "golos esperados 1.3 – 0.7"
+    },
+    {
+     "id": "20261113-UNL-srvia-alemanha|over_2.5",
+     "match_id": "20261113-UNL-srvia-alemanha",
+     "key": "over_2.5",
+     "prob": 0.6769,
+     "odd_casa": null,
+     "jogo": "Sérvia x Alemanha",
+     "texto": "Mais de 2.5 golos",
+     "porque": "golos esperados 0.9 – 2.6"
+    },
+    {
+     "id": "20261113-UNL-liechtenstein-azerbaijo|btts_nao",
+     "match_id": "20261113-UNL-liechtenstein-azerbaijo",
+     "key": "btts_nao",
+     "prob": 0.675,
+     "odd_casa": null,
+     "jogo": "Liechtenstein x Azerbaijão",
+     "texto": "Ambas não marcam",
+     "porque": "golos esperados 0.4 – 1.9"
+    }
+   ],
+   "prob": 0.2896,
+   "resultado": true,
+   "message_id": 165
+  },
+  {
+   "data": "2026-11-14",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261114-UNL-noruega-pasdegales|1",
+    "20261114-UNL-sucia-bsnia|1"
+   ],
+   "pernas": [
+    {
+     "id": "20261114-UNL-noruega-pasdegales|1",
+     "match_id": "20261114-UNL-noruega-pasdegales",
+     "key": "1",
+     "prob": 0.7592,
+     "odd_casa": 1.22,
+     "jogo": "Noruega x País de Gales",
+     "texto": "Vitória Noruega"
+    },
+    {
+     "id": "20261114-UNL-sucia-bsnia|1",
+     "match_id": "20261114-UNL-sucia-bsnia",
+     "key": "1",
+     "prob": 0.6704,
+     "odd_casa": 1.44,
+     "jogo": "Suécia x Bósnia",
+     "texto": "Vitória Suécia"
+    }
+   ],
+   "prob": 0.509,
+   "resultado": true,
+   "message_id": 183
+  },
+  {
+   "data": "2026-11-15",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261115-UNL-finlndia-somarino|over_2.5",
+    "20261115-UNL-frana-turquia|over_2.5",
+    "20261115-UNL-bielorrssia-albnia|under_2.5"
+   ],
+   "pernas": [
+    {
+     "id": "20261115-UNL-finlndia-somarino|over_2.5",
+     "match_id": "20261115-UNL-finlndia-somarino",
+     "key": "over_2.5",
+     "prob": 0.8128,
+     "odd_casa": null,
+     "jogo": "Finlândia x São Marino",
+     "texto": "Mais de 2.5 golos"
+    },
+    {
+     "id": "20261115-UNL-frana-turquia|over_2.5",
+     "match_id": "20261115-UNL-frana-turquia",
+     "key": "over_2.5",
+     "prob": 0.7267,
+     "odd_casa": null,
+     "jogo": "França x Turquia",
+     "texto": "Mais de 2.5 golos"
+    },
+    {
+     "id": "20261115-UNL-bielorrssia-albnia|under_2.5",
+     "match_id": "20261115-UNL-bielorrssia-albnia",
+     "key": "under_2.5",
+     "prob": 0.6246,
+     "odd_casa": null,
+     "jogo": "Bielorrússia x Albânia",
+     "texto": "Menos de 2.5 golos"
+    }
+   ],
+   "prob": 0.3689,
+   "resultado": true,
+   "message_id": 194
+  },
+  {
+   "data": "2026-11-16",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261116-UNL-litunia-liechtenstein|btts_nao",
+    "20261116-UNL-alemanha-pasesbaixos|over_2.5",
+    "20261116-UNL-grcia-srvia|1"
+   ],
+   "pernas": [
+    {
+     "id": "20261116-UNL-litunia-liechtenstein|btts_nao",
+     "match_id": "20261116-UNL-litunia-liechtenstein",
+     "key": "btts_nao",
+     "prob": 0.7309,
+     "odd_casa": null,
+     "jogo": "Lituânia x Liechtenstein",
+     "texto": "Ambas não marcam"
+    },
+    {
+     "id": "20261116-UNL-alemanha-pasesbaixos|over_2.5",
+     "match_id": "20261116-UNL-alemanha-pasesbaixos",
+     "key": "over_2.5",
+     "prob": 0.6952,
+     "odd_casa": null,
+     "jogo": "Alemanha x Países Baixos",
+     "texto": "Mais de 2.5 golos"
+    },
+    {
+     "id": "20261116-UNL-grcia-srvia|1",
+     "match_id": "20261116-UNL-grcia-srvia",
+     "key": "1",
+     "prob": 0.6822,
+     "odd_casa": 1.43,
+     "jogo": "Grécia x Sérvia",
+     "texto": "Vitória Grécia"
+    }
+   ],
+   "prob": 0.3466,
+   "resultado": false,
+   "message_id": 211
+  }
+ ],
+ "balancos": [
+  "2026-11-02",
+  "2026-11-09",
+  "2026-11-16"
+ ],
+ "resumos": [
+  "2026-11-01",
+  "2026-11-02",
+  "2026-11-03",
+  "2026-11-04",
+  "2026-11-05",
+  "2026-11-06",
+  "2026-11-07",
+  "2026-11-08",
+  "2026-11-12",
+  "2026-11-13",
+  "2026-11-14",
+  "2026-11-15",
+  "2026-11-16"
+ ],
+ "offset": 892007170,
+ "ignorados": [],
+ "pendentes": [
+  {
+   "pid": "1400011242",
+   "origem": "resumo",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": true
+   },
+   "texto": "📊 <b>RESUMO DE 13/11</b>\n\n🟢 4 Green · 🔴 2 Red\n🚀 Múltipla turbo: GREEN 💰\n💶 Lucro: <b>+153 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T00:01:12.030187",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 289,
+    "5728356568": 290
+   },
+   "admin_msg": 289
+  },
+  {
+   "pid": "1411085543",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-noruega-pasdegales|1",
+    "match_id": "20261114-UNL-noruega-pasdegales",
+    "key": "1",
+    "texto": "Vitória Noruega",
+    "jogo": "Noruega x País de Gales",
+    "prob": 0.7592,
+    "odd_casa": 1.22,
+    "data": "2026-11-14",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nNoruega x País de Gales | 17h00\n\n✅ <b>Dica: Vitória Noruega</b>\n💰 Odd: <b>1.22</b>\n\n📊 Golos esperados: Noruega 2.7 – País de Gales 1.0\n📊 Noruega: 2 vitórias nos últimos 6 jogos\n📊 País de Gales: 1 vitória nos últimos 6 jogos\n🚑 País de Gales sem Cabango\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T17:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-14T14:00:00",
+   "admin_msgs": {
+    "5575304800": 308,
+    "5728356568": 309
+   },
+   "admin_msg": 308
+  },
+  {
+   "pid": "1411085544",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-ustria-irlanda|over_1.5",
+    "match_id": "20261114-UNL-ustria-irlanda",
+    "key": "over_1.5",
+    "texto": "Mais de 1.5 golos",
+    "jogo": "Áustria x Irlanda",
+    "prob": 0.7445,
+    "odd_casa": null,
+    "data": "2026-11-14",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nÁustria x Irlanda | 19h45\n\n✅ <b>Dica: Mais de 1.5 golos</b>\n💰 Odd: <b>1.34</b> (mínima com valor)\n\n📊 Golos esperados: Áustria 1.7 – Irlanda 0.9\n📊 Áustria: 2 vitórias nos últimos 6 jogos\n📊 Irlanda: 2 vitórias nos últimos 6 jogos\n🚑 Áustria sem Wöber, Wimmer\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-14T16:45:00",
+   "admin_msgs": {
+    "5575304800": 325,
+    "5728356568": 326
+   },
+   "admin_msg": 325
+  },
+  {
+   "pid": "1411085545",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-sucia-bsnia|1",
+    "match_id": "20261114-UNL-sucia-bsnia",
+    "key": "1",
+    "texto": "Vitória Suécia",
+    "jogo": "Suécia x Bósnia",
+    "prob": 0.6704,
+    "odd_casa": 1.44,
+    "data": "2026-11-14",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nSuécia x Bósnia | 19h45\n\n✅ <b>Dica: Vitória Suécia</b>\n💰 Odd: <b>1.44</b>\n\n📊 Golos esperados: Suécia 2.1 – Bósnia 0.9\n📊 Suécia: 3 vitórias nos últimos 6 jogos\n📊 Bósnia: 3 vitórias nos últimos 6 jogos\n🚑 Bósnia sem Muharemovic, Dzeko\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-14T16:45:00",
+   "admin_msgs": {
+    "5575304800": 327,
+    "5728356568": 328
+   },
+   "admin_msg": 327
+  },
+  {
+   "pid": "1411085546",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-portugal-dinamarca|over_2.5",
+    "match_id": "20261114-UNL-portugal-dinamarca",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Portugal x Dinamarca",
+    "prob": 0.6405,
+    "odd_casa": null,
+    "data": "2026-11-14",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nPortugal x Dinamarca | 19h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.56</b> (mínima com valor)\n\n📊 Golos esperados: Portugal 2.1 – Dinamarca 1.1\n📊 Portugal: 5 vitórias nos últimos 6 jogos\n📊 Dinamarca: 3 vitórias nos últimos 6 jogos\n🚑 Portugal sem Leão, Mendes, Cancelo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-14T16:45:00",
+   "admin_msgs": {
+    "5575304800": 329,
+    "5728356568": 330
+   },
+   "admin_msg": 329
+  },
+  {
+   "pid": "1411085547",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-kosovo-israel|btts_sim",
+    "match_id": "20261114-UNL-kosovo-israel",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Kosovo x Israel",
+    "prob": 0.5483,
+    "odd_casa": null,
+    "data": "2026-11-14",
+    "resultado": null,
+    "tipo": "odd_alta"
+   },
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nKosovo x Israel | 14h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.82</b> (mínima com valor)\n\n📊 Golos esperados: Kosovo 1.8 – Israel 1.0\n📊 Kosovo: 2 vitórias nos últimos 6 jogos\n📊 Israel: 1 vitória nos últimos 6 jogos\n🚑 Kosovo sem Dellova, Hajdari\n🚑 Israel sem Solomon, Revivo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T14:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-14T11:00:00",
+   "admin_msgs": {
+    "5575304800": 291,
+    "5728356568": 292
+   },
+   "admin_msg": 291
+  },
+  {
+   "pid": "1411085548",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-14",
+    "tipo": "segura",
+    "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+    "partes": [
+     "20261114-UNL-noruega-pasdegales|1",
+     "20261114-UNL-sucia-bsnia|1"
+    ],
+    "pernas": [
+     {
+      "id": "20261114-UNL-noruega-pasdegales|1",
+      "match_id": "20261114-UNL-noruega-pasdegales",
+      "key": "1",
+      "prob": 0.7592,
+      "odd_casa": 1.22,
+      "jogo": "Noruega x País de Gales",
+      "texto": "Vitória Noruega"
+     },
+     {
+      "id": "20261114-UNL-sucia-bsnia|1",
+      "match_id": "20261114-UNL-sucia-bsnia",
+      "key": "1",
+      "prob": 0.6704,
+      "odd_casa": 1.44,
+      "jogo": "Suécia x Bósnia",
+      "texto": "Vitória Suécia"
+     }
+    ],
+    "prob": 0.509,
+    "resultado": null
+   },
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Noruega x País de Gales: Vitória Noruega (@1.22)\n• Suécia x Bósnia: Vitória Suécia (@1.44)\n\n💰 Odd total: <b>1.76</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T17:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-14T14:00:00",
+   "admin_msgs": {
+    "5575304800": 310,
+    "5728356568": 311
+   },
+   "admin_msg": 310
+  },
+  {
+   "pid": "1411085549",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-14",
+    "tipo": "turbo",
+    "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+    "partes": [
+     "20261114-UNL-irlandadonorte-ucrnia|combo:1X&under_3.5",
+     "20261114-UNL-portugal-dinamarca|1",
+     "20261114-UNL-noruega-pasdegales|over_2.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261114-UNL-irlandadonorte-ucrnia|combo:1X&under_3.5",
+      "match_id": "20261114-UNL-irlandadonorte-ucrnia",
+      "key": "combo:1X&under_3.5",
+      "prob": 0.5972,
+      "odd_casa": null,
+      "jogo": "Irlanda do Norte x Ucrânia",
+      "texto": "Irlanda do Norte ou empate + Menos de 3.5 golos",
+      "porque": "golos esperados 1.1 – 0.9 · Irlanda do Norte 3V em 6"
+     },
+     {
+      "id": "20261114-UNL-portugal-dinamarca|1",
+      "match_id": "20261114-UNL-portugal-dinamarca",
+      "key": "1",
+      "prob": 0.6077,
+      "odd_casa": 1.54,
+      "jogo": "Portugal x Dinamarca",
+      "texto": "Vitória Portugal",
+      "porque": "golos esperados 2.1 – 1.1 · Portugal 5V em 6"
+     },
+     {
+      "id": "20261114-UNL-noruega-pasdegales|over_2.5",
+      "match_id": "20261114-UNL-noruega-pasdegales",
+      "key": "over_2.5",
+      "prob": 0.7058,
+      "odd_casa": null,
+      "jogo": "Noruega x País de Gales",
+      "texto": "Mais de 2.5 golos",
+      "porque": "golos esperados 2.7 – 1.0"
+     }
+    ],
+    "prob": 0.2561,
+    "resultado": null
+   },
+   "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• Irlanda do Norte x Ucrânia: Irlanda do Norte ou empate + Menos de 3.5 golos (@1.67)\n   <i>↳ golos esperados 1.1 – 0.9 · Irlanda do Norte 3V em 6</i>\n• Portugal x Dinamarca: Vitória Portugal (@1.54)\n   <i>↳ golos esperados 2.1 – 1.1 · Portugal 5V em 6</i>\n• Noruega x País de Gales: Mais de 2.5 golos (@1.42)\n   <i>↳ golos esperados 2.7 – 1.0</i>\n\n💰 Odd total: <b>3.65</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T14:00:00",
+   "estado": "expirada",
+   "enviar_a": "2026-11-14T11:00:00",
+   "admin_msgs": {
+    "5575304800": 293,
+    "5728356568": 294
+   },
+   "admin_msg": 293
+  },
+  {
+   "pid": "1411085550",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-gergia-hungria|under_2.5",
+    "match_id": "20261114-UNL-gergia-hungria",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Geórgia x Hungria",
+    "prob": 0.5774,
+    "odd_casa": 1.57,
+    "data": "2026-11-14",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nGeórgia x Hungria | 17h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.57</b>\n\n📊 Golos esperados: Geórgia 1.0 – Hungria 1.1\n📊 Geórgia: 1 vitória nos últimos 6 jogos\n📊 Hungria: 4 vitórias nos últimos 6 jogos\n🚑 Geórgia sem Kvaratskhelia, Kochorashvili\n🚑 Hungria sem Szoboszlai\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T17:00:00",
+   "estado": "substituida",
+   "enviar_a": "2026-11-14T14:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 312,
+    "5728356568": 313
+   },
+   "admin_msg": 312
+  },
+  {
+   "pid": "1411085551",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-irlandadonorte-ucrnia|under_2.5",
+    "match_id": "20261114-UNL-irlandadonorte-ucrnia",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Irlanda do Norte x Ucrânia",
+    "prob": 0.6074,
+    "odd_casa": null,
+    "data": "2026-11-14",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nIrlanda do Norte x Ucrânia | 19h45\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.65</b> (mínima com valor)\n\n📊 Golos esperados: Irlanda do Norte 1.1 – Ucrânia 0.9\n📊 Irlanda do Norte: 3 vitórias nos últimos 6 jogos\n📊 Ucrânia: 2 vitórias nos últimos 6 jogos\n🚑 Irlanda do Norte sem Ballard, Toal, Bradley, McCann\n🚑 Ucrânia sem Tsygankov, Zubkov\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "substituida",
+   "enviar_a": "2026-11-14T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 331,
+    "5728356568": 332
+   },
+   "admin_msg": 331
+  },
+  {
+   "pid": "1411085552",
+   "origem": "dicas",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-romnia-polnia|2",
+    "match_id": "20261114-UNL-romnia-polnia",
+    "key": "2",
+    "texto": "Vitória Polónia",
+    "jogo": "Roménia x Polónia",
+    "prob": 0.5565,
+    "odd_casa": 1.65,
+    "data": "2026-11-14",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nRoménia x Polónia | 19h45\n\n✅ <b>Dica: Vitória Polónia</b>\n💰 Odd: <b>1.65</b>\n\n📊 Golos esperados: Roménia 1.1 – Polónia 1.8\n📊 Roménia: 1 vitória nos últimos 6 jogos\n📊 Polónia: 1 vitória nos últimos 6 jogos\n🚑 Roménia sem Stanciu, Marin\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-14T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 333,
+    "5728356568": 334
+   },
+   "admin_msg": 333
+  },
+  {
+   "pid": "1415574453",
+   "origem": "resultado",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 177,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Ambas marcam\nKosovo 0-0 Israel",
+   "expira": "2026-11-15T15:57:44.307808",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 316,
+    "5728356568": 317
+   },
+   "admin_msg": 316
+  },
+  {
+   "pid": "1416251554",
+   "origem": "tardia",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-gergia-hungria|under_2.5",
+    "match_id": "20261114-UNL-gergia-hungria",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Geórgia x Hungria",
+    "prob": 0.5774,
+    "odd_casa": 1.57,
+    "data": "2026-11-14",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nGeórgia x Hungria | 17h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.57</b>\n\n📊 Golos esperados: Geórgia 1.0 – Hungria 1.1\n📊 Geórgia: 1 vitória nos últimos 6 jogos\n📊 Hungria: 4 vitórias nos últimos 6 jogos\n🚑 Geórgia sem Kvaratskhelia, Kochorashvili\n🚑 Hungria sem Szoboszlai\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T17:00:00",
+   "estado": "expirada",
+   "enviar_a": "2026-11-14T14:00:00",
+   "admin_msgs": {
+    "5575304800": 318,
+    "5728356568": 319
+   },
+   "admin_msg": 318
+  },
+  {
+   "pid": "1418565855",
+   "origem": "resultado",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 178,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Noruega\nNoruega 3-1 País de Gales",
+   "expira": "2026-11-15T18:56:58.751796",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 348,
+    "5728356568": 349
+   },
+   "admin_msg": 348
+  },
+  {
+   "pid": "1419141656",
+   "origem": "tardia",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-UNL-irlandadonorte-ucrnia|under_2.5",
+    "match_id": "20261114-UNL-irlandadonorte-ucrnia",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Irlanda do Norte x Ucrânia",
+    "prob": 0.6074,
+    "odd_casa": null,
+    "data": "2026-11-14",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SÁBADO 14/11</b>\nIrlanda do Norte x Ucrânia | 19h45\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.65</b> (mínima com valor)\n\n📊 Golos esperados: Irlanda do Norte 1.1 – Ucrânia 0.9\n📊 Irlanda do Norte: 3 vitórias nos últimos 6 jogos\n📊 Ucrânia: 2 vitórias nos últimos 6 jogos\n🚑 Irlanda do Norte sem Ballard, Toal, Bradley, McCann\n🚑 Ucrânia sem Tsygankov, Zubkov\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-14T16:45:00",
+   "admin_msgs": {
+    "5575304800": 350,
+    "5728356568": 351
+   },
+   "admin_msg": 350
+  },
+  {
+   "pid": "1421011257",
+   "origem": "madrugada",
+   "data": "2026-11-14",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261114-BRA-chapecoensesc-vasco|2",
+    "match_id": "20261114-BRA-chapecoensesc-vasco",
+    "key": "2",
+    "texto": "Vitória Vasco",
+    "jogo": "Chapecoense-SC x Vasco",
+    "prob": 0.6868,
+    "odd_casa": 1.4,
+    "data": "2026-11-14",
+    "resultado": null,
+    "tipo": "madrugada"
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇧🇷 <b>BRASILEIRÃO – SÁBADO 14/11</b>\nChapecoense-SC x Vasco | 23h30\n\n✅ <b>Dica: Vitória Vasco</b>\n💰 Odd: <b>1.40</b>\n\n📊 Golos esperados: Chapecoense-SC 0.9 – Vasco 2.2\n📊 Chapecoense-SC: 1 vitória nos últimos 6 jogos\n📊 Vasco: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-14T23:30:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-14T20:30:00",
+   "admin_msgs": {
+    "5575304800": 352,
+    "5728356568": 353
+   },
+   "admin_msg": 352
+  },
+  {
+   "pid": "1421375258",
+   "origem": "resultado",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 182,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Mais de 1.5 golos\nÁustria 1-0 Irlanda",
+   "expira": "2026-11-15T21:37:52.453150",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 354,
+    "5728356568": 355
+   },
+   "admin_msg": 354
+  },
+  {
+   "pid": "1421504159",
+   "origem": "resultado",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 179,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Polónia\nRoménia 2-1 Polónia",
+   "expira": "2026-11-15T21:50:41.778494",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 356,
+    "5728356568": 357
+   },
+   "admin_msg": 356
+  },
+  {
+   "pid": "1421504260",
+   "origem": "resultado",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 180,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nPortugal 1-4 Dinamarca",
+   "expira": "2026-11-15T21:50:42.974106",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 358,
+    "5728356568": 359
+   },
+   "admin_msg": 358
+  },
+  {
+   "pid": "1421504461",
+   "origem": "resultado",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 181,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Suécia\nSuécia 3-2 Bósnia",
+   "expira": "2026-11-15T21:50:44.164719",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 360,
+    "5728356568": 361
+   },
+   "admin_msg": 360
+  },
+  {
+   "pid": "1421504562",
+   "origem": "resultado",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 186,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Menos de 2.5 golos\nIrlanda do Norte 1-0 Ucrânia",
+   "expira": "2026-11-15T21:50:45.131984",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 362,
+    "5728356568": 363
+   },
+   "admin_msg": 362
+  },
+  {
+   "pid": "1421504663",
+   "origem": "resultado",
+   "data": "2026-11-14",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 183,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN NA MÚLTIPLA!</b> 💰",
+   "expira": "2026-11-15T21:50:46.092034",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 364,
+    "5728356568": 365
+   },
+   "admin_msg": 364
+  },
+  {
+   "pid": "1500011264",
+   "origem": "resumo",
+   "data": "2026-11-15",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": false
+   },
+   "texto": "📊 <b>RESUMO DE 14/11</b>\n\n🟢 4 Green · 🔴 3 Red\n🎯 Múltipla: GREEN 💰\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T00:01:12.230483",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 366,
+    "5728356568": 367
+   },
+   "admin_msg": 366
+  },
+  {
+   "pid": "1511084565",
+   "origem": "dicas",
+   "data": "2026-11-15",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261115-UNL-finlndia-somarino|over_2.5",
+    "match_id": "20261115-UNL-finlndia-somarino",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Finlândia x São Marino",
+    "prob": 0.8128,
+    "odd_casa": null,
+    "data": "2026-11-15",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – DOMINGO 15/11</b>\nFinlândia x São Marino | 17h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.23</b> (mínima com valor)\n\n📊 Golos esperados: Finlândia 4.0 – São Marino 0.6\n📊 Finlândia: 2 vitórias nos últimos 6 jogos\n📊 São Marino: 0 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T17:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-15T14:00:00",
+   "admin_msgs": {
+    "5575304800": 376,
+    "5728356568": 377
+   },
+   "admin_msg": 376
+  },
+  {
+   "pid": "1511084566",
+   "origem": "dicas",
+   "data": "2026-11-15",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261115-UNL-bielorrssia-albnia|under_2.5",
+    "match_id": "20261115-UNL-bielorrssia-albnia",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Bielorrússia x Albânia",
+    "prob": 0.6246,
+    "odd_casa": null,
+    "data": "2026-11-15",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – DOMINGO 15/11</b>\nBielorrússia x Albânia | 17h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.60</b> (mínima com valor)\n\n📊 Golos esperados: Bielorrússia 1.0 – Albânia 1.0\n📊 Bielorrússia: 3 vitórias nos últimos 6 jogos\n📊 Albânia: 3 vitórias nos últimos 6 jogos\n🚑 Albânia sem Strakosha\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T17:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-15T14:00:00",
+   "admin_msgs": {
+    "5575304800": 378,
+    "5728356568": 379
+   },
+   "admin_msg": 378
+  },
+  {
+   "pid": "1511084567",
+   "origem": "dicas",
+   "data": "2026-11-15",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261115-UNL-frana-turquia|over_2.5",
+    "match_id": "20261115-UNL-frana-turquia",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "França x Turquia",
+    "prob": 0.7267,
+    "odd_casa": null,
+    "data": "2026-11-15",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – DOMINGO 15/11</b>\nFrança x Turquia | 19h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.38</b> (mínima com valor)\n\n📊 Golos esperados: França 2.9 – Turquia 0.9\n📊 França: 3 vitórias nos últimos 6 jogos\n📊 Turquia: 1 vitória nos últimos 6 jogos\n🚑 França sem Thuram, Tchouaméni, Kalulu, Koundé/Saliba/Dembélé\n🚑 Turquia sem Yildiz, Bardakci, Kökçü\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-15T16:45:00",
+   "admin_msgs": {
+    "5575304800": 384,
+    "5728356568": 385
+   },
+   "admin_msg": 384
+  },
+  {
+   "pid": "1511084568",
+   "origem": "dicas",
+   "data": "2026-11-15",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261115-UNL-letnia-armnia|combo:X2&under_3.5",
+    "match_id": "20261115-UNL-letnia-armnia",
+    "key": "combo:X2&under_3.5",
+    "texto": "Arménia ou empate + Menos de 3.5 golos",
+    "jogo": "Letónia x Arménia",
+    "prob": 0.5525,
+    "odd_casa": null,
+    "data": "2026-11-15",
+    "resultado": null,
+    "tipo": "odd_alta"
+   },
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – DOMINGO 15/11</b>\nLetónia x Arménia | 14h00\n\n✅ <b>Dica: Arménia ou empate + Menos de 3.5 golos</b>\n💰 Odd: <b>1.81</b> (mínima com valor)\n\n📊 Golos esperados: Letónia 1.1 – Arménia 1.2\n📊 Letónia: 0 vitórias nos últimos 6 jogos\n📊 Arménia: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T14:00:00",
+   "estado": "expirada",
+   "enviar_a": "2026-11-15T11:00:00",
+   "admin_msgs": {
+    "5575304800": 368,
+    "5728356568": 369
+   },
+   "admin_msg": 368
+  },
+  {
+   "pid": "1511084569",
+   "origem": "dicas",
+   "data": "2026-11-15",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-15",
+    "tipo": "segura",
+    "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+    "partes": [
+     "20261115-UNL-finlndia-somarino|over_2.5",
+     "20261115-UNL-frana-turquia|over_2.5",
+     "20261115-UNL-bielorrssia-albnia|under_2.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261115-UNL-finlndia-somarino|over_2.5",
+      "match_id": "20261115-UNL-finlndia-somarino",
+      "key": "over_2.5",
+      "prob": 0.8128,
+      "odd_casa": null,
+      "jogo": "Finlândia x São Marino",
+      "texto": "Mais de 2.5 golos"
+     },
+     {
+      "id": "20261115-UNL-frana-turquia|over_2.5",
+      "match_id": "20261115-UNL-frana-turquia",
+      "key": "over_2.5",
+      "prob": 0.7267,
+      "odd_casa": null,
+      "jogo": "França x Turquia",
+      "texto": "Mais de 2.5 golos"
+     },
+     {
+      "id": "20261115-UNL-bielorrssia-albnia|under_2.5",
+      "match_id": "20261115-UNL-bielorrssia-albnia",
+      "key": "under_2.5",
+      "prob": 0.6246,
+      "odd_casa": null,
+      "jogo": "Bielorrússia x Albânia",
+      "texto": "Menos de 2.5 golos"
+     }
+    ],
+    "prob": 0.3689,
+    "resultado": null
+   },
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Finlândia x São Marino: Mais de 2.5 golos (@1.23)\n• França x Turquia: Mais de 2.5 golos (@1.38)\n• Bielorrússia x Albânia: Menos de 2.5 golos (@1.60)\n\n💰 Odd total: <b>2.71</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T17:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-15T14:00:00",
+   "admin_msgs": {
+    "5575304800": 380,
+    "5728356568": 381
+   },
+   "admin_msg": 380
+  },
+  {
+   "pid": "1511084570",
+   "origem": "dicas",
+   "data": "2026-11-15",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261115-UNL-chipre-montenegro|btts_sim",
+    "match_id": "20261115-UNL-chipre-montenegro",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Chipre x Montenegro",
+    "prob": 0.5725,
+    "odd_casa": null,
+    "data": "2026-11-15",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – DOMINGO 15/11</b>\nChipre x Montenegro | 14h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.75</b> (mínima com valor)\n\n📊 Golos esperados: Chipre 1.3 – Montenegro 1.5\n📊 Chipre: 3 vitórias nos últimos 6 jogos\n📊 Montenegro: 4 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T14:00:00",
+   "estado": "expirada",
+   "enviar_a": "2026-11-15T11:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 370,
+    "5728356568": 371
+   },
+   "admin_msg": 370
+  },
+  {
+   "pid": "1511084571",
+   "origem": "dicas",
+   "data": "2026-11-15",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261115-UNL-blgica-itlia|over_2.5",
+    "match_id": "20261115-UNL-blgica-itlia",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Bélgica x Itália",
+    "prob": 0.5708,
+    "odd_casa": 1.62,
+    "data": "2026-11-15",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – DOMINGO 15/11</b>\nBélgica x Itália | 19h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.62</b>\n\n📊 Golos esperados: Bélgica 1.6 – Itália 1.2\n📊 Bélgica: 3 vitórias nos últimos 6 jogos\n📊 Itália: 4 vitórias nos últimos 6 jogos\n🚑 Bélgica sem Lukaku\n🚑 Itália sem Kean, Raspadori, Mancini, Lorenzo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-15T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 386,
+    "5728356568": 387
+   },
+   "admin_msg": 386
+  },
+  {
+   "pid": "1511084572",
+   "origem": "dicas",
+   "data": "2026-11-15",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261115-UNL-crocia-chquia|1",
+    "match_id": "20261115-UNL-crocia-chquia",
+    "key": "1",
+    "texto": "Vitória Croácia",
+    "jogo": "Croácia x Chéquia",
+    "prob": 0.6101,
+    "odd_casa": 1.53,
+    "data": "2026-11-15",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – DOMINGO 15/11</b>\nCroácia x Chéquia | 19h45\n\n✅ <b>Dica: Vitória Croácia</b>\n💰 Odd: <b>1.53</b>\n\n📊 Golos esperados: Croácia 1.9 – Chéquia 1.0\n📊 Croácia: 2 vitórias nos últimos 6 jogos\n📊 Chéquia: 0 vitórias nos últimos 6 jogos\n🚑 Croácia sem Perisic, Sutalo, Pongracic, Kramaric\n🚑 Chéquia sem Sulc, Hranac, Sadílek\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-15T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 388,
+    "5728356568": 389
+   },
+   "admin_msg": 388
+  },
+  {
+   "pid": "1511084573",
+   "origem": "dicas",
+   "data": "2026-11-15",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261115-UNL-espanha-inglaterra|over_2.5",
+    "match_id": "20261115-UNL-espanha-inglaterra",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Espanha x Inglaterra",
+    "prob": 0.5956,
+    "odd_casa": 1.59,
+    "data": "2026-11-15",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – DOMINGO 15/11</b>\nEspanha x Inglaterra | 19h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.59</b>\n\n📊 Golos esperados: Espanha 1.9 – Inglaterra 1.2\n📊 Espanha: 6 vitórias nos últimos 6 jogos\n📊 Inglaterra: 4 vitórias nos últimos 6 jogos\n🚑 Espanha sem Yamal, Oyarzabal, Rodri\n🚑 Inglaterra sem Saka, Madueke, Guehi, Konsa\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-15T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-15T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 390,
+    "5728356568": 391
+   },
+   "admin_msg": 390
+  },
+  {
+   "pid": "1518504674",
+   "origem": "resultado",
+   "data": "2026-11-15",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 196,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nFinlândia 7-2 São Marino",
+   "expira": "2026-11-16T18:50:46.457117",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 397,
+    "5728356568": 398
+   },
+   "admin_msg": 397
+  },
+  {
+   "pid": "1518592675",
+   "origem": "resultado",
+   "data": "2026-11-15",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 195,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Menos de 2.5 golos\nBielorrússia 0-2 Albânia",
+   "expira": "2026-11-16T18:59:26.926360",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 399,
+    "5728356568": 400
+   },
+   "admin_msg": 399
+  },
+  {
+   "pid": "1521403676",
+   "origem": "resultado",
+   "data": "2026-11-15",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 198,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Croácia\nCroácia 2-1 Chéquia",
+   "expira": "2026-11-16T21:40:36.643395",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 401,
+    "5728356568": 402
+   },
+   "admin_msg": 401
+  },
+  {
+   "pid": "1521403777",
+   "origem": "resultado",
+   "data": "2026-11-15",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 199,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nFrança 2-1 Turquia",
+   "expira": "2026-11-16T21:40:37.580941",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 403,
+    "5728356568": 404
+   },
+   "admin_msg": 403
+  },
+  {
+   "pid": "1521403878",
+   "origem": "resultado",
+   "data": "2026-11-15",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 194,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN NA MÚLTIPLA!</b> 💰",
+   "expira": "2026-11-16T21:40:38.455257",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 405,
+    "5728356568": 406
+   },
+   "admin_msg": 405
+  },
+  {
+   "pid": "1521503479",
+   "origem": "resultado",
+   "data": "2026-11-15",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 197,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nEspanha 2-3 Inglaterra",
+   "expira": "2026-11-16T21:50:34.513438",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 407,
+    "5728356568": 408
+   },
+   "admin_msg": 407
+  },
+  {
+   "pid": "1521503580",
+   "origem": "resultado",
+   "data": "2026-11-15",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 200,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nBélgica 4-1 Itália",
+   "expira": "2026-11-16T21:50:35.303093",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 409,
+    "5728356568": 410
+   },
+   "admin_msg": 409
+  },
+  {
+   "pid": "1600010881",
+   "origem": "resumo",
+   "data": "2026-11-16",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": true
+   },
+   "texto": "📊 <b>RESUMO DE 15/11</b>\n\n🔥 <b>DIA DE 100% DE ACERTO!</b>\n🟢 6 Green\n🎯 Múltipla: GREEN 💰\n💶 Lucro: <b>+466 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-17T00:01:08.099586",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 411,
+    "5728356568": 412
+   },
+   "admin_msg": 411
+  },
+  {
+   "pid": "1611440564",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-litunia-liechtenstein|btts_nao",
+    "match_id": "20261116-UNL-litunia-liechtenstein",
+    "key": "btts_nao",
+    "texto": "Ambas não marcam",
+    "jogo": "Lituânia x Liechtenstein",
+    "prob": 0.7309,
+    "odd_casa": null,
+    "data": "2026-11-16",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nLituânia x Liechtenstein | 17h00\n\n✅ <b>Dica: Ambas não marcam</b>\n💰 Odd: <b>1.37</b> (mínima com valor)\n\n📊 Golos esperados: Lituânia 2.3 – Liechtenstein 0.3\n📊 Lituânia: 2 vitórias nos últimos 6 jogos\n📊 Liechtenstein: 0 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T17:00:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-16T14:00:00",
+   "admin_msgs": {
+    "5575304800": 428,
+    "5728356568": 429
+   },
+   "admin_msg": 428
+  },
+  {
+   "pid": "1611440565",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-alemanha-pasesbaixos|over_2.5",
+    "match_id": "20261116-UNL-alemanha-pasesbaixos",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Alemanha x Países Baixos",
+    "prob": 0.6952,
+    "odd_casa": null,
+    "data": "2026-11-16",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nAlemanha x Países Baixos | 19h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.44</b> (mínima com valor)\n\n📊 Golos esperados: Alemanha 2.1 – Países Baixos 1.5\n📊 Alemanha: 1 vitória nos últimos 6 jogos\n📊 Países Baixos: 3 vitórias nos últimos 6 jogos\n🚑 Alemanha sem Musiala, Gnabry, Havertz, Schlotterbeck\n🚑 Países Baixos sem Dijk, Brobbey, Hato, Aké\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-16T16:45:00",
+   "admin_msgs": {
+    "5575304800": 449,
+    "5728356568": 450
+   },
+   "admin_msg": 449
+  },
+  {
+   "pid": "1611440566",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-grcia-srvia|1",
+    "match_id": "20261116-UNL-grcia-srvia",
+    "key": "1",
+    "texto": "Vitória Grécia",
+    "jogo": "Grécia x Sérvia",
+    "prob": 0.6822,
+    "odd_casa": 1.43,
+    "data": "2026-11-16",
+    "resultado": null
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nGrécia x Sérvia | 19h45\n\n✅ <b>Dica: Vitória Grécia</b>\n💰 Odd: <b>1.43</b>\n\n📊 Golos esperados: Grécia 2.0 – Sérvia 0.8\n📊 Grécia: 2 vitórias nos últimos 6 jogos\n📊 Sérvia: 0 vitórias nos últimos 6 jogos\n🚑 Grécia sem Zafeiris, Saliakas\n🚑 Sérvia sem Vlahovic, Mitrovic, Pavlovic, Lukic\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-16T16:45:00",
+   "admin_msgs": {
+    "5575304800": 451,
+    "5728356568": 452
+   },
+   "admin_msg": 451
+  },
+  {
+   "pid": "1611440567",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-sua-esccia|btts_sim",
+    "match_id": "20261116-UNL-sua-esccia",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Suíça x Escócia",
+    "prob": 0.535,
+    "odd_casa": null,
+    "data": "2026-11-16",
+    "resultado": null,
+    "tipo": "odd_alta"
+   },
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nSuíça x Escócia | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.87</b> (mínima com valor)\n\n📊 Golos esperados: Suíça 1.8 – Escócia 1.0\n📊 Suíça: 4 vitórias nos últimos 6 jogos\n📊 Escócia: 1 vitória nos últimos 6 jogos\n🚑 Suíça sem Xhaka, Vargas, Muheim\n🚑 Escócia sem McKenna, Welsh, Binks\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-16T16:45:00",
+   "admin_msgs": {
+    "5575304800": 453,
+    "5728356568": 454
+   },
+   "admin_msg": 453
+  },
+  {
+   "pid": "1611440568",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-16",
+    "tipo": "segura",
+    "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+    "partes": [
+     "20261116-UNL-litunia-liechtenstein|btts_nao",
+     "20261116-UNL-alemanha-pasesbaixos|over_2.5",
+     "20261116-UNL-grcia-srvia|1"
+    ],
+    "pernas": [
+     {
+      "id": "20261116-UNL-litunia-liechtenstein|btts_nao",
+      "match_id": "20261116-UNL-litunia-liechtenstein",
+      "key": "btts_nao",
+      "prob": 0.7309,
+      "odd_casa": null,
+      "jogo": "Lituânia x Liechtenstein",
+      "texto": "Ambas não marcam"
+     },
+     {
+      "id": "20261116-UNL-alemanha-pasesbaixos|over_2.5",
+      "match_id": "20261116-UNL-alemanha-pasesbaixos",
+      "key": "over_2.5",
+      "prob": 0.6952,
+      "odd_casa": null,
+      "jogo": "Alemanha x Países Baixos",
+      "texto": "Mais de 2.5 golos"
+     },
+     {
+      "id": "20261116-UNL-grcia-srvia|1",
+      "match_id": "20261116-UNL-grcia-srvia",
+      "key": "1",
+      "prob": 0.6822,
+      "odd_casa": 1.43,
+      "jogo": "Grécia x Sérvia",
+      "texto": "Vitória Grécia"
+     }
+    ],
+    "prob": 0.3466,
+    "resultado": null
+   },
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Lituânia x Liechtenstein: Ambas não marcam (@1.37)\n• Alemanha x Países Baixos: Mais de 2.5 golos (@1.44)\n• Grécia x Sérvia: Vitória Grécia (@1.43)\n\n💰 Odd total: <b>2.81</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T17:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-16T14:00:00",
+   "admin_msgs": {
+    "5575304800": 430,
+    "5728356568": 431
+   },
+   "admin_msg": 430
+  },
+  {
+   "pid": "1611440569",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-16",
+    "tipo": "turbo",
+    "titulo": "🚀 <b>MÚLTIPLA TURBO</b>",
+    "partes": [
+     "20261116-UNL-islndia-luxemburgo|btts_nao",
+     "20261116-UNL-alemanha-pasesbaixos|btts_sim",
+     "20261116-UNL-litunia-liechtenstein|cantos_under_9.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261116-UNL-islndia-luxemburgo|btts_nao",
+      "match_id": "20261116-UNL-islndia-luxemburgo",
+      "key": "btts_nao",
+      "prob": 0.5879,
+      "odd_casa": null,
+      "jogo": "Islândia x Luxemburgo",
+      "texto": "Ambas não marcam",
+      "porque": "golos esperados 2.2 – 0.6"
+     },
+     {
+      "id": "20261116-UNL-alemanha-pasesbaixos|btts_sim",
+      "match_id": "20261116-UNL-alemanha-pasesbaixos",
+      "key": "btts_sim",
+      "prob": 0.6817,
+      "odd_casa": null,
+      "jogo": "Alemanha x Países Baixos",
+      "texto": "Ambas marcam",
+      "porque": "golos esperados 2.1 – 1.5"
+     },
+     {
+      "id": "20261116-UNL-litunia-liechtenstein|cantos_under_9.5",
+      "match_id": "20261116-UNL-litunia-liechtenstein",
+      "key": "cantos_under_9.5",
+      "prob": 0.6206,
+      "odd_casa": null,
+      "jogo": "Lituânia x Liechtenstein",
+      "texto": "Menos de 9.5 cantos",
+      "porque": "cantos esperados 7.9"
+     }
+    ],
+    "prob": 0.2487,
+    "resultado": null
+   },
+   "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• Islândia x Luxemburgo: Ambas não marcam (@1.70)\n   <i>↳ golos esperados 2.2 – 0.6</i>\n• Alemanha x Países Baixos: Ambas marcam (@1.47)\n   <i>↳ golos esperados 2.1 – 1.5</i>\n• Lituânia x Liechtenstein: Menos de 9.5 cantos (@1.61)\n   <i>↳ cantos esperados 7.9</i>\n\n💰 Odd total: <b>4.02</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T17:00:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-16T14:00:00",
+   "admin_msgs": {
+    "5575304800": 432,
+    "5728356568": 433
+   },
+   "admin_msg": 432
+  },
+  {
+   "pid": "1611440570",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-ilhasfaro-moldvia|1",
+    "match_id": "20261116-UNL-ilhasfaro-moldvia",
+    "key": "1",
+    "texto": "Vitória Ilhas Faroé",
+    "jogo": "Ilhas Faroé x Moldávia",
+    "prob": 0.5361,
+    "odd_casa": 1.83,
+    "data": "2026-11-16",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nIlhas Faroé x Moldávia | 15h00\n\n✅ <b>Dica: Vitória Ilhas Faroé</b>\n💰 Odd: <b>1.83</b>\n\n📊 Golos esperados: Ilhas Faroé 1.5 – Moldávia 0.9\n📊 Ilhas Faroé: 1 vitória nos últimos 6 jogos\n📊 Moldávia: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T15:00:00",
+   "estado": "expirada",
+   "enviar_a": "2026-11-16T12:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 417,
+    "5728356568": 418
+   },
+   "admin_msg": 417
+  },
+  {
+   "pid": "1611440571",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-cazaquisto-eslovquia|cantos_over_9.5",
+    "match_id": "20261116-UNL-cazaquisto-eslovquia",
+    "key": "cantos_over_9.5",
+    "texto": "Mais de 9.5 cantos",
+    "jogo": "Cazaquistão x Eslováquia",
+    "prob": 0.5936,
+    "odd_casa": null,
+    "data": "2026-11-16",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nCazaquistão x Eslováquia | 15h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.68</b> (mínima com valor)\n\n📊 Golos esperados: Cazaquistão 1.0 – Eslováquia 1.6\n📊 Cazaquistão: 0 vitórias nos últimos 6 jogos\n📊 Eslováquia: 4 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T15:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-16T12:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 419,
+    "5728356568": 420
+   },
+   "admin_msg": 419
+  },
+  {
+   "pid": "1611440572",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-estnia-bulgria|under_2.5",
+    "match_id": "20261116-UNL-estnia-bulgria",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Estónia x Bulgária",
+    "prob": 0.5398,
+    "odd_casa": 1.65,
+    "data": "2026-11-16",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nEstónia x Bulgária | 17h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.65</b>\n\n📊 Golos esperados: Estónia 1.4 – Bulgária 1.0\n📊 Estónia: 3 vitórias nos últimos 6 jogos\n📊 Bulgária: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T17:00:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-16T14:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 434,
+    "5728356568": 435
+   },
+   "admin_msg": 434
+  },
+  {
+   "pid": "1611440573",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-islndia-luxemburgo|cantos_under_9.5",
+    "match_id": "20261116-UNL-islndia-luxemburgo",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Islândia x Luxemburgo",
+    "prob": 0.5983,
+    "odd_casa": null,
+    "data": "2026-11-16",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nIslândia x Luxemburgo | 17h00\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.67</b> (mínima com valor)\n\n📊 Golos esperados: Islândia 2.2 – Luxemburgo 0.6\n📊 Islândia: 2 vitórias nos últimos 6 jogos\n📊 Luxemburgo: 2 vitórias nos últimos 6 jogos\n🚑 Islândia sem Thórdarson, Ingason, Magnússon, Ólafsson\n🚑 Luxemburgo sem Natami\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T17:00:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-16T14:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 436,
+    "5728356568": 437
+   },
+   "admin_msg": 436
+  },
+  {
+   "pid": "1611440574",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-gibraltar-malta|2",
+    "match_id": "20261116-UNL-gibraltar-malta",
+    "key": "2",
+    "texto": "Vitória Malta",
+    "jogo": "Gibraltar x Malta",
+    "prob": 0.5969,
+    "odd_casa": 1.49,
+    "data": "2026-11-16",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nGibraltar x Malta | 19h45\n\n✅ <b>Dica: Vitória Malta</b>\n💰 Odd: <b>1.49</b>\n\n📊 Golos esperados: Gibraltar 0.7 – Malta 1.6\n📊 Gibraltar: 3 vitórias nos últimos 6 jogos\n📊 Malta: 4 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-16T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 455,
+    "5728356568": 456
+   },
+   "admin_msg": 455
+  },
+  {
+   "pid": "1611440575",
+   "origem": "dicas",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-macedniadonorte-eslovnia|2",
+    "match_id": "20261116-UNL-macedniadonorte-eslovnia",
+    "key": "2",
+    "texto": "Vitória Eslovénia",
+    "jogo": "Macedónia do Norte x Eslovénia",
+    "prob": 0.5962,
+    "odd_casa": 1.47,
+    "data": "2026-11-16",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nMacedónia do Norte x Eslovénia | 19h45\n\n✅ <b>Dica: Vitória Eslovénia</b>\n💰 Odd: <b>1.47</b>\n\n📊 Golos esperados: Macedónia do Norte 0.7 – Eslovénia 1.6\n📊 Macedónia do Norte: 0 vitórias nos últimos 6 jogos\n📊 Eslovénia: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T19:45:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-16T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 457,
+    "5728356568": 458
+   },
+   "admin_msg": 457
+  },
+  {
+   "pid": "1611440776",
+   "origem": "balanco",
+   "data": "2026-11-16",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": false
+   },
+   "texto": "📋 <b>BALANÇO DA SEMANA</b> (09/11 – 15/11)\n\n🟢 19 Green · 🔴 6 Red\n🎯 Múltiplas: 4 Green em 6\n💶 Lucro: <b>+709 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-17T11:44:07.111290",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 415,
+    "5728356568": 416
+   },
+   "admin_msg": 415
+  },
+  {
+   "pid": "1616311877",
+   "origem": "tardia",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-islndia-luxemburgo|1",
+    "match_id": "20261116-UNL-islndia-luxemburgo",
+    "key": "1",
+    "texto": "Vitória Islândia",
+    "jogo": "Islândia x Luxemburgo",
+    "prob": 0.7761,
+    "odd_casa": 1.17,
+    "data": "2026-11-16",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nIslândia x Luxemburgo | 17h00\n\n✅ <b>Dica: Vitória Islândia</b>\n💰 Odd: <b>1.17</b>\n\n📊 Golos esperados: Islândia 2.2 – Luxemburgo 0.6\n📊 Islândia: 2 vitórias nos últimos 6 jogos\n📊 Luxemburgo: 2 vitórias nos últimos 6 jogos\n🚑 Islândia sem Thórdarson, Ingason, Magnússon, Ólafsson\n🚑 Luxemburgo sem Natami\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T17:00:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-16T14:00:00",
+   "admin_msgs": {
+    "5575304800": 440,
+    "5728356568": 441
+   },
+   "admin_msg": 440
+  },
+  {
+   "pid": "1616311878",
+   "origem": "tardia",
+   "data": "2026-11-16",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261116-UNL-estnia-bulgria|under_2.5",
+    "match_id": "20261116-UNL-estnia-bulgria",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Estónia x Bulgária",
+    "prob": 0.5398,
+    "odd_casa": 1.65,
+    "data": "2026-11-16",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – SEGUNDA 16/11</b>\nEstónia x Bulgária | 17h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.65</b>\n\n📊 Golos esperados: Estónia 1.4 – Bulgária 1.0\n📊 Estónia: 3 vitórias nos últimos 6 jogos\n📊 Bulgária: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-16T17:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-16T14:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 442,
+    "5728356568": 443
+   },
+   "admin_msg": 442
+  },
+  {
+   "pid": "1617011379",
+   "origem": "resultado",
+   "data": "2026-11-16",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 210,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Mais de 9.5 cantos\nCazaquistão 2-2 Eslováquia",
+   "expira": "2026-11-17T17:01:13.073707",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 467,
+    "5728356568": 468
+   },
+   "admin_msg": 467
+  },
+  {
+   "pid": "1619011380",
+   "origem": "resultado",
+   "data": "2026-11-16",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 212,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Menos de 2.5 golos\nEstónia 2-1 Bulgária",
+   "expira": "2026-11-17T19:01:13.730764",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 469,
+    "5728356568": 470
+   },
+   "admin_msg": 469
+  },
+  {
+   "pid": "1619011481",
+   "origem": "resultado",
+   "data": "2026-11-16",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 211,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED na múltipla (0/3 pernas certas até agora)",
+   "expira": "2026-11-17T19:01:14.657085",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 471,
+    "5728356568": 472
+   },
+   "admin_msg": 471
+  },
+  {
+   "pid": "1621404282",
+   "origem": "resultado",
+   "data": "2026-11-16",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 213,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nAlemanha 5-0 Países Baixos",
+   "expira": "2026-11-17T21:40:42.582295",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 473,
+    "5728356568": 474
+   },
+   "admin_msg": 473
+  },
+  {
+   "pid": "1621404383",
+   "origem": "resultado",
+   "data": "2026-11-16",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 214,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Grécia\nGrécia 1-0 Sérvia",
+   "expira": "2026-11-17T21:40:43.856928",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 475,
+    "5728356568": 476
+   },
+   "admin_msg": 475
+  },
+  {
+   "pid": "1621404484",
+   "origem": "resultado",
+   "data": "2026-11-16",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 215,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Ambas marcam\nSuíça 4-0 Escócia",
+   "expira": "2026-11-17T21:40:44.916085",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 477,
+    "5728356568": 478
+   },
+   "admin_msg": 477
+  },
+  {
+   "pid": "1621404585",
+   "origem": "resultado",
+   "data": "2026-11-16",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 216,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Malta\nGibraltar 1-1 Malta",
+   "expira": "2026-11-17T21:40:45.947491",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 479,
+    "5728356568": 480
+   },
+   "admin_msg": 479
+  },
+  {
+   "pid": "1621404686",
+   "origem": "resultado",
+   "data": "2026-11-16",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 217,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Eslovénia\nMacedónia do Norte 0-3 Eslovénia",
+   "expira": "2026-11-17T21:40:46.947166",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 481,
+    "5728356568": 482
+   },
+   "admin_msg": 481
+  },
+  {
+   "pid": "1700005187",
+   "origem": "resumo",
+   "data": "2026-11-17",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": false
+   },
+   "texto": "📊 <b>RESUMO DE 16/11</b>\n\n🟢 3 Green · 🔴 4 Red\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-18T00:00:51.641688",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 483,
+    "5728356568": 484
+   },
+   "admin_msg": 483
+  }
+ ],
+ "ultimo_resumo": 226,
+ "offset_admin": 820373563,
+ "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA"
+}
