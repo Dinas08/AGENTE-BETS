@@ -3863,9 +3863,36 @@
     "5728356568": 504
    },
    "admin_msg": 503
+  },
+  {
+   "pid": "1719104474",
+   "origem": "tardia",
+   "data": "2026-11-17",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261117-UNL-hungria-irlandadonorte|under_2.5",
+    "match_id": "20261117-UNL-hungria-irlandadonorte",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Hungria x Irlanda do Norte",
+    "prob": 0.5882,
+    "odd_casa": 1.51,
+    "data": "2026-11-17",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🌍 <b>LIGA DAS NAÇÕES – TERÇA 17/11</b>\nHungria x Irlanda do Norte | 19h45\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.51</b>\n\n📊 Golos esperados: Hungria 1.3 – Irlanda do Norte 0.8\n📊 Hungria: 4 vitórias nos últimos 6 jogos\n📊 Irlanda do Norte: 3 vitórias nos últimos 6 jogos\n🚑 Hungria sem Orbán, Vitális\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-17T19:45:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-17T16:45:00",
+   "admin_msgs": {
+    "5575304800": 534,
+    "5728356568": 535
+   },
+   "admin_msg": 534
   }
  ],
  "ultimo_resumo": 226,
- "offset_admin": 820373590,
+ "offset_admin": 820373591,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
