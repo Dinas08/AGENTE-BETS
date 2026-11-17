@@ -56,3 +56,5 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 
 - 2026-11-14 · Outsider da casa em risco de despromoção bate favorito fora (Roménia 2-1 Polónia a 56%, Moldávia 2-1 Cazaquistão a 36% de visitante). 2 casos: motivação não está no modelo; com 3.º caso passa a Ativa (dar +3 a +5 golos marcados ao outsider da casa em jogo decisivo).
 - 2026-11-14 · Brasileirão/Liga MX sem odds: 0-0 a mais (Mirassol–Atlético-MG, Queretaro/León), já coberto pela lição das Américas.
+
+- 2026-11-17 · Seleções: favorito a 47-50% com 2+ defesas fora ou já promovido empata (Israel 1-1 Áustria, Hungria 1-1 NI, Polónia 1-1 Suécia a 40%). 3 casos na semana: preferir "X ou 1/2" ao 1X2 seco e rotação do promovido ≤ −10. A confirmar com mais casos.
