@@ -4,7 +4,8 @@ Previsões para a Liga Portugal, Premier League, LaLiga, Bundesliga, Serie A, Li
 Brugge e St. Gilloise; Gent e Charleroi só em casa), taças nacionais, provas europeias e Américas (Brasileirão,
 Copa do Brasil, Liga Argentina e MLS; aqui só golos e resultado, sem cantos nem cartões) e seleções (Liga das
 Nações, com modelo próprio a partir dos resultados internacionais desde 2020 — `agente/selecoes.py`):
-1X2, dupla hipótese, golos (+/-), ambas marcam, resultado exato, cantos, cartões e combinadas, com
+1X2, dupla hipótese, golos (+/-), ambas marcam, resultado exato, cantos, cartões, handicap asiático (±1.5/±2.5),
+golos de cada equipa, 1.ª parte (golos, equipa marca, resultado ao intervalo), combinadas ("e") e "ou", com
 odds justas e odds das casas. Um agente (Claude) junta notícias, lesões e instabilidade dos clubes e
 escreve um recap depois de cada jornada.
 

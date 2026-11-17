@@ -18,6 +18,9 @@ def outcome(key: str, r) -> bool | None:
     if key.startswith("combo:"):
         parts = [outcome(k, r) for k in key[6:].split("&")]
         return None if None in parts else all(parts)
+    if key.startswith("ou:"):  # basta uma
+        parts = [outcome(k, r) for k in key[3:].split("|")]
+        return True if True in parts else None if None in parts else False
     hg, ag = r["hg"], r["ag"]
     if pd.isna(hg):
         return None
@@ -29,6 +32,25 @@ def outcome(key: str, r) -> bool | None:
         return bool(simple[key])
     if key.startswith("placar_"):
         return key[7:] == f"{int(hg)}-{int(ag)}"
+    if key.startswith("hc_"):
+        _, lado, linha = key.split("_")
+        dif = (hg - ag) if lado == "casa" else (ag - hg)
+        return bool(dif + float(linha) > 0)
+    if key.split("_")[0] in ("casa", "fora") and key.split("_")[1] in ("over", "under"):
+        lado, side, line = key.split("_")
+        g = hg if lado == "casa" else ag
+        return bool(g > float(line)) if side == "over" else bool(g < float(line))
+    if key.startswith("1p_"):
+        h1, a1 = r.get("hthg"), r.get("htag")
+        if h1 is None or a1 is None or pd.isna(h1) or pd.isna(a1):
+            return None
+        k = key[3:]
+        if k in ("1", "X", "2"):
+            return bool({"1": h1 > a1, "X": h1 == a1, "2": h1 < a1}[k])
+        if k in ("casa_marca", "fora_marca"):
+            return bool((h1 if k == "casa_marca" else a1) > 0)
+        side, line = k.split("_")
+        return bool(h1 + a1 > float(line)) if side == "over" else bool(h1 + a1 < float(line))
     if key in ("cantos_mais_casa", "cantos_mais_fora"):
         if pd.isna(r.get("hc")):
             return None

@@ -125,6 +125,12 @@ def match_stats(slug: str, espn_id: str, ttl_hours: float = 24 * 30) -> dict:
     comp = (((data or {}).get("header") or {}).get("competitions") or [{}])[0]
     sides = {c["team"]["id"]: c.get("homeAway") for c in comp.get("competitors", [])}
     out = {}
+    for c in comp.get("competitors", []):  # golos de cada parte (1.ª = intervalo)
+        ls = c.get("linescores") or []
+        try:
+            out["hthg" if c.get("homeAway") == "home" else "htag"] = int(float(ls[0]["displayValue"]))
+        except (IndexError, KeyError, TypeError, ValueError):
+            pass
     for t in teams:
         side = "h" if sides.get(t["team"]["id"], t.get("homeAway")) == "home" else "a"
         s = {x["name"]: x.get("displayValue") for x in t.get("statistics", [])}

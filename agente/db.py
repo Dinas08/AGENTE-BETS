@@ -28,6 +28,10 @@ def conn():
     cols = {r[1] for r in c.execute("PRAGMA table_info(predictions)")}
     if "espn_ref" not in cols:  # migração: referência do jogo no ESPN ("slug|id") para buscar o resultado
         c.execute("ALTER TABLE predictions ADD COLUMN espn_ref TEXT")
+    rcols = {r[1] for r in c.execute("PRAGMA table_info(results)")}
+    for col in ("hthg", "htag"):  # migração: golos ao intervalo (mercados da 1.ª parte)
+        if col not in rcols:
+            c.execute(f"ALTER TABLE results ADD COLUMN {col} INTEGER")
     return c
 
 
@@ -84,7 +88,7 @@ def upsert_result(row: dict):
 
 def load_predictions(with_results=True) -> pd.DataFrame:
     with conn() as c:
-        q = "SELECT p.*, r.hg, r.ag, r.hc, r.ac, r.hy, r.ay, r.hr, r.ar, r.hxg, r.axg FROM predictions p " \
+        q = "SELECT p.*, r.hg, r.ag, r.hc, r.ac, r.hy, r.ay, r.hr, r.ar, r.hxg, r.axg, r.hthg, r.htag FROM predictions p " \
             "LEFT JOIN results r USING(match_id)" if with_results else "SELECT * FROM predictions"
         df = pd.read_sql_query(q, c)
     for col in JSON_COLS:

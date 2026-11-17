@@ -276,7 +276,7 @@ def store_results(finished: list[dict]):
         if s:
             db.upsert_result({"match_id": f["match_id"], "hg": f["hg"], "ag": f["ag"], "hc": s.get("hc"),
                               "ac": s.get("ac"), "hy": s.get("hy"), "ay": s.get("ay"), "hr": s.get("hr"),
-                              "ar": s.get("ar"), "source": "espn"})
+                              "ar": s.get("ar"), "hthg": s.get("hthg"), "htag": s.get("htag"), "source": "espn"})
     for f in [f for f in need if f.get("apif_id")][:MAX_STATS_REQUESTS]:
         try:
             stats = apif.fixture_statistics(f["apif_id"])
@@ -318,7 +318,7 @@ def quick_results() -> list[str]:
                 s = espn.match_stats(slug, ev["espn_id"])
                 db.upsert_result({"match_id": p["match_id"], "hg": ev["hg"], "ag": ev["ag"], "hc": s.get("hc"),
                                   "ac": s.get("ac"), "hy": s.get("hy"), "ay": s.get("ay"), "hr": s.get("hr"),
-                                  "ar": s.get("ar"), "source": "espn"})
+                                  "ar": s.get("ar"), "hthg": s.get("hthg"), "htag": s.get("htag"), "source": "espn"})
                 new.append(p["match_id"])
     # jogos antecipados/remarcados: o ESPN já não os mostra no dia previsto, por isso vão-se buscar pelo id
     atrasados = pending[(pending["kickoff"] < now - pd.Timedelta(hours=6)) & (pending["kickoff"] > now - pd.Timedelta(days=10))]
@@ -329,7 +329,7 @@ def quick_results() -> list[str]:
         slug, eid = p["espn_ref"].split("|")
         s = espn.match_stats(slug, eid)
         db.upsert_result({"match_id": p["match_id"], "hg": res[0], "ag": res[1], "hc": s.get("hc"), "ac": s.get("ac"),
-                          "hy": s.get("hy"), "ay": s.get("ay"), "hr": s.get("hr"), "ar": s.get("ar"), "source": "espn"})
+                          "hy": s.get("hy"), "ay": s.get("ay"), "hr": s.get("hr"), "ar": s.get("ar"), "hthg": s.get("hthg"), "htag": s.get("htag"), "source": "espn"})
         new.append(p["match_id"])
     new += [m for m in rever_estatisticas(preds) if m not in new]
     if new:
@@ -339,7 +339,7 @@ def quick_results() -> list[str]:
     return new
 
 
-STATS = ("hc", "ac", "hy", "ay", "hr", "ar")
+STATS = ("hc", "ac", "hy", "ay", "hr", "ar", "hthg", "htag")
 
 
 def rever_estatisticas(preds: pd.DataFrame) -> list[str]:
@@ -382,6 +382,6 @@ def update_results() -> int:
         val = lambda k: float(r[k]) if k in r and pd.notna(r[k]) else None
         db.upsert_result({"match_id": p["match_id"], "hg": int(r["hg"]), "ag": int(r["ag"]),
                           "hc": val("hc"), "ac": val("ac"), "hy": val("hy"), "ay": val("ay"), "hr": val("hr"),
-                          "ar": val("ar"), "hxg": val("hxg"), "axg": val("axg"), "source": "football-data"})
+                          "ar": val("ar"), "hthg": val("hthg"), "htag": val("htag"), "hxg": val("hxg"), "axg": val("axg"), "source": "football-data"})
         n += 1
     return n

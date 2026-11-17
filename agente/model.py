@@ -1,5 +1,6 @@
 """Modelo estatístico: forças de ataque/defesa por equipa (Poisson com decaimento temporal, estilo Dixon-Coles)
 para golos, cantos e cartões, e cálculo de todos os mercados e combinadas a partir da matriz de resultados."""
+import re
 from dataclasses import dataclass, field
 
 import numpy as np
@@ -231,7 +232,28 @@ def _nb(mean: float, phi: float, kmax: int = 40):
     return nbinom.pmf(k, n, n / (n + mean))
 
 
+HC_LINHAS = ("-2.5", "-1.5", "+1.5", "+2.5")   # handicap asiático (linhas .5: sem devolução)
+EQUIPA_LINHAS = (0.5, 1.5, 2.5)                  # golos de cada equipa
+# parte dos golos marcados na 1.ª parte (medido no histórico das ligas principais: casa 44.8%, fora 43.7%;
+# com Poisson dá 71.7% de jogos com golo ao intervalo, na realidade 72.0%)
+FRACAO_1P = (0.448, 0.437)
+
+
 def label(key: str, home: str = "Casa", away: str = "Fora") -> str:
+    if key.startswith("1p_"):
+        k = key[3:]
+        if k in ("1", "X", "2"):
+            return {"1": f"Intervalo: vitória {home}", "X": "Intervalo: empate", "2": f"Intervalo: vitória {away}"}[k]
+        if k in ("casa_marca", "fora_marca"):
+            return f"{home if k == 'casa_marca' else away} marca na 1.ª parte"
+        side, line = k.split("_")
+        return f"1.ª parte: {'mais' if side == 'over' else 'menos'} de {line} golos"
+    if key.startswith("hc_"):
+        _, lado, linha = key.split("_")
+        return f"Handicap {home if lado == 'casa' else away} {linha}"
+    if re.fullmatch(r"(casa|fora)_(over|under)_\d\.5", key):
+        lado, side, line = key.split("_")
+        return f"{home if lado == 'casa' else away} marca {'mais' if side == 'over' else 'menos'} de {line} golos"
     fixed = {"1": f"Vitória {home}", "X": "Empate", "2": f"Vitória {away}", "1X": f"{home} ou empate",
              "X2": f"{away} ou empate", "12": "Não há empate", "btts_sim": "Ambas marcam",
              "btts_nao": "Ambas não marcam"}
@@ -250,6 +272,9 @@ def label(key: str, home: str = "Casa", away: str = "Fora") -> str:
         return f"{'Mais' if side == 'over' else 'Menos'} de {line} {noun}"
     if key.startswith("combo:"):
         return " + ".join(label(p, home, away) for p in key[6:].split("&"))
+    if key.startswith("ou:"):
+        a, b = (label(p, home, away) for p in key[3:].split("|"))
+        return f"{a} ou {b[0].lower() + b[1:] if b.startswith(('Mais', 'Menos', 'Ambas', 'Vitória', 'Empate')) else b}"
     if key.startswith("placar_"):
         return f"Resultado exato {key[7:]}"
     if key == "casa_marca":
@@ -264,11 +289,16 @@ def label(key: str, home: str = "Casa", away: str = "Fora") -> str:
 
 
 COMBOS_GOALS = [
+    ("1", "over_1.5"), ("2", "over_1.5"), ("1X", "under_2.5"), ("X2", "under_2.5"), ("X", "under_2.5"),
+    ("1", "casa_over_1.5"), ("2", "fora_over_1.5"), ("12", "btts_sim"), ("1X", "over_2.5"), ("X2", "over_2.5"),
     ("1", "btts_sim"), ("2", "btts_sim"), ("X", "btts_sim"), ("1", "over_2.5"), ("2", "over_2.5"),
     ("1", "under_3.5"), ("2", "under_3.5"), ("1X", "under_3.5"), ("X2", "under_3.5"), ("1X", "over_1.5"),
     ("X2", "over_1.5"), ("btts_sim", "over_2.5"), ("1", "casa_sem_sofrer"), ("2", "fora_sem_sofrer"),
     ("1", "btts_nao"), ("2", "btts_nao"), ("12", "over_2.5"), ("1X", "btts_sim"), ("X2", "btts_sim"),
 ]
+# "ou": basta acontecer uma das duas (ex.: ambas marcam ou mais de 2.5 golos)
+OU_GOALS = [("btts_sim", "over_2.5"), ("btts_sim", "over_1.5"), ("1", "over_2.5"), ("2", "over_2.5"),
+            ("1", "btts_sim"), ("2", "btts_sim")]
 COMBOS_CORNERS = [("1", "cantos_over_8.5"), ("over_2.5", "cantos_over_9.5"), ("2", "cantos_over_8.5"),
                   ("1X", "cantos_over_7.5")]
 
@@ -283,6 +313,12 @@ def _goal_masks(n: int):
     masks["casa_sem_sofrer"], masks["fora_sem_sofrer"] = j == 0, i == 0
     for line in (0.5, 1.5, 2.5, 3.5, 4.5):
         masks[f"over_{line}"], masks[f"under_{line}"] = t > line, t < line
+    for line in EQUIPA_LINHAS:
+        masks[f"casa_over_{line}"], masks[f"casa_under_{line}"] = i > line, i < line
+        masks[f"fora_over_{line}"], masks[f"fora_under_{line}"] = j > line, j < line
+    for linha in HC_LINHAS:  # handicap da casa h: ganha se golos_casa + h > golos_fora (e o inverso para a fora)
+        h = float(linha)
+        masks[f"hc_casa_{linha}"], masks[f"hc_fora_{linha}"] = i - j + h > 0, j - i + h > 0
     return masks
 
 
@@ -297,6 +333,10 @@ def markets(exp: dict, adj: dict | None = None) -> dict:
     p = {k: float(m[v].sum()) for k, v in masks.items()}
     for a, b in COMBOS_GOALS:
         p[f"combo:{a}&{b}"] = float(m[masks[a] & masks[b]].sum())
+    for a, b in OU_GOALS:
+        p[f"ou:{a}|{b}"] = float(m[masks[a] | masks[b]].sum())
+
+    p.update(mercados_1p(lh, la))
 
     flat = [(m[i, j], f"{i}-{j}") for i in range(6) for j in range(6)]
     top = sorted(flat, reverse=True)[:6]
@@ -326,6 +366,52 @@ def markets(exp: dict, adj: dict | None = None) -> dict:
             p[f"cartoes_over_{line}"], p[f"cartoes_under_{line}"] = over, 1 - over
         xc.update({"cartoes_casa": yh, "cartoes_fora": ya})
     return {"probs": p, "expected": {k: round(float(v), 2) for k, v in xc.items()}}
+
+
+def mercados_1p(lh: float, la: float) -> dict:
+    """Mercados da 1.ª parte: golos de cada equipa ao intervalo como Poisson com FRACAO_1P dos golos esperados."""
+    n = 8
+    mh, ma = poisson.pmf(np.arange(n), lh * FRACAO_1P[0]), poisson.pmf(np.arange(n), la * FRACAO_1P[1])
+    m = np.outer(mh, ma)
+    i, j = np.meshgrid(np.arange(n), np.arange(n), indexing="ij")
+    p = {"1p_1": m[i > j].sum(), "1p_X": m[i == j].sum(), "1p_2": m[i < j].sum(),
+         "1p_casa_marca": 1 - mh[0], "1p_fora_marca": 1 - ma[0]}
+    for line in (0.5, 1.5):
+        p[f"1p_over_{line}"] = m[i + j > line].sum()
+        p[f"1p_under_{line}"] = 1 - p[f"1p_over_{line}"]
+    return {k: float(v) for k, v in p.items()}
+
+
+def prob_mercado(r, key: str) -> float | None:
+    """Probabilidade de qualquer mercado do jogo, incluindo combinadas que não estão pré-calculadas
+    (ex.: escritas pelo admin): refaz a matriz de resultados com os golos esperados guardados. Pernas da
+    1.ª parte e de cantos/cartões entram como independentes (aproximação)."""
+    probs = r["probs"]
+    if key in probs:
+        return probs[key]
+    if key.startswith("ou:"):  # P(A ou B) = 1 - P(nem A nem B)
+        a, b = key[3:].split("|")
+        pa, pb, pab = prob_mercado(r, a), prob_mercado(r, b), prob_mercado(r, f"combo:{a}&{b}")
+        return None if None in (pa, pb, pab) else pa + pb - pab
+    if not key.startswith("combo:"):
+        return None
+    pernas = key[6:].split("&")
+    e = r.get("expected") or {}
+    if "golos_casa" not in e:
+        return None
+    m = score_matrix(e["golos_casa"], e["golos_fora"])
+    masks = _goal_masks(m.shape[0])
+    golos = [k for k in pernas if k in masks]
+    resto = [k for k in pernas if k not in masks]
+    if any(k not in probs for k in resto):
+        return None
+    mask = np.ones_like(m, dtype=bool)
+    for k in golos:
+        mask &= masks[k]
+    pr = float(m[mask].sum())
+    for k in resto:
+        pr *= probs[k]
+    return pr
 
 
 def estrela(probs: dict, picks: dict) -> str | None:

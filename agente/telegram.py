@@ -15,7 +15,7 @@ import pandas as pd
 import requests
 
 from agente import config, db
-from agente.model import estrela, label
+from agente.model import estrela, label, prob_mercado
 from agente.recap import outcome
 
 STATE = config.DATA_DIR / "telegram.json"
@@ -138,7 +138,7 @@ ODD_ALTA_MIN = 1.80         # dica de odd alta: pelo menos isto
 
 def _boost_ok(key: str) -> bool:
     """Mercados coerentes para a perna boost: resultado, golos e ambas marcam (e combinações deles)."""
-    return not any(x in key for x in ("placar", "cantos", "cartoes", "marca", "sem_sofrer", "under_0.5",
+    return not any(x in key for x in ("placar", "cantos", "cartoes", "marca", "sem_sofrer", "under_0.5", "1p_",
                                      "over_0.5", "over_4.5", "under_4.5")) and key != "X"
 
 
@@ -872,13 +872,23 @@ def interpretar(txt: str, r) -> str | None:
     import re
     t = _norm(txt)
     probs = r["probs"]
-    partes = [x for x in re.split(r"\s*\+\s*|\s+e\s+", t) if x]
+    if " ou " in t and not re.search(r"\bou empate|empate ou\b", t):  # "ambas marcam ou mais de 2.5"
+        ks = [interpretar(x, r) for x in t.split(" ou ", 1)]
+        if all(ks) and ks[0] != ks[1]:
+            for a, b in ((ks[0], ks[1]), (ks[1], ks[0])):
+                if f"ou:{a}|{b}" in probs:
+                    return f"ou:{a}|{b}"
+            if prob_mercado(r, f"ou:{ks[0]}|{ks[1]}") is not None:
+                return f"ou:{ks[0]}|{ks[1]}"
+    partes = [x for x in re.split(r"\s*\+(?!\s*\d)\s*|\s+e\s+", t) if x]
     if len(partes) == 2:
         ks = [interpretar(x, r) for x in partes]
-        if all(ks):
+        if all(ks) and ks[0] != ks[1]:
             for a, b in ((ks[0], ks[1]), (ks[1], ks[0])):
                 if f"combo:{a}&{b}" in probs:
                     return f"combo:{a}&{b}"
+            if prob_mercado(r, f"combo:{ks[0]}&{ks[1]}") is not None:
+                return f"combo:{ks[0]}&{ks[1]}"
         return None
 
     def lado() -> str | None:
@@ -889,10 +899,30 @@ def interpretar(txt: str, r) -> str | None:
         return "casa" if re.search(r"\bcasa\b", t) else "fora" if re.search(r"\bfora\b", t) else None
 
     k = None
-    if m := re.fullmatch(r"(?:resultado exato |placar )?(\d+)\s*[-x:]\s*(\d+)", t):
+    parte = re.search(r"\b(1a?|1\.a|primeira) parte\b|\bintervalo\b|\b1p\b|\bht\b", t)
+    hc = re.search(r"([+-])\s*(\d+\.5)", t)  # só linhas .5 (as que o modelo calcula, sem devolução)
+    if parte:  # 1.ª parte: golos, equipa marca, resultado ao intervalo
+        resto = t[:parte.start()] + t[parte.end():]
+        if m := re.search(r"(\d\.5)", resto):
+            sob = re.search(r"\b(menos|under|u|abaixo)\b", resto)
+            l = lado() if re.search(r"\bmarca", resto) and m[1] == "0.5" else None
+            k = f"1p_{l}_marca" if l and not sob else f"1p_{'under' if sob else 'over'}_{m[1]}"
+        elif re.search(r"\bmarca", resto) and (l := lado()):
+            k = f"1p_{l}_marca"
+        elif "empate" in resto:
+            k = "1p_X"
+        elif l := lado():
+            k = "1p_1" if l == "casa" else "1p_2"
+    elif hc and (l := lado()) and not re.search(r"canto|cart", t):  # handicap: "Benfica -1.5"
+        k = f"hc_{l}_{hc[1]}{hc[2]}"
+    elif (m := re.search(r"(\d\.5)", t)) and re.search(r"\bmarca", t) and (l := lado()) \
+            and not re.search(r"canto|cart", t):  # golos de uma equipa: "Benfica marca mais de 1.5"
+        sob = re.search(r"\b(menos|under|u|abaixo)\b", t)
+        k = f"{l}_{'under' if sob else 'over'}_{m[1]}"
+    elif m := re.fullmatch(r"(?:resultado exato |placar )?(\d+)\s*[-x:]\s*(\d+)", t):
         k = f"placar_{m[1]}-{m[2]}"
     elif m := re.search(r"(\d+\.5)", t):
-        sob = re.search(r"\b(menos|under|u)\b|(^|\s)-\s*\d", t)
+        sob = re.search(r"\b(menos|under|u|abaixo)\b|(^|\s)-\s*\d", t)
         tipo = "cantos_" if "canto" in t or "corner" in t else "cartoes_" if "cart" in t else ""
         k = f"{tipo}{'under' if sob else 'over'}_{m[1]}"
     elif "ambas" in t or "btts" in t or t in ("gg", "ng"):
@@ -936,7 +966,7 @@ def _trocar(s: dict, m: dict) -> None:
              text="🤔 Não percebi essa aposta (ou o modelo não a calcula, e assim não dava para dar o Green/Red). "
                   "Responde outra vez à mensagem de cima." + (f"\n\nExemplos:\n{sug}" if sug else ""))
         return
-    prob = r["probs"][key]
+    prob = prob_mercado(r, key)
     if t["i"] >= 0:  # perna da múltipla
         mm = x["registo"]
         nova = _perna(r, key, prob, dt.date.fromisoformat(x["data"]))

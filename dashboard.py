@@ -111,6 +111,10 @@ MARKET_TYPES = {
     "Dupla hipótese": ["1X", "X2", "12"],
     "Golos": [f"{s}_{l}" for l in (1.5, 2.5, 3.5) for s in ("over", "under")],
     "Ambas marcam": ["btts_sim", "btts_nao"],
+    "Handicap": [f"hc_{l}_{h}" for l in ("casa", "fora") for h in ("-2.5", "-1.5", "+1.5", "+2.5")],
+    "Golos por equipa": [f"{l}_{s}_{n}" for l in ("casa", "fora") for n in (0.5, 1.5, 2.5) for s in ("over", "under")],
+    "1.ª parte": ["1p_1", "1p_X", "1p_2", "1p_over_0.5", "1p_under_0.5", "1p_over_1.5", "1p_under_1.5",
+                  "1p_casa_marca", "1p_fora_marca"],
     "Cantos": [f"cantos_{s}_{l}" for l in (8.5, 9.5, 10.5) for s in ("over", "under")],
     "Cartões": [f"cartoes_{s}_{l}" for l in (3.5, 4.5) for s in ("over", "under")],
     "Combinadas do jogo": None,
@@ -423,7 +427,7 @@ def candidates(df, types, min_p, only_odds) -> pd.DataFrame:
         keys = []
         for t in types:
             ks = MARKET_TYPES[t]
-            keys += [k for k in r["probs"] if k.startswith("combo:")] if ks is None else ks
+            keys += [k for k in r["probs"] if k.startswith(("combo:", "ou:"))] if ks is None else ks
         for k in keys:
             pr = r["probs"].get(k)
             if pr is None or pr < min_p:
