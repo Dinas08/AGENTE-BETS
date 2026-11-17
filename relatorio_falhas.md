@@ -1,11 +1,11 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 17/11/2026 21:40. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 17/11/2026 21:50. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 26 Green · 11 Red → **70%** de acerto (o modelo esperava 64%).
-- **Últimos 30 dias:** 62 Green · 27 Red → **70%** de acerto (o modelo esperava 64%).
-- **Desde o início:** 62 Green · 27 Red → **70%** de acerto (o modelo esperava 64%).
-- **Múltiplas:** 7 Green em 16.
+- **Últimos 7 dias:** 27 Green · 11 Red → **71%** de acerto (o modelo esperava 64%).
+- **Últimos 30 dias:** 63 Green · 27 Red → **70%** de acerto (o modelo esperava 64%).
+- **Desde o início:** 63 Green · 27 Red → **70%** de acerto (o modelo esperava 64%).
+- **Múltiplas:** 8 Green em 17.
 
 ## Alertas
 - Nenhum grupo com 8+ dicas abaixo do esperado. 👌
@@ -13,7 +13,7 @@ _Atualizado automaticamente a 17/11/2026 21:40. Só dicas publicadas e já decid
 ## Por mercado
 | Mercado | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| Golos +/- | 33 | 70% | 66% | ✅ bem |
+| Golos +/- | 34 | 71% | 66% | ✅ bem |
 | Resultado 1X2 | 27 | 81% | 65% | ⬆️ confiança a menos |
 | Ambas marcam | 14 | 57% | 59% | ✅ bem |
 | Cantos | 6 | 67% | 61% | ⏳ poucos dados |
@@ -24,7 +24,7 @@ _Atualizado automaticamente a 17/11/2026 21:40. Só dicas publicadas e já decid
 ## Por liga
 | Liga | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| Liga das Nações | 37 | 70% | 64% | ✅ bem |
+| Liga das Nações | 38 | 71% | 64% | ✅ bem |
 | Serie A | 9 | 67% | 62% | ✅ bem |
 | Premier League | 8 | 75% | 59% | ⬆️ confiança a menos |
 | Liga Portugal | 7 | 43% | 64% | ⏳ poucos dados |
@@ -42,20 +42,20 @@ _Atualizado automaticamente a 17/11/2026 21:40. Só dicas publicadas e já decid
 | Faixa | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
 | 55-65% | 39 | 69% | 60% | ⬆️ confiança a menos |
-| 65-75% | 30 | 70% | 69% | ✅ bem |
+| 65-75% | 31 | 71% | 69% | ✅ bem |
 | < 55% | 12 | 50% | 53% | ✅ bem |
 | ≥ 75% | 8 | 100% | 78% | ⬆️ confiança a menos |
 
 ## Por tipo de dica
 | Tipo | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| ☀️ Manhã | 72 | 75% | 65% | ⬆️ confiança a menos |
+| ☀️ Manhã | 73 | 75% | 65% | ⬆️ confiança a menos |
 | 💎 Odd alta | 7 | 14% | 56% | ⏳ poucos dados |
 | 🌙 Tardia | 6 | 67% | 61% | ⏳ poucos dados |
 | 🌎 Américas | 4 | 75% | 59% | ⏳ poucos dados |
 
 ## Extras não publicadas
-Das 6 apostas extra que ficaram por publicar, 4 teriam dado Green (**67%**), contra 70% das publicadas.
+Das 7 apostas extra que ficaram por publicar, 5 teriam dado Green (**71%**), contra 70% das publicadas.
 
 ## Últimos Reds
 - 17/11 · Polónia x Suécia **1-1** · Mais de 2.5 golos (65%, Golos +/-)

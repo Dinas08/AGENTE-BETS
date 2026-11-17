@@ -1122,7 +1122,7 @@
    "prob": 0.6732,
    "odd_casa": null,
    "data": "2026-11-17",
-   "resultado": null,
+   "resultado": true,
    "message_id": 230
   },
   {
@@ -1845,7 +1845,7 @@
     }
    ],
    "prob": 0.3802,
-   "resultado": null,
+   "resultado": true,
    "message_id": 234
   }
  ],
@@ -4004,9 +4004,47 @@
     "5728356568": 547
    },
    "admin_msg": 546
+  },
+  {
+   "pid": "1721504481",
+   "origem": "resultado",
+   "data": "2026-11-17",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 230,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nDinamarca 2-3 Noruega",
+   "expira": "2026-11-18T21:50:44.021019",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 548,
+    "5728356568": 549
+   },
+   "admin_msg": 548
+  },
+  {
+   "pid": "1721504582",
+   "origem": "resultado",
+   "data": "2026-11-17",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 234,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN NA MÚLTIPLA!</b> 💰",
+   "expira": "2026-11-18T21:50:45.040271",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 550,
+    "5728356568": 551
+   },
+   "admin_msg": 550
   }
  ],
  "ultimo_resumo": 226,
- "offset_admin": 820373597,
+ "offset_admin": 820373599,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
