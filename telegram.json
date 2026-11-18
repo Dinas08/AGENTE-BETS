@@ -3652,7 +3652,12 @@
    "expira": "2026-11-19T00:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-18T21:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 564,
+    "5728356568": 565
+   },
+   "admin_msg": 564
   },
   {
    "pid": "1821011367",
@@ -3676,7 +3681,12 @@
    "expira": "2026-11-19T00:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-18T21:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 566,
+    "5728356568": 567
+   },
+   "admin_msg": 566
   }
  ],
  "ultimo_resumo": 243,
