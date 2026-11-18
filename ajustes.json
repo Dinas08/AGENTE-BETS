@@ -1,215 +1,6 @@
 {
-  "atualizado_em": "2026-11-17",
+  "atualizado_em": "2026-11-18",
   "equipas": {
-    "Sérvia": {
-      "golos_marcados": -12,
-      "golos_sofridos": 7,
-      "motivo": "Vlahovic (pessoal), Mitrovic lesionado, Pavlovic em dúvida, Lukic e Maksimovic suspensos",
-      "ausentes": [
-        {
-          "jogador": "Dusan Vlahovic",
-          "motivo": "recusou convocatória (pessoal)",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Aleksandar Mitrovic",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Strahinja Pavlovic",
-          "motivo": "lesão/em dúvida",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Sasa Lukic",
-          "motivo": "castigo",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Nemanja Maksimovic",
-          "motivo": "castigo",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "https://www.t-online.de/sport/fussball/international/id_101521058/vor-nations-league-spiel-gegen-deutschland-vlahovic-sagt-serbien-ab.html"
-      ],
-      "valido_ate": "2026-11-16"
-    },
-    "Alemanha": {
-      "golos_marcados": -5,
-      "golos_sofridos": 3,
-      "motivo": "Musiala, Gnabry, Havertz, Schlotterbeck, Anton, Ouédraogo e Stiller fora; Klopp sob pressão",
-      "ausentes": [
-        {
-          "jogador": "Jamal Musiala",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Serge Gnabry",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Kai Havertz",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Nico Schlotterbeck",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Waldemar Anton",
-          "motivo": "lesão muscular",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Assan Ouédraogo",
-          "motivo": "lesão",
-          "importancia": "rotação"
-        },
-        {
-          "jogador": "Angelo Stiller",
-          "motivo": "lesão",
-          "importancia": "rotação"
-        }
-      ],
-      "fontes": [
-        "https://www.sportschau.de/fussball/nationalmannschaft/erfolgserlebnis-gegen-serbien-noetig-klopp-unter-druck,dfb-610.html",
-        "https://nationalmannschaft.net/dfb-kader-serbien-niederlande/"
-      ],
-      "valido_ate": "2026-11-16"
-    },
-    "Países Baixos": {
-      "golos_marcados": -6,
-      "golos_sofridos": 8,
-      "motivo": "Van Dijk, Brobbey, Hato, Aké, Frimpong e Gravenberch fora",
-      "ausentes": [
-        {
-          "jogador": "Virgil van Dijk",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Brian Brobbey",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Jorrel Hato",
-          "motivo": "lesão ligeira",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Nathan Aké",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Jeremie Frimpong",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Ryan Gravenberch",
-          "motivo": "desistiu (dor)",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "https://www.goal.com/en/news/netherlands-international-withdraws-due-to-injury-but-his-club-tell-a-different-story/blt9309677385ea4767",
-        "https://sports.yahoo.com/articles/netherlands-injury-liverpool-captain-virgil-220346283.html"
-      ],
-      "valido_ate": "2026-11-16"
-    },
-    "Suíça": {
-      "golos_marcados": -6,
-      "golos_sofridos": 3,
-      "motivo": "Xhaka (gémeo), Vargas e Muheim fora",
-      "ausentes": [
-        {
-          "jogador": "Granit Xhaka",
-          "motivo": "lesão no gémeo",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Ruben Vargas",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Miro Muheim",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Zeki Amdouni",
-          "motivo": "lesão no tornozelo",
-          "importancia": "rotação"
-        }
-      ],
-      "fontes": [
-        "https://www.freemalaysiatoday.com/category/sports/2026/11/10/xhaka-out-of-swiss-nations-league-squad-due-to-calf-injury"
-      ],
-      "valido_ate": "2026-11-16"
-    },
-    "Escócia": {
-      "golos_marcados": 0,
-      "golos_sofridos": 5,
-      "motivo": "McKenna, McLean, Welsh e Binks fora (defesa remendada: Porteous/Bates); McTominay e Adams regressam",
-      "ausentes": [
-        {
-          "jogador": "Scott McKenna",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Kenny McLean",
-          "motivo": "lesão",
-          "importancia": "rotação"
-        },
-        {
-          "jogador": "Stephen Welsh",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Luis Binks",
-          "motivo": "lesão",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "https://www.skysports.com/football/news/13607109/scotland-james-penrice-included-in-sebastien-pocognolis-squad-with-scott-mctominay-back-for-nations-league-double-header",
-        "https://www.scotsman.com/sport/football/international/scotland-team-to-play-north-macedonia-where-mctominay-fits-in-new-look-defence-striker-decision-9345477"
-      ],
-      "valido_ate": "2026-11-16"
-    },
-    "Grécia": {
-      "golos_marcados": -2,
-      "golos_sofridos": 2,
-      "motivo": "Zafeiris e Saliakas suspensos (acumulação de amarelos)",
-      "ausentes": [
-        {
-          "jogador": "Christos Zafeiris",
-          "motivo": "castigo",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Manolis Saliakas",
-          "motivo": "castigo",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "https://khelnow.com/football/netherlands-vs-greece-preview-uefa-nations-league-202611"
-      ],
-      "valido_ate": "2026-11-16"
-    },
     "Portugal": {
       "golos_marcados": -2,
       "golos_sofridos": 5,
@@ -264,70 +55,6 @@
       ],
       "valido_ate": "2026-11-18"
     },
-    "Geórgia": {
-      "golos_marcados": -6,
-      "golos_sofridos": 2,
-      "motivo": "Kvaratskhelia fora (cirurgia ao ligamento cruzado); Kochorashvili suspenso (artigos 13-14/11); sem golos marcados na prova",
-      "valido_ate": "2026-11-17",
-      "ausentes": [
-        {
-          "jogador": "Kvaratskhelia",
-          "motivo": "lesão (LCA)",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Kochorashvili",
-          "motivo": "castigo",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "https://footballwhispers.com/blog/georgia-vs-hungary-prediction-14-11-2026/",
-        "https://www.sportsmole.co.uk/football/hungary/uefa-nations-league/preview/georgia-vs-hungary-prediction-team-news-lineups_608996.html"
-      ]
-    },
-    "Kosovo": {
-      "golos_marcados": 0,
-      "golos_sofridos": 3,
-      "motivo": "Dellova e Hajdari (defesas) fora; Krasniqi dúvida; Rexhbecaj regressa (previews 12-14/11)",
-      "valido_ate": "2026-11-17",
-      "ausentes": [
-        {
-          "jogador": "Dellova",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Hajdari",
-          "motivo": "lesão",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "https://www.sportsgambler.com/betting-tips/football/kosovo-vs-israel-prediction-lineups-odds-2026-11-14/"
-      ]
-    },
-    "Israel": {
-      "golos_marcados": -2,
-      "golos_sofridos": 0,
-      "motivo": "Manor Solomon e Revivo em dúvida; Khalaili fora (previews 12-14/11)",
-      "valido_ate": "2026-11-17",
-      "ausentes": [
-        {
-          "jogador": "Manor Solomon",
-          "motivo": "dúvida",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Revivo",
-          "motivo": "queixa muscular (dúvida)",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "https://www.sportsgambler.com/betting-tips/football/kosovo-vs-israel-prediction-lineups-odds-2026-11-14/"
-      ]
-    },
     "Roménia": {
       "golos_marcados": -4,
       "golos_sofridos": 2,
@@ -359,106 +86,6 @@
         "https://scoregpt.app/ai-football-predictions/nations-league/romania-vs-poland-2026-11-14",
         "https://www.byteseu.com/2525199/"
       ]
-    },
-    "Polónia": {
-      "golos_marcados": -5,
-      "golos_sofridos": 5,
-      "motivo": "Kiwior suspenso, Kamiński (muscular) e Cash fora, Frankowski saiu da concentração; luta para evitar a descida",
-      "ausentes": [
-        {
-          "jogador": "Jakub Kiwior",
-          "motivo": "castigo",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Jakub Kamiński",
-          "motivo": "lesão muscular",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Matty Cash",
-          "motivo": "lesão no maxilar",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Przemysław Frankowski",
-          "motivo": "saiu da concentração",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "Interia via ua.news 15/11/2026",
-        "https://ua.news/en/world/uefa-ogolosiv-arbitra-matchu-polshcha-shvetsiia-interia-sport"
-      ],
-      "valido_ate": "2026-11-17"
-    },
-    "Suécia": {
-      "golos_marcados": -2,
-      "golos_sofridos": 2,
-      "motivo": "Wålemark saiu da concentração (lesão); Kulusevski regressa (~30 min); Emil Holm fora (coxa)",
-      "ausentes": [
-        {
-          "jogador": "Patrik Wålemark",
-          "motivo": "lesão no treino",
-          "importancia": "rotação"
-        },
-        {
-          "jogador": "Emil Holm",
-          "motivo": "lesão na coxa",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "Interia via ua.news 15/11/2026"
-      ],
-      "valido_ate": "2026-11-17"
-    },
-    "Islândia": {
-      "golos_marcados": -5,
-      "golos_sofridos": 3,
-      "motivo": "Stefán Teitur e Kristall Máni lesionados, Hörður Magnússon suspenso, Elías Rafn fora (rim); Sverrir Ingi fora (previews 16/11)",
-      "ausentes": [
-        {
-          "jogador": "Stefán Teitur Thórdarson",
-          "motivo": "lesão (saiu contra Bulgária)",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Kristall Máni Ingason",
-          "motivo": "lesão",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Hörður Magnússon",
-          "motivo": "castigo (2.º amarelo)",
-          "importancia": "titular"
-        },
-        {
-          "jogador": "Elías Rafn Ólafsson",
-          "motivo": "cirurgia ao rim",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "https://www.sportsmole.co.uk/football/iceland/uefa-nations-league/preview/iceland-vs-luxembourg-prediction-team-news-lineups_609129.html"
-      ],
-      "valido_ate": "2026-11-17"
-    },
-    "Luxemburgo": {
-      "golos_marcados": 0,
-      "golos_sofridos": 3,
-      "motivo": "Natami suspenso; Carlson regressa (previews 16/11)",
-      "ausentes": [
-        {
-          "jogador": "Omar Natami",
-          "motivo": "castigo",
-          "importancia": "titular"
-        }
-      ],
-      "fontes": [
-        "https://www.sportsmole.co.uk/football/iceland/uefa-nations-league/preview/iceland-vs-luxembourg-prediction-team-news-lineups_609129.html"
-      ],
-      "valido_ate": "2026-11-17"
     },
     "Dinamarca": {
       "golos_marcados": -4,
@@ -582,28 +209,164 @@
         "https://irishtimes.com/sport/soccer/2026/11/16/ireland-captain-nathan-collins-ruled-out-for-kosovo-game"
       ],
       "valido_ate": "2026-11-18"
+    },
+    "Bayern Munich": {
+      "golos_marcados": -3,
+      "golos_sofridos": 0,
+      "motivo": "Davies lesionado; Musiala (8 semanas fora) em dúvida; Kompany a regressar ao banco (decisão médica)",
+      "ausentes": [
+        {
+          "jogador": "Alphonso Davies",
+          "motivo": "nova lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Jamal Musiala",
+          "motivo": "regresso incerto após ~8 semanas",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://sport.sky.de/fussball/artikel/fc-bayern-hofft-gegen-koeln-auf-die-rueckkehr-von-jamal-musiala-und-vincent-kompany/13612856/34942 (pesquisa, meados nov 2026)"
+      ],
+      "valido_ate": "2026-11-22"
+    },
+    "Porto": {
+      "golos_marcados": -8,
+      "golos_sofridos": 0,
+      "motivo": "Taça vs Liga 3: rotação, equipa B chamada, Smalling/Vasco Sousa lesionados, Mec duvidoso; modelo com dados limitados (98%)",
+      "ausentes": [
+        {
+          "jogador": "Chris Smalling",
+          "motivo": "lesão",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Vasco Sousa",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Gabriel Mec",
+          "motivo": "lesão (duvidoso)",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.dazn.com/pt-PT/news/outros/fc-porto-x-paredes/pru5luksla9p18wg9ill0helv (pesquisa, 18 nov 2026)"
+      ],
+      "valido_ate": "2026-11-22"
+    },
+    "Sp Lisbon": {
+      "golos_marcados": -10,
+      "golos_sofridos": 0,
+      "motivo": "Taça vs União da Serra: rotação provável (Suárez poupado), Flávio Gonçalves fora com problemas físicos; dados limitados",
+      "ausentes": [
+        {
+          "jogador": "Flávio Gonçalves",
+          "motivo": "problemas físicos (seleção)",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Luis Suárez",
+          "motivo": "poupado",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://abola.pt/noticias/sporting-regressos-antecipados-e-uma-preocupacao-agitam-inicio-da-semana-2026111617412385988 (pesquisa, 16 nov 2026)"
+      ],
+      "valido_ate": "2026-11-22"
+    },
+    "Arsenal": {
+      "golos_marcados": -2,
+      "golos_sofridos": 0,
+      "motivo": "Zubimendi (músculo) e Tzolis (MRI, desconforto) em dúvida",
+      "ausentes": [
+        {
+          "jogador": "Martin Zubimendi",
+          "motivo": "lesão muscular (dúvida)",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Christos Tzolis",
+          "motivo": "desconforto (dúvida)",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/positive-update-early-mri-boost-for-gunners-before-clash-with-magpies_609187.html (pesquisa, nov 2026)"
+      ],
+      "valido_ate": "2026-11-22"
+    },
+    "Real Madrid": {
+      "golos_marcados": -2,
+      "golos_sofridos": 0,
+      "motivo": "Rodrygo e Asencio fora até dezembro; Tchouaméni duvidoso",
+      "ausentes": [
+        {
+          "jogador": "Rodrygo",
+          "motivo": "cruzados/menisco, até dezembro",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Raúl Asencio",
+          "motivo": "lesão, até dezembro",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Tchouaméni",
+          "motivo": "adutor (dúvida)",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.futbolfantasy.com/partidos/22550-real-madrid-celta (pesquisa, nov 2026)"
+      ],
+      "valido_ate": "2026-11-22"
+    },
+    "Celta": {
+      "golos_marcados": -3,
+      "golos_sofridos": 0,
+      "motivo": "Borja Iglesias (gémeo) e Miguel Román fora",
+      "ausentes": [
+        {
+          "jogador": "Borja Iglesias",
+          "motivo": "rotura gémeo",
+          "importancia": "titular"
+        },
+        {
+          "jogador": "Miguel Román",
+          "motivo": "artroscopia joelho",
+          "importancia": "rotação"
+        }
+      ],
+      "fontes": [
+        "https://comuniate.com/noticias/39015/celta-partes-medicos-actualizados (pesquisa, nov 2026)"
+      ],
+      "valido_ate": "2026-11-22"
+    },
+    "Roma": {
+      "golos_marcados": 0,
+      "golos_sofridos": 0,
+      "motivo": "Dybala, Koné, Mancini e Svilar recuperados; Rensch e Pellegrini fora (sem ajuste)",
+      "ausentes": [
+        {
+          "jogador": "Devyne Rensch",
+          "motivo": "lesão",
+          "importancia": "rotação"
+        },
+        {
+          "jogador": "Lorenzo Pellegrini",
+          "motivo": "lesão",
+          "importancia": "titular"
+        }
+      ],
+      "fontes": [
+        "https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/18-152662225/gasperini_recupera_quattro_titolari_per_parma_da_dybala_a_kon_tutto_sulle_loro_condizioni (18 nov 2026)"
+      ],
+      "valido_ate": "2026-11-22"
     }
   },
-  "jogos": {
-    "20261115-UNL-blgica-itlia": {
-      "cartoes": 0,
-      "nota": "Árbitro Espen Eskas (NOR); média de amarelos não confirmada"
-    },
-    "20261115-UNL-espanha-inglaterra": {
-      "cartoes": 5,
-      "nota": "Árbitro Clément Turpin (FRA); média não confirmada; jogo decisivo pelo 1.º lugar (+5)"
-    },
-    "20261116-UNL-alemanha-pasesbaixos": {
-      "cartoes": -10,
-      "nota": "Árbitro Glenn Nyberg (SWE): ~3.3 amarelos/jogo (1281 em 391)"
-    },
-    "20261117-UNL-pasdegales-portugal": {
-      "cartoes": 0,
-      "nota": "Árbitro Sven Jablonski (GER): ~3.6-3.9 amarelos/jogo, normal"
-    },
-    "20261117-UNL-polnia-sucia": {
-      "cartoes": 0,
-      "nota": "Árbitro Felix Zwayer (GER, confirmado UEFA); média não confirmada"
-    }
-  }
+  "jogos": {}
 }
