@@ -1189,6 +1189,33 @@
    "tipo": "madrugada",
    "extra": true,
    "message_id": 245
+  },
+  {
+   "id": "20261119-BRA-vasco-internacional|1",
+   "match_id": "20261119-BRA-vasco-internacional",
+   "key": "1",
+   "texto": "Vitória Vasco",
+   "jogo": "Vasco x Internacional",
+   "prob": 0.6336,
+   "odd_casa": 1.63,
+   "data": "2026-11-19",
+   "resultado": null,
+   "tipo": "madrugada",
+   "message_id": 249
+  },
+  {
+   "id": "20261119-BRA-vitoria-bragantino|btts_sim",
+   "match_id": "20261119-BRA-vitoria-bragantino",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Vitoria x Bragantino",
+   "prob": 0.5468,
+   "odd_casa": null,
+   "data": "2026-11-19",
+   "resultado": null,
+   "tipo": "madrugada",
+   "extra": true,
+   "message_id": 250
   }
  ],
  "multiplas": [
@@ -3320,9 +3347,135 @@
     "5728356568": 575
    },
    "admin_msg": 574
+  },
+  {
+   "pid": "1921010854",
+   "origem": "madrugada",
+   "data": "2026-11-19",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261119-BRA-vasco-internacional|1",
+    "match_id": "20261119-BRA-vasco-internacional",
+    "key": "1",
+    "texto": "Vitória Vasco",
+    "jogo": "Vasco x Internacional",
+    "prob": 0.6336,
+    "odd_casa": 1.63,
+    "data": "2026-11-19",
+    "resultado": null,
+    "tipo": "madrugada"
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇧🇷 <b>BRASILEIRÃO – QUINTA 19/11</b>\nVasco x Internacional | 22h30\n\n✅ <b>Dica: Vitória Vasco</b>\n💰 Odd: <b>1.63</b>\n\n📊 Golos esperados: Vasco 2.0 – Internacional 0.9\n📊 Vasco: 3 vitórias nos últimos 6 jogos\n📊 Internacional: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-19T22:30:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-19T19:30:00",
+   "admin_msgs": {
+    "5575304800": 576,
+    "5728356568": 577
+   },
+   "admin_msg": 576
+  },
+  {
+   "pid": "1921010855",
+   "origem": "madrugada",
+   "data": "2026-11-19",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261120-USA-orlandocity-fccincinnati|btts_sim",
+    "match_id": "20261120-USA-orlandocity-fccincinnati",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Orlando City x FC Cincinnati",
+    "prob": 0.695,
+    "odd_casa": null,
+    "data": "2026-11-19",
+    "resultado": null,
+    "tipo": "madrugada"
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – SEXTA 20/11</b>\nOrlando City x FC Cincinnati | 00h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.44</b> (mínima com valor)\n\n📊 Golos esperados: Orlando City 1.9 – FC Cincinnati 1.7\n📊 Orlando City: 2 vitórias nos últimos 6 jogos\n📊 FC Cincinnati: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-20T00:30:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-19T21:30:00"
+  },
+  {
+   "pid": "1921010856",
+   "origem": "madrugada",
+   "data": "2026-11-19",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261119-BRA-vitoria-bragantino|btts_sim",
+    "match_id": "20261119-BRA-vitoria-bragantino",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Vitoria x Bragantino",
+    "prob": 0.5468,
+    "odd_casa": null,
+    "data": "2026-11-19",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇧🇷 <b>BRASILEIRÃO – QUINTA 19/11</b>\nVitoria x Bragantino | 22h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.83</b> (mínima com valor)\n\n📊 Golos esperados: Vitoria 1.3 – Bragantino 1.3\n📊 Vitoria: 1 vitória nos últimos 6 jogos\n📊 Bragantino: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-19T22:30:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-19T19:30:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 578,
+    "5728356568": 579
+   },
+   "admin_msg": 578
+  },
+  {
+   "pid": "1921010857",
+   "origem": "madrugada",
+   "data": "2026-11-19",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261120-BRA-saopaulo-fluminense|under_2.5",
+    "match_id": "20261120-BRA-saopaulo-fluminense",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Sao Paulo x Fluminense",
+    "prob": 0.5285,
+    "odd_casa": 1.69,
+    "data": "2026-11-19",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇧🇷 <b>BRASILEIRÃO – SEXTA 20/11</b>\nSao Paulo x Fluminense | 00h30\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.69</b>\n\n📊 Golos esperados: Sao Paulo 1.3 – Fluminense 1.1\n📊 Sao Paulo: 2 vitórias nos últimos 6 jogos\n📊 Fluminense: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-20T00:30:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-19T21:30:00",
+   "extra": true
+  },
+  {
+   "pid": "1921010858",
+   "origem": "madrugada",
+   "data": "2026-11-19",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261120-USA-seattlesounders-realsaltlake|btts_sim",
+    "match_id": "20261120-USA-seattlesounders-realsaltlake",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Seattle Sounders x Real Salt Lake",
+    "prob": 0.5901,
+    "odd_casa": null,
+    "data": "2026-11-19",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – SEXTA 20/11</b>\nSeattle Sounders x Real Salt Lake | 03h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.69</b> (mínima com valor)\n\n📊 Golos esperados: Seattle Sounders 1.7 – Real Salt Lake 1.2\n📊 Seattle Sounders: 1 vitória nos últimos 6 jogos\n📊 Real Salt Lake: 4 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-20T03:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-20T00:00:00",
+   "extra": true
   }
  ],
  "ultimo_resumo": 248,
- "offset_admin": 820373605,
+ "offset_admin": 820373607,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
