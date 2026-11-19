@@ -3395,7 +3395,12 @@
    "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – SEXTA 20/11</b>\nOrlando City x FC Cincinnati | 00h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.44</b> (mínima com valor)\n\n📊 Golos esperados: Orlando City 1.9 – FC Cincinnati 1.7\n📊 Orlando City: 2 vitórias nos últimos 6 jogos\n📊 FC Cincinnati: 3 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-20T00:30:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-19T21:30:00"
+   "enviar_a": "2026-11-19T21:30:00",
+   "admin_msgs": {
+    "5575304800": 582,
+    "5728356568": 583
+   },
+   "admin_msg": 582
   },
   {
    "pid": "1921010856",
@@ -3448,7 +3453,12 @@
    "expira": "2026-11-20T00:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-19T21:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 584,
+    "5728356568": 585
+   },
+   "admin_msg": 584
   },
   {
    "pid": "1921010858",
