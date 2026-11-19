@@ -6,7 +6,7 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 
 ## Ativas
 
-- **2026-10-31 · Equipas em zona de descida sobrevalorizadas.** Evidência: Gladbach (último, 47% em casa, 0-0 e 7/7 falhados) e Sunderland
+- **2026-10-31 · Equipas em zona de descida sobrevalorizadas.** Evidência (18/11: Grémio, 18.º, 0-0 em casa com Bahia a 42%, 5 mercados falhados): Gladbach (último, 47% em casa, 0-0 e 7/7 falhados) e Sunderland
   (último, 41% fora, perdeu 1-3). Confirmado a 06/11: Hamburg 3-1 Gladbach (Gladbach sem vitórias, vermelho). O que fazer: rever sempre a tabela. Se uma equipa dos 3 últimos aparecer como favorita, aplicar o ajuste de crise
   (−3 a −8 nos golos marcados e +3 a +5 nos sofridos), salvo notícias que o contrariem.
 - **2026-10-31 · "Mais de 2.5" sobrestimado quando o favorito tem uma defesa sólida.** Evidência (reforçada a 05/11: quinta europeia 15/36; e a 07/11: Sporting 1-0 Moreirense a 64%, Stuttgart 1-0 Bremen a 69%): Benfica 1-0 Alverca (S45, 68% e falhou); 7 das 9 falhas de golos da S44 foram "Mais 2.5"
@@ -19,7 +19,7 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 
 - **2026-11-07 · Quebra de forma de grandes equipas não captada pelo modelo.** Evidência: Man City (2 derrotas seguidas, perdeu 3-1 em Forest como favorito a 53%, sem Semenyo). O que fazer: com grande equipa em 2+ derrotas seguidas ou com baixa de peso, aplicar −3 a −5 nos golos marcados e não dar mais de 50% de vitória fora.
 
-- **2026-11-08 · MLS/Liga MX sem odds: "Mais 2.5" e BTTS demasiado generosos.** Evidência (15/11: Queretaro 0-1 Monterrey 58%/60%, Chapecoense 0-2 Vasco Mais 2.5 a 62% falharam): sábado ~8/15 falhados; domingo San Diego 0-1 Sporting KC (75%/68%), Houston 0-1 St. Louis, Austin 0-2 Portland; 09/11 Liga MX: Queretaro 0-2 Puebla (Mais 2.5 e BTTS a 55%), León 1-1 Chivas (Mais 2.5 a 56%). O que fazer: sem odds nas Américas, −5 a −8 nos golos esperados dos dois lados e não usar "Mais 2.5"/BTTS como mercado principal acima de 60%.
+- **2026-11-08 · MLS/Liga MX sem odds: "Mais 2.5" e BTTS demasiado generosos.** Evidência (18/11 Brasileirão: Grémio 0-0 Bahia, Coritiba 0-1 Santos, Remo 2-0 Chape com Mais 2.5 a 56-57% falhados, BTTS 2/6; 15/11: Queretaro 0-1 Monterrey 58%/60%, Chapecoense 0-2 Vasco Mais 2.5 a 62% falharam): sábado ~8/15 falhados; domingo San Diego 0-1 Sporting KC (75%/68%), Houston 0-1 St. Louis, Austin 0-2 Portland; 09/11 Liga MX: Queretaro 0-2 Puebla (Mais 2.5 e BTTS a 55%), León 1-1 Chivas (Mais 2.5 a 56%). O que fazer: sem odds nas Américas, −5 a −8 nos golos esperados dos dois lados e não usar "Mais 2.5"/BTTS como mercado principal acima de 60%.
 - **2026-11-08 · Ajuste de "crise" a equipas em descida não funciona em casa.** Evidência: Sunderland 1-0 Chelsea (Chelsea 57%, desfecho a 19%), embora Sunderland perdesse 0-2 em Zagreb. O que fazer: aplicar o ajuste de crise sobretudo fora de casa; em casa contra adversário também desfalcado, ajuste ≤ metade.
 
 - **2026-11-12 · Favoritos com 4+ baixas titulares fora de casa/na estrada sobrevalorizados.** Evidência: Fenerbahce 3-2 Liverpool (58%), Atalanta 0-3 Parma, Itália 3-1 França (França favorita a 44% com várias baixas, derrota em San Siro). O que fazer: −6 a −10 nos golos marcados e baixar o favorito para ≤45%; em seleções com jogo decisivo para o adversário, rever a motivação.
