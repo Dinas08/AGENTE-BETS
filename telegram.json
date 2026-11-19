@@ -3276,7 +3276,7 @@
    },
    "texto": "✅ <b>GREEN</b>: Vitória Flamengo RJ\nFlamengo RJ 2-1 Athletico-PR",
    "expira": "2026-11-20T01:30:58.263783",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 570,
     "5728356568": 571
@@ -3295,7 +3295,7 @@
    },
    "texto": "✅ <b>GREEN</b>: Ambas marcam\nCruzeiro 2-1 Palmeiras",
    "expira": "2026-11-20T01:30:58.906079",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 572,
     "5728356568": 573
@@ -3314,7 +3314,7 @@
    },
    "texto": "📊 <b>RESUMO DE 18/11</b>\n\n🔥 <b>DIA DE 100% DE ACERTO!</b>\n🟢 2 Green\n💶 Lucro: <b>+85 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-20T01:30:59.544664",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 574,
     "5728356568": 575
@@ -3322,7 +3322,7 @@
    "admin_msg": 574
   }
  ],
- "ultimo_resumo": 243,
- "offset_admin": 820373602,
- "anim_green_id": "CgACAgQAAyEGAATdpcSZAAOdavZh-myi_KEeR9g7gOV0cXiuW0wAAsAeAAKYQ4lTiRodjWpgDVA9BA"
+ "ultimo_resumo": 248,
+ "offset_admin": 820373605,
+ "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
