@@ -1,6 +1,6 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 18/11/2026 00:01. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 19/11/2026 00:13. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
 - **Últimos 7 dias:** 27 Green · 11 Red → **71%** de acerto (o modelo esperava 64%).
 - **Últimos 30 dias:** 63 Green · 27 Red → **70%** de acerto (o modelo esperava 64%).
@@ -55,7 +55,7 @@ _Atualizado automaticamente a 18/11/2026 00:01. Só dicas publicadas e já decid
 | 🌎 Américas | 4 | 75% | 59% | ⏳ poucos dados |
 
 ## Extras não publicadas
-Das 5 apostas extra que ficaram por publicar, 3 teriam dado Green (**60%**), contra 70% das publicadas.
+Das 4 apostas extra que ficaram por publicar, 2 teriam dado Green (**50%**), contra 70% das publicadas.
 
 ## Últimos Reds
 - 17/11 · Polónia x Suécia **1-1** · Mais de 2.5 golos (65%, Golos +/-)
