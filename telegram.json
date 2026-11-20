@@ -1228,6 +1228,18 @@
    "data": "2026-11-20",
    "resultado": null,
    "message_id": 254
+  },
+  {
+   "id": "20261120-SP1-athbilbao-espanol|1",
+   "match_id": "20261120-SP1-athbilbao-espanol",
+   "key": "1",
+   "texto": "Vitória Ath Bilbao",
+   "jogo": "Ath Bilbao x Espanol",
+   "prob": 0.6147,
+   "odd_casa": 1.48,
+   "data": "2026-11-20",
+   "resultado": null,
+   "message_id": 256
   }
  ],
  "multiplas": [
@@ -3002,8 +3014,13 @@
    },
    "texto": "🇪🇸 <b>LALIGA – SEXTA 20/11</b>\nAth Bilbao x Espanol | 20h00\n\n✅ <b>Dica: Vitória Ath Bilbao</b>\n💰 Odd: <b>1.48</b>\n\n📊 Golos esperados: Ath Bilbao 1.8 – Espanol 0.9\n📊 Ath Bilbao: 2 vitórias nos últimos 6 jogos, xG 10.2 contra 5.7\n📊 Espanol: 1 vitória nos últimos 6 jogos, xG 4.0 contra 6.9\n🚑 Ath Bilbao sem Egiluz\n🚑 Espanol sem García\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-20T20:00:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-20T17:00:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-20T17:00:00",
+   "admin_msgs": {
+    "5575304800": 609,
+    "5728356568": 610
+   },
+   "admin_msg": 609
   },
   {
    "pid": "2011244440",
@@ -3104,6 +3121,6 @@
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373617,
+ "offset_admin": 820373618,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
