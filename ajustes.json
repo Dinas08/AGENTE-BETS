@@ -1,10 +1,10 @@
 {
- "atualizado_em": "2026-11-19",
+ "atualizado_em": "2026-11-20",
  "equipas": {
   "Bayern Munich": {
    "golos_marcados": -4,
    "golos_sofridos": 0,
-   "motivo": "Davies lesionado; Neuer, Gnabry, Díaz fora/dúvida; Musiala talvez regresse; Kompany no banco (notícias 18-19/11/2026)",
+   "motivo": "Davies lesionado; Neuer, Gnabry, Díaz fora/dúvida; Musiala talvez regresse; Kompany no banco (notícias 18-19/11/2026); Neuer fora (tendão), Urbig na baliza; Kompany regressa ao banco (notícias 20/11/2026)",
    "ausentes": [
     {
      "jogador": "Davies",
@@ -25,10 +25,16 @@
      "jogador": "Luis Díaz",
      "motivo": "ausente/dúvida",
      "importancia": "titular"
+    },
+    {
+     "jogador": "Saibari",
+     "motivo": "tornozelo",
+     "importancia": "rotação"
     }
    ],
    "fontes": [
-    "https://www.espn.com/soccer/story/_/id/50518869/bayern-munich-vs-fc-cologne-tv-channel-how-watch-uk-kickoff-live-stream-team-news-referee-predicted-lineups"
+    "https://www.espn.com/soccer/story/_/id/50518869/bayern-munich-vs-fc-cologne-tv-channel-how-watch-uk-kickoff-live-stream-team-news-referee-predicted-lineups",
+    "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-fc-bayern-vs.-koeln-bundesliga-md-10"
    ],
    "valido_ate": "2026-11-23"
   },
@@ -108,7 +114,7 @@
   "Real Madrid": {
    "golos_marcados": -2,
    "golos_sofridos": 0,
-   "motivo": "Rodrygo e Asencio fora até dezembro; Tchouaméni duvidoso",
+   "motivo": "Rodrygo e Asencio fora até dezembro; Tchouaméni duvidoso; Asencio e Rodrygo fora; Mbappé recuperado (notícias 20/11/2026)",
    "ausentes": [
     {
      "jogador": "Rodrygo",
@@ -124,17 +130,23 @@
      "jogador": "Tchouaméni",
      "motivo": "adutor (dúvida)",
      "importancia": "titular"
+    },
+    {
+     "jogador": "Asencio",
+     "motivo": "cirurgia à tíbia",
+     "importancia": "titular"
     }
    ],
    "fontes": [
-    "https://www.futbolfantasy.com/partidos/22550-real-madrid-celta (pesquisa, nov 2026)"
+    "https://www.futbolfantasy.com/partidos/22550-real-madrid-celta (pesquisa, nov 2026)",
+    "https://comuniate.com/noticias/39023/real-madrid-celta-previa-alineaciones-probables-y-consejos-fantasy-jornada-13-de-laliga"
    ],
    "valido_ate": "2026-11-23"
   },
   "Celta": {
    "golos_marcados": -3,
    "golos_sofridos": 0,
-   "motivo": "Borja Iglesias (gémeo) e Miguel Román fora",
+   "motivo": "Borja Iglesias (gémeo) e Miguel Román fora; Borja Iglesias, Núñez, Román fora (notícias 20/11/2026)",
    "ausentes": [
     {
      "jogador": "Borja Iglesias",
@@ -145,10 +157,16 @@
      "jogador": "Miguel Román",
      "motivo": "artroscopia joelho",
      "importancia": "rotação"
+    },
+    {
+     "jogador": "Álvaro Núñez",
+     "motivo": "lesão",
+     "importancia": "titular"
     }
    ],
    "fontes": [
-    "https://comuniate.com/noticias/39015/celta-partes-medicos-actualizados (pesquisa, nov 2026)"
+    "https://comuniate.com/noticias/39015/celta-partes-medicos-actualizados (pesquisa, nov 2026)",
+    "https://comuniate.com/noticias/39023/real-madrid-celta-previa-alineaciones-probables-y-consejos-fantasy-jornada-13-de-laliga"
    ],
    "valido_ate": "2026-11-23"
   },
@@ -228,16 +246,22 @@
   "Newcastle": {
    "golos_marcados": -3,
    "golos_sofridos": 0,
-   "motivo": "Joelinton fora (MRI); Livramento e Miley a regressar (notícias 18-19/11/2026)",
+   "motivo": "Joelinton fora (MRI); Livramento e Miley a regressar (notícias 18-19/11/2026); Joelinton e Jaouen fora (notícias 20/11/2026); 2 derrotas 1-0 em casa",
    "ausentes": [
     {
      "jogador": "Joelinton",
      "motivo": "lesão",
      "importancia": "titular"
+    },
+    {
+     "jogador": "Jaouen",
+     "motivo": "lesão isquiotibiais (GR suplente)",
+     "importancia": "suplente"
     }
    ],
    "fontes": [
-    "https://www.nufcblog.com/post/newcastle-arsenal-injury-news-predicted-team"
+    "https://www.nufcblog.com/post/newcastle-arsenal-injury-news-predicted-team",
+    "https://premierleaguenewsnow.com/2026/11/20/newcastle-predicted-lineup-arsenal-joelinton/"
    ],
    "valido_ate": "2026-11-23"
   },
@@ -374,7 +398,7 @@
   "Sevilla": {
    "golos_marcados": -4,
    "golos_sofridos": 0,
-   "motivo": "Sierra, Marcao, Alfon, Carmona (e Morante) fora para o derbi (notícias 18-19/11/2026)",
+   "motivo": "Sierra, Marcao, Alfon, Carmona (e Morante) fora para o derbi (notícias 18-19/11/2026); 4 baixas para o derbi; Peque, Fofana, Isaac Romero devem regressar (notícias 18-20/11/2026)",
    "ausentes": [
     {
      "jogador": "Marcao",
@@ -395,9 +419,20 @@
      "jogador": "Alfon",
      "motivo": "lesão",
      "importancia": "rotação"
+    },
+    {
+     "jogador": "Alfon González",
+     "motivo": "cruzado (época)",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Miguel Sierra",
+     "motivo": "luxação acromioclavicular",
+     "importancia": "rotação"
     }
    ],
    "fontes": [
+    "https://www.infobae.com/espana/agencias/2026/11/18/el-sevilla-avanza-hacia-el-derbi-con-cuatro-bajas-seguras-por-lesion/",
     "https://www.infobae.com/espana/agencias/2026/11/18/el-sevilla-avanza-hacia-el-derbi-con-cuatro-bajas-seguras-por-lesion/"
    ],
    "valido_ate": "2026-11-23"
@@ -405,7 +440,7 @@
   "Betis": {
    "golos_marcados": -3,
    "golos_sofridos": 0,
-   "motivo": "Ceballos em dúvida (molestias), Riquelme com faringite (notícias 18-19/11/2026)",
+   "motivo": "Ceballos em dúvida (molestias), Riquelme com faringite (notícias 18-19/11/2026); Betis chega ao derbi com 1 baixa; Riquelme recuperado (notícias 20/11/2026)",
    "ausentes": [
     {
      "jogador": "Ceballos",
@@ -419,7 +454,8 @@
     }
    ],
    "fontes": [
-    "https://www.comuniate.com/noticias/39051/dos-nuevas-bajas-en-el-entrenamiento-del-betis-antes-del-derbi"
+    "https://www.comuniate.com/noticias/39051/dos-nuevas-bajas-en-el-entrenamiento-del-betis-antes-del-derbi",
+    "https://www.futbolfantasy.com/laliga/noticias/155019-alineaciones-probables-y-previa-fantasy-de-sevilla-betis"
    ],
    "valido_ate": "2026-11-23"
   },
@@ -614,7 +650,7 @@
   "Napoli": {
    "golos_marcados": -2,
    "golos_sofridos": 3,
-   "motivo": "Di Lorenzo fora; Buongiorno, Lobotka, Badiashile dúvida/fora (fontes divergem); Spinazzola e Neres regressam (notícias 18-19/11/2026)",
+   "motivo": "Di Lorenzo fora; Buongiorno, Lobotka, Badiashile dúvida/fora (fontes divergem); Spinazzola e Neres regressam (notícias 18-19/11/2026); Spinazzola regressa; Neres e Favasuli dúvidas (notícias 18-20/11/2026)",
    "ausentes": [
     {
      "jogador": "Di Lorenzo",
@@ -630,10 +666,21 @@
      "jogador": "Badiashile",
      "motivo": "lesão",
      "importancia": "titular"
+    },
+    {
+     "jogador": "Neres",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Favasuli",
+     "motivo": "dúvida",
+     "importancia": "rotação"
     }
    ],
    "fontes": [
-    "https://www.siamoilnapoli.it/2026/11/17/napoli-torino-le-probabili-formazioni-e-dove-vederla-2/"
+    "https://www.siamoilnapoli.it/2026/11/17/napoli-torino-le-probabili-formazioni-e-dove-vederla-2/",
+    "https://www.calcionapoli24.it/rassegna_stampa/infortunati-napoli-spinazzola-e-non-solo-chi-pu-rientrare-per-il-torino-n704434.html"
    ],
    "valido_ate": "2026-11-23"
   },
@@ -953,7 +1000,7 @@
   "Feyenoord": {
    "golos_marcados": -4,
    "golos_sofridos": 6,
-   "motivo": "St. Juste, Bos, Beelen, Nieuwkoop, Moder, Wessels fora; Hadj Moussa duvidoso (notícias 18-19/11/2026)",
+   "motivo": "St. Juste, Bos, Beelen, Nieuwkoop, Moder, Wessels fora; Hadj Moussa duvidoso (notícias 18-19/11/2026); Várias baixas (notícias 19/11/2026)",
    "ausentes": [
     {
      "jogador": "St. Juste",
@@ -969,9 +1016,25 @@
      "jogador": "Hadj Moussa",
      "motivo": "tornozelo (dúvida)",
      "importancia": "titular"
+    },
+    {
+     "jogador": "Beelen",
+     "motivo": "pé",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Nieuwkoop",
+     "motivo": "joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Moder",
+     "motivo": "não apto",
+     "importancia": "titular"
     }
    ],
    "fontes": [
+    "https://news.bet365.nl/nl-nl/article/feyenoord-excelsior-in-eredivisie-blessures-opstellingen-tv-gids-h2h-vorm-voorspellingen-en-meer/2026111908340116073",
     "https://news.bet365.nl/nl-nl/article/feyenoord-excelsior-in-eredivisie-blessures-opstellingen-tv-gids-h2h-vorm-voorspellingen-en-meer/2026111908340116073"
    ],
    "valido_ate": "2026-11-23"
@@ -1003,5 +1066,9 @@
    "valido_ate": "2026-11-23"
   }
  },
- "jogos": {}
+ "jogos": {
+  "20261121-TP-guimaraes-spbraga": {
+   "nota": "Dérbi do Minho em Taça: Luís Godinho (árbitro); Guimarães sem internacionais ainda em recuperação"
+  }
+ }
 }
