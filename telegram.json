@@ -3115,12 +3115,17 @@
    },
    "texto": "🏆 <b>TAÇA DE PORTUGAL – SEXTA 20/11</b>\nPorto x Paredes | 20h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.23</b> (mínima com valor)\n\n📊 Golos esperados: Porto 3.8 – Paredes 0.8\n📊 Porto: 6 vitórias nos últimos 6 jogos, xG 11.8 contra 4.3\n🚑 Porto sem Smalling\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-20T20:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-20T17:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 611,
+    "5728356568": 612
+   },
+   "admin_msg": 611
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373618,
+ "offset_admin": 820373619,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
