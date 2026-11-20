@@ -1216,6 +1216,18 @@
    "tipo": "madrugada",
    "extra": true,
    "message_id": 250
+  },
+  {
+   "id": "20261120-D1-bayernmunich-fckoln|cantos_over_9.5",
+   "match_id": "20261120-D1-bayernmunich-fckoln",
+   "key": "cantos_over_9.5",
+   "texto": "Mais de 9.5 cantos",
+   "jogo": "Bayern Munich x FC Koln",
+   "prob": 0.6014,
+   "odd_casa": null,
+   "data": "2026-11-20",
+   "resultado": null,
+   "message_id": 254
   }
  ],
  "multiplas": [
@@ -1901,6 +1913,39 @@
    "prob": 0.3802,
    "resultado": true,
    "message_id": 234
+  },
+  {
+   "data": "2026-11-20",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261120-SP1-athbilbao-espanol|1",
+    "20261120-D1-bayernmunich-fckoln|btts_sim"
+   ],
+   "pernas": [
+    {
+     "id": "20261120-SP1-athbilbao-espanol|1",
+     "match_id": "20261120-SP1-athbilbao-espanol",
+     "key": "1",
+     "prob": 0.6147,
+     "odd_casa": 1.48,
+     "jogo": "Ath Bilbao x Espanol",
+     "texto": "Vitória Ath Bilbao"
+    },
+    {
+     "id": "20261120-D1-bayernmunich-fckoln|btts_sim",
+     "match_id": "20261120-D1-bayernmunich-fckoln",
+     "key": "btts_sim",
+     "prob": 0.5099,
+     "odd_casa": null,
+     "jogo": "Bayern Munich x FC Koln",
+     "texto": "Ambas marcam",
+     "porque": "golos esperados 3.7 – 0.7"
+    }
+   ],
+   "prob": 0.3134,
+   "resultado": null,
+   "message_id": 255
   }
  ],
  "balancos": [
@@ -2931,8 +2976,13 @@
    },
    "texto": "🇩🇪 <b>BUNDESLIGA – SEXTA 20/11</b>\nBayern Munich x FC Koln | 19h30\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.66</b> (mínima com valor)\n\n📊 Golos esperados: Bayern Munich 3.7 – FC Koln 0.7\n📊 Bayern Munich: 4 vitórias nos últimos 6 jogos, xG 22.3 contra 5.9\n📊 FC Koln: 1 vitória nos últimos 6 jogos, xG 7.6 contra 7.6\n🚑 Bayern Munich sem Davies, Neuer, Gnabry, Díaz\n🚑 FC Koln sem Hübers, Berg, Ache\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-20T19:30:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-20T16:30:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-20T16:30:00",
+   "admin_msgs": {
+    "5575304800": 598,
+    "5728356568": 599
+   },
+   "admin_msg": 598
   },
   {
    "pid": "2011244439",
@@ -2988,7 +3038,7 @@
     "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
     "partes": [
      "20261120-SP1-athbilbao-espanol|1",
-     "20261120-D1-bayernmunich-fckoln|cantos_over_9.5"
+     "20261120-D1-bayernmunich-fckoln|btts_sim"
     ],
     "pernas": [
      {
@@ -3001,22 +3051,28 @@
       "texto": "Vitória Ath Bilbao"
      },
      {
-      "id": "20261120-D1-bayernmunich-fckoln|cantos_over_9.5",
+      "id": "20261120-D1-bayernmunich-fckoln|btts_sim",
       "match_id": "20261120-D1-bayernmunich-fckoln",
-      "key": "cantos_over_9.5",
-      "prob": 0.6014,
+      "key": "btts_sim",
+      "prob": 0.5099,
       "odd_casa": null,
       "jogo": "Bayern Munich x FC Koln",
-      "texto": "Mais de 9.5 cantos"
+      "texto": "Ambas marcam",
+      "porque": "golos esperados 3.7 – 0.7"
      }
     ],
-    "prob": 0.3697,
+    "prob": 0.3134,
     "resultado": null
    },
-   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Ath Bilbao x Espanol: Vitória Ath Bilbao (@1.48)\n• Bayern Munich x FC Koln: Mais de 9.5 cantos (@1.66)\n\n💰 Odd total: <b>2.46</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Ath Bilbao x Espanol: Vitória Ath Bilbao (@1.48)\n• Bayern Munich x FC Koln: Ambas marcam (@1.96)\n   <i>↳ golos esperados 3.7 – 0.7</i>\n\n💰 Odd total: <b>2.90</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-20T19:30:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-20T16:30:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-20T16:30:00",
+   "admin_msgs": {
+    "5575304800": 600,
+    "5728356568": 601
+   },
+   "admin_msg": 600
   },
   {
    "pid": "2011244442",
@@ -3043,6 +3099,6 @@
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373612,
+ "offset_admin": 820373616,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
