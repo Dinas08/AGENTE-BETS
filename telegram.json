@@ -3123,9 +3123,38 @@
     "5728356568": 612
    },
    "admin_msg": 611
+  },
+  {
+   "pid": "2021012143",
+   "origem": "madrugada",
+   "data": "2026-11-20",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261120-ARG-velezsarsfield-belgrano|under_2.5",
+    "match_id": "20261120-ARG-velezsarsfield-belgrano",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Velez Sarsfield x Belgrano",
+    "prob": 0.5355,
+    "odd_casa": 1.62,
+    "data": "2026-11-20",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇦🇷 <b>LIGA ARGENTINA – SEXTA 20/11</b>\nVelez Sarsfield x Belgrano | 23h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.62</b>\n\n📊 Golos esperados: Velez Sarsfield 1.3 – Belgrano 1.1\n📊 Velez Sarsfield: 2 vitórias nos últimos 6 jogos\n📊 Belgrano: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-20T23:00:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-20T20:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 613,
+    "5728356568": 614
+   },
+   "admin_msg": 613
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373619,
+ "offset_admin": 820373620,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
