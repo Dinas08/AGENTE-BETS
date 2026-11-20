@@ -27,7 +27,11 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 
 - **2026-11-14 · Favorito já apurado/sem nada em jogo (ou em novo ciclo, com baixas) gere o jogo e perde pontos.** Evidência (3 casos na semana): Suíça 0-0 Eslovénia, Chéquia 0-2 Espanha (Mais 2.5 falhou), Portugal 1-4 Dinamarca (61%, apurada, sem 4 titulares e sem Ronaldo; xG 1.26-2.33). O que fazer: favorito já qualificado com 3+ baixas → ≤50% de vitória e −8 a −12 nos golos marcados; não usar vitória seca nem "Mais 2.5" como principal.
 
+- **2026-11-21 · Favoritos ≥90% com 3+ baixas titulares ou rotação (taças) falham o 1X2/Mais 2.5.** Evidência: Bayern 1-1 Köln (91%, sem Neuer/Díaz/Gnabry/Davies, Kane e Olise saíram lesionados), Porto 1-1 Paredes (91%, 98% "1X", equipa B, passou nos penáltis); antes Bayern 2-2 Dortmund (65%). O que fazer: com baixas pesadas ou rotação, limitar a probabilidade do favorito a ~80% e −8 a −12 nos golos marcados; não usar 1X2 seco nem Mais 2.5 acima de 75% como dica.
+
 ## Em observação (1 ocorrência — confirmar antes de agir)
+
+- 2026-11-21 · Treinador novo em equipa em crise (Eder Sarabia, Espanyol 1-0 Ath Bilbao a 15%): efeito treinador novo não está no modelo; dar +3 a +4 golos marcados à equipa visitante com treinador novo no 1.º jogo. 1 caso.
 
 - 2026-11-16 · Seleções com favorito muito acima e adversário com 5+ baixas (Alemanha 5-0, Suíça 4-0): BTTS Sim (57-67%) falhou nos dois; descontar BTTS nesses casos. Em casa, o favorito desfalcado do outro lado gere bem (nuance da lição de favoritos sem nada em jogo). 2 casos.
 - 2026-11-16 · Eslováquia (e Malta) fora de casa: empate 2-2 e 1-1 com outsiders (Faroé, Cazaquistão, Gibraltar); descontar ~5 pts na vitória visitante de favoritos modestos em seleções.
