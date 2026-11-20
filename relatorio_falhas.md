@@ -1,10 +1,10 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 20/11/2026 05:31. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 20/11/2026 21:37. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 26 Green · 10 Red → **72%** de acerto (o modelo esperava 64%).
-- **Últimos 30 dias:** 67 Green · 27 Red → **71%** de acerto (o modelo esperava 64%).
-- **Desde o início:** 67 Green · 27 Red → **71%** de acerto (o modelo esperava 64%).
+- **Últimos 7 dias:** 26 Green · 11 Red → **70%** de acerto (o modelo esperava 64%).
+- **Últimos 30 dias:** 67 Green · 28 Red → **71%** de acerto (o modelo esperava 64%).
+- **Desde o início:** 67 Green · 28 Red → **71%** de acerto (o modelo esperava 64%).
 - **Múltiplas:** 8 Green em 17.
 
 ## Alertas
@@ -16,7 +16,7 @@ _Atualizado automaticamente a 20/11/2026 05:31. Só dicas publicadas e já decid
 | Golos +/- | 34 | 71% | 66% | ✅ bem |
 | Resultado 1X2 | 29 | 83% | 65% | ⬆️ confiança a menos |
 | Ambas marcam | 16 | 62% | 59% | ✅ bem |
-| Cantos | 6 | 67% | 61% | ⏳ poucos dados |
+| Cantos | 7 | 57% | 61% | ⏳ poucos dados |
 | Combinadas | 4 | 25% | 55% | ⏳ poucos dados |
 | Dupla hipótese | 3 | 67% | 70% | ⏳ poucos dados |
 | Cartões | 2 | 100% | 67% | ⏳ poucos dados |
@@ -32,7 +32,7 @@ _Atualizado automaticamente a 20/11/2026 05:31. Só dicas publicadas e já decid
 | Liga dos Campeões | 7 | 86% | 71% | ⏳ poucos dados |
 | Liga Europa | 4 | 50% | 60% | ⏳ poucos dados |
 | Liga Argentina | 4 | 50% | 60% | ⏳ poucos dados |
-| Bundesliga | 3 | 67% | 62% | ⏳ poucos dados |
+| Bundesliga | 4 | 50% | 62% | ⏳ poucos dados |
 | Liga Belga | 2 | 100% | 65% | ⏳ poucos dados |
 | Liga Conferência | 2 | 50% | 60% | ⏳ poucos dados |
 | LaLiga | 1 | 100% | 66% | ⏳ poucos dados |
@@ -41,7 +41,7 @@ _Atualizado automaticamente a 20/11/2026 05:31. Só dicas publicadas e já decid
 ## Por probabilidade
 | Faixa | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| 55-65% | 41 | 71% | 60% | ⬆️ confiança a menos |
+| 55-65% | 42 | 69% | 60% | ⬆️ confiança a menos |
 | 65-75% | 31 | 71% | 69% | ✅ bem |
 | < 55% | 13 | 54% | 53% | ✅ bem |
 | ≥ 75% | 9 | 100% | 78% | ⬆️ confiança a menos |
@@ -49,7 +49,7 @@ _Atualizado automaticamente a 20/11/2026 05:31. Só dicas publicadas e já decid
 ## Por tipo de dica
 | Tipo | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| ☀️ Manhã | 73 | 75% | 65% | ⬆️ confiança a menos |
+| ☀️ Manhã | 74 | 74% | 65% | ⬆️ confiança a menos |
 | 🌎 Américas | 8 | 88% | 61% | ⬆️ confiança a menos |
 | 💎 Odd alta | 7 | 14% | 56% | ⏳ poucos dados |
 | 🌙 Tardia | 6 | 67% | 61% | ⏳ poucos dados |
@@ -58,6 +58,7 @@ _Atualizado automaticamente a 20/11/2026 05:31. Só dicas publicadas e já decid
 Das 6 apostas extra que ficaram por publicar, 3 teriam dado Green (**50%**), contra 71% das publicadas.
 
 ## Últimos Reds
+- 20/11 · Bayern Munich x FC Koln **1-1** · Mais de 9.5 cantos (60%, Cantos)
 - 17/11 · Polónia x Suécia **1-1** · Mais de 2.5 golos (65%, Golos +/-)
 - 16/11 · Gibraltar x Malta **1-1** · Vitória Malta (60%, Resultado 1X2)
 - 16/11 · Suíça x Escócia **4-0** · Ambas marcam (54%, Ambas marcam)
@@ -67,4 +68,3 @@ Das 6 apostas extra que ficaram por publicar, 3 teriam dado Green (**50%**), con
 - 14/11 · Roménia x Polónia **2-1** · Vitória Polónia (56%, Resultado 1X2)
 - 14/11 · Kosovo x Israel **0-0** · Ambas marcam (55%, Ambas marcam)
 - 13/11 · Bulgária x Islândia **0-5** · Islândia ou empate + Menos de 3.5 golos (55%, Combinadas)
-- 13/11 · Eslováquia x Ilhas Faroé **2-2** · Vitória Eslováquia (69%, Resultado 1X2)

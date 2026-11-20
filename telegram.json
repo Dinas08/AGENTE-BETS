@@ -1226,7 +1226,7 @@
    "prob": 0.6014,
    "odd_casa": null,
    "data": "2026-11-20",
-   "resultado": null,
+   "resultado": false,
    "message_id": 254
   },
   {
@@ -3152,6 +3152,25 @@
     "5728356568": 614
    },
    "admin_msg": 613
+  },
+  {
+   "pid": "2021295344",
+   "origem": "resultado",
+   "data": "2026-11-20",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 254,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Mais de 9.5 cantos\nBayern Munich 1-1 FC Koln",
+   "expira": "2026-11-21T21:29:53.647980",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 615,
+    "5728356568": 616
+   },
+   "admin_msg": 615
   }
  ],
  "ultimo_resumo": 253,
