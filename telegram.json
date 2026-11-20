@@ -2912,6 +2912,134 @@
     "5728356568": 595
    },
    "admin_msg": 594
+  },
+  {
+   "pid": "2011244438",
+   "origem": "dicas",
+   "data": "2026-11-20",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261120-D1-bayernmunich-fckoln|cantos_over_9.5",
+    "match_id": "20261120-D1-bayernmunich-fckoln",
+    "key": "cantos_over_9.5",
+    "texto": "Mais de 9.5 cantos",
+    "jogo": "Bayern Munich x FC Koln",
+    "prob": 0.6014,
+    "odd_casa": null,
+    "data": "2026-11-20",
+    "resultado": null
+   },
+   "texto": "🇩🇪 <b>BUNDESLIGA – SEXTA 20/11</b>\nBayern Munich x FC Koln | 19h30\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.66</b> (mínima com valor)\n\n📊 Golos esperados: Bayern Munich 3.7 – FC Koln 0.7\n📊 Bayern Munich: 4 vitórias nos últimos 6 jogos, xG 22.3 contra 5.9\n📊 FC Koln: 1 vitória nos últimos 6 jogos, xG 7.6 contra 7.6\n🚑 Bayern Munich sem Davies, Neuer, Gnabry, Díaz\n🚑 FC Koln sem Hübers, Berg, Ache\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-20T19:30:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-20T16:30:00"
+  },
+  {
+   "pid": "2011244439",
+   "origem": "dicas",
+   "data": "2026-11-20",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261120-SP1-athbilbao-espanol|1",
+    "match_id": "20261120-SP1-athbilbao-espanol",
+    "key": "1",
+    "texto": "Vitória Ath Bilbao",
+    "jogo": "Ath Bilbao x Espanol",
+    "prob": 0.6147,
+    "odd_casa": 1.48,
+    "data": "2026-11-20",
+    "resultado": null
+   },
+   "texto": "🇪🇸 <b>LALIGA – SEXTA 20/11</b>\nAth Bilbao x Espanol | 20h00\n\n✅ <b>Dica: Vitória Ath Bilbao</b>\n💰 Odd: <b>1.48</b>\n\n📊 Golos esperados: Ath Bilbao 1.8 – Espanol 0.9\n📊 Ath Bilbao: 2 vitórias nos últimos 6 jogos, xG 10.2 contra 5.7\n📊 Espanol: 1 vitória nos últimos 6 jogos, xG 4.0 contra 6.9\n🚑 Ath Bilbao sem Egiluz\n🚑 Espanol sem García\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-20T20:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-20T17:00:00"
+  },
+  {
+   "pid": "2011244440",
+   "origem": "dicas",
+   "data": "2026-11-20",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261120-F1-troyes-lehavre|btts_sim",
+    "match_id": "20261120-F1-troyes-lehavre",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Troyes x Le Havre",
+    "prob": 0.5283,
+    "odd_casa": null,
+    "data": "2026-11-20",
+    "resultado": null,
+    "tipo": "odd_alta"
+   },
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🇫🇷 <b>LIGUE 1 – SEXTA 20/11</b>\nTroyes x Le Havre | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.89</b> (mínima com valor)\n\n📊 Golos esperados: Troyes 1.4 – Le Havre 1.1\n📊 Troyes: 1 vitória nos últimos 6 jogos, xG 6.4 contra 8.1\n📊 Le Havre: 0 vitórias nos últimos 6 jogos, xG 11.1 contra 13.0\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-20T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-20T16:45:00"
+  },
+  {
+   "pid": "2011244441",
+   "origem": "dicas",
+   "data": "2026-11-20",
+   "lista": "multiplas",
+   "registo": {
+    "data": "2026-11-20",
+    "tipo": "segura",
+    "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+    "partes": [
+     "20261120-SP1-athbilbao-espanol|1",
+     "20261120-D1-bayernmunich-fckoln|cantos_over_9.5"
+    ],
+    "pernas": [
+     {
+      "id": "20261120-SP1-athbilbao-espanol|1",
+      "match_id": "20261120-SP1-athbilbao-espanol",
+      "key": "1",
+      "prob": 0.6147,
+      "odd_casa": 1.48,
+      "jogo": "Ath Bilbao x Espanol",
+      "texto": "Vitória Ath Bilbao"
+     },
+     {
+      "id": "20261120-D1-bayernmunich-fckoln|cantos_over_9.5",
+      "match_id": "20261120-D1-bayernmunich-fckoln",
+      "key": "cantos_over_9.5",
+      "prob": 0.6014,
+      "odd_casa": null,
+      "jogo": "Bayern Munich x FC Koln",
+      "texto": "Mais de 9.5 cantos"
+     }
+    ],
+    "prob": 0.3697,
+    "resultado": null
+   },
+   "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Ath Bilbao x Espanol: Vitória Ath Bilbao (@1.48)\n• Bayern Munich x FC Koln: Mais de 9.5 cantos (@1.66)\n\n💰 Odd total: <b>2.46</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-20T19:30:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-20T16:30:00"
+  },
+  {
+   "pid": "2011244442",
+   "origem": "dicas",
+   "data": "2026-11-20",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261120-TP-porto-paredes|over_2.5",
+    "match_id": "20261120-TP-porto-paredes",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Porto x Paredes",
+    "prob": 0.8139,
+    "odd_casa": null,
+    "data": "2026-11-20",
+    "resultado": null,
+    "extra": true
+   },
+   "texto": "🏆 <b>TAÇA DE PORTUGAL – SEXTA 20/11</b>\nPorto x Paredes | 20h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.23</b> (mínima com valor)\n\n📊 Golos esperados: Porto 3.8 – Paredes 0.8\n📊 Porto: 6 vitórias nos últimos 6 jogos, xG 11.8 contra 4.3\n🚑 Porto sem Smalling\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-20T20:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-20T17:45:00",
+   "extra": true
   }
  ],
  "ultimo_resumo": 253,
