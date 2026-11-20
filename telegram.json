@@ -1238,7 +1238,7 @@
    "prob": 0.6147,
    "odd_casa": 1.48,
    "data": "2026-11-20",
-   "resultado": null,
+   "resultado": false,
    "message_id": 256
   }
  ],
@@ -1956,7 +1956,7 @@
     }
    ],
    "prob": 0.3134,
-   "resultado": null,
+   "resultado": false,
    "message_id": 255
   }
  ],
@@ -3171,6 +3171,44 @@
     "5728356568": 616
    },
    "admin_msg": 615
+  },
+  {
+   "pid": "2021554245",
+   "origem": "resultado",
+   "data": "2026-11-20",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 256,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Ath Bilbao\nAth Bilbao 0-1 Espanol",
+   "expira": "2026-11-21T21:55:42.316172",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 617,
+    "5728356568": 618
+   },
+   "admin_msg": 617
+  },
+  {
+   "pid": "2021554346",
+   "origem": "resultado",
+   "data": "2026-11-20",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 255,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED na múltipla (1/2 pernas certas até agora)",
+   "expira": "2026-11-21T21:55:43.067322",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 619,
+    "5728356568": 620
+   },
+   "admin_msg": 619
   }
  ],
  "ultimo_resumo": 253,
