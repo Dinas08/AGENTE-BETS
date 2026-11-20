@@ -1199,7 +1199,7 @@
    "prob": 0.6336,
    "odd_casa": 1.63,
    "data": "2026-11-19",
-   "resultado": null,
+   "resultado": true,
    "tipo": "madrugada",
    "message_id": 249
   },
@@ -1212,7 +1212,7 @@
    "prob": 0.5468,
    "odd_casa": null,
    "data": "2026-11-19",
-   "resultado": null,
+   "resultado": true,
    "tipo": "madrugada",
    "extra": true,
    "message_id": 250
@@ -1923,7 +1923,8 @@
   "2026-11-15",
   "2026-11-16",
   "2026-11-17",
-  "2026-11-18"
+  "2026-11-18",
+  "2026-11-19"
  ],
  "offset": 892007170,
  "ignorados": [],
@@ -2854,9 +2855,66 @@
     "5728356568": 589
    },
    "admin_msg": 588
+  },
+  {
+   "pid": "2000352835",
+   "origem": "resultado",
+   "data": "2026-11-20",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 249,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Vasco\nVasco 2-1 Internacional",
+   "expira": "2026-11-21T00:35:28.810149",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 590,
+    "5728356568": 591
+   },
+   "admin_msg": 590
+  },
+  {
+   "pid": "2000352936",
+   "origem": "resultado",
+   "data": "2026-11-20",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 250,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Ambas marcam\nVitoria 2-1 Bragantino",
+   "expira": "2026-11-21T00:35:29.689383",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 592,
+    "5728356568": 593
+   },
+   "admin_msg": 592
+  },
+  {
+   "pid": "2000353037",
+   "origem": "resumo",
+   "data": "2026-11-20",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": true
+   },
+   "texto": "📊 <b>RESUMO DE 19/11</b>\n\n🔥 <b>DIA DE 100% DE ACERTO!</b>\n🟢 2 Green\n💶 Lucro: <b>+146 €</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-21T00:35:30.504197",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 594,
+    "5728356568": 595
+   },
+   "admin_msg": 594
   }
  ],
- "ultimo_resumo": 248,
- "offset_admin": 820373609,
+ "ultimo_resumo": 253,
+ "offset_admin": 820373612,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
