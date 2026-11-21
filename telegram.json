@@ -1287,7 +1287,7 @@
    "prob": 0.5731,
    "odd_casa": 1.57,
    "data": "2026-11-21",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 263
   },
@@ -1342,6 +1342,20 @@
    "resultado": null,
    "extra": true,
    "message_id": 268
+  },
+  {
+   "id": "20261121-N1-groningen-heerenveen|btts_sim",
+   "match_id": "20261121-N1-groningen-heerenveen",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Groningen x Heerenveen",
+   "prob": 0.6567,
+   "odd_casa": null,
+   "data": "2026-11-21",
+   "resultado": null,
+   "tipo": "tardia",
+   "extra": true,
+   "message_id": 272
   }
  ],
  "multiplas": [
@@ -4284,9 +4298,57 @@
     "5728356568": 748
    },
    "admin_msg": 747
+  },
+  {
+   "pid": "2119310680",
+   "origem": "resultado",
+   "data": "2026-11-21",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 263,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Arsenal\nNewcastle 2-2 Arsenal",
+   "expira": "2026-11-22T19:31:06.649647",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 751,
+    "5728356568": 752
+   },
+   "admin_msg": 751
+  },
+  {
+   "pid": "2119310881",
+   "origem": "tardia",
+   "data": "2026-11-21",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261121-N1-groningen-heerenveen|btts_sim",
+    "match_id": "20261121-N1-groningen-heerenveen",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Groningen x Heerenveen",
+    "prob": 0.6567,
+    "odd_casa": null,
+    "data": "2026-11-21",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇳🇱 <b>EREDIVISIE – SÁBADO 21/11</b>\nGroningen x Heerenveen | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.52</b> (mínima com valor)\n\n📊 Golos esperados: Groningen 1.7 – Heerenveen 1.6\n📊 Groningen: 2 vitórias nos últimos 6 jogos, xG 12.1 contra 13.1\n📊 Heerenveen: 5 vitórias nos últimos 6 jogos, xG 11.4 contra 8.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-21T20:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-21T17:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 753,
+    "5728356568": 754
+   },
+   "admin_msg": 753
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373651,
+ "offset_admin": 820373653,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
