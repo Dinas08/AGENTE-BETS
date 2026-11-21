@@ -2988,7 +2988,7 @@
    },
    "texto": "🇪🇸 <b>LALIGA – SÁBADO 21/11</b>\nAlaves x La Coruna | 13h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.82</b> (mínima com valor)\n\n📊 Golos esperados: Alaves 1.3 – La Coruna 1.1\n📊 Alaves: 0 vitórias nos últimos 6 jogos, xG 5.5 contra 10.2\n📊 La Coruna: 1 vitória nos últimos 6 jogos, xG 9.6 contra 6.3\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T13:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-21T10:00:00",
    "extra": true,
    "admin_msgs": {
@@ -3382,7 +3382,12 @@
    "expira": "2026-11-21T16:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T13:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 672,
+    "5728356568": 673
+   },
+   "admin_msg": 672
   },
   {
    "pid": "2111195851",
