@@ -4168,9 +4168,125 @@
     "5728356568": 740
    },
    "admin_msg": 739
+  },
+  {
+   "pid": "2119104976",
+   "origem": "tardia",
+   "data": "2026-11-21",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261121-F1-strasbourg-brest|btts_sim",
+    "match_id": "20261121-F1-strasbourg-brest",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Strasbourg x Brest",
+    "prob": 0.6223,
+    "odd_casa": null,
+    "data": "2026-11-21",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇫🇷 <b>LIGUE 1 – SÁBADO 21/11</b>\nStrasbourg x Brest | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.61</b> (mínima com valor)\n\n📊 Golos esperados: Strasbourg 1.8 – Brest 1.4\n📊 Strasbourg: 1 vitória nos últimos 6 jogos, xG 6.8 contra 8.6\n📊 Brest: 3 vitórias nos últimos 6 jogos, xG 10.6 contra 7.4\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-21T19:45:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-21T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 741,
+    "5728356568": 742
+   },
+   "admin_msg": 741
+  },
+  {
+   "pid": "2119104977",
+   "origem": "tardia",
+   "data": "2026-11-21",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261121-I1-napoli-torino|1",
+    "match_id": "20261121-I1-napoli-torino",
+    "key": "1",
+    "texto": "Vitória Napoli",
+    "jogo": "Napoli x Torino",
+    "prob": 0.6093,
+    "odd_casa": 1.47,
+    "data": "2026-11-21",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇮🇹 <b>SERIE A – SÁBADO 21/11</b>\nNapoli x Torino | 19h45\n\n✅ <b>Dica: Vitória Napoli</b>\n💰 Odd: <b>1.47</b>\n\n📊 Golos esperados: Napoli 1.8 – Torino 0.9\n📊 Napoli: 2 vitórias nos últimos 6 jogos, xG 12.5 contra 6.7\n📊 Torino: 3 vitórias nos últimos 6 jogos, xG 7.5 contra 6.9\n🚑 Napoli sem Lorenzo, Lobotka, Badiashile, Neres\n🚑 Torino sem Vlasic, Belghali\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-21T19:45:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-21T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 743,
+    "5728356568": 744
+   },
+   "admin_msg": 743
+  },
+  {
+   "pid": "2119104978",
+   "origem": "tardia",
+   "data": "2026-11-21",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261121-F1-lens-toulouse|btts_sim",
+    "match_id": "20261121-F1-lens-toulouse",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Lens x Toulouse",
+    "prob": 0.6041,
+    "odd_casa": null,
+    "data": "2026-11-21",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇫🇷 <b>LIGUE 1 – SÁBADO 21/11</b>\nLens x Toulouse | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.66</b> (mínima com valor)\n\n📊 Golos esperados: Lens 1.7 – Toulouse 1.3\n📊 Lens: 3 vitórias nos últimos 6 jogos, xG 7.1 contra 7.9\n📊 Toulouse: 3 vitórias nos últimos 6 jogos, xG 9.1 contra 6.9\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-21T19:45:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-21T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 745,
+    "5728356568": 746
+   },
+   "admin_msg": 745
+  },
+  {
+   "pid": "2119104979",
+   "origem": "tardia",
+   "data": "2026-11-21",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261121-F1-lille-lyon|under_2.5",
+    "match_id": "20261121-F1-lille-lyon",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Lille x Lyon",
+    "prob": 0.6035,
+    "odd_casa": 1.75,
+    "data": "2026-11-21",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇫🇷 <b>LIGUE 1 – SÁBADO 21/11</b>\nLille x Lyon | 19h45\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.75</b>\n\n📊 Golos esperados: Lille 1.2 – Lyon 0.9\n📊 Lille: 3 vitórias nos últimos 6 jogos, xG 7.9 contra 7.7\n📊 Lyon: 3 vitórias nos últimos 6 jogos, xG 9.2 contra 7.8\n🚑 Lille sem Santos, Igamane, Ueda\n🚑 Lyon sem Openda, Sulc\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-21T19:45:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-21T16:45:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 747,
+    "5728356568": 748
+   },
+   "admin_msg": 747
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373647,
+ "offset_admin": 820373651,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
