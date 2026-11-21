@@ -3349,7 +3349,12 @@
    "expira": "2026-11-21T15:15:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T12:15:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 668,
+    "5728356568": 669
+   },
+   "admin_msg": 668
   },
   {
    "pid": "2111195850",
