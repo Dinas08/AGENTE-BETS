@@ -3153,7 +3153,12 @@
    "expira": "2026-11-21T15:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T12:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 652,
+    "5728356568": 653
+   },
+   "admin_msg": 652
   },
   {
    "pid": "2111195843",
@@ -3176,7 +3181,12 @@
    "expira": "2026-11-21T15:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T12:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 654,
+    "5728356568": 655
+   },
+   "admin_msg": 654
   },
   {
    "pid": "2111195844",
@@ -3199,7 +3209,12 @@
    "expira": "2026-11-21T15:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T12:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 656,
+    "5728356568": 657
+   },
+   "admin_msg": 656
   },
   {
    "pid": "2111195845",
@@ -3222,7 +3237,12 @@
    "expira": "2026-11-21T15:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T12:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 658,
+    "5728356568": 659
+   },
+   "admin_msg": 658
   },
   {
    "pid": "2111195846",
@@ -3245,7 +3265,12 @@
    "expira": "2026-11-21T15:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T12:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 660,
+    "5728356568": 661
+   },
+   "admin_msg": 660
   },
   {
    "pid": "2111195847",
@@ -3268,7 +3293,12 @@
    "expira": "2026-11-21T15:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T12:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 662,
+    "5728356568": 663
+   },
+   "admin_msg": 662
   },
   {
    "pid": "2111195848",
@@ -3291,7 +3321,12 @@
    "expira": "2026-11-21T15:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T12:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 664,
+    "5728356568": 665
+   },
+   "admin_msg": 664
   },
   {
    "pid": "2111195849",
