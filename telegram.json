@@ -4063,7 +4063,7 @@
    },
    "texto": "🌙 <b>DICA TARDIA</b>\n\n🇪🇸 <b>LALIGA – SÁBADO 21/11</b>\nSevilla x Betis | 17h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.83</b> (mínima com valor)\n\n📊 Golos esperados: Sevilla 1.2 – Betis 1.4\n📊 Sevilla: 1 vitória nos últimos 6 jogos, xG 7.2 contra 10.4\n📊 Betis: 3 vitórias nos últimos 6 jogos, xG 9.7 contra 9.9\n🚑 Sevilla sem Marcao, Carmona\n🚑 Betis sem Ceballos, Riquelme\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T17:30:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T14:30:00",
    "extra": true,
    "admin_msgs": {
@@ -4071,9 +4071,63 @@
     "5728356568": 720
    },
    "admin_msg": 719
+  },
+  {
+   "pid": "2117105172",
+   "origem": "tardia",
+   "data": "2026-11-21",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261121-N1-utrecht-cambuur|over_2.5",
+    "match_id": "20261121-N1-utrecht-cambuur",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Utrecht x Cambuur",
+    "prob": 0.6999,
+    "odd_casa": 1.4,
+    "data": "2026-11-21",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇳🇱 <b>EREDIVISIE – SÁBADO 21/11</b>\nUtrecht x Cambuur | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.40</b>\n\n📊 Golos esperados: Utrecht 2.1 – Cambuur 1.5\n📊 Utrecht: 2 vitórias nos últimos 6 jogos, xG 8.1 contra 11.1\n📊 Cambuur: 3 vitórias nos últimos 6 jogos, xG 7.2 contra 8.7\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-21T17:45:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-21T14:45:00",
+   "admin_msgs": {
+    "5575304800": 729,
+    "5728356568": 730
+   },
+   "admin_msg": 729
+  },
+  {
+   "pid": "2117105173",
+   "origem": "tardia",
+   "data": "2026-11-21",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261121-N1-feyenoord-excelsior|over_2.5",
+    "match_id": "20261121-N1-feyenoord-excelsior",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Feyenoord x Excelsior",
+    "prob": 0.689,
+    "odd_casa": 1.31,
+    "data": "2026-11-21",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇳🇱 <b>EREDIVISIE – SÁBADO 21/11</b>\nFeyenoord x Excelsior | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.31</b>\n\n📊 Golos esperados: Feyenoord 2.5 – Excelsior 1.0\n📊 Feyenoord: 3 vitórias nos últimos 6 jogos, xG 14.5 contra 7.8\n📊 Excelsior: 0 vitórias nos últimos 6 jogos, xG 4.9 contra 14.8\n🚑 Feyenoord sem Juste, Bos, Moussa, Beelen\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-21T17:45:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-21T14:45:00",
+   "admin_msgs": {
+    "5575304800": 731,
+    "5728356568": 732
+   },
+   "admin_msg": 731
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373641,
+ "offset_admin": 820373644,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
