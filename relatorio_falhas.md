@@ -1,10 +1,10 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 21/11/2026 17:18. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 21/11/2026 17:31. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 23 Green · 10 Red → **70%** de acerto (o modelo esperava 64%).
-- **Últimos 30 dias:** 68 Green · 29 Red → **70%** de acerto (o modelo esperava 64%).
-- **Desde o início:** 68 Green · 29 Red → **70%** de acerto (o modelo esperava 64%).
+- **Últimos 7 dias:** 24 Green · 10 Red → **71%** de acerto (o modelo esperava 64%).
+- **Últimos 30 dias:** 69 Green · 29 Red → **70%** de acerto (o modelo esperava 64%).
+- **Desde o início:** 69 Green · 29 Red → **70%** de acerto (o modelo esperava 64%).
 - **Múltiplas:** 8 Green em 18.
 
 ## Alertas
@@ -13,7 +13,7 @@ _Atualizado automaticamente a 21/11/2026 17:18. Só dicas publicadas e já decid
 ## Por mercado
 | Mercado | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| Golos +/- | 34 | 71% | 66% | ✅ bem |
+| Golos +/- | 35 | 71% | 66% | ✅ bem |
 | Resultado 1X2 | 31 | 81% | 65% | ⬆️ confiança a menos |
 | Ambas marcam | 16 | 62% | 59% | ✅ bem |
 | Cantos | 7 | 57% | 61% | ⏳ poucos dados |
@@ -33,10 +33,10 @@ _Atualizado automaticamente a 21/11/2026 17:18. Só dicas publicadas e já decid
 | Liga Europa | 4 | 50% | 60% | ⏳ poucos dados |
 | Liga Argentina | 4 | 50% | 60% | ⏳ poucos dados |
 | Bundesliga | 4 | 50% | 62% | ⏳ poucos dados |
-| Liga Belga | 2 | 100% | 65% | ⏳ poucos dados |
 | LaLiga | 2 | 50% | 64% | ⏳ poucos dados |
+| Eredivisie | 2 | 100% | 73% | ⏳ poucos dados |
+| Liga Belga | 2 | 100% | 65% | ⏳ poucos dados |
 | Liga Conferência | 2 | 50% | 60% | ⏳ poucos dados |
-| Eredivisie | 1 | 100% | 70% | ⏳ poucos dados |
 
 ## Por probabilidade
 | Faixa | Dicas | Acerto | Esperado | Leitura |
@@ -44,12 +44,12 @@ _Atualizado automaticamente a 21/11/2026 17:18. Só dicas publicadas e já decid
 | 55-65% | 43 | 67% | 60% | ✅ bem |
 | 65-75% | 31 | 71% | 69% | ✅ bem |
 | < 55% | 14 | 57% | 53% | ✅ bem |
-| ≥ 75% | 9 | 100% | 78% | ⬆️ confiança a menos |
+| ≥ 75% | 10 | 100% | 78% | ⬆️ confiança a menos |
 
 ## Por tipo de dica
 | Tipo | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| ☀️ Manhã | 76 | 74% | 65% | ⬆️ confiança a menos |
+| ☀️ Manhã | 77 | 74% | 65% | ⬆️ confiança a menos |
 | 🌎 Américas | 8 | 88% | 61% | ⬆️ confiança a menos |
 | 💎 Odd alta | 7 | 14% | 56% | ⏳ poucos dados |
 | 🌙 Tardia | 6 | 67% | 61% | ⏳ poucos dados |

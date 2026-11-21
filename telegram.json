@@ -1263,7 +1263,7 @@
    "prob": 0.7608,
    "odd_casa": 1.28,
    "data": "2026-11-21",
-   "resultado": null,
+   "resultado": true,
    "message_id": 261
   },
   {
@@ -3991,9 +3991,14 @@
    },
    "texto": "🏆 <b>TAÇA DE PORTUGAL – SÁBADO 21/11</b>\nGuimaraes x Sp Braga | 20h30\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.67</b>\n\n📊 Golos esperados: Guimaraes 0.8 – Sp Braga 1.2\n📊 Guimaraes: 1 vitória nos últimos 6 jogos, xG 6.5 contra 7.9\n📊 Sp Braga: 2 vitórias nos últimos 6 jogos, xG 8.0 contra 4.3\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T20:30:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T17:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 737,
+    "5728356568": 738
+   },
+   "admin_msg": 737
   },
   {
    "pid": "2117014869",
@@ -4125,9 +4130,28 @@
     "5728356568": 732
    },
    "admin_msg": 731
+  },
+  {
+   "pid": "2117310274",
+   "origem": "resultado",
+   "data": "2026-11-21",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 261,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nNijmegen 1-4 PSV Eindhoven",
+   "expira": "2026-11-22T17:31:02.139833",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 735,
+    "5728356568": 736
+   },
+   "admin_msg": 735
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373644,
+ "offset_admin": 820373646,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
