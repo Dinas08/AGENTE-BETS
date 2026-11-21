@@ -3605,7 +3605,12 @@
    "expira": "2026-11-21T17:45:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 693,
+    "5728356568": 694
+   },
+   "admin_msg": 693
   },
   {
    "pid": "2111195857",
@@ -3628,7 +3633,12 @@
    "expira": "2026-11-21T17:45:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 695,
+    "5728356568": 696
+   },
+   "admin_msg": 695
   },
   {
    "pid": "2111195858",
