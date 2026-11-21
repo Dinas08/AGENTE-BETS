@@ -1240,6 +1240,56 @@
    "data": "2026-11-20",
    "resultado": false,
    "message_id": 256
+  },
+  {
+   "id": "20261121-E0-bournemouth-nottmforest|1",
+   "match_id": "20261121-E0-bournemouth-nottmforest",
+   "key": "1",
+   "texto": "Vitória Bournemouth",
+   "jogo": "Bournemouth x Nott'm Forest",
+   "prob": 0.5008,
+   "odd_casa": 1.93,
+   "data": "2026-11-21",
+   "resultado": null,
+   "extra": true,
+   "message_id": 260
+  },
+  {
+   "id": "20261121-N1-nijmegen-psveindhoven|over_2.5",
+   "match_id": "20261121-N1-nijmegen-psveindhoven",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Nijmegen x PSV Eindhoven",
+   "prob": 0.7608,
+   "odd_casa": 1.28,
+   "data": "2026-11-21",
+   "resultado": null,
+   "message_id": 261
+  },
+  {
+   "id": "20261121-I1-parma-roma|2",
+   "match_id": "20261121-I1-parma-roma",
+   "key": "2",
+   "texto": "Vitória Roma",
+   "jogo": "Parma x Roma",
+   "prob": 0.7571,
+   "odd_casa": 1.28,
+   "data": "2026-11-21",
+   "resultado": null,
+   "message_id": 262
+  },
+  {
+   "id": "20261121-E0-newcastle-arsenal|2",
+   "match_id": "20261121-E0-newcastle-arsenal",
+   "key": "2",
+   "texto": "Vitória Arsenal",
+   "jogo": "Newcastle x Arsenal",
+   "prob": 0.5731,
+   "odd_casa": 1.57,
+   "data": "2026-11-21",
+   "resultado": null,
+   "extra": true,
+   "message_id": 263
   }
  ],
  "multiplas": [
@@ -2759,7 +2809,7 @@
    },
    "texto": "🇳🇱 <b>EREDIVISIE – SÁBADO 21/11</b>\nNijmegen x PSV Eindhoven | 15h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.28</b>\n\n📊 Golos esperados: Nijmegen 1.8 – PSV Eindhoven 2.4\n📊 Nijmegen: 1 vitória nos últimos 6 jogos, xG 10.2 contra 9.8\n📊 PSV Eindhoven: 3 vitórias nos últimos 6 jogos, xG 10.8 contra 8.8\n🚑 Nijmegen sem Nuytinck, Schuurs\n🚑 PSV Eindhoven sem Schouten, Pléa\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T15:30:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-21T12:30:00",
    "admin_msgs": {
     "5575304800": 670,
@@ -2785,7 +2835,7 @@
    },
    "texto": "🇮🇹 <b>SERIE A – SÁBADO 21/11</b>\nParma x Roma | 17h00\n\n✅ <b>Dica: Vitória Roma</b>\n💰 Odd: <b>1.28</b>\n\n📊 Golos esperados: Parma 0.9 – Roma 2.6\n📊 Parma: 1 vitória nos últimos 6 jogos, xG 5.6 contra 13.2\n📊 Roma: 4 vitórias nos últimos 6 jogos, xG 13.7 contra 8.9\n🚑 Parma sem Romero, Ndiaye, Bernabé\n🚑 Roma sem Pellegrini\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T17:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-21T14:00:00",
    "admin_msgs": {
     "5575304800": 676,
@@ -3204,20 +3254,20 @@
    "data": "2026-11-21",
    "lista": "dicas",
    "registo": {
-    "id": "20261121-E0-bournemouth-nottmforest|cantos_over_9.5",
+    "id": "20261121-E0-bournemouth-nottmforest|1",
     "match_id": "20261121-E0-bournemouth-nottmforest",
-    "key": "cantos_over_9.5",
-    "texto": "Mais de 9.5 cantos",
+    "key": "1",
+    "texto": "Vitória Bournemouth",
     "jogo": "Bournemouth x Nott'm Forest",
-    "prob": 0.5573,
-    "odd_casa": null,
+    "prob": 0.5008,
+    "odd_casa": 1.93,
     "data": "2026-11-21",
     "resultado": null,
     "extra": true
    },
-   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 21/11</b>\nBournemouth x Nott&#x27;m Forest | 15h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.79</b> (mínima com valor)\n\n📊 Golos esperados: Bournemouth 1.6 – Nott&#x27;m Forest 1.1\n📊 Bournemouth: 4 vitórias nos últimos 6 jogos, xG 12.1 contra 6.0\n📊 Nott&#x27;m Forest: 1 vitória nos últimos 6 jogos, xG 9.6 contra 6.9\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 21/11</b>\nBournemouth x Nott&#x27;m Forest | 15h00\n\n✅ <b>Dica: Vitória Bournemouth</b>\n💰 Odd: <b>1.93</b>\n\n📊 Golos esperados: Bournemouth 1.6 – Nott&#x27;m Forest 1.1\n📊 Bournemouth: 4 vitórias nos últimos 6 jogos, xG 12.1 contra 6.0\n📊 Nott&#x27;m Forest: 1 vitória nos últimos 6 jogos, xG 9.6 contra 6.9\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T15:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-21T12:00:00",
    "extra": true,
    "admin_msgs": {
@@ -3471,7 +3521,12 @@
    "expira": "2026-11-21T17:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T14:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 682,
+    "5728356568": 683
+   },
+   "admin_msg": 682
   },
   {
    "pid": "2111195854",
@@ -3492,9 +3547,14 @@
    },
    "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 21/11</b>\nNewcastle x Arsenal | 17h30\n\n✅ <b>Dica: Vitória Arsenal</b>\n💰 Odd: <b>1.57</b>\n\n📊 Golos esperados: Newcastle 0.8 – Arsenal 1.6\n📊 Newcastle: 2 vitórias nos últimos 6 jogos, xG 7.8 contra 9.0\n📊 Arsenal: 5 vitórias nos últimos 6 jogos, xG 9.3 contra 4.9\n🚑 Newcastle sem Joelinton\n🚑 Arsenal sem Saka, Zubimendi\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T17:30:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-21T14:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 684,
+    "5728356568": 685
+   },
+   "admin_msg": 684
   },
   {
    "pid": "2111195855",
@@ -3517,7 +3577,12 @@
    "expira": "2026-11-21T17:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T14:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 686,
+    "5728356568": 687
+   },
+   "admin_msg": 686
   },
   {
    "pid": "2111195856",
@@ -3820,6 +3885,6 @@
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373623,
+ "offset_admin": 820373629,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
