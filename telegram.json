@@ -2734,7 +2734,12 @@
    "texto": "🇩🇪 <b>BUNDESLIGA – SÁBADO 21/11</b>\nEin Frankfurt x Hoffenheim | 14h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.33</b>\n\n📊 Golos esperados: Ein Frankfurt 2.1 – Hoffenheim 1.6\n📊 Ein Frankfurt: 2 vitórias nos últimos 6 jogos, xG 10.0 contra 12.7\n📊 Hoffenheim: 3 vitórias nos últimos 6 jogos, xG 10.7 contra 6.9\n🚑 Hoffenheim sem Hajdari, Gendrey, Wimmer\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T14:30:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-21T11:30:00"
+   "enviar_a": "2026-11-21T11:30:00",
+   "admin_msgs": {
+    "5575304800": 640,
+    "5728356568": 641
+   },
+   "admin_msg": 640
   },
   {
    "pid": "2111195830",
@@ -2798,7 +2803,12 @@
    "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🇩🇪 <b>BUNDESLIGA – SÁBADO 21/11</b>\nLeverkusen x Paderborn | 14h30\n\n✅ <b>Dica: Menos de 3.5 golos</b>\n💰 Odd: <b>2.10</b>\n💡 A odd paga mais do que o risco real deste jogo\n\n📊 Golos esperados: Leverkusen 2.0 – Paderborn 1.0\n📊 Leverkusen: 4 vitórias nos últimos 6 jogos, xG 9.8 contra 12.7\n📊 Paderborn: 2 vitórias nos últimos 6 jogos, xG 8.4 contra 10.7\n🚑 Leverkusen sem Terrier, Seghir, Kofane\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T14:30:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-21T11:30:00"
+   "enviar_a": "2026-11-21T11:30:00",
+   "admin_msgs": {
+    "5575304800": 642,
+    "5728356568": 643
+   },
+   "admin_msg": 642
   },
   {
    "pid": "2111195833",
@@ -3059,7 +3069,12 @@
    "expira": "2026-11-21T14:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T11:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 644,
+    "5728356568": 645
+   },
+   "admin_msg": 644
   },
   {
    "pid": "2111195840",
@@ -3082,7 +3097,12 @@
    "expira": "2026-11-21T14:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T11:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 646,
+    "5728356568": 647
+   },
+   "admin_msg": 646
   },
   {
    "pid": "2111195841",
@@ -3105,7 +3125,12 @@
    "expira": "2026-11-21T14:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T11:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 648,
+    "5728356568": 649
+   },
+   "admin_msg": 648
   },
   {
    "pid": "2111195842",
