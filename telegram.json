@@ -2786,7 +2786,12 @@
    "texto": "🇮🇹 <b>SERIE A – SÁBADO 21/11</b>\nParma x Roma | 17h00\n\n✅ <b>Dica: Vitória Roma</b>\n💰 Odd: <b>1.28</b>\n\n📊 Golos esperados: Parma 0.9 – Roma 2.6\n📊 Parma: 1 vitória nos últimos 6 jogos, xG 5.6 contra 13.2\n📊 Roma: 4 vitórias nos últimos 6 jogos, xG 13.7 contra 8.9\n🚑 Parma sem Romero, Ndiaye, Bernabé\n🚑 Roma sem Pellegrini\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T17:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-21T14:00:00"
+   "enviar_a": "2026-11-21T14:00:00",
+   "admin_msgs": {
+    "5575304800": 676,
+    "5728356568": 677
+   },
+   "admin_msg": 676
   },
   {
    "pid": "2111195832",
@@ -3438,7 +3443,12 @@
    "expira": "2026-11-21T17:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-21T14:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 678,
+    "5728356568": 679
+   },
+   "admin_msg": 678
   },
   {
    "pid": "2111195853",
