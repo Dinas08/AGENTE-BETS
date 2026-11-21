@@ -1275,7 +1275,7 @@
    "prob": 0.7571,
    "odd_casa": 1.28,
    "data": "2026-11-21",
-   "resultado": null,
+   "resultado": true,
    "message_id": 262
   },
   {
@@ -4149,9 +4149,28 @@
     "5728356568": 736
    },
    "admin_msg": 735
+  },
+  {
+   "pid": "2118505075",
+   "origem": "resultado",
+   "data": "2026-11-21",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 262,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Roma\nParma 1-5 Roma",
+   "expira": "2026-11-22T18:50:50.046681",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 739,
+    "5728356568": 740
+   },
+   "admin_msg": 739
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373646,
+ "offset_admin": 820373647,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
