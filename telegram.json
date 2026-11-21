@@ -1250,7 +1250,7 @@
    "prob": 0.5008,
    "odd_casa": 1.93,
    "data": "2026-11-21",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 260
   },
@@ -1316,6 +1316,32 @@
    "resultado": null,
    "extra": true,
    "message_id": 265
+  },
+  {
+   "id": "20261121-SP1-realmadrid-celta|over_2.5",
+   "match_id": "20261121-SP1-realmadrid-celta",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Real Madrid x Celta",
+   "prob": 0.6446,
+   "odd_casa": 1.35,
+   "data": "2026-11-21",
+   "resultado": null,
+   "extra": true,
+   "message_id": 267
+  },
+  {
+   "id": "20261121-N1-telstar-zwolle|btts_sim",
+   "match_id": "20261121-N1-telstar-zwolle",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Telstar x Zwolle",
+   "prob": 0.602,
+   "odd_casa": null,
+   "data": "2026-11-21",
+   "resultado": null,
+   "extra": true,
+   "message_id": 268
   }
  ],
  "multiplas": [
@@ -3881,9 +3907,14 @@
    },
    "texto": "🇪🇸 <b>LALIGA – SÁBADO 21/11</b>\nReal Madrid x Celta | 20h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.35</b>\n\n📊 Golos esperados: Real Madrid 2.6 – Celta 0.7\n📊 Real Madrid: 5 vitórias nos últimos 6 jogos, xG 11.6 contra 6.0\n📊 Celta: 2 vitórias nos últimos 6 jogos, xG 8.8 contra 5.0\n🚑 Real Madrid sem Rodrygo, Asencio, Tchouaméni, Asencio\n🚑 Celta sem Iglesias, Núñez\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-21T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 721,
+    "5728356568": 722
+   },
+   "admin_msg": 721
   },
   {
    "pid": "2111195866",
@@ -3904,9 +3935,14 @@
    },
    "texto": "🇳🇱 <b>EREDIVISIE – SÁBADO 21/11</b>\nGroningen x Heerenveen | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.52</b> (mínima com valor)\n\n📊 Golos esperados: Groningen 1.7 – Heerenveen 1.6\n📊 Groningen: 2 vitórias nos últimos 6 jogos, xG 12.1 contra 13.1\n📊 Heerenveen: 5 vitórias nos últimos 6 jogos, xG 11.4 contra 8.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T20:00:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 723,
+    "5728356568": 724
+   },
+   "admin_msg": 723
   },
   {
    "pid": "2111195867",
@@ -3927,9 +3963,14 @@
    },
    "texto": "🇳🇱 <b>EREDIVISIE – SÁBADO 21/11</b>\nTelstar x Zwolle | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.66</b> (mínima com valor)\n\n📊 Golos esperados: Telstar 1.7 – Zwolle 1.3\n📊 Telstar: 1 vitória nos últimos 6 jogos, xG 8.6 contra 12.1\n📊 Zwolle: 2 vitórias nos últimos 6 jogos, xG 6.3 contra 7.8\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-21T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 725,
+    "5728356568": 726
+   },
+   "admin_msg": 725
   },
   {
    "pid": "2111195868",
@@ -3953,9 +3994,86 @@
    "estado": "pendente",
    "enviar_a": "2026-11-21T17:30:00",
    "extra": true
+  },
+  {
+   "pid": "2117014869",
+   "origem": "resultado",
+   "data": "2026-11-21",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 260,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Bournemouth\nBournemouth 2-0 Nott&#x27;m Forest",
+   "expira": "2026-11-22T17:01:48.321882",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 715,
+    "5728356568": 716
+   },
+   "admin_msg": 715
+  },
+  {
+   "pid": "2117015070",
+   "origem": "tardia",
+   "data": "2026-11-21",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261121-D1-schalke04-stuttgart|over_2.5",
+    "match_id": "20261121-D1-schalke04-stuttgart",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Schalke 04 x Stuttgart",
+    "prob": 0.5688,
+    "odd_casa": 1.46,
+    "data": "2026-11-21",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇩🇪 <b>BUNDESLIGA – SÁBADO 21/11</b>\nSchalke 04 x Stuttgart | 17h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.46</b>\n\n📊 Golos esperados: Schalke 04 1.1 – Stuttgart 1.8\n📊 Schalke 04: 0 vitórias nos últimos 6 jogos, xG 5.5 contra 10.9\n📊 Stuttgart: 3 vitórias nos últimos 6 jogos, xG 10.5 contra 10.6\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-21T17:30:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-21T14:30:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 717,
+    "5728356568": 718
+   },
+   "admin_msg": 717
+  },
+  {
+   "pid": "2117015071",
+   "origem": "tardia",
+   "data": "2026-11-21",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261121-SP1-sevilla-betis|btts_sim",
+    "match_id": "20261121-SP1-sevilla-betis",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Sevilla x Betis",
+    "prob": 0.5457,
+    "odd_casa": null,
+    "data": "2026-11-21",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇪🇸 <b>LALIGA – SÁBADO 21/11</b>\nSevilla x Betis | 17h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.83</b> (mínima com valor)\n\n📊 Golos esperados: Sevilla 1.2 – Betis 1.4\n📊 Sevilla: 1 vitória nos últimos 6 jogos, xG 7.2 contra 10.4\n📊 Betis: 3 vitórias nos últimos 6 jogos, xG 9.7 contra 9.9\n🚑 Sevilla sem Marcao, Carmona\n🚑 Betis sem Ceballos, Riquelme\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-21T17:30:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-21T14:30:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 719,
+    "5728356568": 720
+   },
+   "admin_msg": 719
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373636,
+ "offset_admin": 820373641,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
