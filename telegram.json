@@ -1290,6 +1290,32 @@
    "resultado": null,
    "extra": true,
    "message_id": 263
+  },
+  {
+   "id": "20261121-F1-monaco-auxerre|1",
+   "match_id": "20261121-F1-monaco-auxerre",
+   "key": "1",
+   "texto": "Vitória Monaco",
+   "jogo": "Monaco x Auxerre",
+   "prob": 0.6662,
+   "odd_casa": 1.39,
+   "data": "2026-11-21",
+   "resultado": null,
+   "extra": true,
+   "message_id": 264
+  },
+  {
+   "id": "20261121-B1-mechelen-clubbrugge|2",
+   "match_id": "20261121-B1-mechelen-clubbrugge",
+   "key": "2",
+   "texto": "Vitória Club Brugge",
+   "jogo": "Mechelen x Club Brugge",
+   "prob": 0.6933,
+   "odd_casa": 1.37,
+   "data": "2026-11-21",
+   "resultado": null,
+   "extra": true,
+   "message_id": 265
   }
  ],
  "multiplas": [
@@ -2733,7 +2759,7 @@
    },
    "texto": "📊 <b>RESUMO DE 20/11</b>\n\n🟢 0 Green · 🔴 2 Red\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-22T00:01:17.235492",
-   "estado": "pendente",
+   "estado": "descartada",
    "admin_msgs": {
     "5728356568": 621
    },
@@ -3491,7 +3517,7 @@
    },
    "texto": "🏆 <b>TAÇA DE PORTUGAL – SÁBADO 21/11</b>\nMaritimo x GD Chaves | 17h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.54</b> (mínima com valor)\n\n📊 Golos esperados: Maritimo 1.8 – GD Chaves 0.9\n📊 Maritimo: 0 vitórias nos últimos 6 jogos, xG 4.5 contra 9.2\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T17:00:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T14:00:00",
    "extra": true,
    "admin_msgs": {
@@ -3519,7 +3545,7 @@
    },
    "texto": "🇩🇪 <b>BUNDESLIGA – SÁBADO 21/11</b>\nSchalke 04 x Stuttgart | 17h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.46</b>\n\n📊 Golos esperados: Schalke 04 1.1 – Stuttgart 1.8\n📊 Schalke 04: 0 vitórias nos últimos 6 jogos, xG 5.5 contra 10.9\n📊 Stuttgart: 3 vitórias nos últimos 6 jogos, xG 10.5 contra 10.6\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T17:30:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T14:30:00",
    "extra": true,
    "admin_msgs": {
@@ -3575,7 +3601,7 @@
    },
    "texto": "🇪🇸 <b>LALIGA – SÁBADO 21/11</b>\nSevilla x Betis | 17h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.83</b> (mínima com valor)\n\n📊 Golos esperados: Sevilla 1.2 – Betis 1.4\n📊 Sevilla: 1 vitória nos últimos 6 jogos, xG 7.2 contra 10.4\n📊 Betis: 3 vitórias nos últimos 6 jogos, xG 9.7 contra 9.9\n🚑 Sevilla sem Marcao, Carmona\n🚑 Betis sem Ceballos, Riquelme\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T17:30:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T14:30:00",
    "extra": true,
    "admin_msgs": {
@@ -3603,7 +3629,7 @@
    },
    "texto": "🇳🇱 <b>EREDIVISIE – SÁBADO 21/11</b>\nFeyenoord x Excelsior | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.31</b>\n\n📊 Golos esperados: Feyenoord 2.5 – Excelsior 1.0\n📊 Feyenoord: 3 vitórias nos últimos 6 jogos, xG 14.5 contra 7.8\n📊 Excelsior: 0 vitórias nos últimos 6 jogos, xG 4.9 contra 14.8\n🚑 Feyenoord sem Juste, Bos, Moussa, Beelen\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T14:45:00",
    "extra": true,
    "admin_msgs": {
@@ -3631,7 +3657,7 @@
    },
    "texto": "🇳🇱 <b>EREDIVISIE – SÁBADO 21/11</b>\nUtrecht x Cambuur | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.40</b>\n\n📊 Golos esperados: Utrecht 2.1 – Cambuur 1.5\n📊 Utrecht: 2 vitórias nos últimos 6 jogos, xG 8.1 contra 11.1\n📊 Cambuur: 3 vitórias nos últimos 6 jogos, xG 7.2 contra 8.7\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T14:45:00",
    "extra": true,
    "admin_msgs": {
@@ -3687,9 +3713,14 @@
    },
    "texto": "🇮🇹 <b>SERIE A – SÁBADO 21/11</b>\nNapoli x Torino | 19h45\n\n✅ <b>Dica: Vitória Napoli</b>\n💰 Odd: <b>1.47</b>\n\n📊 Golos esperados: Napoli 1.8 – Torino 0.9\n📊 Napoli: 2 vitórias nos últimos 6 jogos, xG 12.5 contra 6.7\n📊 Torino: 3 vitórias nos últimos 6 jogos, xG 7.5 contra 6.9\n🚑 Napoli sem Lorenzo, Lobotka, Badiashile, Neres\n🚑 Torino sem Vlasic, Belghali\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T19:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 701,
+    "5728356568": 702
+   },
+   "admin_msg": 701
   },
   {
    "pid": "2111195860",
@@ -3710,9 +3741,14 @@
    },
    "texto": "🇫🇷 <b>LIGUE 1 – SÁBADO 21/11</b>\nStrasbourg x Brest | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.61</b> (mínima com valor)\n\n📊 Golos esperados: Strasbourg 1.8 – Brest 1.4\n📊 Strasbourg: 1 vitória nos últimos 6 jogos, xG 6.8 contra 8.6\n📊 Brest: 3 vitórias nos últimos 6 jogos, xG 10.6 contra 7.4\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T19:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 703,
+    "5728356568": 704
+   },
+   "admin_msg": 703
   },
   {
    "pid": "2111195861",
@@ -3733,9 +3769,14 @@
    },
    "texto": "🇫🇷 <b>LIGUE 1 – SÁBADO 21/11</b>\nMonaco x Auxerre | 19h45\n\n✅ <b>Dica: Vitória Monaco</b>\n💰 Odd: <b>1.39</b>\n\n📊 Golos esperados: Monaco 2.1 – Auxerre 0.9\n📊 Monaco: 1 vitória nos últimos 6 jogos, xG 7.2 contra 8.6\n📊 Auxerre: 2 vitórias nos últimos 6 jogos, xG 8.0 contra 9.2\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T19:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-21T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 705,
+    "5728356568": 706
+   },
+   "admin_msg": 705
   },
   {
    "pid": "2111195862",
@@ -3756,9 +3797,14 @@
    },
    "texto": "🇫🇷 <b>LIGUE 1 – SÁBADO 21/11</b>\nLens x Toulouse | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.66</b> (mínima com valor)\n\n📊 Golos esperados: Lens 1.7 – Toulouse 1.3\n📊 Lens: 3 vitórias nos últimos 6 jogos, xG 7.1 contra 7.9\n📊 Toulouse: 3 vitórias nos últimos 6 jogos, xG 9.1 contra 6.9\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T19:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 707,
+    "5728356568": 708
+   },
+   "admin_msg": 707
   },
   {
    "pid": "2111195863",
@@ -3779,9 +3825,14 @@
    },
    "texto": "🇧🇪 <b>LIGA BELGA – SÁBADO 21/11</b>\nMechelen x Club Brugge | 19h45\n\n✅ <b>Dica: Vitória Club Brugge</b>\n💰 Odd: <b>1.37</b>\n\n📊 Golos esperados: Mechelen 1.0 – Club Brugge 2.4\n📊 Mechelen: 3 vitórias nos últimos 6 jogos, xG 5.7 contra 6.9\n📊 Club Brugge: 5 vitórias nos últimos 6 jogos, xG 15.5 contra 9.3\n🚑 Mechelen sem Hammar\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T19:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-21T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 709,
+    "5728356568": 710
+   },
+   "admin_msg": 709
   },
   {
    "pid": "2111195864",
@@ -3802,9 +3853,14 @@
    },
    "texto": "🇫🇷 <b>LIGUE 1 – SÁBADO 21/11</b>\nLille x Lyon | 19h45\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.75</b>\n\n📊 Golos esperados: Lille 1.2 – Lyon 0.9\n📊 Lille: 3 vitórias nos últimos 6 jogos, xG 7.9 contra 7.7\n📊 Lyon: 3 vitórias nos últimos 6 jogos, xG 9.2 contra 7.8\n🚑 Lille sem Santos, Igamane, Ueda\n🚑 Lyon sem Openda, Sulc\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T19:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 711,
+    "5728356568": 712
+   },
+   "admin_msg": 711
   },
   {
    "pid": "2111195865",
@@ -3900,6 +3956,6 @@
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373630,
+ "offset_admin": 820373636,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
