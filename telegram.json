@@ -3659,9 +3659,14 @@
    },
    "texto": "🏆 <b>TAÇA DE PORTUGAL – SÁBADO 21/11</b>\nSp Lisbon x Uniao da Serra | 18h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.20</b> (mínima com valor)\n\n📊 Golos esperados: Sp Lisbon 4.5 – Uniao da Serra 0.4\n📊 Sp Lisbon: 3 vitórias nos últimos 6 jogos, xG 11.4 contra 5.5\n🚑 Sp Lisbon sem Suárez\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T18:00:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-21T15:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 699,
+    "5728356568": 700
+   },
+   "admin_msg": 699
   },
   {
    "pid": "2111195859",
@@ -3895,6 +3900,6 @@
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373629,
+ "offset_admin": 820373630,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
