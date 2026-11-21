@@ -2760,7 +2760,12 @@
    "texto": "🇳🇱 <b>EREDIVISIE – SÁBADO 21/11</b>\nNijmegen x PSV Eindhoven | 15h30\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.28</b>\n\n📊 Golos esperados: Nijmegen 1.8 – PSV Eindhoven 2.4\n📊 Nijmegen: 1 vitória nos últimos 6 jogos, xG 10.2 contra 9.8\n📊 PSV Eindhoven: 3 vitórias nos últimos 6 jogos, xG 10.8 contra 8.8\n🚑 Nijmegen sem Nuytinck, Schuurs\n🚑 PSV Eindhoven sem Schouten, Pléa\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-21T15:30:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-21T12:30:00"
+   "enviar_a": "2026-11-21T12:30:00",
+   "admin_msgs": {
+    "5575304800": 670,
+    "5728356568": 671
+   },
+   "admin_msg": 670
   },
   {
    "pid": "2111195831",
