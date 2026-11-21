@@ -2626,7 +2626,7 @@
    },
    "texto": "❌ RED: Mais de 9.5 cantos\nBayern Munich 1-1 FC Koln",
    "expira": "2026-11-21T21:29:53.647980",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 615,
     "5728356568": 616
@@ -2645,7 +2645,7 @@
    },
    "texto": "❌ RED: Vitória Ath Bilbao\nAth Bilbao 0-1 Espanol",
    "expira": "2026-11-21T21:55:42.316172",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 617,
     "5728356568": 618
@@ -2664,7 +2664,7 @@
    },
    "texto": "❌ RED na múltipla (1/2 pernas certas até agora)",
    "expira": "2026-11-21T21:55:43.067322",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 619,
     "5728356568": 620
@@ -2691,6 +2691,6 @@
   }
  ],
  "ultimo_resumo": 253,
- "offset_admin": 820373620,
+ "offset_admin": 820373623,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAP4av5ZGvpfUSZ3X3IqfKLt6odJX7oAAsAeAAKYQ4lTiRodjWpgDVA9BA"
 }
