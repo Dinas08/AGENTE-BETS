@@ -1586,7 +1586,7 @@
    "prob": 0.7408,
    "odd_casa": 1.26,
    "data": "2026-11-24",
-   "resultado": null,
+   "resultado": true,
    "message_id": 316
   },
   {
@@ -1598,7 +1598,7 @@
    "prob": 0.5839,
    "odd_casa": 2.1,
    "data": "2026-11-24",
-   "resultado": null,
+   "resultado": true,
    "tipo": "odd_alta",
    "message_id": 317
   },
@@ -2439,7 +2439,7 @@
     }
    ],
    "prob": 0.4206,
-   "resultado": null,
+   "resultado": true,
    "message_id": 318
   }
  ],
@@ -6441,9 +6441,66 @@
     "5728356568": 986
    },
    "admin_msg": 985
+  },
+  {
+   "pid": "24220146146",
+   "origem": "resultado",
+   "data": "2026-11-24",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 316,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Como\nComo 1-0 AEK",
+   "expira": "2026-11-25T22:01:46.002427",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 987,
+    "5728356568": 988
+   },
+   "admin_msg": 987
+  },
+  {
+   "pid": "24220146147",
+   "origem": "resultado",
+   "data": "2026-11-24",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 317,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Porto\nFeyenoord 0-1 Porto",
+   "expira": "2026-11-25T22:01:46.882941",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 989,
+    "5728356568": 990
+   },
+   "admin_msg": 989
+  },
+  {
+   "pid": "24220147148",
+   "origem": "resultado",
+   "data": "2026-11-24",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 318,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN NA MÚLTIPLA!</b> 💰",
+   "expira": "2026-11-25T22:01:47.749607",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 991,
+    "5728356568": 992
+   },
+   "admin_msg": 991
   }
  ],
  "ultimo_resumo": 313,
- "offset_admin": 820373740,
+ "offset_admin": 820373743,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
