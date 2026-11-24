@@ -1,6 +1,6 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 24/11/2026 03:33. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 24/11/2026 11:49. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
 - **Últimos 7 dias:** 27 Green · 9 Red → **75%** de acerto (o modelo esperava 66%).
 - **Últimos 30 dias:** 85 Green · 35 Red → **71%** de acerto (o modelo esperava 64%).
@@ -63,7 +63,7 @@ Das 51 apostas extra que ficaram por publicar, 35 teriam dado Green (**69%**), c
 ## Últimos Reds
 - 23/11 · Santos x Gremio **0-2** · Vitória Santos (58%, Resultado 1X2)
 - 23/11 · Internacional x Vitoria **2-5** · Vitória Internacional (63%, Resultado 1X2)
-- 23/11 · Brentford x Everton **4-0** · Ambas marcam (54%, Ambas marcam)
+- 23/11 · Brentford x Everton **4-0** · xG 2.8-0.2 · Ambas marcam (54%, Ambas marcam)
 - 22/11 · Hull x Brighton **2-0** · xG 1.8-2.2 · Vitória Brighton (60%, Resultado 1X2)
 - 21/11 · Monaco x Auxerre **1-1** · xG 2.4-0.3 · Vitória Monaco (67%, Resultado 1X2)
 - 21/11 · Newcastle x Arsenal **2-2** · xG 1.7-1.5 · Vitória Arsenal (57%, Resultado 1X2)
