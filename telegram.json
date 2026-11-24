@@ -1550,6 +1550,32 @@
    "resultado": true,
    "tipo": "madrugada",
    "message_id": 307
+  },
+  {
+   "id": "20261124-UCL-galatasaray-astonvilla|btts_sim",
+   "match_id": "20261124-UCL-galatasaray-astonvilla",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Galatasaray x Aston Villa",
+   "prob": 0.6306,
+   "odd_casa": null,
+   "data": "2026-11-24",
+   "resultado": null,
+   "extra": true,
+   "message_id": 314
+  },
+  {
+   "id": "20261124-UCL-bodoglimt-lasklinz|over_2.5",
+   "match_id": "20261124-UCL-bodoglimt-lasklinz",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Bodo/Glimt x LASK Linz",
+   "prob": 0.7422,
+   "odd_casa": null,
+   "data": "2026-11-24",
+   "resultado": null,
+   "extra": true,
+   "message_id": 315
   }
  ],
  "multiplas": [
@@ -6045,7 +6071,12 @@
    "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• Galatasaray x Aston Villa: Menos de 3.5 golos (@1.71)\n   <i>↳ golos esperados 1.6 – 1.5</i>\n• Real Madrid x PSV Eindhoven: Ambas marcam (@1.34)\n   <i>↳ golos esperados 3.3 – 1.3</i>\n• RB Leipzig x Lens: Mais de 2.5 golos (@1.23)\n   <i>↳ golos esperados 3.1 – 1.1</i>\n• Man City x Napoli: Vitória Man City (@1.29)\n   <i>↳ golos esperados 2.6 – 1.2 · Man City 2V em 6</i>\n• Como x AEK: Mais de 2.5 golos (@1.39)\n   <i>↳ golos esperados 2.6 – 0.9</i>\n\n💰 Odd total: <b>5.05</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T17:45:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-24T14:45:00"
+   "enviar_a": "2026-11-24T14:45:00",
+   "admin_msgs": {
+    "5575304800": 951,
+    "5728356568": 952
+   },
+   "admin_msg": 951
   },
   {
    "pid": "24112021136",
@@ -6066,9 +6097,14 @@
    },
    "texto": "⭐ <b>LIGA DOS CAMPEÕES – TERÇA 24/11</b>\nBodo/Glimt x LASK Linz | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.27</b> (estimativa nas casas)\n\n📊 Golos esperados: Bodo/Glimt 2.6 – LASK Linz 1.4\n🚑 Bodo/Glimt sem Evjen, Mikkelsen\n🚑 LASK Linz sem Bello, Harakaté, Smakaj\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-24T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 953,
+    "5728356568": 954
+   },
+   "admin_msg": 953
   },
   {
    "pid": "24112021137",
@@ -6089,9 +6125,14 @@
    },
    "texto": "⭐ <b>LIGA DOS CAMPEÕES – TERÇA 24/11</b>\nGalatasaray x Aston Villa | 17h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.48</b> (estimativa nas casas)\n\n📊 Golos esperados: Galatasaray 1.6 – Aston Villa 1.5\n📊 Galatasaray: 6 vitórias nos últimos 6 jogos, xG 12.8 contra 6.2\n📊 Aston Villa: 2 vitórias nos últimos 6 jogos, xG 10.2 contra 9.6\n🚑 Galatasaray sem Osimhen, Leão, Sallai, Jakobs\n🚑 Aston Villa sem Onana, Ruggeri, Cash, Lindelöf\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-24T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 955,
+    "5728356568": 956
+   },
+   "admin_msg": 955
   },
   {
    "pid": "24112021138",
@@ -6141,6 +6182,6 @@
   }
  ],
  "ultimo_resumo": 313,
- "offset_admin": 820373725,
+ "offset_admin": 820373727,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
