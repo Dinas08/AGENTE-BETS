@@ -1560,7 +1560,7 @@
    "prob": 0.6306,
    "odd_casa": null,
    "data": "2026-11-24",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 314
   },
@@ -1573,7 +1573,7 @@
    "prob": 0.7422,
    "odd_casa": null,
    "data": "2026-11-24",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 315
   },
@@ -6324,9 +6324,47 @@
     "5728356568": 974
    },
    "admin_msg": 973
+  },
+  {
+   "pid": "24194053140",
+   "origem": "resultado",
+   "data": "2026-11-24",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 314,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Ambas marcam\nGalatasaray 1-0 Aston Villa",
+   "expira": "2026-11-25T19:40:53.233815",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 977,
+    "5728356568": 978
+   },
+   "admin_msg": 977
+  },
+  {
+   "pid": "24194054141",
+   "origem": "resultado",
+   "data": "2026-11-24",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 315,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Mais de 2.5 golos\nBodo/Glimt 1-0 LASK Linz",
+   "expira": "2026-11-25T19:40:54.056451",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 979,
+    "5728356568": 980
+   },
+   "admin_msg": 979
   }
  ],
  "ultimo_resumo": 313,
- "offset_admin": 820373734,
+ "offset_admin": 820373737,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
