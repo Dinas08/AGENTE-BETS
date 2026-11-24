@@ -1611,7 +1611,7 @@
    "prob": 0.5733,
    "odd_casa": 1.45,
    "data": "2026-11-24",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 319
   },
@@ -1624,7 +1624,7 @@
    "prob": 0.7666,
    "odd_casa": 1.26,
    "data": "2026-11-24",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 320
   },
@@ -1637,7 +1637,7 @@
    "prob": 0.7189,
    "odd_casa": null,
    "data": "2026-11-24",
-   "resultado": null,
+   "resultado": true,
    "message_id": 321
   }
  ],
@@ -6384,9 +6384,66 @@
    "expira": "2026-11-25T03:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-25T00:00:00"
+  },
+  {
+   "pid": "24215258143",
+   "origem": "resultado",
+   "data": "2026-11-24",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 319,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Arsenal\nArsenal 1-1 Dortmund",
+   "expira": "2026-11-25T21:52:58.241492",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 981,
+    "5728356568": 982
+   },
+   "admin_msg": 981
+  },
+  {
+   "pid": "24215258144",
+   "origem": "resultado",
+   "data": "2026-11-24",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 320,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Betis\nSlovan Bratislava 0-2 Betis",
+   "expira": "2026-11-25T21:52:58.904598",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 983,
+    "5728356568": 984
+   },
+   "admin_msg": 983
+  },
+  {
+   "pid": "24215259145",
+   "origem": "resultado",
+   "data": "2026-11-24",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 321,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nMan City 2-2 Napoli",
+   "expira": "2026-11-25T21:52:59.522588",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 985,
+    "5728356568": 986
+   },
+   "admin_msg": 985
   }
  ],
  "ultimo_resumo": 313,
- "offset_admin": 820373737,
+ "offset_admin": 820373740,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
