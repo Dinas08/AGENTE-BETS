@@ -1,0 +1,18 @@
+# Atalanta
+
+*Ficha mantida pelo agente: estilo, tendências, e o que o modelo tem lido mal. Ler antes de ajustar jogos desta equipa.*
+
+## Estado atual
+- Favorita fora de casa em Florença (48%) mas não dominou: xG 1.1 contra 1.6.
+
+## Tendências observadas
+- Jogos abertos (golos dos dois lados) — Ambas marcam acertou.
+
+## Erros do modelo com esta equipa
+- 2026-10-29 em Florença: sobrestimámos a Atalanta fora (previsto 1.6 golos, xG real 1.1).
+
+- 02/11/2026: perdeu 0-3 em casa com o Parma (modelo: 57% vitória, 18% para este desfecho) com 10 ausentes e sem GR. Erro de leitura parcial: defesa subestimada. Sofre muito acima do previsto (4.8 vs 2.1 em 2 jogos).
+
+- 05/11/2026: empatou 1-1 com o Kairat (modelo 86%, 3.5-0.9, cantos 9-2). Falta de finalização/azar, mas 3.º jogo seguido abaixo do esperado (4.0 golos contra 6.9).
+
+- 22/11/2026: empatou 4-4 com a Inter em casa (Inter 72%; desfecho a 17%). Recuperou de 0-2, 2-4 e 4-4 com penálti de Kessié aos 90+1'. Ataque a render acima da aprendizagem (−11%) em jogos abertos; defesa continua a sofrer (7.5 golos sofridos em 3 jogos maiores). Em casa contra grandes, subir golos esperados e tratar Mais 2.5/BTTS como valor.

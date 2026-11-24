@@ -1,0 +1,2130 @@
+{
+ "atualizado_em": "2026-11-23",
+ "equipas": {
+  "Bayern Munich": {
+   "golos_marcados": -4,
+   "golos_sofridos": 0,
+   "motivo": "Davies lesionado; Neuer, Gnabry, Díaz fora/dúvida; Musiala talvez regresse; Kompany no banco (notícias 18-19/11/2026); Neuer fora (tendão), Urbig na baliza; Kompany regressa ao banco (notícias 20/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Davies",
+     "motivo": "lesão muscular",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Neuer",
+     "motivo": "lesão/dúvida",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Gnabry",
+     "motivo": "ausente",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Luis Díaz",
+     "motivo": "ausente/dúvida",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Saibari",
+     "motivo": "tornozelo",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.espn.com/soccer/story/_/id/50518869/bayern-munich-vs-fc-cologne-tv-channel-how-watch-uk-kickoff-live-stream-team-news-referee-predicted-lineups",
+    "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-fc-bayern-vs.-koeln-bundesliga-md-10"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Porto": {
+   "golos_marcados": 0,
+   "golos_sofridos": 3,
+   "motivo": "Plantel quase completo (Record), Smalling (joelho), Vasco Sousa e Mec em treino condicionado; sem rotação no CL (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Chris Smalling",
+     "motivo": "joelho (dúvida)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Vasco Sousa",
+     "motivo": "lesão (treino condicionado)",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Gabriel Mec",
+     "motivo": "lesão (treino condicionado)",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://record.pt/futebol/futebol-nacional/liga-betclic/fc-porto/detalhe/farioli-pode-sorrir-champions-com-todos-pela-primeira-vez (22-23 nov 2026)",
+    "https://www.ojogo.pt/futebol/artigo/fc-porto-comecou-a-preparar-o-feyenoord-ha-tres-lesionados/18151002 (22 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Sp Lisbon": {
+   "golos_marcados": -10,
+   "golos_sofridos": 0,
+   "motivo": "Taça vs União da Serra: rotação provável (Suárez poupado), Flávio Gonçalves fora com problemas físicos; dados limitados",
+   "ausentes": [
+    {
+     "jogador": "Flávio Gonçalves",
+     "motivo": "problemas físicos (seleção)",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Luis Suárez",
+     "motivo": "poupado",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://abola.pt/noticias/sporting-regressos-antecipados-e-uma-preocupacao-agitam-inicio-da-semana-2026111617412385988 (pesquisa, 16 nov 2026)"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Arsenal": {
+   "golos_marcados": -5,
+   "golos_sofridos": 4,
+   "motivo": "Saka fora ~8 semanas, Zubimendi fora (isquiotibial), Raya provavelmente fora → Kepa na baliza (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Saka",
+     "motivo": "quadríceps, ~8 semanas",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Zubimendi",
+     "motivo": "isquiotibial",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Raya",
+     "motivo": "ombro (quase certo fora)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Dowman",
+     "motivo": "castigo",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://lentedesportiva.com/arsenal-set-to-make-major-goalkeeping-change-as-champions-league-injury-concerns-mount/ (pesquisa 23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Real Madrid": {
+   "golos_marcados": -2,
+   "golos_sofridos": 3,
+   "motivo": "Rodrygo e Asencio (central) fora; Mendy inelegível; Vinícius regressa (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Rodrygo",
+     "motivo": "cruzado/menisco",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Raúl Asencio",
+     "motivo": "lesão (central)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ferland Mendy",
+     "motivo": "inelegível (fora da lista CL)",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.futbolfantasy.com/laliga/noticias/155229-el-real-madrid-ya-prepara-la-champions-con-las-unicas-bajas-de-rodrygo-y-asencio (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Celta": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Borja Iglesias (gémeo) e Miguel Román fora; Borja Iglesias, Núñez, Román fora (notícias 20/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Borja Iglesias",
+     "motivo": "rotura gémeo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Miguel Román",
+     "motivo": "artroscopia joelho",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Álvaro Núñez",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://comuniate.com/noticias/39015/celta-partes-medicos-actualizados (pesquisa, nov 2026)",
+    "https://comuniate.com/noticias/39023/real-madrid-celta-previa-alineaciones-probables-y-consejos-fantasy-jornada-13-de-laliga"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Roma": {
+   "golos_marcados": 0,
+   "golos_sofridos": 2,
+   "motivo": "Dybala, Koné, Mancini e Svilar recuperados; Rensch e Pellegrini fora (sem ajuste); Svilar dúvida (55/45 com Gollini)",
+   "ausentes": [
+    {
+     "jogador": "Devyne Rensch",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Lorenzo Pellegrini",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.corrieredellosport.it/news/calcio/serie-a/roma/2026/11/18-152662225/gasperini_recupera_quattro_titolari_per_parma_da_dybala_a_kon_tutto_sulle_loro_condizioni (18 nov 2026)"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "FC Koln": {
+   "golos_marcados": 0,
+   "golos_sofridos": 3,
+   "motivo": "Hübers e van den Berg fora; Ache dúvida (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Hübers",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Rav van den Berg",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ache",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/bayern-munich/bundesliga-title-race/preview/bayern-vs-fc-koln-prediction-team-news-lineups_609217.html"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Man City": {
+   "golos_marcados": -3,
+   "golos_sofridos": 4,
+   "motivo": "Semenyo fora (joelho), Matheus Nunes dúvida; 2 jogos sem ganhar (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Semenyo",
+     "motivo": "joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Matheus Nunes",
+     "motivo": "dúvida (fontes divergem)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/man-city/champions-league/preview/man-city-vs-napoli-prediction-team-news-lineups_609624.html (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Newcastle": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Joelinton fora (MRI); Livramento e Miley a regressar (notícias 18-19/11/2026); Joelinton e Jaouen fora (notícias 20/11/2026); 2 derrotas 1-0 em casa",
+   "ausentes": [
+    {
+     "jogador": "Joelinton",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Jaouen",
+     "motivo": "lesão isquiotibiais (GR suplente)",
+     "importancia": "suplente"
+    }
+   ],
+   "fontes": [
+    "https://www.nufcblog.com/post/newcastle-arsenal-injury-news-predicted-team",
+    "https://premierleaguenewsnow.com/2026/11/20/newcastle-predicted-lineup-arsenal-joelinton/"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Chelsea": {
+   "golos_marcados": -4,
+   "golos_sofridos": 3,
+   "motivo": "Reece James e João Pedro fora/dúvida, Hato e Gittens dúvidas (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Reece James",
+     "motivo": "joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "João Pedro",
+     "motivo": "coxa (dúvida)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Hato",
+     "motivo": "costas (dúvida)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Gittens",
+     "motivo": "tornozelo (dúvida)",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://sports.yahoo.com/articles/early-chelsea-vs-leeds-united-200000826.html"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Tottenham": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Tel, Odobert e Simons fora; Savio, Mudryk e Bergvall podem voltar (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Mathys Tel",
+     "motivo": "tornozelo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Odobert",
+     "motivo": "ligamento cruzado",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Xavi Simons",
+     "motivo": "ligamento cruzado",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/savio-tel-mudryk-updates-spurs-injury-suspension-list-vs-ipswich_609268.html"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Aston Villa": {
+   "golos_marcados": -3,
+   "golos_sofridos": 3,
+   "motivo": "Onana (cruzado) e Ruggeri (isquiotibial) fora; Cash (concussão, fontes divergem), Lindelöf dúvida (doença) (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Onana",
+     "motivo": "cruzado",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ruggeri",
+     "motivo": "isquiotibial",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Matty Cash",
+     "motivo": "concussão (dúvida)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Lindelöf",
+     "motivo": "doença (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/galatasaray/champions-league/preview/galatasaray-vs-aston-villa-prediction-team-news-lineups_609642.html (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Crystal Palace": {
+   "golos_marcados": -5,
+   "golos_sofridos": 2,
+   "motivo": "Mateta suspenso (3 jogos), Riad fora, Sarr dúvida (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Mateta",
+     "motivo": "castigo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Riad",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Sarr",
+     "motivo": "virilha (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.squawka.com/us/epl-premier-league/premier-league-injuries-and-suspensions/"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Coventry": {
+   "golos_marcados": -2,
+   "golos_sofridos": 2,
+   "motivo": "Wright e Amenda fora; Eccles, Thomas, Onyeka, Woolfenden dúvidas (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Haji Wright",
+     "motivo": "lesão (até 02/12)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Amenda",
+     "motivo": "lesão (até 19/12)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.fantasyfootballscout.co.uk/2026/11/19/fpl-gameweek-11-early-team-news-injury-latest-on-all-20-teams"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Sevilla": {
+   "golos_marcados": -4,
+   "golos_sofridos": 0,
+   "motivo": "Sierra, Marcao, Alfon, Carmona (e Morante) fora para o derbi (notícias 18-19/11/2026); 4 baixas para o derbi; Peque, Fofana, Isaac Romero devem regressar (notícias 18-20/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Marcao",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Carmona",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Sierra",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Alfon",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Alfon González",
+     "motivo": "cruzado (época)",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Miguel Sierra",
+     "motivo": "luxação acromioclavicular",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.infobae.com/espana/agencias/2026/11/18/el-sevilla-avanza-hacia-el-derbi-con-cuatro-bajas-seguras-por-lesion/",
+    "https://www.infobae.com/espana/agencias/2026/11/18/el-sevilla-avanza-hacia-el-derbi-con-cuatro-bajas-seguras-por-lesion/"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Betis": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Ceballos e Morante fora (não viajam); Antony pancada (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Dani Ceballos",
+     "motivo": "isquiotibial, até dezembro",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Morante",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/slovan-bratislava/preview/slovan-bratislava-vs-betis-prediction-team-news-lineups_609622.html (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Villarreal": {
+   "golos_marcados": 0,
+   "golos_sofridos": 0,
+   "motivo": "Diatta fora; Gerard Moreno e Foyth dúvidas (notícias 20-21/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Diatta",
+     "motivo": "isquiotibiais, até abril",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Gerard Moreno",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Foyth",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://news.bet365.es/es-es/article/barcelona-vs-villarreal-alineaciones-estadisticas-horario-donde-ver/2026112011032039602"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Valencia": {
+   "golos_marcados": -4,
+   "golos_sofridos": 4,
+   "motivo": "Gayà suspenso (vermelho); Sadiq, Canós, Foulquier, Diego López (cruzado) fora (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Gayà",
+     "motivo": "castigo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Sadiq",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Canós",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Foulquier",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.jornadaperfecta.com/partido/13440/rayo-vallecano-valencia"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Vallecano": {
+   "golos_marcados": -2,
+   "golos_sofridos": 0,
+   "motivo": "Álvaro García e Óscar Valentín fora; Kumbulla dúvida (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Álvaro García",
+     "motivo": "isquiotibiais",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Óscar Valentín",
+     "motivo": "joelho",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://asesoriasfantasy.com/previa-fantasy-jornada-13-rayo-vallecano-vs-valencia/"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Ath Bilbao": {
+   "golos_marcados": 0,
+   "golos_sofridos": 3,
+   "motivo": "Egiluz fora (cruzado); Guruzeta, Canales (fonte antiga) (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Egiluz",
+     "motivo": "ligamento cruzado",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://sports.yahoo.com/articles/preview-athletic-bilbao-vs-espanyol-190500845.html"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Espanol": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Kike García fora (músculo) (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Kike García",
+     "motivo": "lesão muscular",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.ceroacero.es/noticias/athletic-bilbao-vs-espanyol-prediccion-noticias-de-equipos-y-alineaciones-laliga-20-11/1262799"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Nice": {
+   "golos_marcados": -2,
+   "golos_sofridos": 4,
+   "motivo": "Mendy e Abergel (cruzados), Bombito e Abdi fora; Abdelmonem dúvida (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Mendy",
+     "motivo": "cruzados",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Abergel",
+     "motivo": "cruzados",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Bombito",
+     "motivo": "tíbia",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Abdi",
+     "motivo": "músculo",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://parisunited.fr/articles/nice-psg-retours-dembele-marquinhos-nuno-mendes-akliouche-18-novembre/"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Lille": {
+   "golos_marcados": -4,
+   "golos_sofridos": 0,
+   "motivo": "Tiago Santos e Igamane fora, Ueda duvidoso (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Tiago Santos",
+     "motivo": "joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Igamane",
+     "motivo": "cruzados",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ueda",
+     "motivo": "fascite plantar (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://rotowire.com/soccer/article/lille-vs-lyon-prediction-predicted-lineups-team-news-147040"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Lyon": {
+   "golos_marcados": -5,
+   "golos_sofridos": 2,
+   "motivo": "Openda, Duranville, Morton, Sulc, Kluivert fora (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Openda",
+     "motivo": "perna",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Sulc",
+     "motivo": "joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Kluivert",
+     "motivo": "pneumonia",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://rotowire.com/soccer/article/lille-vs-lyon-prediction-predicted-lineups-team-news-147040"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Napoli": {
+   "golos_marcados": -2,
+   "golos_sofridos": 4,
+   "motivo": "Di Lorenzo fora; lista de ausentes longa com cerca de 5 defesas (fontes divergem) (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Di Lorenzo",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://khelnow.com/football/manchester-city-vs-napoli-preview-champions-league-202611 (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Torino": {
+   "golos_marcados": -2,
+   "golos_sofridos": 0,
+   "motivo": "Vlasic e Belghali em dúvida (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Vlasic",
+     "motivo": "muscular (dúvida)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Belghali",
+     "motivo": "joelho (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.cuoretoro.it/news/443331022342/napoli-torino-21-novembre-biglietti-orario-infortunati"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Parma": {
+   "golos_marcados": 0,
+   "golos_sofridos": 3,
+   "motivo": "Romero e Bernabé fora, Ndiaye suspenso (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Romero",
+     "motivo": "ombro",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ndiaye",
+     "motivo": "castigo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Bernabé",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.fantamaster.it/probabili-formazioni-parma-roma-seriea-2026-2027-notizie-fantacalcio/"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Juventus": {
+   "golos_marcados": -4,
+   "golos_sofridos": 3,
+   "motivo": "Yildiz, Locatelli, Thuram, Grabara fora; Kalulu fora, Celik dúvida (notícias 18-19/11/2026); Zhegrova e Çelik dúvidas/cansaço, Cambiaso incerto (notícias 20-21/11)",
+   "ausentes": [
+    {
+     "jogador": "Yildiz",
+     "motivo": "lesão (19/12)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Locatelli",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Thuram",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Kalulu",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Zhegrova",
+     "motivo": "fadiga/dúvida",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Çelik",
+     "motivo": "fadiga/dúvida",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.tuttosport.com/news/calcio/serie-a/juventus/2026/11/18-152669099/zhegrova_fa_sorridere_spalletti_in_quattro_a_parte_cosa_filtra_per_juve-venezia"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Lazio": {
+   "golos_marcados": -3,
+   "golos_sofridos": 4,
+   "motivo": "Zaccagni dúvida; Tavares, Sutalo, Marusic fora (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Zaccagni",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Nuno Tavares",
+     "motivo": "flexor",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Sutalo",
+     "motivo": "flexor",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Marusic",
+     "motivo": "muscular",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://sport.sky.it/calcio/serie-a/2026/11/18/serie-a-indisponibili-infortunati-squalificati-giornata-12"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Lecce": {
+   "golos_marcados": -2,
+   "golos_sofridos": 0,
+   "motivo": "Pierotti e Ilic fora; Monteiro dúvida (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Pierotti",
+     "motivo": "tornozelo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ilic",
+     "motivo": "coxa",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://sport.sky.it/calcio/serie-a/2026/11/18/serie-a-indisponibili-infortunati-squalificati-giornata-12"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Como": {
+   "golos_marcados": -4,
+   "golos_sofridos": 0,
+   "motivo": "Kean fora ~2 meses; Addai, J. Rodríguez e Diao fora; Caqueret dúvida (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Moise Kean",
+     "motivo": "tíbia, ~2 meses",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Jayden Addai",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Jesús Rodríguez",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Assane Diao",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Caqueret",
+     "motivo": "muscular (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.espn.com/soccer/story/_/id/50542117/como-moise-kean-injury-champions-league-italy-serie-a (nov 2026)",
+    "https://www.agimeg.it/como-aek-atene-champions-league-2026-pronostico/"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Cagliari": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Felici fora (cruzado); Fadera e Winks dúvidas (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Felici",
+     "motivo": "ligamento cruzado",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Fadera",
+     "motivo": "bicípite femoral (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://sport.sky.it/calcio/serie-a/2026/11/18/serie-a-indisponibili-infortunati-squalificati-giornata-12"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "M'gladbach": {
+   "golos_marcados": -4,
+   "golos_sofridos": 3,
+   "motivo": "7 ausentes (Itakura, Ullrich, Leopold, Hack, Ngoumou), Kleindienst só banco; crise (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Kleindienst",
+     "motivo": "lesão (banco)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Itakura",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Hack",
+     "motivo": "longa duração",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://bmg-news.de/gladbach-7-ausfaelle-dortmund/"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "RB Leipzig": {
+   "golos_marcados": -2,
+   "golos_sofridos": 0,
+   "motivo": "Ouédraogo (ombro, até janeiro) e Guiu fora (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Assan Ouédraogo",
+     "motivo": "cirurgia ao ombro, até janeiro",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Marc Guiu",
+     "motivo": "isquiotibial",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/rb-leipzig/champions-league/preview/rb-leipzig-vs-lens-prediction-team-news-lineups_609645.html (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Leverkusen": {
+   "golos_marcados": -5,
+   "golos_sofridos": 3,
+   "motivo": "Vários fora (Kofane, Ben Seghir, Terrier, Diaby, Tella; lista com ~1 semana) (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Terrier",
+     "motivo": "muscular (dez.)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ben Seghir",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Kofane",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.buli-tipphilfe.de/1-bundesliga-verletzte"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Hoffenheim": {
+   "golos_marcados": -3,
+   "golos_sofridos": 3,
+   "motivo": "8 baixas (Hajdari, Gendrey, Wimmer; lista com ~1 semana) (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Hajdari",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Gendrey",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Wimmer",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.buli-tipphilfe.de/1-bundesliga-verletzte"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "PSV Eindhoven": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Pléa, Schouten, Nagalo e Ouaissa fora (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Alassane Pléa",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Jerdy Schouten",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Adamo Nagalo",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Sami Ouaissa",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.ceroacero.es/noticias/real-madrid-vs-psv-prediccion-noticias-de-equipos-y-alineaciones-champions-league-24-11/1266289 (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Nijmegen": {
+   "golos_marcados": 0,
+   "golos_sofridos": 3,
+   "motivo": "Nuytinck e Schuurs fora (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Nuytinck",
+     "motivo": "tornozelo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Schuurs",
+     "motivo": "isquiotibiais",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://news.bet365.nl/nl-nl/article/nec-psv-in-eredivisie-info-opstellingen-tv-gids-h2h-vorm-blessures-en-voorspellingen/2026111908250249385"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Feyenoord": {
+   "golos_marcados": -4,
+   "golos_sofridos": 5,
+   "motivo": "Defesa desfalcada: Bos, Beelen, Nieuwkoop, St. Juste fora; Smal dúvida (tornozelo) (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Jordan Bos",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Thomas Beelen",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Bart Nieuwkoop",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Jeremiah St. Juste",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Gijs Smal",
+     "motivo": "tornozelo (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.elfvoetbal.nl/binnenland/288409/voorbeschouwing-feyenoord-op-jacht-naar-drie-punten-tegen-fc-porto (23 nov 2026)",
+    "https://www.jn.pt/apostas/artigo/odds-e-prognostico-feyenoord-vs-porto-champions-league-24-11-2026/18150394"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Mechelen": {
+   "golos_marcados": 0,
+   "golos_sofridos": 2,
+   "motivo": "Hammar suspenso (notícias 18-19/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Hammar",
+     "motivo": "castigo",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.voetbalkrant.com/nieuws/2026-11-18/club-brugge-krijgt-goed-nieuws-voor-kv-mechelen-maar-houdt-nog-een-groot-vraagteken-over"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Guimaraes": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Internacionais ainda indisponíveis para o dérbi da Taça (notícias 18-19/11/2026)",
+   "ausentes": [],
+   "fontes": [
+    "https://www.ojogo.pt/futebol/artigo/entrada-em-cena-da-v-sports-permite-um-mercado-mais-folgado-ao-v-guimaraes/18149208"
+   ],
+   "valido_ate": "2026-11-23"
+  },
+  "Man United": {
+   "golos_marcados": -4,
+   "golos_sofridos": 2,
+   "motivo": "Pochettino no 1.º jogo; Shaw, Baleba, Ugarte, Rashford, Šeško fora (notícias 21/11/2026); L. Martínez regressa de castigo",
+   "ausentes": [
+    {
+     "jogador": "Shaw",
+     "motivo": "lesão (dúvida)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Baleba",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ugarte",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Rashford",
+     "motivo": "anca",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Šeško",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.manutd.com/en/news/team-news-for-liverpool-v-manchester-united-22-november",
+    "https://www.manutd.com/en/news/team-news-for-liverpool-v-manchester-united-22-november"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Barcelona": {
+   "golos_marcados": -3,
+   "golos_sofridos": 2,
+   "motivo": "Rodri fora (até dez.); Cubarsí e Koundé fora/dúvida (notícias 20-21/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Rodri",
+     "motivo": "bíceps femoral, até dezembro",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Cubarsí",
+     "motivo": "regresso parcial (dúvida)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Koundé",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.futbolfantasy.com/laliga/noticias/155054-posibles-alineaciones-y-previa-fantasy-del-barcelona-villarreal"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Atalanta": {
+   "golos_marcados": -2,
+   "golos_sofridos": 8,
+   "motivo": "Defesa em emergência: Hien, Kossounou, Kristensen, Pompei e Gaetano fora (notícias 19-20/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Hien",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Kossounou",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Kristensen",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Pompei",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Gaetano",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.atalantaoggi.it/partite/atalanta-inter-difesa-in-emergenza-per-sarri/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Benfica": {
+   "golos_marcados": -10,
+   "golos_sofridos": 0,
+   "motivo": "Rotação provável (3 jogos em 9 dias, Taça); Barreiro fora, Aursnes dúvida; Durán/Echeverri no ataque (notícias 20-21/11/2026); Aursnes e Banjaqui confirmados fora (22/11)",
+   "ausentes": [
+    {
+     "jogador": "Barreiro",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Aursnes",
+     "motivo": "adutores (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.record.pt/futebol/futebol-nacional/liga-betclic/benfica/detalhe/tomas-e-banjaqui-aptos-para-o-torreense-aursnes-em-duvida",
+    "https://glorioso1904.pt/marco-silva-prepara-mexidas-no-benfica-e-ha-dois-atletas-prontos-para-aproveitar-a-oportunidade"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Torreense": {
+   "golos_marcados": 0,
+   "golos_sofridos": 0,
+   "motivo": "Malik fora; pode poupar 4 titulares (notícias 20/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Malik",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://diadejogo.pt/noticias/torreense-pode-poupar-quatro-ante-o-benfica-2026-11-20"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Paris SG": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Kvaratskhelia fora; Marquinhos, Nuno Mendes, Dembélé, Akliouche regressam/dúvida (notícias 20-21/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Kvaratskhelia",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Marquinhos",
+     "motivo": "coxa (dúvida)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Nuno Mendes",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Dembélé",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.footmercato.net/a5814692696143592758-psg-plusieurs-retours-importants-et-deux-absents-pour-le-deplacement-a-nice"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Ath Madrid": {
+   "golos_marcados": -5,
+   "golos_sofridos": 0,
+   "motivo": "Lookman (joelho, +1 mês), Cuti Romero fora; Pubill e Grimaldo dúvidas (notícias 20-21/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Lookman",
+     "motivo": "joelho, +1 mês",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Cuti Romero",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Pubill",
+     "motivo": "entorse (dúvida)",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Grimaldo",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.telemadrid.es/programas/deportes-tn/simeone-dispone-internacionales_1_2828783.html"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Getafe": {
+   "golos_marcados": -2,
+   "golos_sofridos": 0,
+   "motivo": "Gudelj suspenso; Uche e Juanmi fora; Zaïd Romero regressa (notícias 20-21/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Gudelj",
+     "motivo": "castigo (amarelas)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Uche",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Juanmi",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.comuniate.com/noticias/39240/bordalas-recupera-a-zaid-romero-confirma-las-bajas-de-gudelj-y-uche-y-descarta-rotaciones-ante-el-atletico"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Venezia": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Franjic, Sverko, Adorante fora; Mazzocchi dúvida (notícias 19-20/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Franjic",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Sverko",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Adorante",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Mazzocchi",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.goal.com/en/news/juventus-venezia-serie-a-preview/blt0c2ae4645cba7cde"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Milan": {
+   "golos_marcados": -3,
+   "golos_sofridos": 3,
+   "motivo": "Tomori, Gabbia (defesa), Loftus-Cheek, Saelemaekers, Chukwueze fora; Maignan recuperado (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Tomori",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Gabbia",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Loftus-Cheek",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Saelemaekers",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Chukwueze",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.pianetamilan.it/partite/probabili-formazioni/probabile-formazione-milan-frosinone-due-dubbi-per-amorim-e-i-recuperi/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Frosinone": {
+   "golos_marcados": 0,
+   "golos_sofridos": 2,
+   "motivo": "Bracaglia suspenso, Raimondo e Grillitsch fora (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Bracaglia",
+     "motivo": "castigo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Raimondo",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Grillitsch",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.pianetamilan.it/partite/probabili-formazioni/probabile-formazione-milan-frosinone-due-dubbi-per-amorim-e-i-recuperi/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Udinese": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Gueye, Alaba, Bertola fora; equipa em crise (Bologna procura 5.ª vitória seguida) (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Gueye",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Alaba",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Bertola",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.tuttosport.com/news/calcio/serie-a/2026/11/22-152695939/bologna-udinese_probabili_formazioni_aggiornate_e_diretta_dove_si_vede_in_tv_e_streaming"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Bologna": {
+   "golos_marcados": 0,
+   "golos_sofridos": 0,
+   "motivo": "Holm, Enem, Miranda fora (sem ajuste) (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Holm",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Enem",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Miranda",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.tuttosport.com/news/calcio/serie-a/2026/11/22-152695939/bologna-udinese_probabili_formazioni_aggiornate_e_diretta_dove_si_vede_in_tv_e_streaming"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Sassuolo": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "D'Aversa estreia (Aquilani despedido); Kone, Leysen, Boloca, Volpato, Adzic fora; Berardi duvidoso (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Kone",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Adzic",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Volpato",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Berardi",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.parlandodisport.it/2026/11/22/serie-a-sassuolo-genoa-le-probabili-formazioni-e-dove-seguire-il-match-dei-neroverdi/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Genoa": {
+   "golos_marcados": -1,
+   "golos_sofridos": 0,
+   "motivo": "Frendrup fora (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Frendrup",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.parlandodisport.it/2026/11/22/serie-a-sassuolo-genoa-le-probabili-formazioni-e-dove-seguire-il-match-dei-neroverdi/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Werder Bremen": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Weiser e Stage fora, Grüll e Lynen dúvidas; ~8 lesionados (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Weiser",
+     "motivo": "lesão muscular",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Stage",
+     "motivo": "lesão muscular",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Grüll",
+     "motivo": "gémeo (dúvida)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Topp",
+     "motivo": "joelho",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://magazin.comunio.de/sv-werder-bremen-hsv-voraussichtliche-aufstellungen/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Hamburg": {
+   "golos_marcados": -3,
+   "golos_sofridos": 0,
+   "motivo": "Lokonga, Poulsen, Remberg, Torunarigha fora; Vušković e Muheim dúvidas (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Lokonga",
+     "motivo": "gémeo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Poulsen",
+     "motivo": "coxa",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Remberg",
+     "motivo": "joelho",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Torunarigha",
+     "motivo": "anca",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Vušković",
+     "motivo": "dúvida",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://magazin.comunio.de/sv-werder-bremen-hsv-voraussichtliche-aufstellungen/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Marseille": {
+   "golos_marcados": 0,
+   "golos_sofridos": 2,
+   "motivo": "Cornelius (anca, até janeiro) e Emerson fora (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Cornelius",
+     "motivo": "anca",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Emerson",
+     "motivo": "joelho",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.eurofootnews.net/marseille-le-mans-ligue-1-11e-journee-compositions-probables-absents-et-enjeux-du-match-22-novembre-2026/21/11/2026/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Le Mans": {
+   "golos_marcados": 0,
+   "golos_sofridos": 2,
+   "motivo": "Sidibé (fratura), Bourabaa, Rossignol fora; Yohou duvidoso (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Sidibé",
+     "motivo": "fratura metatarso",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Bourabaa",
+     "motivo": "tornozelo",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Yohou",
+     "motivo": "pancada (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.eurofootnews.net/marseille-le-mans-ligue-1-11e-journee-compositions-probables-absents-et-enjeux-du-match-22-novembre-2026/21/11/2026/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Brentford": {
+   "golos_marcados": -6,
+   "golos_sofridos": 4,
+   "motivo": "Igor Thiago suspenso (1.º de 3 jogos), Hickey e Collins fora (várias semanas) (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Igor Thiago",
+     "motivo": "castigo (vermelho)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Hickey",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Collins",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.brentfordfc.com/en/news/first-team-brentford-v-everton-team-news-aaron-hickey-nathan-collins-injury-update",
+    "https://www.evertonfc.com/news/2026/november/20/moyes-reveals-everton-team-news-for-brentford/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Everton": {
+   "golos_marcados": 0,
+   "golos_sofridos": 0,
+   "motivo": "Plantel completo; Grealish disponível (notícias 21-22/11/2026)",
+   "ausentes": [],
+   "fontes": [
+    "https://www.toffeeweb.com/season/26-27/news/everton-vs-brentford-match-preview-and-team-news/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Monza": {
+   "golos_marcados": 0,
+   "golos_sofridos": 0,
+   "motivo": "Maye fora; Robinson dúvida (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Maye",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Folorunsho",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Robinson",
+     "motivo": "fadiga (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.tuttomercatoweb.com/probabili-formazioni/monza-fiorentina-probabili-formazioni-varela-intoccabile-vanoli-conferma-4-2-3-1-2295639"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Fiorentina": {
+   "golos_marcados": 0,
+   "golos_sofridos": 3,
+   "motivo": "Parisi e Pongračić (central) fora; Atta recuperado (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Pongračić",
+     "motivo": "lesão (central)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Parisi",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.tuttomercatoweb.com/probabili-formazioni/monza-fiorentina-probabili-formazioni-varela-intoccabile-vanoli-conferma-4-2-3-1-2295639"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Sociedad": {
+   "golos_marcados": -2,
+   "golos_sofridos": 0,
+   "motivo": "Aramburu, Yangel Herrera e Odriozola fora; Oyarzabal regressa (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Aramburu",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Yangel Herrera",
+     "motivo": "sóleo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Odriozola",
+     "motivo": "cruzado",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.infobae.com/espana/agencias/2026/11/21/el-racing-a-plantar-cara-a-una-real-pendiente-de-su-enfermeria/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Santander": {
+   "golos_marcados": -2,
+   "golos_sofridos": 0,
+   "motivo": "Mantilla (cruzado), Andrés Martín fora; Gueye e Aarón Martín dúvidas (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Mantilla",
+     "motivo": "cruzado",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Andrés Martín",
+     "motivo": "isquiotibiais",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Gueye",
+     "motivo": "rotura muscular (dúvida)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.infobae.com/espana/agencias/2026/11/21/el-racing-a-plantar-cara-a-una-real-pendiente-de-su-enfermeria/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Malaga": {
+   "golos_marcados": 0,
+   "golos_sofridos": 2,
+   "motivo": "Aznou suspenso; Rafita, Ochoa, Lobete fora (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Aznou",
+     "motivo": "castigo (vermelho)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Rafita",
+     "motivo": "isquiotibiais",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://latingoles.com/el-sadar-exige-una-victoria-osasuna-recibe-al-malaga-que-busca-romper-su-sequia-/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Augsburg": {
+   "golos_marcados": -3,
+   "golos_sofridos": 4,
+   "motivo": "Matsima, Banks, Massengo, Mounié fora; Brackelmann doente; crise (derrotas seguidas) (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Matsima",
+     "motivo": "rotura muscular",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Banks",
+     "motivo": "ligamentos joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Massengo",
+     "motivo": "muscular",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Mounié",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.schwaebische.de/regional/bayern/viele-ausfaelle-bei-augsburg-vor-krisen-duell-gegen-mainz-5026420"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Mainz": {
+   "golos_marcados": 0,
+   "golos_sofridos": 2,
+   "motivo": "Kohr fora (tornozelo, até janeiro) (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Kohr",
+     "motivo": "tornozelo",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/augsburg/preview/augsburg-vs-mainz-prediction-team-news-lineups_609502.html"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "AZ Alkmaar": {
+   "golos_marcados": -4,
+   "golos_sofridos": 0,
+   "motivo": "Smit, Schouten, Patati e Hornkamp fora até ao inverno; Goes e Byskov regressam (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Kees Smit",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Schouten",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Patati",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://nl.headtopics.com/news/az-zonder-smit-schouten-en-patati-naar-sparta-rotterdam-90034106"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Angers": {
+   "golos_marcados": 0,
+   "golos_sofridos": 3,
+   "motivo": "Lefort suspenso, Diatta fora; Gernigon duvidoso (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Lefort",
+     "motivo": "castigo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Diatta",
+     "motivo": "tornozelo",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.maxifoot.fr/ligue-1/paris-fc-angers-les-compos-probables"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Elche": {
+   "golos_marcados": -2,
+   "golos_sofridos": 0,
+   "motivo": "Aguado, Yago Santiago, Boayar fora; Houary dúvida (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Aguado",
+     "motivo": "tornozelo",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Yago Santiago",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.comuniate.com/noticias/39203/levante-elche-previa-alineaciones-probables-y-consejos-fantasy-jornada-13-de-laliga"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Liverpool": {
+   "golos_marcados": 0,
+   "golos_sofridos": 0,
+   "motivo": "Ekitike (longa duração), Bradley e Leoni fora; Frimpong/Gravenberch regressam (sem ajuste) (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Ekitike",
+     "motivo": "lesão longa",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Bradley",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Leoni",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.liverpoolfc.com/news/liverpool-v-manchester-united-team-news-premier-league-112026"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Brighton": {
+   "golos_marcados": 0,
+   "golos_sofridos": 0,
+   "motivo": "Mitoma e Ferguson fora (sem ajuste) (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Mitoma",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ferguson",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://thefalse9.com/2026/11/hull-city-vs-brighton-predicted-lineup-team-news-22-november.html"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Hull": {
+   "golos_marcados": 0,
+   "golos_sofridos": 0,
+   "motivo": "Plantel quase completo; sem vitórias desde agosto (sem ajuste) (notícias 21-22/11/2026)",
+   "ausentes": [],
+   "fontes": [
+    "https://hayters.com/hull-city-handed-double-boost-for-brighton-bout/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Rennes": {
+   "golos_marcados": 0,
+   "golos_sofridos": 0,
+   "motivo": "Frankowski fora; Lepaul regressa (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Frankowski",
+     "motivo": "muscular",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.eurofootnews.net/lorient-rennes-ligue-1-11e-journee-compositions-probables-absents-et-enjeux-du-match-22-novembre-2026/21/11/2026/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Lorient": {
+   "golos_marcados": 0,
+   "golos_sofridos": 0,
+   "motivo": "Katseris fora; I. Touré dúvida (notícias 21-22/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Katseris",
+     "motivo": "lesão",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.eurofootnews.net/lorient-rennes-ligue-1-11e-journee-compositions-probables-absents-et-enjeux-du-match-22-novembre-2026/21/11/2026/"
+   ],
+   "valido_ate": "2026-11-24"
+  },
+  "Galatasaray": {
+   "golos_marcados": -6,
+   "golos_sofridos": 0,
+   "motivo": "Osimhen fora (joelho; fontes divergem), Leão fora até dezembro, Sallai e Jakobs fora (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Osimhen",
+     "motivo": "joelho (fontes divergem)",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Leão",
+     "motivo": "isquiotibial, até dezembro",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Sallai",
+     "motivo": "isquiotibial",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Jakobs",
+     "motivo": "virilha",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/galatasaray/champions-league/preview/galatasaray-vs-aston-villa-prediction-team-news-lineups_609642.html (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "AEK": {
+   "golos_marcados": -2,
+   "golos_sofridos": 0,
+   "motivo": "Zine, Zubkov e João Mário fora (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Zubkov",
+     "motivo": "fratura tíbia",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Zine",
+     "motivo": "lesão",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "João Mário",
+     "motivo": "lesão",
+     "importancia": "rotação"
+    }
+   ],
+   "fontes": [
+    "https://www.fotmob.com/matches/aek-athens-vs-como/2whk4s (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Lens": {
+   "golos_marcados": -8,
+   "golos_sofridos": 5,
+   "motivo": "Lista longa: Nawrocki (cruzado), Édouard, Ganiou, Sima, Chávez fora (outras fontes: Gradit, Ivanović, Bulatović); Jourdren suspenso (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Maik Nawrocki",
+     "motivo": "cruzado",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Odsonne Édouard",
+     "motivo": "virilha",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ismaëlo Ganiou",
+     "motivo": "joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Abdallah Sima",
+     "motivo": "coxa",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Jhoanner Chávez",
+     "motivo": "coxa",
+     "importancia": "rotação"
+    },
+    {
+     "jogador": "Ilan Jourdren",
+     "motivo": "castigo",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/rb-leipzig/champions-league/preview/rb-leipzig-vs-lens-prediction-team-news-lineups_609645.html (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "Bodo/Glimt": {
+   "golos_marcados": -4,
+   "golos_sofridos": 0,
+   "motivo": "Evjen (joelho) e Mikkelsen (virilha) fora; guarda-redes Sjong fora (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "Håkon Evjen",
+     "motivo": "joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "August Mikkelsen",
+     "motivo": "virilha",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Isak Sjong",
+     "motivo": "guarda-redes, lesão",
+     "importancia": "suplente"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/bodo-glimt/champions-league/preview/bodoglimt-vs-lask-prediction-team-news-lineups_609647.html (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  },
+  "LASK Linz": {
+   "golos_marcados": 0,
+   "golos_sofridos": 3,
+   "motivo": "Bello (muscular) e Harakaté (joelho) fora; Smakaj suspenso (fontes divergem) (notícias 23/11/2026)",
+   "ausentes": [
+    {
+     "jogador": "George Bello",
+     "motivo": "muscular",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Ramiz Harakaté",
+     "motivo": "joelho",
+     "importancia": "titular"
+    },
+    {
+     "jogador": "Art Smakaj",
+     "motivo": "castigo (guarda-redes, fontes divergem)",
+     "importancia": "titular"
+    }
+   ],
+   "fontes": [
+    "https://www.sportsmole.co.uk/football/bodo-glimt/champions-league/preview/bodoglimt-vs-lask-prediction-team-news-lineups_609647.html (23 nov 2026)"
+   ],
+   "valido_ate": "2026-11-25"
+  }
+ },
+ "jogos": {
+  "20261121-TP-guimaraes-spbraga": {
+   "nota": "Dérbi do Minho em Taça: Luís Godinho (árbitro); Guimarães sem internacionais ainda em recuperação"
+  }
+ }
+}
