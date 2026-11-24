@@ -141,6 +141,8 @@ def main():
                 print(f"  {x.name}")
         elif sub == "processar":
             print(f"Vídeos enviados aos admins: {conteudo.processar()}")
+        elif sub == "membros":
+            print(f"Inscritos no canal: {conteudo.membros()}")
     elif cmd == "estado":
         p = db.load_predictions()
         print(f"Previsões: {len(p)} | com resultado: {p['hg'].notna().sum() if not p.empty else 0}")

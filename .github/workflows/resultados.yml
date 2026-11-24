@@ -48,6 +48,9 @@ jobs:
         run: |
           for c in resultados tardias madrugada "painel 8"; do python run.py telegram $c || echo "telegram $c falhou"; done
           python run.py relatorio || echo "relatorio falhou"
+      - name: Inscritos do canal (de hora a hora, para medir o efeito de cada vídeo)
+        continue-on-error: true
+        run: python run.py conteudo membros
       - run: bash scripts/guardar_dados.sh "resultados" ours
       - name: Vídeos pendentes (guiões novos da rotina de conteúdo) -> dispara o workflow Vídeos
         continue-on-error: true

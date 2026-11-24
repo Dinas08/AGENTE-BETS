@@ -393,3 +393,15 @@ def construir():
     c.t_capa = 3.8
     cenas.append(cena_fecho(vazio(), frase=FECHO))
     return v, cenas
+
+
+# posts estáticos que acompanham o vídeo (docs/video/memes.py)
+MEMES = [
+    {"modelo": "reacao", "topo": "O líder da Liga contra uma equipa da Liga 3:", "desenho": "parede",
+     "baixo": "Cláudio Ramos nas grandes penalidades", "fala": "Isto não é um guarda-redes. É obra.",
+     "legenda": "Contra o Paredes… uma parede 🧱 #fcporto #tacadeportugal #futebol #agenteclaudio +18"},
+    {"modelo": "expectativa", "esq": "O que o adepto do Porto esperava", "dir": "O que teve",
+     "desenho_esq": "placar:5–0", "desenho_dir": "relogio:120'", "baixo": "Taça de Portugal, essa simpática.",
+     "fala": "Eu só queria ir dormir antes da meia-noite.",
+     "legenda": "Expectativa vs realidade na Taça ⏰ #fcporto #tacadeportugal #futebol +18"},
+]

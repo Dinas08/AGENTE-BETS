@@ -42,6 +42,17 @@ Usa `python3.13`. Não corras `tudo`, `prever` nem `resultados`.
        "x": "frase de impacto até 250 caracteres + 1-2 hashtags",
    }
    ```
+   **Memes (posts estáticos)**: junta 1–2 memes do Agente Claudio ligados ao vídeo, com humor leve (um trocadilho,
+   o "expectativa vs realidade" do jogo, o robô a reagir a um lance). Desenhados com `docs/video/memes.py`
+   (lê o docstring: modelos `reacao` e `expectativa`, desenhos prontos `parede`, `placar:<texto>`, `trofeu`,
+   `relogio:<minuto>`, `bola`, `lagrima`, `fogo`, `zero`, ou uma função tua `f(d, caixa)` para um desenho novo):
+   ```python
+   MEMES = [{"modelo": "reacao", "topo": "...", "desenho": "parede", "baixo": "...", "fala": "...",
+             "legenda": "texto do post para Instagram/X, com 3-5 hashtags e +18"}]
+   ```
+   Sem fotos de jogadores, emblemas ou logótipos; não gozes com jogadores (lesões, erros pessoais, choro). Revê
+   com `python3.13 -c "import sys; sys.path[:0]=['docs/video','docs/video/jogos','dados/videos']; import memes, <guiao>; [memes.meme(c, __import__('pathlib').Path(f'/tmp/meme{i}.png')) for i, c in enumerate(<guiao>.MEMES)]"`
+   e abre as imagens com Read.
    A frase de fecho vai no próprio guião (não podes mexer no `main`):
    `cena_fecho(jogadores({}), placar="2–1", minuto="FIM", frase=("[laughs] Manda isto ao teu amigo que…", ["Manda isto ao teu amigo", "que …", "e …|destaque|."]))`.
    Uma frase **nova** em cada vídeo (vê as anteriores em `FRASES_FECHO` e nos guiões de `dados/videos/`).
@@ -75,6 +86,10 @@ Usa `python3.13`. Não corras `tudo`, `prever` nem `resultados`.
 - Sem dados pessoais do Dinis em nada.
 
 ## Aprender com as analytics
+- **O objetivo são views e inscritos novos no canal.** O `run.py conteudo candidatos` mostra no fim o
+  "Desempenho dos últimos vídeos" (inscritos nas 24 h a seguir a cada publicação vs o ritmo normal, e as views
+  registadas). Antes de escolher, vê que temas, ganchos e horas trouxeram mais inscritos e puxa nessa direção.
+- A análise semanal dos prints segue a skill `.claude/skills/analytics-conteudo/SKILL.md` e escreve as lições.
 - O Dinis manda, uma vez por semana, prints das estatísticas de cada rede. Nessa sessão atualiza
   `dados/conteudo/licoes_conteudo.md`: views, retenção, gostos, comentários e partilhas por vídeo (nome do guião),
   e conclusões curtas ("antevisões dos 3 grandes dão 3x mais views", "ganchos com números retêm mais").

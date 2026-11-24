@@ -139,6 +139,83 @@ def proximos_grandes(dias: int = 3) -> list[str]:
     return out
 
 
+MEMBROS = CONTEUDO / "membros.json"            # inscritos do canal de Telegram, de hora a hora
+METRICAS = CONTEUDO / "metricas.csv"           # analytics das redes (preenchido com os prints semanais)
+
+
+def membros() -> int | None:
+    """Regista o nº de inscritos do canal (no máximo 1 vez por hora). Corre no workflow Resultados."""
+    from . import telegram
+    if not (telegram.TOKEN and telegram.CHAT):
+        return None
+    try:
+        hist = json.loads(MEMBROS.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        hist = []
+    agora = dt.datetime.now()
+    if hist and agora - dt.datetime.fromisoformat(hist[-1][0]) < dt.timedelta(minutes=55):
+        return hist[-1][1]
+    r = requests.get(f"https://api.telegram.org/bot{telegram.TOKEN}/getChatMemberCount",
+                     params={"chat_id": telegram.CHAT}, timeout=30).json()
+    if not r.get("ok"):
+        print(f"getChatMemberCount falhou: {r.get('description')}")
+        return None
+    hist.append([agora.isoformat(timespec="minutes"), int(r["result"])])
+    CONTEUDO.mkdir(parents=True, exist_ok=True)
+    MEMBROS.write_text(json.dumps(hist[-24 * 120:]), encoding="utf-8")  # ~120 dias
+    return int(r["result"])
+
+
+def _membros_em(hist, quando: dt.datetime):
+    antes = [c for t, c in hist if dt.datetime.fromisoformat(t) <= quando]
+    return antes[-1] if antes else None
+
+
+def _publicado_em(v: dict) -> dt.datetime | None:
+    """Hora de publicação: a real (v['publicado_em'], posta pela análise semanal) ou a sugerida (HORA)."""
+    if v.get("publicado_em"):
+        return dt.datetime.fromisoformat(v["publicado_em"])
+    if not v.get("enviado_em") or not v.get("hora"):
+        return None
+    env = dt.datetime.fromisoformat(v["enviado_em"])
+    h, m = (int(x) for x in v["hora"].split(":"))
+    pub = env.replace(hour=h, minute=m)
+    return pub if pub >= env else pub + dt.timedelta(days=1)
+
+
+def desempenho(n: int = 15) -> list[dict]:
+    """Por vídeo: inscritos novos no canal nas 24 h a seguir à publicação, comparado com o ritmo normal
+    (média diária dos 7 dias antes), e as views/seguidores das redes se já estiverem em metricas.csv."""
+    try:
+        hist = json.loads(MEMBROS.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        hist = []
+    views = {}
+    if METRICAS.exists():
+        import csv
+        with open(METRICAS, encoding="utf-8") as f:
+            for l in csv.DictReader(f):
+                v = views.setdefault(l.get("video", ""), {})
+                try:
+                    v[l.get("rede", "?")] = int(float(l.get("views") or 0))
+                except ValueError:
+                    pass
+    out = []
+    reg = _registo()["videos"]
+    for nome, v in sorted(reg.items(), key=lambda kv: kv[1].get("enviado_em", ""), reverse=True)[:n]:
+        pub = _publicado_em(v)
+        linha = {"video": nome, "tema": v.get("tema", ""), "publicado": pub, "views": views.get(nome, {})}
+        if pub and hist:
+            a, b = _membros_em(hist, pub), _membros_em(hist, pub + dt.timedelta(hours=24))
+            base0 = _membros_em(hist, pub - dt.timedelta(days=7))
+            if a is not None and b is not None and pub + dt.timedelta(hours=24) <= dt.datetime.now():
+                linha["inscritos_24h"] = b - a
+                if base0 is not None:
+                    linha["ritmo_normal"] = round((a - base0) / 7, 1)
+        out.append(linha)
+    return out
+
+
 def relatorio() -> str:
     """Texto para a rotina: candidatos de hoje, jogos grandes a seguir, últimos vídeos e ideias."""
     reg = _registo()["videos"]
@@ -151,6 +228,12 @@ def relatorio() -> str:
     linhas += [f"- {x}" for x in proximos_grandes()] or ["- (nenhum)"]
     linhas += ["", "# Últimos vídeos (não repetir tema nem frase de fecho)", ""]
     linhas += [f"- {k}: {v.get('tipo', '')} · {v.get('tema', '')} · {v.get('enviado_em', '')}" for k, v in ult] or ["- (nenhum)"]
+    linhas += ["", "# Desempenho dos últimos vídeos (o que conta: views e inscritos novos no canal)", ""]
+    for d in desempenho():
+        ins = (f"+{d['inscritos_24h']} inscritos em 24 h" + (f" (normal: {d['ritmo_normal']}/dia)"
+               if "ritmo_normal" in d else "")) if "inscritos_24h" in d else "inscritos: ainda sem dados"
+        vw = " · ".join(f"{r} {x:,}".replace(",", " ") for r, x in d["views"].items()) or "views: à espera dos prints"
+        linhas.append(f"- {d['video']}: {ins} · {vw} · {d['tema']}")
     linhas += ["", "# Ideias para dias sem jogo forte (inventa outras)", ""] + [f"- {i}" for i in IDEIAS]
     return "\n".join(linhas)
 
@@ -190,13 +273,30 @@ def _texto_posts(nome: str, posts: dict, hora: str) -> list[str]:
             f"<b>X</b>\n<code>{e(posts.get('x', ''))}</code>"]
 
 
+def desenhar_memes(guiao: Path, mod, pasta: Path) -> list:
+    """Desenha os MEMES do guião (posts estáticos 1080x1350). Um meme partido não impede o vídeo de seguir."""
+    out = []
+    try:
+        import memes
+    except Exception as e:
+        print(f"memes indisponíveis: {e}")
+        return out
+    for i, cfg in enumerate(getattr(mod, "MEMES", []) or []):
+        try:
+            out.append((memes.meme(cfg, pasta / f"{guiao.stem}_meme{i + 1}.png"), cfg.get("legenda", "")))
+        except Exception as e:
+            print(f"meme {i + 1} falhou: {type(e).__name__}: {e}")
+    return out
+
+
 def enviar(guiao: Path, mp4: Path, capa: Path | None = None, voz: str = "") -> bool:
     """Manda o vídeo e as legendas de cada rede aos admins (em privado). Não publica em lado nenhum."""
     from . import telegram
     mod = _carregar(guiao)
     posts, hora = getattr(mod, "POSTS", {}), getattr(mod, "HORA", "")
+    memes = desenhar_memes(guiao, mod, mp4.parent)
     if not telegram.ADMINS:
-        print(f"[ensaio] {guiao.stem}: sem TELEGRAM_ADMIN; não enviado")
+        print(f"[ensaio] {guiao.stem}: sem TELEGRAM_ADMIN; não enviado ({len(memes)} memes desenhados)")
         return False
     ok = True
     for chat in telegram.ADMINS:
@@ -213,6 +313,10 @@ def enviar(guiao: Path, mp4: Path, capa: Path | None = None, voz: str = "") -> b
                     caption="Capa (para o YouTube/Instagram)")
         for bloco in _texto_posts(guiao.stem, posts, hora):
             _tg("sendMessage", chat_id=chat, text=bloco, parse_mode="HTML")
+        for png, legenda in memes:
+            with open(png, "rb") as f:
+                _tg("sendPhoto", files={"photo": (png.name, f, "image/png")}, chat_id=chat,
+                    caption=f"🖼️ Meme (post estático) · {legenda}"[:1000])
     return ok
 
 
@@ -225,7 +329,7 @@ def marcar(guiao: Path, estado: str, dur: float | None = None, erro: str = "", v
     r = _registo()
     r["videos"][guiao.stem] = {"estado": estado, "enviado_em": dt.datetime.now().isoformat(timespec="minutes"),
                                "tipo": getattr(mod, "TIPO", ""), "tema": getattr(mod, "TEMA", ""),
-                               "match_id": getattr(mod, "MATCH_ID", ""), "duracao": dur, "voz": voz, "erro": erro[:300]}
+                               "match_id": getattr(mod, "MATCH_ID", ""), "hora": getattr(mod, "HORA", ""), "duracao": dur, "voz": voz, "erro": erro[:300]}
     _guardar_registo(r)
 
 
