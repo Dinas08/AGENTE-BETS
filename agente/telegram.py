@@ -15,7 +15,7 @@ import pandas as pd
 import requests
 
 from agente import config, db
-from agente.model import estrela, label, prob_mercado
+from agente.model import estrela, label, odd_casas, prob_mercado
 from agente.recap import outcome
 
 STATE = config.DATA_DIR / "telegram.json"
@@ -126,7 +126,7 @@ def escolher(r, p_min: float = P_MIN, excluir=()) -> tuple[str, float] | None:
     cands = sorted(((k, r["probs"].get(k, 0)) for m, k in r["picks"].items()
                     if m in ("resultado", "golos", "ambas", "cantos") and k not in excluir), key=lambda x: -x[1])
     for key, p in cands:
-        if p >= p_min and odd((r["odds"] or {}).get(key), p) >= ODD_MIN:
+        if p >= p_min and odd((r["odds"] or {}).get(key), p, key) >= ODD_MIN:
             return key, p
     return None
 
@@ -147,7 +147,7 @@ def boost(r, odd_min: float = BOOST_ODD[0]) -> tuple[str, float] | None:
     dica de odd alta)."""
     cands = []
     for key, p in r["probs"].items():
-        o = odd((r["odds"] or {}).get(key), p) if p else 0
+        o = odd((r["odds"] or {}).get(key), p, key) if p else 0
         if _boost_ok(key) and BOOST_P[0] <= p <= BOOST_P[1] and odd_min <= o <= BOOST_ODD[1]:
             cands.append((p, key))
     return (max(cands)[1], max(cands)[0]) if cands else None
@@ -181,13 +181,14 @@ def _fim() -> str:
     return (f"\n{_link()}" if LINK else "") + f"\n\n{RODAPE}"
 
 
-def odd(odd_casa, p) -> float:
-    """Odd a mostrar: a das casas quando há; senão a odd justa do modelo."""
-    return odd_casa or 1 / p
+def odd(odd_casa, p, key: str | None = None) -> float:
+    """Odd a mostrar: a das casas quando há; senão a odd que se deve encontrar nas casas portuguesas
+    (odd justa do modelo menos a margem típica do mercado)."""
+    return odd_casa or odd_casas(p, key)
 
 
-def linha_odd(odd_casa, p) -> str:
-    return f"💰 Odd: <b>{odd(odd_casa, p):.2f}</b>" + ("" if odd_casa else " (mínima com valor)")
+def linha_odd(odd_casa, p, key: str | None = None) -> str:
+    return f"💰 Odd: <b>{odd(odd_casa, p, key):.2f}</b>" + ("" if odd_casa else " (estimativa nas casas)")
 
 
 def mensagem_dica(r, key, p) -> str:
@@ -198,7 +199,7 @@ def mensagem_dica(r, key, p) -> str:
         f"{E(r['home'])} x {E(r['away'])} | {ko:%Hh%M}",
         "",
         f"✅ <b>Dica: {E(texto(key, r['home'], r['away']))}</b>",
-        linha_odd(odd_casa, p),
+        linha_odd(odd_casa, p, key),
         "",
         *_razoes(r, key),
     ]
@@ -274,12 +275,12 @@ def _turbo(p: pd.DataFrame, dia: list, hoje) -> list:
         c = escolher(r, TURBO_P_MIN, excluir={a.split("|")[1] for a in apostas if a.startswith(r["match_id"] + "|")})
         if c:
             seguras.append(_perna(r, *c, hoje) | {"reserva": True})
-    om = _prod(odd(d["odd_casa"], d["prob"]) for d in turbo)
+    om = _prod(odd(d["odd_casa"], d["prob"], d.get("key")) for d in turbo)
     for d in sorted(seguras, key=lambda d: (d.get("reserva", False), -d["prob"])):
         if om >= TURBO_ODD or len(turbo) >= TURBO_PERNAS:
             break
         turbo.append(d)
-        om *= odd(d["odd_casa"], d["prob"])
+        om *= odd(d["odd_casa"], d["prob"], d.get("key"))
     return turbo if len(turbo) >= 2 and om >= 2.5 else []  # sai sempre que houver 2+ pernas com odd decente
 
 
@@ -315,8 +316,8 @@ def porque(r, key) -> str:
 
 
 def _texto_multipla(titulo, pernas) -> str:
-    om = _prod(odd(d["odd_casa"], d["prob"]) for d in pernas)
-    txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} (@{odd(d['odd_casa'], d['prob']):.2f})"
+    om = _prod(odd(d["odd_casa"], d["prob"], d.get("key")) for d in pernas)
+    txt = "\n".join(f"• {E(d['jogo'])}: {E(d['texto'])} (@{odd(d['odd_casa'], d['prob'], d.get('key')):.2f})"
                     + (f"\n   <i>↳ {E(d['porque'])}</i>" if d.get("porque") else "") for d in pernas)
     return f"{titulo}\n\n{txt}\n\n💰 Odd total: <b>{om:.2f}</b>" + _fim()
 
@@ -624,9 +625,9 @@ STAKE = 100  # simulação: 100 € em cada dica (e na múltipla), à odd public
 
 def _lucro(dicas: list, mult: list, by_id: dict) -> tuple[float, int]:
     """Lucro simulado (€) e nº de apostas: green paga (odd - 1) × STAKE, red perde STAKE."""
-    total = sum((odd(d["odd_casa"], d["prob"]) - 1) * STAKE if d["resultado"] else -STAKE for d in dicas)
+    total = sum((odd(d["odd_casa"], d["prob"], d.get("key")) - 1) * STAKE if d["resultado"] else -STAKE for d in dicas)
     for m in mult:
-        om = _prod(odd(pe["odd_casa"], pe["prob"]) for pe in _pernas_ativas(m, by_id))  # pernas adiadas: odd 1
+        om = _prod(odd(pe["odd_casa"], pe["prob"], pe.get("key")) for pe in _pernas_ativas(m, by_id))  # pernas adiadas: odd 1
         total += (om - 1) * STAKE if m["resultado"] else -STAKE
     return total, len(dicas) + len(mult)
 
@@ -829,9 +830,9 @@ def _alvo(x: dict, i: int) -> dict:
 
 def _sugestoes(r, atual: str, n: int = 6) -> list[str]:
     cands = sorted(((k, pr) for k, pr in r["probs"].items() if k != atual and pr >= 0.45
-                    and not k.startswith("placar_") and odd((r["odds"] or {}).get(k), pr) >= ODD_MIN),
+                    and not k.startswith("placar_") and odd((r["odds"] or {}).get(k), pr, k) >= ODD_MIN),
                    key=lambda c: -c[1])[:n]
-    return [f"{texto(k, r['home'], r['away'])} (@{odd((r['odds'] or {}).get(k), pr):.2f})" for k, pr in cands]
+    return [f"{texto(k, r['home'], r['away'])} (@{odd((r['odds'] or {}).get(k), pr, k):.2f})" for k, pr in cands]
 
 
 def _pedir_troca(s: dict, x: dict, i: int) -> str:
@@ -981,7 +982,7 @@ def _trocar(s: dict, m: dict) -> None:
             if ln.startswith("✅ <b>Dica:"):
                 ln = f"✅ <b>Dica: {E(texto(key, r['home'], r['away']))}</b>"
             elif ln.startswith("💰 Odd:"):
-                ln = linha_odd((r["odds"] or {}).get(key), prob)
+                ln = linha_odd((r["odds"] or {}).get(key), prob, key)
             elif ln.startswith("💡 A odd paga mais"):
                 continue
             linhas.append(ln)
@@ -989,7 +990,7 @@ def _trocar(s: dict, m: dict) -> None:
     _editar_todos(x, text=_cabecalho(x) + x["texto"], parse_mode="HTML", disable_web_page_preview=True,
                   reply_markup=_botoes(x))
     _bot("sendMessage", chat_id=_CHAT, reply_parameters={"message_id": _msgs(x).get(_CHAT, x["admin_msg"])},
-         text=f"🔄 Agora: {texto(key, r['home'], r['away'])} (@{odd((r['odds'] or {}).get(key), prob):.2f}, "
+         text=f"🔄 Agora: {texto(key, r['home'], r['away'])} (@{odd((r['odds'] or {}).get(key), prob, key):.2f}, "
               f"{prob:.0%} pelo modelo). Carrega em ✅ Publicar quando estiver pronto.")
 
 

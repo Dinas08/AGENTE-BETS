@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from agente import config, db
-from agente.model import estrela, label
+from agente.model import estrela, label, odd_casas
 from agente.recap import PICK_NAMES, evaluate, outcome, value_pnl, week_bounds
 from agente.sources import api_football as apif
 
@@ -193,7 +193,7 @@ def market_rows(r, keys) -> list[dict]:
             "Mercado": E(label(k, r["home"], r["away"])),
             "Prob.": f"<span class='mini' style='width:{p * 60:.0f}px'></span>{p:.0%}",
             "Odd justa": fair(p),
-            "Odd casas": f"{odd:.2f}" if odd else "—",
+            "Odd casas": f"{odd:.2f}" if odd else f"~{odd_casas(p, k):.2f}",
             "Valor": "" if val is None else f"<span class='{'pos' if val > 0 else 'neg'}'>{val:+.0%}</span>",
         })
     return rows
@@ -204,6 +204,8 @@ def show_table(r, keys, title=None):
     if rows:
         st.markdown((f"**{title}**\n\n" if title else "") + html_table(rows, ("Odd justa", "Odd casas", "Valor")),
                     unsafe_allow_html=True)
+        if any(str(x["Odd casas"]).startswith("~") for x in rows):
+            st.caption("~ = estimativa da odd nas casas portuguesas (odd justa menos a margem típica do mercado).")
 
 
 def best_pick(r):
@@ -413,7 +415,7 @@ def page_jogos():
                 if r["limited"]:
                     chips += "<span class='chip warn'>dados limitados</span>"
                 c[3].markdown(f"<div class='pick'>⭐ {E(label(bp, r['home'], r['away']))}"
-                              f"<small>{r['probs'][bp]:.0%} · odd justa {fair(r['probs'][bp])}</small></div>{chips}",
+                              f"<small>{r['probs'][bp]:.0%} · odd {(r['odds'] or {}).get(bp) or '~%.2f' % odd_casas(r['probs'][bp], bp)}</small></div>{chips}",
                               unsafe_allow_html=True)
                 if c[4].button("Análise", key=f"open_{r['match_id']}", width="stretch", icon=":material/insights:"):
                     match_dialog(r["match_id"])
@@ -439,7 +441,7 @@ def candidates(df, types, min_p, only_odds) -> pd.DataFrame:
                          "Quando": f"{DAYS[r['day'].weekday()]} {r['kickoff']:%H:%M}",
                          "Jogo": f"{r['icon']} {r['home']} vs {r['away']}",
                          "Seleção": label(k, r["home"], r["away"]), "Prob.": round(pr * 100, 1),
-                         "Odd justa": round(1 / pr, 2), "Odd casas": f"{odd:.2f}" if odd else "—",
+                         "Odd justa": round(1 / pr, 2), "Odd casas": f"{odd:.2f}" if odd else f"~{odd_casas(pr, k):.2f}",
                          "Valor": f"{(pr * odd - 1) * 100:+.0f}%" if odd else ""})
     return pd.DataFrame(rows)
 
@@ -511,13 +513,15 @@ def page_bilhete():
                     st.session_state["suggestion"] = [(c["match_id"], c["mercado"]) for c in picks]
                 sug = st.session_state.get("suggestion")
                 if sug:
-                    prob = 1.0
+                    prob, oc = 1.0, 1.0
                     for mid, k in sug:
                         r = df[df["match_id"] == mid].iloc[0]
                         prob *= r["probs"][k]
+                        oc *= (r["odds"] or {}).get(k) or odd_casas(r["probs"][k], k)
                         st.markdown(f"- {r['icon']} **{E(r['home'])} vs {E(r['away'])}** — "
                                     f"{E(label(k, r['home'], r['away']))} ({r['probs'][k]:.0%})")
-                    st.markdown(f"Probabilidade de acertar tudo: **{prob:.0%}** · odd justa **{1 / prob:.2f}**")
+                    st.markdown(f"Probabilidade de acertar tudo: **{prob:.0%}** · odd justa **{1 / prob:.2f}** · "
+                                f"nas casas ~**{oc:.2f}**")
                     if st.button("Usar esta sugestão"):
                         for mid, k in sug:
                             add_to_slip(df[df["match_id"] == mid].iloc[0], k)

@@ -414,6 +414,29 @@ def prob_mercado(r, key: str) -> float | None:
     return pr
 
 
+# Margem típica das casas portuguesas (Betclic, Placard, Betano, Solverde...) por mercado: a odd que pagam é a
+# odd justa dividida por (1 + margem). Mercados secundários e combinadas do mesmo jogo têm margens maiores.
+MARGEM = [("placar_", 0.20), ("combo:", 0.12), ("ou:", 0.10), ("1p_", 0.09), ("cantos_", 0.09),
+          ("cartoes_", 0.10), ("casa_over_", 0.08), ("casa_under_", 0.08), ("fora_over_", 0.08),
+          ("fora_under_", 0.08), ("casa_marca", 0.08), ("fora_marca", 0.08), ("casa_sem_sofrer", 0.08),
+          ("fora_sem_sofrer", 0.08), ("btts_", 0.07), ("hc_", 0.06), ("over_", 0.06), ("under_", 0.06)]
+MARGEM_BASE = 0.06  # 1X2 e dupla hipótese
+
+
+def margem(key: str | None) -> float:
+    for pref, m in MARGEM:
+        if key and key.startswith(pref):
+            return m
+    return MARGEM_BASE
+
+
+def odd_casas(p: float, key: str | None = None) -> float:
+    """Odd que se deve encontrar nas casas portuguesas quando não temos a odd real: odd justa menos a margem."""
+    if not p or p <= 0:
+        return 0.0
+    return max(1.01, round(1 / (p * (1 + margem(key))), 2))
+
+
 def estrela(probs: dict, picks: dict) -> str | None:
     """A previsão mais segura do jogo (⭐ na dashboard e dica do Telegram): a mais provável entre resultado,
     golos, ambas marcam e cantos."""
