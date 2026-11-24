@@ -16,3 +16,5 @@
 
 ## 2026-11-21
 - Man City 1-1 Fulham (62%): 3.º jogo seguido abaixo do modelo; golo de Haaland anulado (azar parcial). Ajuste de crise curto.
+
+- 2026-11-24 · 2-2 em casa com Napoli (70%, desfecho a 17%): 3.º jogo sem ganhar, Semenyo fora. Erro de leitura: limitar a ≤55% enquanto a série durar.

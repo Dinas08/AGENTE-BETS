@@ -33,6 +33,9 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 
 - **2026-11-23 · Ligue 1/Monaco: favoritos com muito xG e poucos golos (Monaco 1-1 Auxerre, Lens 1-1 Toulouse) e Monaco em 6 jogos sem vencer.** O que fazer: Monaco como grande instável (−3 a −5 nos golos marcados); preferir '1X' à vitória seca em favoritos de 48-67% na Ligue 1.
 
+- **2026-11-24 · Brasileirão sem odds: favoritos a 58-63% falham demais.** Evidência: 23/11 1X2 0/4 (Inter 2-5 Vitória 63%, Santos 0-2 Grêmio 58%, Chapecoense 3-0 Palmeiras 61%, Botafogo 1-1 São Paulo 38%); antes Grémio 0-0 Bahia, Coritiba 0-1 Santos. O que fazer: favoritos sem odds ≤52%, evitar "X ou 2"/"1X" a 83-87% como dica segura e preferir mercados de cantos/cartões ou nenhuma dica.
+- **2026-11-24 · Man City sem ganhar há 3 jogos (2-2 Napoli a 70%)** reforça a lição de quebra de forma de grandes equipas: aplicar o limite de ≤55% e −3 a −5 de golos marcados.
+
 ## Em observação (1 ocorrência — confirmar antes de agir)
 
 - 2026-11-21 · Treinador novo em equipa em crise (Eder Sarabia, Espanyol 1-0 Ath Bilbao a 15%): efeito treinador novo não está no modelo; dar +3 a +4 golos marcados à equipa visitante com treinador novo no 1.º jogo. 1 caso.
