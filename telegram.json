@@ -1576,6 +1576,69 @@
    "resultado": null,
    "extra": true,
    "message_id": 315
+  },
+  {
+   "id": "20261124-UCL-como-aek|1",
+   "match_id": "20261124-UCL-como-aek",
+   "key": "1",
+   "texto": "Vitória Como",
+   "jogo": "Como x AEK",
+   "prob": 0.7408,
+   "odd_casa": 1.26,
+   "data": "2026-11-24",
+   "resultado": null,
+   "message_id": 316
+  },
+  {
+   "id": "20261124-UCL-feyenoord-porto|2",
+   "match_id": "20261124-UCL-feyenoord-porto",
+   "key": "2",
+   "texto": "Vitória Porto",
+   "jogo": "Feyenoord x Porto",
+   "prob": 0.5839,
+   "odd_casa": 2.1,
+   "data": "2026-11-24",
+   "resultado": null,
+   "tipo": "odd_alta",
+   "message_id": 317
+  },
+  {
+   "id": "20261124-UCL-arsenal-dortmund|1",
+   "match_id": "20261124-UCL-arsenal-dortmund",
+   "key": "1",
+   "texto": "Vitória Arsenal",
+   "jogo": "Arsenal x Dortmund",
+   "prob": 0.5733,
+   "odd_casa": 1.45,
+   "data": "2026-11-24",
+   "resultado": null,
+   "extra": true,
+   "message_id": 319
+  },
+  {
+   "id": "20261124-UCL-slovanbratislava-betis|2",
+   "match_id": "20261124-UCL-slovanbratislava-betis",
+   "key": "2",
+   "texto": "Vitória Betis",
+   "jogo": "Slovan Bratislava x Betis",
+   "prob": 0.7666,
+   "odd_casa": 1.26,
+   "data": "2026-11-24",
+   "resultado": null,
+   "extra": true,
+   "message_id": 320
+  },
+  {
+   "id": "20261124-UCL-mancity-napoli|over_2.5",
+   "match_id": "20261124-UCL-mancity-napoli",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Man City x Napoli",
+   "prob": 0.7189,
+   "odd_casa": null,
+   "data": "2026-11-24",
+   "resultado": null,
+   "message_id": 321
   }
  ],
  "multiplas": [
@@ -2336,6 +2399,48 @@
    "prob": 0.4757,
    "resultado": true,
    "message_id": 283
+  },
+  {
+   "data": "2026-11-24",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261124-UCL-rbleipzig-lens|1",
+    "20261124-UCL-como-aek|1",
+    "20261124-UCL-mancity-napoli|over_2.5"
+   ],
+   "pernas": [
+    {
+     "id": "20261124-UCL-rbleipzig-lens|1",
+     "match_id": "20261124-UCL-rbleipzig-lens",
+     "key": "1",
+     "prob": 0.7898,
+     "odd_casa": 1.36,
+     "jogo": "RB Leipzig x Lens",
+     "texto": "Vitória RB Leipzig"
+    },
+    {
+     "id": "20261124-UCL-como-aek|1",
+     "match_id": "20261124-UCL-como-aek",
+     "key": "1",
+     "prob": 0.7408,
+     "odd_casa": 1.26,
+     "jogo": "Como x AEK",
+     "texto": "Vitória Como"
+    },
+    {
+     "id": "20261124-UCL-mancity-napoli|over_2.5",
+     "match_id": "20261124-UCL-mancity-napoli",
+     "key": "over_2.5",
+     "prob": 0.7189,
+     "odd_casa": null,
+     "jogo": "Man City x Napoli",
+     "texto": "Mais de 2.5 golos"
+    }
+   ],
+   "prob": 0.4206,
+   "resultado": null,
+   "message_id": 318
   }
  ],
  "balancos": [
@@ -5859,7 +5964,12 @@
    "texto": "⭐ <b>LIGA DOS CAMPEÕES – TERÇA 24/11</b>\nRB Leipzig x Lens | 20h00\n\n✅ <b>Dica: Vitória RB Leipzig</b>\n💰 Odd: <b>1.36</b>\n\n📊 Golos esperados: RB Leipzig 3.1 – Lens 1.1\n📊 RB Leipzig: 5 vitórias nos últimos 6 jogos, xG 19.6 contra 9.0\n📊 Lens: 3 vitórias nos últimos 6 jogos, xG 8.5 contra 7.3\n🚑 RB Leipzig sem Ouédraogo\n🚑 Lens sem Nawrocki, Édouard, Ganiou, Sima\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T20:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-24T17:00:00"
+   "enviar_a": "2026-11-24T17:00:00",
+   "admin_msgs": {
+    "5575304800": 959,
+    "5728356568": 960
+   },
+   "admin_msg": 959
   },
   {
    "pid": "24112021130",
@@ -5879,8 +5989,13 @@
    },
    "texto": "⭐ <b>LIGA DOS CAMPEÕES – TERÇA 24/11</b>\nComo x AEK | 20h00\n\n✅ <b>Dica: Vitória Como</b>\n💰 Odd: <b>1.26</b>\n\n📊 Golos esperados: Como 2.6 – AEK 0.9\n📊 Como: 5 vitórias nos últimos 6 jogos, xG 8.6 contra 6.2\n📊 AEK: 5 vitórias nos últimos 6 jogos, xG 12.1 contra 3.3\n🚑 Como sem Kean, Addai, Rodríguez, Diao\n🚑 AEK sem Zubkov, Zine\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T20:00:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-24T17:00:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-24T17:00:00",
+   "admin_msgs": {
+    "5575304800": 961,
+    "5728356568": 962
+   },
+   "admin_msg": 961
   },
   {
    "pid": "24112021131",
@@ -5900,8 +6015,13 @@
    },
    "texto": "⭐ <b>LIGA DOS CAMPEÕES – TERÇA 24/11</b>\nMan City x Napoli | 20h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.31</b> (estimativa nas casas)\n\n📊 Golos esperados: Man City 2.6 – Napoli 1.2\n📊 Man City: 2 vitórias nos últimos 6 jogos, xG 11.7 contra 6.0\n📊 Napoli: 2 vitórias nos últimos 6 jogos, xG 11.2 contra 6.2\n🚑 Man City sem Semenyo, Nunes\n🚑 Napoli sem Lorenzo\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T20:00:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-24T17:00:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-24T17:00:00",
+   "admin_msgs": {
+    "5575304800": 963,
+    "5728356568": 964
+   },
+   "admin_msg": 963
   },
   {
    "pid": "24112021132",
@@ -5921,8 +6041,13 @@
    },
    "texto": "⭐ <b>LIGA DOS CAMPEÕES – TERÇA 24/11</b>\nReal Madrid x PSV Eindhoven | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.34</b> (estimativa nas casas)\n\n📊 Golos esperados: Real Madrid 3.3 – PSV Eindhoven 1.3\n📊 Real Madrid: 6 vitórias nos últimos 6 jogos, xG 15.1 contra 5.2\n📊 PSV Eindhoven: 4 vitórias nos últimos 6 jogos, xG 12.5 contra 7.8\n🚑 Real Madrid sem Rodrygo, Asencio\n🚑 PSV Eindhoven sem Pléa, Schouten\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T20:00:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-24T17:00:00"
+   "estado": "descartada",
+   "enviar_a": "2026-11-24T17:00:00",
+   "admin_msgs": {
+    "5575304800": 965,
+    "5728356568": 966
+   },
+   "admin_msg": 965
   },
   {
    "pid": "24112021133",
@@ -5943,8 +6068,13 @@
    },
    "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n⭐ <b>LIGA DOS CAMPEÕES – TERÇA 24/11</b>\nFeyenoord x Porto | 20h00\n\n✅ <b>Dica: Vitória Porto</b>\n💰 Odd: <b>2.10</b>\n💡 A odd paga mais do que o risco real deste jogo\n\n📊 Golos esperados: Feyenoord 1.1 – Porto 2.0\n📊 Feyenoord: 2 vitórias nos últimos 6 jogos, xG 12.2 contra 9.0\n📊 Porto: 6 vitórias nos últimos 6 jogos, xG 11.8 contra 4.3\n🚑 Feyenoord sem Bos, Beelen, Nieuwkoop, Juste\n🚑 Porto sem Smalling\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T20:00:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-24T17:00:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-24T17:00:00",
+   "admin_msgs": {
+    "5575304800": 967,
+    "5728356568": 968
+   },
+   "admin_msg": 967
   },
   {
    "pid": "24112021134",
@@ -5994,8 +6124,13 @@
    },
    "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• RB Leipzig x Lens: Vitória RB Leipzig (@1.36)\n• Como x AEK: Vitória Como (@1.26)\n• Man City x Napoli: Mais de 2.5 golos (@1.31)\n\n💰 Odd total: <b>2.24</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T20:00:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-24T17:00:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-24T17:00:00",
+   "admin_msgs": {
+    "5575304800": 969,
+    "5728356568": 970
+   },
+   "admin_msg": 969
   },
   {
    "pid": "24112021135",
@@ -6153,9 +6288,14 @@
    },
    "texto": "⭐ <b>LIGA DOS CAMPEÕES – TERÇA 24/11</b>\nArsenal x Dortmund | 20h00\n\n✅ <b>Dica: Vitória Arsenal</b>\n💰 Odd: <b>1.45</b>\n\n📊 Golos esperados: Arsenal 1.6 – Dortmund 0.8\n📊 Arsenal: 5 vitórias nos últimos 6 jogos, xG 9.1 contra 5.3\n📊 Dortmund: 3 vitórias nos últimos 6 jogos, xG 8.9 contra 9.0\n🚑 Arsenal sem Saka, Zubimendi, Raya\n🚑 Dortmund sem Can, Konstantelias, Guirassy\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-24T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 971,
+    "5728356568": 972
+   },
+   "admin_msg": 971
   },
   {
    "pid": "24112021139",
@@ -6176,12 +6316,17 @@
    },
    "texto": "⭐ <b>LIGA DOS CAMPEÕES – TERÇA 24/11</b>\nSlovan Bratislava x Betis | 20h00\n\n✅ <b>Dica: Vitória Betis</b>\n💰 Odd: <b>1.26</b>\n\n📊 Golos esperados: Slovan Bratislava 1.0 – Betis 2.8\n📊 Betis: 3 vitórias nos últimos 6 jogos, xG 9.5 contra 10.1\n🚑 Betis sem Ceballos\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-24T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-24T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 973,
+    "5728356568": 974
+   },
+   "admin_msg": 973
   }
  ],
  "ultimo_resumo": 313,
- "offset_admin": 820373727,
+ "offset_admin": 820373734,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
