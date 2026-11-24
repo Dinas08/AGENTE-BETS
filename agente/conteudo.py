@@ -190,7 +190,7 @@ def _texto_posts(nome: str, posts: dict, hora: str) -> list[str]:
             f"<b>X</b>\n<code>{e(posts.get('x', ''))}</code>"]
 
 
-def enviar(guiao: Path, mp4: Path, capa: Path | None = None) -> bool:
+def enviar(guiao: Path, mp4: Path, capa: Path | None = None, voz: str = "") -> bool:
     """Manda o vídeo e as legendas de cada rede aos admins (em privado). Não publica em lado nenhum."""
     from . import telegram
     mod = _carregar(guiao)
@@ -202,7 +202,7 @@ def enviar(guiao: Path, mp4: Path, capa: Path | None = None) -> bool:
     for chat in telegram.ADMINS:
         with open(mp4, "rb") as f:
             r = _tg("sendVideo", files={"video": (mp4.name, f, "video/mp4")}, chat_id=chat,
-                    caption=f"🎬 {guiao.stem} · rascunho para as redes", supports_streaming="true",
+                    caption=f"🎬 {guiao.stem} · rascunho para as redes" + (f" · voz {voz}" if voz else ""), supports_streaming="true",
                     width="1080", height="1920")
         ok &= bool(r.get("ok"))
         if not r.get("ok"):
@@ -216,7 +216,7 @@ def enviar(guiao: Path, mp4: Path, capa: Path | None = None) -> bool:
     return ok
 
 
-def marcar(guiao: Path, estado: str, dur: float | None = None, erro: str = ""):
+def marcar(guiao: Path, estado: str, dur: float | None = None, erro: str = "", voz: str = ""):
     mod = None
     try:
         mod = _carregar(guiao)
@@ -225,7 +225,7 @@ def marcar(guiao: Path, estado: str, dur: float | None = None, erro: str = ""):
     r = _registo()
     r["videos"][guiao.stem] = {"estado": estado, "enviado_em": dt.datetime.now().isoformat(timespec="minutes"),
                                "tipo": getattr(mod, "TIPO", ""), "tema": getattr(mod, "TEMA", ""),
-                               "match_id": getattr(mod, "MATCH_ID", ""), "duracao": dur, "erro": erro[:300]}
+                               "match_id": getattr(mod, "MATCH_ID", ""), "duracao": dur, "voz": voz, "erro": erro[:300]}
     _guardar_registo(r)
 
 
@@ -250,7 +250,10 @@ def processar() -> int:
         for linha in res.stdout.splitlines():
             if linha.startswith(f"{g.stem}.mp4:"):
                 dur = float(linha.split(":")[1].strip().split()[0])
-        enviado = enviar(g, mp4, saida / f"{g.stem}_capa.png")
-        marcar(g, "enviado" if enviado else "renderizado", dur)
+        log = res.stdout + res.stderr
+        voz = ("Piper" if "a usar a Piper" in log else "Microsoft" if "a usar a voz da Microsoft" in log
+               else "ElevenLabs" if os.environ.get("ELEVENLABS_API_KEY") else "Microsoft")
+        enviado = enviar(g, mp4, saida / f"{g.stem}_capa.png", voz)
+        marcar(g, "enviado" if enviado else "renderizado", dur, voz=voz)
         n += 1
     return n
