@@ -128,6 +128,19 @@ def main():
                 print(f"    lesão/castigo: {i['equipa']} - {i['jogador']} ({i.get('motivo')})")
             for n in r["adjustments"].get("notas", []):
                 print(f"    ajuste ativo: {n}")
+    elif cmd == "conteudo":
+        # conteudo candidatos | pendentes | processar   (vídeos para as redes; ver agente/conteudo.py)
+        from agente import conteudo
+        sub = sys.argv[2] if len(sys.argv) > 2 else "candidatos"
+        if sub == "candidatos":
+            print(conteudo.relatorio())
+        elif sub == "pendentes":
+            ps = conteudo.pendentes()
+            print(len(ps))
+            for x in ps:
+                print(f"  {x.name}")
+        elif sub == "processar":
+            print(f"Vídeos enviados aos admins: {conteudo.processar()}")
     elif cmd == "estado":
         p = db.load_predictions()
         print(f"Previsões: {len(p)} | com resultado: {p['hg'].notna().sum() if not p.empty else 0}")

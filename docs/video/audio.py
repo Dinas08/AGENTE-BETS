@@ -63,7 +63,7 @@ def _encurtar_pausas(a, maximo=0.2):
 
 
 RAIZ = Path(__file__).resolve().parents[2]
-CACHE = Path(__file__).parent / "cache_voz"  # não vai para o git; evita gastar créditos ao renderizar de novo
+CACHE = Path(__import__("os").environ.get("VIDEO_CACHE_VOZ") or Path(__file__).parent / "cache_voz")  # não vai para o git; evita gastar créditos ao renderizar de novo
 
 
 def _ler_env(nome):

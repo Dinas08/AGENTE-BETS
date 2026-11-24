@@ -14,6 +14,7 @@ jobs:
     timeout-minutes: 15
     permissions:
       contents: write
+      actions: write
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_GRATIS: ${{ secrets.TELEGRAM_CHAT_GRATIS }}
@@ -48,3 +49,11 @@ jobs:
           for c in resultados tardias madrugada "painel 8"; do python run.py telegram $c || echo "telegram $c falhou"; done
           python run.py relatorio || echo "relatorio falhou"
       - run: bash scripts/guardar_dados.sh "resultados" ours
+      - name: Vídeos pendentes (guiões novos da rotina de conteúdo) -> dispara o workflow Vídeos
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(python run.py conteudo pendentes | head -1)
+          a_correr=$(gh run list --workflow video.yml --json status --jq '[.[] | select(.status != "completed")] | length')
+          if [ "${n:-0}" -gt 0 ] && [ "${a_correr:-0}" -eq 0 ]; then gh workflow run video.yml && echo "Vídeos: $n pendentes"; fi

@@ -46,7 +46,16 @@ def retangulo():
     return VISTAS[_vista[0]][0]
 
 
+# Fora do Windows (GitHub Actions) ou com VIDEO_FONTES_LIVRES=1: fontes livres parecidas, em docs/video/fontes/
+LIVRES = {"palab.ttf": "texgyrepagella-bold.otf", "segoeui.ttf": "SourceSans3-Regular.ttf",
+          "seguisb.ttf": "SourceSans3-Semibold.ttf", "segoeuib.ttf": "SourceSans3-Bold.ttf",
+          "seguibl.ttf": "SourceSans3-Black.ttf"}
+_USAR_LIVRES = bool(__import__("os").environ.get("VIDEO_FONTES_LIVRES")) or not Path(F + "palab.ttf").exists()
+
+
 def fonte(nome, tam):
+    if _USAR_LIVRES:
+        return ImageFont.truetype(str(AQUI / "fontes" / LIVRES.get(nome, nome)), int(tam))
     return ImageFont.truetype(F + nome, int(tam))
 
 
@@ -276,6 +285,11 @@ class Video:
     def desenhar(self, cena: Cena, t_real: float, tg: float) -> Image.Image:
         # a animação estica quando a voz é mais lenta do que a de referência; legendas e zoom usam o tempo real
         t = t_real / getattr(cena, "esc", 1.0)
+        # vários golos na mesma cena: cena.golos = [(t, "1–0", "Marcador", (x, y)), ...]; vale o último que já passou
+        if getattr(cena, "golos", None):
+            feitos = [g for g in cena.golos if g[0] <= t]
+            cena.golo = feitos[-1] if feitos else cena.golos[0]
+        abrev = getattr(cena, "abrev", None) or self.abrev  # siglas por cena (vídeos com vários jogos)
         usar_vista(cena.vista)
         (rx0, ry0, rw, rh), yi, alcance = VISTAS[cena.vista]
         q = Quadro(self.bases[cena.vista])
@@ -285,7 +299,7 @@ class Video:
         # placar
         if cena.placar:
             placar = cena.golo[1] if cena.golo and t >= cena.golo[0] else cena.placar
-            txt = f"{self.abrev[0]}  {placar}  {self.abrev[1]}"
+            txt = f"{abrev[0]}  {placar}  {abrev[1]}"
             larg = d.textlength(txt, font=self.f["plac"]) + 60
             d.rounded_rectangle((W / 2 - larg / 2, CY0 - 78, W / 2 + larg / 2, CY0 - 22), radius=28,
                                 fill=(30, 29, 27, 235), outline=(70, 66, 60, 255), width=2)
@@ -414,8 +428,8 @@ class Video:
         ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         od = ImageDraw.Draw(ov)
         # ondas a partir do ponto onde a bola entra
-        if cena.bola:
-            gx, gy = P(*cena.bola[-1][1:])
+        if len(cena.golo) > 3 or cena.bola:  # ponto onde a bola entra: o 4.º elemento do golo ou o fim da bola
+            gx, gy = P(*cena.golo[3]) if len(cena.golo) > 3 else P(*cena.bola[-1][1:])
             for i in range(3):
                 k = (dt - i * 0.12) / 0.8
                 if 0 < k < 1:
@@ -533,6 +547,22 @@ FRASES_FECHO = [
      ["Manda isto ao teu amigo", "que, como o Porto,", "só ganha a |sofrer|."]),
     ("[laughs] Manda isto ao teu amigo que sai aos cruzamentos como o Samuel Soares.",
      ["Manda isto ao teu amigo", "que sai aos cruzamentos", "como o |Samuel Soares|."]),
+    ("[laughs] Manda isto ao teu amigo que defende como o Barça na primeira parte.",
+     ["Manda isto ao teu amigo", "que defende como o Barça", "na |primeira parte|."]),
+    ("[laughs] Manda isto ao teu amigo que acha que sete a zero é sorte.",
+     ["Manda isto ao teu amigo", "que acha que |7–0|", "é sorte."]),
+    ("[laughs] Manda isto ao teu amigo que dizia que o Ronaldo já não fazia falta.",
+     ["Manda isto ao teu amigo", "que dizia que o |Ronaldo|", "já não fazia falta."]),
+    ("[laughs] Manda isto ao teu amigo que punha o Quaresma no lugar do Figo.",
+     ["Manda isto ao teu amigo", "que punha o |Quaresma|", "no lugar do Figo."]),
+    ("[laughs] Manda isto ao teu amigo que promete cinco, como o Klopp... e não marca nenhum.",
+     ["Manda isto ao teu amigo", "que promete |cinco|", "e não marca nenhum."]),
+    ("[laughs] Manda isto ao teu amigo que tem a bola o jogo todo... e mesmo assim leva dois.",
+     ["Manda isto ao teu amigo", "que tem a bola o jogo todo", "e mesmo assim leva |dois|."]),
+    ("[laughs] Manda isto ao teu amigo que desligou a televisão ao intervalo... e perdeu o melhor.",
+     ["Manda isto ao teu amigo", "que desligou ao intervalo", "e perdeu o |melhor|."]),
+    ("[laughs] Manda isto ao teu amigo que sai do estádio aos dois a zero... e perde a reviravolta.",
+     ["Manda isto ao teu amigo", "que sai do estádio aos |2–0|", "e perde a reviravolta."]),
 ]
 
 
@@ -579,32 +609,53 @@ def fecho(linhas):
 
 
 def cena_fecho(jog, placar="", minuto="FIM", frase=0):
-    voz, linhas = FRASES_FECHO[frase]
+    """frase: índice em FRASES_FECHO ou um par (voz, [3 linhas]) definido no próprio guião."""
+    voz, linhas = frase if isinstance(frase, (tuple, list)) else FRASES_FECHO[frase]
     c = Cena(3.6, "", "", jog, placar=placar, minuto=minuto, sobreposicao=fecho(linhas), nomes=False,
              voz=voz, voz_ini=0.25)
     c.t_capa = 3.0
     return c
 
 
-def main():
-    nome = sys.argv[1] if len(sys.argv) > 1 else "barcelona_astonvilla"
-    spec = importlib.util.spec_from_file_location(nome, AQUI / "jogos" / f"{nome}.py")
+def _opcao(nome, defeito=None):
+    if nome in sys.argv:
+        i = sys.argv.index(nome)
+        if i + 1 < len(sys.argv):
+            return sys.argv[i + 1]
+    return defeito
+
+
+def carregar(alvo):
+    """Carrega um ficheiro de jogo: um nome em docs/video/jogos/ ou o caminho de um .py (ex.: dados/videos/x.py)."""
+    p = Path(alvo)
+    if p.suffix != ".py":
+        p = AQUI / "jogos" / f"{alvo}.py"
+    spec = importlib.util.spec_from_file_location(p.stem, p)
     mod = importlib.util.module_from_spec(spec)
     sys.modules["quadro_tatico"] = sys.modules[__name__]
     sys.path.insert(0, str(AQUI))
     sys.path.insert(0, str(AQUI / "jogos"))
+    sys.path.insert(0, str(p.parent))
     spec.loader.exec_module(mod)
+    return p.stem, mod
+
+
+def main():
+    """quadro_tatico.py <nome ou caminho.py> [--capas] [--saida pasta] [--sem-voz] [--sem-som]"""
+    nome, mod = carregar(sys.argv[1] if len(sys.argv) > 1 else "barcelona_astonvilla")
     v, cenas = mod.construir()
-    saida = AQUI / f"{nome}.mp4"
+    pasta = Path(_opcao("--saida", AQUI))
+    pasta.mkdir(parents=True, exist_ok=True)
+    saida = pasta / f"{nome}.mp4"
     if "--capas" in sys.argv:  # só imagens de algumas cenas, para rever
         for i, c in enumerate(cenas):
-            v.capa(c, getattr(c, "t_capa", c.dur * 0.75), AQUI / f"{nome}_cena{i + 1}.png")
+            v.capa(c, getattr(c, "t_capa", c.dur * 0.75), pasta / f"{nome}_cena{i + 1}.png")
         return
     com_voz = "--sem-voz" not in sys.argv
     if not com_voz:
         saida = saida.with_name(saida.stem + "_legendas.mp4")
     _, total = v.render(cenas, saida, som="--sem-som" not in sys.argv, com_voz=com_voz)
-    v.capa(cenas[0], cenas[0].dur * 0.8, AQUI / f"{nome}_capa.png")
+    v.capa(cenas[0], getattr(cenas[0], "t_capa", cenas[0].dur * 0.8), pasta / f"{nome}_capa.png")
     print(f"{saida.name}: {total:.1f} s")
 
 

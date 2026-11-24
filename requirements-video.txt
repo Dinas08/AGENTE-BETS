@@ -1,0 +1,5 @@
+# Vídeos para as redes (workflow "Vídeos" e rotina de conteúdo): o modelo + o motor de vídeo
+-r requirements-core.txt
+pillow==13.0.0
+imageio-ffmpeg==0.8.1
+edge-tts==7.3.1

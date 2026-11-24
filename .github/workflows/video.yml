@@ -1,0 +1,43 @@
+# Vídeos para as redes: renderiza os guiões pendentes em dados/videos/ (escritos pela rotina de conteúdo do agente)
+# e manda-os em privado aos admins do Telegram, com as legendas de cada rede. Não publica em lado nenhum:
+# os admins publicam à mão. Disparado pelo workflow "Resultados" quando há guiões novos (ou à mão).
+name: Vídeos
+on:
+  workflow_dispatch:
+concurrency:
+  group: videos
+  cancel-in-progress: false
+jobs:
+  videos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_ADMIN: ${{ secrets.TELEGRAM_ADMIN }}
+      TELEGRAM_ADMIN_BOT_TOKEN: ${{ secrets.TELEGRAM_ADMIN_BOT_TOKEN }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+      VIDEO_CACHE_VOZ: ${{ github.workspace }}/cache_voz
+      TZ: Europe/Lisbon
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/dados
+          path: dados
+          fetch-depth: 0
+      - uses: actions/cache@v4
+        with:
+          path: cache_voz
+          key: voz-${{ github.run_id }}
+          restore-keys: voz-
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-video.txt
+      - run: pip install -q -r requirements-video.txt
+      - run: python run.py conteudo processar
+      - run: bash scripts/guardar_dados.sh "vídeos" ours

@@ -13,3 +13,9 @@ docs/video/cache_voz/
 
 # Os dados vivem no ramo "claude/dados" (ver scripts/guardar_dados.sh)
 dados/
+
+# Vídeos renderizados e amostras (só o motor, as fontes livres e os guiões vão para o git)
+docs/video/*.mp4
+docs/video/*.png
+docs/video/amostras_voz/
+saida_videos/
