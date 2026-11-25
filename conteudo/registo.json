@@ -20,6 +20,17 @@
    "duracao": 56.0,
    "voz": "ElevenLabs",
    "erro": ""
+  },
+  "20261125_sporting_manutd_antevisao": {
+   "estado": "enviado",
+   "enviado_em": "2026-11-25T10:22",
+   "tipo": "antevisao",
+   "tema": "Sporting x Man United: o United chega com 4 baixas e a vir de um 0-4",
+   "match_id": "20261125-UCL-splisbon-manunited",
+   "hora": "17:30",
+   "duracao": 60.6,
+   "voz": "ElevenLabs",
+   "erro": ""
   }
  }
 }
