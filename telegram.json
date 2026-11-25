@@ -5314,7 +5314,7 @@
    },
    "texto": "❌ RED: Ambas marcam\nSlavia Prague 0-1 Villarreal",
    "expira": "2026-11-26T19:40:56.858743",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 1061,
     "5728356568": 1062
@@ -5323,6 +5323,6 @@
   }
  ],
  "ultimo_resumo": 330,
- "offset_admin": 820373758,
+ "offset_admin": 820373759,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
