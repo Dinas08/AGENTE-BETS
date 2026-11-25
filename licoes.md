@@ -36,6 +36,8 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 - **2026-11-24 · Brasileirão sem odds: favoritos a 58-63% falham demais.** Evidência: 23/11 1X2 0/4 (Inter 2-5 Vitória 63%, Santos 0-2 Grêmio 58%, Chapecoense 3-0 Palmeiras 61%, Botafogo 1-1 São Paulo 38%); antes Grémio 0-0 Bahia, Coritiba 0-1 Santos. O que fazer: favoritos sem odds ≤52%, evitar "X ou 2"/"1X" a 83-87% como dica segura e preferir mercados de cantos/cartões ou nenhuma dica.
 - **2026-11-24 · Man City sem ganhar há 3 jogos (2-2 Napoli a 70%)** reforça a lição de quebra de forma de grandes equipas: aplicar o limite de ≤55% e −3 a −5 de golos marcados.
 
+- **2026-11-25 · Grandes europeus desfalcados (4+ titulares) fora de casa: 3.º caso.** Evidência: Bayern 1-1 Köln, Man City 2-2 Napoli, Lille 2-1 Bayern (53%, sem Kane/Olise/Neuer; xG 1.2-2.1). O que fazer: nestes casos limitar a ≤45-50% e −6 a −10 nos golos marcados; reforça as lições de baixas e de quebra de forma.
+
 ## Em observação (1 ocorrência — confirmar antes de agir)
 
 - 2026-11-21 · Treinador novo em equipa em crise (Eder Sarabia, Espanyol 1-0 Ath Bilbao a 15%): efeito treinador novo não está no modelo; dar +3 a +4 golos marcados à equipa visitante com treinador novo no 1.º jogo. 1 caso.
@@ -74,3 +76,4 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 - 2026-11-21 · Eredivisie (Utrecht, Telstar, Groningen, Feyenoord em casa a 40-72%) e Liga Argentina (casa 35-42% 0/3): vitórias da casa sobrestimadas no sábado. 1 ocorrência, em observação.
 
 - 2026-11-23 · Schalke em casa: 5 jogos sem marcar (0-0 com Stuttgart); descontar golos do Schalke em casa (−5). 1 caso confirmado. Dados 'TBD' na MLS (Vancouver) são erro do calendário, ignorar.
+- 2026-11-25 · Cantos 'Mais 9.5' a 75%+ em favoritos europeus (Shakhtar–Fener 8, Atlético–Viking 7) falharam; Mais 2.5 a 70-82% 4/6 falhados em 2 dias. 1 dia, observar.
