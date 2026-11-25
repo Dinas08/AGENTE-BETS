@@ -1639,6 +1639,19 @@
    "data": "2026-11-24",
    "resultado": true,
    "message_id": 321
+  },
+  {
+   "id": "20261125-UCL-slaviaprague-villarreal|btts_sim",
+   "match_id": "20261125-UCL-slaviaprague-villarreal",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Slavia Prague x Villarreal",
+   "prob": 0.6116,
+   "odd_casa": null,
+   "data": "2026-11-25",
+   "resultado": null,
+   "extra": true,
+   "message_id": 331
   }
  ],
  "multiplas": [
@@ -5029,7 +5042,12 @@
    "expira": "2026-11-25T17:45:00",
    "estado": "pendente",
    "enviar_a": "2026-11-25T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1029,
+    "5728356568": 1030
+   },
+   "admin_msg": 1029
   },
   {
    "pid": "2511251495",
@@ -5037,22 +5055,27 @@
    "data": "2026-11-25",
    "lista": "dicas",
    "registo": {
-    "id": "20261125-UCL-slaviaprague-villarreal|cantos_over_9.5",
+    "id": "20261125-UCL-slaviaprague-villarreal|btts_sim",
     "match_id": "20261125-UCL-slaviaprague-villarreal",
-    "key": "cantos_over_9.5",
-    "texto": "Mais de 9.5 cantos",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
     "jogo": "Slavia Prague x Villarreal",
-    "prob": 0.6262,
+    "prob": 0.6116,
     "odd_casa": null,
     "data": "2026-11-25",
     "resultado": null,
     "extra": true
    },
-   "texto": "⭐ <b>LIGA DOS CAMPEÕES – QUARTA 25/11</b>\nSlavia Prague x Villarreal | 17h45\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.47</b> (estimativa nas casas)\n\n📊 Golos esperados: Slavia Prague 1.4 – Villarreal 1.6\n📊 Villarreal: 2 vitórias nos últimos 6 jogos, xG 7.9 contra 7.1\n🚑 Slavia Prague sem Chorý, Kanté, Kolář, Piták\n🚑 Villarreal sem Foyth, Moreno\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "⭐ <b>LIGA DOS CAMPEÕES – QUARTA 25/11</b>\nSlavia Prague x Villarreal | 17h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.53</b> (estimativa nas casas)\n\n📊 Golos esperados: Slavia Prague 1.4 – Villarreal 1.6\n📊 Villarreal: 2 vitórias nos últimos 6 jogos, xG 7.9 contra 7.1\n🚑 Slavia Prague sem Chorý, Kanté, Kolář, Piták\n🚑 Villarreal sem Foyth, Moreno\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-25T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-25T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1031,
+    "5728356568": 1032
+   },
+   "admin_msg": 1031
   },
   {
    "pid": "2511251496",
@@ -5102,6 +5125,6 @@
   }
  ],
  "ultimo_resumo": 330,
- "offset_admin": 820373744,
+ "offset_admin": 820373747,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
