@@ -1662,7 +1662,7 @@
    "prob": 0.6247,
    "odd_casa": null,
    "data": "2026-11-25",
-   "resultado": null,
+   "resultado": true,
    "message_id": 334
   },
   {
@@ -1674,7 +1674,7 @@
    "prob": 0.7188,
    "odd_casa": null,
    "data": "2026-11-25",
-   "resultado": null,
+   "resultado": true,
    "message_id": 335
   },
   {
@@ -1686,7 +1686,7 @@
    "prob": 0.6674,
    "odd_casa": null,
    "data": "2026-11-25",
-   "resultado": null,
+   "resultado": true,
    "message_id": 336
   }
  ],
@@ -2530,7 +2530,7 @@
     }
    ],
    "prob": 0.3912,
-   "resultado": null,
+   "resultado": false,
    "message_id": 332
   },
   {
@@ -2586,7 +2586,7 @@
     }
    ],
    "prob": 0.1873,
-   "resultado": null,
+   "resultado": false,
    "message_id": 333
   }
  ],
@@ -5374,9 +5374,104 @@
     "5728356568": 1066
    },
    "admin_msg": 1065
+  },
+  {
+   "pid": "25220110101",
+   "origem": "resultado",
+   "data": "2026-11-25",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 334,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nSp Lisbon 2-2 Man United",
+   "expira": "2026-11-26T22:01:10.697290",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1069,
+    "5728356568": 1070
+   },
+   "admin_msg": 1069
+  },
+  {
+   "pid": "25220112102",
+   "origem": "resultado",
+   "data": "2026-11-25",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 335,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Mais de 2.5 golos\nClub Brugge 0-3 Liverpool",
+   "expira": "2026-11-26T22:01:12.629490",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1071,
+    "5728356568": 1072
+   },
+   "admin_msg": 1071
+  },
+  {
+   "pid": "25220113103",
+   "origem": "resultado",
+   "data": "2026-11-25",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 336,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Ambas marcam\nParis SG 2-2 Roma",
+   "expira": "2026-11-26T22:01:13.268531",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1073,
+    "5728356568": 1074
+   },
+   "admin_msg": 1073
+  },
+  {
+   "pid": "25220113104",
+   "origem": "resultado",
+   "data": "2026-11-25",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 332,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED na múltipla (2/3 pernas certas até agora)",
+   "expira": "2026-11-26T22:01:13.909064",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1075,
+    "5728356568": 1076
+   },
+   "admin_msg": 1075
+  },
+  {
+   "pid": "25220114105",
+   "origem": "resultado",
+   "data": "2026-11-25",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 333,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED na múltipla turbo (2/4 pernas certas até agora)",
+   "expira": "2026-11-26T22:01:14.535017",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1077,
+    "5728356568": 1078
+   },
+   "admin_msg": 1077
   }
  ],
  "ultimo_resumo": 330,
- "offset_admin": 820373761,
+ "offset_admin": 820373766,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
