@@ -1649,7 +1649,7 @@
    "prob": 0.6116,
    "odd_casa": null,
    "data": "2026-11-25",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 331
   },
@@ -5301,6 +5301,25 @@
     "5728356568": 1055
    },
    "admin_msg": 1054
+  },
+  {
+   "pid": "2519405698",
+   "origem": "resultado",
+   "data": "2026-11-25",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 331,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Ambas marcam\nSlavia Prague 0-1 Villarreal",
+   "expira": "2026-11-26T19:40:56.858743",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1061,
+    "5728356568": 1062
+   },
+   "admin_msg": 1061
   }
  ],
  "ultimo_resumo": 330,

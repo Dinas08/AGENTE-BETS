@@ -1,10 +1,10 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 25/11/2026 00:16. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 25/11/2026 19:49. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 26 Green · 11 Red → **70%** de acerto (o modelo esperava 66%).
-- **Últimos 30 dias:** 89 Green · 38 Red → **70%** de acerto (o modelo esperava 64%).
-- **Desde o início:** 89 Green · 38 Red → **70%** de acerto (o modelo esperava 64%).
+- **Últimos 7 dias:** 26 Green · 12 Red → **68%** de acerto (o modelo esperava 66%).
+- **Últimos 30 dias:** 89 Green · 39 Red → **70%** de acerto (o modelo esperava 64%).
+- **Desde o início:** 89 Green · 39 Red → **70%** de acerto (o modelo esperava 64%).
 - **Múltiplas:** 10 Green em 20.
 
 ## Alertas
@@ -15,7 +15,7 @@ _Atualizado automaticamente a 25/11/2026 00:16. Só dicas publicadas e já decid
 |---|---|---|---|---|
 | Resultado 1X2 | 44 | 73% | 65% | ✅ bem |
 | Golos +/- | 43 | 74% | 67% | ✅ bem |
-| Ambas marcam | 24 | 67% | 61% | ✅ bem |
+| Ambas marcam | 25 | 64% | 61% | ✅ bem |
 | Cantos | 7 | 57% | 61% | ⏳ poucos dados |
 | Combinadas | 4 | 25% | 55% | ⏳ poucos dados |
 | Dupla hipótese | 3 | 67% | 70% | ⏳ poucos dados |
@@ -25,7 +25,7 @@ _Atualizado automaticamente a 25/11/2026 00:16. Só dicas publicadas e já decid
 | Liga | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
 | Liga das Nações | 38 | 71% | 64% | ✅ bem |
-| Liga dos Campeões | 14 | 71% | 69% | ✅ bem |
+| Liga dos Campeões | 15 | 67% | 69% | ✅ bem |
 | Premier League | 13 | 62% | 59% | ✅ bem |
 | Serie A | 12 | 75% | 64% | ⬆️ confiança a menos |
 | Brasileirão | 11 | 82% | 65% | ⬆️ confiança a menos |
@@ -44,7 +44,7 @@ _Atualizado automaticamente a 25/11/2026 00:16. Só dicas publicadas e já decid
 ## Por probabilidade
 | Faixa | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| 55-65% | 54 | 63% | 60% | ✅ bem |
+| 55-65% | 55 | 62% | 60% | ✅ bem |
 | 65-75% | 44 | 75% | 70% | ✅ bem |
 | < 55% | 15 | 53% | 53% | ✅ bem |
 | ≥ 75% | 14 | 100% | 78% | ⬆️ confiança a menos |
@@ -52,15 +52,16 @@ _Atualizado automaticamente a 25/11/2026 00:16. Só dicas publicadas e já decid
 ## Por tipo de dica
 | Tipo | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| ☀️ Manhã | 97 | 73% | 65% | ✅ bem |
+| ☀️ Manhã | 98 | 72% | 65% | ✅ bem |
 | 🌎 Américas | 13 | 77% | 63% | ⬆️ confiança a menos |
 | 💎 Odd alta | 10 | 30% | 58% | ⬇️ confiança a mais |
 | 🌙 Tardia | 7 | 71% | 62% | ⏳ poucos dados |
 
 ## Extras não publicadas
-Das 19 apostas extra que ficaram por publicar, 11 teriam dado Green (**58%**), contra 70% das publicadas.
+Das 20 apostas extra que ficaram por publicar, 12 teriam dado Green (**60%**), contra 70% das publicadas.
 
 ## Últimos Reds
+- 25/11 · Slavia Prague x Villarreal **0-1** · Ambas marcam (61%, Ambas marcam)
 - 24/11 · Arsenal x Dortmund **1-1** · Vitória Arsenal (57%, Resultado 1X2)
 - 24/11 · Bodo/Glimt x LASK Linz **1-0** · Mais de 2.5 golos (74%, Golos +/-)
 - 24/11 · Galatasaray x Aston Villa **1-0** · Ambas marcam (63%, Ambas marcam)
@@ -68,6 +69,5 @@ Das 19 apostas extra que ficaram por publicar, 11 teriam dado Green (**58%**), c
 - 23/11 · Internacional x Vitoria **2-5** · Vitória Internacional (63%, Resultado 1X2)
 - 23/11 · Brentford x Everton **4-0** · xG 2.8-0.2 · Ambas marcam (54%, Ambas marcam)
 - 22/11 · Hull x Brighton **2-0** · xG 1.8-2.2 · Vitória Brighton (60%, Resultado 1X2)
-- 21/11 · Monaco x Auxerre **1-1** · xG 2.4-0.3 · Vitória Monaco (67%, Resultado 1X2)
 - 21/11 · Newcastle x Arsenal **2-2** · xG 1.7-1.5 · Vitória Arsenal (57%, Resultado 1X2)
-- 20/11 · Ath Bilbao x Espanol **0-1** · xG 1.4-0.5 · Vitória Ath Bilbao (61%, Resultado 1X2)
+- 21/11 · Monaco x Auxerre **1-1** · xG 2.4-0.3 · Vitória Monaco (67%, Resultado 1X2)
