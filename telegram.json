@@ -5320,9 +5320,63 @@
     "5728356568": 1062
    },
    "admin_msg": 1061
+  },
+  {
+   "pid": "2521011599",
+   "origem": "madrugada",
+   "data": "2026-11-25",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261125-BRA-atleticomg-corinthians|under_2.5",
+    "match_id": "20261125-BRA-atleticomg-corinthians",
+    "key": "under_2.5",
+    "texto": "Menos de 2.5 golos",
+    "jogo": "Atletico-MG x Corinthians",
+    "prob": 0.59,
+    "odd_casa": 1.74,
+    "data": "2026-11-25",
+    "resultado": null,
+    "tipo": "madrugada"
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇧🇷 <b>BRASILEIRÃO – QUARTA 25/11</b>\nAtletico-MG x Corinthians | 23h00\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.74</b>\n\n📊 Golos esperados: Atletico-MG 1.1 – Corinthians 1.1\n📊 Atletico-MG: 2 vitórias nos últimos 6 jogos\n📊 Corinthians: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-25T23:00:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-25T20:00:00",
+   "admin_msgs": {
+    "5575304800": 1063,
+    "5728356568": 1064
+   },
+   "admin_msg": 1063
+  },
+  {
+   "pid": "25210115100",
+   "origem": "madrugada",
+   "data": "2026-11-25",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261126-ARG-bocajuniors-indrivadavia|1",
+    "match_id": "20261126-ARG-bocajuniors-indrivadavia",
+    "key": "1",
+    "texto": "Vitória Boca Juniors",
+    "jogo": "Boca Juniors x Ind. Rivadavia",
+    "prob": 0.5818,
+    "odd_casa": 1.6,
+    "data": "2026-11-25",
+    "resultado": null,
+    "tipo": "madrugada"
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇦🇷 <b>LIGA ARGENTINA – QUINTA 26/11</b>\nBoca Juniors x Ind. Rivadavia | 00h00\n\n✅ <b>Dica: Vitória Boca Juniors</b>\n💰 Odd: <b>1.60</b>\n\n📊 Golos esperados: Boca Juniors 1.6 – Ind. Rivadavia 0.7\n📊 Boca Juniors: 5 vitórias nos últimos 6 jogos\n📊 Ind. Rivadavia: 1 vitória nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-26T00:00:00",
+   "estado": "descartada",
+   "enviar_a": "2026-11-25T21:00:00",
+   "admin_msgs": {
+    "5575304800": 1065,
+    "5728356568": 1066
+   },
+   "admin_msg": 1065
   }
  ],
  "ultimo_resumo": 330,
- "offset_admin": 820373759,
+ "offset_admin": 820373761,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
