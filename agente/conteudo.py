@@ -80,7 +80,8 @@ def candidatos(horas: int = 36, limite: int = 12) -> list[dict]:
     agora = dt.datetime.now()
     p = p[(p["kickoff"] >= agora - dt.timedelta(hours=horas)) & (p["kickoff"] <= agora) & p["hg"].notna()]
     certas = _dicas_certas()
-    feitos = {v.get("match_id") for v in _registo()["videos"].values()}
+    # só conta como feito um vídeo do jogo depois de acabar (a antevisão do mesmo jogo não o esconde)
+    feitos = {v.get("match_id") for v in _registo()["videos"].values() if v.get("tipo") != "antevisao"}
     out = []
     for _, r in p.iterrows():
         hg, ag = int(r["hg"]), int(r["ag"])
