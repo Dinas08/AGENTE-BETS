@@ -12,12 +12,12 @@ escreve um recap depois de cada jornada.
 ## Como usar
 | Ação | Como |
 |---|---|
-| Abrir a dashboard | **https://agente-bets-dinis.streamlit.app** (em qualquer dispositivo; vai buscar os dados novos de 5 em 5 min) |
+| Abrir a dashboard | a app no Streamlit Cloud (link guardado à parte) (em qualquer dispositivo; vai buscar os dados novos de 5 em 5 min) |
 | Atualizar à mão | GitHub → AGENTE-BETS → Actions → "Previsões" ou "Resultados" → Run workflow |
 | Notícias, ajustes e recap | rotinas na nuvem (ver abaixo), ou numa sessão do Claude: "faz a rotina 1" / "faz a rotina 2" |
 
 ## Na nuvem (funciona com o PC desligado)
-- **Dashboard:** https://agente-bets-dinis.streamlit.app (palavra-passe nos Secrets do Streamlit). Abre em
+- **Dashboard:** app no Streamlit Cloud (link guardado à parte; palavra-passe nos Secrets do Streamlit). Abre em
   qualquer dispositivo. Se ninguém a abrir durante uns dias adormece; ao abrir demora ~30 s a acordar.
 - **Código:** repositório `Dinas08/AGENTE-BETS` (ramo `main`). **Dados:** ramo `claude/dados`.
 - **GitHub Actions** (separador Actions do repositório): `Resultados` de 30 em 30 min (11h–24h),

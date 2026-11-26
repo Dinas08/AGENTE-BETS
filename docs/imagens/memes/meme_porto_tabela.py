@@ -18,7 +18,7 @@ CORAL = (217, 119, 87)
 ECRA, ECRA_TXT, ECRA_SUB = (24, 24, 26), (236, 236, 238), (150, 150, 156)
 VERDE, VERMELHO = (88, 190, 120), (232, 84, 84)
 
-# a tabela do meme original (pedido do Dinis), não a classificação atual
+# a tabela do meme original (pedido do admin), não a classificação atual
 TOPO = [(1, "PSG", 4, "+12", 12, (0, 45, 98)), (2, "Aston Villa", 4, "+8", 9, (122, 38, 58)),
         (3, "Barcelona", 4, "+6", 9, (165, 0, 68)), (4, "Liverpool", 3, "+5", 9, (200, 16, 46)),
         (5, "Real Madrid", 3, "+5", 9, (230, 230, 230)), (6, "Sporting", 4, "+4", 9, (0, 128, 87)),

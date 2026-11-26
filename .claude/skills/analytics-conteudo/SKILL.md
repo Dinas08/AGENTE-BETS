@@ -1,6 +1,6 @@
 ---
 name: analytics-conteudo
-description: Analisa o desempenho dos vídeos e memes do Agente Claudio nas redes (TikTok, Instagram, YouTube Shorts, X) e a conversão para o canal de Telegram, e ajusta a estratégia (temas, gancho, palavras, duração, hora de publicação). Usar quando o Dinis manda prints das analytics, pede "analisa os posts", "como estão os vídeos", "o que resulta mais", "ajusta o conteúdo", ou escreve /analytics-conteudo.
+description: Analisa o desempenho dos vídeos e memes do Agente Claudio nas redes (TikTok, Instagram, YouTube Shorts, X) e a conversão para o canal de Telegram, e ajusta a estratégia (temas, gancho, palavras, duração, hora de publicação). Usar quando o admin manda prints das analytics, pede "analisa os posts", "como estão os vídeos", "o que resulta mais", "ajusta o conteúdo", ou escreve /analytics-conteudo.
 ---
 
 # Analytics do conteúdo → ajustes
@@ -9,7 +9,7 @@ description: Analisa o desempenho dos vídeos e memes do Agente Claudio nas rede
 partilhas só interessam como sinais do que leva a views e a inscritos.
 
 ## Fontes de dados
-- **Prints das redes** que o Dinis manda no chat (normalmente 1x por semana): por post, views, retenção média /
+- **Prints das redes** que o admin manda no chat (normalmente 1x por semana): por post, views, retenção média /
   % que viu até ao fim, gostos, comentários, partilhas, guardados, seguidores novos, visitas ao perfil e cliques
   no link da bio (quando a rede mostra). Se faltar a hora a que cada post saiu, pergunta.
 - **Inscritos do canal** de hora a hora: `dados/conteudo/membros.json` (escrito pelo workflow Resultados).
@@ -45,9 +45,9 @@ partilhas só interessam como sinais do que leva a views e a inscritos.
    - `## Horários` — melhores janelas por rede, segundo os nossos dados.
    Apaga lições que deixaram de se confirmar em 3+ vídeos.
 6. **Ajustar as regras**: se uma lição ativa contraria `docs/redes_sociais.md` ou `docs/conteudo_rotina.md`,
-   propõe ao Dinis a mudança nesses ficheiros (estão no `main`; não os mudes sem ele aprovar).
+   propõe ao admin a mudança nesses ficheiros (estão no `main`; não os mudes sem ele aprovar).
 7. **Guardar**: `bash scripts/guardar_dados.sh "analytics conteudo" theirs` (ou commit no worktree do ramo de dados).
-8. **Resumo para o Dinis**: top 3 posts (views e inscritos), o que resultou e porquê, o que muda na próxima
+8. **Resumo para o admin**: top 3 posts (views e inscritos), o que resultou e porquê, o que muda na próxima
    semana e a experiência da semana. Sem promessas de crescimento.
 
 ## Regras

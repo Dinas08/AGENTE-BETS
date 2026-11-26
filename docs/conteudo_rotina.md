@@ -85,14 +85,14 @@ Usa `python3.13`. Não corras `tudo`, `prever` nem `resultados`.
   apostas). Nunca dizer "Telegram", "dashboard", nomes de casas de apostas nem prometer lucros. As odds e a
   palavra "dica" podem ir só nas legendas do Instagram e do X, com "+18".
 - Um aviso "+18 · joga com responsabilidade" por peça chega (já está no fecho). Tom confiante e divertido.
-- Sem dados pessoais do Dinis em nada.
+- Sem dados pessoais do admin em nada.
 
 ## Aprender com as analytics
 - **O objetivo são views e inscritos novos no canal.** O `run.py conteudo candidatos` mostra no fim o
   "Desempenho dos últimos vídeos" (inscritos nas 24 h a seguir a cada publicação vs o ritmo normal, e as views
   registadas). Antes de escolher, vê que temas, ganchos e horas trouxeram mais inscritos e puxa nessa direção.
 - A análise semanal dos prints segue a skill `.claude/skills/analytics-conteudo/SKILL.md` e escreve as lições.
-- O Dinis manda, uma vez por semana, prints das estatísticas de cada rede. Nessa sessão atualiza
+- O admin manda, uma vez por semana, prints das estatísticas de cada rede. Nessa sessão atualiza
   `dados/conteudo/licoes_conteudo.md`: views, retenção, gostos, comentários e partilhas por vídeo (nome do guião),
   e conclusões curtas ("antevisões dos 3 grandes dão 3x mais views", "ganchos com números retêm mais").
 - Antes de escolher temas, lê esse ficheiro e aplica as conclusões. Experimenta 1 coisa nova por semana e regista

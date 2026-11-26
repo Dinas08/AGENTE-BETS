@@ -6,7 +6,7 @@ Fluxo automático:
 2. O workflow "Resultados" (de 10 em 10 min) vê que há guiões pendentes e dispara o workflow "Vídeos".
 3. O workflow "Vídeos" renderiza cada guião pendente e manda-o em privado aos admins do Telegram, com as
    legendas de cada rede e a hora sugerida. Os admins publicam à mão. Nada vai para o canal.
-4. Uma vez por semana o Dinis manda os prints das analytics e o agente atualiza
+4. Uma vez por semana o admin manda os prints das analytics e o agente atualiza
    dados/conteudo/licoes_conteudo.md, que a rotina lê antes de escolher os temas.
 """
 import datetime as dt
