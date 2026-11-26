@@ -1688,6 +1688,123 @@
    "data": "2026-11-25",
    "resultado": true,
    "message_id": 336
+  },
+  {
+   "id": "20261126-UEL-celta-bournemouth|combo:X2&over_1.5",
+   "match_id": "20261126-UEL-celta-bournemouth",
+   "key": "combo:X2&over_1.5",
+   "texto": "Bournemouth ou empate + Mais de 1.5 golos",
+   "jogo": "Celta x Bournemouth",
+   "prob": 0.5781,
+   "odd_casa": null,
+   "data": "2026-11-26",
+   "resultado": null,
+   "tipo": "odd_alta",
+   "message_id": 343
+  },
+  {
+   "id": "20261126-UECL-jablonec-fclugano|2",
+   "match_id": "20261126-UECL-jablonec-fclugano",
+   "key": "2",
+   "texto": "Vitória FC Lugano",
+   "jogo": "Jablonec x FC Lugano",
+   "prob": 0.4063,
+   "odd_casa": 2.3,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 344
+  },
+  {
+   "id": "20261126-UECL-hearts-monaco|2",
+   "match_id": "20261126-UECL-hearts-monaco",
+   "key": "2",
+   "texto": "Vitória Monaco",
+   "jogo": "Hearts x Monaco",
+   "prob": 0.5992,
+   "odd_casa": 1.53,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 345
+  },
+  {
+   "id": "20261126-UEL-viktoriaplzen-benfica|combo:2&over_2.5",
+   "match_id": "20261126-UEL-viktoriaplzen-benfica",
+   "key": "combo:2&over_2.5",
+   "texto": "Vitória Benfica + Mais de 2.5 golos",
+   "jogo": "Viktoria Plzen x Benfica",
+   "prob": 0.493,
+   "odd_casa": null,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 346
+  },
+  {
+   "id": "20261126-UEL-stgilloise-lechpoznan|1",
+   "match_id": "20261126-UEL-stgilloise-lechpoznan",
+   "key": "1",
+   "texto": "Vitória St. Gilloise",
+   "jogo": "St. Gilloise x Lech Poznan",
+   "prob": 0.7498,
+   "odd_casa": 1.37,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 347
+  },
+  {
+   "id": "20261126-UEL-olympiakos-milan|btts_sim",
+   "match_id": "20261126-UEL-olympiakos-milan",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Olympiakos x Milan",
+   "prob": 0.5266,
+   "odd_casa": null,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 348
+  },
+  {
+   "id": "20261126-UEL-marseille-levskisofia|1",
+   "match_id": "20261126-UEL-marseille-levskisofia",
+   "key": "1",
+   "texto": "Vitória Marseille",
+   "jogo": "Marseille x Levski Sofia",
+   "prob": 0.7443,
+   "odd_casa": 1.35,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 349
+  },
+  {
+   "id": "20261126-UEL-besiktas-hapoelbeer|1",
+   "match_id": "20261126-UEL-besiktas-hapoelbeer",
+   "key": "1",
+   "texto": "Vitória Besiktas",
+   "jogo": "Besiktas x Hapoel Be'er",
+   "prob": 0.7906,
+   "odd_casa": 1.25,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 350
+  },
+  {
+   "id": "20261126-UEL-dinamozagreb-leverkusen|over_2.5",
+   "match_id": "20261126-UEL-dinamozagreb-leverkusen",
+   "key": "over_2.5",
+   "texto": "Mais de 2.5 golos",
+   "jogo": "Dinamo Zagreb x Leverkusen",
+   "prob": 0.6881,
+   "odd_casa": null,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 351
   }
  ],
  "multiplas": [
@@ -4215,21 +4332,26 @@
    "data": "2026-11-26",
    "lista": "dicas",
    "registo": {
-    "id": "20261126-UEL-celta-bournemouth|over_2.5",
+    "id": "20261126-UEL-celta-bournemouth|combo:X2&over_1.5",
     "match_id": "20261126-UEL-celta-bournemouth",
-    "key": "over_2.5",
-    "texto": "Mais de 2.5 golos",
+    "key": "combo:X2&over_1.5",
+    "texto": "Bournemouth ou empate + Mais de 1.5 golos",
     "jogo": "Celta x Bournemouth",
-    "prob": 0.5303,
-    "odd_casa": 1.91,
+    "prob": 0.5781,
+    "odd_casa": null,
     "data": "2026-11-26",
     "resultado": null,
     "tipo": "odd_alta"
    },
-   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nCelta x Bournemouth | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.91</b>\n\n📊 Golos esperados: Celta 1.1 – Bournemouth 1.6\n📊 Celta: 1 vitória nos últimos 6 jogos, xG 8.3 contra 8.1\n📊 Bournemouth: 5 vitórias nos últimos 6 jogos, xG 14.2 contra 6.3\n🚑 Celta sem Iglesias, Starfelt, Sánchez\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nCelta x Bournemouth | 17h45\n\n✅ <b>Dica: Bournemouth ou empate + Mais de 1.5 golos</b>\n💰 Odd: <b>1.54</b> (estimativa nas casas)\n\n📊 Golos esperados: Celta 1.1 – Bournemouth 1.6\n📊 Celta: 1 vitória nos últimos 6 jogos, xG 8.3 contra 8.1\n📊 Bournemouth: 5 vitórias nos últimos 6 jogos, xG 14.2 contra 6.3\n🚑 Celta sem Iglesias, Starfelt, Sánchez\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-26T14:45:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-26T14:45:00",
+   "admin_msgs": {
+    "5575304800": 1099,
+    "5728356568": 1100
+   },
+   "admin_msg": 1099
   },
   {
    "pid": "2611235661",
@@ -4383,9 +4505,14 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nSK Brann x AGF | 17h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.45</b> (estimativa nas casas)\n\n📊 Golos esperados: SK Brann 1.8 – AGF 1.5\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1101,
+    "5728356568": 1102
+   },
+   "admin_msg": 1101
   },
   {
    "pid": "2611235665",
@@ -4406,9 +4533,14 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nKauno Zalgiris x Riga FC | 17h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.72</b> (estimativa nas casas)\n\n📊 Golos esperados: Kauno Zalgiris 1.1 – Riga FC 1.5\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1103,
+    "5728356568": 1104
+   },
+   "admin_msg": 1103
   },
   {
    "pid": "2611235666",
@@ -4416,22 +4548,27 @@
    "data": "2026-11-26",
    "lista": "dicas",
    "registo": {
-    "id": "20261126-UECL-jablonec-fclugano|btts_sim",
+    "id": "20261126-UECL-jablonec-fclugano|2",
     "match_id": "20261126-UECL-jablonec-fclugano",
-    "key": "btts_sim",
-    "texto": "Ambas marcam",
+    "key": "2",
+    "texto": "Vitória FC Lugano",
     "jogo": "Jablonec x FC Lugano",
-    "prob": 0.5928,
-    "odd_casa": null,
+    "prob": 0.4063,
+    "odd_casa": 2.3,
     "data": "2026-11-26",
     "resultado": null,
     "extra": true
    },
-   "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nJablonec x FC Lugano | 17h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.58</b> (estimativa nas casas)\n\n📊 Golos esperados: Jablonec 1.4 – FC Lugano 1.5\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nJablonec x FC Lugano | 17h45\n\n✅ <b>Dica: Vitória FC Lugano</b>\n💰 Odd: <b>2.30</b>\n\n📊 Golos esperados: Jablonec 1.4 – FC Lugano 1.5\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1105,
+    "5728356568": 1106
+   },
+   "admin_msg": 1105
   },
   {
    "pid": "2611235667",
@@ -4452,9 +4589,14 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nIberia 1999 x Getafe | 17h45\n\n✅ <b>Dica: Vitória Getafe</b>\n💰 Odd: <b>1.48</b>\n\n📊 Golos esperados: Iberia 1999 0.7 – Getafe 1.6\n📊 Getafe: 1 vitória nos últimos 6 jogos, xG 4.1 contra 12.0\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1107,
+    "5728356568": 1108
+   },
+   "admin_msg": 1107
   },
   {
    "pid": "2611235668",
@@ -4475,9 +4617,14 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nHearts x Monaco | 17h45\n\n✅ <b>Dica: Vitória Monaco</b>\n💰 Odd: <b>1.53</b>\n\n📊 Golos esperados: Hearts 0.9 – Monaco 1.9\n📊 Hearts: 3 vitórias nos últimos 6 jogos, xG 12.7 contra 11.1\n📊 Monaco: 0 vitórias nos últimos 6 jogos, xG 8.2 contra 7.8\n🚑 Hearts sem Ageu, Kabashi\n🚑 Monaco sem Golovin, Fati, Mawissa\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1109,
+    "5728356568": 1110
+   },
+   "admin_msg": 1109
   },
   {
    "pid": "2611235669",
@@ -4498,9 +4645,14 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nEgnatia x Lincoln Red Imps | 17h45\n\n✅ <b>Dica: Vitória Egnatia</b>\n💰 Odd: <b>1.61</b>\n\n📊 Golos esperados: Egnatia 1.9 – Lincoln Red Imps 1.0\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1111,
+    "5728356568": 1112
+   },
+   "admin_msg": 1111
   },
   {
    "pid": "2611235670",
@@ -4521,9 +4673,14 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nBrighton x CSU Craiova | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.27</b> (estimativa nas casas)\n\n📊 Golos esperados: Brighton 3.3 – CSU Craiova 0.7\n📊 Brighton: 4 vitórias nos últimos 6 jogos, xG 10.1 contra 6.8\n🚑 Brighton sem Mitoma, Yalcouye\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1113,
+    "5728356568": 1114
+   },
+   "admin_msg": 1113
   },
   {
    "pid": "2611235671",
@@ -4544,9 +4701,14 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nPafos x FC Midtjylland | 17h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.74</b> (estimativa nas casas)\n\n📊 Golos esperados: Pafos 1.4 – FC Midtjylland 1.2\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1115,
+    "5728356568": 1116
+   },
+   "admin_msg": 1115
   },
   {
    "pid": "2611235672",
@@ -4554,22 +4716,27 @@
    "data": "2026-11-26",
    "lista": "dicas",
    "registo": {
-    "id": "20261126-UEL-viktoriaplzen-benfica|over_2.5",
+    "id": "20261126-UEL-viktoriaplzen-benfica|combo:2&over_2.5",
     "match_id": "20261126-UEL-viktoriaplzen-benfica",
-    "key": "over_2.5",
-    "texto": "Mais de 2.5 golos",
+    "key": "combo:2&over_2.5",
+    "texto": "Vitória Benfica + Mais de 2.5 golos",
     "jogo": "Viktoria Plzen x Benfica",
-    "prob": 0.6889,
+    "prob": 0.493,
     "odd_casa": null,
     "data": "2026-11-26",
     "resultado": null,
     "extra": true
    },
-   "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nViktoria Plzen x Benfica | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.37</b> (estimativa nas casas)\n\n📊 Golos esperados: Viktoria Plzen 1.2 – Benfica 2.4\n📊 Benfica: 5 vitórias nos últimos 6 jogos, xG 11.0 contra 6.3\n🚑 Benfica sem Barreiro, Aursnes\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nViktoria Plzen x Benfica | 17h45\n\n✅ <b>Dica: Vitória Benfica + Mais de 2.5 golos</b>\n💰 Odd: <b>1.81</b> (estimativa nas casas)\n\n📊 Golos esperados: Viktoria Plzen 1.2 – Benfica 2.4\n📊 Benfica: 5 vitórias nos últimos 6 jogos, xG 11.0 contra 6.3\n🚑 Benfica sem Barreiro, Aursnes\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1117,
+    "5728356568": 1118
+   },
+   "admin_msg": 1117
   },
   {
    "pid": "2611235673",
@@ -4590,9 +4757,14 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nSt. Gilloise x Lech Poznan | 17h45\n\n✅ <b>Dica: Vitória St. Gilloise</b>\n💰 Odd: <b>1.37</b>\n\n📊 Golos esperados: St. Gilloise 2.5 – Lech Poznan 0.9\n📊 St. Gilloise: 5 vitórias nos últimos 6 jogos, xG 10.2 contra 4.9\n🚑 St. Gilloise sem Allister, Biondic\n🚑 Lech Poznan sem Gholizadeh, Sayyad\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1119,
+    "5728356568": 1120
+   },
+   "admin_msg": 1119
   },
   {
    "pid": "2611235674",
@@ -4613,9 +4785,14 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nRB Salzburg x Ararat-Armenia | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.23</b> (estimativa nas casas)\n\n📊 Golos esperados: RB Salzburg 3.2 – Ararat-Armenia 1.0\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1121,
+    "5728356568": 1122
+   },
+   "admin_msg": 1121
   },
   {
    "pid": "2611235675",
@@ -4636,9 +4813,14 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nOlympiakos x Milan | 17h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.77</b> (estimativa nas casas)\n\n📊 Golos esperados: Olympiakos 1.3 – Milan 1.2\n📊 Olympiakos: 5 vitórias nos últimos 6 jogos, xG 11.3 contra 6.2\n📊 Milan: 5 vitórias nos últimos 6 jogos, xG 12.1 contra 8.3\n🚑 Olympiakos sem Chiquinho, Puerta, Kaabi, Yazici\n🚑 Milan sem Modrić, Loftus-Cheek, Gabbia, Tomori\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1123,
+    "5728356568": 1124
+   },
+   "admin_msg": 1123
   },
   {
    "pid": "2611235676",
@@ -4659,9 +4841,14 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nMarseille x Levski Sofia | 17h45\n\n✅ <b>Dica: Vitória Marseille</b>\n💰 Odd: <b>1.35</b>\n\n📊 Golos esperados: Marseille 2.4 – Levski Sofia 0.8\n📊 Marseille: 5 vitórias nos últimos 6 jogos, xG 10.4 contra 14.3\n🚑 Marseille sem Cornelius, Emerson, Højbjerg\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1125,
+    "5728356568": 1126
+   },
+   "admin_msg": 1125
   },
   {
    "pid": "2611235677",
@@ -4682,9 +4869,14 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nDinamo Zagreb x Leverkusen | 17h45\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.37</b> (estimativa nas casas)\n\n📊 Golos esperados: Dinamo Zagreb 1.3 – Leverkusen 2.3\n📊 Leverkusen: 4 vitórias nos últimos 6 jogos, xG 11.9 contra 12.3\n🚑 Dinamo Zagreb sem McKenna, Mudražija, Domínguez\n🚑 Leverkusen sem Terrier, Doué\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1127,
+    "5728356568": 1128
+   },
+   "admin_msg": 1127
   },
   {
    "pid": "2611235678",
@@ -4705,9 +4897,14 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nBesiktas x Hapoel Be&#x27;er | 17h45\n\n✅ <b>Dica: Vitória Besiktas</b>\n💰 Odd: <b>1.25</b>\n\n📊 Golos esperados: Besiktas 3.0 – Hapoel Be&#x27;er 1.0\n📊 Besiktas: 4 vitórias nos últimos 6 jogos, xG 11.9 contra 6.8\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1129,
+    "5728356568": 1130
+   },
+   "admin_msg": 1129
   },
   {
    "pid": "2611235679",
@@ -4728,9 +4925,14 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nAjax x FC Thun | 17h45\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.32</b> (estimativa nas casas)\n\n📊 Golos esperados: Ajax 3.8 – FC Thun 1.1\n📊 Ajax: 4 vitórias nos últimos 6 jogos, xG 8.9 contra 8.6\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T17:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-26T14:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1131,
+    "5728356568": 1132
+   },
+   "admin_msg": 1131
   },
   {
    "pid": "2611235680",
@@ -5079,6 +5281,6 @@
   }
  ],
  "ultimo_resumo": 330,
- "offset_admin": 820373768,
+ "offset_admin": 820373791,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
