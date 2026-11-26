@@ -1845,6 +1845,19 @@
    "resultado": null,
    "extra": true,
    "message_id": 354
+  },
+  {
+   "id": "20261126-BRA-saopaulo-remo|1",
+   "match_id": "20261126-BRA-saopaulo-remo",
+   "key": "1",
+   "texto": "Vitória Sao Paulo",
+   "jogo": "Sao Paulo x Remo",
+   "prob": 0.663,
+   "odd_casa": 1.37,
+   "data": "2026-11-26",
+   "resultado": null,
+   "tipo": "madrugada",
+   "message_id": 364
   }
  ],
  "multiplas": [
@@ -4321,7 +4334,7 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nCrystal Palace x Sociedad | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.44</b> (estimativa nas casas)\n\n📊 Golos esperados: Crystal Palace 1.7 – Sociedad 1.6\n📊 Crystal Palace: 1 vitória nos últimos 6 jogos, xG 9.2 contra 14.5\n📊 Sociedad: 4 vitórias nos últimos 6 jogos, xG 12.6 contra 11.3\n🚑 Crystal Palace sem Riad, Sarr, Tomiyasu, Wharton\n🚑 Sociedad sem Aramburu, Herrera, Odriozola\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "admin_msgs": {
     "5575304800": 1150,
@@ -4347,7 +4360,7 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nNijmegen x Rennes | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.46</b> (estimativa nas casas)\n\n📊 Golos esperados: Nijmegen 1.5 – Rennes 1.8\n📊 Nijmegen: 1 vitória nos últimos 6 jogos, xG 10.5 contra 9.6\n📊 Rennes: 2 vitórias nos últimos 6 jogos, xG 13.2 contra 11.5\n🚑 Nijmegen sem Schuurs, Nuytinck, Sandler\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "admin_msgs": {
     "5575304800": 1152,
@@ -4373,7 +4386,7 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nFreiburg x Twente | 20h00\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.44</b> (estimativa nas casas)\n\n📊 Golos esperados: Freiburg 1.6 – Twente 1.0\n📊 Freiburg: 4 vitórias nos últimos 6 jogos, xG 8.0 contra 7.6\n📊 Twente: 3 vitórias nos últimos 6 jogos, xG 16.0 contra 4.4\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "admin_msgs": {
     "5575304800": 1154,
@@ -4456,7 +4469,7 @@
    },
    "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Crystal Palace x Sociedad: Ambas marcam (@1.44)\n• Nijmegen x Rennes: Ambas marcam (@1.46)\n• Freiburg x Twente: Menos de 9.5 cantos (@1.44)\n\n💰 Odd total: <b>3.03</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "admin_msgs": {
     "5575304800": 1156,
@@ -4515,7 +4528,7 @@
    },
    "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• OFI Crete x Anderlecht: Vitória Anderlecht (@1.77)\n   <i>↳ golos esperados 1.0 – 1.8 · Anderlecht 4V em 6</i>\n• Crystal Palace x Sociedad: Mais de 2.5 golos (@1.48)\n   <i>↳ golos esperados 1.7 – 1.6</i>\n• Nijmegen x Rennes: Mais de 2.5 golos (@1.49)\n   <i>↳ golos esperados 1.5 – 1.8</i>\n\n💰 Odd total: <b>3.90</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "admin_msgs": {
     "5575304800": 1158,
@@ -5018,7 +5031,7 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nHajduk Split x St Truiden | 20h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.43</b> (estimativa nas casas)\n\n📊 Golos esperados: Hajduk Split 1.5 – St Truiden 1.3\n📊 St Truiden: 1 vitória nos últimos 6 jogos, xG 12.8 contra 8.9\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5046,7 +5059,7 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nFC Nordsjælland x Panathinaikos | 20h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.30</b> (estimativa nas casas)\n\n📊 Golos esperados: FC Nordsjælland 1.4 – Panathinaikos 1.5\n📊 Panathinaikos: 5 vitórias nos últimos 6 jogos, xG 13.2 contra 4.6\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5074,7 +5087,7 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nCSKA Sofia x Trabzonspor | 20h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.49</b> (estimativa nas casas)\n\n📊 Golos esperados: CSKA Sofia 1.2 – Trabzonspor 2.1\n📊 Trabzonspor: 6 vitórias nos últimos 6 jogos, xG 13.6 contra 7.9\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5102,7 +5115,7 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nSp Braga x KuPS Kuopio | 20h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.24</b> (estimativa nas casas)\n\n📊 Golos esperados: Sp Braga 3.0 – KuPS Kuopio 0.7\n📊 Sp Braga: 2 vitórias nos últimos 6 jogos, xG 8.0 contra 4.3\n🚑 Sp Braga sem Niakaté, Wind\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5130,7 +5143,7 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nBorac Banja Luka x Atalanta | 20h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.39</b> (estimativa nas casas)\n\n📊 Golos esperados: Borac Banja Luka 1.2 – Atalanta 2.4\n📊 Atalanta: 1 vitória nos últimos 6 jogos, xG 13.8 contra 11.2\n🚑 Atalanta sem Hien, Kossounou, Kristensen\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5158,7 +5171,7 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nHoffenheim x SK Sturm Graz | 20h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.23</b> (estimativa nas casas)\n\n📊 Golos esperados: Hoffenheim 2.7 – SK Sturm Graz 1.1\n📊 Hoffenheim: 3 vitórias nos últimos 6 jogos, xG 11.3 contra 8.5\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5242,7 +5255,7 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nSparta Prague x AZ Alkmaar | 20h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.33</b> (estimativa nas casas)\n\n📊 Golos esperados: Sparta Prague 1.4 – AZ Alkmaar 1.8\n📊 AZ Alkmaar: 2 vitórias nos últimos 6 jogos, xG 10.9 contra 9.2\n🚑 Sparta Prague sem Guddal, Karabec\n🚑 AZ Alkmaar sem Smit, Schouten, Patati\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5298,7 +5311,7 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nJuventus x Omonia Nicosia | 20h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.24</b> (estimativa nas casas)\n\n📊 Golos esperados: Juventus 3.3 – Omonia Nicosia 0.8\n📊 Juventus: 3 vitórias nos últimos 6 jogos, xG 8.1 contra 5.9\n🚑 Juventus sem Locatelli, Thuram, Yildiz, Kalulu\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5354,7 +5367,7 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nInter D&#x27;Escaldes x F.C. København | 20h00\n\n✅ <b>Dica: Vitória F.C. København</b>\n💰 Odd: <b>1.26</b>\n\n📊 Golos esperados: Inter D&#x27;Escaldes 0.7 – F.C. København 2.2\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5382,7 +5395,7 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nTorreense x Celtic | 20h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.20</b> (estimativa nas casas)\n\n📊 Golos esperados: Torreense 1.3 – Celtic 2.3\n📊 Celtic: 4 vitórias nos últimos 6 jogos, xG 14.2 contra 7.6\n🚑 Celtic sem Johnston, Nygren\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5410,7 +5423,7 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nGent x Red Star Belgrade | 20h00\n\n✅ <b>Dica: Mais de 9.5 cantos</b>\n💰 Odd: <b>1.39</b> (estimativa nas casas)\n\n📊 Golos esperados: Gent 1.4 – Red Star Belgrade 1.0\n📊 Gent: 4 vitórias nos últimos 6 jogos, xG 9.2 contra 7.3\n🚑 Gent sem Ngom\n🚑 Red Star Belgrade sem Elšnik, Dieng, Katai\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5457,7 +5470,7 @@
    },
    "texto": "🌙 <b>DICA TARDIA</b>\n\n🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nOFI Crete x Anderlecht | 20h00\n\n✅ <b>Dica: Vitória Anderlecht</b>\n💰 Odd: <b>1.77</b>\n\n📊 Golos esperados: OFI Crete 1.0 – Anderlecht 1.8\n📊 OFI Crete: 2 vitórias nos últimos 6 jogos, xG 8.7 contra 8.4\n📊 Anderlecht: 4 vitórias nos últimos 6 jogos, xG 10.9 contra 6.6\n🚑 OFI Crete sem Kodro, Krizmanić, Koutsoupias\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-26T17:00:00",
    "admin_msgs": {
     "5575304800": 1194,
@@ -5477,7 +5490,7 @@
    },
    "texto": "✅ <b>GREEN</b>: Bournemouth ou empate + Mais de 1.5 golos\nCelta 1-2 Bournemouth",
    "expira": "2026-11-27T21:01:15.754816",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 1196,
     "5728356568": 1197
@@ -5496,7 +5509,7 @@
    },
    "texto": "❌ RED: Vitória FC Lugano\nJablonec 2-0 FC Lugano",
    "expira": "2026-11-27T21:01:16.636101",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 1198,
     "5728356568": 1199
@@ -5515,7 +5528,7 @@
    },
    "texto": "✅ <b>GREEN</b>: Vitória Monaco\nHearts 2-3 Monaco",
    "expira": "2026-11-27T21:01:17.456530",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 1200,
     "5728356568": 1201
@@ -5534,7 +5547,7 @@
    },
    "texto": "❌ RED: Vitória Benfica + Mais de 2.5 golos\nViktoria Plzen 4-0 Benfica",
    "expira": "2026-11-27T21:01:18.335635",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 1202,
     "5728356568": 1203
@@ -5553,7 +5566,7 @@
    },
    "texto": "❌ RED: Vitória St. Gilloise\nSt. Gilloise 2-2 Lech Poznan",
    "expira": "2026-11-27T21:01:19.224256",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 1204,
     "5728356568": 1205
@@ -5572,7 +5585,7 @@
    },
    "texto": "✅ <b>GREEN</b>: Ambas marcam\nOlympiakos 2-4 Milan",
    "expira": "2026-11-27T21:01:20.105568",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 1206,
     "5728356568": 1207
@@ -5591,7 +5604,7 @@
    },
    "texto": "✅ <b>GREEN</b>: Vitória Marseille\nMarseille 1-0 Levski Sofia",
    "expira": "2026-11-27T21:01:20.863993",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 1208,
     "5728356568": 1209
@@ -5610,7 +5623,7 @@
    },
    "texto": "❌ RED: Mais de 2.5 golos\nDinamo Zagreb 0-2 Leverkusen",
    "expira": "2026-11-27T21:01:21.620241",
-   "estado": "pendente",
+   "estado": "publicada",
    "admin_msgs": {
     "5575304800": 1210,
     "5728356568": 1211
@@ -5636,7 +5649,7 @@
    },
    "texto": "🌎 <b>AMÉRICAS</b>\n\n🇧🇷 <b>BRASILEIRÃO – QUINTA 26/11</b>\nSao Paulo x Remo | 23h00\n\n✅ <b>Dica: Vitória Sao Paulo</b>\n💰 Odd: <b>1.37</b>\n\n📊 Golos esperados: Sao Paulo 1.9 – Remo 0.7\n📊 Sao Paulo: 1 vitória nos últimos 6 jogos\n📊 Remo: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T23:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T20:00:00",
    "admin_msgs": {
     "5575304800": 1212,
@@ -5646,6 +5659,6 @@
   }
  ],
  "ultimo_resumo": 330,
- "offset_admin": 820373795,
+ "offset_admin": 820373804,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
