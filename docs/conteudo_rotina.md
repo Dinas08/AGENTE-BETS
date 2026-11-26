@@ -42,7 +42,7 @@ Usa `python3.13`. Não corras `tudo`, `prever` nem `resultados`.
        "x": "frase de impacto até 250 caracteres + 1-2 hashtags",
    }
    ```
-   **Memes (posts estáticos)**: junta 1–2 memes do Agente Claudio ligados ao vídeo, com humor leve (um trocadilho,
+   **Memes (posts estáticos) — OBRIGATÓRIO em todos os guiões**: junta 1–2 memes do Agente Claudio ligados ao vídeo, com humor leve (um trocadilho,
    o "expectativa vs realidade" do jogo, o robô a reagir a um lance). Desenhados com `docs/video/memes.py`
    (lê o docstring: modelos `reacao` e `expectativa`, desenhos prontos `parede`, `placar:<texto>`, `trofeu`,
    `relogio:<minuto>`, `bola`, `lagrima`, `fogo`, `zero`, ou uma função tua `f(d, caixa)` para um desenho novo):
@@ -61,7 +61,9 @@ Usa `python3.13`. Não corras `tudo`, `prever` nem `resultados`.
    no render a sério as animações esticam para a voz real.
 6. **Revê**: `python3.13 docs/video/quadro_tatico.py dados/videos/<guiao>.py --capas --saida /tmp/capas` e abre
    as imagens das cenas (Read). Corrige textos sobrepostos, nomes trocados, placar na ordem casa–fora.
-7. **Guarda**: `bash scripts/guardar_dados.sh "conteudo" theirs`. Em até 10 min o vídeo chega ao Telegram dos admins.
+7. **Antes de guardar, confirma**: o guião tem `MEMES` com 1–2 memes revistos em imagem, `POSTS` para as 4 redes, `HORA`, e a frase de fecho nova. Um vídeo sem memes chega aos admins com um aviso.
+   Memes de um jogo que já teve vídeo: um guião só com `TIPO = "memes"`, `TEMA`, `MATCH_ID` e `MEMES` (sem `construir()`); o circuito manda só as imagens.
+8. **Guarda**: `bash scripts/guardar_dados.sh "conteudo" theirs`. Em até 10 min o vídeo chega ao Telegram dos admins.
 
 ## Regras do conteúdo (iguais aos vídeos feitos à mão)
 - Formato: **análise tática, não resumo golo a golo**. Plano das equipas e 2–3 detalhes táticos no quadro, cartão

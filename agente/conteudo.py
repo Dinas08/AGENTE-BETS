@@ -314,10 +314,33 @@ def enviar(guiao: Path, mp4: Path, capa: Path | None = None, voz: str = "") -> b
                     caption="Capa (para o YouTube/Instagram)")
         for bloco in _texto_posts(guiao.stem, posts, hora):
             _tg("sendMessage", chat_id=chat, text=bloco, parse_mode="HTML")
-        for png, legenda in memes:
-            with open(png, "rb") as f:
-                _tg("sendPhoto", files={"photo": (png.name, f, "image/png")}, chat_id=chat,
+        _enviar_memes(chat, memes)
+        if not memes:
+            _tg("sendMessage", chat_id=chat, text=f"⚠️ {guiao.stem} veio sem memes (a rotina devia ter feito 1–2).")
+    return ok
+
+
+def _enviar_memes(chat, memes) -> bool:
+    ok = True
+    for png, legenda in memes:
+        with open(png, "rb") as f:
+            r = _tg("sendPhoto", files={"photo": (png.name, f, "image/png")}, chat_id=chat,
                     caption=f"🖼️ Meme (post estático) · {legenda}"[:1000])
+        ok &= bool(r.get("ok"))
+    return ok
+
+
+def enviar_so_memes(guiao: Path, mod, pasta: Path) -> bool:
+    """Guião sem vídeo (só MEMES, ex.: memes de um jogo que já teve vídeo): desenha e manda aos admins."""
+    from . import telegram
+    memes = desenhar_memes(guiao, mod, pasta)
+    if not memes or not telegram.ADMINS:
+        print(f"[ensaio] {guiao.stem}: {len(memes)} memes, admins: {len(telegram.ADMINS)}")
+        return False
+    ok = True
+    for chat in telegram.ADMINS:
+        _tg("sendMessage", chat_id=chat, text=f"🖼️ {guiao.stem} · memes para as redes ({len(memes)})")
+        ok &= _enviar_memes(chat, memes)
     return ok
 
 
@@ -341,6 +364,16 @@ def processar() -> int:
     saida = config.DATA_DIR.parent / "saida_videos"
     for g in pendentes():
         print(f"== {g.stem}")
+        try:
+            mod = _carregar(g)
+        except Exception as e:
+            mod = None
+            print(f"guião partido: {type(e).__name__}: {e}")
+        if mod is not None and not hasattr(mod, "construir"):  # só memes
+            saida.mkdir(parents=True, exist_ok=True)
+            marcar(g, "enviado" if enviar_so_memes(g, mod, saida) else "renderizado")
+            n += 1
+            continue
         cmd = [sys.executable, str(MOTOR / "quadro_tatico.py"), str(g), "--saida", str(saida)]
         res = subprocess.run(cmd, capture_output=True, text=True, env={**os.environ, "PYTHONIOENCODING": "utf-8"})
         print(res.stdout[-2000:], res.stderr[-3000:])
