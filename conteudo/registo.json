@@ -42,6 +42,17 @@
    "duracao": 69.2,
    "voz": "ElevenLabs",
    "erro": ""
+  },
+  "20261126_sporting_united_memes": {
+   "estado": "enviado",
+   "enviado_em": "2026-11-26T15:00",
+   "tipo": "memes",
+   "tema": "Memes do Sporting 2-2 Man United: Lammens herói e vilão, o torrão do Bruno",
+   "match_id": "20261125-UCL-splisbon-manunited",
+   "hora": "",
+   "duracao": null,
+   "voz": "",
+   "erro": ""
   }
  }
 }
