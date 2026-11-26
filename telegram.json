@@ -5186,7 +5186,7 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nOFI Crete x Anderlecht | 20h00\n\n✅ <b>Dica: Vitória Anderlecht</b>\n💰 Odd: <b>1.77</b>\n\n📊 Golos esperados: OFI Crete 1.0 – Anderlecht 1.8\n📊 OFI Crete: 2 vitórias nos últimos 6 jogos, xG 8.7 contra 8.4\n📊 Anderlecht: 4 vitórias nos últimos 6 jogos, xG 10.9 contra 6.6\n🚑 OFI Crete sem Kodro, Krizmanić, Koutsoupias\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "substituida",
    "enviar_a": "2026-11-26T17:00:00",
    "extra": true,
    "admin_msgs": {
@@ -5437,6 +5437,33 @@
     "5728356568": 1193
    },
    "admin_msg": 1192
+  },
+  {
+   "pid": "2619292596",
+   "origem": "tardia",
+   "data": "2026-11-26",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261126-UEL-oficrete-anderlecht|2",
+    "match_id": "20261126-UEL-oficrete-anderlecht",
+    "key": "2",
+    "texto": "Vitória Anderlecht",
+    "jogo": "OFI Crete x Anderlecht",
+    "prob": 0.5668,
+    "odd_casa": 1.77,
+    "data": "2026-11-26",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nOFI Crete x Anderlecht | 20h00\n\n✅ <b>Dica: Vitória Anderlecht</b>\n💰 Odd: <b>1.77</b>\n\n📊 Golos esperados: OFI Crete 1.0 – Anderlecht 1.8\n📊 OFI Crete: 2 vitórias nos últimos 6 jogos, xG 8.7 contra 8.4\n📊 Anderlecht: 4 vitórias nos últimos 6 jogos, xG 10.9 contra 6.6\n🚑 OFI Crete sem Kodro, Krizmanić, Koutsoupias\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-26T20:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-26T17:00:00",
+   "admin_msgs": {
+    "5575304800": 1194,
+    "5728356568": 1195
+   },
+   "admin_msg": 1194
   }
  ],
  "ultimo_resumo": 330,
