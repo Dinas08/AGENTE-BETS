@@ -1,23 +1,24 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 26/11/2026 17:36. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 26/11/2026 21:01. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 27 Green · 12 Red → **69%** de acerto (o modelo esperava 66%).
-- **Últimos 30 dias:** 92 Green · 39 Red → **70%** de acerto (o modelo esperava 64%).
-- **Desde o início:** 92 Green · 39 Red → **70%** de acerto (o modelo esperava 64%).
+- **Últimos 7 dias:** 31 Green · 16 Red → **66%** de acerto (o modelo esperava 65%).
+- **Últimos 30 dias:** 96 Green · 43 Red → **69%** de acerto (o modelo esperava 64%).
+- **Desde o início:** 96 Green · 43 Red → **69%** de acerto (o modelo esperava 64%).
 - **Múltiplas:** 10 Green em 22.
 
 ## Alertas
-- ⚠️ **💎 Odd alta** (tipo): acerto 30% em 10 dicas, o modelo esperava 58%.
+- ⚠️ **Liga Europa** (liga): acerto 50% em 10 dicas, o modelo esperava 62%.
+- ⚠️ **💎 Odd alta** (tipo): acerto 36% em 11 dicas, o modelo esperava 58%.
 
 ## Por mercado
 | Mercado | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| Golos +/- | 45 | 76% | 67% | ⬆️ confiança a menos |
-| Resultado 1X2 | 44 | 73% | 65% | ✅ bem |
-| Ambas marcam | 26 | 65% | 61% | ✅ bem |
+| Resultado 1X2 | 48 | 71% | 65% | ✅ bem |
+| Golos +/- | 46 | 74% | 67% | ✅ bem |
+| Ambas marcam | 27 | 67% | 61% | ✅ bem |
 | Cantos | 7 | 57% | 61% | ⏳ poucos dados |
-| Combinadas | 4 | 25% | 55% | ⏳ poucos dados |
+| Combinadas | 6 | 33% | 55% | ⏳ poucos dados |
 | Dupla hipótese | 3 | 67% | 70% | ⏳ poucos dados |
 | Cartões | 2 | 100% | 67% | ⏳ poucos dados |
 
@@ -29,14 +30,14 @@ _Atualizado automaticamente a 26/11/2026 17:36. Só dicas publicadas e já decid
 | Premier League | 13 | 62% | 59% | ✅ bem |
 | Serie A | 12 | 75% | 64% | ⬆️ confiança a menos |
 | Brasileirão | 11 | 82% | 65% | ⬆️ confiança a menos |
+| Liga Europa | 10 | 50% | 62% | ⬇️ confiança a mais |
 | Liga Portugal | 7 | 43% | 64% | ⏳ poucos dados |
 | Eredivisie | 5 | 100% | 68% | ⏳ poucos dados |
 | Bundesliga | 5 | 60% | 62% | ⏳ poucos dados |
-| LaLiga | 4 | 75% | 67% | ⏳ poucos dados |
-| Liga Europa | 4 | 50% | 60% | ⏳ poucos dados |
 | Liga Belga | 4 | 100% | 68% | ⏳ poucos dados |
 | Liga Argentina | 4 | 50% | 60% | ⏳ poucos dados |
-| Liga Conferência | 2 | 50% | 60% | ⏳ poucos dados |
+| LaLiga | 4 | 75% | 67% | ⏳ poucos dados |
+| Liga Conferência | 4 | 50% | 55% | ⏳ poucos dados |
 | MLS | 2 | 100% | 68% | ⏳ poucos dados |
 | Ligue 1 | 1 | 0% | 67% | ⏳ poucos dados |
 | Taça de Portugal | 1 | 100% | 72% | ⏳ poucos dados |
@@ -44,30 +45,30 @@ _Atualizado automaticamente a 26/11/2026 17:36. Só dicas publicadas e já decid
 ## Por probabilidade
 | Faixa | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| 55-65% | 56 | 62% | 60% | ✅ bem |
-| 65-75% | 46 | 76% | 70% | ✅ bem |
-| < 55% | 15 | 53% | 53% | ✅ bem |
+| 55-65% | 58 | 64% | 60% | ✅ bem |
+| 65-75% | 49 | 73% | 70% | ✅ bem |
+| < 55% | 18 | 50% | 52% | ✅ bem |
 | ≥ 75% | 14 | 100% | 78% | ⬆️ confiança a menos |
 
 ## Por tipo de dica
 | Tipo | Dicas | Acerto | Esperado | Leitura |
 |---|---|---|---|---|
-| ☀️ Manhã | 101 | 73% | 65% | ✅ bem |
+| ☀️ Manhã | 108 | 71% | 65% | ✅ bem |
 | 🌎 Américas | 13 | 77% | 63% | ⬆️ confiança a menos |
-| 💎 Odd alta | 10 | 30% | 58% | ⬇️ confiança a mais |
+| 💎 Odd alta | 11 | 36% | 58% | ⬇️ confiança a mais |
 | 🌙 Tardia | 7 | 71% | 62% | ⏳ poucos dados |
 
 ## Extras não publicadas
-Das 5 apostas extra que ficaram por publicar, 2 teriam dado Green (**40%**), contra 70% das publicadas.
+Das 13 apostas extra que ficaram por publicar, 6 teriam dado Green (**46%**), contra 69% das publicadas.
 
 ## Últimos Reds
+- 26/11 · Dinamo Zagreb x Leverkusen **0-2** · Mais de 2.5 golos (69%, Golos +/-)
+- 26/11 · St. Gilloise x Lech Poznan **2-2** · Vitória St. Gilloise (75%, Resultado 1X2)
+- 26/11 · Viktoria Plzen x Benfica **4-0** · Vitória Benfica + Mais de 2.5 golos (49%, Combinadas)
+- 26/11 · Jablonec x FC Lugano **2-0** · Vitória FC Lugano (41%, Resultado 1X2)
 - 25/11 · Slavia Prague x Villarreal **0-1** · Ambas marcam (61%, Ambas marcam)
 - 24/11 · Arsenal x Dortmund **1-1** · Vitória Arsenal (57%, Resultado 1X2)
 - 24/11 · Bodo/Glimt x LASK Linz **1-0** · Mais de 2.5 golos (74%, Golos +/-)
 - 24/11 · Galatasaray x Aston Villa **1-0** · Ambas marcam (63%, Ambas marcam)
-- 23/11 · Santos x Gremio **0-2** · Vitória Santos (58%, Resultado 1X2)
-- 23/11 · Internacional x Vitoria **2-5** · Vitória Internacional (63%, Resultado 1X2)
 - 23/11 · Brentford x Everton **4-0** · xG 2.8-0.2 · Ambas marcam (54%, Ambas marcam)
-- 22/11 · Hull x Brighton **2-0** · xG 1.8-2.2 · Vitória Brighton (60%, Resultado 1X2)
-- 21/11 · Newcastle x Arsenal **2-2** · xG 1.7-1.5 · Vitória Arsenal (57%, Resultado 1X2)
-- 21/11 · Monaco x Auxerre **1-1** · xG 2.4-0.3 · Vitória Monaco (67%, Resultado 1X2)
+- 23/11 · Internacional x Vitoria **2-5** · Vitória Internacional (63%, Resultado 1X2)

@@ -1698,7 +1698,7 @@
    "prob": 0.5781,
    "odd_casa": null,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": true,
    "tipo": "odd_alta",
    "message_id": 343
   },
@@ -1711,7 +1711,7 @@
    "prob": 0.4063,
    "odd_casa": 2.3,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 344
   },
@@ -1724,7 +1724,7 @@
    "prob": 0.5992,
    "odd_casa": 1.53,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 345
   },
@@ -1737,7 +1737,7 @@
    "prob": 0.493,
    "odd_casa": null,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 346
   },
@@ -1750,7 +1750,7 @@
    "prob": 0.7498,
    "odd_casa": 1.37,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 347
   },
@@ -1763,7 +1763,7 @@
    "prob": 0.5266,
    "odd_casa": null,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 348
   },
@@ -1776,7 +1776,7 @@
    "prob": 0.7443,
    "odd_casa": 1.35,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": true,
    "extra": true,
    "message_id": 349
   },
@@ -1803,7 +1803,7 @@
    "prob": 0.6881,
    "odd_casa": null,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 351
   },
@@ -5464,6 +5464,185 @@
     "5728356568": 1195
    },
    "admin_msg": 1194
+  },
+  {
+   "pid": "2621011597",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 343,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Bournemouth ou empate + Mais de 1.5 golos\nCelta 1-2 Bournemouth",
+   "expira": "2026-11-27T21:01:15.754816",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1196,
+    "5728356568": 1197
+   },
+   "admin_msg": 1196
+  },
+  {
+   "pid": "2621011698",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 344,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória FC Lugano\nJablonec 2-0 FC Lugano",
+   "expira": "2026-11-27T21:01:16.636101",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1198,
+    "5728356568": 1199
+   },
+   "admin_msg": 1198
+  },
+  {
+   "pid": "2621011799",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 345,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Monaco\nHearts 2-3 Monaco",
+   "expira": "2026-11-27T21:01:17.456530",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1200,
+    "5728356568": 1201
+   },
+   "admin_msg": 1200
+  },
+  {
+   "pid": "26210118100",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 346,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Benfica + Mais de 2.5 golos\nViktoria Plzen 4-0 Benfica",
+   "expira": "2026-11-27T21:01:18.335635",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1202,
+    "5728356568": 1203
+   },
+   "admin_msg": 1202
+  },
+  {
+   "pid": "26210119101",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 347,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória St. Gilloise\nSt. Gilloise 2-2 Lech Poznan",
+   "expira": "2026-11-27T21:01:19.224256",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1204,
+    "5728356568": 1205
+   },
+   "admin_msg": 1204
+  },
+  {
+   "pid": "26210120102",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 348,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Ambas marcam\nOlympiakos 2-4 Milan",
+   "expira": "2026-11-27T21:01:20.105568",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1206,
+    "5728356568": 1207
+   },
+   "admin_msg": 1206
+  },
+  {
+   "pid": "26210120103",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 349,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Marseille\nMarseille 1-0 Levski Sofia",
+   "expira": "2026-11-27T21:01:20.863993",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1208,
+    "5728356568": 1209
+   },
+   "admin_msg": 1208
+  },
+  {
+   "pid": "26210121104",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 351,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Mais de 2.5 golos\nDinamo Zagreb 0-2 Leverkusen",
+   "expira": "2026-11-27T21:01:21.620241",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1210,
+    "5728356568": 1211
+   },
+   "admin_msg": 1210
+  },
+  {
+   "pid": "26210124105",
+   "origem": "madrugada",
+   "data": "2026-11-26",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261126-BRA-saopaulo-remo|1",
+    "match_id": "20261126-BRA-saopaulo-remo",
+    "key": "1",
+    "texto": "Vitória Sao Paulo",
+    "jogo": "Sao Paulo x Remo",
+    "prob": 0.663,
+    "odd_casa": 1.37,
+    "data": "2026-11-26",
+    "resultado": null,
+    "tipo": "madrugada"
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇧🇷 <b>BRASILEIRÃO – QUINTA 26/11</b>\nSao Paulo x Remo | 23h00\n\n✅ <b>Dica: Vitória Sao Paulo</b>\n💰 Odd: <b>1.37</b>\n\n📊 Golos esperados: Sao Paulo 1.9 – Remo 0.7\n📊 Sao Paulo: 1 vitória nos últimos 6 jogos\n📊 Remo: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-26T23:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-26T20:00:00",
+   "admin_msgs": {
+    "5575304800": 1212,
+    "5728356568": 1213
+   },
+   "admin_msg": 1212
   }
  ],
  "ultimo_resumo": 330,
