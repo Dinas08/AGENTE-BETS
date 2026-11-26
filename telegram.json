@@ -1805,6 +1805,45 @@
    "resultado": null,
    "extra": true,
    "message_id": 351
+  },
+  {
+   "id": "20261126-UEL-ferencvaros-nkcelje|1",
+   "match_id": "20261126-UEL-ferencvaros-nkcelje",
+   "key": "1",
+   "texto": "Vitória Ferencvaros",
+   "jogo": "Ferencvaros x NK Celje",
+   "prob": 0.6939,
+   "odd_casa": 1.37,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 352
+  },
+  {
+   "id": "20261126-UEL-lyon-lillestrom|1",
+   "match_id": "20261126-UEL-lyon-lillestrom",
+   "key": "1",
+   "texto": "Vitória Lyon",
+   "jogo": "Lyon x Lillestrom",
+   "prob": 0.7891,
+   "odd_casa": 1.2,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 353
+  },
+  {
+   "id": "20261126-UEL-sunderland-jagielloniabialystok|1",
+   "match_id": "20261126-UEL-sunderland-jagielloniabialystok",
+   "key": "1",
+   "texto": "Vitória Sunderland",
+   "jogo": "Sunderland x Jagiellonia Bialystok",
+   "prob": 0.7036,
+   "odd_casa": 1.25,
+   "data": "2026-11-26",
+   "resultado": null,
+   "extra": true,
+   "message_id": 354
   }
  ],
  "multiplas": [
@@ -4282,7 +4321,12 @@
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nCrystal Palace x Sociedad | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.44</b> (estimativa nas casas)\n\n📊 Golos esperados: Crystal Palace 1.7 – Sociedad 1.6\n📊 Crystal Palace: 1 vitória nos últimos 6 jogos, xG 9.2 contra 14.5\n📊 Sociedad: 4 vitórias nos últimos 6 jogos, xG 12.6 contra 11.3\n🚑 Crystal Palace sem Riad, Sarr, Tomiyasu, Wharton\n🚑 Sociedad sem Aramburu, Herrera, Odriozola\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-26T17:00:00"
+   "enviar_a": "2026-11-26T17:00:00",
+   "admin_msgs": {
+    "5575304800": 1150,
+    "5728356568": 1151
+   },
+   "admin_msg": 1150
   },
   {
    "pid": "2611235658",
@@ -4303,7 +4347,12 @@
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nNijmegen x Rennes | 20h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.46</b> (estimativa nas casas)\n\n📊 Golos esperados: Nijmegen 1.5 – Rennes 1.8\n📊 Nijmegen: 1 vitória nos últimos 6 jogos, xG 10.5 contra 9.6\n📊 Rennes: 2 vitórias nos últimos 6 jogos, xG 13.2 contra 11.5\n🚑 Nijmegen sem Schuurs, Nuytinck, Sandler\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-26T17:00:00"
+   "enviar_a": "2026-11-26T17:00:00",
+   "admin_msgs": {
+    "5575304800": 1152,
+    "5728356568": 1153
+   },
+   "admin_msg": 1152
   },
   {
    "pid": "2611235659",
@@ -4324,7 +4373,12 @@
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nFreiburg x Twente | 20h00\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.44</b> (estimativa nas casas)\n\n📊 Golos esperados: Freiburg 1.6 – Twente 1.0\n📊 Freiburg: 4 vitórias nos últimos 6 jogos, xG 8.0 contra 7.6\n📊 Twente: 3 vitórias nos últimos 6 jogos, xG 16.0 contra 4.4\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-26T17:00:00"
+   "enviar_a": "2026-11-26T17:00:00",
+   "admin_msgs": {
+    "5575304800": 1154,
+    "5728356568": 1155
+   },
+   "admin_msg": 1154
   },
   {
    "pid": "2611235660",
@@ -4402,7 +4456,12 @@
    "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Crystal Palace x Sociedad: Ambas marcam (@1.44)\n• Nijmegen x Rennes: Ambas marcam (@1.46)\n• Freiburg x Twente: Menos de 9.5 cantos (@1.44)\n\n💰 Odd total: <b>3.03</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-26T17:00:00"
+   "enviar_a": "2026-11-26T17:00:00",
+   "admin_msgs": {
+    "5575304800": 1156,
+    "5728356568": 1157
+   },
+   "admin_msg": 1156
   },
   {
    "pid": "2611235662",
@@ -4456,7 +4515,12 @@
    "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• OFI Crete x Anderlecht: Vitória Anderlecht (@1.77)\n   <i>↳ golos esperados 1.0 – 1.8 · Anderlecht 4V em 6</i>\n• Crystal Palace x Sociedad: Mais de 2.5 golos (@1.48)\n   <i>↳ golos esperados 1.7 – 1.6</i>\n• Nijmegen x Rennes: Mais de 2.5 golos (@1.49)\n   <i>↳ golos esperados 1.5 – 1.8</i>\n\n💰 Odd total: <b>3.90</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-26T17:00:00"
+   "enviar_a": "2026-11-26T17:00:00",
+   "admin_msgs": {
+    "5575304800": 1158,
+    "5728356568": 1159
+   },
+   "admin_msg": 1158
   },
   {
    "pid": "2611235663",
@@ -4955,7 +5019,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1160,
+    "5728356568": 1161
+   },
+   "admin_msg": 1160
   },
   {
    "pid": "2611235681",
@@ -4978,7 +5047,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1162,
+    "5728356568": 1163
+   },
+   "admin_msg": 1162
   },
   {
    "pid": "2611235682",
@@ -5001,7 +5075,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1164,
+    "5728356568": 1165
+   },
+   "admin_msg": 1164
   },
   {
    "pid": "2611235683",
@@ -5024,7 +5103,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1166,
+    "5728356568": 1167
+   },
+   "admin_msg": 1166
   },
   {
    "pid": "2611235684",
@@ -5047,7 +5131,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1168,
+    "5728356568": 1169
+   },
+   "admin_msg": 1168
   },
   {
    "pid": "2611235685",
@@ -5070,7 +5159,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1170,
+    "5728356568": 1171
+   },
+   "admin_msg": 1170
   },
   {
    "pid": "2611235686",
@@ -5093,7 +5187,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1172,
+    "5728356568": 1173
+   },
+   "admin_msg": 1172
   },
   {
    "pid": "2611235687",
@@ -5114,9 +5213,14 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nSunderland x Jagiellonia Bialystok | 20h00\n\n✅ <b>Dica: Vitória Sunderland</b>\n💰 Odd: <b>1.25</b>\n\n📊 Golos esperados: Sunderland 2.1 – Jagiellonia Bialystok 0.7\n📊 Sunderland: 1 vitória nos últimos 6 jogos, xG 6.1 contra 8.8\n🚑 Sunderland sem Brobbey, Diarra, Ballard, Xhaka\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1174,
+    "5728356568": 1175
+   },
+   "admin_msg": 1174
   },
   {
    "pid": "2611235688",
@@ -5139,7 +5243,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1176,
+    "5728356568": 1177
+   },
+   "admin_msg": 1176
   },
   {
    "pid": "2611235689",
@@ -5160,9 +5269,14 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nLyon x Lillestrom | 20h00\n\n✅ <b>Dica: Vitória Lyon</b>\n💰 Odd: <b>1.20</b>\n\n📊 Golos esperados: Lyon 2.8 – Lillestrom 0.9\n📊 Lyon: 3 vitórias nos últimos 6 jogos, xG 7.0 contra 7.4\n🚑 Lyon sem Šulc, Ouédraogo, Morton, Mata\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1178,
+    "5728356568": 1179
+   },
+   "admin_msg": 1178
   },
   {
    "pid": "2611235690",
@@ -5185,7 +5299,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1180,
+    "5728356568": 1181
+   },
+   "admin_msg": 1180
   },
   {
    "pid": "2611235691",
@@ -5206,9 +5325,14 @@
    },
    "texto": "🟠 <b>LIGA EUROPA – QUINTA 26/11</b>\nFerencvaros x NK Celje | 20h00\n\n✅ <b>Dica: Vitória Ferencvaros</b>\n💰 Odd: <b>1.37</b>\n\n📊 Golos esperados: Ferencvaros 2.5 – NK Celje 1.1\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T20:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1182,
+    "5728356568": 1183
+   },
+   "admin_msg": 1182
   },
   {
    "pid": "2611235692",
@@ -5231,7 +5355,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1184,
+    "5728356568": 1185
+   },
+   "admin_msg": 1184
   },
   {
    "pid": "2611235693",
@@ -5254,7 +5383,12 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1186,
+    "5728356568": 1187
+   },
+   "admin_msg": 1186
   },
   {
    "pid": "2611235694",
@@ -5277,10 +5411,15 @@
    "expira": "2026-11-26T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-26T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1188,
+    "5728356568": 1189
+   },
+   "admin_msg": 1188
   }
  ],
  "ultimo_resumo": 330,
- "offset_admin": 820373791,
+ "offset_admin": 820373794,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
