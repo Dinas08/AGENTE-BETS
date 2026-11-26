@@ -1816,7 +1816,7 @@
    "prob": 0.6939,
    "odd_casa": 1.37,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 352
   },
@@ -1829,7 +1829,7 @@
    "prob": 0.7891,
    "odd_casa": 1.2,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 353
   },
@@ -1842,7 +1842,7 @@
    "prob": 0.7036,
    "odd_casa": 1.25,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 354
   },
@@ -5656,9 +5656,66 @@
     "5728356568": 1213
    },
    "admin_msg": 1212
+  },
+  {
+   "pid": "26220136106",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 352,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Ferencvaros\nFerencvaros 0-0 NK Celje",
+   "expira": "2026-11-27T22:01:36.158702",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1214,
+    "5728356568": 1215
+   },
+   "admin_msg": 1214
+  },
+  {
+   "pid": "26220137107",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 353,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Lyon\nLyon 0-0 Lillestrom",
+   "expira": "2026-11-27T22:01:37.138514",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1216,
+    "5728356568": 1217
+   },
+   "admin_msg": 1216
+  },
+  {
+   "pid": "26220138108",
+   "origem": "resultado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 354,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Sunderland\nSunderland 1-1 Jagiellonia Bialystok",
+   "expira": "2026-11-27T22:01:38.003749",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1218,
+    "5728356568": 1219
+   },
+   "admin_msg": 1218
   }
  ],
  "ultimo_resumo": 330,
- "offset_admin": 820373804,
+ "offset_admin": 820373807,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
