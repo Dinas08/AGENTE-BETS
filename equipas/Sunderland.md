@@ -15,3 +15,4 @@
 - 05/11/2026: perdeu 0-2 com o Dinamo Zagreb (modelo 70%, desfecho a 10%). Equipa em zona de descida: favorita demais, aplicar ajuste de crise.
 
 - 08/11/2026: ganhou 1-0 ao Chelsea em casa (modelo dava 19% a este desfecho), mesmo sem 2 centrais. Erro de leitura parcial: o ajuste de crise é exagerado em casa; usar só fora.
+- 26/11/2026: 1-1 com Jagiellonia (69%): equipa em zona baixa como favorita volta a não ganhar (lição de descida).

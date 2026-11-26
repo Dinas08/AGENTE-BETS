@@ -29,7 +29,7 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 
 - **2026-11-21 · Favoritos ≥90% com 3+ baixas titulares ou rotação (taças) falham o 1X2/Mais 2.5.** Evidência: Bayern 1-1 Köln (91%, sem Neuer/Díaz/Gnabry/Davies, Kane e Olise saíram lesionados), Porto 1-1 Paredes (91%, 98% "1X", equipa B, passou nos penáltis); antes Bayern 2-2 Dortmund (65%). O que fazer: com baixas pesadas ou rotação, limitar a probabilidade do favorito a ~80% e −8 a −12 nos golos marcados; não usar 1X2 seco nem Mais 2.5 acima de 75% como dica.
 
-- **2026-11-22 · Favoritos altos com dados limitados / outsider sem histórico falham mais do que o modelo diz.** Evidência (3+ casos): Porto 1-1 Paredes (91%), Marseille 2-3 Le Mans (73%, xG 1.5-4.0), Atalanta–Kairat (86%); antes Milan–Ferencvaros e Hajduk. O que fazer: favorito acima de 75% com dados limitados tratado como ≤70%, evitar "X ou 2"/1X2 seco como dica principal nesses jogos.
+- **2026-11-22 · Favoritos altos com dados limitados / outsider sem histórico falham mais do que o modelo diz.** Evidência (3+ casos): Porto 1-1 Paredes (91%), Marseille 2-3 Le Mans (73%, xG 1.5-4.0), Atalanta–Kairat (86%); antes Milan–Ferencvaros e Hajduk. O que fazer: favorito acima de 75% com dados limitados tratado como ≤70%, evitar "X ou 2"/1X2 seco como dica principal nesses jogos. REFORÇADA a 26/11: Inter D'Escaldes 2-0 København (73%, desfecho 8%), Lyon 0-0 Lillestrom (79%), Ferencvaros 0-0 Celje (69%), Iberia 1999 1-0 Getafe (59%). Limitar favoritos sem histórico a ≤65% e Mais 2.5 a ≤60%.
 
 - **2026-11-23 · Ligue 1/Monaco: favoritos com muito xG e poucos golos (Monaco 1-1 Auxerre, Lens 1-1 Toulouse) e Monaco em 6 jogos sem vencer.** O que fazer: Monaco como grande instável (−3 a −5 nos golos marcados); preferir '1X' à vitória seca em favoritos de 48-67% na Ligue 1.
 
@@ -40,6 +40,7 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 
 ## Em observação (1 ocorrência — confirmar antes de agir)
 
+- 2026-11-26 · Cartões "Menos 4.5" a 55%+ falharam 14/31 nos jogos da Conference/Liga Europa: 1 dia, observar; Benfica 0-4 Plzen (65%) sem golo do Benfica: grande português fora na Europa, descontar 5 pts.
 - 2026-11-21 · Treinador novo em equipa em crise (Eder Sarabia, Espanyol 1-0 Ath Bilbao a 15%): efeito treinador novo não está no modelo; dar +3 a +4 golos marcados à equipa visitante com treinador novo no 1.º jogo. 1 caso.
 
 - 2026-11-16 · Seleções com favorito muito acima e adversário com 5+ baixas (Alemanha 5-0, Suíça 4-0): BTTS Sim (57-67%) falhou nos dois; descontar BTTS nesses casos. Em casa, o favorito desfalcado do outro lado gere bem (nuance da lição de favoritos sem nada em jogo). 2 casos.
