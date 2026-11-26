@@ -53,6 +53,17 @@
    "duracao": null,
    "voz": "",
    "erro": ""
+  },
+  "20261126_plzen_benfica": {
+   "estado": "enviado",
+   "enviado_em": "2026-11-26T23:22",
+   "tipo": "jogo",
+   "tema": "Plzen 4-0 Benfica: 69% de bola e 3 golos em 4 minutos",
+   "match_id": "20261126-UEL-viktoriaplzen-benfica",
+   "hora": "12:30",
+   "duracao": 54.5,
+   "voz": "ElevenLabs",
+   "erro": ""
   }
  }
 }
