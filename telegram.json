@@ -4355,9 +4355,14 @@
    },
    "texto": "🟢 <b>LIGA CONFERÊNCIA – QUINTA 26/11</b>\nKairat Almaty x Mjällby AIF | 15h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.70</b> (estimativa nas casas)\n\n📊 Golos esperados: Kairat Almaty 1.5 – Mjällby AIF 1.2\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-26T15:30:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-26T12:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1097,
+    "5728356568": 1098
+   },
+   "admin_msg": 1097
   },
   {
    "pid": "2611235664",
@@ -5074,6 +5079,6 @@
   }
  ],
  "ultimo_resumo": 330,
- "offset_admin": 820373767,
+ "offset_admin": 820373768,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
