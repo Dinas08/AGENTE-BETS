@@ -31,6 +31,17 @@
    "duracao": 60.6,
    "voz": "ElevenLabs",
    "erro": ""
+  },
+  "20261126_sporting_united": {
+   "estado": "enviado",
+   "enviado_em": "2026-11-26T10:23",
+   "tipo": "jogo",
+   "tema": "Sporting 2-2 Man United: 3 penalidades, 2 golos anulados e uma bola solta",
+   "match_id": "20261125-UCL-splisbon-manunited",
+   "hora": "12:30",
+   "duracao": 69.2,
+   "voz": "ElevenLabs",
+   "erro": ""
   }
  }
 }
