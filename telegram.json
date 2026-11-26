@@ -1791,7 +1791,8 @@
    "data": "2026-11-26",
    "resultado": null,
    "extra": true,
-   "message_id": 350
+   "message_id": 350,
+   "anulada": "suspenso"
   },
   {
    "id": "20261126-UEL-dinamozagreb-leverkusen|over_2.5",
@@ -5417,9 +5418,28 @@
     "5728356568": 1189
    },
    "admin_msg": 1188
+  },
+  {
+   "pid": "2618422295",
+   "origem": "adiado",
+   "data": "2026-11-26",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 350,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "⏸️ <b>JOGO SUSPENSO</b>\nBesiktas x Hapoel Be&#x27;er\n\nA dica <b>Vitória Besiktas</b> fica sem efeito e não conta para o Green/Red. Nas casas de apostas, as apostas em jogos adiados ou cancelados costumam ser anuladas e o valor devolvido (confirma as regras da tua casa).\n\nHá mais dicas a caminho! ⚽",
+   "expira": "2026-11-27T18:42:22.394435",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1192,
+    "5728356568": 1193
+   },
+   "admin_msg": 1192
   }
  ],
  "ultimo_resumo": 330,
- "offset_admin": 820373794,
+ "offset_admin": 820373795,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
