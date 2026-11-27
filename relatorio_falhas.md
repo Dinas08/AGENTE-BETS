@@ -1,8 +1,8 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 26/11/2026 22:05. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 27/11/2026 00:01. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 31 Green · 19 Red → **62%** de acerto (o modelo esperava 65%).
+- **Últimos 7 dias:** 29 Green · 19 Red → **60%** de acerto (o modelo esperava 66%).
 - **Últimos 30 dias:** 96 Green · 46 Red → **68%** de acerto (o modelo esperava 64%).
 - **Desde o início:** 96 Green · 46 Red → **68%** de acerto (o modelo esperava 64%).
 - **Múltiplas:** 10 Green em 22.
@@ -59,7 +59,7 @@ _Atualizado automaticamente a 26/11/2026 22:05. Só dicas publicadas e já decid
 | 🌙 Tardia | 7 | 71% | 62% | ⏳ poucos dados |
 
 ## Extras não publicadas
-Das 25 apostas extra que ficaram por publicar, 14 teriam dado Green (**56%**), contra 68% das publicadas.
+Das 24 apostas extra que ficaram por publicar, 13 teriam dado Green (**54%**), contra 68% das publicadas.
 
 ## Últimos Reds
 - 26/11 · Sunderland x Jagiellonia Bialystok **1-1** · Vitória Sunderland (70%, Resultado 1X2)
