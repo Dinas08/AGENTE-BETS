@@ -75,6 +75,17 @@
    "duracao": 57.5,
    "voz": "ElevenLabs",
    "erro": ""
+  },
+  "20261128_benfica_famalicao_antevisao": {
+   "estado": "enviado",
+   "enviado_em": "2026-11-27T23:30",
+   "tipo": "antevisao",
+   "tema": "Benfica x Famalicão: levou 4 em Plzen e ainda tem 72%",
+   "match_id": "20261130-P1-benfica-famalicao",
+   "hora": "12:30",
+   "duracao": 47.5,
+   "voz": "ElevenLabs",
+   "erro": ""
   }
  }
 }
