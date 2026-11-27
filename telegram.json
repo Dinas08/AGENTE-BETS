@@ -5603,7 +5603,7 @@
    },
    "texto": "🇵🇹 <b>LIGA PORTUGAL – SEXTA 27/11</b>\nMaritimo x Nacional | 20h15\n\n✅ <b>Dica: Menos de 2.5 golos</b>\n💰 Odd: <b>1.58</b>\n\n📊 Golos esperados: Maritimo 1.0 – Nacional 1.0\n📊 Maritimo: 0 vitórias nos últimos 6 jogos, xG 4.5 contra 9.2\n📊 Nacional: 2 vitórias nos últimos 6 jogos, xG 6.6 contra 7.3\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-27T20:15:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-27T17:15:00",
    "admin_msgs": {
     "5575304800": 1284,
@@ -5839,7 +5839,7 @@
    },
    "texto": "🌙 <b>DICA TARDIA</b>\n\n🇮🇹 <b>SERIE A – SEXTA 27/11</b>\nVenezia x Bologna | 19h45\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.66</b> (estimativa nas casas)\n\n📊 Golos esperados: Venezia 1.1 – Bologna 1.4\n📊 Venezia: 2 vitórias nos últimos 6 jogos, xG 7.1 contra 9.5\n📊 Bologna: 4 vitórias nos últimos 6 jogos, xG 12.1 contra 10.6\n🚑 Venezia sem Adorante\n🚑 Bologna sem Holm, Miranda\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-27T19:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-27T16:45:00",
    "admin_msgs": {
     "5575304800": 1286,
@@ -5849,6 +5849,6 @@
   }
  ],
  "ultimo_resumo": 369,
- "offset_admin": 820373815,
+ "offset_admin": 820373818,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
