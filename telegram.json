@@ -1855,7 +1855,7 @@
    "prob": 0.663,
    "odd_casa": 1.37,
    "data": "2026-11-26",
-   "resultado": null,
+   "resultado": true,
    "tipo": "madrugada",
    "message_id": 364
   }
@@ -2788,7 +2788,8 @@
   "2026-11-22",
   "2026-11-23",
   "2026-11-24",
-  "2026-11-25"
+  "2026-11-25",
+  "2026-11-26"
  ],
  "offset": 892007170,
  "ignorados": [],
@@ -5400,9 +5401,47 @@
     "5728356568": 1219
    },
    "admin_msg": 1218
+  },
+  {
+   "pid": "2701105497",
+   "origem": "resultado",
+   "data": "2026-11-27",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 364,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Sao Paulo\nSao Paulo 3-1 Remo",
+   "expira": "2026-11-28T01:10:54.528332",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1238,
+    "5728356568": 1239
+   },
+   "admin_msg": 1238
+  },
+  {
+   "pid": "2701105598",
+   "origem": "resumo",
+   "data": "2026-11-27",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": null,
+    "resumo": true,
+    "animacao": false
+   },
+   "texto": "📊 <b>RESUMO DE 26/11</b>\n\n🟢 5 Green · 🔴 7 Red\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-28T01:10:55.519914",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1240,
+    "5728356568": 1241
+   },
+   "admin_msg": 1240
   }
  ],
- "ultimo_resumo": 330,
- "offset_admin": 820373807,
+ "ultimo_resumo": 369,
+ "offset_admin": 820373809,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
