@@ -5819,6 +5819,33 @@
     "5728356568": 1275
    },
    "admin_msg": 1274
+  },
+  {
+   "pid": "27191238108",
+   "origem": "tardia",
+   "data": "2026-11-27",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261127-I1-venezia-bologna|cantos_under_9.5",
+    "match_id": "20261127-I1-venezia-bologna",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Venezia x Bologna",
+    "prob": 0.5537,
+    "odd_casa": null,
+    "data": "2026-11-27",
+    "resultado": null,
+    "tipo": "tardia"
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇮🇹 <b>SERIE A – SEXTA 27/11</b>\nVenezia x Bologna | 19h45\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.66</b> (estimativa nas casas)\n\n📊 Golos esperados: Venezia 1.1 – Bologna 1.4\n📊 Venezia: 2 vitórias nos últimos 6 jogos, xG 7.1 contra 9.5\n📊 Bologna: 4 vitórias nos últimos 6 jogos, xG 12.1 contra 10.6\n🚑 Venezia sem Adorante\n🚑 Bologna sem Holm, Miranda\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-27T19:45:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-27T16:45:00",
+   "admin_msgs": {
+    "5575304800": 1286,
+    "5728356568": 1287
+   },
+   "admin_msg": 1286
   }
  ],
  "ultimo_resumo": 369,
