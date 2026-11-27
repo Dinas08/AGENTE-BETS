@@ -5578,7 +5578,12 @@
    "texto": "🇪🇸 <b>LALIGA – SEXTA 27/11</b>\nLevante x Santander | 20h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.39</b>\n\n📊 Golos esperados: Levante 1.9 – Santander 1.5\n📊 Levante: 1 vitória nos últimos 6 jogos, xG 5.8 contra 9.4\n📊 Santander: 3 vitórias nos últimos 6 jogos, xG 10.2 contra 15.0\n🚑 Levante sem Sánchez, Toljan\n🚑 Santander sem Gueye\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-27T20:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-27T17:00:00"
+   "enviar_a": "2026-11-27T17:00:00",
+   "admin_msgs": {
+    "5575304800": 1278,
+    "5728356568": 1279
+   },
+   "admin_msg": 1278
   },
   {
    "pid": "27111918102",
@@ -5620,8 +5625,13 @@
    },
    "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SEXTA 27/11</b>\nNott&#x27;m Forest x Chelsea | 20h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.86</b>\n\n📊 Golos esperados: Nott&#x27;m Forest 1.6 – Chelsea 1.2\n📊 Nott&#x27;m Forest: 1 vitória nos últimos 6 jogos, xG 10.5 contra 9.1\n📊 Chelsea: 3 vitórias nos últimos 6 jogos, xG 7.3 contra 8.9\n🚑 Nott&#x27;m Forest sem Hudson-Odoi\n🚑 Chelsea sem Caicedo, Pedro, Lacroix, James\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-27T20:00:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-27T17:00:00"
+   "estado": "descartada",
+   "enviar_a": "2026-11-27T17:00:00",
+   "admin_msgs": {
+    "5575304800": 1280,
+    "5728356568": 1281
+   },
+   "admin_msg": 1280
   },
   {
    "pid": "27111918104",
@@ -5807,6 +5817,6 @@
   }
  ],
  "ultimo_resumo": 369,
- "offset_admin": 820373814,
+ "offset_admin": 820373815,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
