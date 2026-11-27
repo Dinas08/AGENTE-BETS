@@ -1883,6 +1883,20 @@
    "resultado": null,
    "extra": true,
    "message_id": 372
+  },
+  {
+   "id": "20261127-BRA-fluminense-cruzeiro|btts_sim",
+   "match_id": "20261127-BRA-fluminense-cruzeiro",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Fluminense x Cruzeiro",
+   "prob": 0.5302,
+   "odd_casa": null,
+   "data": "2026-11-27",
+   "resultado": null,
+   "tipo": "madrugada",
+   "extra": true,
+   "message_id": 373
   }
  ],
  "multiplas": [
@@ -2823,7 +2837,7 @@
     }
    ],
    "prob": 0.3125,
-   "resultado": null,
+   "resultado": false,
    "message_id": 370
   }
  ],
@@ -5846,9 +5860,127 @@
     "5728356568": 1287
    },
    "admin_msg": 1286
+  },
+  {
+   "pid": "27210109109",
+   "origem": "resultado",
+   "data": "2026-11-27",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 370,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED na múltipla (0/3 pernas certas até agora)",
+   "expira": "2026-11-28T21:01:09.005594",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1288,
+    "5728356568": 1289
+   },
+   "admin_msg": 1288
+  },
+  {
+   "pid": "27210111110",
+   "origem": "madrugada",
+   "data": "2026-11-27",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261128-USA-columbuscrew-intermiami|over_2.5",
+    "match_id": "20261128-USA-columbuscrew-intermiami",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "Columbus Crew x Inter Miami",
+    "prob": 0.7294,
+    "odd_casa": null,
+    "data": "2026-11-27",
+    "resultado": null,
+    "tipo": "madrugada"
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – SÁBADO 28/11</b>\nColumbus Crew x Inter Miami | 01h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.29</b> (estimativa nas casas)\n\n📊 Golos esperados: Columbus Crew 2.3 – Inter Miami 1.5\n📊 Columbus Crew: 6 vitórias nos últimos 6 jogos\n📊 Inter Miami: 2 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-28T01:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-27T22:00:00"
+  },
+  {
+   "pid": "27210111111",
+   "origem": "madrugada",
+   "data": "2026-11-27",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261127-BRA-fluminense-cruzeiro|btts_sim",
+    "match_id": "20261127-BRA-fluminense-cruzeiro",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Fluminense x Cruzeiro",
+    "prob": 0.5302,
+    "odd_casa": null,
+    "data": "2026-11-27",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇧🇷 <b>BRASILEIRÃO – SEXTA 27/11</b>\nFluminense x Cruzeiro | 23h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.76</b> (estimativa nas casas)\n\n📊 Golos esperados: Fluminense 1.6 – Cruzeiro 1.0\n📊 Fluminense: 4 vitórias nos últimos 6 jogos\n📊 Cruzeiro: 6 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-27T23:00:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-27T20:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1290,
+    "5728356568": 1291
+   },
+   "admin_msg": 1290
+  },
+  {
+   "pid": "27210111112",
+   "origem": "madrugada",
+   "data": "2026-11-27",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261128-USA-tbdhome-vancouverwhitecaps|over_2.5",
+    "match_id": "20261128-USA-tbdhome-vancouverwhitecaps",
+    "key": "over_2.5",
+    "texto": "Mais de 2.5 golos",
+    "jogo": "TBD Home x Vancouver Whitecaps",
+    "prob": 0.6508,
+    "odd_casa": null,
+    "data": "2026-11-27",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – SÁBADO 28/11</b>\nTBD Home x Vancouver Whitecaps | 03h00\n\n✅ <b>Dica: Mais de 2.5 golos</b>\n💰 Odd: <b>1.45</b> (estimativa nas casas)\n\n📊 Golos esperados: TBD Home 0.6 – Vancouver Whitecaps 2.8\n📊 Vancouver Whitecaps: 4 vitórias nos últimos 6 jogos\n⚠️ Dados limitados: uma das equipas tem pouco histórico nas ligas que seguimos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-28T03:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-28T00:00:00",
+   "extra": true
+  },
+  {
+   "pid": "27210111113",
+   "origem": "madrugada",
+   "data": "2026-11-27",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261128-USA-realsaltlake-vancouverwhitecaps|btts_sim",
+    "match_id": "20261128-USA-realsaltlake-vancouverwhitecaps",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Real Salt Lake x Vancouver Whitecaps",
+    "prob": 0.5348,
+    "odd_casa": null,
+    "data": "2026-11-27",
+    "resultado": null,
+    "tipo": "madrugada",
+    "extra": true
+   },
+   "texto": "🌎 <b>AMÉRICAS</b>\n\n🇺🇸 <b>MLS – SÁBADO 28/11</b>\nReal Salt Lake x Vancouver Whitecaps | 03h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.75</b> (estimativa nas casas)\n\n📊 Golos esperados: Real Salt Lake 1.1 – Vancouver Whitecaps 1.4\n📊 Real Salt Lake: 3 vitórias nos últimos 6 jogos\n📊 Vancouver Whitecaps: 5 vitórias nos últimos 6 jogos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-28T03:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-28T00:00:00",
+   "extra": true
   }
  ],
  "ultimo_resumo": 369,
- "offset_admin": 820373818,
+ "offset_admin": 820373819,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
