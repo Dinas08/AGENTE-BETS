@@ -1868,7 +1868,7 @@
    "prob": 0.6315,
    "odd_casa": 1.65,
    "data": "2026-11-27",
-   "resultado": null,
+   "resultado": false,
    "message_id": 371
   },
   {
@@ -5978,6 +5978,25 @@
    "estado": "pendente",
    "enviar_a": "2026-11-28T00:00:00",
    "extra": true
+  },
+  {
+   "pid": "27213552114",
+   "origem": "resultado",
+   "data": "2026-11-27",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 371,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Werder Bremen\nWerder Bremen 3-3 M&#x27;gladbach",
+   "expira": "2026-11-28T21:35:52.704230",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1292,
+    "5728356568": 1293
+   },
+   "admin_msg": 1292
   }
  ],
  "ultimo_resumo": 369,
