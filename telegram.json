@@ -2758,6 +2758,48 @@
    "prob": 0.1873,
    "resultado": false,
    "message_id": 333
+  },
+  {
+   "data": "2026-11-27",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261127-N1-groningen-willemii|1",
+    "20261127-SP1-levante-santander|over_2.5",
+    "20261127-D1-werderbremen-mgladbach|1"
+   ],
+   "pernas": [
+    {
+     "id": "20261127-N1-groningen-willemii|1",
+     "match_id": "20261127-N1-groningen-willemii",
+     "key": "1",
+     "prob": 0.7571,
+     "odd_casa": 1.28,
+     "jogo": "Groningen x Willem II",
+     "texto": "Vitória Groningen"
+    },
+    {
+     "id": "20261127-SP1-levante-santander|over_2.5",
+     "match_id": "20261127-SP1-levante-santander",
+     "key": "over_2.5",
+     "prob": 0.6537,
+     "odd_casa": 1.39,
+     "jogo": "Levante x Santander",
+     "texto": "Mais de 2.5 golos"
+    },
+    {
+     "id": "20261127-D1-werderbremen-mgladbach|1",
+     "match_id": "20261127-D1-werderbremen-mgladbach",
+     "key": "1",
+     "prob": 0.6315,
+     "odd_casa": 1.65,
+     "jogo": "Werder Bremen x M'gladbach",
+     "texto": "Vitória Werder Bremen"
+    }
+   ],
+   "prob": 0.3125,
+   "resultado": null,
+   "message_id": 370
   }
  ],
  "balancos": [
@@ -5459,7 +5501,12 @@
    "texto": "🇳🇱 <b>EREDIVISIE – SEXTA 27/11</b>\nGroningen x Willem II | 19h00\n\n✅ <b>Dica: Vitória Groningen</b>\n💰 Odd: <b>1.28</b>\n\n📊 Golos esperados: Groningen 2.7 – Willem II 1.0\n📊 Groningen: 1 vitória nos últimos 6 jogos, xG 12.0 contra 14.2\n📊 Willem II: 0 vitórias nos últimos 6 jogos, xG 4.9 contra 12.6\n🚑 Willem II sem Hoogma, Lachkar\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-27T19:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-27T16:00:00"
+   "enviar_a": "2026-11-27T16:00:00",
+   "admin_msgs": {
+    "5575304800": 1262,
+    "5728356568": 1263
+   },
+   "admin_msg": 1262
   },
   {
    "pid": "27111918100",
@@ -5594,8 +5641,13 @@
    },
    "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• Groningen x Willem II: Vitória Groningen (@1.28)\n• Levante x Santander: Mais de 2.5 golos (@1.39)\n• Werder Bremen x M&#x27;gladbach: Vitória Werder Bremen (@1.65)\n\n💰 Odd total: <b>2.94</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-27T19:00:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-27T16:00:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-27T16:00:00",
+   "admin_msgs": {
+    "5575304800": 1264,
+    "5728356568": 1265
+   },
+   "admin_msg": 1264
   },
   {
    "pid": "27111918105",
@@ -5660,7 +5712,12 @@
    "texto": "🚀 <b>MÚLTIPLA TURBO</b>\n\n• Venezia x Bologna: Venezia ou empate (@1.68)\n   <i>↳ golos esperados 1.1 – 1.4 · Venezia 2V em 6</i>\n• Maritimo x Nacional: Menos de 2.5 golos (@1.58)\n   <i>↳ golos esperados 1.0 – 1.0</i>\n• Groningen x Willem II: Mais de 2.5 golos (@1.42)\n   <i>↳ golos esperados 2.7 – 1.0</i>\n• Levante x Santander: Ambas marcam (@1.43)\n   <i>↳ golos esperados 1.9 – 1.5</i>\n\n💰 Odd total: <b>5.39</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-27T19:00:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-27T16:00:00"
+   "enviar_a": "2026-11-27T16:00:00",
+   "admin_msgs": {
+    "5575304800": 1266,
+    "5728356568": 1267
+   },
+   "admin_msg": 1266
   },
   {
    "pid": "27111918106",
@@ -5710,6 +5767,6 @@
   }
  ],
  "ultimo_resumo": 369,
- "offset_admin": 820373809,
+ "offset_admin": 820373810,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
