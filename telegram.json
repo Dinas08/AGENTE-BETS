@@ -1870,6 +1870,19 @@
    "data": "2026-11-27",
    "resultado": null,
    "message_id": 371
+  },
+  {
+   "id": "20261127-F1-brest-parisfc|btts_sim",
+   "match_id": "20261127-F1-brest-parisfc",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Brest x Paris FC",
+   "prob": 0.5506,
+   "odd_casa": null,
+   "data": "2026-11-27",
+   "resultado": null,
+   "extra": true,
+   "message_id": 372
   }
  ],
  "multiplas": [
@@ -5755,9 +5768,14 @@
    },
    "texto": "🇫🇷 <b>LIGUE 1 – SEXTA 27/11</b>\nBrest x Paris FC | 19h45\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.70</b> (estimativa nas casas)\n\n📊 Golos esperados: Brest 1.3 – Paris FC 1.4\n📊 Brest: 4 vitórias nos últimos 6 jogos, xG 11.6 contra 8.3\n📊 Paris FC: 4 vitórias nos últimos 6 jogos, xG 11.4 contra 6.9\n🚑 Brest sem Chardonnet\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-27T19:45:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-27T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1272,
+    "5728356568": 1273
+   },
+   "admin_msg": 1272
   },
   {
    "pid": "27111918107",
@@ -5778,12 +5796,17 @@
    },
    "texto": "🇮🇹 <b>SERIE A – SEXTA 27/11</b>\nVenezia x Bologna | 19h45\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.66</b> (estimativa nas casas)\n\n📊 Golos esperados: Venezia 1.1 – Bologna 1.4\n📊 Venezia: 2 vitórias nos últimos 6 jogos, xG 7.1 contra 9.5\n📊 Bologna: 4 vitórias nos últimos 6 jogos, xG 12.1 contra 10.6\n🚑 Venezia sem Adorante\n🚑 Bologna sem Holm, Miranda\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-27T19:45:00",
-   "estado": "pendente",
+   "estado": "descartada",
    "enviar_a": "2026-11-27T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1274,
+    "5728356568": 1275
+   },
+   "admin_msg": 1274
   }
  ],
  "ultimo_resumo": 369,
- "offset_admin": 820373812,
+ "offset_admin": 820373814,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
