@@ -38,6 +38,9 @@ deixaram de se confirmar. Cada lição: data, o padrão, a evidência (jogos), e
 
 - **2026-11-25 · Grandes europeus desfalcados (4+ titulares) fora de casa: 3.º caso.** Evidência: Bayern 1-1 Köln, Man City 2-2 Napoli, Lille 2-1 Bayern (53%, sem Kane/Olise/Neuer; xG 1.2-2.1). O que fazer: nestes casos limitar a ≤45-50% e −6 a −10 nos golos marcados; reforça as lições de baixas e de quebra de forma.
 
+- 2026-11-27 · Eredivisie: vitórias da casa a 70%+ sobrestimadas (Groningen 76% 1-1 Willem II; antes Utrecht, Telstar, Feyenoord, também em observação): 2+ casos. Limitar casa a ≤62% e Mais 2.5 a ≤58%. Ativa.
+- 2026-11-27 · Favorito com 6-7 baixas titulares (Werder Bremen 63% 3-3 M'gladbach): descontar 15+ pts ao favorito, reforça a lição de 3+ baixas.
+
 ## Em observação (1 ocorrência — confirmar antes de agir)
 
 - 2026-11-26 · Cartões "Menos 4.5" a 55%+ falharam 14/31 nos jogos da Conference/Liga Europa: 1 dia, observar; Benfica 0-4 Plzen (65%) sem golo do Benfica: grande português fora na Europa, descontar 5 pts.

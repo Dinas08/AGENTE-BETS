@@ -10,3 +10,6 @@
 
 ## 2026-11-21
 - Chelsea 1-4 Leeds (modelo dava 46%): equipa frágil sob Alonso, Caicedo lesionado; sobrevalorizada. Erro de leitura parcial.
+
+## 2026-11-27
+- 2-3 em Nott'm Forest com 4 baixas: segunda falha seguida, equipa frágil; manter desconto.

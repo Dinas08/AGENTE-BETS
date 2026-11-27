@@ -10,3 +10,6 @@
 
 ## Erros do modelo com esta equipa
 - 2026-11-01 0-1: jogou fechado, poucos golos; modelo esperou mais.
+
+## 2026-11-27
+- Ganhou 2-1 no Maritimo a 35% com poucos cantos (1): eficaz, sem posse.

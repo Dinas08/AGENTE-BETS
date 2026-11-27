@@ -11,3 +11,6 @@
 ## Erros do modelo com esta equipa
 - 2026-10-31 vs Hoffenheim (2-0): o modelo pôs o Werder atrás do Hoffenheim (40% para o Hoffenheim) e previu mais de 2.5 golos (67%).
   **Erro de leitura**: a boa série do Werder não foi considerada e o jogo foi tático (xG total de 1.8).
+
+## 2026-11-27
+- 3-3 M'gladbach com 7 ausentes e 63% previsto: ajuste curto para tantas baixas. Erro de leitura.
