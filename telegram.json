@@ -5521,7 +5521,12 @@
    "texto": "🇩🇪 <b>BUNDESLIGA – SÁBADO 28/11</b>\nHamburg x Bayern Munich | 14h30\n\n✅ <b>Dica: Vitória Bayern Munich</b>\n💰 Odd: <b>1.25</b>\n\n📊 Golos esperados: Hamburg 1.0 – Bayern Munich 2.6\n📊 Hamburg: 3 vitórias nos últimos 6 jogos, xG 8.1 contra 10.3\n📊 Bayern Munich: 3 vitórias nos últimos 6 jogos, xG 19.6 contra 7.5\n🚑 Hamburg sem Remberg, Lokonga, Muheim\n🚑 Bayern Munich sem Kane, Neuer, Davies, Gnabry\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T14:30:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-28T11:30:00"
+   "enviar_a": "2026-11-28T11:30:00",
+   "admin_msgs": {
+    "5575304800": 1358,
+    "5728356568": 1359
+   },
+   "admin_msg": 1358
   },
   {
    "pid": "2811201397",
@@ -5817,7 +5822,12 @@
    "expira": "2026-11-28T14:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T11:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1360,
+    "5728356568": 1361
+   },
+   "admin_msg": 1360
   },
   {
    "pid": "28112013106",
@@ -5840,7 +5850,12 @@
    "expira": "2026-11-28T14:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T11:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1362,
+    "5728356568": 1363
+   },
+   "admin_msg": 1362
   },
   {
    "pid": "28112013107",
@@ -5863,7 +5878,12 @@
    "expira": "2026-11-28T14:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T11:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1364,
+    "5728356568": 1365
+   },
+   "admin_msg": 1364
   },
   {
    "pid": "28112013108",
