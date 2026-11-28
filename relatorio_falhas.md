@@ -1,8 +1,8 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 27/11/2026 21:52. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 28/11/2026 00:07. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
-- **Últimos 7 dias:** 30 Green · 21 Red → **59%** de acerto (o modelo esperava 65%).
+- **Últimos 7 dias:** 30 Green · 19 Red → **61%** de acerto (o modelo esperava 66%).
 - **Últimos 30 dias:** 97 Green · 48 Red → **67%** de acerto (o modelo esperava 64%).
 - **Desde o início:** 97 Green · 48 Red → **67%** de acerto (o modelo esperava 64%).
 - **Múltiplas:** 10 Green em 23.
