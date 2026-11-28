@@ -5679,7 +5679,12 @@
    "texto": "🇫🇷 <b>LIGUE 1 – SÁBADO 28/11</b>\nParis SG x Lorient | 19h45\n\n✅ <b>Dica: Vitória Paris SG</b>\n💰 Odd: <b>1.20</b>\n\n📊 Golos esperados: Paris SG 2.5 – Lorient 0.7\n📊 Paris SG: 6 vitórias nos últimos 6 jogos, xG 15.8 contra 6.9\n📊 Lorient: 3 vitórias nos últimos 6 jogos, xG 7.7 contra 5.4\n🚑 Paris SG sem Doué, Kvaratskhelia, Dembélé, Marquinhos\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T19:45:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-28T16:45:00"
+   "enviar_a": "2026-11-28T16:45:00",
+   "admin_msgs": {
+    "5575304800": 1406,
+    "5728356568": 1407
+   },
+   "admin_msg": 1406
   },
   {
    "pid": "28112013100",
@@ -6286,7 +6291,12 @@
    "expira": "2026-11-28T19:45:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1408,
+    "5728356568": 1409
+   },
+   "admin_msg": 1408
   },
   {
    "pid": "28112013119",
@@ -6309,7 +6319,12 @@
    "expira": "2026-11-28T19:45:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1410,
+    "5728356568": 1411
+   },
+   "admin_msg": 1410
   },
   {
    "pid": "28112013120",
@@ -6332,7 +6347,12 @@
    "expira": "2026-11-28T19:45:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1412,
+    "5728356568": 1413
+   },
+   "admin_msg": 1412
   },
   {
    "pid": "28112013121",
@@ -6355,7 +6375,12 @@
    "expira": "2026-11-28T19:45:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1414,
+    "5728356568": 1415
+   },
+   "admin_msg": 1414
   },
   {
    "pid": "28112013122",
@@ -6378,7 +6403,12 @@
    "expira": "2026-11-28T19:45:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T16:45:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1416,
+    "5728356568": 1417
+   },
+   "admin_msg": 1416
   },
   {
    "pid": "28112013123",
