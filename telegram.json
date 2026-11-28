@@ -1921,7 +1921,7 @@
    "prob": 0.5348,
    "odd_casa": null,
    "data": "2026-11-27",
-   "resultado": null,
+   "resultado": false,
    "tipo": "madrugada",
    "extra": true,
    "message_id": 375
@@ -5463,6 +5463,25 @@
     "5728356568": 1325
    },
    "admin_msg": 1324
+  },
+  {
+   "pid": "2805311594",
+   "origem": "resultado",
+   "data": "2026-11-28",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 375,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Ambas marcam\nReal Salt Lake 0-1 Vancouver Whitecaps",
+   "expira": "2026-11-29T05:31:15.115505",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1326,
+    "5728356568": 1327
+   },
+   "admin_msg": 1326
   }
  ],
  "ultimo_resumo": 369,
