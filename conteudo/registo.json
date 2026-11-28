@@ -86,6 +86,17 @@
    "duracao": 47.5,
    "voz": "ElevenLabs",
    "erro": ""
+  },
+  "20261128_forest_chelsea": {
+   "estado": "enviado",
+   "enviado_em": "2026-11-28T10:37",
+   "tipo": "jogo",
+   "tema": "Forest 3-2 Chelsea: 65% da bola e 3.ª derrota seguida",
+   "match_id": "20261127-E0-nottmforest-chelsea",
+   "hora": "12:30",
+   "duracao": 63.3,
+   "voz": "ElevenLabs",
+   "erro": ""
   }
  }
 }
