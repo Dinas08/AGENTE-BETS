@@ -6172,7 +6172,7 @@
    },
    "texto": "🇮🇹 <b>SERIE A – SÁBADO 28/11</b>\nTorino x Lazio | 17h00\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.62</b> (estimativa nas casas)\n\n📊 Golos esperados: Torino 1.0 – Lazio 1.4\n📊 Torino: 2 vitórias nos últimos 6 jogos, xG 5.6 contra 7.9\n📊 Lazio: 5 vitórias nos últimos 6 jogos, xG 8.9 contra 6.4\n🚑 Torino sem Ismajli, Biraghi\n🚑 Lazio sem Sutalo, Tavares, Marusic, Taylor\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T17:00:00",
-   "estado": "pendente",
+   "estado": "substituida",
    "enviar_a": "2026-11-28T14:00:00",
    "extra": true,
    "admin_msgs": {
@@ -6467,6 +6467,35 @@
     "5728356568": 1401
    },
    "admin_msg": 1400
+  },
+  {
+   "pid": "28163131127",
+   "origem": "tardia",
+   "data": "2026-11-28",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261128-I1-torino-lazio|cantos_under_9.5",
+    "match_id": "20261128-I1-torino-lazio",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Torino x Lazio",
+    "prob": 0.5667,
+    "odd_casa": null,
+    "data": "2026-11-28",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇮🇹 <b>SERIE A – SÁBADO 28/11</b>\nTorino x Lazio | 17h00\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.62</b> (estimativa nas casas)\n\n📊 Golos esperados: Torino 1.0 – Lazio 1.4\n📊 Torino: 2 vitórias nos últimos 6 jogos, xG 5.6 contra 7.9\n📊 Lazio: 5 vitórias nos últimos 6 jogos, xG 8.9 contra 6.4\n🚑 Torino sem Ismajli, Biraghi\n🚑 Lazio sem Sutalo, Tavares, Marusic, Taylor\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-28T17:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-28T14:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1404,
+    "5728356568": 1405
+   },
+   "admin_msg": 1404
   }
  ],
  "ultimo_resumo": 369,

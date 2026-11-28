@@ -1,6 +1,6 @@
 # Relatório das falhas (dicas do Telegram)
 
-_Atualizado automaticamente a 28/11/2026 16:31. Só dicas publicadas e já decididas (jogos adiados não contam)._
+_Atualizado automaticamente a 28/11/2026 16:39. Só dicas publicadas e já decididas (jogos adiados não contam)._
 
 - **Últimos 7 dias:** 30 Green · 23 Red → **57%** de acerto (o modelo esperava 65%).
 - **Últimos 30 dias:** 97 Green · 52 Red → **65%** de acerto (o modelo esperava 64%).
@@ -59,7 +59,7 @@ _Atualizado automaticamente a 28/11/2026 16:31. Só dicas publicadas e já decid
 | 🌙 Tardia | 7 | 71% | 62% | ⏳ poucos dados |
 
 ## Extras não publicadas
-Das 27 apostas extra que ficaram por publicar, 16 teriam dado Green (**59%**), contra 65% das publicadas.
+Das 29 apostas extra que ficaram por publicar, 17 teriam dado Green (**59%**), contra 65% das publicadas.
 
 ## Últimos Reds
 - 28/11 · Betis x Vallecano **0-1** · Vitória Betis (59%, Resultado 1X2)
