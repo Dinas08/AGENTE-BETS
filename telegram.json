@@ -5719,7 +5719,7 @@
    },
    "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🇩🇪 <b>BUNDESLIGA – SÁBADO 28/11</b>\nStuttgart x Ein Frankfurt | 17h30\n\n✅ <b>Dica: Menos de 3.5 golos</b>\n💰 Odd: <b>2.10</b>\n💡 A odd paga mais do que o risco real deste jogo\n\n📊 Golos esperados: Stuttgart 1.9 – Ein Frankfurt 1.4\n📊 Stuttgart: 3 vitórias nos últimos 6 jogos, xG 12.1 contra 11.1\n📊 Ein Frankfurt: 3 vitórias nos últimos 6 jogos, xG 10.1 contra 11.8\n🚑 Stuttgart sem Stiller, Jaquez, Vagnoman, Sauer\n🚑 Ein Frankfurt sem Baum, Uzun\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T17:30:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-28T14:30:00",
    "admin_msgs": {
     "5575304800": 1390,
@@ -6275,7 +6275,7 @@
    },
    "texto": "🇵🇹 <b>LIGA PORTUGAL – SÁBADO 28/11</b>\nAcademico Viseu x Alverca | 18h00\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.55</b> (estimativa nas casas)\n\n📊 Golos esperados: Academico Viseu 1.2 – Alverca 1.0\n📊 Academico Viseu: 5 vitórias nos últimos 6 jogos, xG 7.4 contra 8.7\n📊 Alverca: 3 vitórias nos últimos 6 jogos, xG 9.0 contra 7.4\n🚑 Alverca sem Touaizi, Raveyre, Rafael\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T18:00:00",
-   "estado": "pendente",
+   "estado": "substituida",
    "enviar_a": "2026-11-28T15:00:00",
    "extra": true,
    "admin_msgs": {
@@ -6638,7 +6638,7 @@
    },
    "texto": "🌙 <b>DICA TARDIA</b>\n\n🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 28/11</b>\nIpswich x Aston Villa | 17h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.55</b> (estimativa nas casas)\n\n📊 Golos esperados: Ipswich 1.3 – Aston Villa 1.7\n📊 Ipswich: 1 vitória nos últimos 6 jogos, xG 6.1 contra 13.3\n📊 Aston Villa: 2 vitórias nos últimos 6 jogos, xG 10.2 contra 9.6\n🚑 Ipswich sem Davis, Taylor\n🚑 Aston Villa sem Onana, Cash\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T17:30:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-28T14:30:00",
    "extra": true,
    "admin_msgs": {
@@ -6646,6 +6646,35 @@
     "5728356568": 1427
    },
    "admin_msg": 1426
+  },
+  {
+   "pid": "28172936132",
+   "origem": "tardia",
+   "data": "2026-11-28",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261128-P1-academicoviseu-alverca|cantos_under_9.5",
+    "match_id": "20261128-P1-academicoviseu-alverca",
+    "key": "cantos_under_9.5",
+    "texto": "Menos de 9.5 cantos",
+    "jogo": "Academico Viseu x Alverca",
+    "prob": 0.5908,
+    "odd_casa": null,
+    "data": "2026-11-28",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇵🇹 <b>LIGA PORTUGAL – SÁBADO 28/11</b>\nAcademico Viseu x Alverca | 18h00\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.55</b> (estimativa nas casas)\n\n📊 Golos esperados: Academico Viseu 1.2 – Alverca 1.0\n📊 Academico Viseu: 5 vitórias nos últimos 6 jogos, xG 7.4 contra 8.7\n📊 Alverca: 3 vitórias nos últimos 6 jogos, xG 9.0 contra 7.4\n🚑 Alverca sem Touaizi, Raveyre, Rafael\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-28T18:00:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-28T15:00:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1434,
+    "5728356568": 1435
+   },
+   "admin_msg": 1434
   }
  ],
  "ultimo_resumo": 369,
