@@ -1938,6 +1938,31 @@
    "resultado": null,
    "extra": true,
    "message_id": 376
+  },
+  {
+   "id": "20261128-E0-leeds-coventry|1",
+   "match_id": "20261128-E0-leeds-coventry",
+   "key": "1",
+   "texto": "Vitória Leeds",
+   "jogo": "Leeds x Coventry",
+   "prob": 0.7358,
+   "odd_casa": 1.46,
+   "data": "2026-11-28",
+   "resultado": null,
+   "message_id": 377
+  },
+  {
+   "id": "20261128-E0-manunited-brentford|btts_sim",
+   "match_id": "20261128-E0-manunited-brentford",
+   "key": "btts_sim",
+   "texto": "Ambas marcam",
+   "jogo": "Man United x Brentford",
+   "prob": 0.6529,
+   "odd_casa": null,
+   "data": "2026-11-28",
+   "resultado": null,
+   "extra": true,
+   "message_id": 379
   }
  ],
  "multiplas": [
@@ -2880,6 +2905,48 @@
    "prob": 0.3125,
    "resultado": false,
    "message_id": 370
+  },
+  {
+   "data": "2026-11-28",
+   "tipo": "segura",
+   "titulo": "🎯 <b>MÚLTIPLA DO DIA</b>",
+   "partes": [
+    "20261128-N1-psveindhoven-goaheadeagles|1",
+    "20261128-F1-parissg-lorient|1",
+    "20261128-E0-leeds-coventry|1"
+   ],
+   "pernas": [
+    {
+     "id": "20261128-N1-psveindhoven-goaheadeagles|1",
+     "match_id": "20261128-N1-psveindhoven-goaheadeagles",
+     "key": "1",
+     "prob": 0.7812,
+     "odd_casa": 1.22,
+     "jogo": "PSV Eindhoven x Go Ahead Eagles",
+     "texto": "Vitória PSV Eindhoven"
+    },
+    {
+     "id": "20261128-F1-parissg-lorient|1",
+     "match_id": "20261128-F1-parissg-lorient",
+     "key": "1",
+     "prob": 0.7799,
+     "odd_casa": 1.2,
+     "jogo": "Paris SG x Lorient",
+     "texto": "Vitória Paris SG"
+    },
+    {
+     "id": "20261128-E0-leeds-coventry|1",
+     "match_id": "20261128-E0-leeds-coventry",
+     "key": "1",
+     "prob": 0.7358,
+     "odd_casa": 1.46,
+     "jogo": "Leeds x Coventry",
+     "texto": "Vitória Leeds"
+    }
+   ],
+   "prob": 0.4483,
+   "resultado": null,
+   "message_id": 378
   }
  ],
  "balancos": [
@@ -5559,8 +5626,13 @@
    },
    "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 28/11</b>\nLeeds x Coventry | 15h00\n\n✅ <b>Dica: Vitória Leeds</b>\n💰 Odd: <b>1.46</b>\n\n📊 Golos esperados: Leeds 2.4 – Coventry 0.9\n📊 Leeds: 2 vitórias nos últimos 6 jogos, xG 8.2 contra 6.7\n📊 Coventry: 3 vitórias nos últimos 6 jogos, xG 6.7 contra 8.2\n🚑 Coventry sem Awoniyi, Wright, Eccles, Amenda\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T15:00:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-28T12:00:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-28T12:00:00",
+   "admin_msgs": {
+    "5575304800": 1368,
+    "5728356568": 1369
+   },
+   "admin_msg": 1368
   },
   {
    "pid": "2811201398",
@@ -5674,8 +5746,13 @@
    },
    "texto": "🎯 <b>MÚLTIPLA DO DIA</b>\n\n• PSV Eindhoven x Go Ahead Eagles: Vitória PSV Eindhoven (@1.22)\n• Paris SG x Lorient: Vitória Paris SG (@1.20)\n• Leeds x Coventry: Vitória Leeds (@1.46)\n\n💰 Odd total: <b>2.14</b>\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T15:00:00",
-   "estado": "pendente",
-   "enviar_a": "2026-11-28T12:00:00"
+   "estado": "publicada",
+   "enviar_a": "2026-11-28T12:00:00",
+   "admin_msgs": {
+    "5575304800": 1370,
+    "5728356568": 1371
+   },
+   "admin_msg": 1370
   },
   {
    "pid": "28112013102",
@@ -5917,9 +5994,14 @@
    },
    "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 28/11</b>\nMan United x Brentford | 15h00\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.43</b> (estimativa nas casas)\n\n📊 Golos esperados: Man United 1.7 – Brentford 1.6\n📊 Man United: 0 vitórias nos últimos 6 jogos, xG 8.3 contra 15.4\n📊 Brentford: 2 vitórias nos últimos 6 jogos, xG 7.5 contra 8.7\n🚑 Man United sem Šeško, Baleba, Ugarte\n🚑 Brentford sem Thiago, Collins, Hickey\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T15:00:00",
-   "estado": "pendente",
+   "estado": "publicada",
    "enviar_a": "2026-11-28T12:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1372,
+    "5728356568": 1373
+   },
+   "admin_msg": 1372
   },
   {
    "pid": "28112013109",
@@ -6314,6 +6396,6 @@
   }
  ],
  "ultimo_resumo": 369,
- "offset_admin": 820373824,
+ "offset_admin": 820373827,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
