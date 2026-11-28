@@ -1907,7 +1907,7 @@
    "prob": 0.6508,
    "odd_casa": null,
    "data": "2026-11-27",
-   "resultado": null,
+   "resultado": false,
    "tipo": "madrugada",
    "extra": true,
    "message_id": 374
@@ -5482,6 +5482,25 @@
     "5728356568": 1327
    },
    "admin_msg": 1326
+  },
+  {
+   "pid": "2805395395",
+   "origem": "resultado",
+   "data": "2026-11-28",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 374,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Mais de 2.5 golos\nTBD Home 0-1 Vancouver Whitecaps",
+   "expira": "2026-11-29T05:39:53.522467",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1328,
+    "5728356568": 1329
+   },
+   "admin_msg": 1328
   }
  ],
  "ultimo_resumo": 369,
