@@ -1948,7 +1948,7 @@
    "prob": 0.7358,
    "odd_casa": 1.46,
    "data": "2026-11-28",
-   "resultado": null,
+   "resultado": true,
    "message_id": 377
   },
   {
@@ -1960,9 +1960,23 @@
    "prob": 0.6529,
    "odd_casa": null,
    "data": "2026-11-28",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 379
+  },
+  {
+   "id": "20261128-SP1-elche-athmadrid|2",
+   "match_id": "20261128-SP1-elche-athmadrid",
+   "key": "2",
+   "texto": "Vitória Ath Madrid",
+   "jogo": "Elche x Ath Madrid",
+   "prob": 0.6175,
+   "odd_casa": 1.45,
+   "data": "2026-11-28",
+   "resultado": null,
+   "tipo": "tardia",
+   "extra": true,
+   "message_id": 380
   }
  ],
  "multiplas": [
@@ -6205,7 +6219,7 @@
    },
    "texto": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 28/11</b>\nIpswich x Aston Villa | 17h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.55</b> (estimativa nas casas)\n\n📊 Golos esperados: Ipswich 1.3 – Aston Villa 1.7\n📊 Ipswich: 1 vitória nos últimos 6 jogos, xG 6.1 contra 13.3\n📊 Aston Villa: 2 vitórias nos últimos 6 jogos, xG 10.2 contra 9.6\n🚑 Ipswich sem Davis, Taylor\n🚑 Aston Villa sem Onana, Cash\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T17:30:00",
-   "estado": "pendente",
+   "estado": "substituida",
    "enviar_a": "2026-11-28T14:30:00",
    "extra": true,
    "admin_msgs": {
@@ -6233,7 +6247,7 @@
    },
    "texto": "🇪🇸 <b>LALIGA – SÁBADO 28/11</b>\nElche x Ath Madrid | 17h30\n\n✅ <b>Dica: Vitória Ath Madrid</b>\n💰 Odd: <b>1.45</b>\n\n📊 Golos esperados: Elche 0.8 – Ath Madrid 1.8\n📊 Elche: 1 vitória nos últimos 6 jogos, xG 6.0 contra 7.9\n📊 Ath Madrid: 5 vitórias nos últimos 6 jogos, xG 11.4 contra 7.0\n🚑 Elche sem Sánchez, Lemar\n🚑 Ath Madrid sem Lookman, Sørloth, Romero\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T17:30:00",
-   "estado": "pendente",
+   "estado": "substituida",
    "enviar_a": "2026-11-28T14:30:00",
    "extra": true,
    "admin_msgs": {
@@ -6431,7 +6445,12 @@
    "expira": "2026-11-28T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1428,
+    "5728356568": 1429
+   },
+   "admin_msg": 1428
   },
   {
    "pid": "28112013124",
@@ -6454,7 +6473,12 @@
    "expira": "2026-11-28T20:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T17:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1430,
+    "5728356568": 1431
+   },
+   "admin_msg": 1430
   },
   {
    "pid": "28112013125",
@@ -6518,7 +6542,7 @@
    },
    "texto": "🌙 <b>DICA TARDIA</b>\n\n🇮🇹 <b>SERIE A – SÁBADO 28/11</b>\nTorino x Lazio | 17h00\n\n✅ <b>Dica: Menos de 9.5 cantos</b>\n💰 Odd: <b>1.62</b> (estimativa nas casas)\n\n📊 Golos esperados: Torino 1.0 – Lazio 1.4\n📊 Torino: 2 vitórias nos últimos 6 jogos, xG 5.6 contra 7.9\n📊 Lazio: 5 vitórias nos últimos 6 jogos, xG 8.9 contra 6.4\n🚑 Torino sem Ismajli, Biraghi\n🚑 Lazio sem Sutalo, Tavares, Marusic, Taylor\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T17:00:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-28T14:00:00",
    "extra": true,
    "admin_msgs": {
@@ -6526,9 +6550,105 @@
     "5728356568": 1405
    },
    "admin_msg": 1404
+  },
+  {
+   "pid": "28170108128",
+   "origem": "resultado",
+   "data": "2026-11-28",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 377,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "✅ <b>GREEN</b>: Vitória Leeds\nLeeds 3-0 Coventry",
+   "expira": "2026-11-29T17:01:08.418239",
+   "estado": "publicada",
+   "admin_msgs": {
+    "5575304800": 1420,
+    "5728356568": 1421
+   },
+   "admin_msg": 1420
+  },
+  {
+   "pid": "28170109129",
+   "origem": "resultado",
+   "data": "2026-11-28",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 379,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Ambas marcam\nMan United 0-4 Brentford",
+   "expira": "2026-11-29T17:01:09.371382",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1422,
+    "5728356568": 1423
+   },
+   "admin_msg": 1422
+  },
+  {
+   "pid": "28170112130",
+   "origem": "tardia",
+   "data": "2026-11-28",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261128-SP1-elche-athmadrid|2",
+    "match_id": "20261128-SP1-elche-athmadrid",
+    "key": "2",
+    "texto": "Vitória Ath Madrid",
+    "jogo": "Elche x Ath Madrid",
+    "prob": 0.6175,
+    "odd_casa": 1.45,
+    "data": "2026-11-28",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🇪🇸 <b>LALIGA – SÁBADO 28/11</b>\nElche x Ath Madrid | 17h30\n\n✅ <b>Dica: Vitória Ath Madrid</b>\n💰 Odd: <b>1.45</b>\n\n📊 Golos esperados: Elche 0.8 – Ath Madrid 1.8\n📊 Elche: 1 vitória nos últimos 6 jogos, xG 6.0 contra 7.9\n📊 Ath Madrid: 5 vitórias nos últimos 6 jogos, xG 11.4 contra 7.0\n🚑 Elche sem Sánchez, Lemar\n🚑 Ath Madrid sem Lookman, Sørloth, Romero\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-28T17:30:00",
+   "estado": "publicada",
+   "enviar_a": "2026-11-28T14:30:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1424,
+    "5728356568": 1425
+   },
+   "admin_msg": 1424
+  },
+  {
+   "pid": "28170112131",
+   "origem": "tardia",
+   "data": "2026-11-28",
+   "lista": "dicas",
+   "registo": {
+    "id": "20261128-E0-ipswich-astonvilla|btts_sim",
+    "match_id": "20261128-E0-ipswich-astonvilla",
+    "key": "btts_sim",
+    "texto": "Ambas marcam",
+    "jogo": "Ipswich x Aston Villa",
+    "prob": 0.6026,
+    "odd_casa": null,
+    "data": "2026-11-28",
+    "resultado": null,
+    "tipo": "tardia",
+    "extra": true
+   },
+   "texto": "🌙 <b>DICA TARDIA</b>\n\n🏴󠁧󠁢󠁥󠁮󠁧󠁿 <b>PREMIER LEAGUE – SÁBADO 28/11</b>\nIpswich x Aston Villa | 17h30\n\n✅ <b>Dica: Ambas marcam</b>\n💰 Odd: <b>1.55</b> (estimativa nas casas)\n\n📊 Golos esperados: Ipswich 1.3 – Aston Villa 1.7\n📊 Ipswich: 1 vitória nos últimos 6 jogos, xG 6.1 contra 13.3\n📊 Aston Villa: 2 vitórias nos últimos 6 jogos, xG 10.2 contra 9.6\n🚑 Ipswich sem Davis, Taylor\n🚑 Aston Villa sem Onana, Cash\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
+   "expira": "2026-11-28T17:30:00",
+   "estado": "pendente",
+   "enviar_a": "2026-11-28T14:30:00",
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1426,
+    "5728356568": 1427
+   },
+   "admin_msg": 1426
   }
  ],
  "ultimo_resumo": 369,
- "offset_admin": 820373827,
+ "offset_admin": 820373829,
  "anim_green_id": "CgACAgQAAyEGAATdpcSZAAIBGmsCVYPpwtS-tv7204rn7dHvdnWrAALAHgACmEOJU4kaHY1qYA1QPQQ"
 }
