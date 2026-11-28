@@ -5696,7 +5696,12 @@
    "texto": "💎 <b>DICA DE ODD ALTA</b>\n\n🇩🇪 <b>BUNDESLIGA – SÁBADO 28/11</b>\nStuttgart x Ein Frankfurt | 17h30\n\n✅ <b>Dica: Menos de 3.5 golos</b>\n💰 Odd: <b>2.10</b>\n💡 A odd paga mais do que o risco real deste jogo\n\n📊 Golos esperados: Stuttgart 1.9 – Ein Frankfurt 1.4\n📊 Stuttgart: 3 vitórias nos últimos 6 jogos, xG 12.1 contra 11.1\n📊 Ein Frankfurt: 3 vitórias nos últimos 6 jogos, xG 10.1 contra 11.8\n🚑 Stuttgart sem Stiller, Jaquez, Vagnoman, Sauer\n🚑 Ein Frankfurt sem Baum, Uzun\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T17:30:00",
    "estado": "pendente",
-   "enviar_a": "2026-11-28T14:30:00"
+   "enviar_a": "2026-11-28T14:30:00",
+   "admin_msgs": {
+    "5575304800": 1390,
+    "5728356568": 1391
+   },
+   "admin_msg": 1390
   },
   {
    "pid": "28112013101",
@@ -6192,7 +6197,12 @@
    "expira": "2026-11-28T17:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T14:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1392,
+    "5728356568": 1393
+   },
+   "admin_msg": 1392
   },
   {
    "pid": "28112013116",
@@ -6215,7 +6225,12 @@
    "expira": "2026-11-28T17:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T14:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1394,
+    "5728356568": 1395
+   },
+   "admin_msg": 1394
   },
   {
    "pid": "28112013117",
