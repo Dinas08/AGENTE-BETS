@@ -5666,7 +5666,7 @@
    },
    "texto": "🇳🇱 <b>EREDIVISIE – SÁBADO 28/11</b>\nPSV Eindhoven x Go Ahead Eagles | 17h45\n\n✅ <b>Dica: Vitória PSV Eindhoven</b>\n💰 Odd: <b>1.22</b>\n\n📊 Golos esperados: PSV Eindhoven 3.2 – Go Ahead Eagles 1.2\n📊 PSV Eindhoven: 4 vitórias nos últimos 6 jogos, xG 12.5 contra 7.8\n📊 Go Ahead Eagles: 2 vitórias nos últimos 6 jogos, xG 7.4 contra 8.8\n🚑 PSV Eindhoven sem Júnior\n\n🔞 +18 | Joga com responsabilidade | Análise estatística, não são garantias",
    "expira": "2026-11-28T17:45:00",
-   "estado": "pendente",
+   "estado": "expirada",
    "enviar_a": "2026-11-28T14:45:00",
    "admin_msgs": {
     "5575304800": 1398,
@@ -6501,7 +6501,12 @@
    "expira": "2026-11-28T20:30:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T17:30:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1436,
+    "5728356568": 1437
+   },
+   "admin_msg": 1436
   },
   {
    "pid": "28150114126",
