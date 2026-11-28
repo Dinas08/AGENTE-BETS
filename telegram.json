@@ -1935,7 +1935,7 @@
    "prob": 0.5939,
    "odd_casa": 1.58,
    "data": "2026-11-28",
-   "resultado": null,
+   "resultado": false,
    "extra": true,
    "message_id": 376
   },
@@ -6258,7 +6258,12 @@
    "expira": "2026-11-28T18:00:00",
    "estado": "pendente",
    "enviar_a": "2026-11-28T15:00:00",
-   "extra": true
+   "extra": true,
+   "admin_msgs": {
+    "5575304800": 1402,
+    "5728356568": 1403
+   },
+   "admin_msg": 1402
   },
   {
    "pid": "28112013118",
@@ -6443,6 +6448,25 @@
    "estado": "pendente",
    "enviar_a": "2026-11-28T17:30:00",
    "extra": true
+  },
+  {
+   "pid": "28150114126",
+   "origem": "resultado",
+   "data": "2026-11-28",
+   "lista": "avisos",
+   "registo": {
+    "reply_to": 376,
+    "resumo": false,
+    "animacao": false
+   },
+   "texto": "❌ RED: Vitória Betis\nBetis 0-1 Vallecano",
+   "expira": "2026-11-29T15:01:14.325321",
+   "estado": "pendente",
+   "admin_msgs": {
+    "5575304800": 1400,
+    "5728356568": 1401
+   },
+   "admin_msg": 1400
   }
  ],
  "ultimo_resumo": 369,
